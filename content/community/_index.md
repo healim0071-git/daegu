@@ -212,7 +212,7 @@ layout: single
 <div id="reviewsListArea">
   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
     <div style="font-size: 14px; color: #0C4349; font-weight: 700;">
-      총 <span id="reviewsCount">251</span>편의 최신 치료후기가 등록되어 있습니다.
+      총 <span id="reviewsCount">259</span>편의 최신 치료후기가 등록되어 있습니다.
     </div>
     <div style="font-size: 12px; color: #94A3B8;">* 각 글을 클릭하면 healim.com/5-3 로 이동합니다.</div>
   </div>
@@ -1049,7 +1049,7 @@ var defaultReviewsData = [
   },
   {
     "id": 7,
-    "uid": "251",
+    "uid": "259",
     "disease": "자율신경실조증",
     "title": "자율신경실조증 치료후기 - 꿈을 안 꾸고 숙면을 할 수 있어 너무 좋습니다.",
     "content": "보통 한의원 들은 진맥과 간단한 상담을 통해 치료를 하는데 해아림 한의원에서는 정확한 검사 장...",
@@ -1724,7 +1724,7 @@ var defaultReviewsData = [
     "disease": "자필후기",
     "title": "양약으로 호전되지 않던 야뇨증을 한약으로 치료했어요.",
     "content": "5개월 전 초등학생 아들의 야뇨증이 양약으로도 호전되지 않아 해아림한의원을 오게 되었습니다.\n\n마지...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202512/693bac9ce2fb51984871-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202592/693bac9ce2fb51984871-130x130.jpg",
     "date": "2025-12-12",
     "views": "6",
     "targetUrl": "https://www.healim.com/5-3"
@@ -1735,7 +1735,7 @@ var defaultReviewsData = [
     "disease": "자필후기",
     "title": "한약으로 과민성대장증후군 치료하니 일상생활을 즐기게 되었습니다.",
     "content": "식사만 하면 영락없이 30분쯤 뒤에 화장실에 가는 과민성대장증후군 증상으로 운동이나 등산을 가려고 ...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202512/693ba7ea83d0e8471439-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202592/693ba7ea83d0e8471439-130x130.jpg",
     "date": "2025-12-12",
     "views": "7",
     "targetUrl": "https://www.healim.com/5-3"
@@ -1746,7 +1746,7 @@ var defaultReviewsData = [
     "disease": "공황장애",
     "title": "해아림한의원에서 치료받고 새 삶을 누리고 있어요.",
     "content": "안녕하세요, 저는 17살 때 고등학교 1학년 때 갑자기 브레인포그, 심장 빨리 뜀, 불안, 공황장애 등 여...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202512/693ba6ca024126512438-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202592/693ba6ca024126512438-130x130.jpg",
     "date": "2025-12-12",
     "views": "15",
     "targetUrl": "https://www.healim.com/5-3"
@@ -1757,7 +1757,7 @@ var defaultReviewsData = [
     "disease": "자필후기",
     "title": "발표에 대한 트라우마 치료 후기(한약치료 , 침, 상담)",
     "content": "발표에 대한 트라우마로 내방하게 되었습니다.\n\n처음에는 큰 기대를 갖지 않고 왔는데 매번 내원할 때마...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202512/693b8b82b73ff2697504-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202592/693b8b82b73ff2697504-130x130.jpg",
     "date": "2025-12-12",
     "views": "8",
     "targetUrl": "https://www.healim.com/5-3"
@@ -1801,7 +1801,7 @@ var defaultReviewsData = [
     "disease": "불안장애",
     "title": "6개월간 한약과 침, 상담치료를 병행하고 호전된 불안장애 환자 후기",
     "content": "치료 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요.\n\n-심장이 너무 두근거리고 쿵...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202512/6936d85fd4bb79816499-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202592/6936d85fd4bb79816499-130x130.jpg",
     "date": "2025-12-08",
     "views": "10",
     "targetUrl": "https://www.healim.com/5-3"
@@ -1812,7 +1812,7 @@ var defaultReviewsData = [
     "disease": "불안장애",
     "title": "불안장애 치료 - 불안이 심해지면서 쉬는 날도 힘들었는데, 한약, 침, 향기, 상담치료로 편안해졌어요.",
     "content": "치료 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요.\n\n-4월부터 갑자기 불안으로 인...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202512/6936d692aa2e38316800-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202592/6936d692aa2e38316800-130x130.jpg",
     "date": "2025-12-08",
     "views": "9",
     "targetUrl": "https://www.healim.com/5-3"
@@ -1867,7 +1867,7 @@ var defaultReviewsData = [
     "disease": "공황장애",
     "title": "억지로 증상을 누르는 방법 대신 스스로 조절하는 힘을 기르는 공황장애 치료",
     "content": "치료전\n\n두근거림과 가슴 답답함이 하루에도 몇번씩 있었고, 이러한 증상이 커지면 공황발작 증세가 와 ...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/6926b5d0d7e006988070-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/6926b5d0d7e006988070-130x130.jpg",
     "date": "2025-11-26",
     "views": "11",
     "targetUrl": "https://www.healim.com/5-3"
@@ -1878,7 +1878,7 @@ var defaultReviewsData = [
     "disease": "공황장애",
     "title": "정확한 진단에 따른 치료방법과 생활방식의 변화 공황장애 극복",
     "content": "1.치료 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요.\n- 운전을 하기 힘들었고 사...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/6926b3f147e0f8852328-130x130.png",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/6926b3f147e0f8852328-130x130.png",
     "date": "2025-11-26",
     "views": "7",
     "targetUrl": "https://www.healim.com/5-3"
@@ -1911,7 +1911,7 @@ var defaultReviewsData = [
     "disease": "대인기피증",
     "title": "대인기피증과 무기력으로 힘들던 일상, 치료 후 달라진 변화들",
     "content": "치료를 받기 전에는 밤에 잠이 들려고 누우면 온몸이 굳고, 몸이 갑자기 굉장히 무거워지는 느낌이 들...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/6925592110e8e3121561-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/6925592110e8e3121561-130x130.jpg",
     "date": "2025-11-25",
     "views": "6",
     "targetUrl": "https://www.healim.com/5-3"
@@ -1933,7 +1933,7 @@ var defaultReviewsData = [
     "disease": "다한증",
     "title": "손·발 다한증으로 힘들던 10년, 이렇게 좋아질 줄 몰랐어요",
     "content": "치료를 받기 전에는 고등학생 때부터 이어져 온 손·발 다한증 때문에 일상에서 많은 불편을 느꼈어요. ...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/692556ba20f715594033-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/692556ba20f715594033-130x130.jpg",
     "date": "2025-11-25",
     "views": "10",
     "targetUrl": "https://www.healim.com/5-3"
@@ -1944,7 +1944,7 @@ var defaultReviewsData = [
     "disease": "다한증",
     "title": "오래된 다한증과 떨림이 정말 좋아졌어요 – 제 변화 후기",
     "content": "치료를 받기 전에는 작은 자극에도 열이 확 오르고 손이 떨리기 시작해 일상을 유지하기가 너무 힘들었...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/6925557d7bb8a7163748-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/6925557d7bb8a7163748-130x130.jpg",
     "date": "2025-11-25",
     "views": "7",
     "targetUrl": "https://www.healim.com/5-3"
@@ -1955,7 +1955,7 @@ var defaultReviewsData = [
     "disease": "자필후기",
     "title": "반복되는 생각과 떨림 속에서 벗어난 변화의 기록",
     "content": "처음에는 하루하루가 많이 힘들었어요. 손이 떨리고, 머릿속에서는 같은 생각이 계속 반복되다 보니 ...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/692554a19791b1589327-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/692554a19791b1589327-130x130.jpg",
     "date": "2025-11-25",
     "views": "7",
     "targetUrl": "https://www.healim.com/5-3"
@@ -1966,7 +1966,7 @@ var defaultReviewsData = [
     "disease": "불안장애",
     "title": "불안과 강박으로 힘들었던 일상, 다시 제 자리로 돌아오기까지의 변화 기록",
     "content": "치료받기 전에는 불안하고 부정적인 생각이 끊임없이 떠올라서 일상 자체가 많이 힘들었어요. 가족...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/6925534d5a9296149902-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/6925534d5a9296149902-130x130.jpg",
     "date": "2025-11-25",
     "views": "16",
     "targetUrl": "https://www.healim.com/5-3"
@@ -1988,7 +1988,7 @@ var defaultReviewsData = [
     "disease": "자필후기",
     "title": "미주신경성실신으로 술마시면 기절하는 증상으로 치료를 시작했는데",
     "content": "1. 치료 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요.\n\na. 미주신경성실신 -&gt; ...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/692542a7ccd248849176-130x130.png",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/692542a7ccd248849176-130x130.png",
     "date": "2025-11-25",
     "views": "6",
     "targetUrl": "https://www.healim.com/5-3"
@@ -1999,7 +1999,7 @@ var defaultReviewsData = [
     "disease": "공황장애",
     "title": "5년간 자율신경과 공황장애로 안가본 곳 없어요. 마지막이라 생각한 한방치료..",
     "content": "1. 치료 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요.\na. 5년동안 공황장애로 정...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/6925422349ba04451495-130x130.png",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/6925422349ba04451495-130x130.png",
     "date": "2025-11-25",
     "views": "18",
     "targetUrl": "https://www.healim.com/5-3"
@@ -2010,7 +2010,7 @@ var defaultReviewsData = [
     "disease": "자율신경실조증",
     "title": "자율신경이상으로 인한 소화불량, 딸꾹질 증상이 없어지는 경험을 한 곳! 너무 감사해요 : )",
     "content": "1. 치료 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요.\n\na. 딸꾹질이 계속 나와서 ...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/6925418fa47631929637-130x130.png",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/6925418fa47631929637-130x130.png",
     "date": "2025-11-25",
     "views": "8",
     "targetUrl": "https://www.healim.com/5-3"
@@ -2021,7 +2021,7 @@ var defaultReviewsData = [
     "disease": "우울증",
     "title": "우울증으로 치료받고 원장님과 선생님들의 친절한 응대로 많은 위안을 받았습니다.",
     "content": "1. 치료 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요.\na. 차를 타면 충돌하고 싶...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/692540fee65162260247-130x130.png",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/692540fee65162260247-130x130.png",
     "date": "2025-11-25",
     "views": "7",
     "targetUrl": "https://www.healim.com/5-3"
@@ -2032,7 +2032,7 @@ var defaultReviewsData = [
     "disease": "우울증",
     "title": "우울증으로 아팠을 때가 생각이 안날 정도로 원래대로 돌아와서 너무 기쁩니다.",
     "content": "1. 치료 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요.\na. 증상들을 인터넷에 검색...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/69253fbc7457c2242931-130x130.png",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69253fbc7457c2242931-130x130.png",
     "date": "2025-11-25",
     "views": "6",
     "targetUrl": "https://www.healim.com/5-3"
@@ -2043,7 +2043,7 @@ var defaultReviewsData = [
     "disease": "자필후기",
     "title": "미주신경성실신과 과호흡, 심리상담과 한의학적 치료 병행 사례",
     "content": "치료전\n\n오랜 기간 지속적인 학업 스트레스와 심리적 압박감으로 인해 갑자기 식은땀과 의식을 잃고 실...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/69240f2058de38527655-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69240f2058de38527655-130x130.jpg",
     "date": "2025-11-24",
     "views": "13",
     "targetUrl": "https://www.healim.com/5-3"
@@ -2054,7 +2054,7 @@ var defaultReviewsData = [
     "disease": "자율신경실조증",
     "title": "자율신경실조증 치료 후 예전 좋았던 모습으로 돌아갔어요",
     "content": "치료전\n\n몸이 심하게 아프고 나서 갑자기 속울렁거림 구토증세가 시작되었음.\n\n그러다 심장이 너무 빨리...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/69240e775a2d86551580-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69240e775a2d86551580-130x130.jpg",
     "date": "2025-11-24",
     "views": "16",
     "targetUrl": "https://www.healim.com/5-3"
@@ -2065,7 +2065,7 @@ var defaultReviewsData = [
     "disease": "불안장애",
     "title": "헛구역질 등 신체 증상을 동반한 사회공포증(사회불안장애) 치료 후기",
     "content": "치료 전\n\n긴장 :  사람들 앞에 세면, 사람들의 시선을 심하게 의식하여 심장이 두근거리고 심하게 긴장...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/69240dad7432d8917529-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69240dad7432d8917529-130x130.jpg",
     "date": "2025-11-24",
     "views": "12",
     "targetUrl": "https://www.healim.com/5-3"
@@ -2076,7 +2076,7 @@ var defaultReviewsData = [
     "disease": "불안장애",
     "title": "신체 증상 위주의 소아기 불안 문제와 강박적 사고 한의학으로 접근 가능합니다",
     "content": "치료전\n\n작년 2월 코로나 이후 이유없는 복통, 갑자기 찾아오는 불안, 식욕부진으로 아이가 살도 많이 ...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/69240d157f80a6654381-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69240d157f80a6654381-130x130.jpg",
     "date": "2025-11-24",
     "views": "5",
     "targetUrl": "https://www.healim.com/5-3"
@@ -2087,7 +2087,7 @@ var defaultReviewsData = [
     "disease": "강박증",
     "title": "소아강박증과 ADHD 모두 꾸준한 치료로 좋아질 수 있습니다",
     "content": "치료전\n\n학교 담임 선생님과의 상담에서 아이가 집중을 못하고 선생님의 지시사항을 인지하지 못한다고 ...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/69240c78d831e1558996-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69240c78d831e1558996-130x130.jpg",
     "date": "2025-11-24",
     "views": "15",
     "targetUrl": "https://www.healim.com/5-3"
@@ -2098,7 +2098,7 @@ var defaultReviewsData = [
     "disease": "틱장애",
     "title": "만성적인 성인틱장애와 강박증이 함께 좋아진 사례",
     "content": "치료전\n\n강박증상이 심했으며, 밤에는 잠도 제대로 잘수 없었음.\n\n가슴이 답답했으며, 목에서 소리를 냄...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/69240c383b5dd2028779-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69240c383b5dd2028779-130x130.jpg",
     "date": "2025-11-24",
     "views": "11",
     "targetUrl": "https://www.healim.com/5-3"
@@ -2109,7 +2109,7 @@ var defaultReviewsData = [
     "disease": "불면증",
     "title": "다한증을 치료하면서 잠도 더 잘 자게 되었어요!",
     "content": "치료전\n\n평소에 다한증과 불면증이 심해서 일상생활에 어려움이 있을정도로 땀이 나고 잠도 제대로 자지...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/69240beb205638254599-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69240beb205638254599-130x130.jpg",
     "date": "2025-11-24",
     "views": "9",
     "targetUrl": "https://www.healim.com/5-3"
@@ -2120,7 +2120,7 @@ var defaultReviewsData = [
     "disease": "다한증",
     "title": "수족다한증 치료 후 일상에서의 불편함이 거의 사라졌어요.",
     "content": "치료전\n\n손에 집중적으로 땀이 많이 났음. 수업 중에 땀이 계속 나서 필기가 어려웠을 정도. 그냥 가만...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/69240ba2d18953513544-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69240ba2d18953513544-130x130.jpg",
     "date": "2025-11-24",
     "views": "9",
     "targetUrl": "https://www.healim.com/5-3"
@@ -2131,7 +2131,7 @@ var defaultReviewsData = [
     "disease": "우울증",
     "title": "무기력감과 공허함, 우울증 극복 후 생각의 전환을 이뤘어요.",
     "content": "치료전\n\n계획과는 다르게 내 실행력이 기대치에 못 미쳤을 때 큰 분노를 느낌→ 곧 우울로 번짐.\n\n우울과...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/69240af8264b96832820-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69240af8264b96832820-130x130.jpg",
     "date": "2025-11-24",
     "views": "12",
     "targetUrl": "https://www.healim.com/5-3"
@@ -2142,7 +2142,7 @@ var defaultReviewsData = [
     "disease": "자율신경실조증",
     "title": "불안을 동반한 자율신경실조증 한약으로 치료했어요",
     "content": "치료전\n\n처음 겪어 보는 증상인 두근거림으로 상담을 해 봐야 하는건지 생각하기 시작했습니다.\n\n그 후 ...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/69240a53194028476559-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69240a53194028476559-130x130.jpg",
     "date": "2025-11-24",
     "views": "19",
     "targetUrl": "https://www.healim.com/5-3"
@@ -2153,7 +2153,7 @@ var defaultReviewsData = [
     "disease": "자율신경실조증",
     "title": "상담치료를 병행한 자율신경실조증 치료 과정",
     "content": "치료전\n\n소화장애, 두근거림, 가슴 답답함, 호흡이 어려움 등 복합적인 증상이 한 번에 나타났음.\n\n예전...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202511/692409eb8e6409247662-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/692409eb8e6409247662-130x130.jpg",
     "date": "2025-11-24",
     "views": "10",
     "targetUrl": "https://www.healim.com/5-3"
@@ -2164,7 +2164,7 @@ var defaultReviewsData = [
     "disease": "공황장애",
     "title": "공황장애로 인한 대인기피증 꾸준한 상담과 치료로 극복가능합니다.",
     "content": "치료전\n\n \n\n대중교통을 이용하면 심장이 두근거리고 긴장과 함께 뛰쳐내리고 싶은 충동이 일었음. 사람...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202511/69240931bec9d2307390-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202591/69240931bec9d2307390-130x130.jpg",
     "date": "2025-11-24",
     "views": "10",
     "targetUrl": "https://www.healim.com/5-3"
@@ -2956,7 +2956,7 @@ var defaultReviewsData = [
     "disease": "불안장애",
     "title": "불안장애로 너무 힘들었는데, 많이 좋아졌습니다.",
     "content": "이분은 불안장애로 7개월정도 한약치료와 두뇌훈련을 병행한 분인데요.\n첫내원 당시에 조그마한 일에도 ...",
-    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201806/5b272a930bce94251408-130x130.jpg",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201806/5b272a930bce94259408-130x130.jpg",
     "date": "2018-06-18",
     "views": "309",
     "targetUrl": "https://www.healim.com/5-3"
@@ -3732,7 +3732,7 @@ var defaultReviewsData = [
     "targetUrl": "https://www.healim.com/5-3"
   },
   {
-    "id": 251,
+    "id": 259,
     "uid": "10",
     "disease": "자필후기",
     "title": "비염.집중력치료후기1",
