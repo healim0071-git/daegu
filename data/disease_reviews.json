@@ -477,6 +477,28 @@
   ],
   "anxiety-disorder": [
     {
+      "id": 259,
+      "uid": "18911",
+      "disease": "불안장애",
+      "title": "불안장애 치료후기 - 전문가의 치료를 받아보는 것이 증상으로부터 더 자유로워질 수 있는 지름길입니다.",
+      "content": "예전에 어떻게 얼마나 불안했는지 생각해보면 늘 긴장 속에 살았는데, 맞춤 한약과 원장님의 세심한 치료를 통해 마음의 안정을 찾았습니다.",
+      "img": "/images/reviews/review_1.jpg",
+      "date": "2026-10-06",
+      "views": "15",
+      "targetUrl": "https://www.healim.com/5-3?uid=18911&mod=document&pageid=1"
+    },
+    {
+      "id": 258,
+      "uid": "18910",
+      "disease": "불안장애",
+      "title": "불안장애 치료후기 - 고칠 수 없다고만 생각했는데 저를 옭아매는 의심과 불안으로부터 벗어날 수 있게 되었어요.",
+      "content": "4월부터 갑자기 불안으로 인해 일상생활이 두려웠는데 해아림 치료 후 편안한 일상으로 복귀할 수 있었습니다.",
+      "img": "/images/reviews/review_2.jpg",
+      "date": "2026-10-06",
+      "views": "12",
+      "targetUrl": "https://www.healim.com/5-3?uid=18910&mod=document&pageid=1"
+    },
+    {
       "id": 11,
       "uid": "247",
       "disease": "불안장애",
@@ -518,28 +540,6 @@
       "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202605/6a0fbc8aa75df1864074-130x130.jpg",
       "date": "2026-05-22",
       "views": "14",
-      "targetUrl": "https://www.healim.com/5-3"
-    },
-    {
-      "id": 62,
-      "uid": "198",
-      "disease": "불안장애",
-      "title": "마음이 열리면서 몸도 편해졌어요 - 대인기피증과 불안장애 극복기",
-      "content": "치료전\n\n불안감으로 인해 잠을 잘 자지 못하였음\n불규칙한 생리주기\n잦은 두통\n주변 사람들과 모르는 사...",
-      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8f38b26f9e9224226-130x130.jpg",
-      "date": "2025-12-19",
-      "views": "14",
-      "targetUrl": "https://www.healim.com/5-3"
-    },
-    {
-      "id": 90,
-      "uid": "170",
-      "disease": "불안장애",
-      "title": "불안과 강박으로 힘들었던 일상, 다시 제 자리로 돌아오기까지의 변화 기록",
-      "content": "치료받기 전에는 불안하고 부정적인 생각이 끊임없이 떠올라서 일상 자체가 많이 힘들었어요. 가족...",
-      "img": "/images/reviews/review_6.jpg",
-      "date": "2025-11-25",
-      "views": "16",
       "targetUrl": "https://www.healim.com/5-3"
     }
   ],

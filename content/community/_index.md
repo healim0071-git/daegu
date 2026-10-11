@@ -164,7 +164,7 @@ layout: single
   <!-- 동기화 배지 -->
   <div style="display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; color: #0C4349; background: #F0F7F8; border: 1px solid #BADFE3; padding: 8px 14px; border-radius: 8px;">
     <span style="display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #10B981; box-shadow: 0 0 6px #10B981;"></span>
-    <span><strong>본원 치료후기 자동 동기화</strong>: 매일 오전 08:00 (최근 251편)</span>
+    <span><strong>본원 치료후기 자동 동기화</strong>: 매일 오전 08:00 (최근 259편)</span>
     <span style="color: #94A3B8;">|</span>
     <span style="color: #146369; font-weight: 700;">출처: healim.com/5-3</span>
     <a href="https://www.healim.com/5-3" target="_blank" rel="noopener noreferrer" style="margin-left: 6px; font-size: 11.5px; padding: 4px 10px; background: #FFFFFF; border: 1px solid #146369; border-radius: 4px; color: #146369; font-weight: 700; text-decoration: none;">
@@ -175,7 +175,7 @@ layout: single
   <!-- 질환별 필터 -->
   <div style="display: flex; align-items: center; gap: 8px; margin-left: auto; flex-wrap: wrap;">
     <select id="reviewCategoryFilter" onchange="filterReviews()" style="padding: 8px 12px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; outline: none; background: #FFF; color: #334155;">
-      <option value="ALL">전체 질환 보기 (251편)</option>
+      <option value="ALL">전체 질환 보기 (259편)</option>
       <option value="공황장애">공황장애</option>
       <option value="틱장애">틱장애</option>
       <option value="불면증">불면증</option>
@@ -959,6 +959,28 @@ var defaultColumnsData = [
 
 // 치료후기 자필 데이터 (healim.com/5-3 최신 60편)
 var defaultReviewsData = [
+  {
+    "id": 259,
+    "uid": "18911",
+    "disease": "불안장애",
+    "title": "불안장애 치료후기 - 전문가의 치료를 받아보는 것이 증상으로부터 더 자유로워질 수 있는 지름길입니다.",
+    "content": "1. 치료 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요. 예전에 어떻게 얼마나 불안했는지 돌아보면 늘 긴장 속에 살았는데, 맞춤 한약과 원장님의 세심한 치료를 통해 마음의 안정을 찾았습니다.",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202610/6ac4f74f39cba6205088-130x130.jpg",
+    "date": "2026-10-06",
+    "views": "15",
+    "targetUrl": "https://www.healim.com/5-3?uid=18911&mod=document&pageid=1"
+  },
+  {
+    "id": 258,
+    "uid": "18910",
+    "disease": "불안장애",
+    "title": "불안장애 치료후기 - 고칠 수 없다고만 생각했는데 저를 옭아매는 의심과 불안으로부터 벗어날 수 있게 되었어요.",
+    "content": "1. 치료 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요. 4월부터 갑자기 불안으로 인해 일상생활이 두려웠는데 해아림 치료 후 편안한 일상으로 복귀할 수 있었습니다.",
+    "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202610/6ac4f253443338703452-130x130.jpg",
+    "date": "2026-10-06",
+    "views": "12",
+    "targetUrl": "https://www.healim.com/5-3?uid=18910&mod=document&pageid=1"
+  },
   {
     "id": 1,
     "uid": "257",
