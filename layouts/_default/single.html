@@ -1,0 +1,43 @@
+{{ define "main" }}
+{{ if or (eq .Type "about") (eq .RelPermalink "/about/") (eq (path.Base .RelPermalink) "about") (eq .Title "한의원 소개") (eq .Title "한의원소개") }}
+  {{ partial "about-content.html" . }}
+{{ else }}
+<div class="container disease-page-container">
+  <!-- 상단 화이트 톤 히어로 카드 -->
+  <section class="disease-hero-card">
+    <div class="hero-card-badge">
+      <span class="badge-icon">🏆</span>
+      <span>16년 이상 임상 노하우 &amp; 전국 16개 네트워크</span>
+    </div>
+    
+    <div class="hero-card-sub">
+      <span>{{ if .Section }}{{ .Section | humanize }} | {{ end }}해아림한의원</span>
+    </div>
+
+    <h1 class="hero-card-title">
+      {{ .Title }}
+    </h1>
+
+    {{ with .Description }}
+    <p class="hero-card-desc">
+      {{ . }}
+    </p>
+    {{ end }}
+
+    <div class="hero-card-actions">
+      <a href="tel:053-751-0071" class="btn-hero-solid">1:1 전화 상담 예약 (053-751-0071) &gt;</a>
+      <a href="/about/#location" class="btn-hero-outline">오시는 길 안내 &gt;</a>
+    </div>
+
+    <div class="hero-card-watermark" aria-hidden="true"></div>
+  </section>
+
+  <!-- 본문 콘텐츠 -->
+  <article class="page-article content-typography">
+    {{ .Content }}
+  </article>
+
+
+</div>
+{{ end }}
+{{ end }}
