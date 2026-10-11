@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad_bg_25" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="grad_motif_25" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#1E293B" stop-opacity="0.4" />
+    </linearGradient>
+    <pattern id="grid_25" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="300" fill="url(#grad_bg_25)" />
+  <rect width="500" height="300" fill="url(#grid_25)" />
+
+  <!-- Ambient light glow -->
+  <circle cx="360" cy="150" r="130" fill="#06B6D4" opacity="0.12" filter="blur(30px)" />
+  <circle cx="80" cy="60" r="90" fill="#06B6D4" opacity="0.08" filter="blur(20px)" />
+
+  <!-- Left Content Block -->
+  <g transform="translate(36, 48)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="170" height="26" rx="13" fill="rgba(6,182,212,0.18)" stroke="#06B6D4" stroke-width="1.2" />
+    <circle cx="12" cy="13" r="3.5" fill="#06B6D4" />
+    <text x="24" y="17" fill="#CFFAFE" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="700" letter-spacing="-0.2px">국소 땀샘 과분비</text>
+
+    <!-- Title -->
+    <text x="0" y="65" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="20" font-weight="800" letter-spacing="-0.5px">
+      수족·두면부 교감신경절 과흥분
+    </text>
+
+    <!-- Subtitle (word wrapped) -->
+    <text x="0" y="98" fill="rgba(255,255,255,0.72)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12.5" font-weight="500" line-height="1.5">
+      손발 땀으로 인한 일상 불편 및 대인 긴장감
+    </text>
+    <text x="0" y="118" fill="rgba(255,255,255,0.72)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12.5" font-weight="500">
+      의 악순환
+    </text>
+
+    <!-- Clinical Spec Pill -->
+    <g transform="translate(0, 150)">
+      <rect x="0" y="0" width="135" height="22" rx="4" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+      <text x="10" y="15" fill="rgba(255,255,255,0.85)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="600">
+        HEALIM CLINICAL LAB
+      </text>
+    </g>
+  </g>
+
+  <!-- Right Motif Illustration -->
+  
+        <g transform="translate(340, 150)">
+          <!-- Sympathetic Chain Ganglia -->
+          <line x1="-15" y1="-50" x2="-15" y2="50" stroke="#FFF" stroke-width="3"/>
+          <line x1="15" y1="-50" x2="15" y2="50" stroke="#FFF" stroke-width="3"/>
+          <!-- cross rungs -->
+          <line x1="-15" y1="-25" x2="15" y2="-25" stroke="#06B6D4" stroke-width="2"/>
+          <line x1="-15" y1="0" x2="15" y2="0" stroke="#06B6D4" stroke-width="2"/>
+          <line x1="-15" y1="25" x2="15" y2="25" stroke="#06B6D4" stroke-width="2"/>
+          <!-- Nodes -->
+          <circle cx="-15" cy="-25" r="7" fill="#06B6D4"/>
+          <circle cx="15" cy="-25" r="7" fill="#06B6D4"/>
+          <circle cx="-15" cy="0" r="8" fill="#EF4444"/>
+          <circle cx="15" cy="0" r="8" fill="#EF4444"/>
+          <circle cx="-15" cy="25" r="7" fill="#06B6D4"/>
+          <circle cx="15" cy="25" r="7" fill="#06B6D4"/>
+        </g>
+        
+</svg>

@@ -1,0 +1,144 @@
+<script>
+window.location.replace('/about/#location');
+</script>
+<meta http-equiv="refresh" content="0; url=/about/#location">
+{{ define "main" }}
+<div class="container disease-page-container">
+  <!-- 대형 화이트 라운드 히어로 카드 -->
+  <section class="disease-hero-card">
+    <div class="hero-card-badge">
+      <span class="badge-icon">🛡</span>
+      <span>16여 년 임상 노하우 &amp; 전국 16개 네트워크</span>
+    </div>
+    
+    <div class="hero-card-sub">
+      <span>{{ if .Section }}{{ .Section | humanize }} | {{ end }}해아림한의원</span>
+    </div>
+
+    <h1 class="hero-card-title">
+      {{ .Title }}
+    </h1>
+
+    {{ with .Description }}
+    <p class="hero-card-desc">
+      {{ . }}
+    </p>
+    {{ end }}
+
+    <div class="hero-card-actions">
+      <a href="tel:053-751-0071" class="btn-hero-solid">1:1 전화 상담 예약 (053-751-0071) &gt;</a>
+      <a href="https://naver.me/xhPCPXTZ" target="_blank" rel="noopener noreferrer" class="btn-hero-outline" style="background: #03C75A; color: #FFF; border-color: #03C75A;">네이버 지도 바로가기 &gt;</a>
+    </div>
+
+    <div class="hero-card-watermark" aria-hidden="true"></div>
+  </section>
+
+  <!-- ── 네이버 지도 연동 인터랙티브 지도 섹션 (테두리 영역) ── -->
+  <section class="clinic-map-section" style="margin: 32px 0 44px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 28px; box-shadow: 0 8px 30px rgba(0,0,0,0.04);">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 14px;">
+      <div>
+        <div style="display: inline-flex; align-items: center; gap: 6px; background: #ECFDF5; color: #047857; border: 1px solid #A7F3D0; padding: 3px 12px; border-radius: 20px; font-size: 12px; font-weight: 800; margin-bottom: 6px;">
+          📍 NAVER MAP 연동
+        </div>
+        <h2 style="font-size: 22px; font-weight: 800; color: #0C4349; margin: 0; line-height: 1.35;">
+          해아림한의원 대구본점 오시는 길 (지도 안내)
+        </h2>
+        <p style="font-size: 13.5px; color: #64748B; margin: 4px 0 0;">
+          대구 수성구 달구벌대로 2435, 두산위브더제니스 상가 3층 (지하철 2호선 범어역 직결)
+        </p>
+      </div>
+
+      <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+        <a href="https://naver.me/GV2jHMlo" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 6px; background: #03C75A; color: #FFFFFF; font-size: 13px; font-weight: 700; padding: 9px 18px; border-radius: 8px; text-decoration: none; box-shadow: 0 3px 10px rgba(3,199,90,0.25); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
+          <span style="font-weight: 900; font-size: 14px;">N</span> 주차장 입구 네이버로 길찾기 &gt;
+        </a>
+        <a href="https://place.map.kakao.com/1289006802" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 6px; background: #FEE500; color: #191919; font-size: 13px; font-weight: 700; padding: 9px 18px; border-radius: 8px; text-decoration: none; box-shadow: 0 3px 10px rgba(254,229,0,0.3); transition: transform 0.2s;" onmouseover="this.style.transform='translateY(-2px)'" onmouseout="this.style.transform='none'">
+          주차장 입구 카카오맵 길찾기 &gt;
+        </a>
+      </div>
+    </div>
+
+    <!-- Leaflet 지도 캔버스 -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <div id="clinicLocationMap" style="width: 100%; height: 420px; border-radius: 14px; overflow: hidden; border: 1px solid #CBD5E1; z-index: 1; position: relative;"></div>
+
+    <!-- 하단 빠른 교통 요약 안내 뱃지 그리드 -->
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin-top: 18px;">
+      <div style="background: #F8FAFB; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 16px; display: flex; align-items: flex-start; gap: 12px;">
+        <span style="font-size: 24px; line-height: 1;">🚇</span>
+        <div>
+          <strong style="color: #0C4349; font-size: 13.5px; display: block; margin-bottom: 3px;">지하철 2호선 범어역 직결</strong>
+          <span style="font-size: 12.5px; color: #64748B; line-height: 1.45; display: block;">범어역 8번·9번 출구 두산위브더제니스 상가 지하 연결통로를 통해 날씨와 상관없이 편리하게 3층으로 내원하실 수 있습니다.</span>
+        </div>
+      </div>
+
+      <div style="background: #F8FAFB; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 16px; display: flex; align-items: flex-start; gap: 12px;">
+        <span style="font-size: 24px; line-height: 1;">🚗</span>
+        <div>
+          <strong style="color: #0C4349; font-size: 13.5px; display: block; margin-bottom: 3px;">두산위브 상가 무료 주차 전액 지원</strong>
+          <span style="font-size: 12.5px; color: #64748B; line-height: 1.45; display: block;">두산위브더제니스 상가 전용 지하주차장에 편리하게 주차 가능하며, 진료 시간 동안의 무료 주차권을 전액 지원해 드립니다.</span>
+        </div>
+      </div>
+
+      <div style="background: #F8FAFB; border: 1px solid #E2E8F0; border-radius: 12px; padding: 14px 16px; display: flex; align-items: flex-start; gap: 12px;">
+        <span style="font-size: 24px; line-height: 1;">📞</span>
+        <div>
+          <strong style="color: #0C4349; font-size: 13.5px; display: block; margin-bottom: 3px;">100% 예약제 사전 안내</strong>
+          <span style="font-size: 12.5px; color: #64748B; line-height: 1.45; display: block;">충분하고 깊이 있는 진료 상담을 위해 100% 사전 예약제로 운영됩니다. 전화(<a href="tel:053-751-0071" style="color: #008194; font-weight: 700; text-decoration: none;">053-751-0071</a>)로 예약 후 내원해 주세요.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 본문 상세 콘텐츠 (진료시간 안내 및 상세 설명) -->
+  <article class="page-article content-typography">
+    {{ .Content }}
+  </article>
+
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var lat = 35.8593153;
+  var lng = 128.6291373;
+
+  var mapEl = document.getElementById('clinicLocationMap');
+  if (!mapEl || typeof L === 'undefined') return;
+
+  var map = L.map('clinicLocationMap', {
+    center: [lat, lng],
+    zoom: 17,
+    scrollWheelZoom: false
+  });
+
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  // Custom marker
+  var customIcon = L.divIcon({
+    className: 'custom-clinic-pin',
+    html: '<div style="position: relative; width: 38px; height: 48px; display: flex; align-items: center; justify-content: center;"><div style="width: 38px; height: 38px; border-radius: 50% 50% 50% 0; background: #008194; transform: rotate(-45deg); display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3); border: 2.5px solid #FFFFFF;"><span style="transform: rotate(45deg); color: #FFF; font-size: 16px; font-weight: 900;">🏥</span></div></div>',
+    iconSize: [38, 48],
+    iconAnchor: [19, 44],
+    popupAnchor: [0, -42]
+  });
+
+  var marker = L.marker([lat, lng], { icon: customIcon }).addTo(map);
+
+  var popupHtml = '<div style="font-family: inherit; padding: 4px 2px; min-width: 220px; line-height: 1.45;">' +
+    '<span style="background: #E0F2FE; color: #0369A1; font-size: 10px; font-weight: 800; padding: 2px 6px; border-radius: 4px; display: inline-block; margin-bottom: 4px;">대구본점</span>' +
+    '<h4 style="margin: 0 0 4px; font-size: 15px; font-weight: 800; color: #0C4349;">해아림한의원 대구본점</h4>' +
+    '<p style="margin: 0 0 8px; font-size: 12px; color: #475569;">대구 수성구 달구벌대로 2435<br>두산위브 상가 3층 (범어역 직결)</p>' +
+    '<div style="display: flex; gap: 6px;">' +
+      '<a href="https://naver.me/GV2jHMlo" target="_blank" rel="noopener noreferrer" style="flex: 1; text-align: center; background: #03C75A; color: #FFF; font-size: 11px; font-weight: 700; padding: 6px 8px; border-radius: 4px; text-decoration: none;">주차장 입구 네이버 길찾기</a>' + '<a href="https://place.map.kakao.com/1289006802" target="_blank" rel="noopener noreferrer" style="flex: 1; text-align: center; background: #FEE500; color: #191919; font-size: 11px; font-weight: 700; padding: 6px 8px; border-radius: 4px; text-decoration: none;">카카오 길찾기</a>' +
+      '<a href="tel:053-751-0071" style="text-align: center; background: #D9534F; color: #FFF; font-size: 11px; font-weight: 700; padding: 6px 8px; border-radius: 4px; text-decoration: none;">전화예약</a>' +
+    '</div>' +
+  '</div>';
+
+  marker.bindPopup(popupHtml).openPopup();
+});
+</script>
+{{ end }}

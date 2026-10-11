@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad_bg_21" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9A3412" />
+      <stop offset="100%" stop-color="#451A03" />
+    </linearGradient>
+    <linearGradient id="grad_motif_21" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F97316" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#9A3412" stop-opacity="0.4" />
+    </linearGradient>
+    <pattern id="grid_21" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="300" fill="url(#grad_bg_21)" />
+  <rect width="500" height="300" fill="url(#grid_21)" />
+
+  <!-- Ambient light glow -->
+  <circle cx="360" cy="150" r="130" fill="#F97316" opacity="0.12" filter="blur(30px)" />
+  <circle cx="80" cy="60" r="90" fill="#F97316" opacity="0.08" filter="blur(20px)" />
+
+  <!-- Left Content Block -->
+  <g transform="translate(36, 48)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="170" height="26" rx="13" fill="rgba(249,115,22,0.18)" stroke="#F97316" stroke-width="1.2" />
+    <circle cx="12" cy="13" r="3.5" fill="#F97316" />
+    <text x="24" y="17" fill="#FED7AA" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="700" letter-spacing="-0.2px">만성 과각성 감지</text>
+
+    <!-- Title -->
+    <text x="0" y="65" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="20" font-weight="800" letter-spacing="-0.5px">
+      HPA축과 코르티솔 분비
+    </text>
+
+    <!-- Subtitle (word wrapped) -->
+    <text x="0" y="98" fill="rgba(255,255,255,0.72)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12.5" font-weight="500" line-height="1.5">
+      지속적인 걱정과 긴장으로 인한 스트레스 호르
+    </text>
+    <text x="0" y="118" fill="rgba(255,255,255,0.72)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12.5" font-weight="500">
+      몬 과잉 방출
+    </text>
+
+    <!-- Clinical Spec Pill -->
+    <g transform="translate(0, 150)">
+      <rect x="0" y="0" width="135" height="22" rx="4" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+      <text x="10" y="15" fill="rgba(255,255,255,0.85)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="600">
+        HEALIM CLINICAL LAB
+      </text>
+    </g>
+  </g>
+
+  <!-- Right Motif Illustration -->
+  
+        <g transform="translate(340, 150)">
+          <!-- Radar Scanning Arc -->
+          <circle cx="0" cy="20" r="50" fill="none" stroke="#F97316" stroke-width="2"/>
+          <circle cx="0" cy="20" r="30" fill="none" stroke="#F97316" stroke-width="1.5" stroke-dasharray="3,3"/>
+          <polygon points="0,20 -40,-25 -15,-40" fill="url(#grad_motif_21)" opacity="0.6"/>
+          <circle cx="0" cy="20" r="8" fill="#FFF"/>
+          <!-- Tension blip -->
+          <circle cx="25" cy="-10" r="6" fill="#EF4444"/>
+          <circle cx="25" cy="-10" r="12" fill="none" stroke="#EF4444" stroke-width="1.5"/>
+        </g>
+        
+</svg>

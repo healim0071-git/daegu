@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad_bg_13" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="grad_motif_13" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#334155" stop-opacity="0.4" />
+    </linearGradient>
+    <pattern id="grid_13" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="300" fill="url(#grad_bg_13)" />
+  <rect width="500" height="300" fill="url(#grid_13)" />
+
+  <!-- Ambient light glow -->
+  <circle cx="360" cy="150" r="130" fill="#F59E0B" opacity="0.12" filter="blur(30px)" />
+  <circle cx="80" cy="60" r="90" fill="#F59E0B" opacity="0.08" filter="blur(20px)" />
+
+  <!-- Left Content Block -->
+  <g transform="translate(36, 48)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="170" height="26" rx="13" fill="rgba(245,158,11,0.18)" stroke="#F59E0B" stroke-width="1.2" />
+    <circle cx="12" cy="13" r="3.5" fill="#F59E0B" />
+    <text x="24" y="17" fill="#FDE68A" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="700" letter-spacing="-0.2px">만성 어지럼 만성화</text>
+
+    <!-- Title -->
+    <text x="0" y="65" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="20" font-weight="800" letter-spacing="-0.5px">
+      경추성 & 심인성 어지럼증
+    </text>
+
+    <!-- Subtitle (word wrapped) -->
+    <text x="0" y="98" fill="rgba(255,255,255,0.72)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12.5" font-weight="500" line-height="1.5">
+      경추 긴장으로 인한 척추뇌저동맥 혈류 저하 
+    </text>
+    <text x="0" y="118" fill="rgba(255,255,255,0.72)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12.5" font-weight="500">
+      및 보행 불안정
+    </text>
+
+    <!-- Clinical Spec Pill -->
+    <g transform="translate(0, 150)">
+      <rect x="0" y="0" width="135" height="22" rx="4" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+      <text x="10" y="15" fill="rgba(255,255,255,0.85)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="600">
+        HEALIM CLINICAL LAB
+      </text>
+    </g>
+  </g>
+
+  <!-- Right Motif Illustration -->
+  
+        <g transform="translate(340, 150)">
+          <!-- Cervical spine blocks with vertebral artery -->
+          <rect x="-18" y="-45" width="36" height="14" rx="4" fill="#FFF"/>
+          <rect x="-18" y="-25" width="36" height="14" rx="4" fill="#F59E0B"/>
+          <rect x="-18" y="-5" width="36" height="14" rx="4" fill="#FFF"/>
+          <rect x="-18" y="15" width="36" height="14" rx="4" fill="#F59E0B"/>
+          <rect x="-18" y="35" width="36" height="14" rx="4" fill="#FFF"/>
+          <!-- Arterial blood flow curves on sides -->
+          <path d="M-28,-50 Q-38,0 -28,50" fill="none" stroke="#EF4444" stroke-width="3"/>
+          <path d="M28,-50 Q38,0 28,50" fill="none" stroke="#EF4444" stroke-width="3"/>
+        </g>
+        
+</svg>

@@ -1,0 +1,96 @@
+<!-- 상단 미니 유틸리티 바 (정돈된 한 줄 레이아웃) -->
+<div class="top-util-bar">
+  <div class="container top-util-inner">
+    <div class="top-util-left">
+      <span class="util-badge">네트워크 본점</span>
+      <span class="util-text">대구 수성구 범어역 두산위브 3층</span>
+    </div>
+    <div class="top-util-right">
+      <a href="tel:{{ .Site.Params.telephone }}" class="util-link phone-link">📞 {{ .Site.Params.telephone }}</a>
+      <a href="{{ .Site.Params.youtube }}" target="_blank" rel="noopener" class="util-link">▶ 유튜브 @healimtv</a>
+      <a href="{{ .Site.Params.naverMap }}" target="_blank" rel="noopener" class="util-link">📍 네이버 지도</a>
+      <span class="util-night">🌙 매일 20시 야간진료</span>
+      <span id="topAuthArea" class="util-auth" style="margin-left: 6px;"><a href="/login/" class="util-link auth-link" id="topAuthLink" style="font-weight: 700; color: #146369;">로그인</a></span>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-container">
+    <a href="/" class="site-brand" title="해아림한의원 대구본점 메인">
+      <img src="/images/logo-full.png" alt="해아림한의원 공식 로고" class="brand-logo-img">
+      <span class="brand-main">해아림한의원 <span class="branch-pill">대구본점</span></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <ul class="nav-list">
+        <!-- 1. 한의원소개 (드롭다운) -->
+        <li class="nav-item nav-dropdown">
+          <a href="/about/" class="nav-link nav-dropdown-toggle">한의원소개 <span class="caret">▾</span></a>
+          <div class="nav-dropdown-menu">
+            <a href="/about/#philosophy" class="nav-dd-item" onclick="if(window.location.pathname.replace(/\/+$/, '')==='/about'){ if(typeof smoothScrollToSection==='function'){ smoothScrollToSection(event, 'philosophy'); } }"><span class="dd-dot"></span>진료철학</a>
+            <a href="/about/#why-healim" class="nav-dd-item" onclick="if(window.location.pathname.replace(/\/+$/, '')==='/about'){ if(typeof smoothScrollToSection==='function'){ smoothScrollToSection(event, 'why-healim'); } }"><span class="dd-dot"></span>왜 해아림인가?</a>
+            <a href="/about/#doctor" class="nav-dd-item" onclick="if(window.location.pathname.replace(/\/+$/, '')==='/about'){ if(typeof smoothScrollToSection==='function'){ smoothScrollToSection(event, 'doctor'); } }"><span class="dd-dot"></span>대표원장 소개</a>
+            <a href="/about/#location" class="nav-dd-item" onclick="if(window.location.pathname.replace(/\/+$/, '')==='/about'){ if(typeof smoothScrollToSection==='function'){ smoothScrollToSection(event, 'location'); } }"><span class="dd-dot"></span>오시는 길</a>
+          </div>
+        </li>
+
+        <!-- 2. 틱장애 (독립) -->
+        <li class="nav-item">
+          <a href="/tic-disorder/" class="nav-link">틱장애</a>
+        </li>
+
+        <!-- 3. 공황장애 (독립) -->
+        <li class="nav-item">
+          <a href="/panic-disorder/" class="nav-link">공황장애</a>
+        </li>
+
+        <!-- 4. 어지럼증 (독립) -->
+        <li class="nav-item">
+          <a href="/dizziness/" class="nav-link">어지럼증</a>
+        </li>
+
+        <!-- 5. 자율신경실조증 (독립) -->
+        <li class="nav-item">
+          <a href="/dysautonomia/" class="nav-link">자율신경실조증</a>
+        </li>
+
+        <!-- 6. 불면증 (독립) -->
+        <li class="nav-item">
+          <a href="/insomnia/" class="nav-link">불면증</a>
+        </li>
+
+        <!-- 7. 심신안정 (드롭다운: ADHD, 불안장애, 강박증, 대인기피증, 긴장성 다한증) -->
+        <li class="nav-item nav-dropdown">
+          <a href="/#specialties" class="nav-link nav-dropdown-toggle">심신안정 <span class="caret">▾</span></a>
+          <div class="nav-dropdown-menu">
+            <a href="/adhd/" class="nav-dd-item"><span class="dd-dot"></span>ADHD</a>
+            <a href="/anxiety-disorder/" class="nav-dd-item"><span class="dd-dot"></span>불안장애</a>
+            <a href="/ocd/" class="nav-dd-item"><span class="dd-dot"></span>강박증</a>
+            <a href="/social-phobia/" class="nav-dd-item"><span class="dd-dot"></span>대인기피증 (사회공포)</a>
+            <a href="/hyperhidrosis/" class="nav-dd-item"><span class="dd-dot"></span>긴장성 다한증</a>
+          </div>
+        </li>
+
+        <!-- 8. 커뮤니티 (드롭다운: 칼럼, FAQ, 치료후기, 유튜브동영상) -->
+        <li class="nav-item nav-dropdown">
+          <a href="/community/" class="nav-link nav-dropdown-toggle">커뮤니티 <span class="caret">▾</span></a>
+          <div class="nav-dropdown-menu">
+            <a href="/community/#columns" class="nav-dd-item"><span class="dd-dot"></span>의학 칼럼</a>
+            <a href="/community/#reviews" class="nav-dd-item"><span class="dd-dot"></span>치료후기</a>
+            <a href="/community/#faq" class="nav-dd-item"><span class="dd-dot"></span>자주 묻는 질문(FAQ)</a>
+            <a href="/community/#youtube" class="nav-dd-item"><span class="dd-dot"></span>유튜브 영상</a>
+            <a href="https://www.healim.com/5-6" target="_blank" rel="noopener noreferrer" class="nav-dd-item"><span class="dd-dot"></span>한약과 비용고시</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 모바일 메뉴 버튼 -->
+    <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기">
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+    </button>
+  </div>
+</header>

@@ -1,0 +1,682 @@
+{
+  "tic-disorder": [
+    {
+      "id": 5,
+      "uid": "253",
+      "disease": "틱장애",
+      "title": "틱장애 치료후기 - 틱 개선 후 정서적으로 더 성장해온 것 같아요.",
+      "content": "처음 제 아이가 틱장애라는 의심하게 되었을 무렵 여러 한의원을 알아봤고 그중에 해아림한의원을 알...",
+      "img": "/images/reviews/review_5.jpg",
+      "date": "2026-09-11",
+      "views": "6",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 6,
+      "uid": "252",
+      "disease": "틱장애",
+      "title": "틱장애 치료후기 - 아이를 걱정스럽게 바라보지 않게 되어서 좋습니다.",
+      "content": "의사 선생님이 환자 및 보호자의 마음을 편하게 해주십니다. 꾸준히 치료 받으면 좋은 결과가 있으...",
+      "img": "/images/reviews/review_6.jpg",
+      "date": "2026-09-11",
+      "views": "3",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 26,
+      "uid": "232",
+      "disease": "틱장애",
+      "title": "치료받고 틱장애와 강박, 불안 증세가 좋아졌습니다.",
+      "content": "틱장애 증상이 너무 심해서 해아림한의원이 틱 치료 잘한다고 해서 소개받고 왔습니다.\n\n-머리는 심하게...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69ba6efa48c6d1629575-130x130.jpg",
+      "date": "2026-03-18",
+      "views": "31",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 31,
+      "uid": "227",
+      "disease": "틱장애",
+      "title": "틱장애 치료 드디어 끝났습니다.",
+      "content": "큰 아이의 눈깜박임과 입술 근육 움직임으로 걱정이 되서 이곳 저곳 알아보다가 해아림한의원이 틱장애...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b818d3ea4082845574-130x130.jpg",
+      "date": "2026-03-16",
+      "views": "20",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 35,
+      "uid": "223",
+      "disease": "틱장애",
+      "title": "틱장애 치료 후 자신감 회복",
+      "content": "1.치료받기 전\n\n \t눈을 심하게 깜빡였다.\n \t모든 활동에 의욕이 사라졌다. (매우 적극적인 아이였음)\n \t...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8daad745056919663-130x130.png",
+      "date": "2026-01-28",
+      "views": "27",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 37,
+      "uid": "221",
+      "disease": "틱장애",
+      "title": "틱장애 한약치료 하면서 천천히 완화되다가 거의 없어짐",
+      "content": "틱장애 치료 잘하는 곳이라고 소개를 받아 내원했습니다.\n\n \t7세때 눈깜빡임으로 시작해 나아졌다가 10...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8db4f9c0cd8358967-130x130.png",
+      "date": "2026-01-26",
+      "views": "22",
+      "targetUrl": "https://www.healim.com/5-3"
+    }
+  ],
+  "panic-disorder": [
+    {
+      "id": 3,
+      "uid": "255",
+      "disease": "공황장애",
+      "title": "공황장애 후기 -  호흡이 편안해지고, 나쁜 감정에서 빠져 나올 수 있어요.",
+      "content": "치료 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요.\n\na. 사람이 많은 공간, 폐...",
+      "img": "/images/reviews/review_3.jpg",
+      "date": "2026-09-15",
+      "views": "5",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 9,
+      "uid": "249",
+      "disease": "공황장애",
+      "title": "공황장애 치료후기 - 일상생활이 가능해졌고 운전도 무난하게 하고 다닙니다.",
+      "content": "원장님이 친절하게 상담 및 치료 관리를 잘해주세요. 궁금한 사항도 편하게 다 말씀해주시구요. 그...",
+      "img": "/images/reviews/review_3.jpg",
+      "date": "2026-09-11",
+      "views": "4",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 10,
+      "uid": "248",
+      "disease": "공황장애",
+      "title": "공황장애 치료 후기 - 잠을 잘자고 불안감이 거의 없어요",
+      "content": "의사 선생님의 자세한 단계별 상담, 증세에 따른 약처방 변경. 신뢰감이 드는 상담\n\n \n\n잠자리에 ...",
+      "img": "/images/reviews/review_4.jpg",
+      "date": "2026-09-11",
+      "views": "2",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 15,
+      "uid": "243",
+      "disease": "공황장애",
+      "title": "공황장애 치료 후기 - 호흡이 편안하고 잠을 잘 자고, 감정조절이 잘 됨.",
+      "content": "치료 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요.\n\n사람이 많은 공간, 폐쇄된 ...",
+      "img": "/images/reviews/review_3.jpg",
+      "date": "2026-09-04",
+      "views": "5",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 18,
+      "uid": "240",
+      "disease": "공황장애",
+      "title": "스스로의 힘으로 제어할 수 있게 된 공황 장애와 두통 증상",
+      "content": "치료전\n\n갑자기 찾아오는 불안과 두려움으로 어지러움과 정신을 잃을 것 같은 증상 대부분 머리가 맑지 ...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202605/6a0fc0dfb676c5305903-130x130.jpg",
+      "date": "2026-05-22",
+      "views": "21",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 19,
+      "uid": "239",
+      "disease": "공황장애",
+      "title": "한의원 치료와 적극적인 생활습관 교정 병행으로 호전된 공황장애와 불안",
+      "content": "치료전\n\n직업 상 운전을 많이 하는 편인데, 몇 번의 사고 경험으로 인해 운전을 할 때, 특정 장소 또는 ...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202605/6a0fbeb6e45ea7713324-130x130.jpg",
+      "date": "2026-05-22",
+      "views": "9",
+      "targetUrl": "https://www.healim.com/5-3"
+    }
+  ],
+  "dysautonomia": [
+    {
+      "id": 7,
+      "uid": "251",
+      "disease": "자율신경",
+      "title": "자율신경실조증 치료후기 - 꿈을 안 꾸고 숙면을 할 수 있어 너무 좋습니다.",
+      "content": "보통 한의원 들은 진맥과 간단한 상담을 통해 치료를 하는데 해아림 한의원에서는 정확한 검사 장...",
+      "img": "/images/reviews/review_1.jpg",
+      "date": "2026-09-11",
+      "views": "5",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 8,
+      "uid": "250",
+      "disease": "자율신경",
+      "title": "자율신경실조증 치료후기 - 생활함에 있어서 불편함이 개선돼서 좋습니다.",
+      "content": "편하게 얘기하면서 안심시켜주시고 괜찮아질 수 있다는 생각이 들게 도와주셔서 좋았습니다.\n\n \n\n...",
+      "img": "/images/reviews/review_2.jpg",
+      "date": "2026-09-11",
+      "views": "5",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 51,
+      "uid": "207",
+      "disease": "자율신경",
+      "title": "한방치료를 병행하면서 빠르게 부작용없이 치료된 자율신경실조증",
+      "content": "1.치료받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어주세요.\n\n \t무기력\n \t두통, 이유없은 ...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dcde529971443291-130x130.png",
+      "date": "2026-01-02",
+      "views": "13",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 55,
+      "uid": "203",
+      "disease": "자율신경",
+      "title": "자율신경실조증 치료후기",
+      "content": "1.치료받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어주세요.\n\n \t잠을 잘 자지 못함.\n \t불안...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dd5ec6dcc5302400-130x130.png",
+      "date": "2025-12-26",
+      "views": "30",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 58,
+      "uid": "200",
+      "disease": "자율신경",
+      "title": "일상생활이 불가능할 정도의 자율신경실조증 치료후기",
+      "content": "1.치료받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요.\n\n \t일상생활이 불가할 정도\n ...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8ddcdacf118046843-130x130.png",
+      "date": "2025-12-22",
+      "views": "28",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 63,
+      "uid": "197",
+      "disease": "자율신경",
+      "title": "몸과 마음이 함께 회복된 자율신경실조증 치료 경험",
+      "content": "치료전\n\n갑자기 찾아오는 극심한 두근거림 가만히 있는데도 숨쉬기가 어려웠으며 불안감이 동반됨\n\n손발...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8f3ad012167784183-130x130.jpg",
+      "date": "2025-12-19",
+      "views": "22",
+      "targetUrl": "https://www.healim.com/5-3"
+    }
+  ],
+  "insomnia": [
+    {
+      "id": 14,
+      "uid": "244",
+      "disease": "불면증",
+      "title": "불면증 치료 후기 - 치료받으세요. 잠이 점점 좋아지고 편안해졌어요.",
+      "content": "치료 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요.\n\n잠들면 잠을 몇 시간 못 ...",
+      "img": "/images/reviews/review_2.jpg",
+      "date": "2026-09-04",
+      "views": "5",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 29,
+      "uid": "229",
+      "disease": "불면증",
+      "title": "여러 복합적 증상을 보이는 우울증도 나아질 수 있습니다.",
+      "content": "치료전\n\n두통, 두근거림, 우울감, 숨막힘, 피로감, 너무 많은 수면, 회사 스트레스, 불안감, 집중저하, ...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8f5402720b3888467-130x130.jpg",
+      "date": "2026-03-17",
+      "views": "19",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 30,
+      "uid": "228",
+      "disease": "불면증",
+      "title": "가위눌림 때문에 힘들었는데 이제 잠을 너무 잘 잡니다.",
+      "content": "수면 중 가위눌림 증상으로 내원시작했는데, 석선희 원장님께 진료받고 좋아졌어요.\n\n상담 후에도 마음...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8d1dd5fd684957722-130x130.jpg",
+      "date": "2026-03-17",
+      "views": "6",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 32,
+      "uid": "226",
+      "disease": "불면증",
+      "title": "갑자기 찾아온 불면증, 수면제 대신 선택한 한의원 치료 후기",
+      "content": "치료전\n\n근골격계 치료 과정에 소염진통제와 잦은 검사로 인해 수면 시작과 유지가 힘들어 수면제(정신...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8f2a685d3f7213881-130x130.jpg",
+      "date": "2026-02-10",
+      "views": "26",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 40,
+      "uid": "218",
+      "disease": "불면증",
+      "title": "불안장애와 불면증을 치료한 후기",
+      "content": "1.치료받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어주세요.\n\n \t불면증상으로 많이 힘들었...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dbab910212707161-130x130.png",
+      "date": "2026-01-19",
+      "views": "25",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 41,
+      "uid": "217",
+      "disease": "불면증",
+      "title": "치료를 통해 불면증 개선과 함께 여유로운 마음이 생김",
+      "content": "1.치료받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어주세요.\n\n \t입면하기\n \t시간 간격으로 ...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dbcbf12d11998063-130x130.png",
+      "date": "2026-01-16",
+      "views": "11",
+      "targetUrl": "https://www.healim.com/5-3"
+    }
+  ],
+  "dizziness": [
+    {
+      "id": 16,
+      "uid": "242",
+      "disease": "어지럼증",
+      "title": "몇년동안 어지럼증 두통으로 고생했던 엄마",
+      "content": "저희엄마가 어지럼증 두통호소가 많으셨구 병원에서는 이상없다라고하고  해아림에서 침맙고 한약2주씩...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202608/6a7a7ceed61109263037-130x130.jpg",
+      "date": "2026-08-11",
+      "views": "9",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 23,
+      "uid": "235",
+      "disease": "어지럼증",
+      "title": "몇 년 동안 고생한 어지럼증, 공황장애 치료",
+      "content": "1.치료 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요.\n\n \t뒷목이 뻐근해지면서 어...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202604/69e1c968264103446826-130x130.png",
+      "date": "2026-04-17",
+      "views": "14",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 77,
+      "uid": "183",
+      "disease": "어지럼증",
+      "title": "어지럼증 한의원 치료로 나아졌습니다",
+      "content": "1.치료받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요.\n\n \t주기적으로 어지럽습니다....",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8df34074852733578-130x130.png",
+      "date": "2025-12-08",
+      "views": "10",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 79,
+      "uid": "181",
+      "disease": "어지럼증",
+      "title": "자율신경실조증으로 두근거림 불면증 소화불량 두통 어지러움 같은 증상이 있었는데 호전됐어요",
+      "content": "1.치료받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어주세요.\n- 가슴두근거림으로 잠을 자기...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8e0d6f0b684507155-130x130.png",
+      "date": "2025-12-03",
+      "views": "23",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 134,
+      "uid": "127",
+      "disease": "어지럼증",
+      "title": "[두통, 어지러움] 머리가 맑아지고, 잠도 잘자게 되었습니다.",
+      "content": "[두통, 어지러움] 머리가 맑아지고, 잠도 잘자게 되었습니다.",
+      "img": "/images/reviews/review_2.jpg",
+      "date": "2023-07-18",
+      "views": "76",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 25,
+      "uid": "233",
+      "disease": "어지럼증",
+      "title": "오랜 두통이 한약과 상담치료로 호전되었어요.",
+      "content": "두통이 오랜 기간 있었는데 두달정도 다니고 정말 많이 호전되었어요.\n\n제가 생각하는 것에 따라 많은 ...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69bd2007b2a684579841-130x130.jpg",
+      "date": "2026-03-20",
+      "views": "14",
+      "targetUrl": "https://www.healim.com/5-3"
+    }
+  ],
+  "adhd": [
+    {
+      "id": 24,
+      "uid": "234",
+      "disease": "ADHD",
+      "title": "ADHD로 힘들었던 아이가 한약치료로 좋아졌어요.",
+      "content": "아이가 ADHD 진단을 받은 후 꾸준히 약 먹고 치료 받은지 어느 덧 1년이 넘었네요~\n\n아이도 저도 힘든 ...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202604/69e03791e0b0f5960407-130x130.jpg",
+      "date": "2026-04-16",
+      "views": "16",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 36,
+      "uid": "222",
+      "disease": "ADHD",
+      "title": "충동성과 주의력결핍 ADHD 치료후기",
+      "content": "1.치료받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어주세요.\n\n \t심한 짜증\n \t무기력, 집중...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8db3314a896672629-130x130.png",
+      "date": "2026-01-27",
+      "views": "17",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 83,
+      "uid": "177",
+      "disease": "ADHD",
+      "title": "ADHD 주의력 저하로 한약치료하고 좋아졌어요.",
+      "content": "ADHD 주의력이 없어서 내원 했어요.\n\n3월달에 왔는데 한약 먹으면서 치료 같이 병행하니 빠르게 많이 좋...",
+      "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
+      "date": "2025-11-26",
+      "views": "15",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 101,
+      "uid": "159",
+      "disease": "ADHD",
+      "title": "소아강박증과 ADHD 모두 꾸준한 치료로 좋아질 수 있습니다",
+      "content": "치료전\n\n학교 담임 선생님과의 상담에서 아이가 집중을 못하고 선생님의 지시사항을 인지하지 못한다고 ...",
+      "img": "/images/reviews/review_5.jpg",
+      "date": "2025-11-24",
+      "views": "15",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 142,
+      "uid": "119",
+      "disease": "ADHD",
+      "title": "(ADHD후기) 한약치료로 아이의 분노조절이 잡혔고",
+      "content": "틱",
+      "img": "/images/reviews/review_4.jpg",
+      "date": "2021-12-27",
+      "views": "151",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 152,
+      "uid": "109",
+      "disease": "ADHD",
+      "title": "(20년 동경대 법대합격) 집중력저하, 편두통 치료",
+      "content": "(20년 동경대 법대합격) 집중력저하, 편두통 치료",
+      "img": "/images/reviews/review_2.jpg",
+      "date": "2020-05-01",
+      "views": "123",
+      "targetUrl": "https://www.healim.com/5-3"
+    }
+  ],
+  "ocd": [
+    {
+      "id": 4,
+      "uid": "254",
+      "disease": "강박증",
+      "title": "강박증 치료 후기 - 반신반의했던 생각에서 탁월한 선택을 했다고 생각합니다.",
+      "content": "1. 치료 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요.\na. 강박 증상 (생각 등)이...",
+      "img": "/images/reviews/review_4.jpg",
+      "date": "2026-09-14",
+      "views": "4",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 26,
+      "uid": "232",
+      "disease": "강박증",
+      "title": "치료받고 틱장애와 강박, 불안 증세가 좋아졌습니다.",
+      "content": "틱장애 증상이 너무 심해서 해아림한의원이 틱 치료 잘한다고 해서 소개받고 왔습니다.\n\n-머리는 심하게...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69ba6efa48c6d1629575-130x130.jpg",
+      "date": "2026-03-18",
+      "views": "31",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 89,
+      "uid": "171",
+      "disease": "강박증",
+      "title": "반복되는 생각과 떨림 속에서 벗어난 변화의 기록",
+      "content": "처음에는 하루하루가 많이 힘들었어요. 손이 떨리고, 머릿속에서는 같은 생각이 계속 반복되다 보니 ...",
+      "img": "/images/reviews/review_5.jpg",
+      "date": "2025-11-25",
+      "views": "7",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 90,
+      "uid": "170",
+      "disease": "강박증",
+      "title": "불안과 강박으로 힘들었던 일상, 다시 제 자리로 돌아오기까지의 변화 기록",
+      "content": "치료받기 전에는 불안하고 부정적인 생각이 끊임없이 떠올라서 일상 자체가 많이 힘들었어요. 가족...",
+      "img": "/images/reviews/review_6.jpg",
+      "date": "2025-11-25",
+      "views": "16",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 100,
+      "uid": "160",
+      "disease": "강박증",
+      "title": "신체 증상 위주의 소아기 불안 문제와 강박적 사고 한의학으로 접근 가능합니다",
+      "content": "치료전\n\n작년 2월 코로나 이후 이유없는 복통, 갑자기 찾아오는 불안, 식욕부진으로 아이가 살도 많이 ...",
+      "img": "/images/reviews/review_4.jpg",
+      "date": "2025-11-24",
+      "views": "5",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 101,
+      "uid": "159",
+      "disease": "강박증",
+      "title": "소아강박증과 ADHD 모두 꾸준한 치료로 좋아질 수 있습니다",
+      "content": "치료전\n\n학교 담임 선생님과의 상담에서 아이가 집중을 못하고 선생님의 지시사항을 인지하지 못한다고 ...",
+      "img": "/images/reviews/review_5.jpg",
+      "date": "2025-11-24",
+      "views": "15",
+      "targetUrl": "https://www.healim.com/5-3"
+    }
+  ],
+  "anxiety-disorder": [
+    {
+      "id": 11,
+      "uid": "247",
+      "disease": "불안장애",
+      "title": "불안장애 치료후기 - 두근거림과 긴장을 덜 하게 되어 불안감이 많이 없어졌습니다.",
+      "content": "간호사 분들 모두 친절하게 설명을 해주시고, 원장님께서 저의 몸 상태를 주기적으로 체크해주시면...",
+      "img": "/images/reviews/review_5.jpg",
+      "date": "2026-09-11",
+      "views": "4",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 12,
+      "uid": "246",
+      "disease": "불안장애",
+      "title": "불안장애 치료후기 - 일상을 회복한 것이 가장 좋습니다. 요즘 많이 웃어요.",
+      "content": "직원 분들이 모두 친절하시고 약 챙겨 먹는 주기를 꼼꼼하게 살펴주셔서 마음이 편합니다. 상담이 ...",
+      "img": "/images/reviews/review_6.jpg",
+      "date": "2026-09-11",
+      "views": "8",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 17,
+      "uid": "241",
+      "disease": "불안장애",
+      "title": "누워서만 지낼만큼 온 몸이 몸살 난 것처럼 아프고 불안했는데, 치료 후 행복함을 느낍니다.",
+      "content": "치료를 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요.\n\n아침에 눈뜨면 몸이 긴...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202607/6a50b39e9e9bd9633328-130x130.jpg",
+      "date": "2026-07-10",
+      "views": "20",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 20,
+      "uid": "238",
+      "disease": "불안장애",
+      "title": "불안 장애와 화병 치료 후 눈에 띄게 안정된 몸과 마음",
+      "content": "치료전\n\n자주 불안감과 예민함이 강하게 찾아와서 회를 많이 내거나 욱한 후에 후회하는 행동을 반복했...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202605/6a0fbc8aa75df1864074-130x130.jpg",
+      "date": "2026-05-22",
+      "views": "14",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 62,
+      "uid": "198",
+      "disease": "불안장애",
+      "title": "마음이 열리면서 몸도 편해졌어요 - 대인기피증과 불안장애 극복기",
+      "content": "치료전\n\n불안감으로 인해 잠을 잘 자지 못하였음\n불규칙한 생리주기\n잦은 두통\n주변 사람들과 모르는 사...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8f38b26f9e9224226-130x130.jpg",
+      "date": "2025-12-19",
+      "views": "14",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 90,
+      "uid": "170",
+      "disease": "불안장애",
+      "title": "불안과 강박으로 힘들었던 일상, 다시 제 자리로 돌아오기까지의 변화 기록",
+      "content": "치료받기 전에는 불안하고 부정적인 생각이 끊임없이 떠올라서 일상 자체가 많이 힘들었어요. 가족...",
+      "img": "/images/reviews/review_6.jpg",
+      "date": "2025-11-25",
+      "views": "16",
+      "targetUrl": "https://www.healim.com/5-3"
+    }
+  ],
+  "hyperhidrosis": [
+    {
+      "id": 44,
+      "uid": "214",
+      "disease": "다한증",
+      "title": "손발 다한증 치료한 후기",
+      "content": "1.치료받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어주세요.\n\n \t시험을 치거나 중요서류 작...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dbed5dbe72415886-130x130.png",
+      "date": "2026-01-14",
+      "views": "18",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 46,
+      "uid": "212",
+      "disease": "다한증",
+      "title": "손발겨드랑이 다한증 치료후기",
+      "content": "1.치료받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어주세요.\n\n \t손, 발에 땀이 많이나서 사...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dc333e7b77410487-130x130.png",
+      "date": "2026-01-12",
+      "views": "10",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 48,
+      "uid": "210",
+      "disease": "다한증",
+      "title": "꾸준한 한약 복용으로 치료한 손발 다한증",
+      "content": "1.치료받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어주세요.\n\n \t시험 볼때마다 시험지가 땀...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dc74b1f337616329-130x130.png",
+      "date": "2026-01-07",
+      "views": "15",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 53,
+      "uid": "205",
+      "disease": "다한증",
+      "title": "올바른 생활습관과 한약치료로 손발 다한증 개선",
+      "content": "1.치료받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어주세요.\n\n \t손발에 있는 땀으로 물건을...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dd29371623645205-130x130.png",
+      "date": "2025-12-30",
+      "views": "5",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 54,
+      "uid": "204",
+      "disease": "다한증",
+      "title": "손 다한증으로 학업중 노트가 젖음",
+      "content": "1. 치료받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어주세요.\n\n \t손발시림증상\n \t학업 중 ...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dd45308372291295-130x130.png",
+      "date": "2025-12-29",
+      "views": "10",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 64,
+      "uid": "196",
+      "disease": "다한증",
+      "title": "다한증 치료로 자신감 회복",
+      "content": "1.치료받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어주세요.\n\n \t자신감이 없어지고 소심해...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8de1fcae888078559-130x130.png",
+      "date": "2025-12-19",
+      "views": "8",
+      "targetUrl": "https://www.healim.com/5-3"
+    }
+  ],
+  "social-phobia": [
+    {
+      "id": 85,
+      "uid": "175",
+      "disease": "대인기피",
+      "title": "대인기피증과 무기력으로 힘들던 일상, 치료 후 달라진 변화들",
+      "content": "치료를 받기 전에는 밤에 잠이 들려고 누우면 온몸이 굳고, 몸이 갑자기 굉장히 무거워지는 느낌이 들...",
+      "img": "/images/reviews/review_1.jpg",
+      "date": "2025-11-25",
+      "views": "6",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 86,
+      "uid": "174",
+      "disease": "대인기피",
+      "title": "대인기피증으로 힘들던 일상, 이렇게 달라질 줄 몰랐어요",
+      "content": "치료를 받기 전에는 사람들 앞에서 말하는 것이 너무 두렵고, 누가 나를 이상하게 보진 않을까 하는 ...",
+      "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
+      "date": "2025-11-25",
+      "views": "10",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 108,
+      "uid": "152",
+      "disease": "대인기피",
+      "title": "공황장애로 인한 대인기피증 꾸준한 상담과 치료로 극복가능합니다.",
+      "content": "치료전\n\n \n\n대중교통을 이용하면 심장이 두근거리고 긴장과 함께 뛰쳐내리고 싶은 충동이 일었음. 사람...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202511/69240931bec9d2307390-130x130.jpg",
+      "date": "2025-11-24",
+      "views": "10",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 57,
+      "uid": "201",
+      "disease": "대인기피",
+      "title": "업무로 인한 대인기피 불안장애 회복",
+      "content": "1.치료받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어주세요.\n\n \t업무 중 답답함\n \t불안증세...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dda09355e3786385-130x130.png",
+      "date": "2025-12-23",
+      "views": "5",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 62,
+      "uid": "198",
+      "disease": "대인기피",
+      "title": "마음이 열리면서 몸도 편해졌어요 - 대인기피증과 불안장애 극복기",
+      "content": "치료전\n\n불안감으로 인해 잠을 잘 자지 못하였음\n불규칙한 생리주기\n잦은 두통\n주변 사람들과 모르는 사...",
+      "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8f38b26f9e9224226-130x130.jpg",
+      "date": "2025-12-19",
+      "views": "14",
+      "targetUrl": "https://www.healim.com/5-3"
+    },
+    {
+      "id": 99,
+      "uid": "161",
+      "disease": "대인기피",
+      "title": "헛구역질 등 신체 증상을 동반한 사회공포증(사회불안장애) 치료 후기",
+      "content": "치료 전\n\n긴장 :  사람들 앞에 세면, 사람들의 시선을 심하게 의식하여 심장이 두근거리고 심하게 긴장...",
+      "img": "/images/reviews/review_3.jpg",
+      "date": "2025-11-24",
+      "views": "12",
+      "targetUrl": "https://www.healim.com/5-3"
+    }
+  ]
+}

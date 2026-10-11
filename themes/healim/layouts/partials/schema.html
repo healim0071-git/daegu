@@ -1,0 +1,59 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["MedicalClinic", "LocalBusiness"],
+      "@id": "{{ .Site.BaseURL }}#clinic",
+      "name": "해아림한의원 대구본점",
+      "alternateName": "Healim Korean Medicine Clinic Daegu",
+      "url": "{{ .Site.BaseURL }}",
+      "telephone": "+82-53-751-0071",
+      "description": "{{ .Site.Params.description }}",
+      "medicalSpecialty": "Psychiatric",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "달구벌대로 2435 두산위브 상가 3층",
+        "addressLocality": "수성구",
+        "addressRegion": "대구광역시",
+        "postalCode": "42095",
+        "addressCountry": "KR"
+      },
+      "hasMap": "https://naver.me/FDQX9ZIr",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Friday"],
+          "opens": "12:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "11:00",
+          "closes": "16:00"
+        }
+      ],
+      "areaServed": [
+        {"@type": "AdministrativeArea", "name": "대구광역시"},
+        {"@type": "AdministrativeArea", "name": "수성구"},
+        {"@type": "AdministrativeArea", "name": "달서구"},
+        {"@type": "AdministrativeArea", "name": "경산시"},
+        {"@type": "AdministrativeArea", "name": "구미시"},
+        {"@type": "AdministrativeArea", "name": "포항시"},
+        {"@type": "AdministrativeArea", "name": "경주시"},
+        {"@type": "AdministrativeArea", "name": "안동시"}
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": "{{ .Site.BaseURL }}#physician",
+      "name": "김대억",
+      "jobTitle": ["대표원장", "한방신경정신과 박사"],
+      "worksFor": {"@id": "{{ .Site.BaseURL }}#clinic"},
+      "description": "해아림한의원 대구본점 대표원장, 『토닥토닥 틱장애』, 『걱정마 공황장애』 저자",
+      "knowsAbout": ["틱장애", "ADHD", "공황장애", "불안장애", "자율신경실조증", "불면증", "강박증", "다한증", "사회공포증", "어지럼증"]
+    }
+  ]
+}
+</script>

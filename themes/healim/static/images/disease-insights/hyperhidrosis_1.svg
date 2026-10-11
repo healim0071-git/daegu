@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad_bg_24" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0369A1" />
+      <stop offset="100%" stop-color="#082F49" />
+    </linearGradient>
+    <linearGradient id="grad_motif_24" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0369A1" stop-opacity="0.4" />
+    </linearGradient>
+    <pattern id="grid_24" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="300" fill="url(#grad_bg_24)" />
+  <rect width="500" height="300" fill="url(#grid_24)" />
+
+  <!-- Ambient light glow -->
+  <circle cx="360" cy="150" r="130" fill="#38BDF8" opacity="0.12" filter="blur(30px)" />
+  <circle cx="80" cy="60" r="90" fill="#38BDF8" opacity="0.08" filter="blur(20px)" />
+
+  <!-- Left Content Block -->
+  <g transform="translate(36, 48)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="170" height="26" rx="13" fill="rgba(56,189,248,0.18)" stroke="#38BDF8" stroke-width="1.2" />
+    <circle cx="12" cy="13" r="3.5" fill="#38BDF8" />
+    <text x="24" y="17" fill="#BAE6FD" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="700" letter-spacing="-0.2px">정서적 발한 신호</text>
+
+    <!-- Title -->
+    <text x="0" y="65" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="20" font-weight="800" letter-spacing="-0.5px">
+      시상하부 발한 중추 자극
+    </text>
+
+    <!-- Subtitle (word wrapped) -->
+    <text x="0" y="98" fill="rgba(255,255,255,0.72)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12.5" font-weight="500" line-height="1.5">
+      긴장이나 온도 변화에 교감신경이 과민 반응하
+    </text>
+    <text x="0" y="118" fill="rgba(255,255,255,0.72)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12.5" font-weight="500">
+      는 원인 분석
+    </text>
+
+    <!-- Clinical Spec Pill -->
+    <g transform="translate(0, 150)">
+      <rect x="0" y="0" width="135" height="22" rx="4" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+      <text x="10" y="15" fill="rgba(255,255,255,0.85)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="600">
+        HEALIM CLINICAL LAB
+      </text>
+    </g>
+  </g>
+
+  <!-- Right Motif Illustration -->
+  
+        <g transform="translate(340, 150)">
+          <!-- Hypothalamus to sweat droplet -->
+          <circle cx="0" cy="-40" r="14" fill="#38BDF8"/>
+          <path d="M0,-26 L0,0" stroke="#38BDF8" stroke-width="3" stroke-dasharray="3,3"/>
+          <!-- Droplet -->
+          <path d="M0,5 C-18,25 -15,45 0,45 C15,45 18,25 0,5 Z" fill="url(#grad_motif_24)"/>
+          <path d="M-4,25 Q-8,35 0,40" stroke="#FFF" stroke-width="2" stroke-linecap="round" fill="none"/>
+        </g>
+        
+</svg>

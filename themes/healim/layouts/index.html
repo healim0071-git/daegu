@@ -1,0 +1,512 @@
+{{ define "main" }}
+<!-- ── 메인 히어로 섹션 (공식 로고 + 정돈된 위계) ── -->
+<section class="hero-section">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <img src="/images/logo-full.png" alt="해아림 로고" class="hero-badge-icon">
+        <span>해아림 네트워크 본점 · 16년 한방신경정신과 임상</span>
+      </div>
+      <div class="hero-quote-intro">
+        "내 의지나 성격 탓이 아닙니다"
+      </div>
+      <h1 class="hero-title">
+        두뇌 <span class="gradient-text">자생력</span>을 깨우는<br>
+        <span class="highlight-text">1:1 심층 한방치료</span>
+      </h1>
+      <p class="hero-desc">
+        틱장애·ADHD부터 숨 막히는 공황과 불안, 잠 못 드는 밤까지.<br>
+        강제 억제가 아닌 스스로 통제하고 조율하는 뇌신경계의 힘을 길러드립니다.
+      </p>
+      <div class="hero-buttons">
+        <a href="tel:053-751-0071" class="btn-primary">
+          <span class="btn-icon">📞</span> 전화 상담 예약 (053-751-0071)
+        </a>
+        <a href="#specialties" class="btn-secondary">
+          10대 특화 질환 보기 ↓
+        </a>
+      </div>
+
+      <!-- 3대 신뢰 지표 바 (정돈된 3단 카드) -->
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-num">16<small>년</small></span>
+          <span class="stat-lbl">한방신경정신 임상 노하우</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">2<small>권</small></span>
+          <span class="stat-lbl">질환별 단행본 저서 집필</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">100<small>%</small></span>
+          <span class="stat-lbl">사전 전화예약 심층진료</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 우측 김대억 대표원장 프로필 카드 & 입체 인물 배치 -->
+    <div class="hero-card-col">
+      <!-- 김대억 대표원장 강연 포즈 입체 피규어 (헤드라인을 가리키는 제스처) -->
+      <div class="hero-dr-figure" aria-hidden="true">
+        <div class="hero-dr-bubble">
+          <span class="bubble-spark">💡</span>
+          <span class="bubble-txt">원인을 알면 뇌는 회복됩니다</span>
+        </div>
+        <img src="/images/dr-kim-hero.png?v=2" alt="김대억 대표원장" class="hero-dr-img" loading="lazy">
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-header">
+          <span class="doctor-badge">한방신경정신과 박사 · 2권의 단행본 저자</span>
+          <h2 class="doctor-name">김대억 대표원장 직접 진료</h2>
+          <p class="doctor-spec">해아림한의원 네트워크 본점 대표원장</p>
+        </div>
+        <div class="doctor-books-showcase">
+          <!-- 책 1: 토닥토닥 틱장애 -->
+          <a href="https://product.kyobobook.co.kr/detail/S000001851814" target="_blank" rel="noopener noreferrer" class="hero-book-card" title="교보문고에서 도서 상세정보 보기">
+            <div class="book-3d-wrap">
+              <img src="/images/books/book_tic_official.jpg" alt="토닥토닥 틱장애 책 표지" class="book-cover-img" loading="lazy">
+              <div class="book-spine"></div>
+            </div>
+            <div class="book-info">
+              <strong class="book-name">『토닥토닥 틱장애』</strong>
+              <p class="book-desc">슬기로운 ADHD·틱장애 완치 지침서</p>
+              <span class="book-link-btn">교보문고 도서정보 <span class="arrow">↗</span></span>
+            </div>
+          </a>
+
+          <!-- 책 2: 걱정마 공황장애 -->
+          <a href="https://product.kyobobook.co.kr/detail/S000212414668" target="_blank" rel="noopener noreferrer" class="hero-book-card" title="교보문고에서 도서 상세정보 보기">
+            <div class="book-3d-wrap">
+              <img src="/images/books/book_panic_official.jpg" alt="걱정마 공황장애 책 표지" class="book-cover-img" loading="lazy">
+              <div class="book-spine"></div>
+            </div>
+            <div class="book-info">
+              <strong class="book-name">『걱정마 공황장애』</strong>
+              <p class="book-desc">불안·자율신경·공황장애 극복 가이드</p>
+              <span class="book-link-btn">교보문고 도서정보 <span class="arrow">↗</span></span>
+            </div>
+          </a>
+        </div>
+        <blockquote class="doctor-quote">
+          "마음의 병은 결코 참는다고 해결되지 않습니다. 뇌 신경망과 자율신경계가 외부 스트레스를 완충할 수 있는 회복력을 선물하겠습니다."
+        </blockquote>
+        <div class="hero-card-footer">
+          <span class="footer-chip">※ 100% 사전 전화예약 심층 진료제</span>
+          <span class="location-chip">📍 범어역 두산위브 3층 (무료주차)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== -->
+<!-- 김대억 대표원장 교육청·초등학교·학부모 역량개발 초청 강연 벤토 그리드 섹션 -->
+<!-- ============================================================== -->
+<section class="lecture-authority-section" id="lectures">
+  <div class="container">
+    <div class="section-header text-center lecture-header">
+      <span class="sub-badge">PUBLIC LECTURES & REPUTATION</span>
+      <h2 class="section-title">강연과 교육 현장에서 쌓아온 뇌신경계 전문성</h2>
+      <p class="section-desc">
+        대구시 교육청과 경남 교육청, 시민단체, 초등학교 학부모 대상 초청 강연을 통해 뇌 발달과 감정 조절에 대한 이해를 넓히고, 교육 현장에서 활용할 수 있는 실질적인 접근법을 꾸준히 전해왔습니다.
+      </p>
+      
+      <!-- 권위 입증 리본 뱃지 -->
+      <div class="lecture-badges-ribbon">
+        <span class="lecture-ribbon-item">
+          <span class="ribbon-icon">🏛️</span> 시·도 교육청 및 시민단체 주관 부모교육 특강
+        </span>
+        <span class="lecture-ribbon-item">
+          <span class="ribbon-icon">🏫</span> 초등학교 학부모 역량강화 연수 다수 출강
+        </span>
+        <span class="lecture-ribbon-item">
+          <span class="ribbon-icon">🧠</span> 『토닥토닥 틱장애』 · 『걱정마 공황장애』 저자 직강
+        </span>
+        <span class="lecture-ribbon-item">
+          <span class="ribbon-icon">✨</span> 16년 한방신경정신과 임상 노하우 전수
+        </span>
+      </div>
+    </div>
+
+    <!-- 비대칭 에디토리얼 벤토 그리드 (Asymmetric Bento Grid) -->
+    <div class="lecture-bento-grid">
+      
+      <!-- [상단 행 7:5 분할] 대형 앵커 쇼케이스 + 2단 스택 -->
+      <div class="lecture-bento-row-top">
+        
+        <!-- 1. 메인 대형 앵커 카드 (교육청 & 지자체 대강당 부모교육) -->
+        <article class="lecture-bento-card card-hero-feature">
+          <div class="lecture-img-wrap">
+            <img src="/images/lecture/lecture-grand-auditorium.jpg" alt="김대억 대표원장 교육청 대강당 학습클리닉 마음클리닉 학부모 특강" loading="lazy">
+          </div>
+          <div class="lecture-scrim"></div>
+          <div class="lecture-card-content">
+            <div class="lecture-badge-glass badge-gold">
+              <span>🏛️ 교육청 & 시민단체 대강당 초청 특강</span>
+            </div>
+            <div class="lecture-bottom-meta">
+              <div class="lecture-sub-title">대규모 부모교육 세미나 · 수백 명 청중과 함께한 치유 현장</div>
+              <h3 class="lecture-main-title">학습클리닉 & 마음클리닉: 뇌신경 불균형과 감정 치유의 본질</h3>
+              <p class="lecture-desc-text">
+                ADHD·틱장애·공황장애·불안장애로 힘들어하는 아이와 부모를 위해, 대형 강당에서 뇌신경 조절 메커니즘과 가정 내 실천적 치유 방향을 제시했습니다.
+              </p>
+              <div class="lecture-tags">
+                <span class="lecture-tag-chip">#대강당특강</span>
+                <span class="lecture-tag-chip">#학습클리닉</span>
+                <span class="lecture-tag-chip">#마음클리닉</span>
+                <span class="lecture-tag-chip">#부모교육</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 우측 2단 스택 카드 -->
+        <div class="lecture-card-stack">
+          
+          <!-- 2. 컨벤션홀 뇌 기능 MRI 분석 강연 -->
+          <article class="lecture-bento-card card-stack-item">
+            <div class="lecture-img-wrap">
+              <img src="/images/lecture/lecture-convention-brain.jpg" alt="김대억 원장 뇌 MRI 신경영상 학술 강연" loading="lazy">
+            </div>
+            <div class="lecture-scrim"></div>
+            <div class="lecture-card-content">
+              <div class="lecture-badge-glass">
+                <span>🔬 뇌 기능 분석 학술 강연</span>
+              </div>
+              <div class="lecture-bottom-meta">
+                <div class="lecture-sub-title">fMRI 뇌신경망 시각화 분석</div>
+                <h3 class="lecture-main-title">뇌 영상으로 입증하는 신경망 조절 메커니즘</h3>
+                <div class="lecture-tags">
+                  <span class="lecture-tag-chip">#컨벤션홀</span>
+                  <span class="lecture-tag-chip">#뇌기능분석</span>
+                  <span class="lecture-tag-chip">#신경과학</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. 학부모 역량개발 감정코칭 강연 -->
+          <article class="lecture-bento-card card-stack-item">
+            <div class="lecture-img-wrap">
+              <img src="/images/lecture/lecture-parents-emotion.jpg" alt="김대억 원장 주의집중력과 자기조절을 위한 학부모 감정코칭 강연" loading="lazy">
+            </div>
+            <div class="lecture-scrim"></div>
+            <div class="lecture-card-content">
+              <div class="lecture-badge-glass badge-emerald badge-right">
+                <span>💡 학부모 역량개발 코칭</span>
+              </div>
+              <div class="lecture-bottom-meta">
+                <div class="lecture-sub-title">주의집중력과 자기조절력 회복 솔루션</div>
+                <h3 class="lecture-main-title">주의집중력과 감정조절을 위한 학부모 코칭</h3>
+                <div class="lecture-tags">
+                  <span class="lecture-tag-chip">#학부모연수</span>
+                  <span class="lecture-tag-chip">#주의집중력</span>
+                  <span class="lecture-tag-chip">#감정코칭</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- [하단 행 1:1 분할] 초등학교 두뇌학습 특강 + 생활 속 뇌 건강 솔루션 -->
+      <div class="lecture-bento-row-bottom">
+        
+        <!-- 4. 초등학교 초청 두뇌학습 특강 -->
+        <article class="lecture-bento-card card-bottom-col">
+          <div class="lecture-img-wrap">
+            <img src="/images/lecture/lecture-school-study.jpg" alt="김대억 원장 초등학교 초청 두뇌학습 뇌 발달 강연" loading="lazy">
+          </div>
+          <div class="lecture-scrim"></div>
+          <div class="lecture-card-content">
+            <div class="lecture-badge-glass">
+              <span>🏫 초등학교 초청 두뇌학습 특강</span>
+            </div>
+            <div class="lecture-bottom-meta">
+              <div class="lecture-sub-title">공부와 두뇌 · 성장기 두뇌 발달 곡선</div>
+              <h3 class="lecture-main-title">두뇌 발달 주기와 제대로 된 공부의 뇌과학적 원리</h3>
+              <p class="lecture-desc-text">
+                초등기 아동의 뇌 발달 메커니즘을 뇌 MRI 사진과 함께 설명하며, 학업 스트레스로 인한 틱장애·불안 조기 예방 가이드를 전했습니다.
+              </p>
+              <div class="lecture-tags">
+                <span class="lecture-tag-chip">#초등학교강연</span>
+                <span class="lecture-tag-chip">#두뇌학습</span>
+                <span class="lecture-tag-chip">#학습스트레스완화</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5. 경남교육청 교직원 연수: 스트레스 시대, 뇌와 신경 지키는 법 -->
+        <article class="lecture-bento-card card-bottom-col">
+          <div class="lecture-img-wrap">
+            <img src="/images/lecture/lecture-gyeongnam-edu.jpg?v=2" alt="김대억 대표원장 경남교육청 교직원 연수 - 스트레스 시대, 뇌와 신경 지키는 법 강연" loading="lazy" style="object-position: center center;">
+          </div>
+          <div class="lecture-scrim"></div>
+          <div class="lecture-card-content">
+            <div class="lecture-badge-glass badge-emerald">
+              <span>🏫 경남교육청 교직원 연수</span>
+            </div>
+            <div class="lecture-bottom-meta">
+              <div class="lecture-sub-title">교육청 주관 교직원 힐링 및 직무연수 특강</div>
+              <h3 class="lecture-main-title">스트레스 시대, 뇌와 신경 지키는 법</h3>
+              <p class="lecture-desc-text">
+                과도한 업무와 만성 스트레스로 지친 교직원을 위해, 자율신경실조증과 뇌신경계 과열을 예방하고 일상 속 심신 밸런스를 회복하는 실전 의학 솔루션을 전했습니다.
+              </p>
+              <div class="lecture-tags">
+                <span class="lecture-tag-chip">#경남교육청연수</span>
+                <span class="lecture-tag-chip">#교직원힐링특강</span>
+                <span class="lecture-tag-chip">#스트레스와뇌신경</span>
+                <span class="lecture-tag-chip">#자율신경안정</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- 하단 원장님 신뢰 메시지 인용 배너 -->
+    <div class="lecture-quote-banner">
+      <div class="lecture-quote-icon">❝</div>
+      <div class="lecture-quote-body">
+        <blockquote>
+          "아이와 환자가 겪는 뇌신경계 질환은 결코 개인의 의지 박약이나 부모의 잘못이 아닙니다.<br>뇌와 신경계가 과열되어 보내는 SOS 신호의 본질을 정확히 이해하고 공감할 때, 비로소 참된 치유와 일상 회복이 시작됩니다."
+        </blockquote>
+        <cite>— 해아림한의원 대구본점 대표원장 김대억 (한방신경정신과 박사 · 교육청 및 학부모 역량개발 전문 강사)</cite>
+      </div>
+    </div>
+
+    <!-- 주요 방송 출연 및 언론 자문 아카이브 (A 위치: 공간 절약형 컴팩트 스트립) -->
+    <div class="broadcast-media-strip">
+      <div class="broadcast-strip-header">
+        <span class="broadcast-sub-badge">MEDIA &amp; BROADCAST</span>
+        <h4 class="broadcast-strip-title">주요 방송 출연 및 의학 자문</h4>
+        <span class="broadcast-strip-desc">MBC · KBS · PBC 등 공중파 및 주요 방송을 통해 올바른 뇌신경계 의학 정보를 전해왔습니다.</span>
+      </div>
+
+      <div class="broadcast-strip-grid">
+        <!-- 1. MBC -->
+        <div class="broadcast-card">
+          <div class="broadcast-thumb-wrap">
+            <img src="/images/media/broadcast-mbc.jpg" alt="김대억 원장 MBC TV 방송 인터뷰" loading="lazy">
+            <span class="broadcast-tag-badge tag-mbc">MBC TV</span>
+          </div>
+          <div class="broadcast-meta">
+            <strong class="broadcast-show">MBC TV 의료 자문</strong>
+            <p class="broadcast-desc">약식동원(藥食同源)과 신경정신 질환의 한의학 치료 원리 인터뷰</p>
+          </div>
+        </div>
+
+        <!-- 2. KBS -->
+        <div class="broadcast-card">
+          <div class="broadcast-thumb-wrap">
+            <img src="/images/media/broadcast-kbs.jpg" alt="김대억 한의사 KBS 생방송 행복발견 오늘 출연" loading="lazy">
+            <span class="broadcast-tag-badge tag-kbs">KBS 대구</span>
+          </div>
+          <div class="broadcast-meta">
+            <strong class="broadcast-show">KBS 생방송 행복발견 오늘</strong>
+            <p class="broadcast-desc">소아청소년 두뇌 건강 및 신경정신과 질환 한의학 건강 상담 출연</p>
+          </div>
+        </div>
+
+        <!-- 3. PBC -->
+        <div class="broadcast-card">
+          <div class="broadcast-thumb-wrap">
+            <img src="/images/media/broadcast-pbc.jpg" alt="김대억 원장 PBC 가톨릭평화방송 라디오 ON AIR 스튜디오 출연" loading="lazy">
+            <span class="broadcast-tag-badge tag-pbc">PBC 라디오</span>
+          </div>
+          <div class="broadcast-meta">
+            <strong class="broadcast-show">PBC 가톨릭평화방송 라디오</strong>
+            <p class="broadcast-desc">라디오 건강 프로그램 뇌신경 질환 및 마음 치유 생방송 상담</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── 10대 특화 질환 섹션 (정돈된 5x2 반응형 카드 그리드) ── -->
+<section class="specialties-section" id="specialties">
+  <div class="container">
+    <div class="section-header text-center">
+      <span class="sub-badge">10 SPECIAL CONDITIONS</span>
+      <h2 class="section-title">해아림한의원 대구본점 10대 특화 진료</h2>
+      <p class="section-desc">질환별 실제 환자 질문 BEST 3와 정밀 원인 조율 프로세스를 확인하세요.</p>
+    </div>
+    <div class="specialties-grid">
+      <!-- 01. 틱장애 & 뚜렛 -->
+      <a href="/tic-disorder/" class="specialty-card">
+        <div class="card-top">
+          <span class="card-cat">소아·청소년</span>
+          <span class="card-num">01</span>
+        </div>
+        <div class="card-icon">🧠</div>
+        <h3>틱장애 & 뚜렛</h3>
+        <p>운동틱·음성틱, 소아부터 성인 틱까지 뇌 기저핵 억제 기능 회복</p>
+        <span class="card-link">자세히 보기 <span class="arr">→</span></span>
+      </a>
+
+      <!-- 02. ADHD -->
+      <a href="/adhd/" class="specialty-card">
+        <div class="card-top">
+          <span class="card-cat">소아·성인</span>
+          <span class="card-num">02</span>
+        </div>
+        <div class="card-icon">🎯</div>
+        <h3>ADHD</h3>
+        <p>산만함과 충동성, 성인 실행장애까지 전두엽 도파민 회로 활성화</p>
+        <span class="card-link">자세히 보기 <span class="arr">→</span></span>
+      </a>
+
+      <!-- 03. 공황장애 -->
+      <a href="/panic-disorder/" class="specialty-card">
+        <div class="card-top">
+          <span class="card-cat">불안·공포</span>
+          <span class="card-num">03</span>
+        </div>
+        <div class="card-icon">💓</div>
+        <h3>공황장애</h3>
+        <p>심계항진, 과호흡, 예기불안, 광장공포증 편도체 안정 치료</p>
+        <span class="card-link">자세히 보기 <span class="arr">→</span></span>
+      </a>
+
+      <!-- 04. 불안장애 -->
+      <a href="/anxiety-disorder/" class="specialty-card">
+        <div class="card-top">
+          <span class="card-cat">정서·신체화</span>
+          <span class="card-num">04</span>
+        </div>
+        <div class="card-icon">🌿</div>
+        <h3>불안장애</h3>
+        <p>만성 초조, 범불안, 신체화 긴장(두통·소화불량) 심담 강화</p>
+        <span class="card-link">자세히 보기 <span class="arr">→</span></span>
+      </a>
+
+      <!-- 05. 자율신경실조증 -->
+      <a href="/dysautonomia/" class="specialty-card">
+        <div class="card-top">
+          <span class="card-cat">신경계 불균형</span>
+          <span class="card-num">05</span>
+        </div>
+        <div class="card-icon">⚖️</div>
+        <h3>자율신경실조증</h3>
+        <p>원인 불명의 어지럼증, 상열하한, 만성 무기력 조율</p>
+        <span class="card-link">자세히 보기 <span class="arr">→</span></span>
+      </a>
+
+      <!-- 06. 불면증 & 수면장애 -->
+      <a href="/insomnia/" class="specialty-card">
+        <div class="card-top">
+          <span class="card-cat">수면 리듬</span>
+          <span class="card-num">06</span>
+        </div>
+        <div class="card-icon">🌙</div>
+        <h3>불면증 & 수면장애</h3>
+        <p>수면제 의존 없는 자연 수면 리듬 및 멜라토닌 정상화</p>
+        <span class="card-link">자세히 보기 <span class="arr">→</span></span>
+      </a>
+
+      <!-- 07. 강박증 -->
+      <a href="/ocd/" class="specialty-card">
+        <div class="card-top">
+          <span class="card-cat">사고·행동</span>
+          <span class="card-num">07</span>
+        </div>
+        <div class="card-icon">🔄</div>
+        <h3>강박증</h3>
+        <p>침습적 사고와 반복 확인 행동, 안와전두엽 신경회로 조절</p>
+        <span class="card-link">자세히 보기 <span class="arr">→</span></span>
+      </a>
+
+      <!-- 08. 다한증 -->
+      <a href="/hyperhidrosis/" class="specialty-card">
+        <div class="card-top">
+          <span class="card-cat">교감신경 항진</span>
+          <span class="card-num">08</span>
+        </div>
+        <div class="card-icon">💧</div>
+        <h3>다한증</h3>
+        <p>수술 없는 수족·안면 다한증, 교감신경 과흥분 조절</p>
+        <span class="card-link">자세히 보기 <span class="arr">→</span></span>
+      </a>
+
+      <!-- 09. 대인기피증 -->
+      <a href="/social-phobia/" class="specialty-card">
+        <div class="card-top">
+          <span class="card-cat">사회적 공포</span>
+          <span class="card-num">09</span>
+        </div>
+        <div class="card-icon">👥</div>
+        <h3>대인기피증</h3>
+        <p>발표불안, 시선공포, 무대떨림, 사회적 안도감 회복</p>
+        <span class="card-link">자세히 보기 <span class="arr">→</span></span>
+      </a>
+
+      <!-- 10. 어지럼증 & 두통 -->
+      <a href="/dizziness/" class="specialty-card">
+        <div class="card-top">
+          <span class="card-cat">전정·두경부</span>
+          <span class="card-num">10</span>
+        </div>
+        <div class="card-icon">🌀</div>
+        <h3>어지럼증 & 두통</h3>
+        <p>이석증 후 잔여 어지럼, 심인성·자율신경성 어지럼 전정 회복</p>
+        <span class="card-link">자세히 보기 <span class="arr">→</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── 해아림 4대 심층 치료 시스템 ── -->
+<section class="treatment-system-section">
+  <div class="container">
+    <div class="section-header text-center">
+      <span class="sub-badge">HEALIM 4-STEP SYSTEM</span>
+      <h2 class="section-title">원인 분석부터 자생력 회복까지</h2>
+      <p class="section-desc">단순 대증 치료를 넘어 인체 본연의 신경 완충력을 되찾아주는 해아림 심층 치료 솔루션</p>
+    </div>
+    <div class="system-grid">
+      <div class="system-card">
+        <div class="sys-card-header">
+          <span class="sys-step">STEP 01</span>
+          <span class="sys-icon">🔬</span>
+        </div>
+        <h4>정밀 원인 진단</h4>
+        <p>생기능자기조절검사, 자율신경계 균형 검사, 뇌파 및 심층 문진을 통한 다각도 원인 파악</p>
+      </div>
+      <div class="system-card">
+        <div class="sys-card-header">
+          <span class="sys-step">STEP 02</span>
+          <span class="sys-icon">🌿</span>
+        </div>
+        <h4>1:1 맞춤 한약 처방</h4>
+        <p>개인별 장부 허실과 뇌신경계 과열을 다스리고 두뇌 혈류를 개선하는 친환경 맞춤 탕약</p>
+      </div>
+      <div class="system-card">
+        <div class="sys-card-header">
+          <span class="sys-step">STEP 03</span>
+          <span class="sys-icon">⚡</span>
+        </div>
+        <h4>두뇌훈련 & 침구치료</h4>
+        <p>뉴로피드백, 소뇌기저핵 훈련 및 신경 안정 경혈 자극으로 뇌 스스로의 조절 피드백 강화</p>
+      </div>
+      <div class="system-card">
+        <div class="sys-card-header">
+          <span class="sys-step">STEP 04</span>
+          <span class="sys-icon">🛡️</span>
+        </div>
+        <h4>인지행동 & 재발 방지</h4>
+        <p>불안 악순환을 차단하는 인지이완 훈련과 일상 수면·식습관 코칭으로 장기적 안정 유지</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+{{ end }}

@@ -1,0 +1,210 @@
+{{ define "main" }}
+<div class="container disease-page-container">
+  <!-- ── 스크린샷 1: 대형 화이트 라운드 히어로 카드 ── -->
+  <section class="disease-hero-card">
+    <div class="hero-card-badge">
+      <span class="badge-icon">🛡</span>
+      <span>16여 년 임상 노하우 &amp; 전국 16개 네트워크</span>
+    </div>
+    
+    <div class="hero-card-sub">
+      {{ if .Params.hero_sub }}
+        <span>{{ .Params.hero_sub }}</span>
+      {{ else if in .Title "소개" }}
+        <span>의료진 소개 <span class="sub-sep">|</span> 해아림한의원 대구본점</span>
+      {{ else if in .Title "철학" }}
+        <span>진료철학 <span class="sub-sep">|</span> 해아림한의원 대구본점</span>
+      {{ else if in .Title "왜" }}
+        <span>차별화된 강점 <span class="sub-sep">|</span> 해아림한의원 대구본점</span>
+      {{ else if in .Title "칼럼" }}
+        <span>의학 칼럼 <span class="sub-sep">|</span> 해아림한의원 대구본점</span>
+      {{ else }}
+        <span>{{ .Title }} 집중치료 <span class="sub-sep">|</span> 해아림한의원</span>
+      {{ end }}
+    </div>
+
+    <h1 class="hero-card-title">
+      {{ if .Params.hero_title }}
+        {{ .Params.hero_title | safeHTML }}
+      {{ else if in .Title "소개" }}
+        한방신경정신과 박사 김대억 대표원장<br>
+        1:1 심층 진료로 마음의 자생력을 깨웁니다
+      {{ else if in .Title "철학" }}
+        몸과 마음을 함께 헤아리는<br>
+        해아림한의원 대구본점의 진료철학
+      {{ else if in .Title "왜" }}
+        왜, 수많은 분들이<br>
+        해아림한의원 대구본점을 선택하실까요?
+      {{ else if in .Title "칼럼" }}
+        김대억 대표원장의<br>
+        두뇌·신경계 심층 의학 칼럼
+      {{ else }}
+        16년 이상 {{ .Title }}를<br>
+        집중적으로 다뤄온<br>
+        해아림한의원 {{ .Title }}클리닉
+      {{ end }}
+    </h1>
+
+    <p class="hero-card-desc">
+      {{ with .Description }}{{ . }}{{ else }}일반 검사상 이상이 나타나지 않는 갑작스러운 신체화·자율신경 불균형 및 불안 증상을 뇌신경계와 자율신경 조절력의 관점에서 종합적으로 평가하고, 개인별 상태에 맞춰 치료합니다.{{ end }}
+    </p>
+
+    <div class="hero-card-actions">
+      <a href="https://healim.com" target="_blank" rel="noopener" class="btn-hero-solid">가까운 16개 지점 찾기 &gt;</a>
+      <a href="/treatment/" class="btn-hero-outline">정밀 검사 시스템 &gt;</a>
+    </div>
+
+    <!-- 배경 은은한 심볼 워터마크 -->
+    <div class="hero-card-watermark" aria-hidden="true"></div>
+  </section>
+
+  <!-- 본문 질환 상세 콘텐츠 -->
+  <article class="page-article content-typography">
+    <div class="doctor-supervision-bar">
+      <span class="supervision-badge">의료 감수</span>
+      <span class="supervision-name">해아림한의원 네트워크 본점 대표원장 <strong>김대억 박사</strong> (한방신경정신과 박사 / 2권의 단행본 저자)</span>
+    </div>
+
+    {{ .Content }}
+  </article>
+
+  <!-- ── 스크린샷 2 상단: 3열 카드 리스트 그리드 ── -->
+  {{ $diseaseKey := strings.Trim .RelPermalink "/" }}
+  <section class="section-card-list" style="margin-top: 28px; margin-bottom: 34px;">
+    <div class="section-card-header">
+      <span class="section-card-eyebrow">HEALIM CLINICAL INSIGHTS</span>
+      <h3 class="section-card-title">{{ .Title }} 자주 묻는 핵심 질문 &amp; 의학 칼럼</h3>
+    </div>
+    <div class="card-grid-3">
+      <!-- 1번 카드 -->
+      <div class="insight-card">
+        <div class="insight-thumb-wrap">
+          <img src="/images/disease-insights/{{ $diseaseKey }}_1.svg" alt="{{ .Title }} 자주 묻는 질문" class="insight-thumb-img">
+          <span class="insight-badge">자주 묻는 질문</span>
+        </div>
+        <div class="insight-body">
+          <h4 class="insight-title">갑자기 심해진 {{ .Title }}, 괜찮은 걸까요?</h4>
+          <p class="insight-desc">
+            "한동안 잠잠해지는 것 같았는데, 갑자기 증상이 많아졌어요." 증상의 급격한 변화 원인과 뇌신경계 안정화 대처법을 안내합니다.
+          </p>
+        </div>
+      </div>
+
+      <!-- 2번 카드 -->
+      <div class="insight-card">
+        <div class="insight-thumb-wrap">
+          <img src="/images/disease-insights/{{ $diseaseKey }}_2.svg" alt="{{ .Title }} 진행 및 경과" class="insight-thumb-img">
+          <span class="insight-badge">진행 및 경과</span>
+        </div>
+        <div class="insight-body">
+          <h4 class="insight-title">{{ .Title }}은 시간이 지나면 더 심해질 수도 있나요?</h4>
+          <p class="insight-desc">
+            "처음에는 가벼운 신호였는데 점차 강도와 빈도가 늘고 있습니다." 만성화되기 전 조기 개입과 두뇌 회복력 강화의 중요성을 설명합니다.
+          </p>
+        </div>
+      </div>
+
+      <!-- 3번 카드 -->
+      <div class="insight-card">
+        <div class="insight-thumb-wrap">
+          <img src="/images/disease-insights/{{ $diseaseKey }}_3.svg" alt="{{ .Title }} 치료 골든타임" class="insight-thumb-img">
+          <span class="insight-badge">치료 골든타임</span>
+        </div>
+        <div class="insight-body">
+          <h4 class="insight-title">{{ .Title }} 증상이 생겼을 때 얼마나 오래 지켜봐도 되나요?</h4>
+          <p class="insight-desc">
+            "조금 더 지켜봐도 저절로 좋아질까요?" 자율신경계 피로도와 개인 체질에 따른 적절한 검사 및 내원 타이밍 가이드.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── 해아림TV 공식 유튜브 건강 자문 영상 큐레이션 ── -->
+  <section class="disease-youtube-curation" style="margin-bottom: 24px; background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 20px; padding: 36px 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 12px;">
+      <div>
+        <div style="display: inline-flex; align-items: center; gap: 6px; background: #FEF2F2; color: #EF4444; border: 1px solid #FECACA; padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: 800; margin-bottom: 6px;">
+          ▶ YouTube @healimtv
+        </div>
+        <h3 style="font-size: 22px; font-weight: 800; color: #0C4349; margin: 0;">{{ .Title }} 관련 해아림TV 핵심 자문 영상</h3>
+      </div>
+      <a href="/community/#youtube" style="display: inline-flex; align-items: center; gap: 4px; font-size: 13.5px; font-weight: 700; color: #146369; text-decoration: none;">
+        유튜브 30편 전체보기 &gt;
+      </a>
+    </div>
+
+    <!-- 3개 추천 영상 카드 (질환별 맞춤 해아림TV 최다 시청 영상) -->
+    {{ $slug := strings.Trim .RelPermalink "/" }}
+    {{ $diseaseYtList := index site.Data.disease_youtube $slug }}
+    {{ if not $diseaseYtList }}
+      {{ $diseaseYtList = index site.Data.disease_youtube (path.Base .RelPermalink) }}
+    {{ end }}
+    {{ if not $diseaseYtList }}
+      {{ $diseaseYtList = index site.Data.disease_youtube "dysautonomia" }}
+    {{ end }}
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 18px;">
+      {{ range $diseaseYtList }}
+      <div style="background: #F8FAFB; border: 1px solid #E2E8F0; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; transition: all 0.2s;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='#146369';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0';" onclick="openDiseaseYtModal('{{ .vid }}', '{{ .title | safeJS }}')">
+        <div style="position: relative; width: 100%; aspect-ratio: 16/9; background: #0F172A; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+          {{ if eq .type "shorts" }}
+          <img src="{{ .thumbnail }}" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: blur(16px); opacity: 0.35; transform: scale(1.2);" loading="lazy" />
+          <img src="{{ .thumbnail }}" alt="" style="height: 100%; width: auto; max-width: 100%; object-fit: contain; position: relative; z-index: 1;" loading="lazy" />
+          <span style="position: absolute; top: 8px; left: 8px; background: #DC2626; color: #FFF; font-size: 10.5px; font-weight: 800; padding: 2px 6px; border-radius: 4px; z-index: 2;">⚡ Shorts</span>
+          {{ else }}
+          <img src="{{ .thumbnail }}" alt="" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
+          <span style="position: absolute; top: 8px; left: 8px; background: #008194; color: #FFF; font-size: 10.5px; font-weight: 800; padding: 2px 6px; border-radius: 4px; z-index: 2;">일반영상</span>
+          {{ end }}
+          <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.18); display: flex; align-items: center; justify-content: center; z-index: 2;">
+            <div style="width: 40px; height: 40px; border-radius: 50%; background: rgba(239,68,68,0.92); display: flex; align-items: center; justify-content: center; color: #FFF; font-size: 15px; padding-left: 2px;">▶</div>
+          </div>
+        </div>
+        <div style="padding: 14px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+          <h4 style="font-size: 14px; font-weight: 700; color: #0C4349; margin: 0 0 6px; line-height: 1.45; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">{{ .title }}</h4>
+          <p style="font-size: 12px; color: #64748B; line-height: 1.55; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">{{ .desc }}</p>
+          <div style="padding-top: 10px; border-top: 1px dashed #E2E8F0; display: flex; justify-content: space-between; font-size: 11.5px;">
+            <span style="color: #64748B;">{{ .channel }}</span>
+            <span style="color: #146369; font-weight: 700;">{{ .views }}</span>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- 질환 서브페이지 유튜브 전용 모달 -->
+  <div id="diseaseYtModal" style="display: none; position: fixed; inset: 0; background: rgba(0, 0, 0, 0.85); z-index: 100000; align-items: center; justify-content: center; padding: 16px; backdrop-filter: blur(5px);" onclick="if(event.target===this) closeDiseaseYtModal();">
+    <div style="background: #0F172A; border-radius: 16px; overflow: hidden; width: 100%; max-width: 880px; box-shadow: 0 25px 50px rgba(0,0,0,0.5); position: relative; border: 1px solid #334155;">
+      <div style="display: flex; justify-content: space-between; align-items: center; padding: 14px 20px; background: #0C4349; color: #FFF;">
+        <span id="diseaseYtModalTitle" style="font-size: 14.5px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 85%;"></span>
+        <button type="button" onclick="closeDiseaseYtModal()" style="background: none; border: none; color: #FFF; font-size: 26px; cursor: pointer; line-height: 1;">&times;</button>
+      </div>
+      <div id="diseaseYtModalIframeContainer" style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; background: #000;"></div>
+    </div>
+  </div>
+
+  <script>
+  function openDiseaseYtModal(vid, title) {
+    var modal = document.getElementById('diseaseYtModal');
+    var titleElem = document.getElementById('diseaseYtModalTitle');
+    var container = document.getElementById('diseaseYtModalIframeContainer');
+    if (!modal || !container) return;
+    if (titleElem) titleElem.innerText = title || '해아림TV 영상';
+    container.innerHTML = '<iframe src="https://www.youtube.com/embed/' + vid + '?autoplay=1&rel=0" title="' + (title || '').replace(/"/g, '&quot;') + '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></iframe>';
+    modal.style.display = 'flex';
+  }
+  function closeDiseaseYtModal() {
+    var modal = document.getElementById('diseaseYtModal');
+    var container = document.getElementById('diseaseYtModalIframeContainer');
+    if (container) container.innerHTML = '';
+    if (modal) modal.style.display = 'none';
+  }
+  </script>
+
+
+
+
+
+</div>
+{{ end }}

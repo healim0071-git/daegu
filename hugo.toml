@@ -1,0 +1,51 @@
+baseURL = 'https://healim-daegu.com/'
+defaultContentLanguage = 'ko'
+title = '해아림한의원 대구본점 | 틱장애·ADHD·공황·불안·자율신경·불면 심층 치료'
+theme = 'healim'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  description = '해아림한의원 네트워크 본점 대표원장 김대억 한방신경정신과 박사의 『토닥토닥 틱장애』, 『걱정마 공황장애』 저자 1:1 심층 한방 치료. 100% 전화상담 예약제.'
+  author = '김대억 한방신경정신과 박사'
+  telephone = '053-751-0071'
+  address = '대구광역시 수성구 달구벌대로 2435 두산위브 상가 3층'
+  naverMap = 'https://naver.me/FDQX9ZIr'
+  youtube = 'https://www.youtube.com/@healimtv'
+
+[menu]
+  [[menu.main]]
+    name = '한의원소개'
+    url = '/about/'
+    weight = 1
+  [[menu.main]]
+    name = '틱장애'
+    url = '/tic-disorder/'
+    weight = 2
+  [[menu.main]]
+    name = '공황장애'
+    url = '/panic-disorder/'
+    weight = 3
+  [[menu.main]]
+    name = '어지럼증'
+    url = '/dizziness/'
+    weight = 4
+  [[menu.main]]
+    name = '자율신경실조증'
+    url = '/dysautonomia/'
+    weight = 5
+  [[menu.main]]
+    name = '불면증'
+    url = '/insomnia/'
+    weight = 6
+  [[menu.main]]
+    name = '심신안정'
+    url = '/#specialties'
+    weight = 7
+  [[menu.main]]
+    name = '커뮤니티'
+    url = '/reviews/'
+    weight = 8

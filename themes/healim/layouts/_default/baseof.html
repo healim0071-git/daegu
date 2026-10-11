@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+{{ partial "head.html" . }}
+{{ $isDisease := or (eq .Type "disease") (eq .Layout "disease") (in (slice "tic-disorder" "panic-disorder" "dysautonomia" "insomnia" "dizziness" "adhd" "ocd" "anxiety-disorder" "hyperhidrosis" "social-phobia") (path.Base .RelPermalink)) }}
+<body class="{{ if $isDisease }}is-disease-page{{ end }}{{ if .IsHome }} is-home{{ end }}">
+  {{ partial "nav.html" . }}
+  <main id="mainContent">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ if ne .Type "login" }}
+  {{ partial "common-bottom-community.html" . }}
+  {{ end }}
+  {{ partial "footer.html" . }}
+  {{ partial "floating-bar.html" . }}
+  <script src="/js/main.js"></script>
+  <script src="/js/auto_column_engine.js"></script>
+</body>
+</html>

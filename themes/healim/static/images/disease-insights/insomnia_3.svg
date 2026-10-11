@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad_bg_11" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#311042" />
+      <stop offset="100%" stop-color="#170520" />
+    </linearGradient>
+    <linearGradient id="grad_motif_11" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A78BFA" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#311042" stop-opacity="0.4" />
+    </linearGradient>
+    <pattern id="grid_11" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="300" fill="url(#grad_bg_11)" />
+  <rect width="500" height="300" fill="url(#grid_11)" />
+
+  <!-- Ambient light glow -->
+  <circle cx="360" cy="150" r="130" fill="#A78BFA" opacity="0.12" filter="blur(30px)" />
+  <circle cx="80" cy="60" r="90" fill="#A78BFA" opacity="0.08" filter="blur(20px)" />
+
+  <!-- Left Content Block -->
+  <g transform="translate(36, 48)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="170" height="26" rx="13" fill="rgba(167,139,250,0.18)" stroke="#A78BFA" stroke-width="1.2" />
+    <circle cx="12" cy="13" r="3.5" fill="#A78BFA" />
+    <text x="24" y="17" fill="#DDD6FE" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="700" letter-spacing="-0.2px">자연 수면 자생력</text>
+
+    <!-- Title -->
+    <text x="0" y="65" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="20" font-weight="800" letter-spacing="-0.5px">
+      깊은 서파수면(Delta) 회복
+    </text>
+
+    <!-- Subtitle (word wrapped) -->
+    <text x="0" y="98" fill="rgba(255,255,255,0.72)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12.5" font-weight="500" line-height="1.5">
+      약물 의존 없는 뇌 신경계의 스스로 잠드는 
+    </text>
+    <text x="0" y="118" fill="rgba(255,255,255,0.72)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12.5" font-weight="500">
+      능력 복구
+    </text>
+
+    <!-- Clinical Spec Pill -->
+    <g transform="translate(0, 150)">
+      <rect x="0" y="0" width="135" height="22" rx="4" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+      <text x="10" y="15" fill="rgba(255,255,255,0.85)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="600">
+        HEALIM CLINICAL LAB
+      </text>
+    </g>
+  </g>
+
+  <!-- Right Motif Illustration -->
+  
+        <g transform="translate(340, 150)">
+          <!-- Protective sleep cocoon with deep delta rings -->
+          <ellipse cx="0" cy="0" rx="55" ry="40" fill="none" stroke="#A78BFA" stroke-width="2" stroke-dasharray="4,4"/>
+          <ellipse cx="0" cy="0" rx="42" ry="30" fill="url(#grad_motif_11)" opacity="0.75"/>
+          <circle cx="0" cy="0" r="16" fill="#A78BFA"/>
+          <!-- Spindle waves inside -->
+          <path d="M-12,0 Q-6,-6 0,0 Q6,6 12,0" fill="none" stroke="#FFF" stroke-width="2.5"/>
+          <text x="0" y="24" fill="#FFF" font-size="9" font-weight="bold" text-anchor="middle">숙면</text>
+        </g>
+        
+</svg>

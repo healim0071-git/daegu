@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad_bg_27" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6B21A8" />
+      <stop offset="100%" stop-color="#3B0764" />
+    </linearGradient>
+    <linearGradient id="grad_motif_27" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F472B6" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#6B21A8" stop-opacity="0.4" />
+    </linearGradient>
+    <pattern id="grid_27" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="300" fill="url(#grad_bg_27)" />
+  <rect width="500" height="300" fill="url(#grid_27)" />
+
+  <!-- Ambient light glow -->
+  <circle cx="360" cy="150" r="130" fill="#F472B6" opacity="0.12" filter="blur(30px)" />
+  <circle cx="80" cy="60" r="90" fill="#F472B6" opacity="0.08" filter="blur(20px)" />
+
+  <!-- Left Content Block -->
+  <g transform="translate(36, 48)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="170" height="26" rx="13" fill="rgba(244,114,182,0.18)" stroke="#F472B6" stroke-width="1.2" />
+    <circle cx="12" cy="13" r="3.5" fill="#F472B6" />
+    <text x="24" y="17" fill="#FBCFE8" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="700" letter-spacing="-0.2px">시선 공포 기전</text>
+
+    <!-- Title -->
+    <text x="0" y="65" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="20" font-weight="800" letter-spacing="-0.5px">
+      사회적 평가와 편도체 과민
+    </text>
+
+    <!-- Subtitle (word wrapped) -->
+    <text x="0" y="98" fill="rgba(255,255,255,0.72)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12.5" font-weight="500" line-height="1.5">
+      타인의 시선이나 낯선 환경을 위협으로 인식하
+    </text>
+    <text x="0" y="118" fill="rgba(255,255,255,0.72)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12.5" font-weight="500">
+      는 신경 회로
+    </text>
+
+    <!-- Clinical Spec Pill -->
+    <g transform="translate(0, 150)">
+      <rect x="0" y="0" width="135" height="22" rx="4" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+      <text x="10" y="15" fill="rgba(255,255,255,0.85)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="600">
+        HEALIM CLINICAL LAB
+      </text>
+    </g>
+  </g>
+
+  <!-- Right Motif Illustration -->
+  
+        <g transform="translate(340, 150)">
+          <!-- Social gaze rays focused on center -->
+          <circle cx="0" cy="0" r="50" fill="none" stroke="#F472B6" stroke-width="1.5" stroke-dasharray="4,4"/>
+          <!-- Gaze vectors -->
+          <line x1="-55" y1="-30" x2="-20" y2="-10" stroke="#FFF" stroke-width="2"/>
+          <line x1="55" y1="-30" x2="20" y2="-10" stroke="#FFF" stroke-width="2"/>
+          <line x1="-55" y1="30" x2="-20" y2="10" stroke="#FFF" stroke-width="2"/>
+          <line x1="55" y1="30" x2="20" y2="10" stroke="#FFF" stroke-width="2"/>
+          <!-- Central self-consciousness shield -->
+          <circle cx="0" cy="0" r="22" fill="url(#grad_motif_27)"/>
+          <circle cx="0" cy="0" r="10" fill="#F472B6"/>
+          <circle cx="0" cy="0" r="4" fill="#FFF"/>
+        </g>
+        
+</svg>
