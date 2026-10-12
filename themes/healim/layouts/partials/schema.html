@@ -8,9 +8,24 @@
       "name": "해아림한의원 대구본점",
       "alternateName": "Healim Korean Medicine Clinic Daegu",
       "url": "{{ .Site.BaseURL }}",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "{{ .Site.BaseURL }}#logo",
+        "url": "{{ .Site.BaseURL }}images/logo.png",
+        "caption": "해아림한의원 대구본점 로고"
+      },
+      "image": "{{ .Site.BaseURL }}images/logo.png",
       "telephone": "+82-53-751-0071",
       "description": "{{ .Site.Params.description }}",
       "medicalSpecialty": "Psychiatric",
+      "sameAs": [
+        "https://naver.me/FDQX9ZIr",
+        "https://blog.naver.com/healim0071",
+        "https://healim.com",
+        "https://www.youtube.com/@healim",
+        "https://product.kyobobook.co.kr/detail/S000001851814",
+        "https://product.kyobobook.co.kr/detail/S000212414668"
+      ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "달구벌대로 2435 두산위브 상가 3층",
@@ -38,6 +53,7 @@
         {"@type": "AdministrativeArea", "name": "대구광역시"},
         {"@type": "AdministrativeArea", "name": "수성구"},
         {"@type": "AdministrativeArea", "name": "달서구"},
+        {"@type": "AdministrativeArea", "name": "중구"},
         {"@type": "AdministrativeArea", "name": "경산시"},
         {"@type": "AdministrativeArea", "name": "구미시"},
         {"@type": "AdministrativeArea", "name": "포항시"},
@@ -74,20 +90,40 @@
       "jobTitle": ["대표원장", "한방신경정신과 박사"],
       "worksFor": {"@id": "{{ .Site.BaseURL }}#clinic"},
       "description": "해아림한의원 대구본점 대표원장, 『토닥토닥 틱장애』, 『걱정마 공황장애』 저자",
-      "knowsAbout": ["틱장애", "ADHD", "공황장애", "불안장애", "자율신경실조증", "불면증", "강박증", "다한증", "사회공포증", "어지럼증"]
-    }
-    {{- if .IsHome }}
-    ,
+      "knowsAbout": ["틱장애", "ADHD", "공황장애", "불안장애", "자율신경실조증", "불면증", "강박증", "다한증", "사회공포증", "두통어지럼"],
+      "sameAs": [
+        "https://product.kyobobook.co.kr/detail/S000001851814",
+        "https://product.kyobobook.co.kr/detail/S000212414668",
+        "https://blog.naver.com/healim0071"
+      ]
+    },
     {
       "@type": "WebSite",
       "@id": "{{ .Site.BaseURL }}#website",
       "url": "{{ .Site.BaseURL }}",
       "name": "해아림한의원 대구본점",
       "description": "{{ .Site.Params.description }}",
-      "publisher": {"@id": "{{ .Site.BaseURL }}#clinic"}
+      "publisher": {"@id": "{{ .Site.BaseURL }}#clinic"},
+      "sameAs": [
+        "https://healim.com",
+        "https://blog.naver.com/healim0071"
+      ]
+    },
+    {
+      "@type": ["WebPage", "MedicalWebPage"],
+      "@id": "{{ .Permalink }}#webpage",
+      "url": "{{ .Permalink }}",
+      "name": "{{ if .Params.seo_title }}{{ .Params.seo_title }}{{ else if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}",
+      "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}",
+      "isPartOf": {"@id": "{{ .Site.BaseURL }}#website"},
+      "about": {"@id": "{{ .Site.BaseURL }}#clinic"},
+      "breadcrumb": {"@id": "{{ .Permalink }}#breadcrumb"},
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "{{ .Site.BaseURL }}images/logo.png"
+      },
+      "inLanguage": "ko-KR"
     }
-    {{- end }}
-
     {{- if .IsHome }}
     ,
     {
@@ -137,50 +173,13 @@
       ]
     }
     {{- end }}
-    {{- if or (eq .Type "community") (eq .Layout "community") (in .RelPermalink "community") }}
-    ,
-    {
-      "@type": "MedicalWebPage",
-      "@id": "{{ .Permalink }}#community",
-      "url": "{{ .Permalink }}",
-      "name": "{{ .Title }}",
-      "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}",
-      "author": {"@id": "{{ .Site.BaseURL }}#physician"},
-      "publisher": {"@id": "{{ .Site.BaseURL }}#clinic"},
-      "specialty": "Psychiatric",
-      "about": [
-        {"@type": "MedicalCondition", "name": "두뇌·신경계 치료사례"},
-        {"@type": "MedicalCondition", "name": "틱장애 치료사례"},
-        {"@type": "MedicalCondition", "name": "공황장애 치료사례"},
-        {"@type": "MedicalCondition", "name": "자율신경실조증 치료사례"},
-        {"@type": "MedicalCondition", "name": "불면증 치료사례"},
-        {"@type": "MedicalCondition", "name": "어지럼증 치료사례"},
-        {"@type": "MedicalCondition", "name": "ADHD 치료사례"}
-      ]
-    }
-    {{- end }}
     {{- $slug := strings.Trim .RelPermalink "/" }}
     {{- $isDisease := or (eq .Type "disease") (eq .Layout "disease") (in (slice "tic-disorder" "panic-disorder" "dysautonomia" "insomnia" "dizziness" "adhd" "ocd" "anxiety-disorder" "hyperhidrosis" "social-phobia") (path.Base .RelPermalink)) }}
-    {{- if $isDisease }}
-    ,
-    {
-      "@type": "MedicalWebPage",
-      "@id": "{{ .Permalink }}#webpage",
-      "url": "{{ .Permalink }}",
-      "name": "{{ .Title }}",
-      "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}",
-      "author": {"@id": "{{ .Site.BaseURL }}#physician"},
-      "publisher": {"@id": "{{ .Site.BaseURL }}#clinic"},
-      "about": {
-        "@type": "MedicalCondition",
-        "name": "{{ .Title }}"
-      }
-    }
     {{- $faqs := index site.Data.disease_faqs $slug }}
     {{- if not $faqs }}
       {{- $faqs = index site.Data.disease_faqs (path.Base .RelPermalink) }}
     {{- end }}
-    {{- if $faqs }}
+    {{- if and $isDisease $faqs }}
     ,
     {
       "@type": "FAQPage",
@@ -200,7 +199,6 @@
       ]
     }
     {{- end }}
-    {{- end }}
     {{- if and (eq .Section "columns") .IsPage }}
     ,
     {
@@ -216,7 +214,6 @@
       "mainEntityOfPage": "{{ .Permalink }}"
     }
     {{- end }}
-    {{- if not .IsHome }}
     ,
     {
       "@type": "BreadcrumbList",
@@ -227,16 +224,18 @@
           "position": 1,
           "name": "홈",
           "item": "{{ .Site.BaseURL }}"
-        },
+        }
+        {{- if not .IsHome }}
+        ,
         {
           "@type": "ListItem",
           "position": 2,
           "name": "{{ .Title }}",
           "item": "{{ .Permalink }}"
         }
+        {{- end }}
       ]
     }
-    {{- end }}
   ]
 }
 </script>
