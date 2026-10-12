@@ -1,6 +1,17 @@
 ---
-title: "해아림 커뮤니티 | 두뇌·신경계 심층 가이드, 치료후기, FAQ, 유튜브"
-description: "해아림한의원 대구본점 커뮤니티입니다. 틱장애, 공황장애, 불면증, 자율신경실조증, 어지럼증, ADHD 등 두뇌·신경계 질환에 대한 전문 심층 가이드와 치료후기, 임상 정보를 투명하게 전해드립니다."
+title: "해아림 커뮤니티 | 두뇌·신경계 치료사례, 치료후기, FAQ, 유튜브"
+description: "해아림한의원 대구본점 커뮤니티입니다. 틱장애, 공황장애, 불면증, 자율신경실조증, 어지럼증, ADHD 등 두뇌·신경계 질환에 대한 전문 치료사례와 치료후기, 임상 정보를 투명하게 전해드립니다."
+keywords:
+  - "두뇌신경계 치료사례"
+  - "대구 한의원 치료사례"
+  - "틱장애 치료사례"
+  - "공황장애 치료사례"
+  - "불면증 치료사례"
+  - "자율신경실조증 치료사례"
+  - "어지럼증 치료사례"
+  - "치료칼럼"
+  - "치료후기"
+  - "해아림한의원 대구본점"
 type: community
 layout: single
 ---
@@ -55,7 +66,7 @@ layout: single
 <ul class="community-tabs-list">
 <li class="comm-tab-item">
 <button type="button" class="comm-tab-btn" data-tab="columns" onclick="switchCommunityTab('columns')">
-의학 칼럼
+치료칼럼
 </button>
 </li>
 <li class="comm-tab-item">
@@ -93,7 +104,7 @@ layout: single
 <!-- 최고관리자 칼럼 배지 -->
 <div id="autoColumnStatusBadge" style="display: none; align-items: center; gap: 8px; font-size: 12.5px; color: #0C4349; background: #F0F7F8; border: 1px solid #BADFE3; padding: 8px 14px; border-radius: 8px;">
 <span style="display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #10B981; box-shadow: 0 0 6px #10B981;"></span>
-<span><strong>의학칼럼 자동 발행</strong>: 주 3~4회 (오전 10:00~12:00)</span>
+<span><strong>치료칼럼 자동 발행</strong>: 주 3~4회 (오전 10:00~12:00)</span>
 <span style="color: #94A3B8;">|</span>
 <span id="autoColumnNextScheduleText" style="color: #146369; font-weight: 700;">다음 예정: 확인 중..</span>
 <button type="button" onclick="triggerAutoColumnPublishManual()" style="margin-left: 6px; font-size: 11.5px; padding: 4px 10px; background: #FFFFFF; border: 1px solid #146369; border-radius: 4px; color: #146369; font-weight: 700; cursor: pointer;">
@@ -395,7 +406,7 @@ layout: single
 <div style="background: #FFFFFF; border-radius: 20px; width: 100%; max-width: 680px; max-height: 90vh; overflow-y: auto; box-shadow: 0 25px 50px rgba(0,0,0,0.25); border: 1px solid #E2E8F0; padding: 28px 24px;">
 <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid #F1F5F9; padding-bottom: 14px; margin-bottom: 18px;">
 <h3 id="writeModalTitle" style="font-size: 18px; font-weight: 800; color: #0C4349; margin: 0;">
-✏️ 의학칼럼 작성 (최고관리자)
+✏️ 치료칼럼 작성 (최고관리자)
 </h3>
 <button type="button" onclick="closeColumnWriteModal()" style="background: none; border: none; font-size: 26px; cursor: pointer; color: #94A3B8;">&times;</button>
 </div>
@@ -420,7 +431,7 @@ layout: single
 
 <div style="margin-bottom: 14px;">
 <label style="display: block; font-size: 13px; font-weight: 700; color: #1E293B; margin-bottom: 6px;">칼럼 제목</label>
-<input type="text" id="writeTitle" required placeholder="의학칼럼 제목을 입력하세요 (단언적 표현 제외)" style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 14px;" />
+<input type="text" id="writeTitle" required placeholder="치료칼럼 제목을 입력하세요 (단언적 표현 제외)" style="width: 100%; padding: 10px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 14px;" />
 </div>
 
 <div style="margin-bottom: 14px;">
@@ -430,7 +441,7 @@ layout: single
 
 <div style="margin-bottom: 18px;">
 <label style="display: block; font-size: 13px; font-weight: 700; color: #1E293B; margin-bottom: 6px;">칼럼 본문 내용</label>
-<textarea id="writeContent" required rows="10" placeholder="의학칼럼 본문을 입력하세요. 장뇌축 등 미검증 이론이나 모호한 표현은 배제되며, 의료광고법 금지어는 자동으로 정제됩니다." style="width: 100%; padding: 12px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 14px; line-height: 1.6; resize: vertical;"></textarea>
+<textarea id="writeContent" required rows="10" placeholder="치료칼럼 본문을 입력하세요. 장뇌축 등 미검증 이론이나 모호한 표현은 배제되며, 의료광고법 금지어는 자동으로 정제됩니다." style="width: 100%; padding: 12px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 14px; line-height: 1.6; resize: vertical;"></textarea>
 </div>
 
 <div style="display: flex; justify-content: flex-end; gap: 8px;">
@@ -493,7 +504,7 @@ function parseDateStrToTime(dStr) {
 }
 
 // 기본 등록 칼럼 데이터 (발행 날짜 최신순 정렬)
-// 의학칼럼 데이터 (1600~1800자 SEO/AEO/GEO 최신 40편)
+// 치료칼럼 데이터 (1600~1800자 SEO/AEO/GEO 최신 40편)
 var defaultColumnsData = [
   {
     "id": "col-auto-tic-1",
@@ -4535,7 +4546,7 @@ function renderColumnsList() {
   if (!tbody) return;
 
   if (pageItems.length === 0) {
-    tbody.innerHTML = '<tr><td colspan="7" style="text-align: center; padding: 40px; color: #94A3B8;">등록된 의학칼럼이 없거나 검색 결과가 없습니다.</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="7" style="text-align: center; padding: 40px; color: #94A3B8;">등록된 치료칼럼이 없거나 검색 결과가 없습니다.</td></tr>';
     renderPagination(1, 1);
     return;
   }
@@ -4656,7 +4667,7 @@ function closeColumnModal() {
 // 최고관리자 칼럼 작성 / 수정 / 삭제
 // -------------------------------------------------------------
 function openColumnWriteModal() {
-  document.getElementById('writeModalTitle').innerText = '✏️ 의학칼럼 작성 (최고관리자)';
+  document.getElementById('writeModalTitle').innerText = '✏️ 치료칼럼 작성 (최고관리자)';
   document.getElementById('writePostId').value = '';
   document.getElementById('writeCategory').value = '틱장애';
   document.getElementById('writeTitle').value = '';
@@ -4674,7 +4685,7 @@ function editColumnPost(id) {
   var item = all.find(function(p) { return p.id === id; });
   if (!item) return;
 
-  document.getElementById('writeModalTitle').innerText = '✏️ 의학칼럼 수정';
+  document.getElementById('writeModalTitle').innerText = '✏️ 치료칼럼 수정';
   document.getElementById('writePostId').value = item.id;
   document.getElementById('writeCategory').value = item.category || '틱장애';
   document.getElementById('writeTitle').value = item.title;
@@ -4751,7 +4762,7 @@ function handleSaveColumn(e) {
 
   localStorage.setItem('healim_board_columns', JSON.stringify(arr));
   closeColumnWriteModal();
-  alert('의학칼럼이 성공적으로 저장되었습니다.');
+  alert('치료칼럼이 성공적으로 저장되었습니다.');
   renderColumnsList();
 }
 

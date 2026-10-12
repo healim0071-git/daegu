@@ -65,6 +65,28 @@
       "publisher": {"@id": "{{ .Site.BaseURL }}#clinic"}
     }
     {{- end }}
+    {{- if or (eq .Type "community") (eq .Layout "community") (in .RelPermalink "community") }}
+    ,
+    {
+      "@type": "MedicalWebPage",
+      "@id": "{{ .Permalink }}#community",
+      "url": "{{ .Permalink }}",
+      "name": "{{ .Title }}",
+      "description": "{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}",
+      "author": {"@id": "{{ .Site.BaseURL }}#physician"},
+      "publisher": {"@id": "{{ .Site.BaseURL }}#clinic"},
+      "specialty": "Psychiatric",
+      "about": [
+        {"@type": "MedicalCondition", "name": "두뇌·신경계 치료사례"},
+        {"@type": "MedicalCondition", "name": "틱장애 치료사례"},
+        {"@type": "MedicalCondition", "name": "공황장애 치료사례"},
+        {"@type": "MedicalCondition", "name": "자율신경실조증 치료사례"},
+        {"@type": "MedicalCondition", "name": "불면증 치료사례"},
+        {"@type": "MedicalCondition", "name": "어지럼증 치료사례"},
+        {"@type": "MedicalCondition", "name": "ADHD 치료사례"}
+      ]
+    }
+    {{- end }}
     {{- $slug := strings.Trim .RelPermalink "/" }}
     {{- $isDisease := or (eq .Type "disease") (eq .Layout "disease") (in (slice "tic-disorder" "panic-disorder" "dysautonomia" "insomnia" "dizziness" "adhd" "ocd" "anxiety-disorder" "hyperhidrosis" "social-phobia") (path.Base .RelPermalink)) }}
     {{- if $isDisease }}
