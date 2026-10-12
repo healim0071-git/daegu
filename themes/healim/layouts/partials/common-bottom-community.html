@@ -20,9 +20,9 @@
       <p class="healim-section-subtitle">16여 년 임상 노하우와 뇌신경계 조절 메커니즘을 알기 쉽게 풀어낸 해아림의 대표 저서입니다.</p>
     </div>
 
-    <div class="books-grid">
-      <!-- 도서 1: 토닥토닥 틱장애 -->
-      <div class="book-card">
+    <ul class="books-grid">
+<!-- 도서 1: 토닥토닥 틱장애 -->
+      <li class="book-card">
         <a href="https://product.kyobobook.co.kr/detail/S000001851814" target="_blank" rel="noopener noreferrer" class="book-cover-link">
           <div class="book-cover-wrapper">
             <img src="/images/books/book_tic.png" alt="토닥토닥 틱장애 (해아림 원장단 공저)" loading="lazy">
@@ -37,10 +37,10 @@
         <a href="https://product.kyobobook.co.kr/detail/S000001851814" target="_blank" rel="noopener noreferrer" class="btn-book-kyobo">
           <span>교보문고 바로가기 &gt;</span>
         </a>
-      </div>
+      </li>
 
       <!-- 도서 2: 걱정마 공황장애 -->
-      <div class="book-card">
+      <li class="book-card">
         <a href="https://product.kyobobook.co.kr/detail/S000212414668" target="_blank" rel="noopener noreferrer" class="book-cover-link">
           <div class="book-cover-wrapper">
             <img src="/images/books/book_panic.png" alt="걱정마 공황장애 (해아림 원장단 공저)" loading="lazy">
@@ -55,8 +55,8 @@
         <a href="https://product.kyobobook.co.kr/detail/S000212414668" target="_blank" rel="noopener noreferrer" class="btn-book-kyobo">
           <span>교보문고 바로가기 &gt;</span>
         </a>
-      </div>
-    </div>
+      </div></li>
+    </ul>
 
     <!-- 하단 오렌지색 슬로건 바 -->
     <div class="publications-bottom-banner">
@@ -70,6 +70,7 @@
     <div class="bottom-sec-header">
       <span class="bottom-sec-badge">FAQ Insights</span>
       <h2 class="healim-section-title">해아림한의원 자주 묻는 질문들 FAQ</h2>
+      <p class="healim-section-subtitle">뇌신경계 질환 환자와 보호자분들이 가장 많이 질문하시는 핵심 궁금증에 대해 한의학 신경정신과 전문의 김대억 대표원장이 직접 의학적 근거를 바탕으로 명쾌하게 답변해 드립니다.</p>
       <p class="healim-section-subtitle">환자분들이 가장 많이 궁금해하시는 핵심 질문에 원장단이 명쾌하게 답변해 드립니다.</p>
     </div>
 
@@ -208,7 +209,7 @@
       <p class="healim-section-subtitle">환자분들의 진솔한 실제 치료 경험과 일상 회복의 순간들입니다. (의료법 제56조 준수 환자 보호 블러 처리)</p>
     </div>
 
-    <div id="commonBottomReviewsList" class="bottom-cards-grid">
+    <ul id="commonBottomReviewsList" class="bottom-cards-grid">
       {{ $slug := strings.Trim .RelPermalink "/" }}
       {{ $diseaseReviews := index site.Data.disease_reviews $slug }}
       {{ if not $diseaseReviews }}
@@ -414,8 +415,8 @@
         </div>
       </a>
           {{ end }}
-</div>
-
+</li>
+</ul>
     <div class="bottom-btn-center">
       <a href="/community/#reviews" onclick="handleBottomMoreClick(event, 'reviews')" class="btn-healim">
         <span>치료후기 259편 전체보기 &gt;</span>
@@ -432,7 +433,7 @@
       <p class="healim-section-subtitle">전국 16개 네트워크 원장단이 전하는 근거 기반의 심도 깊은 의학 칼럼입니다.</p>
     </div>
 
-    <div id="commonBottomColumnsList" class="bottom-cards-grid">
+    <ul id="commonBottomColumnsList" class="bottom-cards-grid">
       {{ $slug := strings.Trim .RelPermalink "/" }}
       {{ $diseaseColumns := index site.Data.disease_columns $slug }}
       {{ if not $diseaseColumns }}
@@ -441,7 +442,7 @@
       {{ if $diseaseColumns }}
         {{/* 10개 질환 상세페이지: 해당 질환에 맞는 치료 칼럼 3개 표시 */}}
         {{ range $diseaseColumns }}
-        <div class="bottom-item-card" onclick="openCommonBottomDetail('columns', '{{ .id }}')">
+        <li class="bottom-item-card" onclick="openCommonBottomDetail('columns', '{{ .id }}')">
           <div class="bottom-card-media">
             <img src="{{ .img }}" alt="{{ .imgAlt }}" onerror="this.src='/images/books/book_tic.png';">
           </div>
@@ -454,28 +455,27 @@
               <a href="/community/?board=columns&id={{ .id }}" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail('columns', '{{ .id }}')">읽기 &gt;</a>
             </div>
           </div>
-        </div>
-        {{ end }}
+        </li>
+{{ end }}
       {{ else }}
         <!-- 메인 페이지 및 기타 페이지: 기존 대표 칼럼 3개 유지 -->
       <!-- 칼럼 1 -->
-      <div class="bottom-item-card" onclick="openCommonBottomDetail('columns', 'col-auto-tic-1')">
+      <li class="bottom-item-card" onclick="openCommonBottomDetail('columns', 'col-auto-tic-1')">
         <div class="bottom-card-media">
           <img src="/images/columns/column_23_bruxism_tmj.svg" alt="소아 틱장애 초기 칼럼" onerror="this.src='/images/books/book_tic.png';">
         </div>
         <div class="bottom-card-content">
           <span class="bottom-card-category">소아 틱장애</span>
           <h3 class="bottom-card-title">[소아 틱장애 초기] 잦은 눈 깜빡임과 헛기침 반복, 뇌 신경망 불균형 신호일까? 조기 진단 가이드</h3>
-          <p class="bottom-card-desc">아이의 눈 깜빡임, 코 찡긋거림, 헛기침 등 소아 틱장애 초기 증상의 신경학적 기전(피질-선조체-시상 회로 불균형)을 분석하고 부모가 취해야 할 단계별 실전 대처 가이드를 제시합니다.</p>
+          <p class="bottom-card-desc">아이의 눈 깜빡임, 코 찡긋거림, 헛기침 반복은 단순 습관이 아니라 뇌 피질-선조체-시상(CSTC) 신경망의 조절 불균형 신호일 가능성이 매우 높습니다. 발병 초기 3개월 이내에 전두엽과 기저핵의 흥분성 신경전달물질 과다를 완화하고 자생력을 보강해 주는 1:1 맞춤 한의학적 진단과 부모의 지지적 대처가 만성 틱과 뚜렛증후군으로의 진행을 효과적으로 예방합니다.</p>
           <div class="bottom-card-footer">
             <span>해아림한의원 · 2026.09.28</span>
             <a href="/community/?board=columns&id=col-auto-tic-1" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail('columns', 'col-auto-tic-1')">읽기 &gt;</a>
           </div>
         </div>
-      </div>
-
-      <!-- 칼럼 2 -->
-      <div class="bottom-item-card" onclick="openCommonBottomDetail('columns', 'col-auto-tic-2')">
+      </li>
+<!-- 칼럼 2 -->
+      <li class="bottom-item-card" onclick="openCommonBottomDetail('columns', 'col-auto-tic-2')">
         <div class="bottom-card-media">
           <img src="/images/columns/column_22_pelvic_pain.svg" alt="음성 틱 복합 틱 칼럼" onerror="this.src='/images/books/book_tic.png';">
         </div>
@@ -488,10 +488,9 @@
             <a href="/community/?board=columns&id=col-auto-tic-2" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail('columns', 'col-auto-tic-2')">읽기 &gt;</a>
           </div>
         </div>
-      </div>
-
-      <!-- 칼럼 3 -->
-      <div class="bottom-item-card" onclick="openCommonBottomDetail('columns', 'col-auto-tic-3')">
+      </li>
+<!-- 칼럼 3 -->
+      <li class="bottom-item-card" onclick="openCommonBottomDetail('columns', 'col-auto-tic-3')">
         <div class="bottom-card-media">
           <img src="/images/columns/column_21_olfactory_gustatory.svg" alt="성인 틱장애 극복 칼럼" onerror="this.src='/images/books/book_panic.png';">
         </div>
@@ -504,10 +503,10 @@
             <a href="/community/?board=columns&id=col-auto-tic-3" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail('columns', 'col-auto-tic-3')">읽기 &gt;</a>
           </div>
         </div>
-      </div>
-          {{ end }}
-</div>
-
+      </li>
+{{ end }}
+</li>
+</ul>
     <div class="bottom-btn-center">
       <a href="/community/#columns" onclick="handleBottomMoreClick(event, 'columns')" class="btn-healim">
         <span>치료 칼럼 더보기 &gt;</span>
@@ -525,9 +524,9 @@
       <p class="healim-section-subtitle">해아림TV 의료진이 알기 쉽게 전해드리는 뇌신경 질환 극복 가이드 영상입니다.</p>
     </div>
 
-    <div id="commonBottomYoutubeList" class="bottom-cards-grid">
+    <ul id="commonBottomYoutubeList" class="bottom-cards-grid">
       <!-- 영상 1 -->
-      <div class="bottom-item-card" onclick="openCommonBottomDetail('youtube', '51rIQ1T5dIU')">
+      <li class="bottom-item-card" onclick="openCommonBottomDetail('youtube', '51rIQ1T5dIU')">
         <div class="bottom-card-media bg-dark">
           <img src="https://img.youtube.com/vi/51rIQ1T5dIU/maxresdefault.jpg" alt="공황장애 있는 사람이 절대 하면 안 되는 행동 3가지" onerror="this.src='https://i.ytimg.com/vi/51rIQ1T5dIU/hq720.jpg';">
           <div class="bottom-media-play-overlay">
@@ -545,10 +544,9 @@
             <a href="/community/?board=youtube&id=51rIQ1T5dIU" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail('youtube', '51rIQ1T5dIU')">시청하기 &gt;</a>
           </div>
         </div>
-      </div>
-
-      <!-- 영상 2 -->
-      <div class="bottom-item-card" onclick="openCommonBottomDetail('youtube', 'vXck-ijvrWo')">
+      </li>
+<!-- 영상 2 -->
+      <li class="bottom-item-card" onclick="openCommonBottomDetail('youtube', 'vXck-ijvrWo')">
         <div class="bottom-card-media bg-dark">
           <img src="https://img.youtube.com/vi/vXck-ijvrWo/maxresdefault.jpg" alt="약물 없이 공황을 극복하는 뇌 신경 안정 훈련법" onerror="this.src='https://i.ytimg.com/vi/vXck-ijvrWo/hq720.jpg';">
           <div class="bottom-media-play-overlay">
@@ -566,10 +564,9 @@
             <a href="/community/?board=youtube&id=vXck-ijvrWo" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail('youtube', 'vXck-ijvrWo')">시청하기 &gt;</a>
           </div>
         </div>
-      </div>
-
-      <!-- 영상 3 -->
-      <div class="bottom-item-card" onclick="openCommonBottomDetail('youtube', 'EKjGgZ869SM')">
+      </li>
+<!-- 영상 3 -->
+      <li class="bottom-item-card" onclick="openCommonBottomDetail('youtube', 'EKjGgZ869SM')">
         <div class="bottom-card-media bg-dark">
           <img src="https://img.youtube.com/vi/EKjGgZ869SM/maxresdefault.jpg" alt="커피, 술, 담배가 공황을 부른다? 공황 극복, 이것부터 끊으세요" onerror="this.src='https://i.ytimg.com/vi/EKjGgZ869SM/hq720.jpg';">
           <div class="bottom-media-play-overlay">
@@ -581,15 +578,15 @@
         <div class="bottom-card-content">
           <span class="bottom-card-category">생활 관리</span>
           <h3 class="bottom-card-title">커피, 술, 담배가 공황을 부른다? 공황 극복, 이것부터 끊으세요</h3>
-          <p class="bottom-card-desc">카페인과 알코올이 중추신경계와 심박수를 자극하여 공황발작을 유발하는 기전과 생활 속 필수 수칙.</p>
+          <p class="bottom-card-desc">카페인은 교감신경을 급격히 흥분시키고 아데노신 수용체를 차단하여 심박수를 급증시키며, 알코올은 분해 과정에서 자율신경계 반동성 과각성을 일으켜 공황발작의 직접적 방아쇠가 됩니다. 뇌 편도체의 공포 경보 시스템이 안정될 때까지 중추신경 자극 물질 섭취를 엄격히 제한하고 복식호흡 및 한방 신경 이완 치료를 병행하는 것이 조기 완치의 필수 조건입니다.</p>
           <div class="bottom-card-footer">
             <span>해아림TV 알쓸한상</span>
             <a href="/community/?board=youtube&id=EKjGgZ869SM" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail('youtube', 'EKjGgZ869SM')">시청하기 &gt;</a>
           </div>
         </div>
       </div>
-    </div>
-
+    </li>
+</ul>
     <div class="bottom-btn-center">
       <a href="/community/#youtube" onclick="handleBottomMoreClick(event, 'youtube')" class="btn-healim">
         <span>유튜브 영상 30편 전체보기 &gt;</span>
