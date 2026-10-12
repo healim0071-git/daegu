@@ -1,6 +1,6 @@
 baseURL = 'https://healim-daegu.com/'
 defaultContentLanguage = 'ko'
-title = '해아림한의원 대구본점 | 틱장애·ADHD·공황·불안·자율신경·불면 심층 치료'
+title = '해아림한의원 대구본점 | 틱장애 ADHD 공황장애 불안장애 자율신경실조증 불면증 치료'
 theme = 'healim'
 
 [markup]
