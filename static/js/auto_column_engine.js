@@ -1041,45 +1041,54 @@
     updateAdminBadges();
   }
 
+  function formatScheduleDate(ts) {
+    if (!ts) return '계산 중..';
+    var d = new Date(ts);
+    return d.getFullYear() + '.' +
+      String(d.getMonth() + 1).padStart(2, '0') + '.' +
+      String(d.getDate()).padStart(2, '0') + ' ' +
+      String(d.getHours()).padStart(2, '0') + ':' +
+      String(d.getMinutes()).padStart(2, '0') + ':' +
+      String(d.getSeconds()).padStart(2, '0');
+  }
+
   function updateAdminBadges() {
     var isSuper = false;
     try {
       var raw = localStorage.getItem('healim_auth_user');
       if (raw) {
         var u = JSON.parse(raw);
-        isSuper = (u.uid === 'healim0071' || u.isAdmin === true);
+        isSuper = (u.uid === 'healim0071' || u.isAdmin === true || u.grade === 'superadmin' || u.role === 'admin');
       }
     } catch(e) {}
 
-    // 칼럼 배지
+    // 칼럼 배지 (4번 사진 스타일)
     var colBadge = document.getElementById('autoColumnStatusBadge');
     var colText = document.getElementById('autoColumnNextScheduleText');
-    if (colBadge && colText) {
-      if (isSuper) {
-        colBadge.style.display = 'inline-flex';
+    if (colBadge) {
+      colBadge.style.display = isSuper ? 'flex' : 'none';
+      if (isSuper && colText) {
         var cState = getAutoColumnState();
-        if (cState.nextScheduleTime) {
-          var d = new Date(cState.nextScheduleTime);
-          colText.innerText = '다음 예정: ' + d.getFullYear() + '.' + String(d.getMonth() + 1).padStart(2, '0') + '.' + String(d.getDate()).padStart(2, '0') + ' ' + String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0');
+        if (!cState.nextScheduleTime) {
+          cState.nextScheduleTime = calculateNextColumnSchedule(Date.now());
+          saveAutoColumnState(cState);
         }
-      } else {
-        colBadge.style.display = 'none';
+        colText.innerText = '다음 발행: ' + formatScheduleDate(cState.nextScheduleTime);
       }
     }
 
-    // FAQ 배지
+    // FAQ 배지 (3번 사진 스타일)
     var faqBadge = document.getElementById('autoFaqStatusBadge');
     var faqText = document.getElementById('autoFaqNextScheduleText');
-    if (faqBadge && faqText) {
-      if (isSuper) {
-        faqBadge.style.display = 'inline-flex';
+    if (faqBadge) {
+      faqBadge.style.display = isSuper ? 'flex' : 'none';
+      if (isSuper && faqText) {
         var fState = getAutoFaqState();
-        if (fState.nextScheduleTime) {
-          var fd = new Date(fState.nextScheduleTime);
-          faqText.innerText = '다음 예정: ' + fd.getFullYear() + '.' + String(fd.getMonth() + 1).padStart(2, '0') + '.' + String(fd.getDate()).padStart(2, '0') + ' ' + String(fd.getHours()).padStart(2, '0') + ':' + String(fd.getMinutes()).padStart(2, '0');
+        if (!fState.nextScheduleTime) {
+          fState.nextScheduleTime = calculateNextFaqSchedule(Date.now());
+          saveAutoFaqState(fState);
         }
-      } else {
-        faqBadge.style.display = 'none';
+        faqText.innerText = '다음 발행: ' + formatScheduleDate(fState.nextScheduleTime);
       }
     }
   }
@@ -1087,18 +1096,27 @@
   function triggerAutoColumnPublishManual() {
     var post = publishOneAutoColumn(true);
     if (post) {
-      alert('⚡ 치료칼럼 1편이 자동 발행되었습니다!\n\n[분류]: ' + post.category + '\n[제목]: ' + post.title);
+      if (typeof window.renderColumnsList === 'function') window.renderColumnsList();
+      updateAdminBadges();
+      alert('⚡ 치료칼럼 1편이 즉시 자동 발행되었습니다!\n\n[분류]: ' + post.category + '\n[제목]: ' + post.title);
+    } else {
+      alert('발행 가능한 치료칼럼 풀이 소진되었습니다.');
     }
   }
 
   function triggerAutoFaqPublishManual() {
     var faq = publishOneAutoFaq(true);
     if (faq) {
-      alert('⚡ FAQ 1개가 자동 발행되었습니다!\n\n[질환]: ' + faq.disease + '\n[질문]: Q. ' + faq.q);
+      if (typeof window.renderFaqList === 'function') window.renderFaqList();
+      updateAdminBadges();
+      alert('⚡ FAQ 1편이 즉시 자동 발행되었습니다!\n\n[질환]: ' + faq.disease + '\n[질문]: Q. ' + faq.q);
+    } else {
+      alert('발행 가능한 FAQ 풀이 소진되었습니다.');
     }
   }
 
   // 전역 노출
+  window.updateAdminBadges = updateAdminBadges;
   window.checkAndRunDualPublish = checkAndRunDualPublish;
   window.checkAndRunAutoColumnPublish = checkAndRunDualPublish; // 하위 호환
   window.triggerAutoColumnPublishManual = triggerAutoColumnPublishManual;

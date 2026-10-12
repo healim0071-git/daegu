@@ -98,21 +98,8 @@ layout: single
 <div id="tab-pane-columns" class="comm-tab-content">
 <div id="columns" style="scroll-margin-top: 100px;"></div>
 
-<!-- 최고관리자(healim0071) 전용 자동발행 상태 바 & 칼럼 작성 버튼 -->
-<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; flex-wrap: wrap; gap: 12px;">
-      
-<!-- 최고관리자 칼럼 배지 -->
-<div id="autoColumnStatusBadge" style="display: none; align-items: center; gap: 8px; font-size: 12.5px; color: #0C4349; background: #F0F7F8; border: 1px solid #BADFE3; padding: 8px 14px; border-radius: 8px;">
-<span style="display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #10B981; box-shadow: 0 0 6px #10B981;"></span>
-<span><strong>치료칼럼 자동 발행</strong>: 주 3~4회 (오전 10:00~12:00)</span>
-<span style="color: #94A3B8;">|</span>
-<span id="autoColumnNextScheduleText" style="color: #146369; font-weight: 700;">다음 예정: 확인 중..</span>
-<button type="button" onclick="triggerAutoColumnPublishManual()" style="margin-left: 6px; font-size: 11.5px; padding: 4px 10px; background: #FFFFFF; border: 1px solid #146369; border-radius: 4px; color: #146369; font-weight: 700; cursor: pointer;">
-⚡ 즉시 1편 발행
-</button>
-</div>
-
-<!-- 검색 및 카테고리 필터 -->
+<!-- 상단 검색/필터 & 칼럼 작성 버튼 -->
+<div style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
 <div style="display: flex; align-items: center; gap: 8px; margin-left: auto; flex-wrap: wrap;">
 <select id="colCategoryFilter" onchange="filterColumns()" style="padding: 8px 12px; border: 1px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; outline: none; background: #FFF; color: #334155;">
 <option value="ALL">전체 질환 보기</option>
@@ -138,6 +125,20 @@ layout: single
 ✏️ 칼럼 작성
 </button>
 </div>
+</div>
+
+
+<!-- 최고관리자 치료칼럼 자동발행 상태 배너 (4번 사진 스타일: 가로 100% 단독 배너) -->
+<div id="autoColumnStatusBadge" style="display: none; justify-content: space-between; align-items: center; width: 100%; margin-bottom: 16px; padding: 11px 18px; background: #F0F7F8; border: 1px solid #BADFE3; border-radius: 8px; box-sizing: border-box; font-size: 13px; color: #0C4349; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
+  <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+    <span style="display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #10B981; box-shadow: 0 0 6px #10B981;"></span>
+    <span><strong>치료칼럼 자동 발행</strong>: 주 3~4회 (오전 10:00~12:00)</span>
+    <span style="color: #94A3B8;">|</span>
+    <span id="autoColumnNextScheduleText" style="color: #146369; font-weight: 700;">다음 발행: 확인 중..</span>
+  </div>
+  <button type="button" onclick="triggerAutoColumnPublishManual()" style="margin-left: auto; font-size: 12px; padding: 5px 12px; background: #FFFFFF; border: 1px solid #146369; border-radius: 6px; color: #146369; font-weight: 700; cursor: pointer; white-space: nowrap; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: all 0.15s;" onmouseover="this.style.background='#E6F6F8';" onmouseout="this.style.background='#FFFFFF';">
+    ⚡ 즉시 1편 발행
+  </button>
 </div>
 
 <!-- 칼럼 테이블 목록 그리드 -->
@@ -245,16 +246,7 @@ layout: single
 
 <!-- [요구사항 반영] 상단 상태 배지 및 검색/필터/작성 바 일체형 상단 배치 -->
 <div style="display: flex; justify-content: space-between; align-items: center; margin: 0 auto 20px; max-width: 860px; flex-wrap: wrap; gap: 12px;">
-  <!-- 최고관리자 FAQ 자동발행 상태 바 & 수동 발행 버튼 (왼쪽) -->
-  <div id="autoFaqStatusBadge" style="display: none; align-items: center; gap: 8px; font-size: 12.5px; color: #0C4349; background: #F0F7F8; border: 1px solid #BADFE3; padding: 8px 14px; border-radius: 8px;">
-    <span style="display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #10B981; box-shadow: 0 0 6px #10B981;"></span>
-    <span><strong>FAQ 자동 발행</strong>: 주 2~3회 (오전 09:00~12:00)</span>
-    <span style="color: #94A3B8;">|</span>
-    <span id="autoFaqNextScheduleText" style="color: #146369; font-weight: 700;">다음 예정: 확인 중..</span>
-    <button type="button" onclick="triggerAutoFaqPublishManual()" style="margin-left: 6px; font-size: 11.5px; padding: 4px 10px; background: #FFFFFF; border: 1px solid #146369; border-radius: 4px; color: #146369; font-weight: 700; cursor: pointer;">
-      ⚡ 즉시 1개 발행
-    </button>
-  </div>
+
 
   <!-- 검색 및 카테고리 필터 & 최고관리자 FAQ 작성 버튼 (A부분: 상단 우측으로 이동 배치) -->
   <div style="display: flex; align-items: center; gap: 8px; margin-left: auto; flex-wrap: wrap;">
@@ -286,6 +278,20 @@ layout: single
 <div style="margin-bottom: 24px; text-align: center;">
 <h3 style="font-size: 24px; font-weight: 800; color: #0C4349; margin: 0 0 8px;">자주 묻는 핵심 질문 (FAQ)</h3>
 <p style="font-size: 14px; color: #64748B;">진료 예약 전 환자분들이 가장 많이 궁금해하시는 사항을 김대억 대표원장이 직접 답변해 드립니다.</p>
+</div>
+
+
+<!-- 최고관리자 FAQ 자동발행 상태 배너 (3번 사진 스타일: FAQ 목록 바로 위에 가로 100% 단독 배너) -->
+<div id="autoFaqStatusBadge" style="display: none; justify-content: space-between; align-items: center; width: 100%; max-width: 860px; margin: 0 auto 18px; padding: 11px 18px; background: #F0F7F8; border: 1px solid #BADFE3; border-radius: 8px; box-sizing: border-box; font-size: 13px; color: #0C4349; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
+  <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+    <span style="display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: #10B981; box-shadow: 0 0 6px #10B981;"></span>
+    <span><strong>FAQ 자동 발행</strong>: 주 2~3회 (오전 09:00~12:00)</span>
+    <span style="color: #94A3B8;">|</span>
+    <span id="autoFaqNextScheduleText" style="color: #146369; font-weight: 700;">다음 발행: 확인 중..</span>
+  </div>
+  <button type="button" onclick="triggerAutoFaqPublishManual()" style="margin-left: auto; font-size: 12px; padding: 5px 12px; background: #FFFFFF; border: 1px solid #146369; border-radius: 6px; color: #146369; font-weight: 700; cursor: pointer; white-space: nowrap; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: all 0.15s;" onmouseover="this.style.background='#E6F6F8';" onmouseout="this.style.background='#FFFFFF';">
+    ⚡ 즉시 1편 발행
+  </button>
 </div>
 
 <div id="faqAccordionContainer" style="max-width: 860px; margin: 0 auto 40px;">
@@ -4409,7 +4415,18 @@ var currentPage = 1;
 var itemsPerPage = 8;
 var filteredColumns = [];
 
-function isHealimSuperAdmin() {
+function refreshAdminBadgesLocal() {
+    var isSuper = isHealimSuperAdmin();
+    var colBadge = document.getElementById('autoColumnStatusBadge');
+    var faqBadge = document.getElementById('autoFaqStatusBadge');
+    if (colBadge) colBadge.style.display = isSuper ? 'flex' : 'none';
+    if (faqBadge) faqBadge.style.display = isSuper ? 'flex' : 'none';
+    if (typeof window.updateAdminBadges === 'function') {
+      window.updateAdminBadges();
+    }
+  }
+
+  function isHealimSuperAdmin() {
   try {
     var raw = localStorage.getItem('healim_auth_user');
     if (!raw) return false;
@@ -4425,6 +4442,7 @@ function isHealimLoggedIn() {
 }
 
 function switchCommunityTab(tabName) {
+  setTimeout(function() { refreshAdminBadgesLocal(); }, 50);
   currentTab = tabName;
   var btns = document.querySelectorAll('.comm-tab-btn');
   btns.forEach(function(btn) {
@@ -4529,6 +4547,9 @@ function renderColumnsList() {
   });
 
   var isSuper = isHealimSuperAdmin();
+  var colBadge = document.getElementById('autoColumnStatusBadge');
+  if (colBadge) colBadge.style.display = isSuper ? 'flex' : 'none';
+  refreshAdminBadgesLocal();
   var thAdmin = document.getElementById('thAdminAction');
   if (thAdmin) thAdmin.style.display = isSuper ? 'table-cell' : 'none';
 
@@ -4950,6 +4971,9 @@ function renderFaqList() {
   if (!container) return;
 
   var isSuper = isHealimSuperAdmin();
+  var faqBadge = document.getElementById('autoFaqStatusBadge');
+  if (faqBadge) faqBadge.style.display = isSuper ? 'flex' : 'none';
+  refreshAdminBadgesLocal();
   var btnWrite = document.getElementById('btnWriteFaq');
   if (btnWrite) btnWrite.style.display = isSuper ? 'inline-flex' : 'none';
 
@@ -5253,6 +5277,9 @@ document.addEventListener('DOMContentLoaded', function() {
   if (typeof window.checkAndRunDualPublish === 'function') {
     window.checkAndRunDualPublish();
   }
+  refreshAdminBadgesLocal();
+  setTimeout(refreshAdminBadgesLocal, 100);
+  setTimeout(refreshAdminBadgesLocal, 500);
 });
 </script>
 
