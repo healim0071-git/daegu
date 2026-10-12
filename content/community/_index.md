@@ -4470,6 +4470,7 @@ function switchCommunityTab(tabName) {
   if (tabName === 'reviews') renderReviewsList();
   if (tabName === 'faq') renderFaqList();
   if (tabName === 'youtube') renderYoutubeList();
+  if (typeof window.renderCommonBottomRealtimeAll === 'function') window.renderCommonBottomRealtimeAll();
 }
 
 // -------------------------------------------------------------
@@ -4524,6 +4525,7 @@ function getMergedColumns() {
 }
 
 function renderColumnsList() {
+  if (typeof window.renderCommonBottomRealtimeAll === 'function') window.renderCommonBottomRealtimeAll();
   var all = getMergedColumns();
   var catFilter = document.getElementById('colCategoryFilter') ? document.getElementById('colCategoryFilter').value : 'ALL';
   var searchKw = document.getElementById('colSearchKeyword') ? document.getElementById('colSearchKeyword').value.trim().toLowerCase() : '';
@@ -4806,6 +4808,7 @@ function goToReviewPage(pageNum) {
 }
 
 function renderReviewsList() {
+  if (typeof window.renderCommonBottomRealtimeAll === 'function') window.renderCommonBottomRealtimeAll();
   var container = document.getElementById('reviewsContainer');
   if (!container) return;
 
@@ -4967,6 +4970,7 @@ function getMergedFaqs() {
 }
 
 function renderFaqList() {
+  if (typeof window.renderCommonBottomRealtimeAll === 'function') window.renderCommonBottomRealtimeAll();
   var container = document.getElementById('faqAccordionContainer');
   if (!container) return;
 
@@ -5268,6 +5272,7 @@ function handleHashNavigation() {
   } else {
     switchCommunityTab('columns');
   }
+  if (typeof window.renderCommonBottomRealtimeAll === 'function') window.renderCommonBottomRealtimeAll();
 }
 
 window.addEventListener('hashchange', handleHashNavigation);

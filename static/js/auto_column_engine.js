@@ -800,6 +800,7 @@
     console.log('[Healim Auto-Column] Published:', newPost.title);
 
     if (typeof window.renderColumnsList === 'function') window.renderColumnsList();
+    if (typeof window.renderCommonBottomRealtimeAll === 'function') window.renderCommonBottomRealtimeAll();
     checkAndRunReviewsSync();
     checkAndRunYoutubeSync();
     updateAdminBadges();
@@ -919,6 +920,7 @@
     console.log('[Healim Auto-FAQ] Published:', newFaq.q);
 
     if (typeof window.renderFaqList === 'function') window.renderFaqList();
+    if (typeof window.renderCommonBottomRealtimeAll === 'function') window.renderCommonBottomRealtimeAll();
     updateAdminBadges();
     return newFaq;
   }
@@ -1096,6 +1098,7 @@
     var post = publishOneAutoColumn(true);
     if (post) {
       if (typeof window.renderColumnsList === 'function') window.renderColumnsList();
+      if (typeof window.renderCommonBottomRealtimeAll === 'function') window.renderCommonBottomRealtimeAll();
       updateAdminBadges();
       alert('⚡ 치료칼럼 1편이 즉시 자동 발행되었습니다!\n\n[분류]: ' + post.category + '\n[제목]: ' + post.title);
     } else {
@@ -1107,6 +1110,7 @@
     var faq = publishOneAutoFaq(true);
     if (faq) {
       if (typeof window.renderFaqList === 'function') window.renderFaqList();
+      if (typeof window.renderCommonBottomRealtimeAll === 'function') window.renderCommonBottomRealtimeAll();
       updateAdminBadges();
       alert('⚡ FAQ 1편이 즉시 자동 발행되었습니다!\n\n[질환]: ' + faq.disease + '\n[질문]: Q. ' + faq.q);
     } else {
