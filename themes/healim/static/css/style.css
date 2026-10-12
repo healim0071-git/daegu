@@ -3171,11 +3171,17 @@ ol.system-grid,
 ol.specialties-grid,
 ul.broadcast-strip-grid,
 ul.doctor-books-showcase,
-ul.books-grid,
 ul.bottom-cards-grid {
   list-style: none !important;
   margin: 0 !important;
   padding: 0 !important;
+}
+
+ul.books-grid {
+  list-style: none !important;
+  margin: 0 auto 32px !important;
+  padding: 0 !important;
+  justify-content: center;
 }
 
 ol.system-grid > li,
