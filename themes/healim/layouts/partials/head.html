@@ -5,6 +5,9 @@
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <link rel="canonical" href="{{ .Permalink }}">
 
+  <!-- Naver Site Verification -->
+  <meta name="naver-site-verification" content="54bdb91194fe192a07777afff7babb5894b57c4f" />
+
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ if .Params.seo_title }}{{ .Params.seo_title }}{{ else if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
