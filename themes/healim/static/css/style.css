@@ -3371,6 +3371,11 @@ ul.bottom-cards-grid > li {
   border-top: 1px solid #edf3f4;
   padding-top: 10px;
   font-style: normal;
+  min-height: 48px;
+  line-height: 1.45;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .stat-source cite {
