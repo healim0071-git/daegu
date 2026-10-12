@@ -763,7 +763,6 @@
         candidate = columnsPool[Math.floor(Math.random() * columnsPool.length)];
       }
     }
-    }
 
     if (!candidate) return null;
 
