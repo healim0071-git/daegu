@@ -1,4 +1,41 @@
+# Robots.txt for https://healim-daegu.com
+# AI (GEO/AEO) & Search Engine Optimization
+
 User-agent: *
 Allow: /
 
+# Explicit permissions for AI Search Crawlers (AEO / GEO Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Korean & Global Search Engines
+User-agent: Yeti
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemaps & Feeds
 Sitemap: https://healim-daegu.com/sitemap.xml
+Sitemap: https://healim-daegu.com/index.xml

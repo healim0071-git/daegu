@@ -7,7 +7,7 @@ hero_title: "16년 이상 긴장성 다한증·수족다한증을<br>집중적�
 ---
 
 <div class="cond-section" style="margin-top: 10px;">
-<h1 class="cond-h1" style="font-size: 1.85rem; color: #0f172a; margin-bottom: 18px; font-weight: 800; letter-spacing: -0.5px;">긴장성 다한증 증상·원인·치료</h1>
+<h2 class="cond-h1" style="font-size: 1.85rem; color: #0f172a; margin-bottom: 18px; font-weight: 800; letter-spacing: -0.5px;">긴장성 다한증 증상·원인·치료</h2>
 
 <div class="empathy-hero-box" style="background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%); border-left: 5px solid #1a5276; padding: 24px; border-radius: 8px; margin-bottom: 28px;">
 <h2 style="color: #1a5276; margin-top: 0; font-size: 1.4rem; line-height: 1.45;">긴장만 하면 땀이 비 오듯 쏟아지나요?</h2>

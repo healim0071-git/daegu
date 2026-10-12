@@ -3160,3 +3160,133 @@ body.is-disease-page .landing-footer-guide {
     gap: 12px;
   }
 }
+
+/* ==========================================================================
+   Column Single Page Styling (AEO/SEO Optimized)
+   ========================================================================== */
+.column-single-wrapper {
+  margin-top: 16px;
+}
+.column-single-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.column-badge-cat {
+  padding: 4px 12px;
+  background: #E6F6F8;
+  color: #008194;
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 20px;
+}
+.column-meta-author, .column-meta-date {
+  font-size: 14px;
+  color: #64748B;
+}
+.column-single-summary {
+  background: #F8FAFC;
+  border-left: 4px solid #008194;
+  padding: 16px 20px;
+  border-radius: 0 12px 12px 0;
+  margin-bottom: 30px;
+  font-size: 15px;
+  color: #1E293B;
+  line-height: 1.7;
+}
+.column-single-body {
+  font-size: 16px;
+  line-height: 1.85;
+  color: #334155;
+  word-break: keep-all;
+}
+.column-single-body p {
+  margin-bottom: 1.25em;
+}
+.column-single-body strong {
+  color: #0F172A;
+  font-weight: 700;
+}
+.column-author-card {
+  margin-top: 48px;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 24px;
+}
+.column-author-card .author-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  background: #008194;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+.column-author-card h4 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0F172A;
+  margin: 0 0 8px;
+}
+.column-author-card .author-desc {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.65;
+  margin: 0;
+}
+.column-cta-box {
+  margin-top: 32px;
+  background: linear-gradient(135deg, #0C4349 0%, #146369 100%);
+  border-radius: 12px;
+  padding: 28px 24px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.column-cta-box .cta-heading {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0 0 8px;
+  color: #FFFFFF;
+}
+.column-cta-box .cta-sub {
+  font-size: 14px;
+  color: #E2E8F0;
+  margin: 0 0 20px;
+}
+.column-cta-box .cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.column-cta-box .btn-primary {
+  background: #FFFFFF;
+  color: #0C4349;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+}
+.column-cta-box .btn-secondary {
+  background: rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+}
+.column-legal-notice {
+  margin-top: 24px;
+  font-size: 12.5px;
+  color: #94A3B8;
+  line-height: 1.6;
+  border-top: 1px dashed #CBD5E1;
+  padding-top: 16px;
+}

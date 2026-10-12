@@ -1,0 +1,32 @@
+{{ define "main" }}
+<div class="container column-page-container" style="max-width: 860px; margin: 40px auto 80px; padding: 0 20px;">
+  <!-- 상단 브레드크럼 -->
+  <nav class="breadcrumb-nav" aria-label="breadcrumb" style="margin-bottom: 24px; font-size: 14px; color: #64748B;">
+    <a href="/" style="color: #008194; text-decoration: none;">홈</a> &gt; 
+    <a href="/community/#columns" style="color: #008194; text-decoration: none;">의학 칼럼</a> &gt; 
+    <span style="color: #1E293B;">{{ .Title }}</span>
+  </nav>
+
+  <article class="column-article" style="background: #FFFFFF; border-radius: 16px; border: 1px solid #E2E8F0; padding: 36px 32px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);">
+    <header class="column-header" style="margin-bottom: 28px; border-bottom: 1px solid #E2E8F0; padding-bottom: 20px;">
+      <span style="display: inline-block; padding: 4px 12px; background: #E6F6F8; color: #008194; font-weight: 700; font-size: 13px; border-radius: 20px; margin-bottom: 12px;">{{ .Params.category }}</span>
+      <h1 style="font-size: 26px; font-weight: 800; color: #0F172A; line-height: 1.4; margin: 0 0 16px;">{{ .Title }}</h1>
+      <div style="font-size: 14px; color: #64748B; display: flex; gap: 16px; flex-wrap: wrap;">
+        <span>✍️ {{ .Params.author }}</span>
+        <span>📅 {{ .Date.Format "2006.01.02" }}</span>
+        <span>📍 대구 수성구 범어역 해아림한의원</span>
+      </div>
+    </header>
+
+    <div class="column-content-area" style="font-size: 16px; line-height: 1.85; color: #334155;">
+      {{ .Content }}
+    </div>
+
+    <footer style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #E2E8F0; text-align: center;">
+      <a href="/community/#columns" style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 24px; background: #F1F5F9; color: #334155; text-decoration: none; border-radius: 8px; font-weight: 600; font-size: 14px;">
+        ← 전체 칼럼 목록으로 돌아가기
+      </a>
+    </footer>
+  </article>
+</div>
+{{ end }}
