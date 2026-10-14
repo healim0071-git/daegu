@@ -10,7 +10,7 @@ description: "의료법 제56조를 준수하여 치료후기는 블러 처리�
 - **작성일**: 2026.10.06
 - **치료 전 증상**: 일상 속 사소한 자극에도 과도한 예기불안과 심계항진으로 업무와 생활 지장.
 - **치료 후 변화**: <span class="review-blur-text">원장님의 심층 진단과 맞춤 한약 처방 후 불안이 가라앉고 편안한 일상으로 복귀했습니다.</span>
-- [공식 홈페이지 로그인 열람 바로가기 (healim.com/5-3) ↗](https://www.healim.com/5-3?uid=18911&mod=document&pageid=1)
+- [공식 홈페이지 로그인 열람 바로가기 (healim.com/5-3) ↗](https://www.healim.com/5-3)
 
 ---
 
@@ -18,7 +18,7 @@ description: "의료법 제56조를 준수하여 치료후기는 블러 처리�
 - **작성일**: 2026.10.06
 - **치료 전 증상**: 반복되는 불안감과 신체적 긴장감으로 스스로 통제하기 힘든 두려움 지속.
 - **치료 후 변화**: <span class="review-blur-text">한방신경정신과 1:1 맞춤 치료로 마음에 여유가 생기고 불안 증상이 현저히 개선되었습니다.</span>
-- [공식 홈페이지 로그인 열람 바로가기 (healim.com/5-3) ↗](https://www.healim.com/5-3?uid=18910&mod=document&pageid=1)
+- [공식 홈페이지 로그인 열람 바로가기 (healim.com/5-3) ↗](https://www.healim.com/5-3)
 
 ---
 
@@ -26,7 +26,7 @@ description: "의료법 제56조를 준수하여 치료후기는 블러 처리�
 - **작성일**: 2026.09.15
 - **치료 전 증상**: 지하철, 터널 진입 시 급격한 호흡곤란 및 심계항진으로 응급실 내원.
 - **치료 후 변화**: <span class="review-blur-text">치료 후 가슴 답답함과 숨 막힘이 사라졌고 스스로 호흡을 가다듬고 안정감을 찾게 되었습니다.</span>
-- [공식 홈페이지 로그인 열람 바로가기 (healim.com/5-3) ↗](https://www.healim.com/5-3?uid=18752&mod=document&pageid=1)
+- [공식 홈페이지 로그인 열람 바로가기 (healim.com/5-3) ↗](https://www.healim.com/5-3)
 
 ---
 
@@ -34,7 +34,7 @@ description: "의료법 제56조를 준수하여 치료후기는 블러 처리�
 - **작성일**: 2026.09.14
 - **치료 전 증상**: 반복 확인 행동과 침습적 사고로 일상 업무 지장.
 - **치료 후 변화**: <span class="review-blur-text">맞춤 한약과 두뇌 훈련을 받으며 강박 충동을 스스로 조절할 수 있는 힘이 생겼습니다.</span>
-- [공식 홈페이지 로그인 열람 바로가기 (healim.com/5-3) ↗](https://www.healim.com/5-3?uid=18744&mod=document&pageid=1)
+- [공식 홈페이지 로그인 열람 바로가기 (healim.com/5-3) ↗](https://www.healim.com/5-3)
 
 ---
 
@@ -42,7 +42,7 @@ description: "의료법 제56조를 준수하여 치료후기는 블러 처리�
 - **작성일**: 2026.09.11
 - **치료 전 증상**: '아아' 소리내는 음성틱과 고개 꺾기 근육틱 심화.
 - **치료 후 변화**: <span class="review-blur-text">치료 후 음성틱이 소실되고 근육틱도 거의 눈에 띄지 않아 밝은 학교생활을 하고 있습니다.</span>
-- [공식 홈페이지 로그인 열람 바로가기 (healim.com/5-3) ↗](https://www.healim.com/5-3?uid=18723&mod=document&pageid=1)
+- [공식 홈페이지 로그인 열람 바로가기 (healim.com/5-3) ↗](https://www.healim.com/5-3)
 
 ---
 
@@ -58,7 +58,7 @@ description: "의료법 제56조를 준수하여 치료후기는 블러 처리�
 - **작성일**: 2026.09.11
 - **치료 전 증상**: 온몸 열감, 식은땀, 만성 무기력, 수면장애.
 - **치료 후 변화**: <span class="review-blur-text">정밀 검사 후 맞춤 한약을 복용하며 악몽 없이 깊은 잠을 자고 피로가 해소되었습니다.</span>
-- [공식 홈페이지 로그인 열람 바로가기 (healim.com/5-3) ↗](https://www.healim.com/5-3?uid=18721&mod=document&pageid=1)
+- [공식 홈페이지 로그인 열람 바로가기 (healim.com/5-3) ↗](https://www.healim.com/5-3)
 
 ---
 
@@ -66,4 +66,4 @@ description: "의료법 제56조를 준수하여 치료후기는 블러 처리�
 - **작성일**: 2026.09.11
 - **치료 전 증상**: 고속도로 및 터널 운전 중 공황발작 발생.
 - **치료 후 변화**: <span class="review-blur-text">원인 조율 치료 후 불안감이 사라져 이제는 장거리 고속도로 운전도 편안히 합니다.</span>
-- [공식 홈페이지 로그인 열람 바로가기 (healim.com/5-3) ↗](https://www.healim.com/5-3?uid=18719&mod=document&pageid=1)
+- [공식 홈페이지 로그인 열람 바로가기 (healim.com/5-3) ↗](https://www.healim.com/5-3)

@@ -985,7 +985,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202610/6ac4f74f39cba6205088-130x130.jpg",
     "date": "2026-10-06",
     "views": "15",
-    "targetUrl": "https://www.healim.com/5-3?uid=18911&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 258,
@@ -996,7 +996,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202610/6ac4f253443338703452-130x130.jpg",
     "date": "2026-10-06",
     "views": "12",
-    "targetUrl": "https://www.healim.com/5-3?uid=18910&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 1,
@@ -1007,7 +1007,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6ab36d9b1fb358328084-130x130.jpg",
     "date": "2026-09-23",
     "views": "2",
-    "targetUrl": "https://www.healim.com/5-3?uid=18911&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 2,
@@ -1018,7 +1018,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6ab364aeb849c6959504-130x130.jpg",
     "date": "2026-09-23",
     "views": "2",
-    "targetUrl": "https://www.healim.com/5-3?uid=256&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 3,
@@ -1029,7 +1029,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa8e5cc5d4827332728-130x130.png",
     "date": "2026-09-15",
     "views": "5",
-    "targetUrl": "https://www.healim.com/5-3?uid=255&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 4,
@@ -1040,7 +1040,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa8e6338d49d1165384-130x130.png",
     "date": "2026-09-14",
     "views": "4",
-    "targetUrl": "https://www.healim.com/5-3?uid=254&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 5,
@@ -1051,7 +1051,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c422a54dc3060837-130x130.jpg",
     "date": "2026-09-11",
     "views": "6",
-    "targetUrl": "https://www.healim.com/5-3?uid=253&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 6,
@@ -1062,7 +1062,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c3a630a6e3110775-130x130.jpg",
     "date": "2026-09-11",
     "views": "3",
-    "targetUrl": "https://www.healim.com/5-3?uid=252&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 7,
@@ -1073,7 +1073,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c3364ea728814462-130x130.png",
     "date": "2026-09-11",
     "views": "5",
-    "targetUrl": "https://www.healim.com/5-3?uid=259&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 8,
@@ -1084,7 +1084,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c29e9955e9382782-130x130.jpg",
     "date": "2026-09-11",
     "views": "5",
-    "targetUrl": "https://www.healim.com/5-3?uid=250&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 9,
@@ -1095,7 +1095,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c245d425f9709039-130x130.jpg",
     "date": "2026-09-11",
     "views": "4",
-    "targetUrl": "https://www.healim.com/5-3?uid=249&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 10,
@@ -1106,7 +1106,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c2061e4124857470-130x130.jpg",
     "date": "2026-09-11",
     "views": "2",
-    "targetUrl": "https://www.healim.com/5-3?uid=248&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 11,
@@ -1117,7 +1117,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c1a5775a03133227-130x130.png",
     "date": "2026-09-11",
     "views": "4",
-    "targetUrl": "https://www.healim.com/5-3?uid=247&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 12,
@@ -1128,7 +1128,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c1253c71b2486810-130x130.png",
     "date": "2026-09-11",
     "views": "8",
-    "targetUrl": "https://www.healim.com/5-3?uid=246&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 13,
@@ -1139,7 +1139,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa1167cb9f3a8236420-130x130.jpg",
     "date": "2026-09-09",
     "views": "2",
-    "targetUrl": "https://www.healim.com/5-3?uid=245&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 14,
@@ -1150,7 +1150,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6a9a5fee87f737909473-130x130.jpg",
     "date": "2026-09-04",
     "views": "5",
-    "targetUrl": "https://www.healim.com/5-3?uid=244&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 15,
@@ -1161,7 +1161,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6a9a5ec24bc614448431-130x130.jpg",
     "date": "2026-09-04",
     "views": "5",
-    "targetUrl": "https://www.healim.com/5-3?uid=243&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 16,
@@ -1172,7 +1172,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202608/6a7a7ceed61109263037-130x130.jpg",
     "date": "2026-08-11",
     "views": "9",
-    "targetUrl": "https://www.healim.com/5-3?uid=242&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 17,
@@ -1183,7 +1183,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202607/6a50b39e9e9bd9633328-130x130.jpg",
     "date": "2026-07-10",
     "views": "20",
-    "targetUrl": "https://www.healim.com/5-3?uid=241&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 18,
@@ -1194,7 +1194,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202605/6a0fc0dfb676c5305903-130x130.jpg",
     "date": "2026-05-22",
     "views": "21",
-    "targetUrl": "https://www.healim.com/5-3?uid=240&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 19,
@@ -1205,7 +1205,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202605/6a0fbeb6e45ea7713324-130x130.jpg",
     "date": "2026-05-22",
     "views": "9",
-    "targetUrl": "https://www.healim.com/5-3?uid=239&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 20,
@@ -1216,7 +1216,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202605/6a0fbc8aa75df1864074-130x130.jpg",
     "date": "2026-05-22",
     "views": "14",
-    "targetUrl": "https://www.healim.com/5-3?uid=238&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 21,
@@ -1227,7 +1227,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202604/69e70a44778af5934931-130x130.jpg",
     "date": "2026-04-21",
     "views": "26",
-    "targetUrl": "https://www.healim.com/5-3?uid=237&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 22,
@@ -1238,7 +1238,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202604/69e5967ebac411499015-130x130.png",
     "date": "2026-04-20",
     "views": "13",
-    "targetUrl": "https://www.healim.com/5-3?uid=236&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 23,
@@ -1249,7 +1249,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202604/69e1c968264103446826-130x130.png",
     "date": "2026-04-17",
     "views": "14",
-    "targetUrl": "https://www.healim.com/5-3?uid=235&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 24,
@@ -1260,7 +1260,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202604/69e03791e0b0f5960407-130x130.jpg",
     "date": "2026-04-16",
     "views": "16",
-    "targetUrl": "https://www.healim.com/5-3?uid=234&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 25,
@@ -1271,7 +1271,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69bd2007b2a684579841-130x130.jpg",
     "date": "2026-03-20",
     "views": "14",
-    "targetUrl": "https://www.healim.com/5-3?uid=233&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 26,
@@ -1282,7 +1282,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69ba6efa48c6d1629575-130x130.jpg",
     "date": "2026-03-18",
     "views": "31",
-    "targetUrl": "https://www.healim.com/5-3?uid=232&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 27,
@@ -1293,7 +1293,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8f6b9210eb5360884-130x130.jpg",
     "date": "2026-03-17",
     "views": "18",
-    "targetUrl": "https://www.healim.com/5-3?uid=231&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 28,
@@ -1304,7 +1304,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8f613ccfd11926224-130x130.jpg",
     "date": "2026-03-17",
     "views": "16",
-    "targetUrl": "https://www.healim.com/5-3?uid=230&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 29,
@@ -1315,7 +1315,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8f5402720b3888467-130x130.jpg",
     "date": "2026-03-17",
     "views": "19",
-    "targetUrl": "https://www.healim.com/5-3?uid=229&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 30,
@@ -1326,7 +1326,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8d1dd5fd684957722-130x130.jpg",
     "date": "2026-03-17",
     "views": "6",
-    "targetUrl": "https://www.healim.com/5-3?uid=228&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 31,
@@ -1337,7 +1337,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b818d3ea4082845574-130x130.jpg",
     "date": "2026-03-16",
     "views": "20",
-    "targetUrl": "https://www.healim.com/5-3?uid=227&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 32,
@@ -1348,7 +1348,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8f2a685d3f7213881-130x130.jpg",
     "date": "2026-02-10",
     "views": "26",
-    "targetUrl": "https://www.healim.com/5-3?uid=226&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 33,
@@ -1359,7 +1359,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8f2feb9c2c1643080-130x130.jpg",
     "date": "2026-02-10",
     "views": "14",
-    "targetUrl": "https://www.healim.com/5-3?uid=225&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 34,
@@ -1370,7 +1370,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8f31fc99063785660-130x130.jpg",
     "date": "2026-02-10",
     "views": "19",
-    "targetUrl": "https://www.healim.com/5-3?uid=224&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 35,
@@ -1381,7 +1381,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8daad745056919663-130x130.png",
     "date": "2026-01-28",
     "views": "27",
-    "targetUrl": "https://www.healim.com/5-3?uid=223&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 36,
@@ -1392,7 +1392,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8db3314a896672629-130x130.png",
     "date": "2026-01-27",
     "views": "17",
-    "targetUrl": "https://www.healim.com/5-3?uid=222&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 37,
@@ -1403,7 +1403,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8db4f9c0cd8358967-130x130.png",
     "date": "2026-01-26",
     "views": "22",
-    "targetUrl": "https://www.healim.com/5-3?uid=221&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 38,
@@ -1414,7 +1414,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8db6d494ab4546659-130x130.png",
     "date": "2026-01-23",
     "views": "19",
-    "targetUrl": "https://www.healim.com/5-3?uid=220&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 39,
@@ -1425,7 +1425,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8db80b95738922314-130x130.png",
     "date": "2026-01-21",
     "views": "10",
-    "targetUrl": "https://www.healim.com/5-3?uid=219&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 40,
@@ -1436,7 +1436,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dbab910212707161-130x130.png",
     "date": "2026-01-19",
     "views": "25",
-    "targetUrl": "https://www.healim.com/5-3?uid=218&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 41,
@@ -1447,7 +1447,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dbcbf12d11998063-130x130.png",
     "date": "2026-01-16",
     "views": "11",
-    "targetUrl": "https://www.healim.com/5-3?uid=217&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 42,
@@ -1458,7 +1458,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202601/696759b4950557632687-130x130.jpg",
     "date": "2026-01-14",
     "views": "14",
-    "targetUrl": "https://www.healim.com/5-3?uid=216&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 43,
@@ -1469,7 +1469,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202601/696757a781d8e2313005-130x130.jpg",
     "date": "2026-01-14",
     "views": "23",
-    "targetUrl": "https://www.healim.com/5-3?uid=215&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 44,
@@ -1480,7 +1480,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dbed5dbe72415886-130x130.png",
     "date": "2026-01-14",
     "views": "18",
-    "targetUrl": "https://www.healim.com/5-3?uid=214&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 45,
@@ -1491,7 +1491,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dc13905458867863-130x130.png",
     "date": "2026-01-13",
     "views": "15",
-    "targetUrl": "https://www.healim.com/5-3?uid=213&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 46,
@@ -1502,7 +1502,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dc333e7b77410487-130x130.png",
     "date": "2026-01-12",
     "views": "10",
-    "targetUrl": "https://www.healim.com/5-3?uid=212&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 47,
@@ -1513,7 +1513,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dc58b187f9310582-130x130.png",
     "date": "2026-01-09",
     "views": "14",
-    "targetUrl": "https://www.healim.com/5-3?uid=211&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 48,
@@ -1524,7 +1524,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dc74b1f337616329-130x130.png",
     "date": "2026-01-07",
     "views": "15",
-    "targetUrl": "https://www.healim.com/5-3?uid=210&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 49,
@@ -1535,7 +1535,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dc9481c108594605-130x130.png",
     "date": "2026-01-06",
     "views": "11",
-    "targetUrl": "https://www.healim.com/5-3?uid=209&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 50,
@@ -1546,7 +1546,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dcbd80b047305381-130x130.png",
     "date": "2026-01-05",
     "views": "13",
-    "targetUrl": "https://www.healim.com/5-3?uid=208&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 51,
@@ -1557,7 +1557,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dcde529971443291-130x130.png",
     "date": "2026-01-02",
     "views": "13",
-    "targetUrl": "https://www.healim.com/5-3?uid=207&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 52,
@@ -1568,7 +1568,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dd098aaa83208630-130x130.png",
     "date": "2025-12-31",
     "views": "17",
-    "targetUrl": "https://www.healim.com/5-3?uid=206&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 53,
@@ -1579,7 +1579,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dd29371623645205-130x130.png",
     "date": "2025-12-30",
     "views": "5",
-    "targetUrl": "https://www.healim.com/5-3?uid=205&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 54,
@@ -1590,7 +1590,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dd45308372291295-130x130.png",
     "date": "2025-12-29",
     "views": "10",
-    "targetUrl": "https://www.healim.com/5-3?uid=204&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 55,
@@ -1601,7 +1601,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dd5ec6dcc5302400-130x130.png",
     "date": "2025-12-26",
     "views": "30",
-    "targetUrl": "https://www.healim.com/5-3?uid=203&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 56,
@@ -1612,7 +1612,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dd77c9c9a4130388-130x130.png",
     "date": "2025-12-24",
     "views": "7",
-    "targetUrl": "https://www.healim.com/5-3?uid=202&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 57,
@@ -1623,7 +1623,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dda09355e3786385-130x130.png",
     "date": "2025-12-23",
     "views": "5",
-    "targetUrl": "https://www.healim.com/5-3?uid=201&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 58,
@@ -1634,7 +1634,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8ddcdacf118046843-130x130.png",
     "date": "2025-12-22",
     "views": "28",
-    "targetUrl": "https://www.healim.com/5-3?uid=200&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 59,
@@ -1667,7 +1667,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8f36434b0a7621677-130x130.jpg",
     "date": "2025-12-19",
     "views": "14",
-    "targetUrl": "https://www.healim.com/5-3?uid=199&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 62,
@@ -1678,7 +1678,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8f38b26f9e9224226-130x130.jpg",
     "date": "2025-12-19",
     "views": "14",
-    "targetUrl": "https://www.healim.com/5-3?uid=198&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 63,
@@ -1689,7 +1689,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8f3ad012167784183-130x130.jpg",
     "date": "2025-12-19",
     "views": "22",
-    "targetUrl": "https://www.healim.com/5-3?uid=197&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 64,
@@ -1700,7 +1700,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8de1fcae888078559-130x130.png",
     "date": "2025-12-19",
     "views": "8",
-    "targetUrl": "https://www.healim.com/5-3?uid=196&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 65,
@@ -1711,7 +1711,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8de402f4924064858-130x130.png",
     "date": "2025-12-17",
     "views": "11",
-    "targetUrl": "https://www.healim.com/5-3?uid=195&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 66,
@@ -1722,7 +1722,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dea7043fe6722443-130x130.png",
     "date": "2025-12-16",
     "views": "16",
-    "targetUrl": "https://www.healim.com/5-3?uid=194&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 67,
@@ -1733,7 +1733,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dec6b76755889510-130x130.png",
     "date": "2025-12-15",
     "views": "12",
-    "targetUrl": "https://www.healim.com/5-3?uid=193&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 68,
@@ -1744,7 +1744,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202592/693bac9ce2fb51984871-130x130.jpg",
     "date": "2025-12-12",
     "views": "6",
-    "targetUrl": "https://www.healim.com/5-3?uid=192&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 69,
@@ -1755,7 +1755,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202592/693ba7ea83d0e8471439-130x130.jpg",
     "date": "2025-12-12",
     "views": "7",
-    "targetUrl": "https://www.healim.com/5-3?uid=191&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 70,
@@ -1766,7 +1766,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202592/693ba6ca024126512438-130x130.jpg",
     "date": "2025-12-12",
     "views": "15",
-    "targetUrl": "https://www.healim.com/5-3?uid=190&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 71,
@@ -1777,7 +1777,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202592/693b8b82b73ff2697504-130x130.jpg",
     "date": "2025-12-12",
     "views": "8",
-    "targetUrl": "https://www.healim.com/5-3?uid=189&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 72,
@@ -1788,7 +1788,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dee87daa68073644-130x130.png",
     "date": "2025-12-12",
     "views": "10",
-    "targetUrl": "https://www.healim.com/5-3?uid=188&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 73,
@@ -1799,7 +1799,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8df0240b953325549-130x130.png",
     "date": "2025-12-10",
     "views": "10",
-    "targetUrl": "https://www.healim.com/5-3?uid=187&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 74,
@@ -1810,7 +1810,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8df170459d5903684-130x130.png",
     "date": "2025-12-09",
     "views": "10",
-    "targetUrl": "https://www.healim.com/5-3?uid=186&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 75,
@@ -1821,7 +1821,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202592/6936d85fd4bb79816499-130x130.jpg",
     "date": "2025-12-08",
     "views": "10",
-    "targetUrl": "https://www.healim.com/5-3?uid=185&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 76,
@@ -1832,7 +1832,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202592/6936d692aa2e38316800-130x130.jpg",
     "date": "2025-12-08",
     "views": "9",
-    "targetUrl": "https://www.healim.com/5-3?uid=184&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 77,
@@ -1843,7 +1843,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8df34074852733578-130x130.png",
     "date": "2025-12-08",
     "views": "10",
-    "targetUrl": "https://www.healim.com/5-3?uid=183&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 78,
@@ -1854,7 +1854,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8e0b4c2c098675307-130x130.png",
     "date": "2025-12-05",
     "views": "9",
-    "targetUrl": "https://www.healim.com/5-3?uid=182&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 79,
@@ -1865,7 +1865,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8e0d6f0b684507155-130x130.png",
     "date": "2025-12-03",
     "views": "23",
-    "targetUrl": "https://www.healim.com/5-3?uid=181&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 80,
@@ -1876,7 +1876,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8e0f17a2c77659437-130x130.png",
     "date": "2025-12-01",
     "views": "4",
-    "targetUrl": "https://www.healim.com/5-3?uid=180&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 81,
@@ -1887,7 +1887,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/6926b5d0d7e006988070-130x130.jpg",
     "date": "2025-11-26",
     "views": "11",
-    "targetUrl": "https://www.healim.com/5-3?uid=179&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 82,
@@ -1898,7 +1898,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/6926b3f147e0f8852328-130x130.png",
     "date": "2025-11-26",
     "views": "7",
-    "targetUrl": "https://www.healim.com/5-3?uid=178&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 83,
@@ -1909,7 +1909,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2025-11-26",
     "views": "15",
-    "targetUrl": "https://www.healim.com/5-3?uid=177&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 84,
@@ -1920,7 +1920,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2025-11-26",
     "views": "8",
-    "targetUrl": "https://www.healim.com/5-3?uid=176&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 85,
@@ -1931,7 +1931,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/6925592110e8e3121561-130x130.jpg",
     "date": "2025-11-25",
     "views": "6",
-    "targetUrl": "https://www.healim.com/5-3?uid=175&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 86,
@@ -1942,7 +1942,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2025-11-25",
     "views": "10",
-    "targetUrl": "https://www.healim.com/5-3?uid=174&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 87,
@@ -1953,7 +1953,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/692556ba20f715594033-130x130.jpg",
     "date": "2025-11-25",
     "views": "10",
-    "targetUrl": "https://www.healim.com/5-3?uid=173&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 88,
@@ -1964,7 +1964,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/6925557d7bb8a7163748-130x130.jpg",
     "date": "2025-11-25",
     "views": "7",
-    "targetUrl": "https://www.healim.com/5-3?uid=172&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 89,
@@ -1975,7 +1975,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/692554a19791b1589327-130x130.jpg",
     "date": "2025-11-25",
     "views": "7",
-    "targetUrl": "https://www.healim.com/5-3?uid=171&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 90,
@@ -1986,7 +1986,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/6925534d5a9296149902-130x130.jpg",
     "date": "2025-11-25",
     "views": "16",
-    "targetUrl": "https://www.healim.com/5-3?uid=170&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 91,
@@ -1997,7 +1997,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2025-11-25",
     "views": "8",
-    "targetUrl": "https://www.healim.com/5-3?uid=169&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 92,
@@ -2008,7 +2008,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/692542a7ccd248849176-130x130.png",
     "date": "2025-11-25",
     "views": "6",
-    "targetUrl": "https://www.healim.com/5-3?uid=168&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 93,
@@ -2019,7 +2019,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/6925422349ba04451495-130x130.png",
     "date": "2025-11-25",
     "views": "18",
-    "targetUrl": "https://www.healim.com/5-3?uid=167&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 94,
@@ -2030,7 +2030,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/6925418fa47631929637-130x130.png",
     "date": "2025-11-25",
     "views": "8",
-    "targetUrl": "https://www.healim.com/5-3?uid=166&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 95,
@@ -2041,7 +2041,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/692540fee65162260247-130x130.png",
     "date": "2025-11-25",
     "views": "7",
-    "targetUrl": "https://www.healim.com/5-3?uid=165&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 96,
@@ -2052,7 +2052,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69253fbc7457c2242931-130x130.png",
     "date": "2025-11-25",
     "views": "6",
-    "targetUrl": "https://www.healim.com/5-3?uid=164&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 97,
@@ -2063,7 +2063,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69240f2058de38527655-130x130.jpg",
     "date": "2025-11-24",
     "views": "13",
-    "targetUrl": "https://www.healim.com/5-3?uid=163&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 98,
@@ -2074,7 +2074,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69240e775a2d86551580-130x130.jpg",
     "date": "2025-11-24",
     "views": "16",
-    "targetUrl": "https://www.healim.com/5-3?uid=162&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 99,
@@ -2085,7 +2085,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69240dad7432d8917529-130x130.jpg",
     "date": "2025-11-24",
     "views": "12",
-    "targetUrl": "https://www.healim.com/5-3?uid=161&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 100,
@@ -2096,7 +2096,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69240d157f80a6654381-130x130.jpg",
     "date": "2025-11-24",
     "views": "5",
-    "targetUrl": "https://www.healim.com/5-3?uid=160&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 101,
@@ -2107,7 +2107,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69240c78d831e1558996-130x130.jpg",
     "date": "2025-11-24",
     "views": "15",
-    "targetUrl": "https://www.healim.com/5-3?uid=159&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 102,
@@ -2118,7 +2118,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69240c383b5dd2028779-130x130.jpg",
     "date": "2025-11-24",
     "views": "11",
-    "targetUrl": "https://www.healim.com/5-3?uid=158&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 103,
@@ -2129,7 +2129,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69240beb205638254599-130x130.jpg",
     "date": "2025-11-24",
     "views": "9",
-    "targetUrl": "https://www.healim.com/5-3?uid=157&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 104,
@@ -2140,7 +2140,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69240ba2d18953513544-130x130.jpg",
     "date": "2025-11-24",
     "views": "9",
-    "targetUrl": "https://www.healim.com/5-3?uid=156&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 105,
@@ -2151,7 +2151,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69240af8264b96832820-130x130.jpg",
     "date": "2025-11-24",
     "views": "12",
-    "targetUrl": "https://www.healim.com/5-3?uid=155&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 106,
@@ -2162,7 +2162,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/69240a53194028476559-130x130.jpg",
     "date": "2025-11-24",
     "views": "19",
-    "targetUrl": "https://www.healim.com/5-3?uid=154&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 107,
@@ -2173,7 +2173,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202591/692409eb8e6409247662-130x130.jpg",
     "date": "2025-11-24",
     "views": "10",
-    "targetUrl": "https://www.healim.com/5-3?uid=153&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 108,
@@ -2184,7 +2184,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202591/69240931bec9d2307390-130x130.jpg",
     "date": "2025-11-24",
     "views": "10",
-    "targetUrl": "https://www.healim.com/5-3?uid=152&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 109,
@@ -2195,7 +2195,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2025-11-21",
     "views": "9",
-    "targetUrl": "https://www.healim.com/5-3?uid=151&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 110,
@@ -2206,7 +2206,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2025-11-19",
     "views": "13",
-    "targetUrl": "https://www.healim.com/5-3?uid=150&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 111,
@@ -2217,7 +2217,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2025-11-19",
     "views": "18",
-    "targetUrl": "https://www.healim.com/5-3?uid=149&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 112,
@@ -2228,7 +2228,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2025-11-19",
     "views": "12",
-    "targetUrl": "https://www.healim.com/5-3?uid=148&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 113,
@@ -2239,7 +2239,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2025-11-19",
     "views": "22",
-    "targetUrl": "https://www.healim.com/5-3?uid=147&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 114,
@@ -2250,7 +2250,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202506/685b72fbbbd047849922-130x130.jpg",
     "date": "2025-06-25",
     "views": "23",
-    "targetUrl": "https://www.healim.com/5-3?uid=146&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 115,
@@ -2261,7 +2261,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202502/67be9e64a03115664142-130x130.jpg",
     "date": "2025-02-26",
     "views": "24",
-    "targetUrl": "https://www.healim.com/5-3?uid=145&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 116,
@@ -2272,7 +2272,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202412/675f96fe225957968758-130x130.jpg",
     "date": "2024-12-16",
     "views": "54",
-    "targetUrl": "https://www.healim.com/5-3?uid=144&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 117,
@@ -2283,7 +2283,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202408/66c93e2b2fc8d6181469-130x130.jpg",
     "date": "2024-08-24",
     "views": "70",
-    "targetUrl": "https://www.healim.com/5-3?uid=143&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 118,
@@ -2294,7 +2294,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202407/66a44be8834df5805785-130x130.jpg",
     "date": "2024-07-27",
     "views": "72",
-    "targetUrl": "https://www.healim.com/5-3?uid=142&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 119,
@@ -2305,7 +2305,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2024-07-13",
     "views": "20",
-    "targetUrl": "https://www.healim.com/5-3?uid=141&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 120,
@@ -2316,7 +2316,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2024-07-08",
     "views": "29",
-    "targetUrl": "https://www.healim.com/5-3?uid=140&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 121,
@@ -2327,7 +2327,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2024-07-06",
     "views": "78",
-    "targetUrl": "https://www.healim.com/5-3?uid=139&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 122,
@@ -2338,7 +2338,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202406/667d8294afca39635899-130x130.jpg",
     "date": "2024-06-25",
     "views": "70",
-    "targetUrl": "https://www.healim.com/5-3?uid=138&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 123,
@@ -2349,7 +2349,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202404/660a27bf84f354404089-130x130.jpg",
     "date": "2024-04-01",
     "views": "86",
-    "targetUrl": "https://www.healim.com/5-3?uid=137&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 124,
@@ -2360,7 +2360,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2023-12-11",
     "views": "250",
-    "targetUrl": "https://www.healim.com/5-3?uid=136&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 125,
@@ -2371,7 +2371,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202312/6573c5b5987668592589-130x130.jpg",
     "date": "2023-12-09",
     "views": "98",
-    "targetUrl": "https://www.healim.com/5-3?uid=135&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 126,
@@ -2382,7 +2382,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202310/653c9cdc68d162656690-130x130.jpg",
     "date": "2023-10-28",
     "views": "96",
-    "targetUrl": "https://www.healim.com/5-3?uid=134&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 127,
@@ -2393,7 +2393,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2023-09-16",
     "views": "160",
-    "targetUrl": "https://www.healim.com/5-3?uid=133&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 128,
@@ -2404,7 +2404,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202309/64fbc4787c6394790640-130x130.jpg",
     "date": "2023-09-09",
     "views": "122",
-    "targetUrl": "https://www.healim.com/5-3?uid=132&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 129,
@@ -2426,7 +2426,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202308/64d6556e90c152161491-130x130.jpg",
     "date": "2023-08-12",
     "views": "136",
-    "targetUrl": "https://www.healim.com/5-3?uid=131&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 131,
@@ -2437,7 +2437,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202308/64c89aae927e66424434-130x130.jpg",
     "date": "2023-08-01",
     "views": "111",
-    "targetUrl": "https://www.healim.com/5-3?uid=130&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 132,
@@ -2448,7 +2448,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202307/64be6aa21aba44173458-130x130.jpg",
     "date": "2023-07-24",
     "views": "143",
-    "targetUrl": "https://www.healim.com/5-3?uid=129&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 133,
@@ -2459,7 +2459,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202307/64b666147ce4a8203818-130x130.jpg",
     "date": "2023-07-18",
     "views": "138",
-    "targetUrl": "https://www.healim.com/5-3?uid=128&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 134,
@@ -2470,7 +2470,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202307/64b665f535fd42551264-130x130.jpg",
     "date": "2023-07-18",
     "views": "76",
-    "targetUrl": "https://www.healim.com/5-3?uid=127&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 135,
@@ -2481,7 +2481,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2023-05-10",
     "views": "171",
-    "targetUrl": "https://www.healim.com/5-3?uid=126&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 136,
@@ -2492,7 +2492,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2023-02-14",
     "views": "187",
-    "targetUrl": "https://www.healim.com/5-3?uid=125&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 137,
@@ -2503,7 +2503,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202212/63a7ce0e928dc4740553-130x130.jpg",
     "date": "2022-12-25",
     "views": "177",
-    "targetUrl": "https://www.healim.com/5-3?uid=124&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 138,
@@ -2514,7 +2514,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202207/62d0f34a2a0f58289409-130x130.jpg",
     "date": "2022-07-15",
     "views": "178",
-    "targetUrl": "https://www.healim.com/5-3?uid=123&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 139,
@@ -2525,7 +2525,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202205/627fc87e0bdf09139588-130x130.jpg",
     "date": "2022-05-15",
     "views": "76",
-    "targetUrl": "https://www.healim.com/5-3?uid=122&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 140,
@@ -2536,7 +2536,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202202/621ce18b3265e9993458-130x130.jpg",
     "date": "2022-02-28",
     "views": "184",
-    "targetUrl": "https://www.healim.com/5-3?uid=121&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 141,
@@ -2547,7 +2547,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202112/61cb0b3bf35865893908-130x130.jpg",
     "date": "2021-12-28",
     "views": "204",
-    "targetUrl": "https://www.healim.com/5-3?uid=120&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 142,
@@ -2558,7 +2558,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202112/61c9d3e5c64f27217177-130x130.jpg",
     "date": "2021-12-27",
     "views": "151",
-    "targetUrl": "https://www.healim.com/5-3?uid=119&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 143,
@@ -2569,7 +2569,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202112/61c9c63279b275291792-130x130.jpg",
     "date": "2021-12-27",
     "views": "170",
-    "targetUrl": "https://www.healim.com/5-3?uid=118&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 144,
@@ -2580,7 +2580,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202110/617abcb3aea173196892-130x130.jpg",
     "date": "2021-10-29",
     "views": "218",
-    "targetUrl": "https://www.healim.com/5-3?uid=117&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 145,
@@ -2591,7 +2591,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202109/6155c21153c315510875-130x130.jpg",
     "date": "2021-09-30",
     "views": "203",
-    "targetUrl": "https://www.healim.com/5-3?uid=116&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 146,
@@ -2602,7 +2602,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202109/612f9f81d95a27302691-130x130.jpg",
     "date": "2021-09-02",
     "views": "230",
-    "targetUrl": "https://www.healim.com/5-3?uid=115&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 147,
@@ -2613,7 +2613,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202012/5fc715ad850ec5439760-130x130.jpg",
     "date": "2020-12-02",
     "views": "258",
-    "targetUrl": "https://www.healim.com/5-3?uid=114&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 148,
@@ -2624,7 +2624,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202012/5fc713135acdc8731637-130x130.jpg",
     "date": "2020-12-02",
     "views": "145",
-    "targetUrl": "https://www.healim.com/5-3?uid=113&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 149,
@@ -2635,7 +2635,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202006/5ef186c9221069171430-130x130.jpg",
     "date": "2020-06-23",
     "views": "227",
-    "targetUrl": "https://www.healim.com/5-3?uid=112&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 150,
@@ -2646,7 +2646,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202006/5ef185c8481b24735668-130x130.jpg",
     "date": "2020-06-23",
     "views": "152",
-    "targetUrl": "https://www.healim.com/5-3?uid=111&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 151,
@@ -2657,7 +2657,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202006/5ef1846466c332376558-130x130.jpg",
     "date": "2020-06-23",
     "views": "217",
-    "targetUrl": "https://www.healim.com/5-3?uid=110&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 152,
@@ -2668,7 +2668,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202005/5eaaea6c855bf6331407-130x130.jpg",
     "date": "2020-05-01",
     "views": "123",
-    "targetUrl": "https://www.healim.com/5-3?uid=109&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 153,
@@ -2679,7 +2679,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202004/5eaae4ab3934e3628593-130x130.jpg",
     "date": "2020-04-30",
     "views": "138",
-    "targetUrl": "https://www.healim.com/5-3?uid=108&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 154,
@@ -2690,7 +2690,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202004/5eaae338d1cc81610977-130x130.jpg",
     "date": "2020-04-30",
     "views": "155",
-    "targetUrl": "https://www.healim.com/5-3?uid=107&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 155,
@@ -2701,7 +2701,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202004/5ea8fe76389da4960287-130x130.jpg",
     "date": "2019-12-20",
     "views": "350",
-    "targetUrl": "https://www.healim.com/5-3?uid=106&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 156,
@@ -2712,7 +2712,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202004/5ea8f9f4e77606295649-130x130.jpg",
     "date": "2019-12-20",
     "views": "126",
-    "targetUrl": "https://www.healim.com/5-3?uid=105&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 157,
@@ -2723,7 +2723,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202004/5ea8f948b8fe31314815-130x130.jpg",
     "date": "2019-12-20",
     "views": "128",
-    "targetUrl": "https://www.healim.com/5-3?uid=104&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 158,
@@ -2734,7 +2734,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/202004/5ea8f54bd98835678896-130x130.jpg",
     "date": "2019-12-20",
     "views": "189",
-    "targetUrl": "https://www.healim.com/5-3?uid=103&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 159,
@@ -2745,7 +2745,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201909/5d6e906b5cf388274609-130x130.jpg",
     "date": "2019-09-04",
     "views": "525",
-    "targetUrl": "https://www.healim.com/5-3?uid=102&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 160,
@@ -2756,7 +2756,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201909/5d6e9010bc65c2322276-130x130.jpg",
     "date": "2019-09-04",
     "views": "81",
-    "targetUrl": "https://www.healim.com/5-3?uid=101&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 161,
@@ -2767,7 +2767,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201909/5d6dde1b895638339946-130x130.jpg",
     "date": "2019-09-03",
     "views": "148",
-    "targetUrl": "https://www.healim.com/5-3?uid=100&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 162,
@@ -2778,7 +2778,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201909/5d6ddda4ceaed2818832-130x130.jpg",
     "date": "2019-09-03",
     "views": "173",
-    "targetUrl": "https://www.healim.com/5-3?uid=99&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 163,
@@ -2789,7 +2789,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201902/5c6e08878ff7b9166238-130x130.jpg",
     "date": "2019-02-21",
     "views": "158",
-    "targetUrl": "https://www.healim.com/5-3?uid=98&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 164,
@@ -2800,7 +2800,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201902/5c6e084a486c65761969-130x130.jpg",
     "date": "2019-02-21",
     "views": "246",
-    "targetUrl": "https://www.healim.com/5-3?uid=97&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 165,
@@ -2811,7 +2811,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201812/5c2489e62c8aa5416371-130x130.jpg",
     "date": "2018-12-27",
     "views": "201",
-    "targetUrl": "https://www.healim.com/5-3?uid=96&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 166,
@@ -2822,7 +2822,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201812/5c2488d3627a02470295-130x130.jpg",
     "date": "2018-12-27",
     "views": "209",
-    "targetUrl": "https://www.healim.com/5-3?uid=95&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 167,
@@ -2833,7 +2833,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201810/5bd6ac99e50603848647-130x130.jpg",
     "date": "2018-10-29",
     "views": "334",
-    "targetUrl": "https://www.healim.com/5-3?uid=94&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 168,
@@ -2844,7 +2844,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201810/5bcf2ec1d56324716280-130x130.jpg",
     "date": "2018-10-23",
     "views": "260",
-    "targetUrl": "https://www.healim.com/5-3?uid=93&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 169,
@@ -2855,7 +2855,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201809/5b8f5f2c29b422679299-130x130.jpg",
     "date": "2018-09-05",
     "views": "141",
-    "targetUrl": "https://www.healim.com/5-3?uid=92&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 170,
@@ -2866,7 +2866,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201809/5b8f58aa844e21929712-130x130.jpg",
     "date": "2018-09-05",
     "views": "353",
-    "targetUrl": "https://www.healim.com/5-3?uid=91&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 171,
@@ -2877,7 +2877,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201809/5b8cb14b3dc041290608-130x130.jpg",
     "date": "2018-09-03",
     "views": "116",
-    "targetUrl": "https://www.healim.com/5-3?uid=90&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 172,
@@ -2888,7 +2888,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201808/5b839f0a5ae9b6214295-130x130.jpg",
     "date": "2018-08-27",
     "views": "152",
-    "targetUrl": "https://www.healim.com/5-3?uid=89&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 173,
@@ -2899,7 +2899,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201808/5b839604b6c7d8340603-130x130.jpg",
     "date": "2018-08-27",
     "views": "377",
-    "targetUrl": "https://www.healim.com/5-3?uid=88&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 174,
@@ -2910,7 +2910,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201807/5b52e8c2ccbe26945442-130x130.jpg",
     "date": "2018-07-21",
     "views": "118",
-    "targetUrl": "https://www.healim.com/5-3?uid=87&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 175,
@@ -2921,7 +2921,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201807/5b4f0108227383663293-130x130.jpg",
     "date": "2018-07-18",
     "views": "252",
-    "targetUrl": "https://www.healim.com/5-3?uid=86&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 176,
@@ -2932,7 +2932,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201807/5b4b6844962aa4447808-130x130.jpg",
     "date": "2018-07-16",
     "views": "96",
-    "targetUrl": "https://www.healim.com/5-3?uid=85&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 177,
@@ -2943,7 +2943,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201807/5b4b65f121d9d5887364-130x130.jpg",
     "date": "2018-07-16",
     "views": "99",
-    "targetUrl": "https://www.healim.com/5-3?uid=84&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 178,
@@ -2954,7 +2954,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201807/5b4b65992ee1a2084132-130x130.jpg",
     "date": "2018-07-16",
     "views": "103",
-    "targetUrl": "https://www.healim.com/5-3?uid=83&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 179,
@@ -2965,7 +2965,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201806/5b31ecfadf2d12037769-130x130.jpg",
     "date": "2018-06-26",
     "views": "299",
-    "targetUrl": "https://www.healim.com/5-3?uid=82&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 180,
@@ -2976,7 +2976,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201806/5b272a930bce94259408-130x130.jpg",
     "date": "2018-06-18",
     "views": "309",
-    "targetUrl": "https://www.healim.com/5-3?uid=81&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 181,
@@ -2987,7 +2987,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201805/5b04fdd1801b65311314-130x130.jpg",
     "date": "2018-05-23",
     "views": "150",
-    "targetUrl": "https://www.healim.com/5-3?uid=80&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 182,
@@ -2998,7 +2998,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2018-04-30",
     "views": "137",
-    "targetUrl": "https://www.healim.com/5-3?uid=79&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 183,
@@ -3009,7 +3009,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201803/5abbbb42405452470474-130x130.jpg",
     "date": "2018-03-29",
     "views": "265",
-    "targetUrl": "https://www.healim.com/5-3?uid=78&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 184,
@@ -3020,7 +3020,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201802/5a7ad2a2d45783729198-130x130.jpg",
     "date": "2018-02-07",
     "views": "123",
-    "targetUrl": "https://www.healim.com/5-3?uid=77&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 185,
@@ -3031,7 +3031,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2017-11-29",
     "views": "154",
-    "targetUrl": "https://www.healim.com/5-3?uid=76&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 186,
@@ -3042,7 +3042,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201711/5a14e992e630c9405707-130x130.jpg",
     "date": "2017-11-22",
     "views": "343",
-    "targetUrl": "https://www.healim.com/5-3?uid=75&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 187,
@@ -3053,7 +3053,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/uploads/kboard_attached/3/201710/59e561f531f7e3739016-130x130.jpg",
     "date": "2017-10-17",
     "views": "191",
-    "targetUrl": "https://www.healim.com/5-3?uid=74&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 188,
@@ -3064,7 +3064,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2017-08-08",
     "views": "178",
-    "targetUrl": "https://www.healim.com/5-3?uid=73&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 189,
@@ -3075,7 +3075,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2017-06-19",
     "views": "228",
-    "targetUrl": "https://www.healim.com/5-3?uid=72&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 190,
@@ -3086,7 +3086,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2017-06-16",
     "views": "156",
-    "targetUrl": "https://www.healim.com/5-3?uid=71&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 191,
@@ -3097,7 +3097,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2017-05-16",
     "views": "269",
-    "targetUrl": "https://www.healim.com/5-3?uid=70&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 192,
@@ -3108,7 +3108,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2017-04-28",
     "views": "202",
-    "targetUrl": "https://www.healim.com/5-3?uid=69&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 193,
@@ -3119,7 +3119,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2017-03-29",
     "views": "110",
-    "targetUrl": "https://www.healim.com/5-3?uid=68&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 194,
@@ -3130,7 +3130,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2017-02-15",
     "views": "119",
-    "targetUrl": "https://www.healim.com/5-3?uid=67&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 195,
@@ -3141,7 +3141,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2016-11-29",
     "views": "118",
-    "targetUrl": "https://www.healim.com/5-3?uid=66&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 196,
@@ -3152,7 +3152,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2016-11-08",
     "views": "197",
-    "targetUrl": "https://www.healim.com/5-3?uid=65&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 197,
@@ -3163,7 +3163,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2016-09-30",
     "views": "326",
-    "targetUrl": "https://www.healim.com/5-3?uid=64&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 198,
@@ -3174,7 +3174,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2016-08-29",
     "views": "107",
-    "targetUrl": "https://www.healim.com/5-3?uid=63&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 199,
@@ -3185,7 +3185,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2016-07-19",
     "views": "81",
-    "targetUrl": "https://www.healim.com/5-3?uid=62&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 200,
@@ -3196,7 +3196,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2016-05-27",
     "views": "267",
-    "targetUrl": "https://www.healim.com/5-3?uid=61&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 201,
@@ -3207,7 +3207,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2016-05-24",
     "views": "70",
-    "targetUrl": "https://www.healim.com/5-3?uid=60&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 202,
@@ -3218,7 +3218,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2016-03-21",
     "views": "99",
-    "targetUrl": "https://www.healim.com/5-3?uid=59&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 203,
@@ -3229,7 +3229,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2016-01-27",
     "views": "228",
-    "targetUrl": "https://www.healim.com/5-3?uid=58&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 204,
@@ -3240,7 +3240,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2015-11-30",
     "views": "78",
-    "targetUrl": "https://www.healim.com/5-3?uid=57&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 205,
@@ -3251,7 +3251,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2015-10-20",
     "views": "51",
-    "targetUrl": "https://www.healim.com/5-3?uid=56&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 206,
@@ -3262,7 +3262,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2015-09-26",
     "views": "59",
-    "targetUrl": "https://www.healim.com/5-3?uid=55&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 207,
@@ -3273,7 +3273,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2015-07-31",
     "views": "86",
-    "targetUrl": "https://www.healim.com/5-3?uid=54&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 208,
@@ -3284,7 +3284,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2015-06-16",
     "views": "47",
-    "targetUrl": "https://www.healim.com/5-3?uid=53&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 209,
@@ -3295,7 +3295,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2015-05-06",
     "views": "170",
-    "targetUrl": "https://www.healim.com/5-3?uid=52&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 210,
@@ -3306,7 +3306,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2015-03-27",
     "views": "46",
-    "targetUrl": "https://www.healim.com/5-3?uid=51&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 211,
@@ -3317,7 +3317,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2015-01-30",
     "views": "52",
-    "targetUrl": "https://www.healim.com/5-3?uid=50&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 212,
@@ -3328,7 +3328,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2014-12-17",
     "views": "42",
-    "targetUrl": "https://www.healim.com/5-3?uid=49&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 213,
@@ -3339,7 +3339,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2014-10-15",
     "views": "38",
-    "targetUrl": "https://www.healim.com/5-3?uid=48&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 214,
@@ -3350,7 +3350,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2014-08-31",
     "views": "41",
-    "targetUrl": "https://www.healim.com/5-3?uid=47&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 215,
@@ -3361,7 +3361,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2014-07-29",
     "views": "43",
-    "targetUrl": "https://www.healim.com/5-3?uid=46&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 216,
@@ -3372,7 +3372,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2014-06-16",
     "views": "170",
-    "targetUrl": "https://www.healim.com/5-3?uid=45&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 217,
@@ -3383,7 +3383,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2014-06-06",
     "views": "60",
-    "targetUrl": "https://www.healim.com/5-3?uid=44&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 218,
@@ -3394,7 +3394,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2014-05-07",
     "views": "32",
-    "targetUrl": "https://www.healim.com/5-3?uid=43&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 219,
@@ -3405,7 +3405,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2014-04-17",
     "views": "151",
-    "targetUrl": "https://www.healim.com/5-3?uid=42&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 220,
@@ -3416,7 +3416,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2014-02-22",
     "views": "36",
-    "targetUrl": "https://www.healim.com/5-3?uid=41&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 221,
@@ -3427,7 +3427,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2014-01-22",
     "views": "42",
-    "targetUrl": "https://www.healim.com/5-3?uid=40&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 222,
@@ -3438,7 +3438,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2013-11-30",
     "views": "135",
-    "targetUrl": "https://www.healim.com/5-3?uid=39&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 223,
@@ -3449,7 +3449,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2013-10-02",
     "views": "47",
-    "targetUrl": "https://www.healim.com/5-3?uid=38&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 224,
@@ -3460,7 +3460,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2013-08-19",
     "views": "58",
-    "targetUrl": "https://www.healim.com/5-3?uid=37&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 225,
@@ -3471,7 +3471,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2013-07-17",
     "views": "39",
-    "targetUrl": "https://www.healim.com/5-3?uid=36&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 226,
@@ -3482,7 +3482,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2013-07-03",
     "views": "80",
-    "targetUrl": "https://www.healim.com/5-3?uid=35&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 227,
@@ -3493,7 +3493,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2013-05-18",
     "views": "40",
-    "targetUrl": "https://www.healim.com/5-3?uid=34&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 228,
@@ -3504,7 +3504,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2013-04-10",
     "views": "136",
-    "targetUrl": "https://www.healim.com/5-3?uid=33&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 229,
@@ -3515,7 +3515,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2013-02-20",
     "views": "26",
-    "targetUrl": "https://www.healim.com/5-3?uid=32&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 230,
@@ -3526,7 +3526,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2013-02-15",
     "views": "20",
-    "targetUrl": "https://www.healim.com/5-3?uid=31&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 231,
@@ -3537,7 +3537,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2013-01-22",
     "views": "16",
-    "targetUrl": "https://www.healim.com/5-3?uid=30&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 232,
@@ -3548,7 +3548,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2012-11-26",
     "views": "79",
-    "targetUrl": "https://www.healim.com/5-3?uid=29&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 233,
@@ -3559,7 +3559,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2012-10-31",
     "views": "57",
-    "targetUrl": "https://www.healim.com/5-3?uid=28&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 234,
@@ -3570,7 +3570,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2012-10-24",
     "views": "39",
-    "targetUrl": "https://www.healim.com/5-3?uid=27&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 235,
@@ -3581,7 +3581,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2012-09-19",
     "views": "25",
-    "targetUrl": "https://www.healim.com/5-3?uid=26&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 236,
@@ -3592,7 +3592,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2012-08-24",
     "views": "133",
-    "targetUrl": "https://www.healim.com/5-3?uid=25&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 237,
@@ -3603,7 +3603,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2012-08-20",
     "views": "61",
-    "targetUrl": "https://www.healim.com/5-3?uid=24&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 238,
@@ -3614,7 +3614,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2012-07-24",
     "views": "19",
-    "targetUrl": "https://www.healim.com/5-3?uid=23&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 239,
@@ -3625,7 +3625,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2012-06-19",
     "views": "75",
-    "targetUrl": "https://www.healim.com/5-3?uid=22&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 240,
@@ -3636,7 +3636,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2012-05-31",
     "views": "20",
-    "targetUrl": "https://www.healim.com/5-3?uid=21&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 241,
@@ -3647,7 +3647,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2012-04-27",
     "views": "15",
-    "targetUrl": "https://www.healim.com/5-3?uid=20&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 242,
@@ -3658,7 +3658,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2012-04-09",
     "views": "13",
-    "targetUrl": "https://www.healim.com/5-3?uid=19&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 243,
@@ -3669,7 +3669,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2012-04-01",
     "views": "79",
-    "targetUrl": "https://www.healim.com/5-3?uid=18&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 244,
@@ -3680,7 +3680,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2012-03-18",
     "views": "17",
-    "targetUrl": "https://www.healim.com/5-3?uid=17&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 245,
@@ -3691,7 +3691,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2012-03-01",
     "views": "46",
-    "targetUrl": "https://www.healim.com/5-3?uid=16&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 246,
@@ -3702,7 +3702,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2012-02-21",
     "views": "174",
-    "targetUrl": "https://www.healim.com/5-3?uid=15&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 247,
@@ -3713,7 +3713,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2012-01-17",
     "views": "48",
-    "targetUrl": "https://www.healim.com/5-3?uid=14&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 248,
@@ -3724,7 +3724,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2012-01-02",
     "views": "36",
-    "targetUrl": "https://www.healim.com/5-3?uid=13&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 249,
@@ -3735,7 +3735,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2011-12-29",
     "views": "33",
-    "targetUrl": "https://www.healim.com/5-3?uid=12&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 250,
@@ -3746,7 +3746,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2011-12-26",
     "views": "153",
-    "targetUrl": "https://www.healim.com/5-3?uid=11&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   },
   {
     "id": 259,
@@ -3757,7 +3757,7 @@ var defaultReviewsData = [
     "img": "https://www.healim.com/wp-content/plugins/kboard/skin/thumbnail/images/no_img.jpg",
     "date": "2011-12-16",
     "views": "54",
-    "targetUrl": "https://www.healim.com/5-3?uid=10&mod=document&pageid=1"
+    "targetUrl": "https://www.healim.com/5-3"
   }
 ];
 
@@ -4842,13 +4842,6 @@ function renderReviewsList() {
     var imgUrl = item.img || 'https://www.healim.com/wp-content/uploads/fav.png';
 
     var targetUrl = 'https://www.healim.com/5-3';
-    if (item.targetUrl && item.targetUrl.indexOf('uid=') !== -1) {
-      targetUrl = item.targetUrl;
-    } else if (item.uid) {
-      targetUrl = 'https://www.healim.com/5-3?uid=' + encodeURIComponent(item.uid) + '&mod=document&pageid=1';
-    } else if (item.targetUrl) {
-      targetUrl = item.targetUrl;
-    }
     html += '<a href="' + targetUrl + '" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit; display: block;">';
     html += '  <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px; box-shadow: 0 4px 14px rgba(0,0,0,0.02); height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease;" onmouseover="this.style.transform=\'translateY(-3px)\'; this.style.borderColor=\'#008194\'; this.style.boxShadow=\'0 8px 24px rgba(0,129,148,0.12)\';" onmouseout="this.style.transform=\'none\'; this.style.borderColor=\'#E2E8F0\'; this.style.boxShadow=\'0 4px 14px rgba(0,0,0,0.02)\';">';
     html += '    <div>';
