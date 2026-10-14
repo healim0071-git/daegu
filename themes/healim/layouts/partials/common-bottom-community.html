@@ -415,9 +415,8 @@
         </div>
       </a>
           {{ end }}
-</li>
 </ul>
-    <div class="bottom-btn-center">
+    <div class="bottom-btn-center" style="margin-top: 42px; margin-bottom: 28px;">
       <a href="https://www.healim.com/5-3" target="_blank" rel="noopener noreferrer" class="btn-healim">
         <span>치료후기 259편 전체보기 &gt;</span>
       </a>
@@ -505,9 +504,8 @@
         </div>
       </li>
 {{ end }}
-</li>
 </ul>
-    <div class="bottom-btn-center">
+    <div class="bottom-btn-center" style="margin-top: 36px; margin-bottom: 24px;">
       <a href="/community/#columns" onclick="handleBottomMoreClick(event, 'columns')" class="btn-healim">
         <span>치료 칼럼 더보기 &gt;</span>
       </a>
@@ -679,6 +677,15 @@
 
 
 <style>
+/* 하단 공통 더보기 버튼 상/하단 여백 */
+.bottom-btn-center {
+  text-align: center;
+  margin-top: 42px !important;
+  margin-bottom: 28px !important;
+}
+ul.bottom-cards-grid {
+  margin-bottom: 36px !important;
+}
 .bottom-review-card-link {
   text-decoration: none;
   color: inherit;

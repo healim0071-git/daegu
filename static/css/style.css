@@ -2099,6 +2099,8 @@ section {
 /* 공통 더보기 버튼 */
 .bottom-btn-center {
   text-align: center;
+  margin-top: 42px !important;
+  margin-bottom: 28px !important;
 }
 
 .btn-healim {
@@ -3303,7 +3305,7 @@ ul.broadcast-strip-grid,
 ul.doctor-books-showcase,
 ul.bottom-cards-grid {
   list-style: none !important;
-  margin: 0 !important;
+  margin: 0 0 36px 0 !important;
   padding: 0 !important;
 }
 
