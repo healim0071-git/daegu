@@ -350,6 +350,10 @@ layout: single
     <div id="youtubeModalIframeContainer" style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; background: #000;">
       <!-- iframe loaded on demand with autoplay and lazy loading -->
     </div>
+    <div style="padding: 12px 20px; background: #0C4349; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.1);">
+      <a id="youtubeModalDirectLink" href="https://www.youtube.com/@healimtv" target="_blank" rel="noopener noreferrer" style="color: #6EE7B7; text-decoration: none; font-size: 13px; font-weight: 700;">해아림TV 공식 유튜브 (@healimtv)에서 보기 ↗</a>
+      <button type="button" onclick="closeYoutubeModal()" style="background: rgba(255,255,255,0.15); border: none; color: #FFF; padding: 6px 16px; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 700;">닫기</button>
+    </div>
   </div>
 </div>
 
@@ -5179,9 +5183,11 @@ function openYoutubeModal(vid, title) {
   var modal = document.getElementById('youtubePlayerModal');
   var titleElem = document.getElementById('youtubeModalTitle');
   var container = document.getElementById('youtubeModalIframeContainer');
+  var directLink = document.getElementById('youtubeModalDirectLink');
   if (!modal || !container) return;
 
   if (titleElem) titleElem.innerText = title || '해아림TV 영상';
+  if (directLink) directLink.href = 'https://www.youtube.com/watch?v=' + encodeURIComponent(vid);
   container.innerHTML = '<iframe src="https://www.youtube.com/embed/' + vid + '?autoplay=1&rel=0" title="' + (title || '').replace(/"/g, '&quot;') + '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"></iframe>';
   modal.style.display = 'flex';
 }
@@ -5261,10 +5267,23 @@ function renderYoutubeList() {
 // 페이지 초기화 및 해시 체크
 // -------------------------------------------------------------
 function handleHashNavigation() {
+  var urlParams = new URLSearchParams(window.location.search);
+  var qBoard = urlParams.get('board');
+  var qId = urlParams.get('id');
   var hash = window.location.hash.replace('#', '');
-  if (hash === 'reviews' || hash === 'faq' || hash === 'youtube' || hash === 'columns') {
-    switchCommunityTab(hash);
-    var targetElem = document.getElementById(hash);
+
+  var activeTab = hash;
+  if (!activeTab && qBoard) activeTab = qBoard;
+
+  if (activeTab === 'reviews' || activeTab === 'faq' || activeTab === 'youtube' || activeTab === 'columns') {
+    switchCommunityTab(activeTab);
+    if (activeTab === 'youtube' && qId) {
+      setTimeout(function() {
+        var ytItem = defaultYoutubeData.find(function(y) { return y.vid === qId || String(y.id) === qId; });
+        openYoutubeModal(qId, ytItem ? ytItem.title : '해아림TV 영상');
+      }, 150);
+    }
+    var targetElem = document.getElementById(activeTab);
     if (targetElem) {
       setTimeout(function() {
         targetElem.scrollIntoView({ behavior: 'smooth' });
