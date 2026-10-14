@@ -16,27 +16,6 @@ HEALIM AUTHENTICATION
 <h1 style="font-size: 26px; font-weight: 800; color: #0C4349; margin: 0 0 8px; letter-spacing: -0.02em;">
 로그인
 </h1>
-<p style="font-size: 13.5px; color: #64748B; margin: 0; line-height: 1.5; word-break: keep-all;">
-의료법 제56조에 따른 치료후기 열람 및 최고관리자 전용 시스템입니다.
-</p>
-</div>
-
-<!-- Naver Quick Login Button (Safe Mode: No signup required) -->
-<div style="margin-bottom: 20px;">
-<button type="button" onclick="openSnsAuthModal('naver')" style="width: 100%; display: flex; align-items: center; justify-content: center; gap: 10px; background: #03C75A; color: #FFFFFF; border: none; border-radius: 10px; padding: 13px 0; font-size: 15px; font-weight: 700; cursor: pointer; transition: all 0.2s ease; box-shadow: 0 4px 12px rgba(3, 199, 90, 0.2);">
-<span style="font-weight: 900; font-size: 18px;">N</span>
-<span>네이버 아이디로 간편 로그인</span>
-</button>
-<div style="margin-top: 8px; font-size: 12px; color: #64748B; text-align: center;">
-* 별도의 회원가입 없이 네이버 아이디로 즉시 치료후기 열람이 가능합니다.
-</div>
-</div>
-
-<!-- Divider -->
-<div style="display: flex; align-items: center; margin: 22px 0 18px; gap: 12px;">
-<div style="flex: 1; height: 1px; background: #E2E8F0;"></div>
-<span style="font-size: 12px; color: #94A3B8; font-weight: 600;">또는 아이디 로그인</span>
-<div style="flex: 1; height: 1px; background: #E2E8F0;"></div>
 </div>
 
 <!-- Standard / Admin Login Form -->
@@ -83,42 +62,7 @@ HEALIM AUTHENTICATION
 </div>
 </div>
 
-<!-- Naver Authentication Modal (Safe Mode: No password required) -->
-<div id="snsAuthModalBackdrop" style="display: none; position: fixed; inset: 0; background: rgba(13, 58, 66, 0.65); z-index: 99999; align-items: center; justify-content: center; backdrop-filter: blur(4px); padding: 16px;">
-<div style="background: white; border-radius: 18px; width: 100%; max-width: 400px; overflow: hidden; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); border: 1px solid #e2e8f0; animation: modalPop 0.2s ease-out;">
-<div style="padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #e2e8f0; background-color: #03C75A; color: #FFFFFF;">
-<div style="display: flex; align-items: center; gap: 8px;">
-<span style="font-size: 18px; font-weight: 900;">N</span>
-<h3 style="font-size: 15px; font-weight: 700; margin: 0; color: #FFFFFF;">네이버 아이디로 간편 열람</h3>
-</div>
-<button type="button" onclick="cancelSnsAuth()" style="background: none; border: none; font-size: 24px; cursor: pointer; color: #FFFFFF; line-height: 1; padding: 0;" title="닫기">&times;</button>
-</div>
 
-<div style="padding: 20px;">
-<div style="background: #F0FDF4; border: 1px solid #BBF7D0; border-radius: 8px; padding: 12px; margin-bottom: 16px; font-size: 12px; color: #166534; line-height: 1.5;">
-<strong style="color: #14532d; display: block; margin-bottom: 4px;">⚖️ 의료법 제56조 준수 열람 인증</strong>
-환자의 실제 치료후기 및 전후 사진은 의료법령에 따라 로그인한 회원에게만 열람이 허용됩니다.<br>
-<span style="font-size: 11px; color: #15803d; font-weight: 600;">* 환자 개인정보 보호를 위해 비밀번호는 일체 요구하지 않습니다.</span>
-</div>
-
-<form onsubmit="submitSnsAuth(event)">
-<div style="margin-bottom: 16px;">
-<label style="display: block; font-size: 12px; font-weight: 600; color: #1E293B; margin-bottom: 6px;">네이버 아이디 (또는 이메일)</label>
-<input type="text" id="snsInputId" required placeholder="예: naver_user 또는 id@naver.com" style="width: 100%; padding: 11px 13px; border: 1.5px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; box-sizing: border-box; outline: none;" onfocus="this.style.borderColor='#03C75A'" onblur="this.style.borderColor='#CBD5E1'" />
-</div>
-
-<div style="display: flex; gap: 8px;">
-<button type="button" onclick="cancelSnsAuth()" style="flex: 1; padding: 11px 0; border: 1px solid #CBD5E1; background: #F1F5F9; color: #475569; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer;">
-취소
-</button>
-<button type="submit" style="flex: 1.6; padding: 11px 0; border: none; border-radius: 8px; font-size: 13px; font-weight: 700; cursor: pointer; background-color: #03C75A; color: #FFFFFF;">
-네이버로 인증 완료
-</button>
-</div>
-</form>
-</div>
-</div>
-</div>
 
 <script>
 function getBackUrl() {
@@ -188,38 +132,5 @@ function handleFormLogin(e) {
   window.location.href = getBackUrl();
 }
 
-function openSnsAuthModal(provider) {
-  var backdrop = document.getElementById('snsAuthModalBackdrop');
-  var input = document.getElementById('snsInputId');
-  if (!backdrop) return;
-  if (input) input.value = '';
-  backdrop.style.display = 'flex';
-  setTimeout(function() { if (input) input.focus(); }, 100);
-}
 
-function cancelSnsAuth() {
-  var backdrop = document.getElementById('snsAuthModalBackdrop');
-  if (backdrop) backdrop.style.display = 'none';
-}
-
-function submitSnsAuth(e) {
-  e.preventDefault();
-  var inputId = document.getElementById('snsInputId').value.trim();
-  if (!inputId || inputId.length < 2) {
-    alert('네이버 아이디 또는 이메일을 정확히 입력해 주세요.');
-    return;
-  }
-  var cleanName = inputId.includes('@') ? inputId.split('@')[0] : inputId;
-  var userData = {
-    uid: 'naver_' + cleanName.replace(/[^a-zA-Z0-9_\-]/g, '_'),
-    name: cleanName + ' (네이버)',
-    role: 'member',
-    provider: 'naver',
-    loginAt: new Date().toISOString()
-  };
-  localStorage.setItem('healim_auth_user', JSON.stringify(userData));
-  cancelSnsAuth();
-  alert('네이버 계정(' + cleanName + ')으로 로그인되었습니다.\n치료후기 열람이 가능합니다.');
-  window.location.href = getBackUrl();
-}
 </script>
