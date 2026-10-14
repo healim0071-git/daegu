@@ -2138,7 +2138,10 @@ section {
   justify-content: space-between;
   gap: 24px;
   border: 1px solid #2b8894;
-  margin: 50px 0 60px;
+  max-width: 1180px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 50px auto 60px;
   text-align: center;
 }
 
