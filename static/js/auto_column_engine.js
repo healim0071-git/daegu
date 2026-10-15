@@ -21,6 +21,47 @@
 (function(window) {
   'use strict';
 
+  var HEALIM_DATA_VERSION = '20261015_sync_v2';
+  try {
+    var curVer = localStorage.getItem('healim_data_version');
+    if (curVer !== HEALIM_DATA_VERSION) {
+      // 기기별 로컬스토리지 불일치 자동 초기화 & 동기화
+      var colRaw = localStorage.getItem('healim_board_columns');
+      var customCols = [];
+      if (colRaw) {
+        var parsed = JSON.parse(colRaw);
+        if (Array.isArray(parsed)) {
+          customCols = parsed.filter(function(item) {
+            return item && item.id && item.id.indexOf('custom-') === 0;
+          });
+        }
+      }
+      var faqRaw = localStorage.getItem('healim_board_faqs');
+      var customFaqs = [];
+      if (faqRaw) {
+        var parsedFaq = JSON.parse(faqRaw);
+        if (Array.isArray(parsedFaq)) {
+          customFaqs = parsedFaq.filter(function(item) {
+            return item && item.id && item.id.indexOf('custom-') === 0;
+          });
+        }
+      }
+      localStorage.setItem('healim_board_columns', JSON.stringify(customCols));
+      localStorage.setItem('healim_board_faqs', JSON.stringify(customFaqs));
+      localStorage.setItem('healim_auto_column_state', JSON.stringify({
+        lastPublishedTime: Date.now(),
+        publishedPoolIds: [],
+        publishCountTotal: 48
+      }));
+      localStorage.setItem('healim_auto_faq_state', JSON.stringify({
+        lastPublishedTime: Date.now(),
+        publishedPoolIds: [],
+        publishCountTotal: 40
+      }));
+      localStorage.setItem('healim_data_version', HEALIM_DATA_VERSION);
+    }
+  } catch(e) {}
+
   var STORAGE_COL_STATE_KEY = 'healim_auto_column_state_daegu';
   var STORAGE_BOARD_COL_KEY = 'healim_board_columns';
   var STORAGE_FAQ_STATE_KEY = 'healim_auto_faq_state_daegu';
@@ -684,7 +725,10 @@
 
   // 가중치 확률 (틱 25, 공황 15, 불면 15, 자율신경 15, 나머지 각 6%)
   function pickCategoryByWeight() {
-    var r = Math.random() * 100;
+    var now = new Date();
+    var daySeed = (now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate()) % 100;
+    var state = getAutoColumnState();
+    var r = (daySeed + (state.publishCountTotal || 0) * 17) % 100;
     if (r < 25) return '틱장애';
     if (r < 40) return '공황장애';
     if (r < 55) return '불면증';
@@ -734,8 +778,12 @@
       });
     }
 
+    var now = new Date();
+    var dateSeed = now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate();
+    var stepSeed = dateSeed + (state.publishCountTotal || 0);
+
     if (catPool.length > 0) {
-      candidate = catPool[Math.floor(Math.random() * catPool.length)];
+      candidate = catPool[stepSeed % catPool.length];
     } else {
       // 2단계: 대상 카테고리 소진 시 전체 미발행 풀에서 검색 (사례형 우선 배정)
       var remaining = columnsPool.filter(function(p) {
@@ -756,11 +804,11 @@
       }
 
       if (remaining.length > 0) {
-        candidate = remaining[Math.floor(Math.random() * remaining.length)];
+        candidate = remaining[stepSeed % remaining.length];
       } else {
         // 전체 소진 시 풀 초기화 후 재순환
         publishedPoolIds = [];
-        candidate = columnsPool[Math.floor(Math.random() * columnsPool.length)];
+        candidate = columnsPool[stepSeed % columnsPool.length];
       }
     }
 
@@ -839,7 +887,10 @@
   }
 
   function pickFaqCategoryByWeight() {
-    var r = Math.random() * 100;
+    var now = new Date();
+    var daySeed = (now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate()) % 100;
+    var state = getAutoFaqState();
+    var r = (daySeed + (state.publishCountTotal || 0) * 19) % 100;
     if (r < 25) return '틱장애';         // 25%
     if (r < 40) return '공황장애';       // 15%
     if (r < 55) return '불면증';         // 15%
@@ -872,21 +923,25 @@
       return p.disease === targetCategory && !publishedPoolIds.includes(p.idPrefix) && !isDeleted;
     });
 
+    var now = new Date();
+    var dateSeed = now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate();
+    var stepSeed = dateSeed + (state.publishCountTotal || 0);
+
     if (catPool.length > 0) {
-      candidate = catPool[Math.floor(Math.random() * catPool.length)];
+      candidate = catPool[stepSeed % catPool.length];
     } else {
       var remaining = faqPool.filter(function(p) {
         var isDeleted = deletedIds.includes(p.idPrefix) || deletedIds.includes(p.q);
         return !publishedPoolIds.includes(p.idPrefix) && !isDeleted;
       });
       if (remaining.length > 0) {
-        candidate = remaining[Math.floor(Math.random() * remaining.length)];
+        candidate = remaining[stepSeed % remaining.length];
       } else {
         publishedPoolIds = [];
         var allNonDeleted = faqPool.filter(function(p) {
           return !deletedIds.includes(p.idPrefix) && !deletedIds.includes(p.q);
         });
-        candidate = (allNonDeleted.length > 0) ? allNonDeleted[Math.floor(Math.random() * allNonDeleted.length)] : faqPool[0];
+        candidate = (allNonDeleted.length > 0) ? allNonDeleted[stepSeed % allNonDeleted.length] : faqPool[0];
       }
     }
 
