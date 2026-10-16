@@ -4547,7 +4547,7 @@ function switchCommunityTab(tabName) {
     };
   }
 
-var HEALIM_DATA_VERSION = '20261016_v9';
+var HEALIM_DATA_VERSION = '20261016_v10';
 
 function syncHealimDataVersion() {
   try {
