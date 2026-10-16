@@ -25,23 +25,45 @@
     window._healimStorageShieldInstalled = true;
     var origRemoveItem = Storage.prototype.removeItem;
     Storage.prototype.removeItem = function(key) {
-      if (key === 'healim_board_columns' || key === 'healim_board_faqs' || key === 'healim_board_columns_permanent_backup' || key === 'healim_board_faqs_permanent_backup') {
+      if (key === 'healim_board_columns' || key === 'healim_board_faqs' ||
+          key === 'healim_board_columns_permanent_backup' || key === 'healim_board_faqs_permanent_backup') {
         console.warn('[Healim Storage Shield] Blocked unauthorized removeItem:', key);
         return;
       }
       return origRemoveItem.apply(this, arguments);
     };
 
+    var origClear = Storage.prototype.clear;
+    Storage.prototype.clear = function() {
+      var cB = localStorage.getItem('healim_board_columns_permanent_backup') || localStorage.getItem('healim_board_columns');
+      var fB = localStorage.getItem('healim_board_faqs_permanent_backup') || localStorage.getItem('healim_board_faqs');
+      origClear.apply(this, arguments);
+      if (cB) {
+        localStorage.setItem('healim_board_columns', cB);
+        localStorage.setItem('healim_board_columns_permanent_backup', cB);
+      }
+      if (fB) {
+        localStorage.setItem('healim_board_faqs', fB);
+        localStorage.setItem('healim_board_faqs_permanent_backup', fB);
+      }
+    };
+
     var origSetItem = Storage.prototype.setItem;
     Storage.prototype.setItem = function(key, val) {
-      if (key === 'healim_board_columns' || key === 'healim_board_faqs' || key === 'healim_board_columns_permanent_backup' || key === 'healim_board_faqs_permanent_backup') {
+      if (key === 'healim_board_columns' || key === 'healim_board_faqs' ||
+          key === 'healim_board_columns_permanent_backup' || key === 'healim_board_faqs_permanent_backup') {
         try {
-          var currentRaw = localStorage.getItem(key);
+          var isCol = key.indexOf('col') !== -1;
+          var bKey = isCol ? 'healim_board_columns_permanent_backup' : 'healim_board_faqs_permanent_backup';
+          var mainKey = isCol ? 'healim_board_columns' : 'healim_board_faqs';
+          var sKey = isCol ? 'healim_board_columns_backup' : 'healim_board_faqs_backup';
+
+          var currentRaw = localStorage.getItem(key) || localStorage.getItem(bKey);
           if (currentRaw) {
             var currArr = JSON.parse(currentRaw);
             var newArr = (typeof val === 'string') ? JSON.parse(val) : val;
             if (Array.isArray(currArr) && currArr.length > 0 && Array.isArray(newArr)) {
-              var delKey = (key === 'healim_board_columns') ? 'healim_deleted_column_ids' : 'healim_deleted_faq_ids';
+              var delKey = isCol ? 'healim_deleted_column_ids' : 'healim_deleted_faq_ids';
               var delRaw = localStorage.getItem(delKey);
               var delList = delRaw ? JSON.parse(delRaw) : [];
               if (!Array.isArray(delList)) delList = [];
@@ -61,12 +83,57 @@
               val = JSON.stringify(newArr);
             }
           }
+          if (key === mainKey) {
+            origSetItem.apply(localStorage, [bKey, val]);
+            try { if (typeof sessionStorage !== 'undefined') origSetItem.apply(sessionStorage, [sKey, val]); } catch(e){}
+          }
         } catch(e) {}
       }
       return origSetItem.apply(this, [key, val]);
     };
-  }
 
+    // 즉각적 양방향 영구 복원
+    try {
+      ['columns', 'faqs'].forEach(function(type) {
+        var isCol = (type === 'columns');
+        var mainKey = isCol ? 'healim_board_columns' : 'healim_board_faqs';
+        var bKey = isCol ? 'healim_board_columns_permanent_backup' : 'healim_board_faqs_permanent_backup';
+        var sKey = isCol ? 'healim_board_columns_backup' : 'healim_board_faqs_backup';
+        var delKey = isCol ? 'healim_deleted_column_ids' : 'healim_deleted_faq_ids';
+
+        var mainRaw = localStorage.getItem(mainKey);
+        var bRaw = localStorage.getItem(bKey);
+        var sRaw = (typeof sessionStorage !== 'undefined') ? sessionStorage.getItem(sKey) : null;
+        var delRaw = localStorage.getItem(delKey);
+        var delList = delRaw ? JSON.parse(delRaw) : [];
+        if (!Array.isArray(delList)) delList = [];
+
+        var mainList = mainRaw ? JSON.parse(mainRaw) : [];
+        if (!Array.isArray(mainList)) mainList = [];
+        var backupList = bRaw ? JSON.parse(bRaw) : (sRaw ? JSON.parse(sRaw) : []);
+        if (!Array.isArray(backupList)) backupList = [];
+
+        var changed = false;
+        backupList.forEach(function(item) {
+          if (!item || !item.id) return;
+          var isDel = delList.includes(item.id) || (item.title && delList.includes(item.title)) || (item.q && delList.includes(item.q));
+          if (isDel) return;
+          var exists = mainList.some(function(p) { return p && (p.id === item.id || (item.title && p.title === item.title) || (item.q && p.q === item.q)); });
+          if (!exists) {
+            mainList.unshift(item);
+            changed = true;
+          }
+        });
+
+        if (changed || (mainList.length > 0 && !bRaw)) {
+          var str = JSON.stringify(mainList);
+          origSetItem.apply(localStorage, [mainKey, str]);
+          origSetItem.apply(localStorage, [bKey, str]);
+          try { if (typeof sessionStorage !== 'undefined') origSetItem.apply(sessionStorage, [sKey, str]); } catch(e){}
+        }
+      });
+    } catch(e) {}
+  }
 
   var HEALIM_DATA_VERSION = '20261016_v8';
   try {
