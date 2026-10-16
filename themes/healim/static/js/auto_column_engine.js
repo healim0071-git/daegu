@@ -21,7 +21,7 @@
 (function(window) {
   'use strict';
 
-  var HEALIM_DATA_VERSION = '20261016_v7';
+  var HEALIM_DATA_VERSION = '20261016_v8';
   try {
     var curVer = localStorage.getItem('healim_data_version');
     if (curVer !== HEALIM_DATA_VERSION) {
@@ -46,8 +46,8 @@
           });
         }
       }
-      localStorage.setItem('healim_board_columns', JSON.stringify(customCols));
-      localStorage.setItem('healim_board_faqs', JSON.stringify(customFaqs));
+      localStorage.removeItem('healim_board_columns');
+      localStorage.removeItem('healim_board_faqs');
       localStorage.setItem('healim_auto_column_state', JSON.stringify({
         lastPublishedTime: Date.now(),
         publishedPoolIds: [],

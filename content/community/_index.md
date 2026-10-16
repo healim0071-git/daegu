@@ -4500,7 +4500,7 @@ function switchCommunityTab(tabName) {
 // -------------------------------------------------------------
 // 칼럼 게시판 렌더링 & 최신 날짜순 정렬 & 자동 치유
 // -------------------------------------------------------------
-var HEALIM_DATA_VERSION = '20261016_v7';
+var HEALIM_DATA_VERSION = '20261016_v8';
 
 function syncHealimDataVersion() {
   try {
