@@ -20,8 +20,55 @@
 
 (function(window) {
   'use strict';
+  // LocalStorage Bulletproof Shield: 치료칼럼 및 FAQ 영구 보존 보호 장치
+  if (!window._healimStorageShieldInstalled) {
+    window._healimStorageShieldInstalled = true;
+    var origRemoveItem = Storage.prototype.removeItem;
+    Storage.prototype.removeItem = function(key) {
+      if (key === 'healim_board_columns' || key === 'healim_board_faqs') {
+        console.warn('[Healim Storage Shield] Blocked unauthorized removeItem:', key);
+        return;
+      }
+      return origRemoveItem.apply(this, arguments);
+    };
 
-  var HEALIM_DATA_VERSION = '20261016_v8';
+    var origSetItem = Storage.prototype.setItem;
+    Storage.prototype.setItem = function(key, val) {
+      if (key === 'healim_board_columns' || key === 'healim_board_faqs') {
+        try {
+          var currentRaw = localStorage.getItem(key);
+          if (currentRaw) {
+            var currArr = JSON.parse(currentRaw);
+            var newArr = (typeof val === 'string') ? JSON.parse(val) : val;
+            if (Array.isArray(currArr) && currArr.length > 0 && Array.isArray(newArr)) {
+              var delKey = (key === 'healim_board_columns') ? 'healim_deleted_column_ids' : 'healim_deleted_faq_ids';
+              var delRaw = localStorage.getItem(delKey);
+              var delList = delRaw ? JSON.parse(delRaw) : [];
+              if (!Array.isArray(delList)) delList = [];
+
+              currArr.forEach(function(existingItem) {
+                if (!existingItem || !existingItem.id) return;
+                var isDeleted = delList.includes(existingItem.id) || (existingItem.title && delList.includes(existingItem.title)) || (existingItem.q && delList.includes(existingItem.q));
+                if (isDeleted) return;
+
+                var existsInNew = newArr.some(function(p) {
+                  return p && (p.id === existingItem.id || (existingItem.title && p.title === existingItem.title) || (existingItem.q && p.q === existingItem.q));
+                });
+                if (!existsInNew) {
+                  newArr.unshift(existingItem);
+                }
+              });
+              val = JSON.stringify(newArr);
+            }
+          }
+        } catch(e) {}
+      }
+      return origSetItem.apply(this, [key, val]);
+    };
+  }
+
+
+  var HEALIM_DATA_VERSION = '20261016_v9';
   try {
     var curVer = localStorage.getItem('healim_data_version');
     if (curVer !== HEALIM_DATA_VERSION) {
