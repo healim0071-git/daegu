@@ -4506,43 +4506,6 @@ function syncHealimDataVersion() {
   try {
     var curVer = localStorage.getItem('healim_data_version');
     if (curVer !== HEALIM_DATA_VERSION) {
-      // 기기별(PC vs 모바일) 자동발행 파편화로 인한 데이터 불일치 자동 초기화 및 동기화
-      var colRaw = localStorage.getItem('healim_board_columns');
-      var customCols = [];
-      if (colRaw) {
-        var parsed = JSON.parse(colRaw);
-        if (Array.isArray(parsed)) {
-          // 최고관리자가 수동으로 직접 등록한 글만 보존 (id가 custom-으로 시작)
-          customCols = parsed.filter(function(item) {
-            return item && item.id && item.id.indexOf('custom-') === 0;
-          });
-        }
-      }
-      var faqRaw = localStorage.getItem('healim_board_faqs');
-      var customFaqs = [];
-      if (faqRaw) {
-        var parsedFaq = JSON.parse(faqRaw);
-        if (Array.isArray(parsedFaq)) {
-          // 최고관리자가 수동 등록한 FAQ만 보존
-          customFaqs = parsedFaq.filter(function(item) {
-            return item && item.id && item.id.indexOf('custom-') === 0;
-          });
-        }
-      }
-      
-      // 최신 공식 데이터로 로컬스토리지 재정렬 (수동글이 있으면 병합)
-      localStorage.setItem('healim_board_columns', JSON.stringify(customCols));
-      localStorage.setItem('healim_board_faqs', JSON.stringify(customFaqs));
-      localStorage.setItem('healim_auto_column_state', JSON.stringify({
-        lastPublishedTime: Date.now(),
-        publishedPoolIds: [],
-        publishCountTotal: 48
-      }));
-      localStorage.setItem('healim_auto_faq_state', JSON.stringify({
-        lastPublishedTime: Date.now(),
-        publishedPoolIds: [],
-        publishCountTotal: 40
-      }));
       localStorage.setItem('healim_data_version', HEALIM_DATA_VERSION);
     }
   } catch(e) {}

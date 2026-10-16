@@ -716,10 +716,6 @@ ul.bottom-cards-grid {
   try {
     var curVer = localStorage.getItem('healim_data_version');
     if (curVer !== HEALIM_DATA_VERSION) {
-      localStorage.removeItem('healim_board_columns');
-      localStorage.removeItem('healim_board_faqs');
-      localStorage.removeItem('healim_auto_column_state_daegu');
-      localStorage.removeItem('healim_auto_faq_state_daegu');
       localStorage.setItem('healim_data_version', HEALIM_DATA_VERSION);
     }
   } catch(e) {}

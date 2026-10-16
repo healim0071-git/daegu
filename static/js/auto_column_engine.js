@@ -25,39 +25,6 @@
   try {
     var curVer = localStorage.getItem('healim_data_version');
     if (curVer !== HEALIM_DATA_VERSION) {
-      // 기기별 로컬스토리지 불일치 자동 초기화 & 동기화
-      var colRaw = localStorage.getItem('healim_board_columns');
-      var customCols = [];
-      if (colRaw) {
-        var parsed = JSON.parse(colRaw);
-        if (Array.isArray(parsed)) {
-          customCols = parsed.filter(function(item) {
-            return item && item.id && item.id.indexOf('custom-') === 0;
-          });
-        }
-      }
-      var faqRaw = localStorage.getItem('healim_board_faqs');
-      var customFaqs = [];
-      if (faqRaw) {
-        var parsedFaq = JSON.parse(faqRaw);
-        if (Array.isArray(parsedFaq)) {
-          customFaqs = parsedFaq.filter(function(item) {
-            return item && item.id && item.id.indexOf('custom-') === 0;
-          });
-        }
-      }
-      localStorage.removeItem('healim_board_columns');
-      localStorage.removeItem('healim_board_faqs');
-      localStorage.setItem('healim_auto_column_state', JSON.stringify({
-        lastPublishedTime: Date.now(),
-        publishedPoolIds: [],
-        publishCountTotal: 48
-      }));
-      localStorage.setItem('healim_auto_faq_state', JSON.stringify({
-        lastPublishedTime: Date.now(),
-        publishedPoolIds: [],
-        publishCountTotal: 40
-      }));
       localStorage.setItem('healim_data_version', HEALIM_DATA_VERSION);
     }
   } catch(e) {}
