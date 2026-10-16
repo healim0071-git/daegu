@@ -970,8 +970,7 @@ ul.bottom-cards-grid {
     if (!container) return;
 
     var currentSlug = getCurrentDiseaseSlug();
-    // 메인(/) 및 about(/about) 페이지에서는 SSR로 렌더링된 커뮤니티 최신 3개 칼럼 유지
-    if (!currentSlug) return;
+    // 질환 페이지는 질환별 칼럼, 메인(/) 및 about(/about) 페이지는 최신 발행 칼럼 실시간 반영
     var allCols = getRealtimeBoardData('columns');
     var list = [];
 
@@ -1002,7 +1001,7 @@ ul.bottom-cards-grid {
       var author = escapeHtml(item.author || '해아림한의원');
       var date = escapeHtml(item.date || '2026.10.12');
 
-      html += '<div class="bottom-item-card" onclick="openCommonBottomDetail(&quot;columns&quot;, &quot;' + idStr + '&quot;)">';
+      html += '<li class="bottom-item-card" onclick="openCommonBottomDetail(&quot;columns&quot;, &quot;' + idStr + '&quot;)">';
       html += '  <div class="bottom-card-media">';
       html += '    <img src="' + imgSrc + '" alt="' + title + '" onerror="this.src=&quot;/images/books/book_tic.png&quot;;">';
       html += '  </div>';
@@ -1015,7 +1014,7 @@ ul.bottom-cards-grid {
       html += '      <a href="/community/?board=columns&id=' + idStr + '" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail(&quot;columns&quot;, &quot;' + idStr + '&quot;)">읽기 &gt;</a>';
       html += '    </div>';
       html += '  </div>';
-      html += '</div>';
+      html += '</li>';
     });
 
     container.innerHTML = html;
@@ -1093,8 +1092,7 @@ ul.bottom-cards-grid {
     if (!container) return;
 
     var currentSlug = getCurrentDiseaseSlug();
-    // 메인(/) 및 about(/about) 페이지에서는 SSR로 렌더링된 커뮤니티 최신 5개 FAQ 유지
-    if (!currentSlug) return;
+    // 질환 페이지는 질환별 FAQ, 메인(/) 및 about(/about) 페이지는 최신 발행 FAQ 실시간 반영
     var allFaqs = getRealtimeBoardData('faq');
     var list = [];
 
