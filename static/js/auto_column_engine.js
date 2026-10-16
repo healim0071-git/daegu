@@ -21,7 +21,7 @@
 (function(window) {
   'use strict';
 
-  var HEALIM_DATA_VERSION = '20261016_sync_v5';
+  var HEALIM_DATA_VERSION = '20261016_v7';
   try {
     var curVer = localStorage.getItem('healim_data_version');
     if (curVer !== HEALIM_DATA_VERSION) {

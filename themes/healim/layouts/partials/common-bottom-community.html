@@ -712,6 +712,36 @@ ul.bottom-cards-grid {
 </style>
 <script>
 (function() {
+  var HEALIM_DATA_VERSION = '20261016_v7';
+  try {
+    var curVer = localStorage.getItem('healim_data_version');
+    if (curVer !== HEALIM_DATA_VERSION) {
+      var colRaw = localStorage.getItem('healim_board_columns');
+      var customCols = [];
+      if (colRaw) {
+        var parsed = JSON.parse(colRaw);
+        if (Array.isArray(parsed)) {
+          customCols = parsed.filter(function(item) {
+            return item && item.id && String(item.id).indexOf('custom-') === 0;
+          });
+        }
+      }
+      var faqRaw = localStorage.getItem('healim_board_faqs');
+      var customFaqs = [];
+      if (faqRaw) {
+        var parsedFaq = JSON.parse(faqRaw);
+        if (Array.isArray(parsedFaq)) {
+          customFaqs = parsedFaq.filter(function(item) {
+            return item && item.id && String(item.id).indexOf('custom-') === 0;
+          });
+        }
+      }
+      localStorage.setItem('healim_board_columns', JSON.stringify(customCols));
+      localStorage.setItem('healim_board_faqs', JSON.stringify(customFaqs));
+      localStorage.setItem('healim_data_version', HEALIM_DATA_VERSION);
+    }
+  } catch(e) {}
+
   // 기본 데이터셋 (Daegu Community & 10대 질환 실시간 연동 및 폴백)
   var defaultBottomFaqs = [{"id": "faq-auto-tic-1", "disease": "틱장애", "date": "2026.10.15", "q": "초등학생 자녀의 틱 증상이 비염이나 알레르기 결막염과 겹칠 때는 어떻게 구분하나요?", "a": "학령기 아동에서 틱 증상과 알레르기 질환은 겉으로 보기에 유사하지만 신경학적 발생 기전에는 명확한 차이가 있습니다. 비염이나 결막염 환아는 코점막의 충혈이나 안구 결막의 소양감, 통증 등 국소 부위의 물리적 불편함을 직접 호소하며, 항히스타민제나 안약 등 알레르기 약물을 투여하면 가려움과 함께 깜빡임이 즉각 완화됩니다.
 
