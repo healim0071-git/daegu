@@ -25,7 +25,7 @@
     window._healimStorageShieldInstalled = true;
     var origRemoveItem = Storage.prototype.removeItem;
     Storage.prototype.removeItem = function(key) {
-      if (key === 'healim_board_columns' || key === 'healim_board_faqs') {
+      if (key === 'healim_board_columns' || key === 'healim_board_faqs' || key === 'healim_board_columns_permanent_backup' || key === 'healim_board_faqs_permanent_backup') {
         console.warn('[Healim Storage Shield] Blocked unauthorized removeItem:', key);
         return;
       }
@@ -34,7 +34,7 @@
 
     var origSetItem = Storage.prototype.setItem;
     Storage.prototype.setItem = function(key, val) {
-      if (key === 'healim_board_columns' || key === 'healim_board_faqs') {
+      if (key === 'healim_board_columns' || key === 'healim_board_faqs' || key === 'healim_board_columns_permanent_backup' || key === 'healim_board_faqs_permanent_backup') {
         try {
           var currentRaw = localStorage.getItem(key);
           if (currentRaw) {
@@ -68,7 +68,7 @@
   }
 
 
-  var HEALIM_DATA_VERSION = '20261016_v10';
+  var HEALIM_DATA_VERSION = '20261016_v8';
   try {
     var curVer = localStorage.getItem('healim_data_version');
     if (curVer !== HEALIM_DATA_VERSION) {
@@ -756,7 +756,7 @@
 
   function publishOneAutoColumn(isManualTrigger) {
     var state = getAutoColumnState();
-    var raw = localStorage.getItem(STORAGE_BOARD_COL_KEY);
+    var raw = localStorage.getItem(STORAGE_BOARD_COL_KEY) || localStorage.getItem('healim_board_columns_permanent_backup');
     var currentList = raw ? JSON.parse(raw) : [];
     if (!Array.isArray(currentList)) currentList = [];
 
@@ -851,6 +851,10 @@
 
     currentList.unshift(newPost);
     localStorage.setItem(STORAGE_BOARD_COL_KEY, JSON.stringify(currentList));
+    try {
+      localStorage.setItem('healim_board_columns_permanent_backup', JSON.stringify(currentList));
+      if (typeof sessionStorage !== 'undefined') sessionStorage.setItem('healim_board_columns_backup', JSON.stringify(currentList));
+    } catch(e) {}
 
     publishedPoolIds.push(candidate.idPrefix);
     state.publishedPoolIds = publishedPoolIds;
@@ -919,7 +923,7 @@
 
   function publishOneAutoFaq(isManualTrigger) {
     var state = getAutoFaqState();
-    var raw = localStorage.getItem(STORAGE_BOARD_FAQ_KEY);
+    var raw = localStorage.getItem(STORAGE_BOARD_FAQ_KEY) || localStorage.getItem('healim_board_faqs_permanent_backup');
     var currentFaqList = raw ? JSON.parse(raw) : [];
     if (!Array.isArray(currentFaqList)) currentFaqList = [];
 
@@ -978,6 +982,10 @@
 
     currentFaqList.unshift(newFaq);
     localStorage.setItem(STORAGE_BOARD_FAQ_KEY, JSON.stringify(currentFaqList));
+    try {
+      localStorage.setItem('healim_board_faqs_permanent_backup', JSON.stringify(currentFaqList));
+      if (typeof sessionStorage !== 'undefined') sessionStorage.setItem('healim_board_faqs_backup', JSON.stringify(currentFaqList));
+    } catch(e) {}
 
     publishedPoolIds.push(candidate.idPrefix);
     state.publishedPoolIds = publishedPoolIds;

@@ -712,7 +712,7 @@ ul.bottom-cards-grid {
 </style>
 <script>
 (function() {
-  var HEALIM_DATA_VERSION = '20261016_v10';
+  var HEALIM_DATA_VERSION = '20261016_v8';
   try {
     var curVer = localStorage.getItem('healim_data_version');
     if (curVer !== HEALIM_DATA_VERSION) {
@@ -883,7 +883,7 @@ ul.bottom-cards-grid {
   function getRealtimeBoardData(boardType) {
     try {
       if (boardType === 'faq') {
-        var local = localStorage.getItem('healim_board_faqs');
+        var local = localStorage.getItem('healim_board_faqs') || localStorage.getItem('healim_board_faqs_permanent_backup');
         var delList = JSON.parse(localStorage.getItem('healim_deleted_faq_ids') || '[]');
         var list = local ? JSON.parse(local) : [];
         if (!Array.isArray(list)) list = [];
@@ -927,7 +927,7 @@ ul.bottom-cards-grid {
         });
         return list;
       } else if (boardType === 'columns') {
-        var local = localStorage.getItem('healim_board_columns');
+        var local = localStorage.getItem('healim_board_columns') || localStorage.getItem('healim_board_columns_permanent_backup');
         var delList = JSON.parse(localStorage.getItem('healim_deleted_column_ids') || '[]');
         var list = local ? JSON.parse(local) : [];
         if (!Array.isArray(list)) list = [];

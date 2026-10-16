@@ -4547,7 +4547,7 @@ function switchCommunityTab(tabName) {
     };
   }
 
-var HEALIM_DATA_VERSION = '20261016_v10';
+var HEALIM_DATA_VERSION = '20261016_v8';
 
 function syncHealimDataVersion() {
   try {
@@ -4573,29 +4573,49 @@ function getMergedColumns() {
     var raw = localStorage.getItem('healim_board_columns');
     if (raw) {
       var arr = JSON.parse(raw);
-      if (Array.isArray(arr)) {
-        // [요구사항 반영] 최고관리자가 삭제한 글은 영구 배제하여 재복원 방지
-        arr = arr.filter(function(item) {
-          return !deletedList.includes(item.id) && !deletedList.includes(item.title);
-        });
-        // 레거시 '칼럼' 표기 자동 질환명 치유 및 텍스트 B 중복 링크 제거
-        arr.forEach(function(item) {
-          if (!item.category || item.category === '칼럼' || item.category === '의학칼럼') {
-            item.category = inferDiseaseCategory(item.title, item.content);
-          }
-          if (item.content) {
-            item.content = item.content.replace(/\[[^\]]+ 페이지 바로가기\][\s\S]*?\[전국 지점 안내\](\([^\)]+\))?/g, '').trim();
-            item.content = item.content.replace(/\[AEO 핵심 요약 \(Quick Answer\)\]\s*/g, '').trim();
-          }
-          if (!item.author || item.author === '김대억 대표원장') {
-            item.author = '해아림한의원';
-          }
-        });
-        list = arr;
-        localStorage.setItem('healim_board_columns', JSON.stringify(arr));
+      if (Array.isArray(arr)) list = arr;
+    }
+  } catch(e) {}
+
+  // [영구 백업 자동 복원] 다른 페이지 방문이나 구버전 캐시로 인해 healim_board_columns가 지워진 경우 영구 백업에서 즉각 복원
+  try {
+    var bRaw = localStorage.getItem('healim_board_columns_permanent_backup');
+    var sRaw = (typeof sessionStorage !== 'undefined') ? sessionStorage.getItem('healim_board_columns_backup') : null;
+    var backupList = bRaw ? JSON.parse(bRaw) : (sRaw ? JSON.parse(sRaw) : []);
+    if (Array.isArray(backupList) && backupList.length > 0) {
+      backupList.forEach(function(bItem) {
+        if (!bItem || !bItem.id) return;
+        var isDel = deletedList.includes(bItem.id) || (bItem.title && deletedList.includes(bItem.title));
+        if (isDel) return;
+        var exists = list.some(function(p) { return p.id === bItem.id || (bItem.title && p.title === bItem.title); });
+        if (!exists) {
+          list.unshift(bItem);
+        }
+      });
+      localStorage.setItem('healim_board_columns', JSON.stringify(list));
+      localStorage.setItem('healim_board_columns_permanent_backup', JSON.stringify(list));
+      if (typeof sessionStorage !== 'undefined') {
+        sessionStorage.setItem('healim_board_columns_backup', JSON.stringify(list));
       }
     }
   } catch(e) {}
+
+  // 삭제 목록 배제 및 데이터 정제
+  list = list.filter(function(item) {
+    return !deletedList.includes(item.id) && !deletedList.includes(item.title);
+  });
+  list.forEach(function(item) {
+    if (!item.category || item.category === '칼럼' || item.category === '의학칼럼') {
+      item.category = inferDiseaseCategory(item.title, item.content);
+    }
+    if (item.content) {
+      item.content = item.content.replace(/\[[^\]]+ 페이지 바로가기\][\s\S]*?\[전국 지점 안내\](\([^\)]+\))?/g, '').trim();
+      item.content = item.content.replace(/\[AEO 핵심 요약 \(Quick Answer\)\]\s*/g, '').trim();
+    }
+    if (!item.author || item.author === '김대억 대표원장') {
+      item.author = '해아림한의원';
+    }
+  });
 
   defaultColumnsData.forEach(function(item) {
     var isDeleted = deletedList.includes(item.id) || deletedList.includes(item.title);
@@ -4828,6 +4848,7 @@ function deleteColumnPost(id) {
     var arr = raw ? JSON.parse(raw) : [];
     arr = arr.filter(function(p) { return p.id !== id && (!target || p.title !== target.title); });
     localStorage.setItem('healim_board_columns', JSON.stringify(arr));
+    try { localStorage.setItem('healim_board_columns_permanent_backup', JSON.stringify(arr)); sessionStorage.setItem('healim_board_columns_backup', JSON.stringify(arr)); } catch(e){}
 
     // 4. 메모리 상의 defaultColumnsData에서도 제거
     defaultColumnsData = defaultColumnsData.filter(function(p) { return p.id !== id && (!target || p.title !== target.title); });
@@ -4875,6 +4896,7 @@ function handleSaveColumn(e) {
   }
 
   localStorage.setItem('healim_board_columns', JSON.stringify(arr));
+  try { localStorage.setItem('healim_board_columns_permanent_backup', JSON.stringify(arr)); sessionStorage.setItem('healim_board_columns_backup', JSON.stringify(arr)); } catch(e){}
   closeColumnWriteModal();
   alert('치료칼럼이 성공적으로 저장되었습니다.');
   renderColumnsList();
@@ -5033,16 +5055,36 @@ function getMergedFaqs() {
     var raw = localStorage.getItem('healim_board_faqs');
     if (raw) {
       var arr = JSON.parse(raw);
-      if (Array.isArray(arr)) {
-        // [요구사항 반영] 최고관리자가 삭제한 FAQ 영구 배제
-        arr = arr.filter(function(item) {
-          return !deletedList.includes(item.id) && !deletedList.includes(item.q);
-        });
-        list = arr;
-        localStorage.setItem('healim_board_faqs', JSON.stringify(arr));
+      if (Array.isArray(arr)) list = arr;
+    }
+  } catch(e) {}
+
+  // [영구 백업 자동 복원] 다른 페이지 방문이나 구버전 캐시로 인해 healim_board_faqs가 지워진 경우 영구 백업에서 즉각 복원
+  try {
+    var bRaw = localStorage.getItem('healim_board_faqs_permanent_backup');
+    var sRaw = (typeof sessionStorage !== 'undefined') ? sessionStorage.getItem('healim_board_faqs_backup') : null;
+    var backupList = bRaw ? JSON.parse(bRaw) : (sRaw ? JSON.parse(sRaw) : []);
+    if (Array.isArray(backupList) && backupList.length > 0) {
+      backupList.forEach(function(bItem) {
+        if (!bItem || !bItem.id) return;
+        var isDel = deletedList.includes(bItem.id) || (bItem.q && deletedList.includes(bItem.q));
+        if (isDel) return;
+        var exists = list.some(function(p) { return p.id === bItem.id || (bItem.q && p.q === bItem.q); });
+        if (!exists) {
+          list.unshift(bItem);
+        }
+      });
+      localStorage.setItem('healim_board_faqs', JSON.stringify(list));
+      localStorage.setItem('healim_board_faqs_permanent_backup', JSON.stringify(list));
+      if (typeof sessionStorage !== 'undefined') {
+        sessionStorage.setItem('healim_board_faqs_backup', JSON.stringify(list));
       }
     }
   } catch(e) {}
+
+  list = list.filter(function(item) {
+    return !deletedList.includes(item.id) && !deletedList.includes(item.q);
+  });
 
   defaultFaqData.forEach(function(item) {
     var isDeleted = deletedList.includes(item.id) || deletedList.includes(item.q);
@@ -5180,6 +5222,7 @@ function deleteFaqPost(id) {
     var arr = raw ? JSON.parse(raw) : [];
     arr = arr.filter(function(p) { return p.id !== id && (!target || p.q !== target.q); });
     localStorage.setItem('healim_board_faqs', JSON.stringify(arr));
+    try { localStorage.setItem('healim_board_faqs_permanent_backup', JSON.stringify(arr)); sessionStorage.setItem('healim_board_faqs_backup', JSON.stringify(arr)); } catch(e){}
 
     defaultFaqData = defaultFaqData.filter(function(p) { return p.id !== id && (!target || p.q !== target.q); });
 
@@ -5223,6 +5266,7 @@ function handleSaveFaq(e) {
   }
 
   localStorage.setItem('healim_board_faqs', JSON.stringify(arr));
+  try { localStorage.setItem('healim_board_faqs_permanent_backup', JSON.stringify(arr)); sessionStorage.setItem('healim_board_faqs_backup', JSON.stringify(arr)); } catch(e){}
   closeFaqModal();
   alert(editId ? 'FAQ가 성공적으로 수정되었습니다.' : '신규 FAQ가 등록되었습니다.');
   renderFaqList();

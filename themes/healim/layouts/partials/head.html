@@ -47,7 +47,7 @@
     // 1. 칼럼 및 FAQ 데이터 삭제(removeItem) 시도 원천 차단
     var origRemoveItem = Storage.prototype.removeItem;
     Storage.prototype.removeItem = function(key) {
-      if (key === 'healim_board_columns' || key === 'healim_board_faqs') {
+      if (key === 'healim_board_columns' || key === 'healim_board_faqs' || key === 'healim_board_columns_permanent_backup' || key === 'healim_board_faqs_permanent_backup') {
         console.warn('[Healim Storage Shield] Blocked unauthorized removeItem:', key);
         return;
       }
@@ -57,7 +57,7 @@
     // 2. 구버전 캐시 스크립트의 빈 배열/누락 덮어쓰기 원천 방지 및 자동 복원 병합
     var origSetItem = Storage.prototype.setItem;
     Storage.prototype.setItem = function(key, val) {
-      if (key === 'healim_board_columns' || key === 'healim_board_faqs') {
+      if (key === 'healim_board_columns' || key === 'healim_board_faqs' || key === 'healim_board_columns_permanent_backup' || key === 'healim_board_faqs_permanent_backup') {
         try {
           var currentRaw = localStorage.getItem(key);
           if (currentRaw) {
