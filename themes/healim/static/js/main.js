@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Nav Toggle (2번째 사진 skyma.co.kr 양식 연동)
+  // Mobile Nav Toggle
   const toggleBtn = document.getElementById('menuToggle');
   const mainNav = document.getElementById('mainNav');
 
@@ -10,37 +10,22 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleBtn.classList.toggle('is-active');
     });
 
-    // 전체메뉴 카드 클릭 시 메뉴 닫기
-    const menuCards = mainNav.querySelectorAll('.allmenu-card');
-    menuCards.forEach(card => {
-      card.addEventListener('click', () => {
+    // ?? ?? ?? ? ??? ?? ?? (???? ?? ??)
+    const links = mainNav.querySelectorAll('a.nav-dd-item, a.nav-link:not(.nav-dropdown-toggle)');
+    links.forEach(link => {
+      link.addEventListener('click', () => {
         mainNav.classList.remove('is-open');
         toggleBtn.classList.remove('is-active');
       });
     });
 
-    // 바깥 영역 클릭 시 메뉴 닫기
+    // ?? ?? ?? ? ?? ??
     document.addEventListener('click', (e) => {
       if (mainNav.classList.contains('is-open') && !mainNav.contains(e.target) && !toggleBtn.contains(e.target)) {
         mainNav.classList.remove('is-open');
         toggleBtn.classList.remove('is-active');
       }
     });
-
-    // 현재 페이지 활성화 카드 표시 (skyma 스타일 다크 하이라이트)
-    try {
-      const currentPath = window.location.pathname.replace(/\/+$/, '') || '/';
-      menuCards.forEach(card => {
-        const href = card.getAttribute('href');
-        if (!href) return;
-        const linkPath = href.split('#')[0].replace(/\/+$/, '') || '/';
-        if (linkPath === currentPath && currentPath !== '/') {
-          card.classList.add('is-current');
-        } else if (currentPath === '/' && (href === '/' || href === '/about/')) {
-          if (href === '/about/') card.classList.add('is-current');
-        }
-      });
-    } catch(e) {}
   }
 });
 
