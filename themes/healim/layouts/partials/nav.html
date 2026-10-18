@@ -201,10 +201,61 @@
 }
 
 @media (max-width: 960px) {
+  html, body {
+    overflow-x: hidden !important;
+  }
+  body {
+    padding-top: 72px !important;
+  }
+  /* B부분: 상단 헤더 화면 최상단 영구 고정 (스크롤 시 사라지거나 밀리지 않음) */
   .site-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    height: 72px !important;
+    z-index: 1000005 !important;
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
     background: #FFFFFF !important;
+    border-bottom: 1px solid #E5E7EB !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04) !important;
+  }
+
+  /* A부분 잘림 원천 해결: 모바일에서 히어로 2열 그리드를 1열 세로 배치로 전환 */
+  .hero-inner {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  .hero-text {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .hero-buttons {
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+  .hero-card-col {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-top: 4px !important;
+  }
+  .hero-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  .hero-dr-figure {
+    display: none !important;
   }
   .desktop-nav-only {
     display: none !important;
@@ -390,9 +441,13 @@ function toggleMobileMenu(e) {
   if (!drawer) return;
   var isOpen = drawer.classList.toggle('is-open');
   if (toggleBtn) toggleBtn.classList.toggle('is-active', isOpen);
-  document.body.style.overflow = isOpen ? 'hidden' : '';
   if (isOpen) {
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
     drawer.scrollTop = 0;
+  } else {
+    document.body.style.overflow = '';
+    document.documentElement.style.overflow = '';
   }
 }
 
@@ -415,6 +470,7 @@ document.addEventListener('click', function(e) {
       drawer.classList.remove('is-open');
       toggleBtn.classList.remove('is-active');
       document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
     }
   }
 });
