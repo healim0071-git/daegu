@@ -26,16 +26,17 @@
       <a href="/login/" class="header-auth-dot" title="로그인" aria-label="로그인">ㆍ</a>
     </div>
 
-    <nav class="main-nav" id="mainNav">
+    <!-- 데스크톱 전용 네비게이션 (961px 이상) -->
+    <nav class="main-nav desktop-nav-only" id="mainNav">
       <ul class="nav-list">
         <!-- 1. 한의원소개 (드롭다운) -->
         <li class="nav-item nav-dropdown">
           <a href="/about/" class="nav-link nav-dropdown-toggle">한의원소개 <span class="caret">▾</span></a>
           <div class="nav-dropdown-menu">
-            <a href="/about/#philosophy" class="nav-dd-item" onclick="if(window.location.pathname.replace(/\/+$/, '')==='/about'){ if(typeof smoothScrollToSection==='function'){ smoothScrollToSection(event, 'philosophy'); } }"><span class="dd-dot"></span>진료철학</a>
-            <a href="/about/#why-healim" class="nav-dd-item" onclick="if(window.location.pathname.replace(/\/+$/, '')==='/about'){ if(typeof smoothScrollToSection==='function'){ smoothScrollToSection(event, 'why-healim'); } }"><span class="dd-dot"></span>왜 해아림인가?</a>
-            <a href="/about/#doctor" class="nav-dd-item" onclick="if(window.location.pathname.replace(/\/+$/, '')==='/about'){ if(typeof smoothScrollToSection==='function'){ smoothScrollToSection(event, 'doctor'); } }"><span class="dd-dot"></span>대표원장 소개</a>
-            <a href="/about/#location" class="nav-dd-item" onclick="if(window.location.pathname.replace(/\/+$/, '')==='/about'){ if(typeof smoothScrollToSection==='function'){ smoothScrollToSection(event, 'location'); } }"><span class="dd-dot"></span>오시는 길</a>
+            <a href="/about/#philosophy" class="nav-dd-item"><span class="dd-dot"></span>진료철학</a>
+            <a href="/about/#why-healim" class="nav-dd-item"><span class="dd-dot"></span>왜 해아림인가?</a>
+            <a href="/about/#doctor" class="nav-dd-item"><span class="dd-dot"></span>대표원장 소개</a>
+            <a href="/about/#location" class="nav-dd-item"><span class="dd-dot"></span>오시는 길</a>
           </div>
         </li>
 
@@ -90,7 +91,7 @@
       </ul>
     </nav>
 
-    <!-- A: 1번째 사진 스타일 전체메뉴 버튼 (onclick 직접 바인딩으로 중복 차단) -->
+    <!-- A: 1번째 사진 스타일 전체메뉴 버튼 -->
     <button class="menu-toggle" id="menuToggle" aria-label="전체메뉴 열기" type="button" onclick="toggleMobileMenu(event)">
       <span class="hamburger-icon" aria-hidden="true">
         <span class="hamburger-bar"></span>
@@ -101,6 +102,79 @@
     </button>
   </div>
 </header>
+
+<!-- 모바일 전용 전체메뉴 풀 드로어: header 바깥에 배치하여 갇힘 현상 100% 원천 차단! -->
+<div class="mobile-drawer-overlay" id="mobileDrawer">
+  <div class="mobile-drawer-content">
+    <ul class="mobile-drawer-list">
+      <!-- 1. 한의원소개 -->
+      <li class="mobile-drawer-item">
+        <div class="mobile-drawer-cat">
+          <a href="/about/" class="mobile-cat-link">한의원소개</a>
+        </div>
+        <div class="mobile-sub-box">
+          <a href="/about/#philosophy" class="mobile-sub-link"><span class="sub-dot"></span>진료철학</a>
+          <a href="/about/#why-healim" class="mobile-sub-link"><span class="sub-dot"></span>왜 해아림인가?</a>
+          <a href="/about/#doctor" class="mobile-sub-link"><span class="sub-dot"></span>대표원장 소개</a>
+          <a href="/about/#location" class="mobile-sub-link"><span class="sub-dot"></span>오시는 길</a>
+        </div>
+      </li>
+
+      <!-- 2. 틱장애 -->
+      <li class="mobile-drawer-item">
+        <a href="/tic-disorder/" class="mobile-cat-link">틱장애</a>
+      </li>
+
+      <!-- 3. 공황장애 -->
+      <li class="mobile-drawer-item">
+        <a href="/panic-disorder/" class="mobile-cat-link">공황장애</a>
+      </li>
+
+      <!-- 4. 어지럼증 -->
+      <li class="mobile-drawer-item">
+        <a href="/dizziness/" class="mobile-cat-link">어지럼증</a>
+      </li>
+
+      <!-- 5. 자율신경실조증 -->
+      <li class="mobile-drawer-item">
+        <a href="/dysautonomia/" class="mobile-cat-link">자율신경실조증</a>
+      </li>
+
+      <!-- 6. 불면증 -->
+      <li class="mobile-drawer-item">
+        <a href="/insomnia/" class="mobile-cat-link">불면증</a>
+      </li>
+
+      <!-- 7. 심신안정 -->
+      <li class="mobile-drawer-item">
+        <div class="mobile-drawer-cat">
+          <a href="/#specialties" class="mobile-cat-link">심신안정</a>
+        </div>
+        <div class="mobile-sub-box">
+          <a href="/adhd/" class="mobile-sub-link"><span class="sub-dot"></span>ADHD</a>
+          <a href="/anxiety-disorder/" class="mobile-sub-link"><span class="sub-dot"></span>불안장애</a>
+          <a href="/ocd/" class="mobile-sub-link"><span class="sub-dot"></span>강박증</a>
+          <a href="/social-phobia/" class="mobile-sub-link"><span class="sub-dot"></span>대인기피증 (사회공포)</a>
+          <a href="/hyperhidrosis/" class="mobile-sub-link"><span class="sub-dot"></span>긴장성 다한증</a>
+        </div>
+      </li>
+
+      <!-- 8. 커뮤니티 -->
+      <li class="mobile-drawer-item">
+        <div class="mobile-drawer-cat">
+          <a href="/community/?v=20261016_v12" class="mobile-cat-link">커뮤니티</a>
+        </div>
+        <div class="mobile-sub-box">
+          <a href="/community/?v=20261016_v12#columns" class="mobile-sub-link"><span class="sub-dot"></span>치료칼럼</a>
+          <a href="/community/?v=20261016_v12#reviews" class="mobile-sub-link"><span class="sub-dot"></span>치료후기</a>
+          <a href="/community/?v=20261016_v12#faq" class="mobile-sub-link"><span class="sub-dot"></span>자주 묻는 질문(FAQ)</a>
+          <a href="/community/?v=20261016_v12#youtube" class="mobile-sub-link"><span class="sub-dot"></span>유튜브 영상</a>
+          <a href="https://www.healim.com/5-6" target="_blank" rel="noopener noreferrer" class="mobile-sub-link"><span class="sub-dot"></span>한약과 비용고시</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
 
 <style id="mobileNavInlineCritical">
 .header-brand-wrap {
@@ -121,13 +195,26 @@
   cursor: pointer !important;
 }
 
+/* PC 화면 기본 */
+.mobile-drawer-overlay {
+  display: none !important;
+}
+
 @media (max-width: 960px) {
+  .site-header {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background: #FFFFFF !important;
+  }
+  .desktop-nav-only {
+    display: none !important;
+  }
   .header-container {
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
     height: 72px !important;
-    padding: 0 12px !important;
+    padding: 0 14px !important;
     gap: 8px !important;
   }
   .header-brand-wrap {
@@ -165,7 +252,7 @@
     display: inline-flex !important;
   }
 
-  /* A 부분: 1번째 사진 스타일 전체메뉴 둥근 박스 버튼 */
+  /* A 부분: 1번째 사진 스타일 전체메뉴 버튼 */
   .menu-toggle {
     display: inline-flex !important;
     flex-direction: column !important;
@@ -212,66 +299,82 @@
     letter-spacing: -0.3px !important;
   }
 
-  /* 모바일 네비게이션 드로어 기본 상태: 닫힘 */
-  .main-nav {
-    display: none !important;
+  /* 모바일 풀스크린 드로어: 상단 72px부터 하단 58px 플로팅바 위까지 100% 뷰포트 장악 */
+  .mobile-drawer-overlay {
+    display: none;
     position: fixed !important;
     top: 72px !important;
     left: 0 !important;
     right: 0 !important;
     bottom: 58px !important;
+    width: 100vw !important;
+    height: calc(100vh - 130px) !important;
+    height: calc(100dvh - 130px) !important;
     background: #FFFFFF !important;
-    border-top: 1px solid #E5E7EB !important;
-    border-bottom: 2px solid #146369 !important;
-    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25) !important;
+    z-index: 999999 !important;
     overflow-y: scroll !important;
     -webkit-overflow-scrolling: touch !important;
     overscroll-behavior: contain !important;
-    padding: 24px 20px 80px !important;
-    z-index: 99998 !important;
+    border-top: 1px solid #E5E7EB !important;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3) !important;
+    box-sizing: border-box !important;
+  }
+  .mobile-drawer-overlay.is-open {
+    display: block !important;
+  }
+  .mobile-drawer-content {
+    padding: 24px 20px 120px !important;
+    box-sizing: border-box !important;
+  }
+  .mobile-drawer-list {
+    display: flex !important;
     flex-direction: column !important;
     align-items: stretch !important;
-  }
-
-  /* 모바일 네비게이션 드로어 열림 상태: 100% 화면에 표시 */
-  .main-nav.is-open {
-    display: flex !important;
-  }
-
-  .nav-list {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 16px !important;
+    gap: 20px !important;
     width: 100% !important;
     padding: 0 !important;
     margin: 0 !important;
+    list-style: none !important;
   }
-  .nav-item {
+  .mobile-drawer-item {
     width: 100% !important;
     list-style: none !important;
   }
-  .nav-link {
-    font-size: 1.05rem !important;
-    font-weight: 700 !important;
-    color: #1A1D24 !important;
-    padding: 6px 0 !important;
+  .mobile-cat-link {
+    display: block !important;
+    font-size: 1.15rem !important;
+    font-weight: 800 !important;
+    color: #111827 !important;
+    text-decoration: none !important;
+    padding: 4px 0 !important;
+  }
+  .mobile-sub-box {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    background: #F8FAFA !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 14px !important;
+    padding: 14px 16px !important;
+    margin-top: 8px !important;
+  }
+  .mobile-sub-link {
     display: flex !important;
     align-items: center !important;
-    justify-content: space-between !important;
+    gap: 8px !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    color: #1E293B !important;
+    text-decoration: none !important;
+    padding: 4px 0 !important;
   }
-  .nav-dropdown-menu {
-    position: static !important;
-    transform: none !important;
-    display: block !important;
-    box-shadow: none !important;
-    border: 1px solid #E5E7EB !important;
-    border-radius: 14px !important;
-    background: #FAFCFC !important;
-    margin-top: 8px !important;
-    padding: 14px 16px !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
+  .sub-dot {
+    width: 6px !important;
+    height: 6px !important;
+    border-radius: 50% !important;
+    background: #146369 !important;
+    display: inline-block !important;
+    flex-shrink: 0 !important;
   }
 }
 </style>
@@ -282,21 +385,34 @@ function toggleMobileMenu(e) {
     e.preventDefault();
     e.stopPropagation();
   }
-  var mainNav = document.getElementById('mainNav');
+  var drawer = document.getElementById('mobileDrawer');
   var toggleBtn = document.getElementById('menuToggle');
-  if (!mainNav) return;
-  var isOpen = mainNav.classList.toggle('is-open');
+  if (!drawer) return;
+  var isOpen = drawer.classList.toggle('is-open');
   if (toggleBtn) toggleBtn.classList.toggle('is-active', isOpen);
   document.body.style.overflow = isOpen ? 'hidden' : '';
+  if (isOpen) {
+    drawer.scrollTop = 0;
+  }
 }
 
+// 링크 클릭 시 드로어 닫기
 document.addEventListener('click', function(e) {
-  var mainNav = document.getElementById('mainNav');
+  var drawer = document.getElementById('mobileDrawer');
   var toggleBtn = document.getElementById('menuToggle');
-  if (!mainNav || !toggleBtn) return;
-  if (mainNav.classList.contains('is-open')) {
-    if (!mainNav.contains(e.target) && !toggleBtn.contains(e.target)) {
-      mainNav.classList.remove('is-open');
+  if (!drawer || !toggleBtn) return;
+
+  var targetLink = e.target.closest('a');
+  if (targetLink && drawer.contains(targetLink)) {
+    drawer.classList.remove('is-open');
+    toggleBtn.classList.remove('is-active');
+    document.body.style.overflow = '';
+    return;
+  }
+
+  if (drawer.classList.contains('is-open')) {
+    if (!drawer.contains(e.target) && !toggleBtn.contains(e.target)) {
+      drawer.classList.remove('is-open');
       toggleBtn.classList.remove('is-active');
       document.body.style.overflow = '';
     }
