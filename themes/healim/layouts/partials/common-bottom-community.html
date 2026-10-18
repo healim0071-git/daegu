@@ -1,13 +1,25 @@
-<!-- ======================================================================= -->
+﻿<!-- ======================================================================= -->
 <!-- healim-panic.com 1:1 일치 공통 바텀 영역 (Publications ~ Network Banner)    -->
 <!-- 내용: 해아림한의원 대구본점 커뮤니티 (FAQ, 치료후기, 유튜브, 치료칼럼) 실시간 연동 -->
 <!-- ======================================================================= -->
-{{ $isDisease := or (eq .Type "disease") (eq .Layout "disease") (in (slice "tic-disorder" "panic-disorder" "dysautonomia" "insomnia" "dizziness" "adhd" "ocd" "anxiety-disorder" "hyperhidrosis" "social-phobia") (path.Base .RelPermalink)) }}
-{{ $diseaseSlug := "" }}
-{{ if $isDisease }}
-  {{ $diseaseSlug = strings.Trim .RelPermalink "/" }}
-  {{ if not (index site.Data.disease_columns $diseaseSlug) }}
-    {{ $diseaseSlug = path.Base .RelPermalink }}
+{{ $isDisease := or (eq .Type "disease") (eq .Layout "disease") (in (slice "tic-disorder" "panic-disorder" "dysautonomia" "insomnia" "dizziness" "adhd" "ocd" "anxiety-disorder" "hyperhidrosis" "social-phobia") (path.Base .RelPermalink)) (strings.Contains .RelPermalink "tic-disorder") (strings.Contains .RelPermalink "panic-disorder") (strings.Contains .RelPermalink "dysautonomia") (strings.Contains .RelPermalink "insomnia") (strings.Contains .RelPermalink "dizziness") (strings.Contains .RelPermalink "adhd") (strings.Contains .RelPermalink "ocd") (strings.Contains .RelPermalink "anxiety-disorder") (strings.Contains .RelPermalink "hyperhidrosis") (strings.Contains .RelPermalink "social-phobia") (ne (.Params.disease_slug | default "") "") }}
+{{ $diseaseSlug := .Params.disease_slug | default "" }}
+{{ if not $diseaseSlug }}
+  {{ if strings.Contains .RelPermalink "tic-disorder" }}{{ $diseaseSlug = "tic-disorder" }}
+  {{ else if strings.Contains .RelPermalink "panic-disorder" }}{{ $diseaseSlug = "panic-disorder" }}
+  {{ else if strings.Contains .RelPermalink "dysautonomia" }}{{ $diseaseSlug = "dysautonomia" }}
+  {{ else if strings.Contains .RelPermalink "insomnia" }}{{ $diseaseSlug = "insomnia" }}
+  {{ else if strings.Contains .RelPermalink "dizziness" }}{{ $diseaseSlug = "dizziness" }}
+  {{ else if strings.Contains .RelPermalink "adhd" }}{{ $diseaseSlug = "adhd" }}
+  {{ else if strings.Contains .RelPermalink "ocd" }}{{ $diseaseSlug = "ocd" }}
+  {{ else if strings.Contains .RelPermalink "anxiety-disorder" }}{{ $diseaseSlug = "anxiety-disorder" }}
+  {{ else if strings.Contains .RelPermalink "hyperhidrosis" }}{{ $diseaseSlug = "hyperhidrosis" }}
+  {{ else if strings.Contains .RelPermalink "social-phobia" }}{{ $diseaseSlug = "social-phobia" }}
+  {{ else if $isDisease }}
+    {{ $diseaseSlug = strings.Trim .RelPermalink "/" }}
+    {{ if not (index site.Data.disease_columns $diseaseSlug) }}
+      {{ $diseaseSlug = path.Base .RelPermalink }}
+    {{ end }}
   {{ end }}
 {{ end }}
 <div class="healim-bottom-section-wrapper" data-disease-slug="{{ $diseaseSlug }}" style="margin-top: {{ if $isDisease }}30px{{ else }}60px{{ end }};">
@@ -75,8 +87,7 @@
     </div>
 
     <div id="commonBottomFaqList" class="bottom-faq-container">
-      {{ $slug := strings.Trim .RelPermalink "/" }}
-      {{ $diseaseFaqs := index site.Data.disease_faqs $slug }}
+      {{ $slug := $diseaseSlug }}{{ if not $slug }}{{ $slug = strings.Trim .RelPermalink "/" }}{{ end }}{{ $diseaseFaqs := index site.Data.disease_faqs $slug }}
       {{ if not $diseaseFaqs }}
         {{ $diseaseFaqs = index site.Data.disease_faqs (path.Base .RelPermalink) }}
       {{ end }}
@@ -210,8 +221,7 @@
     </div>
 
     <ul id="commonBottomReviewsList" class="bottom-cards-grid">
-      {{ $slug := strings.Trim .RelPermalink "/" }}
-      {{ $diseaseReviews := index site.Data.disease_reviews $slug }}
+      {{ $slug := $diseaseSlug }}{{ if not $slug }}{{ $slug = strings.Trim .RelPermalink "/" }}{{ end }}{{ $diseaseReviews := index site.Data.disease_reviews $slug }}
       {{ if not $diseaseReviews }}
         {{ $diseaseReviews = index site.Data.disease_reviews (path.Base .RelPermalink) }}
       {{ end }}
@@ -433,8 +443,7 @@
     </div>
 
     <ul id="commonBottomColumnsList" class="bottom-cards-grid">
-      {{ $slug := strings.Trim .RelPermalink "/" }}
-      {{ $diseaseColumns := index site.Data.disease_columns $slug }}
+      {{ $slug := $diseaseSlug }}{{ if not $slug }}{{ $slug = strings.Trim .RelPermalink "/" }}{{ end }}{{ $diseaseColumns := index site.Data.disease_columns $slug }}
       {{ if not $diseaseColumns }}
         {{ $diseaseColumns = index site.Data.disease_columns (path.Base .RelPermalink) }}
       {{ end }}

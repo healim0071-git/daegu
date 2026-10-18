@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ko">
 {{ partial "head.html" . }}
-{{ $isDisease := or (eq .Type "disease") (eq .Layout "disease") (in (slice "tic-disorder" "panic-disorder" "dysautonomia" "insomnia" "dizziness" "adhd" "ocd" "anxiety-disorder" "hyperhidrosis" "social-phobia") (path.Base .RelPermalink)) }}
+{{ $isDisease := or (eq .Type "disease") (eq .Layout "disease") (in (slice "tic-disorder" "panic-disorder" "dysautonomia" "insomnia" "dizziness" "adhd" "ocd" "anxiety-disorder" "hyperhidrosis" "social-phobia") (path.Base .RelPermalink)) (strings.Contains .RelPermalink "tic-disorder") (ne (.Params.disease_slug | default "") "") }}
 <body class="{{ if $isDisease }}is-disease-page{{ end }}{{ if .IsHome }} is-home{{ end }}">
   {{ partial "nav.html" . }}
   <main id="mainContent">
