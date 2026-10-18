@@ -706,10 +706,10 @@ section {
   .specialties-grid { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 768px) {
-  /* 10대 특화 질환 모바일 2열 + 아이콘/질환명 가로 배치로 세로 공간 대폭 압축 (b 스타일) */
+  /* 10대 특화 질환 모바일 2열 + 아이콘 왼쪽 / 제목&설명 오른쪽 가로 결합 (차지하는 공간 대폭 압축) */
   .specialties-grid {
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: 10px 8px !important;
+    gap: 8px !important;
     padding: 0 !important;
   }
   .specialty-card-item {
@@ -717,74 +717,90 @@ section {
     list-style: none !important;
   }
   .specialty-card {
-    display: grid !important;
-    grid-template-columns: 38px 1fr !important;
-    grid-template-areas:
-      "top top"
-      "icon title"
-      "desc desc"
-      "link link" !important;
-    padding: 12px 10px 10px !important;
-    gap: 4px 8px !important;
+    padding: 10px 10px 8px !important;
     border-radius: 12px !important;
+    display: flex !important;
+    flex-direction: column !important;
     height: 100% !important;
     box-sizing: border-box !important;
   }
   .card-top {
-    grid-area: top;
-    margin-bottom: 2px !important;
+    margin-bottom: 6px !important;
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
   }
   .card-cat {
     font-size: 0.68rem !important;
-    padding: 1px 6px !important;
-    line-height: 1.3 !important;
+    padding: 2px 6px !important;
+    line-height: 1.25 !important;
     border-radius: 4px !important;
   }
   .card-num {
     font-size: 0.72rem !important;
     font-weight: 800 !important;
   }
-  .card-icon {
-    grid-area: icon;
-    width: 38px !important;
-    height: 38px !important;
-    font-size: 1.15rem !important;
-    margin-bottom: 0 !important;
-    align-self: center !important;
-    border-radius: 10px !important;
+  .card-body-row {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 8px !important;
+    align-items: flex-start !important;
+    flex-grow: 1 !important;
   }
-  .specialty-card h3 {
-    grid-area: title;
-    font-size: 0.95rem !important;
+  .card-icon {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 16px !important;
+    border-radius: 8px !important;
+    flex-shrink: 0 !important;
+    margin: 2px 0 0 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .card-info-col {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .card-info-col h3 {
+    font-size: 12.5px !important;
     font-weight: 800 !important;
-    line-height: 1.2 !important;
-    margin-bottom: 0 !important;
-    align-self: center !important;
+    line-height: 1.25 !important;
+    margin: 0 0 4px 0 !important;
     color: var(--color-primary-dark) !important;
     word-break: keep-all !important;
   }
-  .specialty-card p {
-    grid-area: desc;
-    font-size: 0.76rem !important;
-    line-height: 1.38 !important;
+  .card-info-col p {
+    font-size: 10.5px !important;
+    line-height: 1.35 !important;
+    margin: 0 !important;
     color: #515E61 !important;
     min-height: unset !important;
-    margin: 4px 0 2px !important;
     word-break: keep-all !important;
   }
   .card-link {
-    grid-area: link;
-    font-size: 0.72rem !important;
+    font-size: 10.5px !important;
     font-weight: 700 !important;
     color: var(--color-primary) !important;
-    margin-top: 4px !important;
+    margin-top: 6px !important;
+    padding-top: 2px !important;
     display: inline-flex !important;
     align-items: center !important;
     gap: 3px !important;
   }
+}
+
+.card-body-row {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.card-info-col {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .specialty-card {
