@@ -1,4 +1,5 @@
-{{ define "main" }}
+﻿{{ define "main" }}
+{{ $diseaseTitle := or .Params.disease_name .Title }}
 <div class="container disease-page-container">
   <!-- ── 스크린샷 1: 대형 화이트 라운드 히어로 카드 ── -->
   <section class="disease-hero-card">
@@ -23,27 +24,34 @@
       {{ end }}
     </div>
 
-    <h1 class="hero-card-title">
-      {{ if .Params.hero_title }}
+    {{ if .Params.h1_title }}
+      <h1 class="sr-only">{{ .Params.h1_title }}</h1>
+      <div class="hero-card-title" role="heading" aria-level="1">
         {{ .Params.hero_title | safeHTML }}
-      {{ else if in .Title "소개" }}
-        한방신경정신과 박사 김대억 대표원장<br>
-        1:1 심층 진료로 마음의 자생력을 깨웁니다
-      {{ else if in .Title "철학" }}
-        몸과 마음을 함께 헤아리는<br>
-        해아림한의원 대구본점의 진료철학
-      {{ else if in .Title "왜" }}
-        왜, 수많은 분들이<br>
-        해아림한의원 대구본점을 선택하실까요?
-      {{ else if in .Title "칼럼" }}
-        김대억 대표원장의<br>
-        두뇌·신경계 심층 의학 칼럼
-      {{ else }}
-        16년 이상 {{ .Title }}를<br>
-        집중적으로 다뤄온<br>
-        해아림한의원 {{ .Title }}클리닉
-      {{ end }}
-    </h1>
+      </div>
+    {{ else }}
+      <h1 class="hero-card-title">
+        {{ if .Params.hero_title }}
+          {{ .Params.hero_title | safeHTML }}
+        {{ else if in .Title "소개" }}
+          한방신경정신과 박사 김대억 대표원장<br>
+          1:1 심층 진료로 마음의 자생력을 깨웁니다
+        {{ else if in .Title "철학" }}
+          몸과 마음을 함께 헤아리는<br>
+          해아림한의원 대구본점의 진료철학
+        {{ else if in .Title "왜" }}
+          왜, 수많은 분들이<br>
+          해아림한의원 대구본점을 선택하실까요?
+        {{ else if in .Title "칼럼" }}
+          김대억 대표원장의<br>
+          두뇌·신경계 심층 의학 칼럼
+        {{ else }}
+          16년 이상 {{ .Title }}를<br>
+          집중적으로 다뤄온<br>
+          해아림한의원 {{ .Title }}클리닉
+        {{ end }}
+      </h1>
+    {{ end }}
 
     <p class="hero-card-desc">
       {{ with .Description }}{{ . }}{{ else }}일반 검사상 이상이 나타나지 않는 갑작스러운 신체화·자율신경 불균형 및 불안 증상을 뇌신경계와 자율신경 조절력의 관점에서 종합적으로 평가하고, 개인별 상태에 맞춰 치료합니다.{{ end }}
@@ -73,17 +81,17 @@
   <section class="section-card-list" style="margin-top: 28px; margin-bottom: 34px;">
     <div class="section-card-header">
       <span class="section-card-eyebrow">HEALIM CLINICAL INSIGHTS</span>
-      <h3 class="section-card-title">{{ .Title }} 자주 묻는 핵심 질문 &amp; 의학 칼럼</h3>
+      <h3 class="section-card-title">{{ $diseaseTitle }} 자주 묻는 핵심 질문 &amp; 의학 칼럼</h3>
     </div>
     <div class="card-grid-3">
       <!-- 1번 카드 -->
       <div class="insight-card">
         <div class="insight-thumb-wrap">
-          <img src="/images/disease-insights/{{ $diseaseKey }}_1.svg" alt="{{ .Title }} 자주 묻는 질문" class="insight-thumb-img">
+          <img src="/images/disease-insights/{{ $diseaseKey }}_1.svg" alt="{{ $diseaseTitle }} 자주 묻는 질문" class="insight-thumb-img">
           <span class="insight-badge">자주 묻는 질문</span>
         </div>
         <div class="insight-body">
-          <h4 class="insight-title">갑자기 심해진 {{ .Title }}, 괜찮은 걸까요?</h4>
+          <h4 class="insight-title">갑자기 심해진 {{ $diseaseTitle }}, 괜찮은 걸까요?</h4>
           <p class="insight-desc">
             증상의 급격한 반등은 뇌 신경계의 자율 조절력이 일시적 스트레스나 신체 피로, 환경 변화로 인해 한계치에 도달했음을 알리는 신호입니다. 방치 시 신경회로의 과흥분이 고착화될 수 있으므로, 뇌 피질-선조체 및 편도체 안정 맞춤 한약과 두뇌 훈련을 통한 조기 완충력 복원이 필요합니다.
           </p>
@@ -93,11 +101,11 @@
       <!-- 2번 카드 -->
       <div class="insight-card">
         <div class="insight-thumb-wrap">
-          <img src="/images/disease-insights/{{ $diseaseKey }}_2.svg" alt="{{ .Title }} 진행 및 경과" class="insight-thumb-img">
+          <img src="/images/disease-insights/{{ $diseaseKey }}_2.svg" alt="{{ $diseaseTitle }} 진행 및 경과" class="insight-thumb-img">
           <span class="insight-badge">진행 및 경과</span>
         </div>
         <div class="insight-body">
-          <h4 class="insight-title">{{ .Title }}은 시간이 지나면 더 심해질 수도 있나요?</h4>
+          <h4 class="insight-title">{{ $diseaseTitle }}은 시간이 지나면 더 심해질 수도 있나요?</h4>
           <p class="insight-desc">
             초기 경미한 이상 신호라도 뇌 신경계의 억제 조절 능력이 저하된 상태가 지속되면 신경가소성에 의해 증상이 만성화되거나 복합 양상으로 발전할 가능성이 높습니다. 발병 3~6개월 골든타임 이내에 근본 원인을 감별하고 두뇌 자생력을 길러주는 것이 악화를 막는 결정적 열쇠입니다.
           </p>
@@ -107,11 +115,11 @@
       <!-- 3번 카드 -->
       <div class="insight-card">
         <div class="insight-thumb-wrap">
-          <img src="/images/disease-insights/{{ $diseaseKey }}_3.svg" alt="{{ .Title }} 치료 골든타임" class="insight-thumb-img">
+          <img src="/images/disease-insights/{{ $diseaseKey }}_3.svg" alt="{{ $diseaseTitle }} 치료 골든타임" class="insight-thumb-img">
           <span class="insight-badge">치료 골든타임</span>
         </div>
         <div class="insight-body">
-          <h4 class="insight-title">{{ .Title }} 증상이 생겼을 때 얼마나 오래 지켜봐도 되나요?</h4>
+          <h4 class="insight-title">{{ $diseaseTitle }} 증상이 생겼을 때 얼마나 오래 지켜봐도 되나요?</h4>
           <p class="insight-desc">
             단순 일시적 피로 증상은 2~4주 이내에 자연 호전되지만, 4주 이상 지속되거나 일상생활 및 학업·업무에 지장을 준다면 자연 치유를 기다리기보다 즉시 정밀 검사를 받아야 합니다. 자율신경계 피로도와 개인 체질 맞춤 치료를 시작할수록 완치 소요 기간을 크게 단축시킬 수 있습니다.
           </p>
@@ -129,7 +137,7 @@
             ▶ YouTube @healimtv
           </div>
         </a>
-        <h3 style="font-size: 22px; font-weight: 800; color: #0C4349; margin: 0;">{{ .Title }} 관련 해아림TV 핵심 자문 영상</h3>
+        <h3 style="font-size: 22px; font-weight: 800; color: #0C4349; margin: 0;">{{ $diseaseTitle }} 관련 해아림TV 핵심 자문 영상</h3>
       </div>
       <a href="/community/#youtube" style="display: inline-flex; align-items: center; gap: 4px; font-size: 13.5px; font-weight: 700; color: #146369; text-decoration: none;">
         유튜브 30편 전체보기 &gt;
