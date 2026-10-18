@@ -25,7 +25,7 @@
     </div>
 
     {{ if .Params.h1_title }}
-      <h1 class="sr-only">{{ .Params.h1_title }}</h1>
+      <h1 style="position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important;">{{ .Params.h1_title }}</h1>
       <div class="hero-card-title" role="heading" aria-level="1">
         {{ .Params.hero_title | safeHTML }}
       </div>
