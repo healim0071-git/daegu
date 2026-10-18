@@ -1,33 +1,15 @@
+// Mobile Nav Links Auto-Close
 document.addEventListener('DOMContentLoaded', () => {
-  // Mobile Nav Toggle
-  const toggleBtn = document.getElementById('menuToggle');
   const mainNav = document.getElementById('mainNav');
-
-  if (toggleBtn && mainNav) {
-    toggleBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      const isOpen = mainNav.classList.toggle('is-open');
-      toggleBtn.classList.toggle('is-active', isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : '';
-    });
-
-    // ?? ?? ?? ? ??? ?? ?? (???? ?? ??)
+  const toggleBtn = document.getElementById('menuToggle');
+  if (mainNav) {
     const links = mainNav.querySelectorAll('a.nav-dd-item, a.nav-link:not(.nav-dropdown-toggle)');
     links.forEach(link => {
       link.addEventListener('click', () => {
         mainNav.classList.remove('is-open');
-        toggleBtn.classList.remove('is-active');
+        if (toggleBtn) toggleBtn.classList.remove('is-active');
         document.body.style.overflow = '';
       });
-    });
-
-    // ?? ?? ?? ? ?? ??
-    document.addEventListener('click', (e) => {
-      if (mainNav.classList.contains('is-open') && !mainNav.contains(e.target) && !toggleBtn.contains(e.target)) {
-        mainNav.classList.remove('is-open');
-        toggleBtn.classList.remove('is-active');
-        document.body.style.overflow = '';
-      }
     });
   }
 });

@@ -90,8 +90,8 @@
       </ul>
     </nav>
 
-    <!-- A: 1번째 사진 스타일 전체메뉴 버튼 (햄버거 줄 3개 + '전체메뉴' 글자) -->
-    <button class="menu-toggle" id="menuToggle" aria-label="전체메뉴 열기">
+    <!-- A: 1번째 사진 스타일 전체메뉴 버튼 (onclick 직접 바인딩으로 중복 차단) -->
+    <button class="menu-toggle" id="menuToggle" aria-label="전체메뉴 열기" type="button" onclick="toggleMobileMenu(event)">
       <span class="hamburger-icon" aria-hidden="true">
         <span class="hamburger-bar"></span>
         <span class="hamburger-bar"></span>
@@ -182,6 +182,7 @@
     gap: 3px !important;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
     flex-shrink: 0 !important;
+    z-index: 100000 !important;
   }
   .menu-toggle:hover, .menu-toggle:active {
     background: #F7F5F0 !important;
@@ -211,9 +212,9 @@
     letter-spacing: -0.3px !important;
   }
 
-  /* 모바일 네비게이션 드로어: 상단 72px ~ 하단 58px 플로팅바 B 위까지 고정 & 스크롤 완벽 보장 */
+  /* 모바일 네비게이션 드로어 기본 상태: 닫힘 */
   .main-nav {
-    display: none;
+    display: none !important;
     position: fixed !important;
     top: 72px !important;
     left: 0 !important;
@@ -227,13 +228,16 @@
     -webkit-overflow-scrolling: touch !important;
     overscroll-behavior: contain !important;
     padding: 24px 20px 80px !important;
-    z-index: 9998 !important;
+    z-index: 99998 !important;
     flex-direction: column !important;
     align-items: stretch !important;
   }
+
+  /* 모바일 네비게이션 드로어 열림 상태: 100% 화면에 표시 */
   .main-nav.is-open {
     display: flex !important;
   }
+
   .nav-list {
     display: flex !important;
     flex-direction: column !important;
@@ -273,43 +277,29 @@
 </style>
 
 <script id="mobileNavInlineScript">
-(function() {
-  function initMobileMenu() {
-    var toggleBtn = document.getElementById('menuToggle');
-    var mainNav = document.getElementById('mainNav');
-    if (!toggleBtn || !mainNav) return;
-    if (toggleBtn._mobileNavDone) return;
-    toggleBtn._mobileNavDone = true;
-
-    toggleBtn.addEventListener('click', function(e) {
-      e.stopPropagation();
-      var isOpen = mainNav.classList.toggle('is-open');
-      toggleBtn.classList.toggle('is-active', isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : '';
-    });
-
-    var links = mainNav.querySelectorAll('a.nav-dd-item, a.nav-link:not(.nav-dropdown-toggle)');
-    links.forEach(function(link) {
-      link.addEventListener('click', function() {
-        mainNav.classList.remove('is-open');
-        toggleBtn.classList.remove('is-active');
-        document.body.style.overflow = '';
-      });
-    });
-
-    document.addEventListener('click', function(e) {
-      if (mainNav.classList.contains('is-open') && !mainNav.contains(e.target) && !toggleBtn.contains(e.target)) {
-        mainNav.classList.remove('is-open');
-        toggleBtn.classList.remove('is-active');
-        document.body.style.overflow = '';
-      }
-    });
+function toggleMobileMenu(e) {
+  if (e) {
+    e.preventDefault();
+    e.stopPropagation();
   }
+  var mainNav = document.getElementById('mainNav');
+  var toggleBtn = document.getElementById('menuToggle');
+  if (!mainNav) return;
+  var isOpen = mainNav.classList.toggle('is-open');
+  if (toggleBtn) toggleBtn.classList.toggle('is-active', isOpen);
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+}
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initMobileMenu);
-  } else {
-    initMobileMenu();
+document.addEventListener('click', function(e) {
+  var mainNav = document.getElementById('mainNav');
+  var toggleBtn = document.getElementById('menuToggle');
+  if (!mainNav || !toggleBtn) return;
+  if (mainNav.classList.contains('is-open')) {
+    if (!mainNav.contains(e.target) && !toggleBtn.contains(e.target)) {
+      mainNav.classList.remove('is-open');
+      toggleBtn.classList.remove('is-active');
+      document.body.style.overflow = '';
+    }
   }
-})();
+});
 </script>
