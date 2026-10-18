@@ -1,4 +1,4 @@
-<!-- 상단 미니 유틸리티 바 (정돈된 한 줄 레이아웃) -->
+﻿<!-- 상단 미니 유틸리티 바 (정돈된 한 줄 레이아웃) -->
 <div class="top-util-bar">
   <div class="container top-util-inner">
     <div class="top-util-left">
@@ -23,7 +23,8 @@
     </a>
 
     <nav class="main-nav" id="mainNav">
-      <ul class="nav-list">
+      <!-- 데스크톱 전용 메뉴 (960px 초과 시 기존 스타일 그대로 표시) -->
+      <ul class="nav-list desktop-nav-list">
         <!-- 1. 한의원소개 (드롭다운) -->
         <li class="nav-item nav-dropdown">
           <a href="/about/" class="nav-link nav-dropdown-toggle">한의원소개 <span class="caret">▾</span></a>
@@ -84,13 +85,103 @@
           </div>
         </li>
       </ul>
+
+      <!-- 모바일 전용 2열 카드 전체메뉴 (skyma.co.kr 스타일 1:1 완벽 양식) -->
+      <div class="mobile-allmenu-panel">
+        <p class="mobile-allmenu-heading">전체 메뉴</p>
+        <div class="mobile-allmenu-grid">
+          <a href="/about/" class="allmenu-card">
+            <span class="allmenu-sub">Healim Clinic</span>
+            <span class="allmenu-name">한의원소개</span>
+          </a>
+          <a href="/about/#location" class="allmenu-card">
+            <span class="allmenu-sub">범어역 3층 안내</span>
+            <span class="allmenu-name">오시는 길</span>
+          </a>
+          <a href="/tic-disorder/" class="allmenu-card">
+            <span class="allmenu-sub">두뇌 클리닉</span>
+            <span class="allmenu-name">틱장애</span>
+          </a>
+          <a href="/panic-disorder/" class="allmenu-card">
+            <span class="allmenu-sub">신경정신 질환</span>
+            <span class="allmenu-name">공황장애</span>
+          </a>
+          <a href="/dizziness/" class="allmenu-card">
+            <span class="allmenu-sub">전정신경·이명</span>
+            <span class="allmenu-name">어지럼증</span>
+          </a>
+          <a href="/dysautonomia/" class="allmenu-card">
+            <span class="allmenu-sub">자율신경계 질환</span>
+            <span class="allmenu-name">자율신경실조증</span>
+          </a>
+          <a href="/insomnia/" class="allmenu-card">
+            <span class="allmenu-sub">수면장애 클리닉</span>
+            <span class="allmenu-name">불면증</span>
+          </a>
+          <a href="/adhd/" class="allmenu-card">
+            <span class="allmenu-sub">소아·성인 집중력</span>
+            <span class="allmenu-name">ADHD</span>
+          </a>
+          <a href="/anxiety-disorder/" class="allmenu-card">
+            <span class="allmenu-sub">심신안정 클리닉</span>
+            <span class="allmenu-name">불안장애</span>
+          </a>
+          <a href="/ocd/" class="allmenu-card">
+            <span class="allmenu-sub">심신안정 클리닉</span>
+            <span class="allmenu-name">강박증</span>
+          </a>
+          <a href="/social-phobia/" class="allmenu-card">
+            <span class="allmenu-sub">사회공포증</span>
+            <span class="allmenu-name">대인기피증</span>
+          </a>
+          <a href="/hyperhidrosis/" class="allmenu-card">
+            <span class="allmenu-sub">자율신경 과민</span>
+            <span class="allmenu-name">긴장성 다한증</span>
+          </a>
+          <a href="/community/?v=20261016_v12#columns" class="allmenu-card">
+            <span class="allmenu-sub">원장 직접 집필</span>
+            <span class="allmenu-name">치료칼럼</span>
+          </a>
+          <a href="/community/?v=20261016_v12#reviews" class="allmenu-card">
+            <span class="allmenu-sub">생생한 치료사례</span>
+            <span class="allmenu-name">치료후기</span>
+          </a>
+          <a href="/community/?v=20261016_v12#faq" class="allmenu-card">
+            <span class="allmenu-sub">진료·상담 FAQ</span>
+            <span class="allmenu-name">자주 묻는 질문</span>
+          </a>
+          <a href="/community/?v=20261016_v12#youtube" class="allmenu-card">
+            <span class="allmenu-sub">해아림TV 공식채널</span>
+            <span class="allmenu-name">유튜브 영상</span>
+          </a>
+          <a href="/about/#doctor" class="allmenu-card">
+            <span class="allmenu-sub">한의학 박사 김대억</span>
+            <span class="allmenu-name">대표원장 소개</span>
+          </a>
+          <a href="/about/#philosophy" class="allmenu-card">
+            <span class="allmenu-sub">마음을 헤아리는</span>
+            <span class="allmenu-name">진료철학</span>
+          </a>
+          <a href="/about/#why-healim" class="allmenu-card">
+            <span class="allmenu-sub">해아림만의 차별점</span>
+            <span class="allmenu-name">왜 해아림인가?</span>
+          </a>
+          <a href="https://www.healim.com/5-6" target="_blank" rel="noopener noreferrer" class="allmenu-card">
+            <span class="allmenu-sub">투명한 안심처방</span>
+            <span class="allmenu-name">한약과 비용고시</span>
+          </a>
+        </div>
+      </div>
     </nav>
 
-    <!-- 모바일 메뉴 버튼 -->
-    <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기">
-      <span class="hamburger-bar"></span>
-      <span class="hamburger-bar"></span>
-      <span class="hamburger-bar"></span>
+    <!-- 모바일 메뉴 버튼 (2번째 사진 skyma.co.kr 양식: 햄버거 아이콘 + '전체메뉴' 텍스트) -->
+    <button class="menu-toggle" id="menuToggle" aria-label="전체메뉴 열기">
+      <span class="hamburger-icon" aria-hidden="true">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </span>
+      <span class="menu-toggle-label">전체메뉴</span>
     </button>
   </div>
 </header>

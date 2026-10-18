@@ -387,6 +387,7 @@ img {
 }
 
 .menu-toggle { display: none; }
+.mobile-allmenu-panel { display: none; }
 
 /* ── 버튼 시스템 ── */
 .btn, .btn-primary, .btn-secondary, .btn-outline {
@@ -1524,34 +1525,152 @@ section {
   .hero-inner { grid-template-columns: 1fr; gap: 40px; }
   .footer-content { grid-template-columns: 1fr; gap: 32px; }
 
+  /* 2번째 사진 skyma.co.kr 양식: 전체메뉴 둥근 박스 버튼 */
   .menu-toggle {
-    display: flex;
-    position: static;
+    display: inline-flex;
     flex-direction: column;
-    gap: 5px;
-    background: none;
-    border: none;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 44px;
+    border-radius: 8px;
+    border: 1px solid #D9D2C7;
+    background: #FFFFFF;
+    color: #0F1D33;
     cursor: pointer;
-    padding: 6px;
+    padding: 3px 2px;
+    gap: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    transition: all 0.2s ease;
+    flex-shrink: 0;
   }
-  .hamburger-bar {
-    width: 22px; height: 2px;
-    background: var(--color-primary-dark);
+  .menu-toggle:hover, .menu-toggle:active {
+    background: #F7F5F0;
+    border-color: #C8BFB0;
+  }
+  .menu-toggle .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+  }
+  .menu-toggle .hamburger-bar {
+    width: 19px;
+    height: 2px;
+    background: #0F1D33;
     border-radius: 2px;
+    transition: all 0.2s ease;
   }
+  .menu-toggle .menu-toggle-label {
+    font-size: 10px;
+    font-weight: 700;
+    color: #0F1D33;
+    line-height: 1;
+    letter-spacing: -0.3px;
+  }
+
+  /* 모바일에서 데스크톱 메뉴 리스트는 숨김 */
+  .desktop-nav-list {
+    display: none !important;
+  }
+
+  /* 모바일 네비게이션 드로어 (스크롤 가능 및 충분한 하단 여백) */
   .main-nav {
     display: none;
     position: absolute;
-    top: 74px; left: 0; right: 0;
+    top: 72px;
+    left: 0;
+    right: 0;
     background: #FFFFFF;
-    padding: 24px;
     border-bottom: 2px solid var(--color-primary);
-    box-shadow: var(--shadow);
-    flex-direction: column;
-    align-items: stretch;
+    box-shadow: 0 12px 28px rgba(12, 67, 73, 0.15);
+    max-height: calc(100vh - 72px);
+    max-height: calc(100dvh - 72px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 14px 16px 90px;
+    z-index: 10000;
   }
-  .main-nav.is-open { display: flex; }
-  .nav-list { flex-direction: column; align-items: stretch; gap: 12px; flex-wrap: wrap; }
+  .main-nav.is-open {
+    display: block !important;
+  }
+
+  /* 2번째 사진 skyma.co.kr 양식: 전체 메뉴 타이틀 & 2열 카드 그리드 */
+  .mobile-allmenu-panel {
+    display: block;
+    width: 100%;
+  }
+  .mobile-allmenu-heading {
+    margin: 0 0 10px 2px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #9C7A45;
+    letter-spacing: -0.2px;
+  }
+  .mobile-allmenu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    width: 100%;
+  }
+  .allmenu-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 52px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    background: #F3EFE7;
+    color: #0F1D33;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all 0.15s ease;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+  }
+  .allmenu-card:hover, .allmenu-card:active {
+    background: #146369;
+    color: #FFFFFF;
+  }
+  .allmenu-card:hover .allmenu-sub, .allmenu-card:active .allmenu-sub {
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .allmenu-card:hover .allmenu-name, .allmenu-card:active .allmenu-name {
+    color: #FFFFFF;
+  }
+  .allmenu-card.is-current {
+    background: #0F1D33;
+    color: #FFFFFF;
+  }
+  .allmenu-card.is-current .allmenu-sub {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  .allmenu-card.is-current .allmenu-name {
+    color: #FFFFFF;
+  }
+  .allmenu-card .allmenu-sub {
+    display: block;
+    font-size: 11px;
+    font-weight: 500;
+    color: #5B5E66;
+    line-height: 1.25;
+    margin-bottom: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .allmenu-card .allmenu-name {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: #0F1D33;
+    line-height: 1.3;
+    letter-spacing: -0.3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   .nav-dropdown-menu {
     position: static;
     transform: none;
