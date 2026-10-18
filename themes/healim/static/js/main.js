@@ -6,8 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (toggleBtn && mainNav) {
     toggleBtn.addEventListener('click', (e) => {
       e.stopPropagation();
-      mainNav.classList.toggle('is-open');
-      toggleBtn.classList.toggle('is-active');
+      const isOpen = mainNav.classList.toggle('is-open');
+      toggleBtn.classList.toggle('is-active', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
     // ?? ?? ?? ? ??? ?? ?? (???? ?? ??)
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener('click', () => {
         mainNav.classList.remove('is-open');
         toggleBtn.classList.remove('is-active');
+        document.body.style.overflow = '';
       });
     });
 
@@ -24,11 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (mainNav.classList.contains('is-open') && !mainNav.contains(e.target) && !toggleBtn.contains(e.target)) {
         mainNav.classList.remove('is-open');
         toggleBtn.classList.remove('is-active');
+        document.body.style.overflow = '';
       }
     });
   }
 });
-
 
 // Auth Status Display in Top Nav
 document.addEventListener('DOMContentLoaded', () => {
