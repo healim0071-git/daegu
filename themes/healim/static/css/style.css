@@ -3987,3 +3987,68 @@ ul.bottom-cards-grid > li {
     padding-left: 10px !important;
   }
 }
+
+
+/* ==========================================================================
+   공황장애(panic-disorder) 및 세부 로컬 페이지 전용 모바일 완벽 최적화
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* 로컬 세부 페이지 래퍼 및 안내 박스 모바일 최적화 */
+  .local-seo-wrap {
+    font-size: 0.98rem !important;
+    line-height: 1.72 !important;
+  }
+
+  .local-seo-wrap [style*="padding: 24px 22px"],
+  .local-seo-wrap [style*="padding: 22px 24px"],
+  .local-seo-wrap [style*="padding: 20px"] {
+    padding: 16px 14px !important;
+    border-radius: 10px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .local-seo-wrap h2 {
+    font-size: 1.25rem !important;
+    line-height: 1.45 !important;
+    margin: 28px 0 14px !important;
+    word-break: keep-all !important;
+  }
+
+  .local-seo-wrap [style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  /* 공황장애 메인 페이지 본문 카드 및 섹션 모바일 정돈 */
+  .page-article [style*="padding: 20px 22px"],
+  .page-article [style*="padding: 22px 20px"],
+  .page-article [style*="padding: 24px 26px"] {
+    padding: 16px 14px !important;
+    border-radius: 10px !important;
+  }
+
+  /* 긴급 대처 및 자가진단 체크리스트 모바일 정돈 */
+  .panic-emergency-box,
+  .self-test-box {
+    padding: 16px 14px !important;
+    border-radius: 10px !important;
+  }
+
+  /* 하단 안내 가이드 박스 */
+  .landing-footer-guide .guide-box {
+    padding: 20px 16px !important;
+    border-radius: 12px !important;
+  }
+
+  .landing-footer-guide .action-buttons {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+
+  .landing-footer-guide .action-buttons a {
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+    padding: 12px 14px !important;
+  }
+}
