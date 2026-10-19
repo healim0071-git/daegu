@@ -79,7 +79,7 @@ hero_title: "16년 이상 대인기피증·사회공포증을<br>집중적으로
 <p>‘대인기피증’은 일상에서 널리 쓰이는 표현으로, 의학적으로는 <strong>사회불안장애(Social Anxiety Disorder)</strong> 또는 <strong>사회공포증(Social Phobia)</strong>으로 진단됩니다. 타인에게 관찰되거나 부정적인 평가를 받을 수 있는 사회적 상황에서 극심한 불안과 공포를 느끼고, 이를 피하거나 극심한 고통 속에 견뎌내는 질환입니다.</p>
 <div style="background: #fff8f0; border-left: 4px solid #f39c12; padding: 16px 20px; border-radius: 4px; font-size: 0.96rem; color: #5d4037; line-height: 1.7; margin: 18px 0;">
 <strong>★ 대인기피증의 핵심 본질: "사람이 싫은 것이 아니라, 사람들이 나를 어떻게 볼까 봐 두려운 것"</strong><br>
-혼자 있는 것을 좋아하고 대인관계를 원치 않는 성향과 대인기피증은 근본적으로 다릅니다. 대인기피증 환자분들은 <strong>마음속 깊이 사람들과 잘 어울리고 싶고 인정받고 싶어 합니다.</strong> 하지만 "내가 실수하면 어쩌지?", "나를 이상한 사람으로 보면 어쩌지?"라는 평가에 대한 압도적인 두려움 때문에 원하는 관계와 기회를 눈물겹게 포기하게 되는 것입니다.
+혼자 있는 것을 좋아하고 대인관계를 원치 않는 성향과 대인기피증은 본질적으로 다릅니다. 대인기피증 환자분들은 <strong>마음속 깊이 사람들과 잘 어울리고 싶고 인정받고 싶어 합니다.</strong> 하지만 "내가 실수하면 어쩌지?", "나를 이상한 사람으로 보면 어쩌지?"라는 평가에 대한 압도적인 두려움 때문에 원하는 관계와 기회를 눈물겹게 포기하게 되는 것입니다.
 </div>
 </div>
 
@@ -258,7 +258,7 @@ hero_title: "16년 이상 대인기피증·사회공포증을<br>집중적으로
 <div class="cond-card cond-card--blue" style="border: 1px solid #bfdbfe; background: #f0f7ff; border-radius: 8px; padding: 18px;">
 <p class="cond-card-title" style="color: #1e40af; font-size: 1.15rem; font-weight: bold; margin-top: 0;">1. 진경안신(鎭驚安神)·보심온담(補心溫膽) 맞춤 한약</p>
 <p class="cond-card-desc" style="font-size: 0.94rem; color: #334155; line-height: 1.65;">
-타인 앞에 설 때 발생하는 급격한 심장 쿵쾅거림과 말초혈관 확장을 진정시킵니다. 심장과 담력을 보강(보심온담)하여 사소한 시선에도 뇌가 놀라지 않도록 신경계 완충력을 높여 얼굴 붉어짐, 손떨림, 목소리 떨림을 근본적으로 다스립니다.
+타인 앞에 설 때 발생하는 급격한 심장 쿵쾅거림과 말초혈관 확장을 진정시킵니다. 심장과 담력을 보강(보심온담)하여 사소한 시선에도 뇌가 놀라지 않도록 신경계 완충력을 높여 얼굴 붉어짐, 손떨림, 목소리 떨림을 체계적으로 다스립니다.
 </p>
 </div>
 

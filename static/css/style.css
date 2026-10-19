@@ -4223,3 +4223,24 @@ ul.bottom-cards-grid > li {
     border-radius: 10px !important;
   }
 }
+
+
+/* ==========================================================================
+   대인기피증/사회공포증(social-phobia) 및 세부 로컬 페이지 전용 모바일 완벽 최적화
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* 공감 히어로 및 AEO 요약 박스 모바일 정돈 */
+  .aeo-summary-box,
+  .empathy-hero-box {
+    padding: 16px 14px !important;
+    border-radius: 10px !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* 사회공포증 4가지 유형 및 자율신경 신체화 박스 모바일 정돈 */
+  .social-phobia-type-card,
+  .social-phobia-exam-box {
+    padding: 16px 14px !important;
+    border-radius: 10px !important;
+  }
+}
