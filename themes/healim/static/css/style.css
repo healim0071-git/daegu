@@ -4118,15 +4118,57 @@ ul.bottom-cards-grid > li {
   }
 }
 
-
 /* ==========================================================================
    다한증(hyperhidrosis) 및 세부 로컬 페이지 전용 모바일 완벽 최적화
    ========================================================================== */
 @media (max-width: 768px) {
-  /* 다한증 부위별 비교 및 자율신경 조절 박스 모바일 정돈 */
-  .hyperhidrosis-type-card,
-  .hyperhidrosis-exam-box {
+  /* 공감 히어로 및 요약 박스 모바일 여백 정돈 */
+  .empathy-hero-box,
+  .hyperhidrosis-exam-box,
+  .hyperhidrosis-type-card {
     padding: 16px 14px !important;
     border-radius: 10px !important;
+    margin-bottom: 16px !important;
+  }
+
+  /* 자가진단 및 특징 그리드 리스트 1열 스택 */
+  .cond-section ul[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+
+  .cond-section div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  /* CTA 배너 모바일 최적화: 세로 정렬 및 버튼 100% 터치 영역 */
+  .cond-section div[style*="justify-content: space-between"] {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    text-align: center;
+  }
+
+  .cond-section div[style*="justify-content: space-between"] > div:last-child {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+
+  .cond-section div[style*="justify-content: space-between"] a {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 12px 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 텍스트 줄바꿈 및 오버플로우 방지 */
+  .cond-section p,
+  .cond-section li,
+  .cond-section h2,
+  .cond-section h3 {
+    word-break: keep-all;
+    overflow-wrap: break-word;
   }
 }
