@@ -13,9 +13,16 @@
       <span>해아림한의원 대구본점</span>
     </div>
 
-    <h1 class="hero-card-title" style="margin-bottom: 12px;">
-      해아림한의원 소개
-    </h1>
+    {{ if .Params.h1_title }}
+      <h1 style="position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important;">{{ .Params.h1_title }}</h1>
+      <div class="hero-card-title" role="heading" aria-level="1" style="margin-bottom: 12px;">
+        {{ if .Params.hero_title }}{{ .Params.hero_title | safeHTML }}{{ else }}해아림한의원 소개{{ end }}
+      </div>
+    {{ else }}
+      <h1 class="hero-card-title" style="margin-bottom: 12px;">
+        {{ if .Params.hero_title }}{{ .Params.hero_title | safeHTML }}{{ else }}해아림한의원 소개{{ end }}
+      </h1>
+    {{ end }}
 
     <p class="hero-card-desc" style="max-width: 780px; margin: 0 auto 20px;">
       신체의 건강뿐 아니라, 마음의 건강까지 헤아리는 해아림한의원입니다.<br class="pc-only">
