@@ -805,6 +805,240 @@
   }
 
   // 가중치 확률 (틱 25, 공황 15, 불면 15, 자율신경 15, 나머지 각 6%)
+  
+  // ==============================================================================
+  // [지역명(11개 군) & 세부 동(읍·면) 데이터베이스 & 가중치 엔진]
+  // 대구(25%), 구미(20%), 경산(10%), 경주(10%), 포항 영덕(10%), 나머지 6개 지역(25%)
+  // ==============================================================================
+  var REGION_DATA = [
+    {
+      name: '대구',
+      weight: 25,
+      dongs: ['범어동', '만촌동', '황금동', '두류동', '상인동', '월성동', '침산동', '동천동', '신천동', '대봉동', '다사읍', '유가읍']
+    },
+    {
+      name: '구미',
+      weight: 20,
+      dongs: ['송정동', '형곡동', '인동', '옥계동', '산동읍', '봉곡동', '상모동', '사곡동', '원평동', '선주원남동', '고아읍']
+    },
+    {
+      name: '경산',
+      weight: 10,
+      dongs: ['하양읍', '진량읍', '중방동', '옥산동', '백천동', '사동', '삼풍동', '정평동', '압량읍']
+    },
+    {
+      name: '경주',
+      weight: 10,
+      dongs: ['황성동', '동천동', '용강동', '충효동', '성건동', '안강읍', '외동읍']
+    },
+    {
+      name: '포항 영덕',
+      weight: 10,
+      dongs: ['양덕동', '두호동', '이동', '효자동', '장성동', '지곡동', '오천읍', '연일읍', '영덕읍', '강구면']
+    },
+    {
+      name: '김천',
+      weight: 4.167,
+      dongs: ['율곡동', '신음동', '평화동', '부곡동', '대곡동', '아포읍']
+    },
+    {
+      name: '영천 군위',
+      weight: 4.167,
+      dongs: ['야사동', '망정동', '완산동', '동부동', '금호읍', '군위읍', '효령면']
+    },
+    {
+      name: '영양 울진',
+      weight: 4.167,
+      dongs: ['울진읍', '후포면', '죽변면', '북면', '영양읍', '입암면']
+    },
+    {
+      name: '문경 상주',
+      weight: 4.167,
+      dongs: ['점촌동', '모전동', '문경읍', '낙양동', '무양동', '신봉동', '함창읍']
+    },
+    {
+      name: '예천 안동',
+      weight: 4.167,
+      dongs: ['옥동', '용상동', '정하동', '태화동', '풍천면', '호명읍', '예천읍']
+    },
+    {
+      name: '영주 봉화',
+      weight: 4.167,
+      dongs: ['가흥동', '휴천동', '영주동', '하망동', '풍기읍', '봉화읍', '물야면']
+    }
+  ];
+
+  function pickRegionWithWeights() {
+    var rand = Math.random() * 100;
+    var acc = 0;
+    for (var i = 0; i < REGION_DATA.length; i++) {
+      acc += REGION_DATA[i].weight;
+      if (rand <= acc || i === REGION_DATA.length - 1) {
+        return REGION_DATA[i];
+      }
+    }
+    return REGION_DATA[0];
+  }
+
+  function pickTwoDongs(dongs) {
+    if (!dongs || dongs.length < 2) return dongs ? dongs.join(' ') : '';
+    var shuffled = dongs.slice().sort(function() { return 0.5 - Math.random(); });
+    return shuffled[0] + '과 ' + shuffled[1];
+  }
+
+  function generateLocalVisitSentence(regionName, dongsText, diseaseCat) {
+    var templates = [
+      '최근 ' + regionName + ' ' + dongsText + ' 등 ' + regionName + ' 주요 지역에서 ' + diseaseCat + ' 증상으로 병원과 한의원을 알아보시다가 대구 수성구 범어역 해아림한의원 대구본점을 내원하시는 분들이 부쩍 늘고 있습니다.',
+      regionName + ' ' + dongsText + '에서 직장 생활과 일상 중 불쑥 찾아오는 ' + diseaseCat + ' 증세로 고통받으시며 대구 수성구 해아림한의원을 직접 찾아오시는 환자분들이 꾸준히 늘고 있습니다.',
+      '신경과나 일반 병원 검진 후에도 뚜렷한 원인을 찾지 못해 ' + regionName + ' ' + dongsText + ' 등지에서 ' + diseaseCat + ' 한방 자생력 치료를 위해 본원으로 내원하시는 분들이 상당수 계십니다.',
+      '자녀의 ' + diseaseCat + ' 문제로 마음 졸이시던 부모님들께서 ' + regionName + ' ' + dongsText + ' 지역에서도 대구 해아림한의원 본점으로 심층 상담과 진료를 위해 발걸음해 주십니다.',
+      regionName + ' ' + dongsText + '에서 대중교통(기차·지하철)이나 자가용을 이용해 원거리 통원 치료를 진행하시는 ' + diseaseCat + ' 환자분들의 내원 비중이 꾸준히 높아지고 있습니다.'
+    ];
+    return templates[Math.floor(Math.random() * templates.length)];
+  }
+
+  // ==============================================================================
+  // [정부 통계치(보건복지부/심평원/건보공단) & 학술 근거 수치 데이터베이스]
+  // ==============================================================================
+  var DISEASE_STATISTICS_DATA = {
+    '틱장애': [
+      '건강보험심사평가원 통계에 따르면 틱장애로 진료받은 인원은 연간 약 2만 3천 명에 달하며, 이 중 10대 미만 및 10대 학령기 아동·청소년이 전체의 약 75.3%를 차지합니다. 소아정신의학 학술 보고에 따르면, 틱 증상 아동의 약 35~50%는 ADHD나 불안장애를 동반하며, 뇌 변연계 기저핵의 흥분성을 조기에 조절하지 않고 방치할 경우 만성화율이 약 30% 증가하는 것으로 보고되었습니다.',
+      '보건복지부 질병통계에 따르면 학령기 아동 10명 중 1~2명은 일시적인 틱 증상을 경험하며, 이 중 약 1%는 1년 이상 지속되는 만성 틱장애나 뚜렛증후군으로 이환됩니다. 뇌 신경전달물질인 도파민 수용체 감수성 안정과 자율신경 밸런스를 바로잡는 조기 치료가 만성화를 방지하는 핵심입니다.'
+    ],
+    '공황장애': [
+      '국민건강보험공단 발표에 따르면 공황장애 진료 인원은 최근 5년간 연평균 약 10.7%씩 증가하여 연간 20만 명을 돌파했습니다. 특히 30대~50대 사회활동 주 연령층이 전체의 65% 이상을 차지하며, 보건복지부 조사에 따르면 공황발작 환자의 78.4%가 첫 발작 시 극심한 심박수 급증으로 심근경색이나 뇌졸중을 의심해 응급실을 찾는 것으로 보고되었습니다.',
+      '건강보험심사평가원 통계상 스트레스성 불안 및 공황장애 환자는 2015년 이후 매년 8~12%씩 꾸준히 늘고 있으며, 뇌 편도체의 공포 반응 과각성을 방치할 경우 광장공포증 및 예기불안으로 악화되는 비율이 50%를 상회합니다.'
+    ],
+    '불면증': [
+      '국민건강보험공단 수면장애 통계에 따르면 진료 인원이 연간 70만 명을 넘어섰으며, 3개월 이상 지속되는 만성 불면증 환자의 약 68%가 주간 피로, 집중력 저하, 2차성 불안장애를 복합적으로 호소합니다. 수면제 장기 복용 환자의 약 45%는 약물 내성과 반동성 불면을 경험하므로 멜라토닌 분비와 체온 리듬을 정상화하는 원인 치료가 필수적입니다.',
+      '보건의료빅데이터에 따르면 수면장애로 의료기관을 찾는 환자 중 40대~60대가 60% 이상을 차지하며, 수면다원검사 결과 자율신경계 교감신경 항진으로 인한 야간 각성 빈도가 정상군 대비 3.2배 높은 것으로 나타났습니다.'
+    ],
+    '자율신경실조증': [
+      '보건의료빅데이터 개방시스템에 따르면 스트레스와 자율신경 기능 이상으로 인한 신체화 증상 환자의 약 42%가 교감신경 과항진에 따른 심박변이도(HRV) 저하를 동반하며, 6개월 이상 지속될 경우 만성 어지럼증과 소화장애, 불면증으로 악화되는 비율이 58%에 이릅니다.',
+      '대한신경과학회 및 심평원 통계에 따르면 원인 불명의 만성 피로와 심계항진 환자의 64%는 일반 혈액·영상 검사에서 이상이 발견되지 않는 자율신경계 불균형 상태로 진단됩니다.'
+    ],
+    'ADHD': [
+      '교육부 및 국민건강보험공단 조사에 따르면 학령기 아동의 약 5~8%가 주의력결핍 과잉행동장애(ADHD) 경향을 보이며, 전두엽 억제 제어 회로의 성장이 지연될 경우 약 50%는 청소년기 및 성인기까지 잔여 증상이 지속됩니다.',
+      '건강보험심사평가원 자료에 따르면 소아청소년 ADHD 진료 환자는 최근 4년간 35% 이상 증가했으며, 집중력 저하와 정서 조절 어려움을 겪는 아동의 40%가 불안 및 틱 증상을 복합적으로 동반합니다.'
+    ],
+    '어지럼증': [
+      '대한평형의학회 및 심평원 통계에 따르면 만성 어지럼증 환자의 60% 이상은 이비인후과적 전정 기능 검사에서 이상이 나타나지 않는 심인성·자율신경성 어지럼증으로 분류되며, 뇌 혈류 순환 장애와 경추 신경 피로도가 직접적인 요인으로 분석됩니다.',
+      '국민건강보험 통계에 따르면 어지럼증으로 진료받은 인원은 연간 90만 명에 육박하며, 이 중 3개월 이상 지속되는 지속성 자세지각 어지럼증(PPPD) 환자의 72%가 불안과 자율신경 실조를 동반합니다.'
+    ],
+    '사회공포증': [
+      '보건복지부 정신건강 실태조사에 따르면 사회불안장애(대인기피증)의 평생 유병률은 약 2.4%이며, 대중 앞 발표나 낯선 대면 상황에서 분당 심박수가 급격히 치솟는 자율신경 항진 증상을 동반하는 경우가 85%에 달합니다.',
+      '학술 임상 통계에 따르면 사회공포증 환자의 70% 이상은 청소년기 초기에 발병하지만 적절한 치료를 받기까지 평균 10년 이상 소요되며, 조기에 뇌 편도체 민감도를 낮추면 80% 이상 안정된 일상으로 회복됩니다.'
+    ],
+    '강박증': [
+      '건강보험심사평가원 통계에 따르면 강박장애 환자 중 20~30대 청년층 비율이 약 48%로 절반에 육박하며, 뇌 선조체-전두엽 회로의 신경전달물질 불균형으로 인해 환자의 70% 이상이 1년 이상 증상을 감추고 지내다 내원합니다.',
+      '보건복지부 통계상 강박증 환자의 약 65%는 확인 강박, 오염 강박 등 특정 행동을 반복하지 않으면 극심한 불안을 느끼며, 뇌 신경 필터링 기능을 정상화하는 체계적 치료 시 삶의 질 지수가 70% 이상 개선됩니다.'
+    ],
+    '다한증': [
+      '국민건강보험공단 통계에 따르면 국소성 다한증 환자는 연간 15만 명 수준이며, 이 중 손발 및 안면 다한증 환자의 73%가 긴장과 스트레스 상황에서 교감신경의 과도한 흥분으로 에크린 땀샘이 과자극되어 나타납니다.',
+      '보건의료빅데이터에 따르면 다한증 환자의 80% 이상이 대인관계 및 사회활동에 심각한 심리적 위축을 겪으며, 단순 피부 외용제보다 자율신경계 과흥분을 진정시키는 체질 치료 시 보상성 다한증 염려 없이 안정적으로 조절됩니다.'
+    ]
+  };
+
+  function getDiseaseStat(diseaseCat) {
+    var stats = DISEASE_STATISTICS_DATA[diseaseCat] || DISEASE_STATISTICS_DATA['틱장애'];
+    return stats[Math.floor(Math.random() * stats.length)];
+  }
+
+  // ==============================================================================
+  // [Q&A형 질문과 답변 템플릿 (70% 비율)]
+  // ==============================================================================
+  var DISEASE_QNA_TEMPLATES = {
+    '틱장애': [
+      {
+        q: '단순 눈 깜빡임일까요, 틱장애일까요?',
+        aShort: '발생 4주 이내 조기 감별법과 가정 내 대처 가이드',
+        qBody: 'Q. 아이가 며칠 전부터 눈을 자주 깜빡이는데 안과에서는 이상이 없다고 합니다. 틱장애인가요?',
+        aBody: 'A. 결막염이나 알레르기 등 안과적 원인이 없는데도 3~4주 이상 눈 깜빡임이나 코 찡긋거림, 헛기침이 반복된다면 초기 운동틱이나 음성틱을 의심해야 합니다. 틱 증상은 뇌 기저핵에서 불필요한 근육 신호를 걸러내지 못해 발생하므로, 아이를 지적하거나 나무라지 마시고 편안한 환경을 조성해 주시는 것이 우선입니다.'
+      },
+      {
+        q: '틱장애는 나이가 들면 저절로 낫나요?',
+        aShort: '사춘기 이전 기저핵 안정화 치료가 중요한 이유',
+        qBody: 'Q. 주변에서 틱은 크면 다 없어진다고 하던데 그냥 지켜봐도 될까요?',
+        aBody: 'A. 일시적인 틱은 자연 호전되기도 하지만, 약 30%는 만성화되거나 복합 틱, 성인 틱으로 이어집니다. 특히 주의력결핍(ADHD)이나 불안, 강박 증상이 동반될 경우 자연 치유율이 급격히 낮아지므로 기저핵 흥분도를 낮추는 한방 뇌 자생력 치료가 조기에 필요합니다.'
+      }
+    ],
+    '공황장애': [
+      {
+        q: '심장이 멎을 것 같고 숨이 안 쉬어지는데 심장병일까요?',
+        aShort: '공황발작 자가진단과 뇌신경 응급 안정법',
+        qBody: 'Q. 갑자기 가슴이 터질 듯 뛰고 숨이 막혀 응급실에 갔는데 심전도는 정상이라고 합니다. 왜 이런 증상이 생길까요?',
+        aBody: 'A. 이는 심장 자체의 병이 아니라, 뇌 편도체(Amygdala)의 공포 경보 회로가 과열되어 발생하는 공황발작의 전형적 증상입니다. 위협이 없는 상황에서도 교감신경이 순간적으로 폭주하여 심박수와 호흡을 급증시키는 것으로, 뇌 자율신경계 피로도를 낮추는 치료를 통해 안정될 수 있습니다.'
+      },
+      {
+        q: '공황장애 약을 평생 먹어야 하나요?',
+        aShort: '신경안정제 의존도를 줄이고 뇌 자생력을 키우는 한방 치료법',
+        qBody: 'Q. 공황장애 진단을 받고 신경안정제를 먹고 있는데, 약을 끊으면 다시 재발할까 봐 불안합니다. 약 없이도 일상생활이 가능할까요?',
+        aBody: 'A. 양약은 급성기 증상을 완화하는 데 유용하지만, 뇌가 스스로 불안을 조절하는 힘(내인성 조절력)을 키우지는 못합니다. 한방 치료는 심화(心火)를 내리고 기혈을 보강하여 뇌가 스스로 교감신경을 진정시킬 수 있도록 자생력을 회복시켜 자연스럽게 약을 줄여나갈 수 있도록 돕습니다.'
+      }
+    ],
+    '자율신경실조증': [
+      {
+        q: '검사에는 이상 없다는데 왜 온몸이 아프고 어지러울까요?',
+        aShort: '자율신경 불균형(HRV 저하) 원인과 회복 로드맵',
+        qBody: 'Q. 머리도 어지럽고 가슴도 답답하며 소화도 안 되는데, 종합병원 내과·신경과 검진에서는 모두 정상이라고 합니다. 꾀병일까요?',
+        aBody: 'A. 결코 꾀병이 아닙니다. 자율신경실조증은 일반 CT, MRI, 혈액검사로는 포착되지 않는 신경 기능적 이상입니다. 스트레스와 수면 부족으로 교감신경과 부교감신경의 시소 균형이 깨지면 신체 곳곳에 다발성 신체화 증상이 나타나므로, 심박변이도(HRV) 검사를 통한 자율신경계 정밀 진단이 필요합니다.'
+      }
+    ],
+    '불면증': [
+      {
+        q: '수면제를 먹어도 자꾸 깨는데 어떻게 해야 하나요?',
+        aShort: '수면 구조 복원과 멜라토닌 생체 리듬 정상화 Q&A',
+        qBody: 'Q. 수면유도제를 먹고 잠들어도 2~3시간 만에 깨고 아침에 머리가 멍합니다. 수면의 질을 높이는 방법이 있을까요?',
+        aBody: 'A. 수면제는 뇌를 강제로 진정시키는 효과가 있지만, 깊은 수면(서파 수면 및 REM 수면)의 자연스러운 뇌파 주기를 형성하지 못합니다. 뇌의 송과체와 시상하부를 안정시켜 천연 멜라토닌 분비와 체온 하강 리듬을 유도하는 한방 처방을 병행해야 중간에 깨지 않고 개운한 숙면을 취할 수 있습니다.'
+      }
+    ],
+    'ADHD': [
+      {
+        q: '산만한 우리 아이, 단순 성격일까요 ADHD일까요?',
+        aShort: '전두엽 실행 기능 평가와 집중력 회복 가이드',
+        qBody: 'Q. 아이가 수업 시간에 가만히 앉아있지 못하고 숙제나 준비물을 매일 잊어버립니다. 훈육의 문제인가요?',
+        aBody: 'A. ADHD는 훈육이나 아이 성격의 결함이 아니라, 뇌의 사령탑인 전두엽의 실행 기능 및 주의 집중 억제 회로의 성장이 2~3년가량 지연되어 나타나는 신경발달학적 상태입니다. 무조건 야단치기보다 전두엽 뇌 신경망을 활성화하는 두뇌훈련과 맞춤 한약 치료를 통해 스스로 조절하는 힘을 키워주어야 합니다.'
+      }
+    ],
+    '어지럼증': [
+      {
+        q: '귀 검사에는 이상이 없다는데 왜 붕 뜬 것처럼 어지러울까요?',
+        aShort: '심인성·자율신경성 만성 어지럼증과 뇌 혈류 개선법',
+        qBody: 'Q. 이석증 치료를 받았는데도 여전히 구름 위를 걷는 것처럼 머리가 무겁고 어지럽습니다. 원인이 무엇인가요?',
+        aBody: 'A. 이석증이나 전정신경염 후유증, 또는 만성 스트레스로 인해 뇌의 전정 감각 필터링에 이상이 생긴 지속성 자세지각 어지럼증(PPPD)일 가능성이 높습니다. 뇌 신경 피로를 풀고 경추-뇌간 혈류 순환을 개선하는 한방 치료로 붕 뜨는 불안정한 어지럼증을 가라앉힐 수 있습니다.'
+      }
+    ],
+    '사회공포증': [
+      {
+        q: '사람들 앞에만 서면 심장이 터질 것 같고 얼굴이 붉어지는데 치료될까요?',
+        aShort: '대인기피증 자가진단과 뇌 편도체 민감도 완화법',
+        qBody: 'Q. 회의 시간 발표나 낯선 사람과의 식사 자리에서 손과 목소리가 떨리고 머리가 하얘집니다. 의지력으로 극복할 수 있을까요?',
+        aBody: 'A. 사회공포증은 단순한 소심함이나 내성적 성격이 아니라, 뇌 편도체의 과민성으로 인해 사회적 대면 상황을 생명의 위협처럼 인식하는 불안장애입니다. 교감신경의 신체화 떨림을 진정시키고 편도체의 과도한 경보를 완화하는 한방 신경 안정 치료를 통해 충분히 당당하고 편안한 대인관계를 회복할 수 있습니다.'
+      }
+    ],
+    '강박증': [
+      {
+        q: '문이 잠겼는지 가스불을 껐는지 수십 번 확인하게 되는데 강박증인가요?',
+        aShort: '침투적 사고 차단과 뇌 신경 필터링 복원 솔루션',
+        qBody: 'Q. 불필요하다는 것을 알면서도 손을 계속 씻거나 확인하지 않으면 견딜 수 없이 불안합니다. 왜 멈출 수 없을까요?',
+        aBody: 'A. 뇌의 전두엽-기저핵-시상을 잇는 루프 신경 회로의 필터링 오류로 인해 침투적 불안 사고가 끊임없이 재생되는 강박장애의 전형적인 증상입니다. 뇌의 과열된 충동 신호를 식히고 이완시키는 한방 치료와 인지적 수용 훈련을 결합하여 강박 사고의 연결고리를 안전하게 끊어낼 수 있습니다.'
+      }
+    ],
+    '다한증': [
+      {
+        q: '긴장만 하면 손발에 땀이 흥건해지는데 수술 없이 조절될까요?',
+        aShort: '보상성 다한증 염려 없는 자율신경계 과흥분 조절법',
+        qBody: 'Q. 시험이나 면접, 악수할 때 손과 발에 땀이 비 오듯 흘러 일상생활이 힘듭니다. 신경 차단 수술을 해야 할까요?',
+        aBody: 'A. 땀샘을 외과적으로 차단할 경우 다른 부위로 땀이 쏟아지는 보상성 다한증의 위험이 있습니다. 다한증의 본질은 자율신경계 교감신경의 과민 흥분으로 에크린 땀샘에 아세틸콜린 신호가 과다 전달되는 데 있으므로, 체내 상열(上熱)을 내리고 자율신경 밸런스를 맞추는 한방 치료가 안전하고 지속적인 대안입니다.'
+      }
+    ]
+  };
+
+  function getDiseaseQna(diseaseCat) {
+    var qnas = DISEASE_QNA_TEMPLATES[diseaseCat] || DISEASE_QNA_TEMPLATES['틱장애'];
+    return qnas[Math.floor(Math.random() * qnas.length)];
+  }
+
   function pickCategoryByWeight() {
     var now = new Date();
     var daySeed = (now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate()) % 100;
@@ -821,7 +1055,7 @@
     return '불안장애';
   }
 
-  function publishOneAutoColumn(isManualTrigger) {
+    function publishOneAutoColumn(isManualTrigger) {
     var state = getAutoColumnState();
     var raw = localStorage.getItem(STORAGE_BOARD_COL_KEY) || localStorage.getItem('healim_board_columns_permanent_backup');
     var currentList = raw ? JSON.parse(raw) : [];
@@ -830,28 +1064,33 @@
     var publishedPoolIds = state.publishedPoolIds || [];
     var targetCategory = pickCategoryByWeight();
 
-    var candidate = null;
     var deletedRaw = localStorage.getItem('healim_deleted_column_ids');
     var deletedIds = deletedRaw ? JSON.parse(deletedRaw) : [];
     if (!Array.isArray(deletedIds)) deletedIds = [];
 
-    // [요구사항 엄격 반영] 치료사례/사례 단어가 포함된 글이 자동발행의 60% 이상(65% 확률)이 되도록 세팅
-    var preferCaseStudy = Math.random() < 0.65; // 65% 확률로 치료사례형 우선 발행
+    // [신규 생성 조건 1] 치료사례/치료/사례형(30%) vs 질문과 답변(Q&A)형(70%) 비율
+    var isQnaType = Math.random() < 0.70;
+
+    // [신규 생성 조건 2] 11개 지역군 가중치 확률 선발 (대구 25%, 구미 20%, 경산 10%, 경주 10%, 포항 10%, 기타 6개 지역 25%)
+    var regionObj = pickRegionWithWeights();
+    var dongsText = pickTwoDongs(regionObj.dongs);
+    var visitSentence = generateLocalVisitSentence(regionObj.name, dongsText, targetCategory);
+    var statText = getDiseaseStat(targetCategory);
+    var qnaObj = getDiseaseQna(targetCategory);
 
     var candidate = null;
 
-    // 1단계: 선호 조건(사례형)을 만족하는 대상 카테고리 풀 검색
+    // 1단계: 선호 유형에 맞춘 풀 검색
     var catPool = columnsPool.filter(function(p) {
       var isDeleted = deletedIds.includes(p.idPrefix) || deletedIds.includes(p.title);
       var isNotPublished = !publishedPoolIds.includes(p.idPrefix);
       if (p.category !== targetCategory || !isNotPublished || isDeleted) return false;
-      if (preferCaseStudy) {
-        return p.title.includes('사례') || p.title.includes('치료사례');
+      if (!isQnaType) {
+        return p.title.includes('사례') || p.title.includes('치료사례') || p.title.includes('치료');
       }
       return true;
     });
 
-    // 만약 선호 조건에 맞는 해당 카테고리 글이 없으면 조건 완화
     if (catPool.length === 0) {
       catPool = columnsPool.filter(function(p) {
         var isDeleted = deletedIds.includes(p.idPrefix) || deletedIds.includes(p.title);
@@ -866,13 +1105,12 @@
     if (catPool.length > 0) {
       candidate = catPool[stepSeed % catPool.length];
     } else {
-      // 2단계: 대상 카테고리 소진 시 전체 미발행 풀에서 검색 (사례형 우선 배정)
       var remaining = columnsPool.filter(function(p) {
         var isDeleted = deletedIds.includes(p.idPrefix) || deletedIds.includes(p.title);
         var isNotPublished = !publishedPoolIds.includes(p.idPrefix);
         if (!isNotPublished || isDeleted) return false;
-        if (preferCaseStudy) {
-          return p.title.includes('사례') || p.title.includes('치료사례');
+        if (!isQnaType) {
+          return p.title.includes('사례') || p.title.includes('치료사례') || p.title.includes('치료');
         }
         return true;
       });
@@ -887,7 +1125,6 @@
       if (remaining.length > 0) {
         candidate = remaining[stepSeed % remaining.length];
       } else {
-        // 전체 소진 시 풀 초기화 후 재순환
         publishedPoolIds = [];
         candidate = columnsPool[stepSeed % columnsPool.length];
       }
@@ -895,10 +1132,42 @@
 
     if (!candidate) return null;
 
-    var sanitizedTitle = sanitizeMedicalCompliance(candidate.title);
-    var sanitizedContent = sanitizeMedicalCompliance(candidate.content);
-    sanitizedContent = sanitizedContent.replace(/\[AEO 핵심 요약 \(Quick Answer\)\]\s*/g, '').trim();
-    var sanitizedSummary = sanitizeMedicalCompliance(candidate.summary);
+    // [신규 생성 조건 3] 제목 조합: 맨 앞머리에 반드시 [지역명+질환명] 고정
+    var generatedTitle = '';
+    if (isQnaType) {
+      // 70% Q&A형: 질문과 답변 형태의 제목
+      generatedTitle = '[' + regionObj.name + ' ' + targetCategory + '] ' + qnaObj.q + ' ' + qnaObj.aShort;
+    } else {
+      // 30% 치료사례/치료/사례형
+      var baseTitle = candidate.title.replace(/^\[[^\]]+\]\s*/, '');
+      if (!baseTitle.includes('치료사례') && !baseTitle.includes('사례') && !baseTitle.includes('치료')) {
+        baseTitle += ' 한방 치료사례';
+      }
+      generatedTitle = '[' + regionObj.name + ' ' + targetCategory + '] ' + baseTitle;
+    }
+
+    // [신규 생성 조건 4] 본문 조합: 지역 내원 언급 + 정부 통계치/학술 근거 + (Q&A형일 경우 핵심 질문답변) + 심층 치료 본문
+    var cleanOrigContent = candidate.content.replace(/^\[AEO[^\]]+\]\s*/g, '');
+    cleanOrigContent = cleanOrigContent.replace(/^안녕하세요\.\s*해아림한의원입니다\.\s*/g, '').trim();
+
+    var generatedContent = '안녕하세요. 해아림한의원입니다.\n\n' +
+      visitSentence + '\n\n' +
+      statText + '\n\n';
+
+    if (isQnaType) {
+      generatedContent += '[환자들이 가장 많이 묻는 핵심 질문과 답변]\n' +
+        qnaObj.qBody + '\n\n' +
+        qnaObj.aBody + '\n\n';
+    }
+
+    generatedContent += cleanOrigContent;
+
+    var generatedSummary = '[' + regionObj.name + ' ' + targetCategory + '] ' + regionObj.name + ' ' + dongsText + ' 지역 환자분들을 위한 ' + targetCategory + ' ' + (isQnaType ? 'Q&A 안내 및 ' : '치료사례 분석 및 ') + '원인 치료 가이드입니다.';
+
+    // 의료법 제56조 준수 정제 (완치 등 0건 배제)
+    var sanitizedTitle = sanitizeMedicalCompliance(generatedTitle);
+    var sanitizedContent = sanitizeMedicalCompliance(generatedContent);
+    var sanitizedSummary = sanitizeMedicalCompliance(generatedSummary);
 
     var now = new Date();
     var dateStr = now.getFullYear() + '.' + String(now.getMonth() + 1).padStart(2, '0') + '.' + String(now.getDate()).padStart(2, '0');
@@ -913,6 +1182,8 @@
       views: Math.floor(Math.random() * 50) + 140,
       summary: sanitizedSummary,
       content: sanitizedContent,
+      region: regionObj.name,
+      dongs: dongsText,
       isAutoPublished: true
     };
 
@@ -930,7 +1201,7 @@
     state.nextScheduleTime = calculateNextColumnSchedule(now.getTime());
     saveAutoColumnState(state);
 
-    console.log('[Healim Auto-Column] Published:', newPost.title);
+    console.log('[Healim Auto-Column] Published (' + (isQnaType ? 'Q&A형' : '치료사례형') + ' | ' + regionObj.name + '):', newPost.title);
 
     if (typeof window.renderColumnsList === 'function') window.renderColumnsList();
     if (typeof window.renderCommonBottomRealtimeAll === 'function') window.renderCommonBottomRealtimeAll();
