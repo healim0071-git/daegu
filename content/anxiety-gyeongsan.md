@@ -48,7 +48,7 @@ keywords: ["경산불안장애", "경산 불안장애", "경산 불안장애 병
 <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
 <div style="font-size: 1.08rem; font-weight: 800; color: #146369; margin-bottom: 8px;">③ 신체화 증상(두근거림·어지럼·소화) 동시 케어</div>
 <p style="margin: 0; font-size: 0.95rem; color: #475569;">
-불안할 때 동반되는 심장 두근거림, 호흡 답답함, 과민성 대장, 근육 긴장성 두통 등 전신 신체화 증상을 근본적으로 함께 치료하여 불안의 악순환 고리를 차단합니다.
+불안할 때 동반되는 심장 두근거림, 호흡 답답함, 과민성 대장, 근육 긴장성 두통 등 전신 신체화 증상을 함께 치료하여 불안의 악순환 고리를 차단합니다.
 </p>
 </div>
 </div>

@@ -4210,3 +4210,16 @@ ul.bottom-cards-grid > li {
     border-radius: 10px !important;
   }
 }
+
+
+/* ==========================================================================
+   불안장애(anxiety-disorder) 및 세부 로컬 페이지 전용 모바일 완벽 최적화
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* 불안장애 유형별 비교 및 자가진단 박스 모바일 정돈 */
+  .anxiety-type-box,
+  .anxiety-test-box {
+    padding: 16px 14px !important;
+    border-radius: 10px !important;
+  }
+}
