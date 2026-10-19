@@ -70,6 +70,24 @@
     </div>
   </div>
 {{ end }}
+{{ if or (eq .RelPermalink "/adhd/") (hasPrefix .RelPermalink "/adhd/") }}
+<!-- ADHD 로컬 서브페이지 시맨틱 SEO 페이징 (아주 작고 희미한 연회색 넘버링) -->
+  <div class="hidden-seo-pager" style="text-align: center; padding: 12px 0 8px; background: transparent; margin: 0 auto; max-width: 1180px;">
+    <div style="display: inline-flex; align-items: center; justify-content: center; gap: 11px; font-size: 9.5px; letter-spacing: 0.3px; opacity: 0.75;">
+      <a href="/adhd/gumi/" class="seo-num-link" title="구미 ADHD 치료 병원 ㅣ 해아림한의원" style="color: #e2e8f0; text-decoration: none; padding: 1px 2px; transition: color 0.2s ease;">1</a>
+      <a href="/adhd/gimcheon/" class="seo-num-link" title="김천 ADHD 치료 병원 ㅣ 해아림한의원" style="color: #e2e8f0; text-decoration: none; padding: 1px 2px; transition: color 0.2s ease;">2</a>
+      <a href="/adhd/gyeongju/" class="seo-num-link" title="경주 ADHD 치료 병원 ㅣ 해아림한의원" style="color: #e2e8f0; text-decoration: none; padding: 1px 2px; transition: color 0.2s ease;">3</a>
+      <a href="/adhd/gyeongsan/" class="seo-num-link" title="경산 ADHD 치료 병원 ㅣ 해아림한의원" style="color: #e2e8f0; text-decoration: none; padding: 1px 2px; transition: color 0.2s ease;">4</a>
+      <a href="/adhd/yeongcheon-gunwi/" class="seo-num-link" title="영천 군위 ADHD 치료 병원 ㅣ 해아림한의원" style="color: #e2e8f0; text-decoration: none; padding: 1px 2px; transition: color 0.2s ease;">5</a>
+      <a href="/adhd/pohang-yeongdeok/" class="seo-num-link" title="포항 영덕 ADHD 치료 병원 ㅣ 해아림한의원" style="color: #e2e8f0; text-decoration: none; padding: 1px 2px; transition: color 0.2s ease;">6</a>
+      <a href="/adhd/yeongyang-uljin/" class="seo-num-link" title="영양 울진 ADHD 치료 병원 ㅣ 해아림한의원" style="color: #e2e8f0; text-decoration: none; padding: 1px 2px; transition: color 0.2s ease;">7</a>
+      <a href="/adhd/mungyeong-sangju/" class="seo-num-link" title="문경 상주 ADHD 치료 병원 ㅣ 해아림한의원" style="color: #e2e8f0; text-decoration: none; padding: 1px 2px; transition: color 0.2s ease;">8</a>
+      <a href="/adhd/yecheon-andong/" class="seo-num-link" title="예천 안동 ADHD 치료 병원 ㅣ 해아림한의원" style="color: #e2e8f0; text-decoration: none; padding: 1px 2px; transition: color 0.2s ease;">9</a>
+      <a href="/adhd/yeongju-bonghwa/" class="seo-num-link" title="영주 봉화 ADHD 치료 병원 ㅣ 해아림한의원" style="color: #e2e8f0; text-decoration: none; padding: 1px 2px; transition: color 0.2s ease;">10</a>
+      <a href="/adhd/suseong-dalseo/" class="seo-num-link" title="수성구 달서구 ADHD 치료 병원 ㅣ 해아림한의원" style="color: #e2e8f0; text-decoration: none; padding: 1px 2px; transition: color 0.2s ease;">11</a>
+    </div>
+  </div>
+{{ end }}
 {{ if or (eq .RelPermalink "/dysautonomia/") (hasPrefix .RelPermalink "/dysautonomia/") }}
 <!-- 자율신경실조증 로컬 서브페이지 시맨틱 SEO 페이징 (아주 작고 희미한 연회색 넘버링) -->
   <div class="hidden-seo-pager" style="text-align: center; padding: 12px 0 8px; background: transparent; margin: 0 auto; max-width: 1180px;">

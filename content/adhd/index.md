@@ -1,6 +1,9 @@
 ---
-title: "ADHD (주의력결핍 과잉행동장애)"
-seo_title: "구미 경주 경산 포항 대구 ADHD 검사 병원 | 해아림한의원 대구본점 | 대구 ADHD 치료, 성인ADHD, 초등ADHD 테스트"
+title: "대구 ADHD 검사 병원 ㅣ 해아림한의원 대구본점ㅣ 대구 ADHD 치료, 성인ADHD, 초등ADHD 테스트"
+seo_title: "대구 ADHD 검사 병원 ㅣ 해아림한의원 대구본점ㅣ 대구 ADHD 치료, 성인ADHD, 초등ADHD 테스트"
+h1_title: "대구 ADHD 검사 병원 ㅣ 해아림한의원 대구본점ㅣ 대구 ADHD 치료, 성인ADHD, 초등ADHD 테스트"
+disease_name: "ADHD"
+hero_sub: "ADHD (주의력결핍 과잉행동장애) 집중치료 | 해아림한의원"
 description: "산만함과 충동성, 숙제 미루기부터 조용한 ADHD, 틱·불면 동반까지. 16년 임상 경험의 한방신경정신과 박사 김대억 대표원장의 1:1 심층 진료. 전두엽 뇌기능 활성화와 두뇌훈련으로 아이의 억제 조절 자생력을 키웁니다."
 layout: "disease"
 hero_title: "16년 이상 소아·청소년·성인 ADHD를<br>집중적으로 다뤄온<br>해아림한의원 ADHD클리닉"
