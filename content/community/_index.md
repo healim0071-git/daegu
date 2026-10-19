@@ -4327,7 +4327,7 @@ var defaultYoutubeData = [
     "vid": "B3zmDT7oV44",
     "type": "shorts",
     "title": "몸이 찬 사람이 예민한 이유? 체질의 문제아닌, 신경계 반응이 예민해진 상태이기 때문",
-    "desc": "수족냉증과 동반되는 손발땀·식은땀, 신경계 과민 반응을 안정시켜 땀 분비를 근본 조절하는 한방 치료.",
+    "desc": "수족냉증과 동반되는 손발땀·식은땀, 신경계 과민 반응을 안정시켜 땀 분비를 체계적으로 조절하는 한방 치료.",
     "thumbnail": "https://i.ytimg.com/vi/B3zmDT7oV44/oardefault.jpg",
     "channel": "해아림TV 알쓸한상",
     "views": "조회수 7,800회",

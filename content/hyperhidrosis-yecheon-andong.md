@@ -39,7 +39,7 @@ keywords: ["예천다한증", "안동다한증", "예천 다한증 병원", "안
 </div>
 
 <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
-<div style="font-size: 1.08rem; font-weight: 800; color: #146369; margin-bottom: 8px;">② 보상성 부작용 없는 근본 원인 치료</div>
+<div style="font-size: 1.08rem; font-weight: 800; color: #146369; margin-bottom: 8px;">② 보상성 다한증 없는 원인 치료</div>
 <p style="margin: 0; font-size: 0.95rem; color: #475569;">
 교감신경절 절제 수술 후 다른 부위(등, 배, 허벅지 등)에서 땀이 폭발하는 보상성 다한증 위험 없이, 자율신경의 시소 균형을 바로잡아 땀샘의 자생적 조절 능력을 복원합니다.
 </p>
@@ -113,7 +113,7 @@ keywords: ["예천다한증", "안동다한증", "예천 다한증 병원", "안
 <div style="margin-bottom: 16px; border-top: 1px dashed #CBD5E1; padding-top: 14px;">
 <strong style="color: #0C4349; font-size: 1.02rem;">Q2. 한방 치료를 받으면 수술처럼 보상성 다한증이 생기지 않나요?</strong>
 <p style="margin: 6px 0 0; font-size: 0.95rem; color: #475569;">
-전혀 생기지 않습니다. 보상성 다한증은 신경을 강제로 절단해 땀의 배출 통로가 막혀 다른 곳으로 우회하는 현상입니다. 한방 치료는 전신 자율신경의 밸런스를 정상화하여 체온과 수분 대사를 조절하므로 보상성 부작용이 전혀 없습니다.
+전혀 생기지 않습니다. 보상성 다한증은 신경을 강제로 절단해 땀의 배출 통로가 막혀 다른 곳으로 우회하는 현상입니다. 한방 치료는 전신 자율신경의 밸런스를 정상화하여 체온과 수분 대사를 조절하므로 보상성 다한증이 전혀 생기지 않습니다.
 </p>
 </div>
 <div style="border-top: 1px dashed #CBD5E1; padding-top: 14px;">

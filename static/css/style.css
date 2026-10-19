@@ -4244,3 +4244,16 @@ ul.bottom-cards-grid > li {
     border-radius: 10px !important;
   }
 }
+
+
+/* ==========================================================================
+   다한증(hyperhidrosis) 및 세부 로컬 페이지 전용 모바일 완벽 최적화
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* 다한증 부위별 비교 및 자율신경 조절 박스 모바일 정돈 */
+  .hyperhidrosis-type-card,
+  .hyperhidrosis-exam-box {
+    padding: 16px 14px !important;
+    border-radius: 10px !important;
+  }
+}

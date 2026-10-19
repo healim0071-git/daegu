@@ -358,7 +358,7 @@ hero_title: "16년 이상 긴장성 다한증·수족다한증을<br>집중적�
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
 <summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q9. 다한증 치료를 위해 피부과에 가야 하나요, 한의원에 가야 하나요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
-바르는 약이나 보톡스 등 국소적 억제 치료는 피부과에서 받을 수 있습니다. 하지만 긴장과 스트레스, 대인관계 불안이 원인이 되어 땀이 쏟아지는 경우이거나, 수술 부작용 없이 근본적인 자율신경계 안정을 원하신다면 한방신경정신과 진료가 매우 적합합니다.
+바르는 약이나 보톡스 등 국소적 억제 치료는 피부과에서 받을 수 있습니다. 하지만 긴장과 스트레스, 대인관계 불안이 원인이 되어 땀이 쏟아지는 경우이거나, 수술 부작용 없이 안정적인 자율신경계 조절을 원하신다면 한방신경정신과 진료가 매우 적합합니다.
 </p>
 </details>
 
