@@ -4070,3 +4070,16 @@ ul.bottom-cards-grid > li {
     gap: 12px !important;
   }
 }
+
+
+/* ==========================================================================
+   자율신경실조증(dysautonomia) 및 세부 로컬 페이지 전용 모바일 완벽 최적화
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* 자율신경실조증 교감·부교감 비교 및 HRV 검사 안내 박스 모바일 정돈 */
+  .dysautonomia-check-box,
+  .dysautonomia-hrv-box {
+    padding: 16px 14px !important;
+    border-radius: 10px !important;
+  }
+}
