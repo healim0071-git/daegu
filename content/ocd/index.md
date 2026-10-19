@@ -329,7 +329,7 @@ NICE(영국 국립보건임상연구원) 가이드라인에서도 강박증의 �
 환자가 겪는 강박사고의 고통과 수치심을 누구보다 깊이 이해하기에, 마음을 편안히 열고 이야기할 수 있는 따뜻한 1:1 맞춤 진료를 약속드립니다.
 </p>
 <div style="font-size: 0.92rem; color: #1e3a8a; font-weight: 500;">
-📚 전문 서적 저자: 『토닥토닥 틱장애』(틱장애 ADHD 완치지침서) · 『걱정마 공황장애』(불안장애 자율신경실조증 공황장애 완치 지침서)
+📚 전문 서적 저자: 『토닥토닥 틱장애』(틱장애 ADHD 지침서) · 『걱정마 공황장애』(불안장애 자율신경실조증 공황장애 지침서)
 </div>
 </div>
 </div>
@@ -408,7 +408,7 @@ NICE(영국 국립보건임상연구원) 가이드라인에서도 강박증의 �
 </details>
 
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q8. 강박증 완치가 가능한가요? 치료하면 정말 좋아질 수 있나요?</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q8. 강박증 완치 가능한가요? 치료하면 정말 좋아질 수 있나요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 네, 충분히 회복될 수 있습니다. 뇌의 신경 필터링 오류를 정상화하고 충동에 대한 뇌의 민감도를 낮추면, 강박사고가 머릿속에 스치더라도 불안이나 공포 없이 자연스럽게 흘려보낼 수 있는 안정된 상태로 회복됩니다.
 </p>

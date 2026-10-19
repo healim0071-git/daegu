@@ -296,7 +296,7 @@ hero_title: "16년 이상 대인기피증·사회공포증을<br>집중적으로
 사람 앞에만 서면 무너지는 마음의 상처를 따뜻하게 보듬고, 신체적 떨림과 불안을 1:1 맞춤 진료로 안전하게 치료합니다.
 </p>
 <div style="font-size: 0.92rem; color: #1e3a8a; font-weight: 500;">
-📚 전문 서적 저자: 『토닥토닥 틱장애』(틱장애 ADHD 완치지침서) · 『걱정마 공황장애』(불안장애 자율신경실조증 공황장애 완치 지침서)
+📚 전문 서적 저자: 『토닥토닥 틱장애』(틱장애 ADHD 지침서) · 『걱정마 공황장애』(불안장애 자율신경실조증 공황장애 지침서)
 </div>
 </div>
 </div>
@@ -386,7 +386,7 @@ hero_title: "16년 이상 대인기피증·사회공포증을<br>집중적으로
 </details>
 
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q9. 대인기피증은 치료하면 정말 완치가 가능한가요?</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q9. 대인기피증은 치료하면 정말 완치 가능한가요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 네, 충분히 회복될 수 있습니다. 뇌 편도체의 과민 반응을 정상화하고 신체적 자율신경 조절력을 회복하면, 사람들 앞에서도 심장이 터질 듯 뛰거나 머리가 하얘지지 않고 차분하고 당당하게 자신의 생각과 감정을 표현할 수 있게 됩니다.
 </p>

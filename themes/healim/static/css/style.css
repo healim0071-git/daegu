@@ -4172,3 +4172,141 @@ ul.bottom-cards-grid > li {
     overflow-wrap: break-word;
   }
 }
+
+/* ==========================================================================
+   해아림한의원 대구본점 전 페이지(메인/세부/2차지역) 모바일 종합 완벽 최적화
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* 1. 가로 스크롤(오버플로우) 원천 차단 */
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+  
+  /* 2. 전역 테이블 모바일 가로 스크롤 터치 지원 */
+  table {
+    display: block !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  
+  /* 3. 이미지 및 미디어 자동 리사이징 */
+  img, video, iframe {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* 4. 본문 및 제목 단어 단위 자동 줄바꿈(가독성 극대화) */
+  h1, h2, h3, h4, h5, h6, p, li, span, summary {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  /* 5. 메인 페이지 모바일 레이아웃 고도화 */
+  .hero-inner {
+    padding: 24px 16px 36px !important;
+  }
+  .hero-title {
+    font-size: 1.65rem !important;
+    line-height: 1.35 !important;
+  }
+  .doctor-books-showcase {
+    flex-direction: column !important;
+    gap: 16px !important;
+    width: 100% !important;
+  }
+  .hero-book-card {
+    width: 100% !important;
+  }
+  .specialties-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+  .lecture-bento-grid {
+    flex-direction: column !important;
+  }
+
+  /* 6. 세부 질환 및 2차 지역 페이지 컨테이너/박스 모바일 패딩 정돈 */
+  .local-seo-wrap,
+  .page-article,
+  .cond-section {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+  
+  .empathy-hero-box,
+  .aeo-summary-box,
+  .cond-card,
+  .column-author-card,
+  .column-cta-box {
+    padding: 16px 14px !important;
+    border-radius: 12px !important;
+  }
+
+  /* 7. 인라인 그리드 요소 모바일 1열 스택 보장 */
+  .cond-section [style*="grid-template-columns"],
+  .local-seo-wrap [style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
+  /* 8. FAQ 질문 아코디언 모바일 터치 편의성 */
+  .faq-item,
+  details[class*="faq"] {
+    padding: 14px 12px !important;
+    margin-bottom: 10px !important;
+  }
+  .faq-item summary,
+  details[class*="faq"] summary {
+    font-size: 0.98rem !important;
+    line-height: 1.5 !important;
+    cursor: pointer;
+  }
+
+  /* 9. 모바일 하단 CTA 및 버튼 터치 접근성 (최소 44px 이상 터치 영역) */
+  .btn,
+  .btn-primary,
+  .btn-secondary,
+  .cta-actions a,
+  .hero-buttons a {
+    min-height: 44px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 0.98rem !important;
+  }
+
+  /* 10. 하단 지역 1~12 링크 바 모바일 터치 개선 */
+  .local-footer-nav,
+  .local-nav-numbers {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    padding: 12px 6px !important;
+  }
+  .local-nav-numbers a {
+    padding: 4px 8px !important;
+    min-width: 28px !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* 초소형 스마트폰 (360px~430px) 추가 최적화 */
+  .specialties-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .hero-title {
+    font-size: 1.45rem !important;
+  }
+  .hero-buttons {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary {
+    width: 100% !important;
+  }
+}
