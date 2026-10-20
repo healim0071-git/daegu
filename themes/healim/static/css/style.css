@@ -518,10 +518,17 @@ section {
   border-radius: var(--radius-pill);
   margin-bottom: 20px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .hero-badge-icon {
+  width: 22px;
   height: 22px;
-  width: auto;
+  max-width: 22px;
+  max-height: 22px;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: inline-block;
 }
 .hero-quote-intro {
   font-size: 1.25rem;
@@ -4191,8 +4198,8 @@ ul.bottom-cards-grid > li {
     -webkit-overflow-scrolling: touch !important;
   }
   
-  /* 3. 이미지 및 미디어 자동 리사이징 */
-  img, video, iframe {
+  /* 3. 이미지 및 미디어 자동 리사이징 (아이콘 및 고정 크기 이미지 보호) */
+  img:not(.hero-badge-icon):not(.brand-logo-img), video, iframe {
     max-width: 100% !important;
     height: auto !important;
   }
@@ -4206,6 +4213,33 @@ ul.bottom-cards-grid > li {
   /* 5. 메인 페이지 모바일 레이아웃 고도화 */
   .hero-inner {
     padding: 24px 16px 36px !important;
+  }
+  .hero-badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 7px !important;
+    padding: 5px 12px !important;
+    font-size: 0.82rem !important;
+    line-height: 1.35 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    margin-bottom: 16px !important;
+  }
+  .hero-badge-icon {
+    width: 20px !important;
+    height: 20px !important;
+    max-width: 20px !important;
+    max-height: 20px !important;
+    min-width: 20px !important;
+    min-height: 20px !important;
+    object-fit: contain !important;
+    flex-shrink: 0 !important;
+    display: inline-block !important;
+  }
+  .hero-badge span {
+    word-break: keep-all !important;
+    line-height: 1.35 !important;
+    white-space: normal !important;
   }
   .hero-title {
     font-size: 1.65rem !important;
@@ -4295,6 +4329,21 @@ ul.bottom-cards-grid > li {
 
 @media (max-width: 480px) {
   /* 초소형 스마트폰 (360px~430px) 추가 최적화 */
+  .hero-badge {
+    padding: 4px 10px !important;
+    font-size: 0.74rem !important;
+    gap: 6px !important;
+    margin-bottom: 14px !important;
+    letter-spacing: -0.02em !important;
+  }
+  .hero-badge-icon {
+    width: 18px !important;
+    height: 18px !important;
+    max-width: 18px !important;
+    max-height: 18px !important;
+    min-width: 18px !important;
+    min-height: 18px !important;
+  }
   .specialties-grid {
     grid-template-columns: 1fr !important;
   }
