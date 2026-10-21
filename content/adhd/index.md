@@ -239,7 +239,7 @@ ADHD는 설문지 한 장으로 쉽게 단정해서는 안 됩니다. 뇌 기능
 <div class="tic-grid-2col">
 <div class="cond-card cond-card--blue">
 <p class="cond-card-title">1. 총명건뇌(聰明健腦) 맞춤 한약</p>
-<p class="cond-card-desc">뇌 혈류 순환을 촉진하고 전두엽 신경전달물질의 자연스러운 분비를 돕는 탕약 처방. 식욕 부진이나 틱 유발 부작용 없이 두뇌 피로를 씻어내고 지구력 있는 집중력을 길러줍니다.</p>
+<p class="cond-card-desc">뇌 혈류 순환을 촉진하고 전두엽 신경전달물질의 자연스러운 분비를 돕는 탕약 처방. 식욕 부진이나 틱 유발 등 신체적 부담을 덜고 두뇌 피로를 씻어내며 지구력 있는 집중력을 길러줍니다.</p>
 </div>
 <div class="cond-card cond-card--blue">
 <p class="cond-card-title">2. 두뇌훈련 뉴로피드백</p>

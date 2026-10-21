@@ -41,7 +41,7 @@ ADHD는 단순히 의지력 부족이나 부모 훈육의 문제가 아닙니다
 <div style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);">
 <div style="font-size: 1.08rem; font-weight: 800; color: #146369; margin-bottom: 8px;">② 전두엽 뇌기능 활성화와 뇌 자생력 증진</div>
 <p style="margin: 0; font-size: 0.95rem; color: #475569;">
-중추신경 자극제(메틸페니데이트 등)의 식욕부진, 틱 유발, 수면장애 등 부작용 걱정 없이, 전두엽으로의 혈류와 산소 공급을 촉진하고 신경 전달 물질의 균형을 돕는 안심 한약 처방을 진행합니다.
+중추신경 자극제(메틸페니데이트 등)의 식욕부진, 틱 유발, 수면장애 등 신체 부담을 덜며, 전두엽으로의 혈류와 산소 공급을 촉진하고 신경 전달 물질의 균형을 돕는 안심 한약 처방을 진행합니다.
 </p>
 </div>
 
@@ -107,7 +107,7 @@ ADHD는 겉으로 드러나는 행동 양상에 따라 세 가지 유형으로 �
 <div style="margin-bottom: 16px;">
 <strong style="color: #0C4349; font-size: 1.02rem;">Q1. 병원 ADHD 약을 먹으면 식욕이 떨어지고 잠을 못 자는데 한방 치료는 어떤가요?</strong>
 <p style="margin: 6px 0 0; font-size: 0.95rem; color: #475569;">
-양약 각성제는 중추신경을 강제로 흥분시켜 일시적으로 집중을 유도하지만, 식욕 부진, 성장 지연, 불면, 틱 유발 등의 부작용이 흔합니다. 해아림의 한방 치료는 뇌 혈류 순환과 억제 신경전달물질의 균형을 자연스럽게 유도하므로 부작용 걱정 없이 장기적으로 안정적인 집중력을 길러줍니다.
+양약 각성제는 중추신경을 강제로 흥분시켜 일시적으로 집중을 유도하지만, 식욕 부진, 성장 지연, 불면, 틱 유발 등의 부작용이 흔합니다. 해아림의 한방 치료는 뇌 혈류 순환과 억제 신경전달물질의 균형을 자연스럽게 유도하므로 신체 부담을 덜며 장기적으로 안정적인 집중력을 길러줍니다.
 </p>
 </div>
 <div style="margin-bottom: 16px; border-top: 1px dashed #CBD5E1; padding-top: 14px;">

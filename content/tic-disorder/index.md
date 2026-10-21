@@ -387,7 +387,7 @@ layout: "disease"
 <span style="background: #2F6F8F; color: #FFF; font-size: 11.5px; font-weight: 700; padding: 2px 8px; border-radius: 4px;">맞춤 한약</span>
 </div>
 <p class="cond-card-desc" style="margin-top: 6px;">
-오장육부의 불균형을 바로잡아 심열(心熱)과 간화(肝火) 등 뇌신경계 과흥분을 가라앉힙니다. 뇌 기저핵 부위의 혈류 순환과 신경 영양 공급을 촉진하여 두뇌의 억제 제어력을 본질적으로 복원하는 개인 맞춤 탕약입니다. 졸림, 무기력, 집중력 저하 등의 약물 부작용 걱정 없이 복용할 수 있습니다.
+오장육부의 불균형을 바로잡아 심열(心熱)과 간화(肝火) 등 뇌신경계 과흥분을 가라앉힙니다. 뇌 기저핵 부위의 혈류 순환과 신경 영양 공급을 촉진하여 두뇌의 억제 제어력을 본질적으로 복원하는 개인 맞춤 탕약입니다. 졸림, 무기력, 집중력 저하 등 신체적 부담을 덜고 편안하게 복용할 수 있습니다.
 </p>
 </div>
 
@@ -637,7 +637,7 @@ layout: "disease"
 </details>
 
 <details class="faq-item" style="margin-bottom: 12px;">
-<summary>Q. 한의원 틱장애 치료는 양약처럼 졸림이나 멍함 같은 부작용이 없나요?</summary>
+<summary>Q. 한의원 틱장애 치료는 양약 복용 시 나타날 수 있는 졸림이나 멍함 같은 신체적 부담을 덜 수 있나요?</summary>
 <div style="padding-top: 12px; font-size: 0.95rem; color: #475569; line-height: 1.7;">
 <p style="margin: 0;">
 양방의 도파민 차단 약물은 신경을 강제로 눌러 졸림, 멍함, 체중 증가, 무기력, 학습 저하 등의 불편을 겪을 수 있습니다. 해아림의 한방 치료는 강제 억제가 아니라 뇌 기저핵과 전두엽의 균형을 복원하고 스스로 억제하는 자생력을 기르는 치료이므로, 정상적인 학교생활과 집중력을 온전히 유지하면서 호전될 수 있습니다.

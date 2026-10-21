@@ -61,7 +61,7 @@ hero_title: "16년 이상 긴장성 다한증·수족다한증을<br>집중적�
 <div>
 <div style="font-size: 0.92rem; opacity: 0.9; margin-bottom: 4px;">긴장성 다한증인지 확신이 서지 않아도 괜찮습니다</div>
 <div style="font-size: 1.25rem; font-weight: bold; letter-spacing: -0.5px;">"긴장하면 땀이 폭발하는데 어디서 치료해야 하나요?" 먼저 전화로 상담해보세요</div>
-<div style="font-size: 0.9rem; opacity: 0.85; margin-top: 4px;">한방신경정신과 박사 16년 임상 | 수술 부작용 없는 1:1 맞춤 진료</div>
+<div style="font-size: 0.9rem; opacity: 0.85; margin-top: 4px;">한방신경정신과 박사 16년 임상 | 수술 부담을 덜어주는 1:1 맞춤 진료</div>
 </div>
 <div style="display: flex; gap: 10px; align-items: center;">
 <a href="tel:053-751-0071" style="display: inline-block; background: #f1c40f; color: #1b4d3e; font-weight: bold; padding: 12px 22px; border-radius: 30px; text-decoration: none; font-size: 1.05rem; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
@@ -263,7 +263,7 @@ hero_title: "16년 이상 긴장성 다한증·수족다한증을<br>집중적�
 <h3 style="margin: 8px 0 6px 0; color: #0f172a; font-size: 1.25rem;">16년 뇌신경정신 질환 임상 연구, 김대억 대표원장</h3>
 <p style="margin: 0 0 10px 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 한방신경정신과 박사로서 수많은 다한증, 자율신경실조증, 대인기피증 환우들을 치료해왔습니다.<br>
-수술 부작용에 대한 두려움 없이, 몸과 마음의 조화를 통해 뽀송하고 당당한 일상을 되찾아드리겠습니다.
+수술 후유증에 대한 두려움 없이, 몸과 마음의 조화를 통해 뽀송하고 당당한 일상을 되찾아드리겠습니다.
 </p>
 <div style="font-size: 0.92rem; color: #1e3a8a; font-weight: 500;">
 📚 전문 서적 저자: 『토닥토닥 틱장애』(틱장애 ADHD 지침서) · 『걱정마 공황장애』(불안장애 자율신경실조증 공황장애 지침서)
@@ -277,7 +277,7 @@ hero_title: "16년 이상 긴장성 다한증·수족다한증을<br>집중적�
 <h2 class="cond-h2">어떤 경우에 긴장성 다한증 치료를 서둘러야 할까요?</h2>
 <div class="tic-grid-2col" style="margin: 18px 0;">
 <div style="background: #fff; border: 1px solid #fee2e2; border-left: 4px solid #ef4444; padding: 18px 20px; border-radius: 8px; font-size: 0.96rem; color: #1e293b; box-shadow: 0 2px 6px rgba(0,0,0,0.03); line-height: 1.65;">
-<strong style="color: #b91c1c; font-size: 1.05rem;">1. 수술 부작용(보상성) 없는 치료 희망</strong><br>
+<strong style="color: #b91c1c; font-size: 1.05rem;">1. 수술 후유증(보상성 다한증) 걱정을 던 치료 희망</strong><br>
 교감신경 절제 수술 후 등이나 엉덩이로 땀이 옮겨가는 보상성 다한증이 두려워 비수술적 한방 조절을 원하는 경우
 </div>
 <div style="background: #fff; border: 1px solid #fee2e2; border-left: 4px solid #ef4444; padding: 18px 20px; border-radius: 8px; font-size: 0.96rem; color: #1e293b; box-shadow: 0 2px 6px rgba(0,0,0,0.03); line-height: 1.65;">
@@ -302,7 +302,7 @@ hero_title: "16년 이상 긴장성 다한증·수족다한증을<br>집중적�
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
 <summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q1. 교감신경 절제 수술 없이 한의학으로 땀이 줄어들 수 있나요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
-네, 충분히 가능합니다. 흉부 교감신경 절제 수술은 손 땀을 즉각 멈추게 하지만 등이나 엉덩이, 다리로 땀이 옮겨가는 '보상성 다한증'이라는 치명적인 부작용 위험이 있습니다. 한방 치료는 신경을 인위적으로 손상시키지 않고, 자율신경계의 과민성을 정상화하여 전신의 균형 속에서 발한량을 줄이므로 안전합니다.
+네, 충분히 가능합니다. 흉부 교감신경 절제 수술은 손 땀을 즉각 멈추게 하지만 등이나 엉덩이, 다리로 땀이 옮겨가는 '보상성 다한증'이라는 비가역적 후유증 위험이 있습니다. 한방 치료는 신경을 인위적으로 손상시키지 않고, 자율신경계의 과민성을 정상화하여 전신의 균형 속에서 발한량을 줄이므로 안전합니다.
 </p>
 </details>
 
@@ -358,7 +358,7 @@ hero_title: "16년 이상 긴장성 다한증·수족다한증을<br>집중적�
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
 <summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q9. 다한증 치료를 위해 피부과에 가야 하나요, 한의원에 가야 하나요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
-바르는 약이나 보톡스 등 국소적 억제 치료는 피부과에서 받을 수 있습니다. 하지만 긴장과 스트레스, 대인관계 불안이 원인이 되어 땀이 쏟아지는 경우이거나, 수술 부작용 없이 안정적인 자율신경계 조절을 원하신다면 한방신경정신과 진료가 매우 적합합니다.
+바르는 약이나 보톡스 등 국소적 억제 치료는 피부과에서 받을 수 있습니다. 하지만 긴장과 스트레스, 대인관계 불안이 원인이 되어 땀이 쏟아지는 경우이거나, 수술에 대한 부담을 덜고 안정적인 자율신경계 조절을 원하신다면 한방신경정신과 진료가 매우 적합합니다.
 </p>
 </details>
 
@@ -377,9 +377,9 @@ hero_title: "16년 이상 긴장성 다한증·수족다한증을<br>집중적�
 <ul style="padding-left: 20px; margin-bottom: 0; color: #334155; font-size: 0.94rem; line-height: 1.7;">
 <li><strong>정의</strong>: 긴장성 다한증은 스트레스와 정서적 긴장 시 뇌 시상하부-자율신경계 교감신경의 과흥분으로 에크린 땀샘이 폭발하는 질환입니다.</li>
 <li><strong>유형</strong>: 손(악수·터치 불가), 얼굴·머리(대화 시 홍조·땀 폭발), 겨드랑이(옷 젖음·냄새), 발(신발 미끄러움·악취) 등 특정 부위에 집중됩니다.</li>
-<li><strong>수술 부작용 경고</strong>: 교감신경 절제 수술(ETS)은 등·엉덩이로 땀이 이동하는 '보상성 다한증'의 영구적 부작용 위험이 있으므로 신중해야 합니다.</li>
+<li><strong>수술 부작용 경고</strong>: 교감신경 절제 수술(ETS)은 등·엉덩이로 땀이 이동하는 '보상성 다한증'의 영구적 후유증 위험이 있으므로 신중해야 합니다.</li>
 <li><strong>동반 질환</strong>: 사회불안장애(대인기피증), 자율신경실조증, 소아·청소년 틱장애 및 ADHD와 긴밀히 연관되어 통합 치료가 필요합니다.</li>
-<li><strong>치료 원리</strong>: 뇌신경계와 자율신경 흥분을 가라앉히는 지한안신 맞춤 한약, 바이오피드백, 경혈 침구 치료를 통해 부작용 없이 자생력을 회복합니다.</li>
+<li><strong>치료 원리</strong>: 뇌신경계와 자율신경 흥분을 가라앉히는 지한안신 맞춤 한약, 바이오피드백, 경혈 침구 치료를 통해 신체 부담을 덜며 자생력을 회복합니다.</li>
 </ul>
 </div>
 </div>
