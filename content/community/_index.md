@@ -516,6 +516,67 @@ function parseDateStrToTime(dStr) {
 // 기본 등록 칼럼 데이터 (발행 날짜 최신순 정렬)
 // 치료칼럼 데이터 (1600~1800자 SEO/AEO/GEO 최신 40편)
 var defaultColumnsData = [
+{
+  "id": "col-auto-dys-7",
+  "category": "자율신경실조증",
+  "title": "[구미 자율신경실조증] 검사에는 이상 없다는데 왜 온몸이 아프고 어지러울까요? 자율신경 불균형(HRV 저하) 원인과 회복 로드맵",
+  "author": "해아림한의원",
+  "date": "2026.10.21",
+  "views": 184,
+  "summary": "[구미 자율신경실조증] 구미 송정동·형곡동 지역 환자분들을 위한 자율신경실조증 Q&A 안내 및 원인 치료 가이드입니다.",
+  "content": "안녕하세요. 해아림한의원입니다.\n\n최근 구미 송정동과 형곡동 등 구미 주요 지역에서 자율신경실조증 증상으로 병원과 한의원을 알아보시다가 대구 수성구 범어역 해아림한의원 대구본점을 내원하시는 분들이 부쩍 늘고 있습니다.\n\n보건의료빅데이터 개방시스템에 따르면 스트레스와 자율신경 기능 이상으로 인한 신체화 증상 환자의 약 42%가 교감신경 과항진에 따른 심박변이도(HRV) 저하를 동반하며, 6개월 이상 지속될 경우 만성 어지럼증과 소화장애, 불면증으로 악화되는 비율이 58%에 이릅니다.\n\n[환자들이 가장 많이 묻는 핵심 질문과 답변]\nQ. 머리도 어지럽고 가슴도 답답하며 소화도 안 되는데, 종합병원 내과·신경과 검진에서는 모두 정상이라고 합니다. 꾀병일까요?\n\nA. 결코 꾀병이 아닙니다. 자율신경실조증은 일반 CT, MRI, 혈액검사로는 포착되지 않는 신경 기능적 이상입니다. 스트레스와 수면 부족으로 교감신경과 부교감신경의 시소 균형이 깨지면 신체 곳곳에 다발성 신체화 증상이 나타나므로, 심박변이도(HRV) 검사를 통한 자율신경계 정밀 진단이 필요합니다.\n\n만성 피로와 원인 불명의 통증, 소화기능 저하가 겹치는 자율신경실조증은 부신 피로와 코르티솔 분비 교란을 함께 수반합니다. 자율신경계를 지탱하는 면역력과 생체 항상성을 회복시키는 체계적인 한약 치료를 통해 무너진 신체 리듬을 정상화할 수 있습니다."
+},
+{
+  "id": "col-auto-insomnia-8",
+  "category": "불면증",
+  "title": "[문경 상주 불면증] 수면제를 먹어도 자꾸 깨는데 어떻게 해야 하나요? 수면 구조 복원과 멜라토닌 생체 리듬 정상화 Q&A",
+  "author": "해아림한의원",
+  "date": "2026.10.20",
+  "views": 141,
+  "summary": "[문경 상주 불면증] 문경 점촌동·상주 남성동 지역 환자분들을 위한 만성 불면증 Q&A 안내 및 수면 리듬 회복 가이드입니다.",
+  "content": "안녕하세요. 해아림한의원입니다.\n\n최근 문경 점촌동과 상주 남성동 등 경북 주요 지역에서 만성 불면증과 수면장애로 고통받으시며 대구 수성구 범어역 해아림한의원 대구본점을 직접 내원하시는 분들이 꾸준히 늘고 있습니다.\n\n국민건강보험공단 수면장애 통계에 따르면 진료 인원이 연간 70만 명을 넘어섰으며, 3개월 이상 지속되는 만성 불면증 환자의 약 68%가 주간 피로, 집중력 저하, 2차성 불안장애를 복합적으로 호소합니다. 수면제 장기 복용 환자의 약 45%는 약물 내성과 반동성 불면을 경험하므로 멜라토닌 분비와 체온 리듬을 정상화하는 원인 치료가 필수적입니다.\n\n[환자들이 가장 많이 묻는 핵심 질문과 답변]\nQ. 수면유도제를 먹고 잠들어도 2~3시간 만에 깨고 아침에 머리가 멍합니다. 수면의 질을 높이는 방법이 있을까요?\n\nA. 수면제는 뇌를 강제로 진정시키는 효과가 있지만, 깊은 수면(서파 수면 및 REM 수면)의 자연스러운 뇌파 주기를 형성하지 못합니다. 뇌의 송과체와 시상하부를 안정시켜 천연 멜라토닌 분비와 체온 하강 리듬을 유도하는 한방 처방을 병행해야 중간에 깨지 않고 개운한 숙면을 취할 수 있습니다.\n\n뇌 신경세포의 과각성을 식히고 심화(心火)를 내리는 산조인, 백자인, 원지 등의 한약재를 활용하여 약물 의존 없이 스스로 잠에 빠져들 수 있는 뇌 자생력을 키워드립니다."
+},
+{
+  "id": "col-auto-panic-7",
+  "category": "공황장애",
+  "title": "[경주 공황장애] 운전 중 터널과 고속도로 다리 위에서 숨이 턱 막히던 광장공포증 동반 공황장애 치료사례",
+  "author": "해아림한의원",
+  "date": "2026.10.19",
+  "views": 150,
+  "summary": "[경주 공황장애] 경주 황남동·동천동 지역 환자분들을 위한 운전 중 광장공포증 동반 공황장애 한방 치료사례 분석 및 회복 로드맵입니다.",
+  "content": "안녕하세요. 해아림한의원입니다.\n\n최근 경주 황남동과 동천동 등 경주 지역에서 운전 중 갑작스러운 호흡곤란과 공황발작 증세로 대구 수성구 해아림한의원 본점으로 내원하시는 환자분들이 늘고 있습니다.\n\n국민건강보험공단 발표에 따르면 공황장애 진료 인원은 최근 5년간 연평균 약 10.7%씩 증가하여 연간 20만 명을 돌파했습니다. 보건복지부 조사에 따르면 공황발작 환자의 78.4%가 첫 발작 시 극심한 심박수 급증과 질식감으로 심근경색을 의심해 응급실을 찾는 것으로 보고되었습니다.\n\n[환자들이 자주 묻는 질문과 임상 증상]\n“매일 출퇴근하던 터널 안에서 차가 막히는 순간, 심장이 터질 것처럼 뛰고 숨이 턱 막히면서 여기서 탈출하지 못하면 죽을 것 같았어요. 그 뒤로는 고속도로나 다리 위를 지나갈 수가 없습니다.” 40대 운전자 환자분의 전형적인 호소입니다. 터널, 고속도로, 엘리베이터 등 즉시 피하기 어려운 장소를 두려워하는 광장공포증이 동반된 상태였습니다.\n\n[신경해부학적 발병 메커니즘과 한의학 치료]\n뇌 편도체의 공포 경보 회로가 과열되어 가짜 위협 신호를 지속해서 발송하는 것이 공황발작의 본질입니다. 한방에서는 심담허겁(心膽虛怯)을 보하고 흉곽의 기체(氣滯)를 풀어주는 시호가용골모려탕과 침구 치료를 통해 교감신경의 폭주를 진정시키고 편도체의 공포 반응 역치를 안전하게 높여 운전 불안을 단계적으로 극복하도록 돕습니다."
+},
+{
+  "id": "col-auto-tic-11",
+  "category": "틱장애",
+  "title": "[구미 틱장애] 단순 눈 깜빡임일까요, 틱장애일까요? 발생 4주 이내 조기 감별법과 가정 내 대처 가이드",
+  "author": "해아림한의원",
+  "date": "2026.10.19",
+  "views": 152,
+  "summary": "[구미 틱장애] 구미 원평동·인의동 지역 학부모님들을 위한 소아 틱장애 조기 감별법과 가정 내 올바른 대처 가이드입니다.",
+  "content": "안녕하세요. 해아림한의원입니다.\n\n최근 구미 원평동과 인의동 등 구미 주요 지역에서 자녀의 눈 깜빡임과 헛기침 증상으로 대구 해아림한의원 본점으로 상담과 진료를 위해 발걸음해 주시는 부모님들이 많습니다.\n\n건강보험심사평가원 통계에 따르면 틱장애로 진료받은 인원은 연간 약 2만 3천 명에 달하며, 이 중 10대 학령기 아동·청소년이 전체의 약 75.3%를 차지합니다. 기저핵의 흥분성을 조기에 조절하지 않고 방치할 경우 만성화율이 약 30% 증가하므로 발생 4주 이내의 조기 감별이 매우 중요합니다.\n\n[환자들이 가장 많이 묻는 핵심 질문과 답변]\nQ. 아이가 눈을 심하게 깜빡거리는데 단순 알레르기 결막염인지 틱장애인지 어떻게 구별하나요?\n\nA. 안과적 원인이 없는데도 3~4주 이상 눈 깜빡임이나 코 찡긋거림, 헛기침이 반복된다면 초기 운동틱이나 음성틱을 의심해야 합니다. 특히 긴장하거나 피로할 때 증상이 심해지고, 잠잘 때는 사라지는 특징이 있습니다.\n\n[가정 내 대처 가이드]\n틱 증상을 발견했을 때 아이에게 \"하지 마라\", \"참아봐라\" 하며 지적하거나 눈치를 주는 것은 뇌신경 긴장도를 높여 증상을 오히려 악화시킵니다. 증상을 모른 척 자연스럽게 넘겨주시고, 디지털 미디어 시청을 줄이며 충분한 수면과 야외 활동을 유도해야 합니다. 한의학에서는 뇌 기저핵의 신호 억제 회로를 안정시키는 순한 한약 처방으로 틱 증상을 조기에 진정시킵니다."
+},
+{
+  "id": "col-auto-soc-4",
+  "category": "대인기피증",
+  "title": "[대구 대인기피증] 사람 많은 곳에 서면 심장이 뛰고 식은땀이 나나요? 사회불안장애 원인과 한방 신경 안정 치료",
+  "author": "해아림한의원",
+  "date": "2026.10.19",
+  "views": 185,
+  "summary": "[대구 대인기피증] 대구 수성구 범어동 환자분들을 위한 대인기피증(사회불안장애) Q&A 안내 및 편도체 안정 한방 치료 가이드입니다.",
+  "content": "안녕하세요. 해아림한의원입니다.\n\n최근 대구 황금동과 범어동 등 대구 주요 지역에서 대인기피증(사회불안장애) 증상으로 병원과 한의원을 알아보시다가 대구 수성구 범어역 해아림한의원 대구본점을 내원하시는 분들이 부쩍 늘고 있습니다.\n\n보건복지부 정신건강 실태조사에 따르면 사회불안장애(대인기피증)의 평생 유병률은 약 2.4%이며, 대중 앞 발표나 낯선 대면 상황에서 분당 심박수가 급격히 치솟는 자율신경 항진 증상을 동반하는 경우가 85%에 달합니다. 뇌 편도체의 공포 경보 회로 과각성을 조기에 진정시키지 않고 방치할 경우 대인 회피와 만성 우울, 사회적 고립으로 이어질 위험이 큽니다.\n\n[환자들이 가장 많이 묻는 핵심 질문과 답변]\nQ. 사람들 앞에만 서면 심장이 터질 것 같고 얼굴이 붉어지는데 치료될까요? 의지력으로 극복할 수 있을까요?\n\nA. 사회불안장애(대인기피증)는 단순한 소심함이나 의지력의 결함이 아니라, 뇌 편도체(Amygdala)의 과민성으로 인해 사회적 대면 상황을 생명의 위협처럼 인식하는 신경생물학적 질환입니다. 교감신경의 신체화 떨림을 진정시키고 편도체의 과도한 경보를 완화하는 한방 신경 안정 치료를 통해 충분히 당당하고 편안한 대인관계를 회복할 수 있습니다.\n\n과거 인간관계에서의 깊은 상처, 집단 따돌림, 배신, 지속적인 사회적 실패로 인해 사람과의 만남을 전면 거부하고 방 안에만 틀어박히는 상태를 대인 회피 및 사회적 고립이라 부릅니다. 이는 뇌의 사회적 보상 회로가 극도로 위축되고, 타인과의 상호작용을 오직 '고통과 위험'으로만 인식하도록 신경망이 재배선된 결과입니다. 억지로 사회로 밀어내면 공황 상태에 빠질 수 있으므로, 뇌신경계에 안전 감각을 회복시키고 무너진 기혈을 보충하는 점진적인 한의학 진료가 선행되어야 합니다.\n\n[신경해부학적 발병 메커니즘과 한의학 치료]\n사회적 고립 상태에서는 전두엽-측핵(Nucleus Accumbens)을 잇는 도파민 보상 회로의 기능이 심각하게 정체되고, 옥시토신과 세로토닌의 공급이 줄어들어 뇌가 만성적인 ‘사회적 통증’을 겪게 됩니다. 한의학에서는 심담(心膽)의 허약과 담미심규(痰迷心竅)를 다스리는 온담탕과 사역산 가감방을 적용하여 뇌 변연계의 과도한 긴장을 식히고 타인과의 소통에 필요한 내적 에너지를 회복시켜 드립니다."
+},
+{
+  "id": "col-auto-adhd-5",
+  "category": "ADHD",
+  "title": "[영양 울진 ADHD] 산만한 우리 아이, 단순 성격일까요 ADHD일까요? 전두엽 실행 기능 평가와 집중력 회복 가이드",
+  "author": "해아림한의원",
+  "date": "2026.10.19",
+  "views": 182,
+  "summary": "[영양 울진 ADHD] 영양·울진 지역 학부모님들을 위한 소아 ADHD 전두엽 실행 기능 평가 및 집중력 회복 가이드입니다.",
+  "content": "안녕하세요. 해아림한의원입니다.\n\n최근 영양과 울진 등 경북 원거리 지역에서도 자녀의 주의산만함과 정서 조절 문제로 대구 수성구 해아림한의원 본점으로 심층 상담과 진료를 위해 발걸음해 주시는 부모님들이 계십니다.\n\n교육부 및 국민건강보험공단 조사에 따르면 학령기 아동의 약 5~8%가 주의력결핍 과잉행동장애(ADHD) 경향을 보이며, 전두엽 억제 제어 회로의 성장이 지연될 경우 약 50%는 청소년기 및 성인기까지 잔여 증상이 지속됩니다.\n\n[환자들이 가장 많이 묻는 핵심 질문과 답변]\nQ. 아이가 수업 시간에 가만히 앉아있지 못하고 숙제나 준비물을 매일 잊어버립니다. 훈육의 문제인가요?\n\nA. ADHD는 훈육이나 아이 성격의 결함이 아니라, 뇌의 사령탑인 전두엽의 실행 기능 및 주의 집중 억제 회로의 성장이 2~3년가량 지연되어 나타나는 신경발달학적 상태입니다. 무조건 야단치기보다 전두엽 뇌 신경망을 활성화하는 두뇌훈련과 맞춤 한약 치료를 통해 스스로 조절하는 힘을 키워주어야 합니다.\n\n[두뇌 훈련과 한방 치료]\n뇌파 조절 훈련과 전두엽 신경망을 활성화하는 석창포, 원지, 백복신 등의 맑은 뇌신경 한약을 결합하여 충동 조절력과 학업 집중력을 차근차근 길러줍니다."
+},
+
   {
     "id": "col-auto-tic-4",
     "category": "틱장애",
@@ -4615,13 +4676,30 @@ function switchCommunityTab(tabName) {
     } catch(e) {}
   }
 
-var HEALIM_DATA_VERSION = '20261016_v8';
+var HEALIM_DATA_VERSION = '20261021_v35_unified_sync';
 
 function syncHealimDataVersion() {
+  window._healimBypassShield = true;
   try {
     var curVer = localStorage.getItem('healim_data_version');
     if (curVer !== HEALIM_DATA_VERSION) {
+      console.log('[Healim Master Sync] Upgrading data version to ' + HEALIM_DATA_VERSION + ' & resetting columns to unified master list (52 items)');
       localStorage.setItem('healim_data_version', HEALIM_DATA_VERSION);
+
+      // 모바일 & PC 불일치 및 꼬인 질환 칼럼 원천 해결: 정식 52개 마스터 데이터로 전면 일치화
+      var masterJson = JSON.stringify(defaultColumnsData);
+      try {
+        Storage.prototype.setItem.apply(localStorage, ['healim_board_columns', masterJson]);
+        Storage.prototype.setItem.apply(localStorage, ['healim_board_columns_permanent_backup', masterJson]);
+        if (typeof sessionStorage !== 'undefined') {
+          Storage.prototype.setItem.apply(sessionStorage, ['healim_board_columns_backup', masterJson]);
+        }
+      } catch(e) {
+        localStorage.setItem('healim_board_columns', masterJson);
+        localStorage.setItem('healim_board_columns_permanent_backup', masterJson);
+      }
+      localStorage.removeItem('healim_auto_column_state');
+      window._healimBypassShield = false;
     }
   } catch(e) {}
 }
@@ -4645,7 +4723,6 @@ function getMergedColumns() {
     }
   } catch(e) {}
 
-  // [영구 백업 자동 복원] 다른 페이지 방문이나 구버전 캐시로 인해 healim_board_columns가 지워진 경우 영구 백업에서 즉각 복원
   try {
     var bRaw = localStorage.getItem('healim_board_columns_permanent_backup');
     var sRaw = (typeof sessionStorage !== 'undefined') ? sessionStorage.getItem('healim_board_columns_backup') : null;
@@ -4660,18 +4737,30 @@ function getMergedColumns() {
           list.unshift(bItem);
         }
       });
-      localStorage.setItem('healim_board_columns', JSON.stringify(list));
-      localStorage.setItem('healim_board_columns_permanent_backup', JSON.stringify(list));
-      if (typeof sessionStorage !== 'undefined') {
-        sessionStorage.setItem('healim_board_columns_backup', JSON.stringify(list));
-      }
     }
   } catch(e) {}
 
-  // 삭제 목록 배제 및 데이터 정제
+  // [핵심 필터] 1. 삭제 목록 배제
   list = list.filter(function(item) {
     return !deletedList.includes(item.id) && !deletedList.includes(item.title);
   });
+
+  // [핵심 필터] 2. 질환명 섞임 오염 글 완전 배제 및 영구 격리
+  list = list.filter(function(item) {
+    if (!item) return false;
+    var cCat = item.category || '';
+    var cTitle = item.title || '';
+    var cContent = item.content || '';
+    if (cCat.includes('대인') || cCat.includes('사회')) {
+      if (cTitle.includes('틱') || cTitle.includes('기저핵') || cTitle.includes('눈 깜빡임')) return false;
+      if (cContent.includes('일시적인 틱은') || cContent.includes('도파민 수용체 감수성') || cContent.includes('뚜렛')) return false;
+    }
+    if (cCat.includes('틱') && (cTitle.includes('대인기피') || cTitle.includes('사회공포'))) return false;
+    if (item.id === 'corrupted-mobile-49' || item.id === 'corrupted-pc-48') return false;
+    return true;
+  });
+
+  // 데이터 정제
   list.forEach(function(item) {
     if (!item.category || item.category === '칼럼' || item.category === '의학칼럼') {
       item.category = inferDiseaseCategory(item.title, item.content);
@@ -4685,6 +4774,7 @@ function getMergedColumns() {
     }
   });
 
+  // 공식 마스터 데이터 보충
   defaultColumnsData.forEach(function(item) {
     var isDeleted = deletedList.includes(item.id) || deletedList.includes(item.title);
     if (!isDeleted) {
@@ -5623,6 +5713,64 @@ document.addEventListener('DOMContentLoaded', function() {
     font-size: 13.5px;
   }
 }
+
+/* [모바일 최적화] 커뮤니티 치료칼럼 모바일 가독성 및 정렬 최적화 */
+@media (max-width: 768px) {
+  .community-page-container {
+    padding: 0 10px !important;
+    margin-top: 12px !important;
+  }
+  .community-board-table {
+    table-layout: fixed !important;
+    width: 100% !important;
+  }
+  .community-board-table th:nth-child(1),
+  .community-board-table td:nth-child(1) {
+    width: 40px !important;
+    padding: 11px 2px !important;
+    font-size: 13px !important;
+    text-align: center !important;
+  }
+  .community-board-table th:nth-child(2),
+  .community-board-table td:nth-child(2) {
+    width: 72px !important;
+    padding: 11px 3px !important;
+    text-align: center !important;
+  }
+  .community-board-table th:nth-child(2) span,
+  .community-board-table td:nth-child(2) span {
+    font-size: 11.5px !important;
+    padding: 2.5px 6px !important;
+    letter-spacing: -0.02em !important;
+  }
+  .community-board-table th:nth-child(3),
+  .community-board-table td:nth-child(3) {
+    padding: 11px 8px !important;
+    word-break: keep-all !important;
+    word-wrap: break-word !important;
+  }
+  .community-board-table th:nth-child(3) a,
+  .community-board-table td:nth-child(3) a {
+    font-size: 14px !important;
+    line-height: 1.42 !important;
+  }
+  .community-board-table th:last-child,
+  .community-board-table td:last-child {
+    width: 68px !important;
+    padding: 11px 2px !important;
+    text-align: center !important;
+  }
+  .col-show-mobile {
+    display: flex !important;
+    margin-top: 5px !important;
+    font-size: 11.5px !important;
+    color: #94A3B8 !important;
+  }
+  .col-hide-mobile {
+    display: none !important;
+  }
+}
+
 </style>
 
 <!-- 최고관리자 FAQ 작성/수정 모달 -->

@@ -5,8 +5,25 @@
   if (window._healimStorageShieldInstalled) return;
   window._healimStorageShieldInstalled = true;
 
+  function isCorruptedItem(item, isCol) {
+    if (!item) return true;
+    if (isCol) {
+      var cCat = item.category || '';
+      var cTitle = item.title || '';
+      var cContent = item.content || '';
+      if (cCat.includes('대인') || cCat.includes('사회')) {
+        if (cTitle.includes('틱') || cTitle.includes('기저핵') || cTitle.includes('눈 깜빡임')) return true;
+        if (cContent.includes('일시적인 틱은') || cContent.includes('도파민 수용체 감수성') || cContent.includes('뚜렛')) return true;
+      }
+      if (cCat.includes('틱') && (cTitle.includes('대인기피') || cTitle.includes('사회공포'))) return true;
+      if (item.id === 'corrupted-mobile-49' || item.id === 'corrupted-pc-48') return true;
+    }
+    return false;
+  }
+
   var origRemoveItem = Storage.prototype.removeItem;
   Storage.prototype.removeItem = function(key) {
+    if (window._healimBypassShield) return origRemoveItem.apply(this, arguments);
     if (key === 'healim_board_columns' || key === 'healim_board_faqs' ||
         key === 'healim_board_columns_permanent_backup' || key === 'healim_board_faqs_permanent_backup') {
       console.warn('[Healim Storage Shield] Blocked unauthorized removeItem:', key);
@@ -17,6 +34,7 @@
 
   var origClear = Storage.prototype.clear;
   Storage.prototype.clear = function() {
+    if (window._healimBypassShield) return origClear.apply(this, arguments);
     var cB = localStorage.getItem('healim_board_columns_permanent_backup') || localStorage.getItem('healim_board_columns');
     var fB = localStorage.getItem('healim_board_faqs_permanent_backup') || localStorage.getItem('healim_board_faqs');
     origClear.apply(this, arguments);
@@ -32,6 +50,9 @@
 
   var origSetItem = Storage.prototype.setItem;
   Storage.prototype.setItem = function(key, val) {
+    if (window._healimBypassShield) {
+      return origSetItem.apply(this, [key, val]);
+    }
     if (key === 'healim_board_columns' || key === 'healim_board_faqs' ||
         key === 'healim_board_columns_permanent_backup' || key === 'healim_board_faqs_permanent_backup') {
       try {
@@ -52,6 +73,8 @@
 
             currArr.forEach(function(existingItem) {
               if (!existingItem || !existingItem.id) return;
+              if (isCorruptedItem(existingItem, isCol)) return; // [핵심] 오염 글 부활 영구 차단!
+
               var isDeleted = delList.includes(existingItem.id) || (existingItem.title && delList.includes(existingItem.title)) || (existingItem.q && delList.includes(existingItem.q));
               if (isDeleted) return;
 
@@ -73,48 +96,6 @@
     }
     return origSetItem.apply(this, [key, val]);
   };
-
-  // 즉각적 양방향 영구 복원 (초기 구동 시 백업에서 누락분 즉시 동기화)
-  try {
-    ['columns', 'faqs'].forEach(function(type) {
-      var isCol = (type === 'columns');
-      var mainKey = isCol ? 'healim_board_columns' : 'healim_board_faqs';
-      var bKey = isCol ? 'healim_board_columns_permanent_backup' : 'healim_board_faqs_permanent_backup';
-      var sKey = isCol ? 'healim_board_columns_backup' : 'healim_board_faqs_backup';
-      var delKey = isCol ? 'healim_deleted_column_ids' : 'healim_deleted_faq_ids';
-
-      var mainRaw = localStorage.getItem(mainKey);
-      var bRaw = localStorage.getItem(bKey);
-      var sRaw = (typeof sessionStorage !== 'undefined') ? sessionStorage.getItem(sKey) : null;
-      var delRaw = localStorage.getItem(delKey);
-      var delList = delRaw ? JSON.parse(delRaw) : [];
-      if (!Array.isArray(delList)) delList = [];
-
-      var mainList = mainRaw ? JSON.parse(mainRaw) : [];
-      if (!Array.isArray(mainList)) mainList = [];
-      var backupList = bRaw ? JSON.parse(bRaw) : (sRaw ? JSON.parse(sRaw) : []);
-      if (!Array.isArray(backupList)) backupList = [];
-
-      var changed = false;
-      backupList.forEach(function(item) {
-        if (!item || !item.id) return;
-        var isDel = delList.includes(item.id) || (item.title && delList.includes(item.title)) || (item.q && delList.includes(item.q));
-        if (isDel) return;
-        var exists = mainList.some(function(p) { return p && (p.id === item.id || (item.title && p.title === item.title) || (item.q && p.q === item.q)); });
-        if (!exists) {
-          mainList.unshift(item);
-          changed = true;
-        }
-      });
-
-      if (changed || (mainList.length > 0 && !bRaw)) {
-        var str = JSON.stringify(mainList);
-        origSetItem.apply(localStorage, [mainKey, str]);
-        origSetItem.apply(localStorage, [bKey, str]);
-        try { if (typeof sessionStorage !== 'undefined') origSetItem.apply(sessionStorage, [sKey, str]); } catch(e){}
-      }
-    });
-  } catch(e) {}
 })();
 </script>
 

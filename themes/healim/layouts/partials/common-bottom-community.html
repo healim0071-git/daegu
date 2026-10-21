@@ -721,7 +721,7 @@ ul.bottom-cards-grid {
 </style>
 <script>
 (function() {
-  var HEALIM_DATA_VERSION = '20261016_v8';
+  var HEALIM_DATA_VERSION = '20261021_v35_unified_sync';
   try {
     var curVer = localStorage.getItem('healim_data_version');
     if (curVer !== HEALIM_DATA_VERSION) {
@@ -941,7 +941,17 @@ ul.bottom-cards-grid {
         var list = local ? JSON.parse(local) : [];
         if (!Array.isArray(list)) list = [];
         list = list.filter(function(it) {
-          return it && delList.indexOf(String(it.id)) === -1 && delList.indexOf(String(it.title)) === -1;
+          if (!it) return false;
+          var cCat = it.category || '';
+          var cTitle = it.title || '';
+          var cContent = it.content || '';
+          if (cCat.includes('대인') || cCat.includes('사회')) {
+            if (cTitle.includes('틱') || cTitle.includes('기저핵') || cTitle.includes('눈 깜빡임')) return false;
+            if (cContent.includes('일시적인 틱은') || cContent.includes('도파민 수용체 감수성') || cContent.includes('뚜렛')) return false;
+          }
+          if (cCat.includes('틱') && (cTitle.includes('대인기피') || cTitle.includes('사회공포'))) return false;
+          if (it.id === 'corrupted-mobile-49' || it.id === 'corrupted-pc-48') return false;
+          return delList.indexOf(String(it.id)) === -1 && delList.indexOf(String(it.title)) === -1;
         });
         defaultBottomColumns.forEach(function(item) {
           var isDel = delList.indexOf(String(item.id)) !== -1 || delList.indexOf(String(item.title)) !== -1;
