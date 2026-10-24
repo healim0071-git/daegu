@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad_bg_clim3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B" />
+      <stop offset="100%" stop-color="#022C22" />
+    </linearGradient>
+    <linearGradient id="grad_motif_clim3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#047857" stop-opacity="0.4" />
+    </linearGradient>
+    <pattern id="grid_clim3" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="500" height="300" fill="url(#grad_bg_clim3)" />
+  <rect width="500" height="300" fill="url(#grid_clim3)" />
+
+  <circle cx="360" cy="150" r="130" fill="#34D399" opacity="0.12" filter="blur(30px)" />
+  <circle cx="80" cy="60" r="90" fill="#34D399" opacity="0.08" filter="blur(20px)" />
+
+  <g transform="translate(36, 48)">
+    <rect x="0" y="0" width="170" height="26" rx="13" fill="rgba(52,211,153,0.18)" stroke="#34D399" stroke-width="1.2" />
+    <circle cx="12" cy="13" r="3.5" fill="#34D399" />
+    <text x="24" y="17" fill="#A7F3D0" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="700" letter-spacing="-0.2px">자생력 치료 시스템</text>
+
+    <text x="0" y="65" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="20" font-weight="800" letter-spacing="-0.5px">
+      보음청열 &amp; 자율신경 균형
+    </text>
+
+    <text x="0" y="98" fill="rgba(255,255,255,0.75)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12.5" font-weight="500">
+      신체 부담을 덜어주는 단계별 맞춤
+    </text>
+    <text x="0" y="118" fill="rgba(255,255,255,0.75)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12.5" font-weight="500">
+      한의학적 심신 안정 치료
+    </text>
+
+    <g transform="translate(0, 150)">
+      <rect x="0" y="0" width="145" height="22" rx="4" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+      <text x="10" y="15" fill="rgba(255,255,255,0.85)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="600">
+        HEALIM RECOVERY LAB
+      </text>
+    </g>
+  </g>
+
+  <g transform="translate(345, 145)">
+    <!-- Harmonious Botanical Balance Shield -->
+    <circle cx="0" cy="0" r="38" fill="none" stroke="#34D399" stroke-width="2" opacity="0.8"/>
+    <circle cx="0" cy="0" r="26" fill="url(#grad_motif_clim3)"/>
+    <path d="M-12,8 Q0,-18 12,8 Q0,2 0,16 Z" fill="#FFF" opacity="0.95"/>
+    <path d="M-45,25 Q-20,0 0,25 Q20,50 45,25" fill="none" stroke="#6EE7B7" stroke-width="2.2" stroke-linecap="round"/>
+  </g>
+</svg>

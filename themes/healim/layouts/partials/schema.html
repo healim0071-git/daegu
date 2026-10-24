@@ -174,7 +174,7 @@
     }
     {{- end }}
     {{- $slug := strings.Trim .RelPermalink "/" }}
-    {{- $isDisease := or (eq .Type "disease") (eq .Layout "disease") (in (slice "tic-disorder" "panic-disorder" "dysautonomia" "insomnia" "dizziness" "adhd" "ocd" "anxiety-disorder" "hyperhidrosis" "social-phobia") (path.Base .RelPermalink)) }}
+    {{- $isDisease := or (eq .Type "disease") (eq .Layout "disease") (in (slice "tic-disorder" "panic-disorder" "dysautonomia" "insomnia" "dizziness" "adhd" "ocd" "anxiety-disorder" "hyperhidrosis" "social-phobia" "climacteric") (path.Base .RelPermalink)) }}
     {{- $faqs := index site.Data.disease_faqs $slug }}
     {{- if not $faqs }}
       {{- $faqs = index site.Data.disease_faqs (path.Base .RelPermalink) }}

@@ -348,5 +348,40 @@
       "viewCount": 5000,
       "disease": "대인기피증"
     }
+  ],
+  "climacteric": [
+    {
+      "vid": "51rIQ1T5dIU",
+      "type": "long",
+      "title": "갱년기 자율신경실조증과 불면증, 교감신경 과열을 식히는 핵심 관리법",
+      "desc": "폐경기 호르몬 변화와 뇌 자율신경계 과각성으로 인한 안면홍조, 두근거림, 수면장애 완화를 위한 의학 자문",
+      "thumbnail": "https://i.ytimg.com/vi/51rIQ1T5dIU/hq720.jpg",
+      "channel": "해아림TV 알쓸한상",
+      "views": "조회수 18,200회",
+      "viewCount": 18200,
+      "disease": "갱년기"
+    },
+    {
+      "vid": "xyoF0JT3-vI",
+      "type": "shorts",
+      "title": "갱년기에 가슴이 두근거리고 잠이 안 오는 이유 (자율신경 불균형)",
+      "desc": "에스트로겐 급감과 뇌 시상하부 체온·자율신경 조절 중추의 오작동 메커니즘을 쇼츠로 정리해 드립니다.",
+      "thumbnail": "https://i.ytimg.com/vi/xyoF0JT3-vI/oardefault.jpg",
+      "channel": "해아림TV 알쓸한상",
+      "views": "조회수 13,400회",
+      "viewCount": 13400,
+      "disease": "갱년기"
+    },
+    {
+      "vid": "YbSiowFH-hM",
+      "type": "shorts",
+      "title": "이유 없는 상열감, 식은땀, 감정 기복! 갱년기 자가진단 가이드",
+      "desc": "신체적·정신적 갱년기 복합 증상을 점검하고 뇌신경계 자생력을 기르는 한의학적 관리 방향",
+      "thumbnail": "https://i.ytimg.com/vi/YbSiowFH-hM/oardefault.jpg",
+      "channel": "해아림TV 알쓸한상",
+      "views": "조회수 11,200회",
+      "viewCount": 11200,
+      "disease": "갱년기"
+    }
   ]
 }

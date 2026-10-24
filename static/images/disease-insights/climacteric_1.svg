@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad_bg_clim1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4C0519" />
+      <stop offset="100%" stop-color="#1C050C" />
+    </linearGradient>
+    <linearGradient id="grad_motif_clim1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FB7185" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#9F1239" stop-opacity="0.4" />
+    </linearGradient>
+    <pattern id="grid_clim1" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="500" height="300" fill="url(#grad_bg_clim1)" />
+  <rect width="500" height="300" fill="url(#grid_clim1)" />
+
+  <circle cx="360" cy="150" r="130" fill="#FB7185" opacity="0.12" filter="blur(30px)" />
+  <circle cx="80" cy="60" r="90" fill="#FB7185" opacity="0.08" filter="blur(20px)" />
+
+  <g transform="translate(36, 48)">
+    <rect x="0" y="0" width="170" height="26" rx="13" fill="rgba(251,113,133,0.18)" stroke="#FB7185" stroke-width="1.2" />
+    <circle cx="12" cy="13" r="3.5" fill="#FB7185" />
+    <text x="24" y="17" fill="#FECDD3" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="11" font-weight="700" letter-spacing="-0.2px">자율신경 &amp; 체온조절</text>
+
+    <text x="0" y="65" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="20" font-weight="800" letter-spacing="-0.5px">
+      시상하부 체온조절 &amp; 혈관망
+    </text>
+
+    <text x="0" y="98" fill="rgba(255,255,255,0.75)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12.5" font-weight="500">
+      에스트로겐 급감에 따른 말초 혈관
+    </text>
+    <text x="0" y="118" fill="rgba(255,255,255,0.75)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="12.5" font-weight="500">
+      확장 및 상열감 완화 기전
+    </text>
+
+    <g transform="translate(0, 150)">
+      <rect x="0" y="0" width="135" height="22" rx="4" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+      <text x="10" y="15" fill="rgba(255,255,255,0.85)" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="10" font-weight="600">
+        HEALIM CLINICAL LAB
+      </text>
+    </g>
+  </g>
+
+  <g transform="translate(350, 150)">
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#FB7185" stroke-width="2" stroke-dasharray="4,4" opacity="0.6"/>
+    <circle cx="0" cy="0" r="28" fill="url(#grad_motif_clim1)"/>
+    <circle cx="0" cy="0" r="14" fill="#FFF" opacity="0.9"/>
+    <!-- Temperature wave lines -->
+    <path d="M-55,25 Q-30,-15 0,25 Q30,65 55,25" fill="none" stroke="#FDA4AF" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M-50,45 Q-25,20 0,45 Q25,70 50,45" fill="none" stroke="#FB7185" stroke-width="1.8" opacity="0.7"/>
+    <circle cx="-35" cy="-25" r="3" fill="#FFF"/>
+    <circle cx="35" cy="-20" r="2.5" fill="#FDA4AF"/>
+  </g>
+</svg>
