@@ -3984,6 +3984,9 @@ ul.bottom-cards-grid > li {
 }
 
 @media (max-width: 480px) {
+  .hero-section {
+    padding-top: 8px !important;
+  }
   .hero-card-title {
     font-size: 1.35rem !important;
     line-height: 1.38 !important;
@@ -4328,6 +4331,9 @@ ul.bottom-cards-grid > li {
 }
 
 @media (max-width: 480px) {
+  .hero-section {
+    padding-top: 8px !important;
+  }
   /* 초소형 스마트폰 (360px~430px) 추가 최적화 */
   .hero-badge {
     padding: 4px 10px !important;
@@ -4376,7 +4382,14 @@ ul.bottom-cards-grid > li {
 }
 
 @media (max-width: 991px) {
+  /* A 상단 여백 최소화: 헤더 바로 아래 여백을 최소로 압축 */
+  .hero-section {
+    padding-top: 12px !important;
+    padding-bottom: 52px !important;
+  }
+
   .hero-badge {
+    margin-top: 0 !important;
     margin-bottom: 12px !important;
   }
 
