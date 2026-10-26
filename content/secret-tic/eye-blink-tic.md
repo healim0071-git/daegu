@@ -8,7 +8,7 @@ disease_name: "틱장애"
 disease_slug: "tic-disorder"
 hide_clinic_guide: true
 is_secret: true
-description: "눈깜빡임틱, 결막염·안구건조증과의 구별법과 방치 시 목·어깨·음성틱으로의 전이 위험성. 16년 임상 노하우 해아림한의원 김대억 대표원장(한방신경정신과 박사)의 정밀 분석."
+description: "눈깜빡임틱, 결막염·안구건조증과의 구별법과 방치 시 목·어깨·음성틱으로의 전이 위험성. 16년 임상 노하우 해아림한의원 틱 클리닉의 정밀 분석."
 layout: "disease"
 url: "/tic-disorder/eye-blink-tic/"
 ---

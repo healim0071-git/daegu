@@ -8,7 +8,7 @@ disease_name: "틱장애"
 disease_slug: "tic-disorder"
 hide_clinic_guide: true
 is_secret: true
-description: "틱장애치료방법 총정리: 양약 억제제와 한방 자생력 치료의 차이점 및 한약, 두뇌훈련, CST 수기요법 4단계 종합 치료 로드맵. 16년 임상 노하우 해아림한의원 김대억 박사."
+description: "틱장애치료방법 총정리: 양약 억제제와 한방 자생력 치료의 차이점 및 한약, 두뇌훈련, CST 수기요법 4단계 종합 치료 로드맵. 16년 임상 노하우 해아림한의원 틱 클리닉."
 layout: "disease"
 url: "/tic-disorder/tic-treatment-method/"
 ---

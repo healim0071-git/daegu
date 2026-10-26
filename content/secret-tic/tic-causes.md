@@ -8,7 +8,7 @@ disease_name: "틱장애"
 disease_slug: "tic-disorder"
 hide_clinic_guide: true
 is_secret: true
-description: "틱원인 총정리: 뇌 기저핵 CSTC 회로의 조절 기능 미숙, 유전적 민감도와 환경적 촉발 요인. 16년 임상 노하우 해아림한의원 김대억 대표원장(한방신경정신과 박사)의 의학 칼럼."
+description: "틱원인 총정리: 뇌 기저핵 CSTC 회로의 조절 기능 미숙, 유전적 민감도와 환경적 촉발 요인. 16년 임상 노하우 해아림한의원 틱 클리닉의 의학 칼럼."
 layout: "disease"
 url: "/tic-disorder/tic-causes/"
 ---

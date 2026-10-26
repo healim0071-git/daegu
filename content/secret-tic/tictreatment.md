@@ -8,7 +8,7 @@ disease_name: "틱장애"
 disease_slug: "tic-disorder"
 hide_clinic_guide: true
 is_secret: true
-description: "틱 치료, 억제제 의존을 줄이고 뇌 신경계의 자생력을 길러 안정적인 상태 유지를 돕는 한방신경정신과 1:1 심층 치료법. 16년 이상 틱장애를 집중 진료해온 해아림한의원 김대억 대표원장의 임상 가이드."
+description: "틱 치료, 억제제 의존을 줄이고 뇌 신경계의 자생력을 길러 안정적인 상태 유지를 돕는 한방신경정신과 1:1 심층 치료법. 16년 이상 틱장애를 집중 진료해온 해아림한의원 틱 클리닉의 임상 가이드."
 layout: "disease"
 url: "/tic-disorder/tictreatment/"
 ---

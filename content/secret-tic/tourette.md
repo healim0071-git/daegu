@@ -8,7 +8,7 @@ disease_name: "틱장애"
 disease_slug: "tic-disorder"
 hide_clinic_guide: true
 is_secret: true
-description: "뚜렛증후군(뚜렛장애)의 진단 기준, 동반 질환(ADHD·강박)과의 복합 양상 및 뇌 신경계 자생력 회복 치료법. 16년 이상 틱장애·뚜렛증후군을 치료해온 해아림한의원 김대억 대표원장의 임상 분석."
+description: "뚜렛증후군(뚜렛장애)의 진단 기준, 동반 질환(ADHD·강박)과의 복합 양상 및 뇌 신경계 자생력 회복 치료법. 16년 이상 틱장애·뚜렛증후군을 치료해온 해아림한의원 틱 클리닉의 임상 분석."
 layout: "disease"
 url: "/tic-disorder/tourette/"
 ---

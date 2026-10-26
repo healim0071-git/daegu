@@ -8,7 +8,7 @@ disease_name: "틱장애"
 disease_slug: "tic-disorder"
 hide_clinic_guide: true
 is_secret: true
-description: "틱 증상의 초기 신호, 운동틱과 음성틱의 세부 분류 및 단순 버릇과의 5가지 구별법. 16년 이상 틱장애를 집중 치료해온 해아림한의원 김대억 대표원장(한방신경정신과 박사)의 심층 진료 안내."
+description: "틱 증상의 초기 신호, 운동틱과 음성틱의 세부 분류 및 단순 버릇과의 5가지 구별법. 16년 이상 틱장애를 집중 치료해온 해아림한의원 틱 클리닉의 심층 진료 안내."
 layout: "disease"
 url: "/tic-disorder/ticsymptom/"
 ---

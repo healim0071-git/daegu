@@ -8,7 +8,7 @@ disease_name: "틱장애"
 disease_slug: "tic-disorder"
 hide_clinic_guide: true
 is_secret: true
-description: "어린이틱증상의 부위별 진행 순서(눈, 코, 입, 목, 어깨, 음성)와 알레르기·비염 오인 사례 분석. 16년 이상 소아 틱장애를 진료해온 해아림한의원 김대억 대표원장의 임상 가이드."
+description: "어린이틱증상의 부위별 진행 순서(눈, 코, 입, 목, 어깨, 음성)와 알레르기·비염 오인 사례 분석. 16년 이상 소아 틱장애를 진료해온 해아림한의원 틱 클리닉의 임상 가이드."
 layout: "disease"
 url: "/tic-disorder/child-tic-symptom/"
 ---

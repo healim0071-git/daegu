@@ -8,7 +8,7 @@ disease_name: "틱장애"
 disease_slug: "tic-disorder"
 hide_clinic_guide: true
 is_secret: true
-description: "어린이틱장애의 초기 증상, 부모님이 절대 하지 말아야 할 3가지 수칙과 조기 치료의 중요성. 16년 이상 소아 틱장애를 치료해온 해아림한의원 김대억 대표원장(한방신경정신과 박사)의 자녀 안심 가이드."
+description: "어린이틱장애의 초기 증상, 부모님이 절대 하지 말아야 할 3가지 수칙과 조기 치료의 중요성. 16년 이상 소아 틱장애를 치료해온 해아림한의원 틱 클리닉의 자녀 안심 가이드."
 layout: "disease"
 url: "/tic-disorder/child-tic/"
 ---
