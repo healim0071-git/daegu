@@ -519,6 +519,7 @@
 
   // 
   var faqPool = [
+,
   {
     "idPrefix": "faq-auto-tic-1",
     "disease": "틱장애",
@@ -825,20 +826,8 @@
   // 가중치 확률 (틱 25, 공황 15, 불면 15, 자율신경 15, 나머지 각 6%)
   
   // ==============================================================================
-  // [지역명(11개 군) & 세부 동(읍·면) 데이터베이스 & 가중치 엔진,
-  {
-    "idPrefix": "faq-auto-clim-1",
-    "disease": "갱년기",
-    "q": "얼굴이 붉어지고 땀이 쏟아지는 안면홍조, 갱년기 증상인가요?",
-    "a": "네, 갱년기 여성의 약 75% 이상이 경험하는 대표적인 혈관운동성 증상입니다. 여성호르몬 급감으로 뇌 시상하부 체온조절 중추가 오작동하여 미세한 온도 변화에도 말초 혈관이 급격히 확장되어 얼굴, 목, 가슴 부위가 달아오르고 땀이 납니다. 한의학에서는 상열감을 식히고 진액을 보하는 보음청열(補陰淸熱) 맞춤 처방과 자율신경 이완 치료를 통해 체온 조절 시스템의 안정을 돕습니다."
-  },
-  {
-    "idPrefix": "faq-auto-clim-2",
-    "disease": "갱년기",
-    "q": "호르몬제 부작용이나 체중 증가 걱정 없이 갱년기 치료가 가능한가요?",
-    "a": "합성 호르몬 대체요법(HRT)에 부담을 느끼시거나 유방암, 자궁질환 등의 가족력으로 호르몬제 복용이 어려우신 분들에게 한의학적 진료는 매우 안전하고 효과적인 대안입니다. 인위적 호르몬 투여 없이 체내 자율신경 균형과 장부의 자생력을 길러주므로 신체 부담을 덜어주면서 안면홍조, 불면증, 관절통 등 복합 증상을 부드럽게 완화할 수 있습니다."
-  },]
-  // 대구(25%), 구미(20%), 경산(10%), 경주(10%), 포항 영덕(10%), 나머지 6개 지역(25%)
+  // [지역별(11개 시군) & 주요 읍면동] 데이터베이스 & 가중치 엔진
+  // 대구(25%), 구미(20%), 경산(10%), 경주(10%), 포항 영덕(10%), 나머지 6개 지역(총 25%)
   // ==============================================================================
   var REGION_DATA = [
     {
@@ -1598,6 +1587,156 @@
     }
   }
 
+  // ==============================================================================
+  // [신규 기능] 제목설정 맞춤 치료칼럼 생성 및 발행 엔진
+  // ==============================================================================
+  function detectDiseaseCategoryFromText(text) {
+    var t = String(text || '');
+    if (t.includes('틱') || t.includes('투렛') || t.includes('깜빡') || t.includes('음음') || t.includes('코찡긋')) return '틱장애';
+    if (t.includes('공황') || t.includes('과호흡') || t.includes('질식') || t.includes('심장두근') || t.includes('광장공포')) return '공황장애';
+    if (t.includes('불면') || t.includes('잠') || t.includes('수면') || t.includes('각성') || t.includes('입면')) return '불면증';
+    if (t.includes('자율신경') || t.includes('교감신경') || t.includes('부교감') || t.includes('미주신경') || t.includes('기립성')) return '자율신경';
+    if (t.includes('어지럼') || t.includes('이석') || t.includes('전정') || t.includes('메니에르') || t.includes('현훈')) return '어지럼증';
+    if (t.includes('ADHD') || t.includes('adhd') || t.includes('주의력') || t.includes('산만') || t.includes('과잉행동')) return 'ADHD';
+    if (t.includes('강박') || t.includes('결벽') || t.includes('확인강박') || t.includes('침투적')) return '강박증';
+    if (t.includes('사회공포') || t.includes('발표불안') || t.includes('대인기피') || t.includes('시선공포') || t.includes('무대공포')) return '사회공포';
+    if (t.includes('불안') || t.includes('초조') || t.includes('범불안') || t.includes('예기불안')) return '불안장애';
+    if (t.includes('다한') || t.includes('땀') || t.includes('수족다한') || t.includes('안면다한')) return '다한증';
+    return '틱장애';
+  }
+
+  function detectRegionFromText(text) {
+    var t = String(text || '');
+    for (var i = 0; i < REGION_DATA.length; i++) {
+      var r = REGION_DATA[i];
+      var baseName = r.name.split(' ')[0];
+      if (t.includes(r.name) || t.includes(baseName)) {
+        return r;
+      }
+    }
+    return pickRegionWithWeights();
+  }
+
+  function generateCustomColumnContentByTitle(userTitle, selectedCategory) {
+    if (!userTitle || !userTitle.trim()) {
+      return null;
+    }
+    var title = userTitle.trim();
+    var targetCategory = (selectedCategory && selectedCategory !== 'AUTO') 
+      ? selectedCategory 
+      : detectDiseaseCategoryFromText(title);
+
+    var regionObj = detectRegionFromText(title);
+    var dongsText = pickTwoDongs(regionObj.dongs);
+    var visitSentence = generateLocalVisitSentence(regionObj.name, dongsText, targetCategory);
+    var statText = getDiseaseStat(targetCategory);
+    var qnaObj = getDiseaseQna(targetCategory);
+
+    // columnsPool에서 해당 카테고리와 가장 잘 매칭되는 후보 선택
+    var poolCandidates = columnsPool.filter(function(p) {
+      return p.category === targetCategory;
+    });
+    if (poolCandidates.length === 0) {
+      poolCandidates = columnsPool;
+    }
+
+    var candidate = poolCandidates[0];
+    for (var i = 0; i < poolCandidates.length; i++) {
+      var item = poolCandidates[i];
+      var words = title.replace(/\[[^\]]+\]/g, '').split(/\s+/);
+      var matchCount = 0;
+      for (var w = 0; w < words.length; w++) {
+        if (words[w].length >= 2 && item.title.includes(words[w])) matchCount++;
+      }
+      if (matchCount > 0) {
+        candidate = item;
+        break;
+      }
+    }
+    if (!candidate) candidate = poolCandidates[Math.floor(Math.random() * poolCandidates.length)];
+
+    var cleanOrigContent = (candidate && candidate.content) ? candidate.content : '';
+    cleanOrigContent = cleanOrigContent.replace(/^\[AEO[^\]]+\]\s*/g, '');
+    cleanOrigContent = cleanOrigContent.replace(/^안녕하세요\.\s*해아림한의원입니다\.\s*/g, '').trim();
+
+    // 기존 자동발행되는 기준에 맞춘 정형화된 본문 조립
+    var generatedContent = '안녕하세요. 해아림한의원입니다.\n\n' +
+      visitSentence + '\n\n' +
+      statText + '\n\n' +
+      '[환자들이 가장 많이 묻는 핵심 질문과 답변]\n' +
+      qnaObj.qBody + '\n\n' +
+      qnaObj.aBody + '\n\n' +
+      '[' + targetCategory + ' 신경학적 원인과 해아림 맞춤 한방 치료 원리]\n' +
+      cleanOrigContent + '\n\n' +
+      '[치료 예후와 일상 생활 관리 안내]\n' +
+      '신경계 및 자율신경 불균형 질환은 증상 초기 두개천골요법(CST), 뇌신경 훈련, 체질 맞춤 한약 처방을 통해 뇌의 흥분도를 낮추고 자율신경 항상성을 회복하는 것이 핵심입니다. 규칙적인 수면과 이완 호흡법, 카페인 제한을 병행하시면 더욱 안정적인 호전을 기대할 수 있습니다.';
+
+    var generatedSummary = '[' + regionObj.name + ' ' + targetCategory + '] ' + regionObj.name + ' ' + dongsText + ' 및 인근 환자분들을 위한 ' + targetCategory + ' 전문 치료 가이드입니다.';
+
+    var sanitizedTitle = sanitizeMedicalCompliance(title);
+    var sanitizedContent = sanitizeMedicalCompliance(generatedContent);
+    var sanitizedSummary = sanitizeMedicalCompliance(generatedSummary);
+
+    return {
+      title: sanitizedTitle,
+      category: targetCategory,
+      content: sanitizedContent,
+      summary: sanitizedSummary,
+      region: regionObj.name,
+      dongs: dongsText,
+      author: '해아림한의원'
+    };
+  }
+
+  function publishCustomColumnPost(data) {
+    if (!data || !data.title || !data.content) {
+      alert('제목과 내용을 모두 입력해주세요.');
+      return null;
+    }
+    var raw = localStorage.getItem(STORAGE_BOARD_COL_KEY) || localStorage.getItem('healim_board_columns_permanent_backup');
+    var currentList = raw ? JSON.parse(raw) : [];
+    if (!Array.isArray(currentList)) currentList = [];
+
+    var now = new Date();
+    var dateStr = now.getFullYear() + '.' + String(now.getMonth() + 1).padStart(2, '0') + '.' + String(now.getDate()).padStart(2, '0');
+    var newPostId = 'col-custom-' + Date.now();
+
+    var sanitizedTitle = sanitizeMedicalCompliance(data.title.trim());
+    var sanitizedContent = sanitizeMedicalCompliance(data.content.trim());
+    var sanitizedSummary = data.summary ? sanitizeMedicalCompliance(data.summary) : (sanitizedTitle + ' 관련 해아림한의원 전문 치료칼럼입니다.');
+
+    var newPost = {
+      id: newPostId,
+      category: data.category || '치료칼럼',
+      title: sanitizedTitle,
+      author: data.author || '해아림한의원',
+      date: dateStr,
+      views: Math.floor(Math.random() * 50) + 140,
+      summary: sanitizedSummary,
+      content: sanitizedContent,
+      region: data.region || '대구 수성구',
+      dongs: data.dongs || '범어동·만촌동',
+      isAutoPublished: true
+    };
+
+    currentList.unshift(newPost);
+    localStorage.setItem(STORAGE_BOARD_COL_KEY, JSON.stringify(currentList));
+    try {
+      localStorage.setItem('healim_board_columns_permanent_backup', JSON.stringify(currentList));
+      if (typeof sessionStorage !== 'undefined') sessionStorage.setItem('healim_board_columns_backup', JSON.stringify(currentList));
+    } catch(e) {}
+
+    console.log('[Healim Custom-Column] Published:', newPost.title);
+
+    if (typeof window.renderColumnsList === 'function') window.renderColumnsList();
+    if (typeof window.renderCommonBottomRealtimeAll === 'function') window.renderCommonBottomRealtimeAll();
+    checkAndRunReviewsSync();
+    checkAndRunYoutubeSync();
+    updateAdminBadges();
+
+    return newPost;
+  }
+
   function triggerAutoColumnPublishManual() {
     var post = publishOneAutoColumn(true);
     if (post) {
@@ -1627,6 +1766,8 @@
   window.checkAndRunDualPublish = checkAndRunDualPublish;
   window.checkAndRunAutoColumnPublish = checkAndRunDualPublish; // 하위 호환
   window.triggerAutoColumnPublishManual = triggerAutoColumnPublishManual;
+  window.generateCustomColumnContentByTitle = generateCustomColumnContentByTitle;
+  window.publishCustomColumnPost = publishCustomColumnPost;
   window.triggerAutoFaqPublishManual = triggerAutoFaqPublishManual;
   window.checkAndRunReviewsSync = checkAndRunReviewsSync;
   window.checkAndRunYoutubeSync = checkAndRunYoutubeSync;
