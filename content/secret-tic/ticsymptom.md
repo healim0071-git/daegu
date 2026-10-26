@@ -97,7 +97,7 @@ url: "/tic-disorder/ticsymptom/"
 </div>
 
 <div style="background: #FEF3C7; border-left: 4px solid #F59E0B; padding: 14px 18px; border-radius: 0 8px 8px 0; margin: 18px 0; font-size: 0.95rem; color: #92400E;">
-<strong>⚠️ 전구감각충동(Premonitory Urge)의 이해</strong><br>
+<strong>⚠️ 전조감각충동(Premonitory Urge)의 이해</strong><br>
 틱 증상이 나타나기 직전 환자는 목, 어깨, 눈 안쪽 등에서 <em>"간질거리거나 답답해서 움직이지 않으면 견딜 수 없는 찝찝한 불쾌감"</em>을 느낍니다. 틱을 하고 나면 잠시 해소되지만 이내 다시 불쾌감이 차오르며 반복됩니다.
 </div>
 </div>
@@ -130,7 +130,7 @@ url: "/tic-disorder/ticsymptom/"
 <h2 class="cond-h2">16년 임상 노하우 『토닥토닥 틱장애』 저자의 1:1 심층 자생력 회복 치료</h2>
 <div style="line-height: 1.8; color: #334155; font-size: 1rem;">
 <p>
-해아림한의원 김대억 대표원장(한방신경정신과 박사)은 단순히 겉으로 드러나는 틱 증상만을 강제로 억누르는 치료를 지양합니다.
+해아림한의원 틱클리닉은 단순히 겉으로 드러나는 틱 증상만을 강제로 억누르는 치료를 지양합니다.
 </p>
 <p>
 대신, <strong>뇌 기저핵(Basal Ganglia)의 선별 억제 기능을 강화하고 전두엽과의 정보 교환 회로(CSTC 회로)를 정상화</strong>하여 스스로 불필요한 신호를 걸러낼 수 있도록 돕는 <strong>1:1 맞춤 두뇌 한약과 신경계 안정 훈련(뉴로피드백, 소리뇌파훈련, 두개천골요법 CST)</strong>을 통합 처방합니다.
