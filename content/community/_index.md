@@ -422,93 +422,80 @@ layout: single
 <!-- ============================================================== -->
 <!-- [신규] 제목설정 즉시발행 전용 모달 (최고관리자)                 -->
 <!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- 제목설정 즉시발행 전용 모달 (최고관리자)                           -->
+<!-- ============================================================== -->
 <div id="customTitlePublishModal" style="display: none; position: fixed; inset: 0; background: rgba(12, 67, 73, 0.68); z-index: 999999; align-items: center; justify-content: center; backdrop-filter: blur(5px); padding: 16px;">
-  <div style="background: #FFFFFF; border-radius: 20px; width: 100%; max-width: 760px; max-height: 92vh; overflow-y: auto; box-shadow: 0 25px 60px rgba(0,0,0,0.3); border: 1px solid #CBD5E1; padding: 26px 24px; position: relative;">
-    
-    <!-- 모달 헤더 -->
-    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid #E2E8F0; padding-bottom: 14px; margin-bottom: 18px;">
-      <div>
-        <h3 style="font-size: 19px; font-weight: 800; color: #0C4349; margin: 0; display: flex; align-items: center; gap: 8px;">
-          <span>✍️ 제목설정 즉시발행</span>
-          <span style="font-size: 11.5px; background: #E6F6F8; color: #146369; padding: 3px 8px; border-radius: 6px; font-weight: 700; border: 1px solid #BADFE3;">최고관리자</span>
-        </h3>
-        <p style="font-size: 12.5px; color: #64748B; margin: 5px 0 0 0;">
-          제목을 적고 <strong>[제목작성 즉시발행]</strong>을 누르면 기존 세팅 기준에 맞춰 글이 완성되며, 수정 후 <strong>[확인]</strong>을 누르면 치료칼럼에 포스팅됩니다.
-        </p>
-      </div>
-      <button type="button" onclick="closeCustomTitlePublishModal()" style="background: none; border: none; font-size: 28px; line-height: 1; cursor: pointer; color: #94A3B8; padding: 0 4px;" title="닫기">&times;</button>
-    </div>
-
-    <!-- 모달 본문 폼 -->
-    <div style="display: flex; flex-direction: column; gap: 14px;">
-      
-      <!-- 1. 제목을 적을 수 있는 칸 -->
-      <div>
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-          <label for="customTitleInput" style="font-size: 13.5px; font-weight: 700; color: #1E293B;">
-            칼럼 제목 <span style="color: #E11D48;">*</span>
-          </label>
-          <span style="font-size: 12px; color: #64748B;">예: [대구 틱장애] 틱 증상 악화 이유와 조기 한방 치료법</span>
-        </div>
-        <input type="text" id="customTitleInput" placeholder="제목을 적어주세요 (예: 수성구 공황장애 극복을 위한 한방 치료 원리와 호흡법)" style="width: 100%; box-sizing: border-box; padding: 11px 14px; border: 1.5px solid #94A3B8; border-radius: 9px; font-size: 14.5px; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='#146369';" onblur="this.style.borderColor='#94A3B8';" />
-      </div>
-
-      <!-- 2. 바로 아래 붙어있는 '제목작성 즉시발행' 버튼 -->
-      <div>
-        <button type="button" id="btnCustomTitleGenerate" onclick="handleCustomTitleGenerate()" style="width: 100%; padding: 12px 16px; background: linear-gradient(135deg, #146369 0%, #0F4B50 100%); color: #FFFFFF; border: none; border-radius: 9px; font-size: 14.5px; font-weight: 700; cursor: pointer; box-shadow: 0 3px 10px rgba(20,99,105,0.25); display: flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s;" onmouseover="this.style.opacity='0.95'; this.style.transform='translateY(-1px)';" onmouseout="this.style.opacity='1'; this.style.transform='translateY(0)';">
-          <span>⚡ 제목작성 즉시발행</span>
-        </button>
-      </div>
-
-      <!-- 보조 정보 (질환 분류 및 작성자) -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; background: #F8FAFC; padding: 10px 14px; border-radius: 8px; border: 1px solid #E2E8F0;">
-        <div>
-          <label style="display: block; font-size: 12px; font-weight: 700; color: #475569; margin-bottom: 4px;">질환 분류</label>
-          <select id="customTitleCategory" style="width: 100%; padding: 7px 10px; border: 1px solid #CBD5E1; border-radius: 6px; font-size: 13px; background: #FFF; color: #334155;">
-            <option value="AUTO">자동 감지 (제목 기반)</option>
-            <option value="틱장애">틱장애</option>
-            <option value="공황장애">공황장애</option>
-            <option value="불면증">불면증</option>
-            <option value="자율신경">자율신경</option>
-            <option value="어지럼증">어지럼증</option>
-            <option value="ADHD">ADHD</option>
-            <option value="강박증">강박증</option>
-            <option value="사회공포">사회공포</option>
-            <option value="불안장애">불안장애</option>
-            <option value="다한증">다한증</option>
-          </select>
-        </div>
-        <div>
-          <label style="display: block; font-size: 12px; font-weight: 700; color: #475569; margin-bottom: 4px;">작성자</label>
-          <input type="text" id="customTitleAuthor" value="해아림한의원" style="width: 100%; box-sizing: border-box; padding: 7px 10px; border: 1px solid #CBD5E1; border-radius: 6px; font-size: 13px; background: #FFF; color: #334155;" />
-        </div>
-      </div>
-
-      <!-- 3. 제목에 맞는 내용으로 글이 수정가능한 상태로 만들어져 나오는 칸 -->
-      <div>
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
-          <label for="customTitleContent" style="font-size: 13.5px; font-weight: 700; color: #1E293B;">
-            치료칼럼 본문 <span style="font-size: 12px; font-weight: bold; color: #059669;">(수정 가능한 상태)</span>
-          </label>
-          <span id="customTitleStatusMsg" style="font-size: 12px; color: #64748B;">'제목작성 즉시발행' 버튼을 누르면 본문이 생성됩니다</span>
-        </div>
-        <textarea id="customTitleContent" rows="12" placeholder="'제목작성 즉시발행' 버튼을 누르면 기존에 세팅된 치료칼럼 기준(원인 분석, 보건통계 근거, Q&A, 해아림 한방치료, 의료법 제56조 준수)에 부합하는 글이 여기에 수정 가능한 상태로 생성됩니다." style="width: 100%; box-sizing: border-box; padding: 12px 14px; border: 1.5px solid #CBD5E1; border-radius: 9px; font-size: 14px; line-height: 1.68; color: #1E293B; resize: vertical; outline: none; font-family: inherit; transition: border-color 0.2s;" onfocus="this.style.borderColor='#146369';" onblur="this.style.borderColor='#CBD5E1';"></textarea>
-      </div>
-
-      <!-- 4. 그 아래에 있는 확인 버튼 및 취소 버튼 -->
-      <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 6px; padding-top: 14px; border-top: 1.5px solid #E2E8F0;">
-        <button type="button" onclick="closeCustomTitlePublishModal()" style="padding: 10px 22px; border: 1px solid #CBD5E1; background: #FFFFFF; color: #475569; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F1F5F9';" onmouseout="this.style.background='#FFFFFF';">
-          취소
-        </button>
-        <button type="button" id="btnCustomTitleConfirm" onclick="handleCustomTitleConfirm()" style="padding: 10px 30px; background: #146369; color: #FFFFFF; border: none; border-radius: 8px; font-size: 14.5px; font-weight: 800; cursor: pointer; box-shadow: 0 2px 8px rgba(20,99,105,0.3); transition: all 0.2s;" onmouseover="this.style.background='#0B4045'; this.style.transform='translateY(-1px)';" onmouseout="this.style.background='#146369'; this.style.transform='translateY(0)';">
-          확인
-        </button>
-      </div>
-
-    </div>
-  </div>
+<div style="background: #FFFFFF; border-radius: 20px; width: 100%; max-width: 760px; max-height: 92vh; overflow-y: auto; box-shadow: 0 25px 60px rgba(0,0,0,0.3); border: 1px solid #CBD5E1; padding: 26px 24px; position: relative;">
+<div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid #E2E8F0; padding-bottom: 14px; margin-bottom: 18px;">
+<div>
+<h3 style="font-size: 19px; font-weight: 800; color: #0C4349; margin: 0; display: flex; align-items: center; gap: 8px;">
+<span>✍️ 제목설정 즉시발행</span>
+<span style="font-size: 11.5px; background: #E6F6F8; color: #146369; padding: 3px 8px; border-radius: 6px; font-weight: 700; border: 1px solid #BADFE3;">최고관리자</span>
+</h3>
+<p style="font-size: 12.5px; color: #64748B; margin: 5px 0 0 0;">
+제목을 적고 <strong>[제목작성 즉시발행]</strong>을 누르면 기존 세팅 기준에 맞춰 글이 완성되며, 수정 후 <strong>[확인]</strong>을 누르면 치료칼럼에 포스팅됩니다.
+</p>
 </div>
-
+<button type="button" onclick="closeCustomTitlePublishModal()" style="background: none; border: none; font-size: 28px; line-height: 1; cursor: pointer; color: #94A3B8; padding: 0 4px;" title="닫기">&times;</button>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px;">
+<div>
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+<label for="customTitleInput" style="font-size: 13.5px; font-weight: 700; color: #1E293B;">
+칼럼 제목 <span style="color: #E11D48;">*</span>
+</label>
+<span style="font-size: 12px; color: #64748B;">예: [대구 틱장애] 틱 증상 악화 이유와 조기 한방 치료법</span>
+</div>
+<input type="text" id="customTitleInput" placeholder="제목을 적어주세요 (예: 수성구 공황장애 극복을 위한 한방 치료 원리와 호흡법)" style="width: 100%; box-sizing: border-box; padding: 11px 14px; border: 1.5px solid #94A3B8; border-radius: 9px; font-size: 14.5px; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='#146369';" onblur="this.style.borderColor='#94A3B8';" />
+</div>
+<div>
+<button type="button" id="btnCustomTitleGenerate" onclick="handleCustomTitleGenerate()" style="width: 100%; padding: 12px 16px; background: linear-gradient(135deg, #146369 0%, #0F4B50 100%); color: #FFFFFF; border: none; border-radius: 9px; font-size: 14.5px; font-weight: 700; cursor: pointer; box-shadow: 0 3px 10px rgba(20,99,105,0.25); display: flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s;" onmouseover="this.style.opacity='0.95'; this.style.transform='translateY(-1px)';" onmouseout="this.style.opacity='1'; this.style.transform='translateY(0)';">
+<span>⚡ 제목작성 즉시발행</span>
+</button>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; background: #F8FAFC; padding: 10px 14px; border-radius: 8px; border: 1px solid #E2E8F0;">
+<div>
+<label style="display: block; font-size: 12px; font-weight: 700; color: #475569; margin-bottom: 4px;">질환 분류</label>
+<select id="customTitleCategory" style="width: 100%; padding: 7px 10px; border: 1px solid #CBD5E1; border-radius: 6px; font-size: 13px; background: #FFF; color: #334155;">
+<option value="AUTO">자동 감지 (제목 기반)</option>
+<option value="틱장애">틱장애</option>
+<option value="공황장애">공황장애</option>
+<option value="불면증">불면증</option>
+<option value="자율신경">자율신경</option>
+<option value="어지럼증">어지럼증</option>
+<option value="ADHD">ADHD</option>
+<option value="강박증">강박증</option>
+<option value="사회공포">사회공포</option>
+<option value="불안장애">불안장애</option>
+<option value="다한증">다한증</option>
+</select>
+</div>
+<div>
+<label style="display: block; font-size: 12px; font-weight: 700; color: #475569; margin-bottom: 4px;">작성자</label>
+<input type="text" id="customTitleAuthor" value="해아림한의원" style="width: 100%; box-sizing: border-box; padding: 7px 10px; border: 1px solid #CBD5E1; border-radius: 6px; font-size: 13px; background: #FFF; color: #334155;" />
+</div>
+</div>
+<div>
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+<label for="customTitleContent" style="font-size: 13.5px; font-weight: 700; color: #1E293B;">
+치료칼럼 본문 <span style="font-size: 12px; font-weight: bold; color: #059669;">(수정 가능한 상태)</span>
+</label>
+<span id="customTitleStatusMsg" style="font-size: 12px; color: #64748B;">'제목작성 즉시발행' 버튼을 누르면 본문이 생성됩니다</span>
+</div>
+<textarea id="customTitleContent" rows="12" placeholder="'제목작성 즉시발행' 버튼을 누르면 기존에 세팅된 치료칼럼 기준(원인 분석, 보건통계 근거, Q&A, 해아림 한방치료, 의료법 제56조 준수)에 부합하는 글이 여기에 수정 가능한 상태로 생성됩니다." style="width: 100%; box-sizing: border-box; padding: 12px 14px; border: 1.5px solid #CBD5E1; border-radius: 9px; font-size: 14px; line-height: 1.68; color: #1E293B; resize: vertical; outline: none; font-family: inherit; transition: border-color 0.2s;" onfocus="this.style.borderColor='#146369';" onblur="this.style.borderColor='#CBD5E1';"></textarea>
+</div>
+<div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 6px; padding-top: 14px; border-top: 1.5px solid #E2E8F0;">
+<button type="button" onclick="closeCustomTitlePublishModal()" style="padding: 10px 22px; border: 1px solid #CBD5E1; background: #FFFFFF; color: #475569; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F1F5F9';" onmouseout="this.style.background='#FFFFFF';">
+취소
+</button>
+<button type="button" id="btnCustomTitleConfirm" onclick="handleCustomTitleConfirm()" style="padding: 10px 30px; background: #146369; color: #FFFFFF; border: none; border-radius: 8px; font-size: 14.5px; font-weight: 800; cursor: pointer; box-shadow: 0 2px 8px rgba(20,99,105,0.3); transition: all 0.2s;" onmouseover="this.style.background='#0B4045'; this.style.transform='translateY(-1px)';" onmouseout="this.style.background='#146369'; this.style.transform='translateY(0)';">
+확인
+</button>
+</div>
+</div>
+</div>
+</div>
 
 <div id="columnWriteModal" style="display: none; position: fixed; inset: 0; background: rgba(12, 67, 73, 0.65); z-index: 99999; align-items: center; justify-content: center; backdrop-filter: blur(4px); padding: 16px;">
 <div style="background: #FFFFFF; border-radius: 20px; width: 100%; max-width: 680px; max-height: 90vh; overflow-y: auto; box-shadow: 0 25px 50px rgba(0,0,0,0.25); border: 1px solid #E2E8F0; padding: 28px 24px;">
