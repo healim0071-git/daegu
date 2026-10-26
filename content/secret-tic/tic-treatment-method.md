@@ -42,14 +42,14 @@ url: "/tic-disorder/tic-treatment-method/"
 
 <!-- 2. 틱장애 치료방법 비교 테이블 -->
 <div class="cond-section">
-<h2 class="cond-h2">양방 약물 억제 치료 vs 해아림 한방 자생력 치료 비교</h2>
+<h2 class="cond-h2">자생력과 회복탄력성을 키워야</h2>
 <div style="overflow-x: auto; margin-bottom: 24px;">
 <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.95rem; background: #FFFFFF; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.04);">
   <thead>
     <tr style="background: #0C4349; color: #FFFFFF;">
       <th style="padding: 14px 16px; border: 1px solid #146369;">구분</th>
-      <th style="padding: 14px 16px; border: 1px solid #146369;">양방 도파민 억제 치료</th>
-      <th style="padding: 14px 16px; border: 1px solid #146369;">해아림 1:1 심층 한방 치료</th>
+      <th style="padding: 14px 16px; border: 1px solid #146369;">도파민 억제시 나타나는 반응</th>
+      <th style="padding: 14px 16px; border: 1px solid #146369;">궁극적인 치료 목표</th>
     </tr>
   </thead>
   <tbody style="color: #334155;">
