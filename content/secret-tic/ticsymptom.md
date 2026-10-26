@@ -1,14 +1,14 @@
 ---
-title: "틱 증상 ㅣ 해아림한의원 대구본점"
-seo_title: "틱 증상 ㅣ 해아림한의원 대구본점"
-h1_title: "틱 증상 ㅣ 해아림한의원 대구본점"
-hero_title: "틱 증상 ㅣ 해아림한의원 대구본점"
+title: "틱 증상 ㅣ 해아림한의원"
+seo_title: "틱 증상 ㅣ 해아림한의원"
+h1_title: "틱 증상 ㅣ 해아림한의원"
+hero_title: "틱 증상 ㅣ 해아림한의원"
 hero_sub: "틱 증상 감별 진단 및 뇌신경계 자생력 회복 | 해아림한의원"
 disease_name: "틱장애"
 disease_slug: "tic-disorder"
 hide_clinic_guide: true
 is_secret: true
-description: "틱 증상의 초기 신호, 운동틱과 음성틱의 세부 분류 및 단순 버릇과의 5가지 구별법. 16년 이상 틱장애를 집중 치료해온 해아림한의원 대구본점 김대억 대표원장(한방신경정신과 박사)의 심층 진료 안내."
+description: "틱 증상의 초기 신호, 운동틱과 음성틱의 세부 분류 및 단순 버릇과의 5가지 구별법. 16년 이상 틱장애를 집중 치료해온 해아림한의원 김대억 대표원장(한방신경정신과 박사)의 심층 진료 안내."
 layout: "disease"
 url: "/tic-disorder/ticsymptom/"
 ---
@@ -57,17 +57,10 @@ url: "/tic-disorder/ticsymptom/"
   <p style="font-size: 1.12rem; font-weight: 800; color: #0C4349; margin: 0 0 6px;">
     "우리 아이의 반복되는 증상, 지금 바로 진료 상담이 필요할까요?"
   </p>
-  <p style="font-size: 0.92rem; color: #4A6B70; line-height: 1.55; margin: 0 0 16px;">
+  <p style="font-size: 0.92rem; color: #4A6B70; line-height: 1.55; margin: 0;">
     16년 이상 틱장애·뚜렛증후군을 집중 연구해온 한방신경정신과 박사 김대억 대표원장의 1:1 심층 진료가 함께합니다.
   </p>
-  <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-    <a href="tel:053-751-0071" style="display: inline-flex; align-items: center; gap: 6px; background: #146369; color: #FFFFFF !important; font-weight: 800; font-size: 14.5px; padding: 11px 22px; border-radius: 8px; text-decoration: none; box-shadow: 0 4px 12px rgba(20, 99, 105, 0.22);">
-      📞 053-751-0071 전화 상담·예약
-    </a>
-    <a href="https://naver.me/FDQX9ZIr" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 6px; background: #03C75A; color: #FFFFFF !important; font-weight: 800; font-size: 14px; padding: 11px 18px; border-radius: 8px; text-decoration: none;">
-      🗺️ 네이버 지도 바로가기
-    </a>
-  </div>
+  
 </div>
 
 </div>
@@ -132,12 +125,12 @@ url: "/tic-disorder/ticsymptom/"
 </div>
 
 
-<!-- 4. 해아림한의원 대구본점 틱 증상 맞춤 진료 -->
+<!-- 4. 해아림한의원 틱 증상 맞춤 진료 -->
 <div class="cond-section">
 <h2 class="cond-h2">16년 임상 노하우 『토닥토닥 틱장애』 저자의 1:1 심층 자생력 회복 치료</h2>
 <div style="line-height: 1.8; color: #334155; font-size: 1rem;">
 <p>
-해아림한의원 대구본점 김대억 대표원장(한방신경정신과 박사)은 단순히 겉으로 드러나는 틱 증상만을 강제로 억누르는 치료를 지양합니다.
+해아림한의원 김대억 대표원장(한방신경정신과 박사)은 단순히 겉으로 드러나는 틱 증상만을 강제로 억누르는 치료를 지양합니다.
 </p>
 <p>
 대신, <strong>뇌 기저핵(Basal Ganglia)의 선별 억제 기능을 강화하고 전두엽과의 정보 교환 회로(CSTC 회로)를 정상화</strong>하여 스스로 불필요한 신호를 걸러낼 수 있도록 돕는 <strong>1:1 맞춤 두뇌 한약과 신경계 안정 훈련(뉴로피드백, 소리뇌파훈련, 두개천골요법 CST)</strong>을 통합 처방합니다.

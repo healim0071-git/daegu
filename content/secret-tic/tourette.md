@@ -1,14 +1,14 @@
 ---
-title: "뚜렛증후군(뚜렛장애) ㅣ 해아림한의원 대구본점"
-seo_title: "뚜렛증후군(뚜렛장애) ㅣ 해아림한의원 대구본점"
-h1_title: "뚜렛증후군(뚜렛장애) ㅣ 해아림한의원 대구본점"
-hero_title: "뚜렛증후군(뚜렛장애) ㅣ 해아림한의원 대구본점"
+title: "뚜렛증후군(뚜렛장애) ㅣ 해아림한의원"
+seo_title: "뚜렛증후군(뚜렛장애) ㅣ 해아림한의원"
+h1_title: "뚜렛증후군(뚜렛장애) ㅣ 해아림한의원"
+hero_title: "뚜렛증후군(뚜렛장애) ㅣ 해아림한의원"
 hero_sub: "1년 이상 지속된 복합 운동틱과 음성틱의 한방신경정신과 심층 치료 | 해아림한의원"
 disease_name: "틱장애"
 disease_slug: "tic-disorder"
 hide_clinic_guide: true
 is_secret: true
-description: "뚜렛증후군(뚜렛장애)의 진단 기준, 동반 질환(ADHD·강박)과의 복합 양상 및 뇌 신경계 자생력 회복 치료법. 16년 이상 틱장애·뚜렛증후군을 치료해온 해아림한의원 대구본점 김대억 대표원장의 임상 분석."
+description: "뚜렛증후군(뚜렛장애)의 진단 기준, 동반 질환(ADHD·강박)과의 복합 양상 및 뇌 신경계 자생력 회복 치료법. 16년 이상 틱장애·뚜렛증후군을 치료해온 해아림한의원 김대억 대표원장의 임상 분석."
 layout: "disease"
 url: "/tic-disorder/tourette/"
 ---
@@ -32,17 +32,10 @@ url: "/tic-disorder/tourette/"
   <p style="font-size: 1.12rem; font-weight: 800; color: #0C4349; margin: 0 0 6px;">
     "우리 아이의 반복되는 증상, 지금 바로 진료 상담이 필요할까요?"
   </p>
-  <p style="font-size: 0.92rem; color: #4A6B70; line-height: 1.55; margin: 0 0 16px;">
+  <p style="font-size: 0.92rem; color: #4A6B70; line-height: 1.55; margin: 0;">
     16년 이상 틱장애·뚜렛증후군을 집중 연구해온 한방신경정신과 박사 김대억 대표원장의 1:1 심층 진료가 함께합니다.
   </p>
-  <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-    <a href="tel:053-751-0071" style="display: inline-flex; align-items: center; gap: 6px; background: #146369; color: #FFFFFF !important; font-weight: 800; font-size: 14.5px; padding: 11px 22px; border-radius: 8px; text-decoration: none; box-shadow: 0 4px 12px rgba(20, 99, 105, 0.22);">
-      📞 053-751-0071 전화 상담·예약
-    </a>
-    <a href="https://naver.me/FDQX9ZIr" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 6px; background: #03C75A; color: #FFFFFF !important; font-weight: 800; font-size: 14px; padding: 11px 18px; border-radius: 8px; text-decoration: none;">
-      🗺️ 네이버 지도 바로가기
-    </a>
-  </div>
+  
 </div>
 
 </div>
@@ -79,10 +72,10 @@ url: "/tic-disorder/tourette/"
 
 <!-- 3. 해아림의 뚜렛증후군 심층 치료법 -->
 <div class="cond-section">
-<h2 class="cond-h2">해아림한의원 대구본점의 뚜렛증후군 1:1 맞춤 치료</h2>
+<h2 class="cond-h2">해아림한의원의 뚜렛증후군 1:1 맞춤 치료</h2>
 <div style="line-height: 1.8; color: #334155; font-size: 1rem;">
 <p>
-해아림한의원 대구본점 김대억 대표원장은 16여 년간 틱장애와 뚜렛증후군을 집중 진료하며 단행본 『토닥토닥 틱장애』를 저술한 한방신경정신과 박사입니다.
+해아림한의원 김대억 대표원장은 16여 년간 틱장애와 뚜렛증후군을 집중 진료하며 단행본 『토닥토닥 틱장애』를 저술한 한방신경정신과 박사입니다.
 </p>
 <ul style="padding-left: 20px; margin: 14px 0;">
   <li><strong>피질-선조체-시상-피질(CSTC) 회로 안정 한약:</strong> 기저핵의 과도한 흥분을 진정시키고 도파민 수용체 감수성을 안정화합니다.</li>

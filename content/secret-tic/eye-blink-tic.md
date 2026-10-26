@@ -1,14 +1,14 @@
 ---
-title: "눈깜빡임틱 ㅣ 해아림한의원 대구본점"
-seo_title: "눈깜빡임틱 ㅣ 해아림한의원 대구본점"
-h1_title: "눈깜빡임틱 ㅣ 해아림한의원 대구본점"
-hero_title: "눈깜빡임틱 ㅣ 해아림한의원 대구본점"
+title: "눈깜빡임틱 ㅣ 해아림한의원"
+seo_title: "눈깜빡임틱 ㅣ 해아림한의원"
+h1_title: "눈깜빡임틱 ㅣ 해아림한의원"
+hero_title: "눈깜빡임틱 ㅣ 해아림한의원"
 hero_sub: "틱장애의 가장 흔한 첫 신호, 눈깜빡임틱의 원인과 골든타임 치료 | 해아림한의원"
 disease_name: "틱장애"
 disease_slug: "tic-disorder"
 hide_clinic_guide: true
 is_secret: true
-description: "눈깜빡임틱, 결막염·안구건조증과의 구별법과 방치 시 목·어깨·음성틱으로의 전이 위험성. 16년 임상 노하우 해아림한의원 대구본점 김대억 대표원장(한방신경정신과 박사)의 정밀 분석."
+description: "눈깜빡임틱, 결막염·안구건조증과의 구별법과 방치 시 목·어깨·음성틱으로의 전이 위험성. 16년 임상 노하우 해아림한의원 김대억 대표원장(한방신경정신과 박사)의 정밀 분석."
 layout: "disease"
 url: "/tic-disorder/eye-blink-tic/"
 ---
@@ -32,17 +32,10 @@ url: "/tic-disorder/eye-blink-tic/"
   <p style="font-size: 1.12rem; font-weight: 800; color: #0C4349; margin: 0 0 6px;">
     "우리 아이의 반복되는 증상, 지금 바로 진료 상담이 필요할까요?"
   </p>
-  <p style="font-size: 0.92rem; color: #4A6B70; line-height: 1.55; margin: 0 0 16px;">
+  <p style="font-size: 0.92rem; color: #4A6B70; line-height: 1.55; margin: 0;">
     16년 이상 틱장애·뚜렛증후군을 집중 연구해온 한방신경정신과 박사 김대억 대표원장의 1:1 심층 진료가 함께합니다.
   </p>
-  <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-    <a href="tel:053-751-0071" style="display: inline-flex; align-items: center; gap: 6px; background: #146369; color: #FFFFFF !important; font-weight: 800; font-size: 14.5px; padding: 11px 22px; border-radius: 8px; text-decoration: none; box-shadow: 0 4px 12px rgba(20, 99, 105, 0.22);">
-      📞 053-751-0071 전화 상담·예약
-    </a>
-    <a href="https://naver.me/FDQX9ZIr" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 6px; background: #03C75A; color: #FFFFFF !important; font-weight: 800; font-size: 14px; padding: 11px 18px; border-radius: 8px; text-decoration: none;">
-      🗺️ 네이버 지도 바로가기
-    </a>
-  </div>
+  
 </div>
 
 </div>

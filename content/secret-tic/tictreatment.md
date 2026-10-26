@@ -1,14 +1,14 @@
 ---
-title: "틱 치료 ㅣ 해아림한의원 대구본점"
-seo_title: "틱 치료 ㅣ 해아림한의원 대구본점"
-h1_title: "틱 치료 ㅣ 해아림한의원 대구본점"
-hero_title: "틱 치료 ㅣ 해아림한의원 대구본점"
+title: "틱 치료 ㅣ 해아림한의원"
+seo_title: "틱 치료 ㅣ 해아림한의원"
+h1_title: "틱 치료 ㅣ 해아림한의원"
+hero_title: "틱 치료 ㅣ 해아림한의원"
 hero_sub: "일시적 억제를 넘어 뇌신경계 자생력을 깨우는 1:1 심층 틱 치료 | 해아림한의원"
 disease_name: "틱장애"
 disease_slug: "tic-disorder"
 hide_clinic_guide: true
 is_secret: true
-description: "틱 치료, 억제제 의존을 줄이고 뇌 신경계의 자생력을 길러 안정적인 상태 유지를 돕는 한방신경정신과 1:1 심층 치료법. 16년 이상 틱장애를 집중 진료해온 해아림한의원 대구본점 김대억 대표원장의 임상 가이드."
+description: "틱 치료, 억제제 의존을 줄이고 뇌 신경계의 자생력을 길러 안정적인 상태 유지를 돕는 한방신경정신과 1:1 심층 치료법. 16년 이상 틱장애를 집중 진료해온 해아림한의원 김대억 대표원장의 임상 가이드."
 layout: "disease"
 url: "/tic-disorder/tictreatment/"
 ---
@@ -32,24 +32,17 @@ url: "/tic-disorder/tictreatment/"
   <p style="font-size: 1.12rem; font-weight: 800; color: #0C4349; margin: 0 0 6px;">
     "우리 아이의 반복되는 증상, 지금 바로 진료 상담이 필요할까요?"
   </p>
-  <p style="font-size: 0.92rem; color: #4A6B70; line-height: 1.55; margin: 0 0 16px;">
+  <p style="font-size: 0.92rem; color: #4A6B70; line-height: 1.55; margin: 0;">
     16년 이상 틱장애·뚜렛증후군을 집중 연구해온 한방신경정신과 박사 김대억 대표원장의 1:1 심층 진료가 함께합니다.
   </p>
-  <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-    <a href="tel:053-751-0071" style="display: inline-flex; align-items: center; gap: 6px; background: #146369; color: #FFFFFF !important; font-weight: 800; font-size: 14.5px; padding: 11px 22px; border-radius: 8px; text-decoration: none; box-shadow: 0 4px 12px rgba(20, 99, 105, 0.22);">
-      📞 053-751-0071 전화 상담·예약
-    </a>
-    <a href="https://naver.me/FDQX9ZIr" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 6px; background: #03C75A; color: #FFFFFF !important; font-weight: 800; font-size: 14px; padding: 11px 18px; border-radius: 8px; text-decoration: none;">
-      🗺️ 네이버 지도 바로가기
-    </a>
-  </div>
+  
 </div>
 
 </div>
 
 <!-- 2. 해아림 틱 치료 4단계 정밀 프로세스 -->
 <div class="cond-section">
-<h2 class="cond-h2">해아림한의원 대구본점의 틱 치료 4단계 통합 시스템</h2>
+<h2 class="cond-h2">해아림한의원의 틱 치료 4단계 통합 시스템</h2>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 24px;">
   <div style="background: #F8FAFB; border: 1px solid #D6E4EE; border-radius: 12px; padding: 20px 18px;">

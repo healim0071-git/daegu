@@ -1,14 +1,14 @@
 ---
-title: "틱장애치료방법 ㅣ 해아림한의원 대구본점"
-seo_title: "틱장애치료방법 ㅣ 해아림한의원 대구본점"
-h1_title: "틱장애치료방법 ㅣ 해아림한의원 대구본점"
-hero_title: "틱장애치료방법 ㅣ 해아림한의원 대구본점"
+title: "틱장애치료방법 ㅣ 해아림한의원"
+seo_title: "틱장애치료방법 ㅣ 해아림한의원"
+h1_title: "틱장애치료방법 ㅣ 해아림한의원"
+hero_title: "틱장애치료방법 ㅣ 해아림한의원"
 hero_sub: "신체 부담을 덜고 뇌신경 자생력을 깨우는 통합 한방 집중진료 | 해아림한의원"
 disease_name: "틱장애"
 disease_slug: "tic-disorder"
 hide_clinic_guide: true
 is_secret: true
-description: "틱장애치료방법 총정리: 양약 억제제와 한방 자생력 치료의 차이점 및 한약, 두뇌훈련, CST 수기요법 4단계 종합 치료 로드맵. 16년 임상 노하우 해아림한의원 대구본점 김대억 박사."
+description: "틱장애치료방법 총정리: 양약 억제제와 한방 자생력 치료의 차이점 및 한약, 두뇌훈련, CST 수기요법 4단계 종합 치료 로드맵. 16년 임상 노하우 해아림한의원 김대억 박사."
 layout: "disease"
 url: "/tic-disorder/tic-treatment-method/"
 ---
@@ -22,7 +22,7 @@ url: "/tic-disorder/tic-treatment-method/"
 기존의 신경과나 정신건강의학과에서 주로 처방하는 항정신병 약물(할로페리돌, 아리피프라졸 등)은 도파민 수용체를 직접 차단하여 증상을 빠르게 억제하지만, <strong>체중 증가, 졸림, 무기력, 집중력 저하, 약 복용 중단 시의 반동성 악화</strong>라는 한계가 따릅니다.
 </p>
 <p style="margin: 0; color: #475569;">
-해아림한의원 대구본점의 틱장애치료방법은 <strong>약에 의존하지 않고 두뇌 스스로가 불필요한 운동 신호를 제어할 수 있는 자생력을 키우는 다각적 통합 치료</strong>입니다.
+해아림한의원의 틱장애치료방법은 <strong>약에 의존하지 않고 두뇌 스스로가 불필요한 운동 신호를 제어할 수 있는 자생력을 키우는 다각적 통합 치료</strong>입니다.
 </p>
 </div>
 
@@ -32,17 +32,10 @@ url: "/tic-disorder/tic-treatment-method/"
   <p style="font-size: 1.12rem; font-weight: 800; color: #0C4349; margin: 0 0 6px;">
     "우리 아이의 반복되는 증상, 지금 바로 진료 상담이 필요할까요?"
   </p>
-  <p style="font-size: 0.92rem; color: #4A6B70; line-height: 1.55; margin: 0 0 16px;">
+  <p style="font-size: 0.92rem; color: #4A6B70; line-height: 1.55; margin: 0;">
     16년 이상 틱장애·뚜렛증후군을 집중 연구해온 한방신경정신과 박사 김대억 대표원장의 1:1 심층 진료가 함께합니다.
   </p>
-  <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
-    <a href="tel:053-751-0071" style="display: inline-flex; align-items: center; gap: 6px; background: #146369; color: #FFFFFF !important; font-weight: 800; font-size: 14.5px; padding: 11px 22px; border-radius: 8px; text-decoration: none; box-shadow: 0 4px 12px rgba(20, 99, 105, 0.22);">
-      📞 053-751-0071 전화 상담·예약
-    </a>
-    <a href="https://naver.me/FDQX9ZIr" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 6px; background: #03C75A; color: #FFFFFF !important; font-weight: 800; font-size: 14px; padding: 11px 18px; border-radius: 8px; text-decoration: none;">
-      🗺️ 네이버 지도 바로가기
-    </a>
-  </div>
+  
 </div>
 
 </div>
@@ -96,7 +89,7 @@ url: "/tic-disorder/tic-treatment-method/"
 
 <!-- 3. 해아림의 3대 핵심 치료 솔루션 -->
 <div class="cond-section">
-<h2 class="cond-h2">해아림한의원 대구본점 틱장애치료방법의 3대 솔루션</h2>
+<h2 class="cond-h2">해아림한의원 틱장애치료방법의 3대 솔루션</h2>
 <div style="background: #F8FAFB; border: 1px solid #E2E8F0; border-radius: 12px; padding: 22px 24px; line-height: 1.8; color: #334155; font-size: 0.98rem;">
 <ul style="padding-left: 20px; margin: 0;">
   <li style="margin-bottom: 12px;"><strong>1. 뇌신경계 조절력 강화 1:1 맞춤 한약:</strong> 장부의 허실과 체질을 감별하여 심장의 열을 식히고 간기의 울체를 풀어 뇌 신경세포의 흥분성을 정상 수준으로 낮춥니다.</li>
