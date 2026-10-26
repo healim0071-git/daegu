@@ -43,7 +43,7 @@ url: "/tic-disorder/child-tic-symptom/"
 <!-- 2. 단계별 어린이틱증상 진행 지도 -->
 <div class="cond-section">
 <h2 class="cond-h2">어린이틱증상 부위별 발현 4단계</h2>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 24px;">
+<div class="grid-2x2-cards" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 24px;">
   <div style="background: #F8FAFB; border: 1.5px solid #C4DCE8; border-radius: 12px; padding: 20px 18px;">
     <div style="background: #0C4349; color: #FFF; font-size: 12px; font-weight: 800; padding: 3px 8px; border-radius: 4px; display: inline-block;">1단계 (가장 흔한 초기)</div>
     <h3 style="font-size: 1.08rem; font-weight: 800; color: #0C4349; margin: 10px 0 6px;">눈·코 미세 안면틱</h3>

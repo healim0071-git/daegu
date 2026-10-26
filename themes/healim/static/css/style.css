@@ -4515,3 +4515,17 @@ ul.bottom-cards-grid > li {
   }
 }
 
+
+
+/* ── 4단계 / 4대 요인 2x2 대칭 반응형 카드 그리드 (데스크톱 2열, 모바일 1열) ── */
+.grid-2x2-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+@media (max-width: 680px) {
+  .grid-2x2-cards {
+    grid-template-columns: 1fr !important;
+  }
+}

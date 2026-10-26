@@ -43,7 +43,7 @@ url: "/tic-disorder/tic-causes/"
 <!-- 2. 틱장애 4대 복합 발생 원인 -->
 <div class="cond-section">
 <h2 class="cond-h2">의학적으로 밝혀진 틱원인 4대 핵심 요인</h2>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 24px;">
+<div class="grid-2x2-cards" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 24px;">
   <div style="background: #F8FAFB; border: 1.5px solid #D6E4EE; border-radius: 12px; padding: 20px 18px;">
     <h3 style="font-size: 1.05rem; font-weight: 800; color: #0C4349; margin: 0 0 8px;">1. 신경해부학적 요인 (기저핵 미숙)</h3>
     <p style="font-size: 0.92rem; color: #475569; line-height: 1.6; margin: 0;">뇌의 피질-선조체-시상-피질(CSTC) 회로는 불필요한 운동 신호를 걸러내는 필터 역할을 합니다. 기저핵의 발달이 지연되면 걸러지지 않은 신호가 근육으로 새어나가 틱이 발생합니다.</p>

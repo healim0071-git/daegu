@@ -44,7 +44,7 @@ url: "/tic-disorder/tictreatment/"
 <div class="cond-section">
 <h2 class="cond-h2">해아림한의원의 틱 치료 4단계 통합 시스템</h2>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 24px;">
+<div class="grid-2x2-cards" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-bottom: 24px;">
   <div style="background: #F8FAFB; border: 1px solid #D6E4EE; border-radius: 12px; padding: 20px 18px;">
     <span style="background: #0C4349; color: #FFF; font-size: 12px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">STEP 1</span>
     <h3 style="font-size: 1.05rem; font-weight: 800; color: #0C4349; margin: 10px 0 6px;">정밀 진단 및 두뇌 피로도 분석</h3>
