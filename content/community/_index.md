@@ -136,9 +136,14 @@ layout: single
     <span style="color: #94A3B8;">|</span>
     <span id="autoColumnNextScheduleText" style="color: #146369; font-weight: 700;">다음 발행: 확인 중..</span>
   </div>
-  <button type="button" onclick="triggerAutoColumnPublishManual()" style="margin-left: auto; font-size: 12px; padding: 5px 12px; background: #FFFFFF; border: 1px solid #146369; border-radius: 6px; color: #146369; font-weight: 700; cursor: pointer; white-space: nowrap; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: all 0.15s;" onmouseover="this.style.background='#E6F6F8';" onmouseout="this.style.background='#FFFFFF';">
-    ⚡ 즉시 1편 발행
-  </button>
+  <div style="display: flex; align-items: center; gap: 8px; margin-left: auto; flex-wrap: wrap;">
+    <button type="button" onclick="triggerAutoColumnPublishManual()" style="font-size: 12px; padding: 5px 12px; background: #FFFFFF; border: 1px solid #146369; border-radius: 6px; color: #146369; font-weight: 700; cursor: pointer; white-space: nowrap; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: all 0.15s;" onmouseover="this.style.background='#E6F6F8';" onmouseout="this.style.background='#FFFFFF';">
+      ⚡ 즉시 1편 자동발행
+    </button>
+    <button type="button" id="btnCustomTitlePublish" onclick="openCustomTitlePublishModal()" style="font-size: 12px; padding: 5px 14px; background: #146369; border: 1px solid #146369; border-radius: 6px; color: #FFFFFF; font-weight: 700; cursor: pointer; white-space: nowrap; box-shadow: 0 2px 5px rgba(20,99,105,0.25); transition: all 0.15s; display: inline-flex; align-items: center; gap: 5px;" onmouseover="this.style.background='#0C4349';" onmouseout="this.style.background='#146369';">
+      <span>✍️ 제목설정발행</span>
+    </button>
+  </div>
 </div>
 
 <!-- 칼럼 테이블 목록 그리드 -->
@@ -414,6 +419,97 @@ layout: single
 <!-- ============================================================== -->
 <!-- 칼럼 작성/수정 모달 (최고관리자 전용)                           -->
 <!-- ============================================================== -->
+<!-- ============================================================== -->
+<!-- [신규] 제목설정 즉시발행 전용 모달 (최고관리자)                 -->
+<!-- ============================================================== -->
+<div id="customTitlePublishModal" style="display: none; position: fixed; inset: 0; background: rgba(12, 67, 73, 0.68); z-index: 999999; align-items: center; justify-content: center; backdrop-filter: blur(5px); padding: 16px;">
+  <div style="background: #FFFFFF; border-radius: 20px; width: 100%; max-width: 760px; max-height: 92vh; overflow-y: auto; box-shadow: 0 25px 60px rgba(0,0,0,0.3); border: 1px solid #CBD5E1; padding: 26px 24px; position: relative;">
+    
+    <!-- 모달 헤더 -->
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid #E2E8F0; padding-bottom: 14px; margin-bottom: 18px;">
+      <div>
+        <h3 style="font-size: 19px; font-weight: 800; color: #0C4349; margin: 0; display: flex; align-items: center; gap: 8px;">
+          <span>✍️ 제목설정 즉시발행</span>
+          <span style="font-size: 11.5px; background: #E6F6F8; color: #146369; padding: 3px 8px; border-radius: 6px; font-weight: 700; border: 1px solid #BADFE3;">최고관리자</span>
+        </h3>
+        <p style="font-size: 12.5px; color: #64748B; margin: 5px 0 0 0;">
+          제목을 적고 <strong>[제목작성 즉시발행]</strong>을 누르면 기존 세팅 기준에 맞춰 글이 완성되며, 수정 후 <strong>[확인]</strong>을 누르면 치료칼럼에 포스팅됩니다.
+        </p>
+      </div>
+      <button type="button" onclick="closeCustomTitlePublishModal()" style="background: none; border: none; font-size: 28px; line-height: 1; cursor: pointer; color: #94A3B8; padding: 0 4px;" title="닫기">&times;</button>
+    </div>
+
+    <!-- 모달 본문 폼 -->
+    <div style="display: flex; flex-direction: column; gap: 14px;">
+      
+      <!-- 1. 제목을 적을 수 있는 칸 -->
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+          <label for="customTitleInput" style="font-size: 13.5px; font-weight: 700; color: #1E293B;">
+            칼럼 제목 <span style="color: #E11D48;">*</span>
+          </label>
+          <span style="font-size: 12px; color: #64748B;">예: [대구 틱장애] 틱 증상 악화 이유와 조기 한방 치료법</span>
+        </div>
+        <input type="text" id="customTitleInput" placeholder="제목을 적어주세요 (예: 수성구 공황장애 극복을 위한 한방 치료 원리와 호흡법)" style="width: 100%; box-sizing: border-box; padding: 11px 14px; border: 1.5px solid #94A3B8; border-radius: 9px; font-size: 14.5px; outline: none; transition: border-color 0.2s;" onfocus="this.style.borderColor='#146369';" onblur="this.style.borderColor='#94A3B8';" />
+      </div>
+
+      <!-- 2. 바로 아래 붙어있는 '제목작성 즉시발행' 버튼 -->
+      <div>
+        <button type="button" id="btnCustomTitleGenerate" onclick="handleCustomTitleGenerate()" style="width: 100%; padding: 12px 16px; background: linear-gradient(135deg, #146369 0%, #0F4B50 100%); color: #FFFFFF; border: none; border-radius: 9px; font-size: 14.5px; font-weight: 700; cursor: pointer; box-shadow: 0 3px 10px rgba(20,99,105,0.25); display: flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s;" onmouseover="this.style.opacity='0.95'; this.style.transform='translateY(-1px)';" onmouseout="this.style.opacity='1'; this.style.transform='translateY(0)';">
+          <span>⚡ 제목작성 즉시발행</span>
+        </button>
+      </div>
+
+      <!-- 보조 정보 (질환 분류 및 작성자) -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; background: #F8FAFC; padding: 10px 14px; border-radius: 8px; border: 1px solid #E2E8F0;">
+        <div>
+          <label style="display: block; font-size: 12px; font-weight: 700; color: #475569; margin-bottom: 4px;">질환 분류</label>
+          <select id="customTitleCategory" style="width: 100%; padding: 7px 10px; border: 1px solid #CBD5E1; border-radius: 6px; font-size: 13px; background: #FFF; color: #334155;">
+            <option value="AUTO">자동 감지 (제목 기반)</option>
+            <option value="틱장애">틱장애</option>
+            <option value="공황장애">공황장애</option>
+            <option value="불면증">불면증</option>
+            <option value="자율신경">자율신경</option>
+            <option value="어지럼증">어지럼증</option>
+            <option value="ADHD">ADHD</option>
+            <option value="강박증">강박증</option>
+            <option value="사회공포">사회공포</option>
+            <option value="불안장애">불안장애</option>
+            <option value="다한증">다한증</option>
+          </select>
+        </div>
+        <div>
+          <label style="display: block; font-size: 12px; font-weight: 700; color: #475569; margin-bottom: 4px;">작성자</label>
+          <input type="text" id="customTitleAuthor" value="해아림한의원" style="width: 100%; box-sizing: border-box; padding: 7px 10px; border: 1px solid #CBD5E1; border-radius: 6px; font-size: 13px; background: #FFF; color: #334155;" />
+        </div>
+      </div>
+
+      <!-- 3. 제목에 맞는 내용으로 글이 수정가능한 상태로 만들어져 나오는 칸 -->
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+          <label for="customTitleContent" style="font-size: 13.5px; font-weight: 700; color: #1E293B;">
+            치료칼럼 본문 <span style="font-size: 12px; font-weight: bold; color: #059669;">(수정 가능한 상태)</span>
+          </label>
+          <span id="customTitleStatusMsg" style="font-size: 12px; color: #64748B;">'제목작성 즉시발행' 버튼을 누르면 본문이 생성됩니다</span>
+        </div>
+        <textarea id="customTitleContent" rows="12" placeholder="'제목작성 즉시발행' 버튼을 누르면 기존에 세팅된 치료칼럼 기준(원인 분석, 보건통계 근거, Q&A, 해아림 한방치료, 의료법 제56조 준수)에 부합하는 글이 여기에 수정 가능한 상태로 생성됩니다." style="width: 100%; box-sizing: border-box; padding: 12px 14px; border: 1.5px solid #CBD5E1; border-radius: 9px; font-size: 14px; line-height: 1.68; color: #1E293B; resize: vertical; outline: none; font-family: inherit; transition: border-color 0.2s;" onfocus="this.style.borderColor='#146369';" onblur="this.style.borderColor='#CBD5E1';"></textarea>
+      </div>
+
+      <!-- 4. 그 아래에 있는 확인 버튼 및 취소 버튼 -->
+      <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 6px; padding-top: 14px; border-top: 1.5px solid #E2E8F0;">
+        <button type="button" onclick="closeCustomTitlePublishModal()" style="padding: 10px 22px; border: 1px solid #CBD5E1; background: #FFFFFF; color: #475569; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F1F5F9';" onmouseout="this.style.background='#FFFFFF';">
+          취소
+        </button>
+        <button type="button" id="btnCustomTitleConfirm" onclick="handleCustomTitleConfirm()" style="padding: 10px 30px; background: #146369; color: #FFFFFF; border: none; border-radius: 8px; font-size: 14.5px; font-weight: 800; cursor: pointer; box-shadow: 0 2px 8px rgba(20,99,105,0.3); transition: all 0.2s;" onmouseover="this.style.background='#0B4045'; this.style.transform='translateY(-1px)';" onmouseout="this.style.background='#146369'; this.style.transform='translateY(0)';">
+          확인
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
 <div id="columnWriteModal" style="display: none; position: fixed; inset: 0; background: rgba(12, 67, 73, 0.65); z-index: 99999; align-items: center; justify-content: center; backdrop-filter: blur(4px); padding: 16px;">
 <div style="background: #FFFFFF; border-radius: 20px; width: 100%; max-width: 680px; max-height: 90vh; overflow-y: auto; box-shadow: 0 25px 50px rgba(0,0,0,0.25); border: 1px solid #E2E8F0; padding: 28px 24px;">
 <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid #F1F5F9; padding-bottom: 14px; margin-bottom: 18px;">
@@ -6037,6 +6133,159 @@ function closeColumnModal() {
 // -------------------------------------------------------------
 // 최고관리자 칼럼 작성 / 수정 / 삭제
 // -------------------------------------------------------------
+// -------------------------------------------------------------
+// [신규 기능] 제목설정 즉시발행 모달 및 실행 핸들러
+// -------------------------------------------------------------
+var customColumnCurrentMeta = null;
+
+function openCustomTitlePublishModal() {
+  var inp = document.getElementById('customTitleInput');
+  var cat = document.getElementById('customTitleCategory');
+  var author = document.getElementById('customTitleAuthor');
+  var content = document.getElementById('customTitleContent');
+  var msg = document.getElementById('customTitleStatusMsg');
+
+  if (inp) inp.value = '';
+  if (cat) cat.value = 'AUTO';
+  if (author) author.value = '해아림한의원';
+  if (content) content.value = '';
+  if (msg) {
+    msg.innerText = "'제목작성 즉시발행' 버튼을 누르면 본문이 생성됩니다";
+    msg.style.color = '#64748B';
+    msg.style.fontWeight = 'normal';
+  }
+  customColumnCurrentMeta = null;
+
+  var modal = document.getElementById('customTitlePublishModal');
+  if (modal) {
+    modal.style.display = 'flex';
+    setTimeout(function() {
+      if (inp) inp.focus();
+    }, 100);
+  }
+}
+
+function closeCustomTitlePublishModal() {
+  var modal = document.getElementById('customTitlePublishModal');
+  if (modal) modal.style.display = 'none';
+}
+
+function handleCustomTitleGenerate() {
+  var titleInput = document.getElementById('customTitleInput');
+  var userTitle = titleInput ? titleInput.value.trim() : '';
+  if (!userTitle) {
+    alert('발행하실 칼럼의 제목을 먼저 적어주세요.');
+    if (titleInput) titleInput.focus();
+    return;
+  }
+
+  var catSelect = document.getElementById('customTitleCategory');
+  var selectedCat = catSelect ? catSelect.value : 'AUTO';
+
+  if (typeof window.generateCustomColumnContentByTitle !== 'function') {
+    alert('자동발행 엔진을 로드하는 중입니다. 잠시 후 다시 시도해주세요.');
+    return;
+  }
+
+  var result = window.generateCustomColumnContentByTitle(userTitle, selectedCat);
+  if (!result) {
+    alert('글 내용 생성에 실패했습니다. 제목을 다시 확인해주세요.');
+    return;
+  }
+
+  customColumnCurrentMeta = result;
+
+  // 제목 정제본 반영
+  titleInput.value = result.title;
+  if (catSelect && result.category) {
+    catSelect.value = result.category;
+  }
+
+  // 본문 textarea에 수정 가능한 상태로 주입
+  var contentArea = document.getElementById('customTitleContent');
+  if (contentArea) {
+    contentArea.value = result.content;
+    contentArea.focus();
+  }
+
+  var msg = document.getElementById('customTitleStatusMsg');
+  if (msg) {
+    msg.innerText = '✨ 제목 맞춤 글이 생성되었습니다. 자유롭게 수정하신 후 아래 [확인] 버튼을 눌러주세요.';
+    msg.style.color = '#059669';
+    msg.style.fontWeight = '700';
+  }
+}
+
+function handleCustomTitleConfirm() {
+  var titleInput = document.getElementById('customTitleInput');
+  var contentArea = document.getElementById('customTitleContent');
+  var catSelect = document.getElementById('customTitleCategory');
+  var authorInput = document.getElementById('customTitleAuthor');
+
+  var title = titleInput ? titleInput.value.trim() : '';
+  var content = contentArea ? contentArea.value.trim() : '';
+  var category = (catSelect && catSelect.value !== 'AUTO') ? catSelect.value : (customColumnCurrentMeta ? customColumnCurrentMeta.category : '치료칼럼');
+  var author = authorInput ? authorInput.value.trim() : '해아림한의원';
+
+  if (!title) {
+    alert('제목을 입력해주세요.');
+    if (titleInput) titleInput.focus();
+    return;
+  }
+  if (!content) {
+    alert("본문 내용이 비어있습니다. '제목작성 즉시발행'을 누르거나 직접 내용을 입력해주세요.");
+    if (contentArea) contentArea.focus();
+    return;
+  }
+
+  var postData = {
+    title: title,
+    content: content,
+    category: category,
+    author: author,
+    summary: customColumnCurrentMeta ? customColumnCurrentMeta.summary : '',
+    region: customColumnCurrentMeta ? customColumnCurrentMeta.region : '대구 수성구',
+    dongs: customColumnCurrentMeta ? customColumnCurrentMeta.dongs : '범어동·만촌동'
+  };
+
+  if (typeof window.publishCustomColumnPost === 'function') {
+    var publishedPost = window.publishCustomColumnPost(postData);
+    if (publishedPost) {
+      closeCustomTitlePublishModal();
+      alert('🎉 치료칼럼에 성공적으로 포스팅되었습니다!\n\n[분류]: ' + publishedPost.category + '\n[제목]: ' + publishedPost.title);
+    }
+  } else {
+    var raw = localStorage.getItem('healim_board_columns');
+    var arr = raw ? JSON.parse(raw) : [];
+    if (!Array.isArray(arr)) arr = [];
+    var now = new Date();
+    var dateStr = now.getFullYear() + '.' + String(now.getMonth() + 1).padStart(2, '0') + '.' + String(now.getDate()).padStart(2, '0');
+    var newPost = {
+      id: 'col-custom-' + Date.now(),
+      category: category,
+      title: title,
+      author: author,
+      date: dateStr,
+      views: Math.floor(Math.random() * 50) + 140,
+      summary: title + ' 관련 해아림한의원 전문 치료칼럼입니다.',
+      content: content,
+      isAutoPublished: true
+    };
+    arr.unshift(newPost);
+    localStorage.setItem('healim_board_columns', JSON.stringify(arr));
+    try { localStorage.setItem('healim_board_columns_permanent_backup', JSON.stringify(arr)); } catch(e){}
+    if (typeof window.renderColumnsList === 'function') window.renderColumnsList();
+    closeCustomTitlePublishModal();
+    alert('🎉 치료칼럼에 성공적으로 포스팅되었습니다!\n\n[분류]: ' + newPost.category + '\n[제목]: ' + newPost.title);
+  }
+}
+
+window.openCustomTitlePublishModal = openCustomTitlePublishModal;
+window.closeCustomTitlePublishModal = closeCustomTitlePublishModal;
+window.handleCustomTitleGenerate = handleCustomTitleGenerate;
+window.handleCustomTitleConfirm = handleCustomTitleConfirm;
+
+
 function openColumnWriteModal() {
   document.getElementById('writeModalTitle').innerText = '✏️ 치료칼럼 작성 (최고관리자)';
   document.getElementById('writePostId').value = '';
