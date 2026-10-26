@@ -77,7 +77,14 @@
   </article>
 
   <!-- ── 스크린샷 2 상단: 3열 카드 리스트 그리드 ── -->
-  {{ $diseaseKey := strings.Trim .RelPermalink "/" }}
+  {{ $diseaseKey := .Params.disease_slug | default "" }}
+  {{ if not $diseaseKey }}
+    {{ if strings.Contains .RelPermalink "tic-disorder" }}{{ $diseaseKey = "tic-disorder" }}
+    {{ else }}{{ $diseaseKey = strings.Trim .RelPermalink "/" }}{{ end }}
+  {{ end }}
+  {{ if strings.Contains $diseaseKey "/" }}
+    {{ $diseaseKey = index (split $diseaseKey "/") 0 }}
+  {{ end }}
   <section class="section-card-list" style="margin-top: 28px; margin-bottom: 34px;">
     <div class="section-card-header">
       <span class="section-card-eyebrow">HEALIM CLINICAL INSIGHTS</span>
@@ -105,7 +112,7 @@
           <span class="insight-badge">진행 및 경과</span>
         </div>
         <div class="insight-body">
-          <h4 class="insight-title">{{ $diseaseTitle }}은 시간이 지나면 더 심해질 수도 있나요?</h4>
+          <h4 class="insight-title">{{ if or (eq $diseaseKey "tic-disorder") (eq $diseaseTitle "틱장애") }}틱장애는{{ else }}{{ $diseaseTitle }}은{{ end }} 시간이 지나면 더 심해질 수도 있나요?</h4>
           <p class="insight-desc">
             초기 경미한 이상 신호라도 뇌 신경계의 억제 조절 능력이 저하된 상태가 지속되면 신경가소성에 의해 증상이 만성화되거나 복합 양상으로 발전할 가능성이 높습니다. 발병 3~6개월 골든타임 이내에 핵심 원인을 감별하고 두뇌 자생력을 길러주는 것이 악화를 막는 결정적 열쇠입니다.
           </p>
@@ -145,7 +152,14 @@
     </div>
 
     <!-- 3개 추천 영상 카드 (질환별 맞춤 해아림TV 최다 시청 영상) -->
-    {{ $slug := strings.Trim .RelPermalink "/" }}
+    {{ $slug := .Params.disease_slug | default "" }}
+    {{ if not $slug }}
+      {{ if strings.Contains .RelPermalink "tic-disorder" }}{{ $slug = "tic-disorder" }}
+      {{ else }}{{ $slug = strings.Trim .RelPermalink "/" }}{{ end }}
+    {{ end }}
+    {{ if strings.Contains $slug "/" }}
+      {{ $slug = index (split $slug "/") 0 }}
+    {{ end }}
     {{ $diseaseYtList := index site.Data.disease_youtube $slug }}
     {{ if not $diseaseYtList }}
       {{ $diseaseYtList = index site.Data.disease_youtube (path.Base .RelPermalink) }}

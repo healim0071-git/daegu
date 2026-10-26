@@ -606,7 +606,8 @@
   {{/* 10개 질환 페이지: '해아림한의원 대구본점 진료 예약 및 내원 안내' (네트워크 바로가기 바로 위 배치) */}}
   {{ $diseaseSlugs := slice "tic-disorder" "panic-disorder" "dysautonomia" "insomnia" "dizziness" "adhd" "ocd" "anxiety-disorder" "hyperhidrosis" "social-phobia" }}
   {{ $currentSlug := strings.Trim .RelPermalink "/" }}
-  {{ if or (in $diseaseSlugs $currentSlug) (eq .Type "disease") (eq .Layout "disease") }}
+  {{ $isSecretSubpage := or .Params.hide_clinic_guide .Params.is_secret (ne (strings.Trim .RelPermalink "/") "tic-disorder" | and (strings.Contains .RelPermalink "tic-disorder")) }}
+  {{ if and (or (in $diseaseSlugs $currentSlug) (eq .Type "disease") (eq .Layout "disease")) (not $isSecretSubpage) }}
   <!-- 진료 안내 및 예약 퀵 박스 (네트워크 바로가기 바로 위) -->
   <section class="landing-footer-guide healim-bottom-section" style="margin-top: {{ if $isDisease }}0{{ else }}24px{{ end }}; margin-bottom: 28px;">
     <div class="guide-box">
