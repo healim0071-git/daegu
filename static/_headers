@@ -1,4 +1,4 @@
-/*
+﻿/*
   Cache-Control: no-cache, no-store, must-revalidate, max-age=0, s-maxage=0
   CDN-Cache-Control: no-store
   Cloudflare-CDN-Cache-Control: no-store
@@ -40,3 +40,13 @@
 
 /images/*
   Cache-Control: public, max-age=86400
+
+/columns/
+  Cache-Control: no-cache, no-store, must-revalidate, max-age=0, s-maxage=0
+  CDN-Cache-Control: no-store
+  Cloudflare-CDN-Cache-Control: no-store
+
+/columns/*
+  Cache-Control: no-cache, no-store, must-revalidate, max-age=0, s-maxage=0
+  CDN-Cache-Control: no-store
+  Cloudflare-CDN-Cache-Control: no-store
