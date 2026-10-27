@@ -75,1805 +75,306 @@ layout: single
     <div style="font-size: 12px; color: #94A3B8;">* 각 글을 클릭하면 healim.com/5-3 로 이동합니다.</div>
   </div>
   
-  <div id="reviewsContainer" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 18px; margin-bottom: 30px;">
-<div class="review-card" onclick="handleReviewCardClick('259')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202610/6ac4f74f39cba6205088-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-10-06</span>
+  <div id="reviewsContainer" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 18px; margin-bottom: 30px;">
+<div class="review-card" onclick="handleReviewCardClick('259')" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px; box-shadow: 0 4px 14px rgba(0,0,0,0.02); height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='#008194'; this.style.boxShadow='0 8px 24px rgba(0,129,148,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 14px rgba(0,0,0,0.02)';">
+  <div>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <span style="font-size: 11.5px; font-weight: 700; color: #008194; background: #E6F6F8; padding: 3px 8px; border-radius: 4px;">불안장애</span>
+      <span style="font-size: 12px; color: #94A3B8;">2026-10-06 · 조회 15</span>
+    </div>
+    <div style="display: flex; gap: 14px; margin-bottom: 12px; align-items: flex-start;">
+      <div style="width: 86px; height: 86px; flex-shrink: 0; border-radius: 8px; overflow: hidden; position: relative; background: #F8FAFB; border: 1px solid #E2E8F0;">
+        <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202610/6ac4f74f39cba6205088-130x130.jpg" alt="자필 치료후기" style="width: 100%; height: 100%; object-fit: cover; filter: blur(4.5px); -webkit-filter: blur(4.5px); transform: scale(1.15);" loading="lazy" />
+        <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center;">
+          <span style="font-size: 10px; background: rgba(12,67,73,0.85); color: #FFF; padding: 2px 5px; border-radius: 3px; font-weight: 700;">자필보호</span>
+        </div>
       </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
+      <div style="flex: 1; min-width: 0;">
+        <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; margin: 0 0 6px; line-height: 1.45; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">불안장애 치료후기 - 전문가의 치료를 받아보는 것이 증상으로부터 더 자유로워질 수 있는 지름길입니다.</h4>
+        <p style="font-size: 12.5px; color: #64748B; line-height: 1.6; margin: 0; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">1. 치료 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요. 예전에 어떻게 얼마나 불안했는지 돌아보면 늘 긴장 속에 살았는데, 맞춤 한약과 원장님의 세심한 치료를 통해 마음의 안정을 찾았습니다.</p>
       </div>
     </div>
   </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">불안장애 치료후기 - 전문가의 치료를 받아보는 것이 증상으로부터 더 자유로워질 수 있는 지름길입니다.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
+  <div style="padding-top: 10px; border-top: 1px dashed #E2E8F0; display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: #146369; font-weight: 700;">
+    <span>본원 후기 원문 보기 ↗</span>
+    <span style="color: #94A3B8; font-weight: 400; font-size: 11.5px;">healim.com/5-3</span>
   </div>
 </div>
-<div class="review-card" onclick="handleReviewCardClick('258')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202610/6ac4f253443338703452-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-10-06</span>
+<div class="review-card" onclick="handleReviewCardClick('258')" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px; box-shadow: 0 4px 14px rgba(0,0,0,0.02); height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='#008194'; this.style.boxShadow='0 8px 24px rgba(0,129,148,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 14px rgba(0,0,0,0.02)';">
+  <div>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <span style="font-size: 11.5px; font-weight: 700; color: #008194; background: #E6F6F8; padding: 3px 8px; border-radius: 4px;">불안장애</span>
+      <span style="font-size: 12px; color: #94A3B8;">2026-10-06 · 조회 12</span>
+    </div>
+    <div style="display: flex; gap: 14px; margin-bottom: 12px; align-items: flex-start;">
+      <div style="width: 86px; height: 86px; flex-shrink: 0; border-radius: 8px; overflow: hidden; position: relative; background: #F8FAFB; border: 1px solid #E2E8F0;">
+        <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202610/6ac4f253443338703452-130x130.jpg" alt="자필 치료후기" style="width: 100%; height: 100%; object-fit: cover; filter: blur(4.5px); -webkit-filter: blur(4.5px); transform: scale(1.15);" loading="lazy" />
+        <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center;">
+          <span style="font-size: 10px; background: rgba(12,67,73,0.85); color: #FFF; padding: 2px 5px; border-radius: 3px; font-weight: 700;">자필보호</span>
+        </div>
       </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
+      <div style="flex: 1; min-width: 0;">
+        <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; margin: 0 0 6px; line-height: 1.45; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">불안장애 치료후기 - 고칠 수 없다고만 생각했는데 저를 옭아매는 의심과 불안으로부터 벗어날 수 있게 되었어요.</h4>
+        <p style="font-size: 12.5px; color: #64748B; line-height: 1.6; margin: 0; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">1. 치료 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요. 4월부터 갑자기 불안으로 인해 일상생활이 두려웠는데 해아림 치료 후 편안한 일상으로 복귀할 수 있었습니다.</p>
       </div>
     </div>
   </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">불안장애 치료후기 - 고칠 수 없다고만 생각했는데 저를 옭아매는 의심과 불안으로부터 벗어날 수 있게 되었어요.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
+  <div style="padding-top: 10px; border-top: 1px dashed #E2E8F0; display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: #146369; font-weight: 700;">
+    <span>본원 후기 원문 보기 ↗</span>
+    <span style="color: #94A3B8; font-weight: 400; font-size: 11.5px;">healim.com/5-3</span>
   </div>
 </div>
-<div class="review-card" onclick="handleReviewCardClick('1')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6ab36d9b1fb358328084-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-09-23</span>
+<div class="review-card" onclick="handleReviewCardClick('1')" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px; box-shadow: 0 4px 14px rgba(0,0,0,0.02); height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='#008194'; this.style.boxShadow='0 8px 24px rgba(0,129,148,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 14px rgba(0,0,0,0.02)';">
+  <div>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <span style="font-size: 11.5px; font-weight: 700; color: #008194; background: #E6F6F8; padding: 3px 8px; border-radius: 4px;">우울증</span>
+      <span style="font-size: 12px; color: #94A3B8;">2026-09-23 · 조회 2</span>
+    </div>
+    <div style="display: flex; gap: 14px; margin-bottom: 12px; align-items: flex-start;">
+      <div style="width: 86px; height: 86px; flex-shrink: 0; border-radius: 8px; overflow: hidden; position: relative; background: #F8FAFB; border: 1px solid #E2E8F0;">
+        <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6ab36d9b1fb358328084-130x130.jpg" alt="자필 치료후기" style="width: 100%; height: 100%; object-fit: cover; filter: blur(4.5px); -webkit-filter: blur(4.5px); transform: scale(1.15);" loading="lazy" />
+        <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center;">
+          <span style="font-size: 10px; background: rgba(12,67,73,0.85); color: #FFF; padding: 2px 5px; border-radius: 3px; font-weight: 700;">자필보호</span>
+        </div>
       </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
+      <div style="flex: 1; min-width: 0;">
+        <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; margin: 0 0 6px; line-height: 1.45; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">우울증 후기 - 의욕과 활력이 생겼어요. 혼자서 힘들어하지 말고 꼭 치료받으세요.</h4>
+        <p style="font-size: 12.5px; color: #64748B; line-height: 1.6; margin: 0; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">1. 치료 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요.
+a. 기분이 많이 가라앉았...</p>
       </div>
     </div>
   </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">우울증 후기 - 의욕과 활력이 생겼어요. 혼자서 힘들어하지 말고 꼭 치료받으세요.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
+  <div style="padding-top: 10px; border-top: 1px dashed #E2E8F0; display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: #146369; font-weight: 700;">
+    <span>본원 후기 원문 보기 ↗</span>
+    <span style="color: #94A3B8; font-weight: 400; font-size: 11.5px;">healim.com/5-3</span>
   </div>
 </div>
-<div class="review-card" onclick="handleReviewCardClick('2')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6ab364aeb849c6959504-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-09-23</span>
+<div class="review-card" onclick="handleReviewCardClick('2')" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px; box-shadow: 0 4px 14px rgba(0,0,0,0.02); height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='#008194'; this.style.boxShadow='0 8px 24px rgba(0,129,148,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 14px rgba(0,0,0,0.02)';">
+  <div>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <span style="font-size: 11.5px; font-weight: 700; color: #008194; background: #E6F6F8; padding: 3px 8px; border-radius: 4px;">우울증</span>
+      <span style="font-size: 12px; color: #94A3B8;">2026-09-23 · 조회 2</span>
+    </div>
+    <div style="display: flex; gap: 14px; margin-bottom: 12px; align-items: flex-start;">
+      <div style="width: 86px; height: 86px; flex-shrink: 0; border-radius: 8px; overflow: hidden; position: relative; background: #F8FAFB; border: 1px solid #E2E8F0;">
+        <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6ab364aeb849c6959504-130x130.jpg" alt="자필 치료후기" style="width: 100%; height: 100%; object-fit: cover; filter: blur(4.5px); -webkit-filter: blur(4.5px); transform: scale(1.15);" loading="lazy" />
+        <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center;">
+          <span style="font-size: 10px; background: rgba(12,67,73,0.85); color: #FFF; padding: 2px 5px; border-radius: 3px; font-weight: 700;">자필보호</span>
+        </div>
       </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
+      <div style="flex: 1; min-width: 0;">
+        <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; margin: 0 0 6px; line-height: 1.45; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">우울증 치료후기 - 살 수 있을 것 같아 좋아요.</h4>
+        <p style="font-size: 12.5px; color: #64748B; line-height: 1.6; margin: 0; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">1. 치료 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요.
+처음은 자기자책과 죽고 ...</p>
       </div>
     </div>
   </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">우울증 치료후기 - 살 수 있을 것 같아 좋아요.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
+  <div style="padding-top: 10px; border-top: 1px dashed #E2E8F0; display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: #146369; font-weight: 700;">
+    <span>본원 후기 원문 보기 ↗</span>
+    <span style="color: #94A3B8; font-weight: 400; font-size: 11.5px;">healim.com/5-3</span>
   </div>
 </div>
-<div class="review-card" onclick="handleReviewCardClick('3')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa8e5cc5d4827332728-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-09-15</span>
+<div class="review-card" onclick="handleReviewCardClick('3')" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px; box-shadow: 0 4px 14px rgba(0,0,0,0.02); height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='#008194'; this.style.boxShadow='0 8px 24px rgba(0,129,148,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 14px rgba(0,0,0,0.02)';">
+  <div>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <span style="font-size: 11.5px; font-weight: 700; color: #008194; background: #E6F6F8; padding: 3px 8px; border-radius: 4px;">공황장애</span>
+      <span style="font-size: 12px; color: #94A3B8;">2026-09-15 · 조회 5</span>
+    </div>
+    <div style="display: flex; gap: 14px; margin-bottom: 12px; align-items: flex-start;">
+      <div style="width: 86px; height: 86px; flex-shrink: 0; border-radius: 8px; overflow: hidden; position: relative; background: #F8FAFB; border: 1px solid #E2E8F0;">
+        <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa8e5cc5d4827332728-130x130.png" alt="자필 치료후기" style="width: 100%; height: 100%; object-fit: cover; filter: blur(4.5px); -webkit-filter: blur(4.5px); transform: scale(1.15);" loading="lazy" />
+        <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center;">
+          <span style="font-size: 10px; background: rgba(12,67,73,0.85); color: #FFF; padding: 2px 5px; border-radius: 3px; font-weight: 700;">자필보호</span>
+        </div>
       </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
+      <div style="flex: 1; min-width: 0;">
+        <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; margin: 0 0 6px; line-height: 1.45; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">공황장애 후기 -  호흡이 편안해지고, 나쁜 감정에서 빠져 나올 수 있어요.</h4>
+        <p style="font-size: 12.5px; color: #64748B; line-height: 1.6; margin: 0; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">치료 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요.
+
+a. 사람이 많은 공간, 폐...</p>
       </div>
     </div>
   </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">공황장애 후기 -  호흡이 편안해지고, 나쁜 감정에서 빠져 나올 수 있어요.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
+  <div style="padding-top: 10px; border-top: 1px dashed #E2E8F0; display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: #146369; font-weight: 700;">
+    <span>본원 후기 원문 보기 ↗</span>
+    <span style="color: #94A3B8; font-weight: 400; font-size: 11.5px;">healim.com/5-3</span>
   </div>
 </div>
-<div class="review-card" onclick="handleReviewCardClick('4')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa8e6338d49d1165384-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-09-14</span>
+<div class="review-card" onclick="handleReviewCardClick('4')" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px; box-shadow: 0 4px 14px rgba(0,0,0,0.02); height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='#008194'; this.style.boxShadow='0 8px 24px rgba(0,129,148,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 14px rgba(0,0,0,0.02)';">
+  <div>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <span style="font-size: 11.5px; font-weight: 700; color: #008194; background: #E6F6F8; padding: 3px 8px; border-radius: 4px;">강박증</span>
+      <span style="font-size: 12px; color: #94A3B8;">2026-09-14 · 조회 4</span>
+    </div>
+    <div style="display: flex; gap: 14px; margin-bottom: 12px; align-items: flex-start;">
+      <div style="width: 86px; height: 86px; flex-shrink: 0; border-radius: 8px; overflow: hidden; position: relative; background: #F8FAFB; border: 1px solid #E2E8F0;">
+        <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa8e6338d49d1165384-130x130.png" alt="자필 치료후기" style="width: 100%; height: 100%; object-fit: cover; filter: blur(4.5px); -webkit-filter: blur(4.5px); transform: scale(1.15);" loading="lazy" />
+        <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center;">
+          <span style="font-size: 10px; background: rgba(12,67,73,0.85); color: #FFF; padding: 2px 5px; border-radius: 3px; font-weight: 700;">자필보호</span>
+        </div>
       </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
+      <div style="flex: 1; min-width: 0;">
+        <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; margin: 0 0 6px; line-height: 1.45; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">강박증 치료 후기 - 반신반의했던 생각에서 탁월한 선택을 했다고 생각합니다.</h4>
+        <p style="font-size: 12.5px; color: #64748B; line-height: 1.6; margin: 0; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">1. 치료 받기 전 증상들로 인해 얼마나 힘들었는지 구체적으로 적어 주세요.
+a. 강박 증상 (생각 등)이...</p>
       </div>
     </div>
   </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">강박증 치료 후기 - 반신반의했던 생각에서 탁월한 선택을 했다고 생각합니다.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
+  <div style="padding-top: 10px; border-top: 1px dashed #E2E8F0; display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: #146369; font-weight: 700;">
+    <span>본원 후기 원문 보기 ↗</span>
+    <span style="color: #94A3B8; font-weight: 400; font-size: 11.5px;">healim.com/5-3</span>
   </div>
 </div>
-<div class="review-card" onclick="handleReviewCardClick('5')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c422a54dc3060837-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-09-11</span>
+<div class="review-card" onclick="handleReviewCardClick('5')" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px; box-shadow: 0 4px 14px rgba(0,0,0,0.02); height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='#008194'; this.style.boxShadow='0 8px 24px rgba(0,129,148,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 14px rgba(0,0,0,0.02)';">
+  <div>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <span style="font-size: 11.5px; font-weight: 700; color: #008194; background: #E6F6F8; padding: 3px 8px; border-radius: 4px;">틱장애</span>
+      <span style="font-size: 12px; color: #94A3B8;">2026-09-11 · 조회 6</span>
+    </div>
+    <div style="display: flex; gap: 14px; margin-bottom: 12px; align-items: flex-start;">
+      <div style="width: 86px; height: 86px; flex-shrink: 0; border-radius: 8px; overflow: hidden; position: relative; background: #F8FAFB; border: 1px solid #E2E8F0;">
+        <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c422a54dc3060837-130x130.jpg" alt="자필 치료후기" style="width: 100%; height: 100%; object-fit: cover; filter: blur(4.5px); -webkit-filter: blur(4.5px); transform: scale(1.15);" loading="lazy" />
+        <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center;">
+          <span style="font-size: 10px; background: rgba(12,67,73,0.85); color: #FFF; padding: 2px 5px; border-radius: 3px; font-weight: 700;">자필보호</span>
+        </div>
       </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
+      <div style="flex: 1; min-width: 0;">
+        <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; margin: 0 0 6px; line-height: 1.45; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">틱장애 치료후기 - 틱 개선 후 정서적으로 더 성장해온 것 같아요.</h4>
+        <p style="font-size: 12.5px; color: #64748B; line-height: 1.6; margin: 0; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">처음 제 아이가 틱장애라는 의심하게 되었을 무렵 여러 한의원을 알아봤고 그중에 해아림한의원을 알...</p>
       </div>
     </div>
   </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">틱장애 치료후기 - 틱 개선 후 정서적으로 더 성장해온 것 같아요.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
+  <div style="padding-top: 10px; border-top: 1px dashed #E2E8F0; display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: #146369; font-weight: 700;">
+    <span>본원 후기 원문 보기 ↗</span>
+    <span style="color: #94A3B8; font-weight: 400; font-size: 11.5px;">healim.com/5-3</span>
   </div>
 </div>
-<div class="review-card" onclick="handleReviewCardClick('6')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c3a630a6e3110775-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-09-11</span>
+<div class="review-card" onclick="handleReviewCardClick('6')" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px; box-shadow: 0 4px 14px rgba(0,0,0,0.02); height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='#008194'; this.style.boxShadow='0 8px 24px rgba(0,129,148,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 14px rgba(0,0,0,0.02)';">
+  <div>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <span style="font-size: 11.5px; font-weight: 700; color: #008194; background: #E6F6F8; padding: 3px 8px; border-radius: 4px;">틱장애</span>
+      <span style="font-size: 12px; color: #94A3B8;">2026-09-11 · 조회 3</span>
+    </div>
+    <div style="display: flex; gap: 14px; margin-bottom: 12px; align-items: flex-start;">
+      <div style="width: 86px; height: 86px; flex-shrink: 0; border-radius: 8px; overflow: hidden; position: relative; background: #F8FAFB; border: 1px solid #E2E8F0;">
+        <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c3a630a6e3110775-130x130.jpg" alt="자필 치료후기" style="width: 100%; height: 100%; object-fit: cover; filter: blur(4.5px); -webkit-filter: blur(4.5px); transform: scale(1.15);" loading="lazy" />
+        <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center;">
+          <span style="font-size: 10px; background: rgba(12,67,73,0.85); color: #FFF; padding: 2px 5px; border-radius: 3px; font-weight: 700;">자필보호</span>
+        </div>
       </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
+      <div style="flex: 1; min-width: 0;">
+        <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; margin: 0 0 6px; line-height: 1.45; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">틱장애 치료후기 - 아이를 걱정스럽게 바라보지 않게 되어서 좋습니다.</h4>
+        <p style="font-size: 12.5px; color: #64748B; line-height: 1.6; margin: 0; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">의사 선생님이 환자 및 보호자의 마음을 편하게 해주십니다. 꾸준히 치료 받으면 좋은 결과가 있으...</p>
       </div>
     </div>
   </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">틱장애 치료후기 - 아이를 걱정스럽게 바라보지 않게 되어서 좋습니다.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
+  <div style="padding-top: 10px; border-top: 1px dashed #E2E8F0; display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: #146369; font-weight: 700;">
+    <span>본원 후기 원문 보기 ↗</span>
+    <span style="color: #94A3B8; font-weight: 400; font-size: 11.5px;">healim.com/5-3</span>
   </div>
 </div>
-<div class="review-card" onclick="handleReviewCardClick('7')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c3364ea728814462-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-09-11</span>
+<div class="review-card" onclick="handleReviewCardClick('7')" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px; box-shadow: 0 4px 14px rgba(0,0,0,0.02); height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='#008194'; this.style.boxShadow='0 8px 24px rgba(0,129,148,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 14px rgba(0,0,0,0.02)';">
+  <div>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <span style="font-size: 11.5px; font-weight: 700; color: #008194; background: #E6F6F8; padding: 3px 8px; border-radius: 4px;">자율신경실조증</span>
+      <span style="font-size: 12px; color: #94A3B8;">2026-09-11 · 조회 5</span>
+    </div>
+    <div style="display: flex; gap: 14px; margin-bottom: 12px; align-items: flex-start;">
+      <div style="width: 86px; height: 86px; flex-shrink: 0; border-radius: 8px; overflow: hidden; position: relative; background: #F8FAFB; border: 1px solid #E2E8F0;">
+        <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c3364ea728814462-130x130.png" alt="자필 치료후기" style="width: 100%; height: 100%; object-fit: cover; filter: blur(4.5px); -webkit-filter: blur(4.5px); transform: scale(1.15);" loading="lazy" />
+        <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center;">
+          <span style="font-size: 10px; background: rgba(12,67,73,0.85); color: #FFF; padding: 2px 5px; border-radius: 3px; font-weight: 700;">자필보호</span>
+        </div>
       </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
+      <div style="flex: 1; min-width: 0;">
+        <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; margin: 0 0 6px; line-height: 1.45; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">자율신경실조증 치료후기 - 꿈을 안 꾸고 숙면을 할 수 있어 너무 좋습니다.</h4>
+        <p style="font-size: 12.5px; color: #64748B; line-height: 1.6; margin: 0; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">보통 한의원 들은 진맥과 간단한 상담을 통해 치료를 하는데 해아림 한의원에서는 정확한 검사 장...</p>
       </div>
     </div>
   </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">자율신경실조증 치료후기 - 꿈을 안 꾸고 숙면을 할 수 있어 너무 좋습니다.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
+  <div style="padding-top: 10px; border-top: 1px dashed #E2E8F0; display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: #146369; font-weight: 700;">
+    <span>본원 후기 원문 보기 ↗</span>
+    <span style="color: #94A3B8; font-weight: 400; font-size: 11.5px;">healim.com/5-3</span>
   </div>
 </div>
-<div class="review-card" onclick="handleReviewCardClick('8')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c29e9955e9382782-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-09-11</span>
+<div class="review-card" onclick="handleReviewCardClick('8')" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px; box-shadow: 0 4px 14px rgba(0,0,0,0.02); height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='#008194'; this.style.boxShadow='0 8px 24px rgba(0,129,148,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 14px rgba(0,0,0,0.02)';">
+  <div>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <span style="font-size: 11.5px; font-weight: 700; color: #008194; background: #E6F6F8; padding: 3px 8px; border-radius: 4px;">자율신경실조증</span>
+      <span style="font-size: 12px; color: #94A3B8;">2026-09-11 · 조회 5</span>
+    </div>
+    <div style="display: flex; gap: 14px; margin-bottom: 12px; align-items: flex-start;">
+      <div style="width: 86px; height: 86px; flex-shrink: 0; border-radius: 8px; overflow: hidden; position: relative; background: #F8FAFB; border: 1px solid #E2E8F0;">
+        <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c29e9955e9382782-130x130.jpg" alt="자필 치료후기" style="width: 100%; height: 100%; object-fit: cover; filter: blur(4.5px); -webkit-filter: blur(4.5px); transform: scale(1.15);" loading="lazy" />
+        <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center;">
+          <span style="font-size: 10px; background: rgba(12,67,73,0.85); color: #FFF; padding: 2px 5px; border-radius: 3px; font-weight: 700;">자필보호</span>
+        </div>
       </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
+      <div style="flex: 1; min-width: 0;">
+        <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; margin: 0 0 6px; line-height: 1.45; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">자율신경실조증 치료후기 - 생활함에 있어서 불편함이 개선돼서 좋습니다.</h4>
+        <p style="font-size: 12.5px; color: #64748B; line-height: 1.6; margin: 0; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">편하게 얘기하면서 안심시켜주시고 괜찮아질 수 있다는 생각이 들게 도와주셔서 좋았습니다.
+
+ 
+
+...</p>
       </div>
     </div>
   </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">자율신경실조증 치료후기 - 생활함에 있어서 불편함이 개선돼서 좋습니다.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
+  <div style="padding-top: 10px; border-top: 1px dashed #E2E8F0; display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: #146369; font-weight: 700;">
+    <span>본원 후기 원문 보기 ↗</span>
+    <span style="color: #94A3B8; font-weight: 400; font-size: 11.5px;">healim.com/5-3</span>
   </div>
 </div>
-<div class="review-card" onclick="handleReviewCardClick('9')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c245d425f9709039-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-09-11</span>
+<div class="review-card" onclick="handleReviewCardClick('9')" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px; box-shadow: 0 4px 14px rgba(0,0,0,0.02); height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='#008194'; this.style.boxShadow='0 8px 24px rgba(0,129,148,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 14px rgba(0,0,0,0.02)';">
+  <div>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <span style="font-size: 11.5px; font-weight: 700; color: #008194; background: #E6F6F8; padding: 3px 8px; border-radius: 4px;">공황장애</span>
+      <span style="font-size: 12px; color: #94A3B8;">2026-09-11 · 조회 4</span>
+    </div>
+    <div style="display: flex; gap: 14px; margin-bottom: 12px; align-items: flex-start;">
+      <div style="width: 86px; height: 86px; flex-shrink: 0; border-radius: 8px; overflow: hidden; position: relative; background: #F8FAFB; border: 1px solid #E2E8F0;">
+        <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c245d425f9709039-130x130.jpg" alt="자필 치료후기" style="width: 100%; height: 100%; object-fit: cover; filter: blur(4.5px); -webkit-filter: blur(4.5px); transform: scale(1.15);" loading="lazy" />
+        <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center;">
+          <span style="font-size: 10px; background: rgba(12,67,73,0.85); color: #FFF; padding: 2px 5px; border-radius: 3px; font-weight: 700;">자필보호</span>
+        </div>
       </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
+      <div style="flex: 1; min-width: 0;">
+        <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; margin: 0 0 6px; line-height: 1.45; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">공황장애 치료후기 - 일상생활이 가능해졌고 운전도 무난하게 하고 다닙니다.</h4>
+        <p style="font-size: 12.5px; color: #64748B; line-height: 1.6; margin: 0; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">원장님이 친절하게 상담 및 치료 관리를 잘해주세요. 궁금한 사항도 편하게 다 말씀해주시구요. 그...</p>
       </div>
     </div>
   </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">공황장애 치료후기 - 일상생활이 가능해졌고 운전도 무난하게 하고 다닙니다.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
+  <div style="padding-top: 10px; border-top: 1px dashed #E2E8F0; display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: #146369; font-weight: 700;">
+    <span>본원 후기 원문 보기 ↗</span>
+    <span style="color: #94A3B8; font-weight: 400; font-size: 11.5px;">healim.com/5-3</span>
   </div>
 </div>
-<div class="review-card" onclick="handleReviewCardClick('10')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c2061e4124857470-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-09-11</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">공황장애 치료 후기 - 잠을 잘자고 불안감이 거의 없어요</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('11')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c1a5775a03133227-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-09-11</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">불안장애 치료후기 - 두근거림과 긴장을 덜 하게 되어 불안감이 많이 없어졌습니다.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('12')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c1253c71b2486810-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-09-11</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">불안장애 치료후기 - 일상을 회복한 것이 가장 좋습니다. 요즘 많이 웃어요.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('13')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa1167cb9f3a8236420-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-09-09</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">야뇨증 치료 후기 - 자신감을 찾고 아이가 밝아졌어요.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('14')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6a9a5fee87f737909473-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-09-04</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">불면증 치료 후기 - 치료받으세요. 잠이 점점 좋아지고 편안해졌어요.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('15')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6a9a5ec24bc614448431-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-09-04</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">공황장애 치료 후기 - 호흡이 편안하고 잠을 잘 자고, 감정조절이 잘 됨.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('16')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202608/6a7a7ceed61109263037-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-08-11</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">몇년동안 어지럼증 두통으로 고생했던 엄마</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('17')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202607/6a50b39e9e9bd9633328-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-07-10</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">누워서만 지낼만큼 온 몸이 몸살 난 것처럼 아프고 불안했는데, 치료 후 행복함을 느낍니다.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('18')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202605/6a0fc0dfb676c5305903-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-05-22</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">스스로의 힘으로 제어할 수 있게 된 공황 장애와 두통 증상</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('19')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202605/6a0fbeb6e45ea7713324-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-05-22</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">한의원 치료와 적극적인 생활습관 교정 병행으로 호전된 공황장애와 불안</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('20')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202605/6a0fbc8aa75df1864074-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-05-22</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">불안 장애와 화병 치료 후 눈에 띄게 안정된 몸과 마음</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('21')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202604/69e70a44778af5934931-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-04-21</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">우울과 불안으로부터 벗어나고 있어요.(한약치료, 침, 상담치료 병행 중)</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('22')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202604/69e5967ebac411499015-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-04-20</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">화병 한방 치료로 개선</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('23')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202604/69e1c968264103446826-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-04-17</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">몇 년 동안 고생한 어지럼증, 공황장애 치료</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('24')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202604/69e03791e0b0f5960407-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-04-16</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">ADHD로 힘들었던 아이가 한약치료로 좋아졌어요.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('25')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69bd2007b2a684579841-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-03-20</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">오랜 두통이 한약과 상담치료로 호전되었어요.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('26')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69ba6efa48c6d1629575-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-03-18</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">치료받고 틱장애와 강박, 불안 증세가 좋아졌습니다.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('27')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8f6b9210eb5360884-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-03-17</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">스스로 관리할 수 있도록 돕는 불안장애 치료</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('28')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8f613ccfd11926224-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-03-17</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">성인ADHD인 줄 알았지만, 우울증과 불안장애였어요.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('29')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8f5402720b3888467-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-03-17</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">여러 복합적 증상을 보이는 우울증도 나아질 수 있습니다.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('30')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8d1dd5fd684957722-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-03-17</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">가위눌림 때문에 힘들었는데 이제 잠을 너무 잘 잡니다.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('31')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b818d3ea4082845574-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-03-16</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">틱장애 치료 드디어 끝났습니다.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('32')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8f2a685d3f7213881-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-02-10</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">갑자기 찾아온 불면증, 수면제 대신 선택한 한의원 치료 후기</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('33')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8f2feb9c2c1643080-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-02-10</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">코로나 백신 접종 후 발생한 공황장애 치료기</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('34')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8f31fc99063785660-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-02-10</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">올 것 같지 않던 공황장애 치료 종결날</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('35')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8daad745056919663-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-01-28</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">틱장애 치료 후 자신감 회복</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('36')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8db3314a896672629-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-01-27</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">충동성과 주의력결핍 ADHD 치료후기</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('37')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8db4f9c0cd8358967-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-01-26</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">틱장애 한약치료 하면서 천천히 완화되다가 거의 없어짐</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('38')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8db6d494ab4546659-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-01-23</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">점점 심해지는 틱장애, 치료로 증상이 없어짐</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('39')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8db80b95738922314-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-01-21</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">성인틱 치료 하면서 증상도 좋아지고 성격도 많이 밝아졌어요.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('40')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dbab910212707161-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-01-19</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">불안장애와 불면증을 치료한 후기</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('41')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dbcbf12d11998063-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-01-16</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">치료를 통해 불면증 개선과 함께 여유로운 마음이 생김</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('42')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202601/696759b4950557632687-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-01-14</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">내 몸과 마음에 대한 통제감을 되찾는 공황장애 치료 과정</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('43')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202601/696757a781d8e2313005-130x130.jpg" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-01-14</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">불안장애, 꾸준히 치료하면 나아집니다.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('44')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dbed5dbe72415886-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-01-14</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">손발 다한증 치료한 후기</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('45')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dc13905458867863-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-01-13</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">1년 이상 지속된 공황장애 치료후기</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('46')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dc333e7b77410487-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-01-12</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">손발겨드랑이 다한증 치료후기</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('47')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dc58b187f9310582-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-01-09</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">심신이 차분해지면서 치료된 불면증</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('48')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dc74b1f337616329-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-01-07</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">꾸준한 한약 복용으로 치료한 손발 다한증</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('49')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dc9481c108594605-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-01-06</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">공황장애 한의원 치료하면서 증상도 좋아지고 스트레스를 대처하는 방식이 많이 개선됐어요.</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('50')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dcbd80b047305381-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-01-05</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">수면장애 치료 후기</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('51')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dcde529971443291-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2026-01-02</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">한방치료를 병행하면서 신체 부담을 낮추고 안정적으로 호전된 자율신경실조증</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('52')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dd098aaa83208630-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2025-12-31</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">불안 불면증 치료한 후기</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('53')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dd29371623645205-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2025-12-30</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">올바른 생활습관과 한약치료로 손발 다한증 개선</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('54')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dd45308372291295-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2025-12-29</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">손 다한증으로 학업중 노트가 젖음</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('55')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dd5ec6dcc5302400-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2025-12-26</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">자율신경실조증 치료후기</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('56')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dd77c9c9a4130388-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2025-12-24</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">꾸준한 치료로 공황장애 극복</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('57')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8dda09355e3786385-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2025-12-23</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">업무로 인한 대인기피 불안장애 회복</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
-  </div>
-</div>
-<div class="review-card" onclick="handleReviewCardClick('58')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#146369'; this.style.boxShadow='0 12px 24px rgba(20,99,105,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
-  <div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-    <img src="https://www.healim.com/wp-content/uploads/kboard_thumbnails/3/202603/69b8ddcdacf118046843-130x130.png" alt="치료후기 치료후기 자필 원문" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">
-      <div style="display: flex; justify-content: space-between; align-items: center;">
-        <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">치료후기</span>
-        <span style="color: #E2E8F0; font-size: 11px;">2025-12-22</span>
-      </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">
-        <span style="font-size: 12px;">🔒</span>
-        <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>
-      </div>
-    </div>
-  </div>
-  <div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-    <div>
-      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">일상생활이 불가능할 정도의 자율신경실조증 치료후기</h4>
-      <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">
-        <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>
-        <div style="color: #64748B; margin-bottom: 6px;">...</div>
-        <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>
-        <div style="color: #334155;">원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다....</div>
-      </div>
-    </div>
-    <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">
-      <span style="color: #94A3B8;">출처: healim.com/5-3</span>
-      <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>
-    </div>
+<div class="review-card" onclick="handleReviewCardClick('10')" style="background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px; box-shadow: 0 4px 14px rgba(0,0,0,0.02); height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease; cursor: pointer;" onmouseover="this.style.transform='translateY(-3px)'; this.style.borderColor='#008194'; this.style.boxShadow='0 8px 24px rgba(0,129,148,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 14px rgba(0,0,0,0.02)';">
+  <div>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+      <span style="font-size: 11.5px; font-weight: 700; color: #008194; background: #E6F6F8; padding: 3px 8px; border-radius: 4px;">공황장애</span>
+      <span style="font-size: 12px; color: #94A3B8;">2026-09-11 · 조회 2</span>
+    </div>
+    <div style="display: flex; gap: 14px; margin-bottom: 12px; align-items: flex-start;">
+      <div style="width: 86px; height: 86px; flex-shrink: 0; border-radius: 8px; overflow: hidden; position: relative; background: #F8FAFB; border: 1px solid #E2E8F0;">
+        <img src="https://www.healim.com/wp-content/uploads/kboard_attached/3/202609/6aa3c2061e4124857470-130x130.jpg" alt="자필 치료후기" style="width: 100%; height: 100%; object-fit: cover; filter: blur(4.5px); -webkit-filter: blur(4.5px); transform: scale(1.15);" loading="lazy" />
+        <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center;">
+          <span style="font-size: 10px; background: rgba(12,67,73,0.85); color: #FFF; padding: 2px 5px; border-radius: 3px; font-weight: 700;">자필보호</span>
+        </div>
+      </div>
+      <div style="flex: 1; min-width: 0;">
+        <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; margin: 0 0 6px; line-height: 1.45; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">공황장애 치료 후기 - 잠을 잘자고 불안감이 거의 없어요</h4>
+        <p style="font-size: 12.5px; color: #64748B; line-height: 1.6; margin: 0; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">의사 선생님의 자세한 단계별 상담, 증세에 따른 약처방 변경. 신뢰감이 드는 상담
+
+ 
+
+잠자리에 ...</p>
+      </div>
+    </div>
+  </div>
+  <div style="padding-top: 10px; border-top: 1px dashed #E2E8F0; display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: #146369; font-weight: 700;">
+    <span>본원 후기 원문 보기 ↗</span>
+    <span style="color: #94A3B8; font-weight: 400; font-size: 11.5px;">healim.com/5-3</span>
   </div>
 </div>
   </div>
@@ -4695,6 +3196,16 @@ function handleReviewCardClick(id) {
   window.open('https://www.healim.com/5-3', '_blank', 'noopener,noreferrer');
 }
 
+function escapeHtml(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
 function renderReviewsList() {
   var container = document.getElementById('reviewsContainer');
   var countEl = document.getElementById('reviewsCount');
@@ -4703,7 +3214,8 @@ function renderReviewsList() {
   var filtered = defaultReviewsData.filter(function(r) {
     if (!r) return false;
     if (currentReviewCategory === 'ALL') return true;
-    return (r.category && r.category.includes(currentReviewCategory));
+    var cat = r.disease || r.category || '';
+    return cat.indexOf(currentReviewCategory) !== -1;
   });
 
   if (countEl) countEl.textContent = filtered.length;
@@ -4724,42 +3236,40 @@ function renderReviewsList() {
   pageItems.forEach(function(r) {
     var card = document.createElement('div');
     card.className = 'review-card';
-    card.style.cssText = 'background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);';
-    card.onmouseover = function() { this.style.transform = 'translateY(-4px)'; this.style.borderColor = '#146369'; this.style.boxShadow = '0 12px 24px rgba(20,99,105,0.12)'; };
-    card.onmouseout = function() { this.style.transform = 'none'; this.style.borderColor = '#E2E8F0'; this.style.boxShadow = '0 4px 12px rgba(0,0,0,0.03)'; };
+    card.style.cssText = 'background: #FFFFFF; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px; box-shadow: 0 4px 14px rgba(0,0,0,0.02); height: 100%; box-sizing: border-box; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.2s ease; cursor: pointer;';
+    card.onmouseover = function() { this.style.transform = 'translateY(-3px)'; this.style.borderColor = '#008194'; this.style.boxShadow = '0 8px 24px rgba(0,129,148,0.12)'; };
+    card.onmouseout = function() { this.style.transform = 'none'; this.style.borderColor = '#E2E8F0'; this.style.boxShadow = '0 4px 14px rgba(0,0,0,0.02)'; };
     card.onclick = function() { handleReviewCardClick(r.id); };
 
-    var beforeText = (r.before || r.desc || '').slice(0, 85);
-    var afterText = (r.after || '원장님의 1:1 맞춤 치료 후 증상이 안정되고 편안한 일상으로 복귀하셨습니다.').slice(0, 85);
+    var disease = r.disease || r.category || '치료후기';
+    var date = r.date || '2026.09.28';
+    var views = r.views || 10;
+    var img = r.img || '/images/reviews/review_1.jpg';
+    var title = r.title || '소중한 회복 기록';
+    var content = r.content || r.desc || r.before || '';
 
     card.innerHTML = 
-      '<div style="position: relative; width: 100%; height: 160px; background: #0C4349; overflow: hidden; display: flex; align-items: center; justify-content: center;">' +
-      '  <img src="' + (r.img || '/images/reviews/review_1.jpg') + '" alt="' + (r.category || '치료후기') + '" style="width: 100%; height: 100%; object-fit: cover; filter: blur(5px); transform: scale(1.08); opacity: 0.75;" />' +
-      '  <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,67,73,0.3) 0%, rgba(12,67,73,0.85) 100%); display: flex; flex-direction: column; justify-content: space-between; padding: 12px 14px;">' +
-      '    <div style="display: flex; justify-content: space-between; align-items: center;">' +
-      '      <span style="background: rgba(255,255,255,0.92); color: #0C4349; font-size: 11.5px; font-weight: 800; padding: 3px 8px; border-radius: 4px;">' + (r.category || '치료후기') + '</span>' +
-      '      <span style="color: #E2E8F0; font-size: 11px;">' + (r.date || '2026.09.28') + '</span>' +
+      '<div>' +
+      '  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">' +
+      '    <span style="font-size: 11.5px; font-weight: 700; color: #008194; background: #E6F6F8; padding: 3px 8px; border-radius: 4px;">' + escapeHtml(disease) + '</span>' +
+      '    <span style="font-size: 12px; color: #94A3B8;">' + escapeHtml(date) + ' · 조회 ' + escapeHtml(views) + '</span>' +
+      '  </div>' +
+      '  <div style="display: flex; gap: 14px; margin-bottom: 12px; align-items: flex-start;">' +
+      '    <div style="width: 86px; height: 86px; flex-shrink: 0; border-radius: 8px; overflow: hidden; position: relative; background: #F8FAFB; border: 1px solid #E2E8F0;">' +
+      '      <img src="' + img + '" alt="자필 치료후기" style="width: 100%; height: 100%; object-fit: cover; filter: blur(4.5px); -webkit-filter: blur(4.5px); transform: scale(1.15);" loading="lazy" />' +
+      '      <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.08); display: flex; align-items: center; justify-content: center;">' +
+      '        <span style="font-size: 10px; background: rgba(12,67,73,0.85); color: #FFF; padding: 2px 5px; border-radius: 3px; font-weight: 700;">자필보호</span>' +
+      '      </div>' +
       '    </div>' +
-      '    <div style="display: flex; align-items: center; justify-content: center; gap: 6px; background: rgba(0,0,0,0.45); padding: 5px 10px; border-radius: 20px; backdrop-filter: blur(4px);">' +
-      '      <span style="font-size: 12px;">🔒</span>' +
-      '      <span style="color: #FFF; font-size: 11px; font-weight: 700;">자필 원문 보호 (클릭 시 열람)</span>' +
+      '    <div style="flex: 1; min-width: 0;">' +
+      '      <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; margin: 0 0 6px; line-height: 1.45; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">' + escapeHtml(title) + '</h4>' +
+      '      <p style="font-size: 12.5px; color: #64748B; line-height: 1.6; margin: 0; word-break: keep-all; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">' + escapeHtml(content) + '</p>' +
       '    </div>' +
       '  </div>' +
       '</div>' +
-      '<div style="padding: 18px 16px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">' +
-      '  <div>' +
-      '    <h4 style="font-size: 14.5px; font-weight: 800; color: #0C4349; line-height: 1.45; margin: 0 0 10px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">' + (r.title || '소중한 회복 기록') + '</h4>' +
-      '    <div style="background: #F8FAFB; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 12.5px; line-height: 1.5; color: #475569;">' +
-      '      <div style="color: #DC2626; font-weight: 700; margin-bottom: 3px;">• 치료 전:</div>' +
-      '      <div style="color: #64748B; margin-bottom: 6px;">' + beforeText + '...</div>' +
-      '      <div style="color: #059669; font-weight: 700; margin-bottom: 3px;">• 치료 후:</div>' +
-      '      <div style="color: #334155;">' + afterText + '...</div>' +
-      '    </div>' +
-      '  </div>' +
-      '  <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 10px; border-top: 1px solid #F1F5F9; font-size: 12px;">' +
-      '    <span style="color: #94A3B8;">출처: healim.com/5-3</span>' +
-      '    <span style="color: #008194; font-weight: 700;">원문 열람 ↗</span>' +
-      '  </div>' +
+      '<div style="padding-top: 10px; border-top: 1px dashed #E2E8F0; display: flex; justify-content: space-between; align-items: center; font-size: 12.5px; color: #146369; font-weight: 700;">' +
+      '  <span>본원 후기 원문 보기 ↗</span>' +
+      '  <span style="color: #94A3B8; font-weight: 400; font-size: 11.5px;">healim.com/5-3</span>' +
       '</div>';
     container.appendChild(card);
   });

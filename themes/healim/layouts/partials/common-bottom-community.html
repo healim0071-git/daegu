@@ -720,6 +720,15 @@ ul.bottom-cards-grid {
   border-color: #008194;
   box-shadow: 0 8px 24px rgba(0,129,148,0.12);
 }
+@media (max-width: 640px) {
+  ul.bottom-cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+  .bottom-review-card-inner {
+    padding: 16px 14px !important;
+  }
+}
 </style>
 <script>
 (function() {
