@@ -30,7 +30,7 @@
 
     <!-- Title -->
     <text x="0" y="65" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="20" font-weight="800" letter-spacing="-0.5px">
-      기립성 조절장애 & 뇌혈류
+      기립성 조절장애 &amp; 뇌혈류
     </text>
 
     <!-- Subtitle (word wrapped) -->
@@ -53,7 +53,7 @@
   <!-- Right Motif Illustration -->
   
         <g transform="translate(340, 150)">
-          <!-- Cerebral perfusion & spine -->
+          <!-- Cerebral perfusion &amp; spine -->
           <path d="M0,55 L0,-10 Q-25,-30 -35,-50 M0,-10 Q25,-30 35,-50 M-10,-5 Q-35,10 -45,30 M10,-5 Q35,10 45,30" fill="none" stroke="#C084FC" stroke-width="3" stroke-linecap="round"/>
           <circle cx="0" cy="55" r="8" fill="#FFF"/>
           <circle cx="-35" cy="-50" r="9" fill="#C084FC"/>

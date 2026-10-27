@@ -30,7 +30,7 @@
 
     <!-- Title -->
     <text x="0" y="65" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="20" font-weight="800" letter-spacing="-0.5px">
-      송과체 멜라토닌 & 뇌파
+      송과체 멜라토닌 &amp; 뇌파
     </text>
 
     <!-- Subtitle (word wrapped) -->
@@ -53,7 +53,7 @@
   <!-- Right Motif Illustration -->
   
         <g transform="translate(340, 150)">
-          <!-- Pineal Crescent & Delta Wave -->
+          <!-- Pineal Crescent &amp; Delta Wave -->
           <path d="M-15,-45 A35,35 0 0,0 25,-5 A30,30 0 1,1 -15,-45 Z" fill="#818CF8" opacity="0.9"/>
           <!-- Stars -->
           <circle cx="35" cy="-35" r="3" fill="#FFF"/>

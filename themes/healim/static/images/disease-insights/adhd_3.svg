@@ -53,7 +53,7 @@
   <!-- Right Motif Illustration -->
   
         <g transform="translate(340, 150)">
-          <!-- Target Bullseye & Arrow of Focus -->
+          <!-- Target Bullseye &amp; Arrow of Focus -->
           <circle cx="0" cy="0" r="50" fill="none" stroke="#FACC15" stroke-width="3"/>
           <circle cx="0" cy="0" r="35" fill="none" stroke="#FFF" stroke-width="2"/>
           <circle cx="0" cy="0" r="20" fill="#FACC15"/>

@@ -30,7 +30,7 @@
 
     <!-- Title -->
     <text x="0" y="65" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="20" font-weight="800" letter-spacing="-0.5px">
-      경추성 & 심인성 어지럼증
+      경추성 &amp; 심인성 어지럼증
     </text>
 
     <!-- Subtitle (word wrapped) -->

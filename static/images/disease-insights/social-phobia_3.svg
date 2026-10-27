@@ -30,7 +30,7 @@
 
     <!-- Title -->
     <text x="0" y="65" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', sans-serif" font-size="20" font-weight="800" letter-spacing="-0.5px">
-      편도체 탈감작 & 대인 안정감
+      편도체 탈감작 &amp; 대인 안정감
     </text>
 
     <!-- Subtitle (word wrapped) -->
@@ -53,7 +53,7 @@
   <!-- Right Motif Illustration -->
   
         <g transform="translate(340, 150)">
-          <!-- Interpersonal connection bridge & social sun -->
+          <!-- Interpersonal connection bridge &amp; social sun -->
           <path d="M-45,25 Q0,-10 45,25" fill="none" stroke="#34D399" stroke-width="4" stroke-linecap="round"/>
           <circle cx="-45" cy="25" r="9" fill="#FFF"/>
           <circle cx="45" cy="25" r="9" fill="#FFF"/>

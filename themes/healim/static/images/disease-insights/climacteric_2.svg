@@ -44,7 +44,7 @@
   </g>
 
   <g transform="translate(345, 145)">
-    <!-- Crescent Moon & Neural Wave -->
+    <!-- Crescent Moon &amp; Neural Wave -->
     <path d="M-15,-40 A32,32 0 0,0 20,-5 A28,28 0 1,1 -15,-40 Z" fill="#C084FC" opacity="0.95"/>
     <circle cx="30" cy="-30" r="3" fill="#FFF"/>
     <circle cx="-30" cy="-10" r="2" fill="#E9D5FF"/>
