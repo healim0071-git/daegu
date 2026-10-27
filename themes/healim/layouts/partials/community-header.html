@@ -1,3 +1,4 @@
+﻿{{ $ctx := .context | default . }}
 {{ $activeTab := .activeTab | default "columns" }}
 <div class="container community-page-container" style="max-width: 1140px; margin: 24px auto 60px; padding: 0 16px;">
   
@@ -9,9 +10,16 @@
   <div style="font-size: 14px; font-weight: 700; color: #008194; margin-bottom: 10px; letter-spacing: -0.01em;">
     심층 가이드 <span style="color: #CBD5E1; margin: 0 6px;">|</span> 해아림한의원 대구본점
   </div>
+  {{ if $ctx.Params.h1_title }}
+  <h1 style="position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important;">{{ $ctx.Params.h1_title }}</h1>
+  <div style="font-size: 32px; font-weight: 800; color: #0C4349; margin: 0 0 14px; letter-spacing: -0.02em; line-height: 1.35;" role="heading" aria-level="2">
+    김대억 대표원장의<br>두뇌·신경계 심층 가이드
+  </div>
+  {{ else }}
   <h1 style="font-size: 32px; font-weight: 800; color: #0C4349; margin: 0 0 14px; letter-spacing: -0.02em; line-height: 1.35;">
     김대억 대표원장의<br>두뇌·신경계 심층 가이드
   </h1>
+  {{ end }}
   <p style="font-size: 15px; color: #556970; max-width: 780px; margin: 0 auto 20px; line-height: 1.65; word-break: keep-all;">
     해아림한의원 대구본점 김대억 한방신경정신과 박사의 심층 가이드 — 틱장애, 공황장애, 자율신경실조증, 불면증의 원인과 뇌 자생력 회복 심층 가이드.
   </p>
