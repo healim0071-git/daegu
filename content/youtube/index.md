@@ -1,4 +1,4 @@
----
+﻿---
 title: "해아림TV 유튜브 영상 | 두뇌·신경계 건강 정보 & 원장 특강"
 seo_title: "해아림TV 유튜브 영상 | 해아림한의원 대구본점 원장 특강 30편"
 description: "해아림한의원 공식 유튜브 채널(@healimtv) 알쓸한상. 틱장애, 공황장애, 자율신경실조증, 불면증 등 두뇌·신경계 질환 인기 영상(롱폼)과 핵심 쇼츠 30편 1:1 교차 큐레이션."
@@ -792,7 +792,7 @@ layout: single
     </div>
   </div>
 </div>
-<div class="youtube-card" data-ytype="shorts" onclick="openYoutubeModal('-g3vz9EN1_w', '명상이 어렵다구요? &#x27;이것&#x27;부터 해보세요 (시선공포·발표불안 극복)')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#EF4444'; this.style.boxShadow='0 12px 24px rgba(239,68,68,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
+<div class="youtube-card" data-ytype="shorts" onclick="openYoutubeModal('-g3vz9EN1_w', '명상이 어렵다구요? 이것부터 해보세요 (시선공포·발표불안 극복)')" style="background: #FFFFFF; border: 1.5px solid #E2E8F0; border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.03);" onmouseover="this.style.transform='translateY(-4px)'; this.style.borderColor='#EF4444'; this.style.boxShadow='0 12px 24px rgba(239,68,68,0.12)';" onmouseout="this.style.transform='none'; this.style.borderColor='#E2E8F0'; this.style.boxShadow='0 4px 12px rgba(0,0,0,0.03)';">
   <div style="position: relative; width: 100%; padding-top: 56.25%; background: #000; overflow: hidden;">
     <img src="https://i.ytimg.com/vi/-g3vz9EN1_w/oardefault.jpg" alt="명상이 어렵다구요? &#x27;이것&#x27;부터 해보세요 (시선공포·발표불안 극복)" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s;" onmouseover="this.style.transform='scale(1.05)';" onmouseout="this.style.transform='none';" />
     <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 100%);"></div>
