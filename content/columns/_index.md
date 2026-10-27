@@ -36,8 +36,7 @@ layout: single
       <option value="다한증">다한증</option>
       <option value="갱년기">갱년기 (2편)</option>
     </select>
-    
-    <div style="position: relative; flex: 1; max-width: 320px; min-width: 200px;">
+  <div style="position: relative; flex: 1; max-width: 320px; min-width: 200px;">
       <input type="text" id="columnSearchInput" onkeyup="if(event.key==='Enter') filterColumns()" placeholder="칼럼 제목 또는 키워드 검색" style="width: 100%; padding: 9px 38px 9px 14px; border: 1.5px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; outline: none; box-sizing: border-box;" />
       <button type="button" onclick="filterColumns()" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); background: none; border: none; cursor: pointer; color: #64748B; font-size: 15px;">🔍</button>
     </div>
