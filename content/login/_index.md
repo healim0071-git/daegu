@@ -68,7 +68,7 @@ HEALIM AUTHENTICATION
 function getBackUrl() {
   var params = new URLSearchParams(window.location.search);
   var back = params.get('back_url');
-  if (!back) return '/community/#columns';
+  if (!back) return '/columns/';
   try {
     if (back.startsWith('L') && !back.startsWith('/')) {
       return atob(back);
@@ -114,7 +114,7 @@ function handleFormLogin(e) {
     localStorage.setItem('healim_auth_user', JSON.stringify(adminUser));
     alert('👑 최고관리자(healim0071)로 인증되었습니다.\n전체 칼럼 자동발행 상태 확인 및 수동 발행, 작성·관리 권한이 활성화됩니다.');
     var back = getBackUrl();
-    window.location.href = (back === '/' || !back) ? '/community/#columns' : back;
+    window.location.href = (back === '/' || !back) ? '/columns/' : back;
     return;
   }
 

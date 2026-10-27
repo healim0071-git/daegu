@@ -1,4 +1,4 @@
-﻿{{ define "main" }}
+{{ define "main" }}
 {{ $diseaseTitle := or .Params.disease_name .Title }}
 <div class="container disease-page-container">
   <!-- ── 스크린샷 1: 대형 화이트 라운드 히어로 카드 ── -->
@@ -146,7 +146,7 @@
         </a>
         <h3 style="font-size: 22px; font-weight: 800; color: #0C4349; margin: 0;">{{ $diseaseTitle }} 관련 해아림TV 핵심 자문 영상</h3>
       </div>
-      <a href="/community/#youtube" style="display: inline-flex; align-items: center; gap: 4px; font-size: 13.5px; font-weight: 700; color: #146369; text-decoration: none;">
+      <a href="/youtube/" style="display: inline-flex; align-items: center; gap: 4px; font-size: 13.5px; font-weight: 700; color: #146369; text-decoration: none;">
         유튜브 30편 전체보기 &gt;
       </a>
     </div>
@@ -236,3 +236,4 @@
 
 </div>
 {{ end }}
+

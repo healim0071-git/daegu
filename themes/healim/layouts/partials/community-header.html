@@ -1,0 +1,183 @@
+{{ $activeTab := .activeTab | default "columns" }}
+<div class="container community-page-container" style="max-width: 1140px; margin: 24px auto 60px; padding: 0 16px;">
+  
+<!-- [히어로 섹션] -->
+<div class="community-hero-intro" style="text-align: center; margin-bottom: 28px;">
+  <div style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 18px; background: #E6F6F8; color: #008194; font-size: 13.5px; font-weight: 700; border-radius: 50px; margin-bottom: 14px; border: 1px solid #BADFE3;">
+    <span>&#x25A1; 16여 년 임상 노하우 &amp; 전국 16개 네트워크</span>
+  </div>
+  <div style="font-size: 14px; font-weight: 700; color: #008194; margin-bottom: 10px; letter-spacing: -0.01em;">
+    심층 가이드 <span style="color: #CBD5E1; margin: 0 6px;">|</span> 해아림한의원 대구본점
+  </div>
+  <h1 style="font-size: 32px; font-weight: 800; color: #0C4349; margin: 0 0 14px; letter-spacing: -0.02em; line-height: 1.35;">
+    김대억 대표원장의<br>두뇌·신경계 심층 가이드
+  </h1>
+  <p style="font-size: 15px; color: #556970; max-width: 780px; margin: 0 auto 20px; line-height: 1.65; word-break: keep-all;">
+    해아림한의원 대구본점 김대억 한방신경정신과 박사의 심층 가이드 — 틱장애, 공황장애, 자율신경실조증, 불면증의 원인과 뇌 자생력 회복 심층 가이드.
+  </p>
+  <div style="display: flex; justify-content: center; gap: 12px; margin-bottom: 24px; flex-wrap: wrap;">
+    <a href="https://www.healim.com" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; justify-content: center; padding: 11px 24px; background: #0C4349; color: #FFFFFF; font-size: 14.5px; font-weight: 700; border-radius: 8px; text-decoration: none; box-shadow: 0 3px 10px rgba(12,67,73,0.18); transition: transform 0.15s;">
+      가까운 16개 지점 찾기 &gt;
+    </a>
+    <a href="/location/" style="display: inline-flex; align-items: center; justify-content: center; padding: 11px 24px; background: #FFFFFF; color: #0C4349; font-size: 14.5px; font-weight: 700; border-radius: 8px; text-decoration: none; border: 1.5px solid #0C4349; transition: background 0.15s;">
+      정밀 검사 시스템 &gt;
+    </a>
+  </div>
+
+  <!-- 의료 감수 배너 -->
+  <div style="background: #F0F7F8; border: 1px solid #D5E8EA; border-radius: 8px; padding: 10px 18px; max-width: 860px; margin: 0 auto 16px; display: flex; align-items: center; gap: 12px; font-size: 13.5px; text-align: left;">
+    <span style="background: #008194; color: #FFFFFF; font-size: 11.5px; font-weight: 700; padding: 3px 8px; border-radius: 4px; white-space: nowrap;">의료 감수</span>
+    <span style="color: #334155; line-height: 1.5;">
+      해아림한의원 네트워크 본점 대표원장 <strong>김대억 박사</strong> (한방신경정신과 박사 / 2권의 단행본 저자)
+    </span>
+  </div>
+
+  <!-- 그린 버티컬 바 소개 카드 -->
+  <div style="background: #F8FAFB; border: 1px solid #E2E8F0; border-left: 4px solid #008194; border-radius: 8px; padding: 16px 20px; max-width: 860px; margin: 0 auto 30px; text-align: left;">
+    <h3 style="font-size: 16px; font-weight: 800; color: #0C4349; margin: 0 0 8px; letter-spacing: -0.01em;">
+      김대억 대표원장의 두뇌·신경계 심층 가이드
+    </h3>
+    <p style="font-size: 13.5px; color: #475569; margin: 0; line-height: 1.7; word-break: keep-all;">
+      『토닥토닥 틱장애』, 『걱정마 공황장애』의 저자 김대억 대표원장이 진료실에서 환자분들과 나누었던 이야기, 뇌신경계와 자율신경계 질환의 과학적 원리와 일상 속 실천법을 깊이 있게 전해드립니다.
+    </p>
+  </div>
+</div>
+
+<!-- 5개 탭 내비게이션 바: 각 독립 URL 연결 -->
+<div class="community-tabs-wrapper">
+  <ul class="community-tabs-list">
+    <li class="comm-tab-item">
+      <a href="/columns/" class="comm-tab-btn {{ if eq $activeTab "columns" }}active is-active{{ end }}">
+        치료칼럼
+      </a>
+    </li>
+    <li class="comm-tab-item">
+      <a href="/reviews/" class="comm-tab-btn {{ if eq $activeTab "reviews" }}active is-active{{ end }}">
+        치료후기 <span class="tab-badge" style="font-size: 11px; padding: 2px 6px; background: #EFF6F7; color: #146369; border-radius: 4px; vertical-align: middle;">회원전용</span>
+      </a>
+    </li>
+    <li class="comm-tab-item">
+      <a href="/faq/" class="comm-tab-btn {{ if eq $activeTab "faq" }}active is-active{{ end }}">
+        자주 묻는 질문(FAQ)
+      </a>
+    </li>
+    <li class="comm-tab-item">
+      <a href="/youtube/" class="comm-tab-btn {{ if eq $activeTab "youtube" }}active is-active{{ end }}">
+        유튜브 영상
+      </a>
+    </li>
+    <li class="comm-tab-item">
+      <a href="https://www.healim.com/5-6" target="_blank" rel="noopener noreferrer" class="comm-tab-btn" style="text-decoration: none;">
+        한약과 비용고시
+      </a>
+    </li>
+  </ul>
+</div>
+
+<style>
+/* 데스크톱: 5개 탭을 컨테이너 너비에 맞춰 확장 */
+.community-tabs-wrapper {
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto 36px;
+  border-bottom: 2px solid #E2E8F0;
+}
+.community-tabs-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  justify-content: space-between;
+  gap: 12px;
+}
+.comm-tab-item {
+  flex: 1;
+  margin: 0;
+  text-align: center;
+}
+.comm-tab-btn {
+  width: 100%;
+  padding: 16px 14px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #64748B;
+  border-bottom: 3.5px solid transparent;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-sizing: border-box;
+}
+.comm-tab-btn:hover {
+  color: #0C4349;
+  background: #F8FAFB;
+  border-radius: 8px 8px 0 0;
+}
+.comm-tab-btn.is-active,
+.comm-tab-btn.active {
+  color: #146369 !important;
+  border-bottom: 3.5px solid #146369 !important;
+  font-weight: 800 !important;
+  background: #FFFFFF !important;
+}
+
+/* 모바일 화면 최적화 (768px 이하) */
+@media (max-width: 768px) {
+  .col-hide-mobile { display: none !important; }
+  .col-show-mobile { display: flex !important; }
+  
+  .community-page-container table {
+    table-layout: fixed;
+    width: 100%;
+  }
+  .community-page-container table th,
+  .community-page-container table td {
+    padding: 10px 8px !important;
+  }
+  .community-tabs-wrapper {
+    margin-bottom: 24px;
+    border-bottom: none;
+  }
+  .community-tabs-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .comm-tab-item {
+    flex: none;
+  }
+  .comm-tab-btn {
+    padding: 13px 8px;
+    font-size: 14.5px;
+    white-space: normal;
+    word-break: keep-all;
+    border-radius: 8px;
+    background: #F8FAFB;
+    border: 1.5px solid #E2E8F0;
+    border-bottom: 1.5px solid #E2E8F0;
+  }
+  .comm-tab-btn.is-active,
+  .comm-tab-btn.active {
+    background: #E6F6F8 !important;
+    border-color: #146369 !important;
+    border-bottom: 2px solid #146369 !important;
+  }
+  .community-page-container {
+    padding: 0 10px !important;
+    margin-top: 12px !important;
+  }
+}
+@media (max-width: 480px) {
+  .comm-tab-btn {
+    padding: 11px 4px;
+    font-size: 13.5px;
+  }
+}
+</style>

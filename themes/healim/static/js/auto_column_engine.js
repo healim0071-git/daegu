@@ -163,13 +163,13 @@
 };
 
   function getDiseasePageUrl(disease) {
-    if (!disease) return '/community/';
+    if (!disease) return '/columns/';
     var key = disease.trim();
     if (diseaseUrlMap[key]) return diseaseUrlMap[key];
     for (var k in diseaseUrlMap) {
       if (key.includes(k) || k.includes(key)) return diseaseUrlMap[k];
     }
-    return '/community/';
+    return '/columns/';
   }
 
   var columnsPool = [
@@ -1787,3 +1787,4 @@
   }
 
 })(window);
+

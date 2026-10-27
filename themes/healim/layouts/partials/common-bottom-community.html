@@ -1,4 +1,4 @@
-﻿<!-- ======================================================================= -->
+<!-- ======================================================================= -->
 <!-- healim-panic.com 1:1 일치 공통 바텀 영역 (Publications ~ Network Banner)    -->
 <!-- 내용: 해아림한의원 대구본점 커뮤니티 (FAQ, 치료후기, 유튜브, 치료칼럼) 실시간 연동 -->
 <!-- ======================================================================= -->
@@ -206,7 +206,7 @@
     </div>
 
     <div class="bottom-btn-center">
-      <a href="/community/#faq" onclick="handleBottomMoreClick(event, 'faq')" class="btn-healim">
+      <a href="/faq/" onclick="handleBottomMoreClick(event, 'faq')" class="btn-healim">
         <span>자주 묻는 질문 FAQ 더보기 &gt;</span>
       </a>
     </div>
@@ -461,7 +461,7 @@
             <p class="bottom-card-desc">{{ .desc }}</p>
             <div class="bottom-card-footer">
               <span>{{ .author | default "해아림한의원" }} · {{ .date }}</span>
-              <a href="/community/?board=columns&id={{ .id }}" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail('columns', '{{ .id }}')">읽기 &gt;</a>
+              <a href="/columns/?id={{ .id }}" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail('columns', '{{ .id }}')">읽기 &gt;</a>
             </div>
           </div>
         </li>
@@ -479,7 +479,7 @@
           <p class="bottom-card-desc">방학 동안 장시간 스마트폰 유튜브와 게임에 노출된 후 전두엽 피로 누적으로 코 찡긋거림과 어깨 틱이 악화된 9세 남아의 디지털 디톡스 및 뇌기능 회복 치료 사례입니다.</p>
           <div class="bottom-card-footer">
             <span>해아림한의원 · 2026.10.15</span>
-            <a href="/community/?board=columns&id=col-auto-tic-4" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail('columns', 'col-auto-tic-4')">읽기 &gt;</a>
+            <a href="/columns/?id=col-auto-tic-4" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail('columns', 'col-auto-tic-4')">읽기 &gt;</a>
           </div>
         </div>
       </li>
@@ -494,7 +494,7 @@
           <p class="bottom-card-desc">지하철, 만원 버스, 비행기, 엘리베이터 등 탈출이 어려운 밀폐 공간에서 발생하는 광장공포증의 신경 메커니즘과 단계별 탈감작 및 한의학적 심담 강화법을 안내합니다.</p>
           <div class="bottom-card-footer">
             <span>해아림한의원 · 2026.10.15</span>
-            <a href="/community/?board=columns&id=col-auto-panic-6" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail('columns', 'col-auto-panic-6')">읽기 &gt;</a>
+            <a href="/columns/?id=col-auto-panic-6" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail('columns', 'col-auto-panic-6')">읽기 &gt;</a>
           </div>
         </div>
       </li>
@@ -509,14 +509,14 @@
           <p class="bottom-card-desc">3개월 이상 매일 지속되는 비회전성 흔들림, 백화점이나 마트 등 시각적 자극에 악화되는 만성 기능성 어지럼증 PPPD의 뇌신경 기전과 한의학적 진료를 설명합니다.</p>
           <div class="bottom-card-footer">
             <span>해아림한의원 · 2026.10.14</span>
-            <a href="/community/?board=columns&id=col-auto-diz-3" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail('columns', 'col-auto-diz-3')">읽기 &gt;</a>
+            <a href="/columns/?id=col-auto-diz-3" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail('columns', 'col-auto-diz-3')">읽기 &gt;</a>
           </div>
         </div>
       </li>
 {{ end }}
 </ul>
     <div class="bottom-btn-center" style="margin-top: 36px; margin-bottom: 24px;">
-      <a href="/community/#columns" onclick="handleBottomMoreClick(event, 'columns')" class="btn-healim">
+      <a href="/columns/" onclick="handleBottomMoreClick(event, 'columns')" class="btn-healim">
         <span>치료 칼럼 더보기 &gt;</span>
       </a>
     </div>
@@ -595,7 +595,7 @@
     </li>
 </ul>
     <div class="bottom-btn-center" style="margin-top: 36px; margin-bottom: 24px;">
-      <a href="/community/#youtube" onclick="handleBottomMoreClick(event, 'youtube')" class="btn-healim">
+      <a href="/youtube/" onclick="handleBottomMoreClick(event, 'youtube')" class="btn-healim">
         <span>유튜브 영상 30편 전체보기 &gt;</span>
       </a>
     </div>
@@ -674,7 +674,7 @@
       내용이 여기에 표시됩니다.
     </div>
     <div class="modal-footer">
-      <a id="commonBottomModalMoreLink" href="/community/">
+      <a id="commonBottomModalMoreLink" href="/columns/">
         <span>커뮤니티에서 더 많은 글 보기 &gt;</span>
       </a>
       <button type="button" class="btn-modal-close-submit" onclick="closeCommonBottomDetailModal()">닫기</button>
@@ -1041,7 +1041,7 @@ ul.bottom-cards-grid {
       html += '    <p class="bottom-card-desc">' + desc + '</p>';
       html += '    <div class="bottom-card-footer">';
       html += '      <span>' + author + ' · ' + date + '</span>';
-      html += '      <a href="/community/?board=columns&id=' + idStr + '" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail(&quot;columns&quot;, &quot;' + idStr + '&quot;)">읽기 &gt;</a>';
+      html += '      <a href="/columns/?id=' + idStr + '" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail(&quot;columns&quot;, &quot;' + idStr + '&quot;)">읽기 &gt;</a>';
       html += '    </div>';
       html += '  </div>';
       html += '</li>';
@@ -1255,7 +1255,7 @@ ul.bottom-cards-grid {
           views: 15200
         };
       } else {
-        window.location.href = '/community/?board=' + encodeURIComponent(boardType) + '&id=' + encodeURIComponent(postId);
+        window.location.href = '/' + encodeURIComponent(boardType) + '/?id=' + encodeURIComponent(postId);
         return;
       }
     }
@@ -1331,7 +1331,7 @@ ul.bottom-cards-grid {
         moreLink.rel = 'noopener noreferrer';
         moreLink.innerHTML = '<span>치료후기 259편 전체보기 (healim.com/5-3) &gt;</span>';
       } else {
-        moreLink.href = '/community/#' + boardType;
+        moreLink.href = '/' + boardType + '/';
         moreLink.target = '_self';
         moreLink.removeAttribute('rel');
         moreLink.innerHTML = '<span>커뮤니티에서 더 많은 글 보기 &gt;</span>';
@@ -1357,7 +1357,7 @@ ul.bottom-cards-grid {
 
   window.handleBottomMoreClick = function(e, boardType) {
     if (e && e.preventDefault) e.preventDefault();
-    window.location.href = '/community/#' + boardType;
+    if (boardType === 'columns') window.location.href = '/columns/'; else if (boardType === 'faq') window.location.href = '/faq/'; else if (boardType === 'reviews') window.location.href = '/reviews/'; else if (boardType === 'youtube') window.location.href = '/youtube/'; else window.location.href = '/columns/';
   };
 
   document.addEventListener('keydown', function(e) {
@@ -1383,3 +1383,4 @@ ul.bottom-cards-grid {
   });
 })();
 </script>
+

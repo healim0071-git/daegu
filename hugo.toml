@@ -47,5 +47,6 @@ theme = 'healim'
     weight = 7
   [[menu.main]]
     name = '커뮤니티'
-    url = '/reviews/'
+    url = '/columns/'
     weight = 8
+

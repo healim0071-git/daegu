@@ -1,5 +1,11 @@
 {{ define "main" }}
 <div class="community-wrapper" style="padding: 20px 0 60px;">
-  {{ .Content }}
+  {{ if ne .Params.hide_community_header true }}
+    {{ $active := .Params.active_tab | default (path.Base .RelPermalink) }}
+    {{ partial "community-header.html" (dict "context" . "activeTab" $active) }}
+  {{ end }}
+  <div class="container community-page-container" style="max-width: 1140px; margin: 0 auto 60px; padding: 0 16px;">
+    {{ .Content }}
+  </div>
 </div>
 {{ end }}
