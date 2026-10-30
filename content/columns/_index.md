@@ -25,17 +25,17 @@ layout: single
   <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; flex: 1;">
     <select id="columnCategoryFilter" onchange="filterColumns()" style="padding: 9px 14px; border: 1.5px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; outline: none; background: #FFF; color: #1E293B; font-weight: 600;">
       <option value="ALL">전체 질환 보기</option>
-      <option value="틱장애">틱장애 (10편)</option>
-      <option value="공황장애">공황장애 (6편)</option>
-      <option value="불면증">불면증 (6편)</option>
-      <option value="자율신경실조증">자율신경실조증 (7편)</option>
-      <option value="어지럼증">어지럼증 (3편)</option>
-      <option value="ADHD">ADHD (3편)</option>
-      <option value="강박증">강박증 (2편)</option>
-      <option value="대인기피증">대인기피증 (2편)</option>
-      <option value="불안장애">불안장애 (2편)</option>
+      <option value="틱장애">틱장애</option>
+      <option value="공황장애">공황장애</option>
+      <option value="불면증">불면증</option>
+      <option value="자율신경실조증">자율신경실조증</option>
+      <option value="어지럼증">어지럼증</option>
+      <option value="ADHD">ADHD</option>
+      <option value="강박증">강박증</option>
+      <option value="대인기피증">대인기피증</option>
+      <option value="불안장애">불안장애</option>
       <option value="다한증">다한증</option>
-      <option value="갱년기">갱년기 (2편)</option>
+      <option value="갱년기">갱년기</option>
     </select>
   <div style="position: relative; flex: 1; max-width: 320px; min-width: 200px;">
       <input type="text" id="columnSearchInput" onkeyup="if(event.key==='Enter') filterColumns()" placeholder="칼럼 제목 또는 키워드 검색" style="width: 100%; padding: 9px 38px 9px 14px; border: 1.5px solid #CBD5E1; border-radius: 8px; font-size: 13.5px; outline: none; box-sizing: border-box;" />
