@@ -144,7 +144,7 @@
     } catch(e) {}
   }
 
-  var HEALIM_DATA_VERSION = '20261030_v105_sync_v4';
+  var HEALIM_DATA_VERSION = '20261030_v200_sync_v5';
   try {
     var curVer = localStorage.getItem('healim_data_version');
     if (curVer !== HEALIM_DATA_VERSION) {
