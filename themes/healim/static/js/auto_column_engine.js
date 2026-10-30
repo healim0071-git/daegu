@@ -25,7 +25,7 @@
     window._healimStorageShieldInstalled = true;
     var origRemoveItem = Storage.prototype.removeItem;
     Storage.prototype.removeItem = function(key) {
-      if (window.__healimAllowDataReset) {
+      if (window.__healimAllowDataReset || window._healimBypassShield) {
         return origRemoveItem.apply(this, arguments);
       }
       if (key === 'healim_board_columns' || key === 'healim_board_faqs' ||
@@ -38,7 +38,7 @@
 
     var origClear = Storage.prototype.clear;
     Storage.prototype.clear = function() {
-      if (window.__healimAllowDataReset) {
+      if (window.__healimAllowDataReset || window._healimBypassShield) {
         return origClear.apply(this, arguments);
       }
       var cB = localStorage.getItem('healim_board_columns_permanent_backup') || localStorage.getItem('healim_board_columns');
@@ -144,11 +144,14 @@
     } catch(e) {}
   }
 
-  var HEALIM_DATA_VERSION = '20261030_v105_sync_v3';
+  var HEALIM_DATA_VERSION = '20261030_v105_sync_v4';
   try {
     var curVer = localStorage.getItem('healim_data_version');
     if (curVer !== HEALIM_DATA_VERSION) {
       window.__healimAllowDataReset = true;
+      window._healimBypassShield = true;
+      localStorage.removeItem('healim_deleted_column_ids');
+      localStorage.removeItem('healim_deleted_faq_ids');
       localStorage.removeItem('healim_board_columns');
       localStorage.removeItem('healim_board_columns_permanent_backup');
       if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem('healim_board_columns_backup');
@@ -157,7 +160,9 @@
       if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem('healim_board_faqs_backup');
       localStorage.setItem('healim_data_version', HEALIM_DATA_VERSION);
       localStorage.setItem('healim_canonical_version', HEALIM_DATA_VERSION);
+      localStorage.setItem('healim_canonical_faq_version', HEALIM_DATA_VERSION);
       window.__healimAllowDataReset = false;
+      window._healimBypassShield = false;
     }
   } catch(e) {}
 

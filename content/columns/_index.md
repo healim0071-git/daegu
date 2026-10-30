@@ -1823,18 +1823,21 @@ function getDiseaseDetailPageUrl(disease) {
   return '/columns/';
 }
 
-var HEALIM_CANONICAL_VERSION = '20261030_v105_sync_v3';
+var HEALIM_CANONICAL_VERSION = '20261030_v105_sync_v4';
 function getRealtimeBoardColumnsData() {
   try {
     var storedVer = localStorage.getItem('healim_canonical_version');
     if (storedVer !== HEALIM_CANONICAL_VERSION) {
       window.__healimAllowDataReset = true;
+      window._healimBypassShield = true;
+      localStorage.removeItem('healim_deleted_column_ids');
       localStorage.removeItem('healim_board_columns');
       localStorage.removeItem('healim_board_columns_permanent_backup');
       if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem('healim_board_columns_backup');
       localStorage.setItem('healim_canonical_version', HEALIM_CANONICAL_VERSION);
       localStorage.setItem('healim_data_version', HEALIM_CANONICAL_VERSION);
       window.__healimAllowDataReset = false;
+      window._healimBypassShield = false;
     }
   } catch(e) {}
 
@@ -2140,6 +2143,7 @@ function handleAdminDeleteColumn(id) {
 
     // 2. 로컬스토리지 목록에서 제거 및 백업 동기화
     window.__healimAllowDataReset = true;
+    window._healimBypassShield = true;
     list = list.filter(function(it) {
       if (!it) return false;
       var matchId = String(it.id) === String(id) || (target && String(it.id) === String(target.id));
@@ -2152,6 +2156,7 @@ function handleAdminDeleteColumn(id) {
       sessionStorage.setItem('healim_board_columns_backup', JSON.stringify(list));
     }
     window.__healimAllowDataReset = false;
+    window._healimBypassShield = false;
   } catch(e) {
     console.error('[handleAdminDeleteColumn error]', e);
   }

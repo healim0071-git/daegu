@@ -23,7 +23,7 @@
 
   var origRemoveItem = Storage.prototype.removeItem;
   Storage.prototype.removeItem = function(key) {
-    if (window._healimBypassShield) return origRemoveItem.apply(this, arguments);
+    if (window._healimBypassShield || window.__healimAllowDataReset) return origRemoveItem.apply(this, arguments);
     if (key === 'healim_board_columns' || key === 'healim_board_faqs' ||
         key === 'healim_board_columns_permanent_backup' || key === 'healim_board_faqs_permanent_backup') {
       console.warn('[Healim Storage Shield] Blocked unauthorized removeItem:', key);
@@ -34,7 +34,7 @@
 
   var origClear = Storage.prototype.clear;
   Storage.prototype.clear = function() {
-    if (window._healimBypassShield) return origClear.apply(this, arguments);
+    if (window._healimBypassShield || window.__healimAllowDataReset) return origClear.apply(this, arguments);
     var cB = localStorage.getItem('healim_board_columns_permanent_backup') || localStorage.getItem('healim_board_columns');
     var fB = localStorage.getItem('healim_board_faqs_permanent_backup') || localStorage.getItem('healim_board_faqs');
     origClear.apply(this, arguments);
@@ -50,7 +50,7 @@
 
   var origSetItem = Storage.prototype.setItem;
   Storage.prototype.setItem = function(key, val) {
-    if (window._healimBypassShield) {
+    if (window._healimBypassShield || window.__healimAllowDataReset) {
       return origSetItem.apply(this, [key, val]);
     }
     if (key === 'healim_board_columns' || key === 'healim_board_faqs' ||

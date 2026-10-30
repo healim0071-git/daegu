@@ -1544,17 +1544,20 @@ function getDiseaseDetailPageUrl(disease) {
   return '/columns/';
 }
 
-var HEALIM_CANONICAL_FAQ_VERSION = '20261030_v105_sync_v3';
+var HEALIM_CANONICAL_FAQ_VERSION = '20261030_v105_sync_v4';
 function getRealtimeBoardFaqData() {
   try {
     var storedVer = localStorage.getItem('healim_canonical_faq_version');
     if (storedVer !== HEALIM_CANONICAL_FAQ_VERSION) {
       window.__healimAllowDataReset = true;
+      window._healimBypassShield = true;
+      localStorage.removeItem('healim_deleted_faq_ids');
       localStorage.removeItem('healim_board_faqs');
       localStorage.removeItem('healim_board_faqs_permanent_backup');
       if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem('healim_board_faqs_backup');
       localStorage.setItem('healim_canonical_faq_version', HEALIM_CANONICAL_FAQ_VERSION);
       window.__healimAllowDataReset = false;
+      window._healimBypassShield = false;
     }
   } catch(e) {}
 
@@ -1739,6 +1742,7 @@ function handleAdminDeleteFaq(id) {
 
     // 2. 로컬스토리지 목록에서 제거 및 백업 동기화
     window.__healimAllowDataReset = true;
+    window._healimBypassShield = true;
     list = list.filter(function(it) {
       if (!it) return false;
       var matchId = String(it.id) === String(id) || (target && String(it.id) === String(target.id));
@@ -1751,6 +1755,7 @@ function handleAdminDeleteFaq(id) {
       sessionStorage.setItem('healim_board_faqs_backup', JSON.stringify(list));
     }
     window.__healimAllowDataReset = false;
+    window._healimBypassShield = false;
   } catch(e) {
     console.error('[handleAdminDeleteFaq error]', e);
   }
