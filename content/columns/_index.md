@@ -1823,7 +1823,7 @@ function getDiseaseDetailPageUrl(disease) {
   return '/columns/';
 }
 
-var HEALIM_CANONICAL_VERSION = '20261030_v105_canonical_sync';
+var HEALIM_CANONICAL_VERSION = '20261030_v105_sync_v3';
 function getRealtimeBoardColumnsData() {
   try {
     var storedVer = localStorage.getItem('healim_canonical_version');
@@ -1832,14 +1832,15 @@ function getRealtimeBoardColumnsData() {
       localStorage.removeItem('healim_board_columns');
       localStorage.removeItem('healim_board_columns_permanent_backup');
       if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem('healim_board_columns_backup');
-      localStorage.removeItem('healim_board_faqs');
-      localStorage.removeItem('healim_board_faqs_permanent_backup');
-      if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem('healim_board_faqs_backup');
       localStorage.setItem('healim_canonical_version', HEALIM_CANONICAL_VERSION);
       localStorage.setItem('healim_data_version', HEALIM_CANONICAL_VERSION);
       window.__healimAllowDataReset = false;
     }
   } catch(e) {}
+
+  var delRaw = localStorage.getItem('healim_deleted_column_ids');
+  var delList = delRaw ? JSON.parse(delRaw) : [];
+  if (!Array.isArray(delList)) delList = [];
 
   var list = defaultColumnsData.slice();
   try {
@@ -1849,12 +1850,23 @@ function getRealtimeBoardColumnsData() {
       if (Array.isArray(saved) && saved.length > 0) {
         saved.forEach(function(sItem) {
           if (!sItem || !sItem.id) return;
+          if (sItem.title && sItem.title.includes('경산 불면증')) return;
           var exists = list.some(function(it) { return String(it.id) === String(sItem.id) || (sItem.title && it.title === sItem.title); });
           if (!exists) list.unshift(sItem);
         });
       }
     }
   } catch(e) {}
+
+  // 삭제된 칼럼 필터링 (기본 데이터셋 및 로컬스토리지 모두 적용)
+  if (delList.length > 0) {
+    list = list.filter(function(it) {
+      if (!it) return false;
+      var isDel = delList.indexOf(String(it.id)) !== -1 || (it.title && delList.indexOf(it.title) !== -1);
+      return !isDel;
+    });
+  }
+
   return list;
 }
 
@@ -2110,15 +2122,43 @@ function handleAdminDeleteColumn(id) {
   try {
     var raw = localStorage.getItem('healim_board_columns');
     var list = raw ? JSON.parse(raw) : [];
-    list = list.filter(function(it) { return String(it.id) !== String(id); });
-    localStorage.setItem('healim_board_columns', JSON.stringify(list));
+    if (!Array.isArray(list)) list = [];
 
+    var target = list.find(function(it) { return it && (String(it.id) === String(id) || it.title === id); });
+    if (!target) {
+      target = defaultColumnsData.find(function(it) { return it && (String(it.id) === String(id) || it.title === id); });
+    }
+
+    // 1. 삭제 목록을 먼저 영구 등록하여 스토리지 실드 및 뷰 필터가 즉시 인지하도록 함
     var delRaw = localStorage.getItem('healim_deleted_column_ids');
     var delList = delRaw ? JSON.parse(delRaw) : [];
-    delList.push(id);
+    if (!Array.isArray(delList)) delList = [];
+    if (id && delList.indexOf(String(id)) === -1) delList.push(String(id));
+    if (target && target.id && delList.indexOf(String(target.id)) === -1) delList.push(String(target.id));
+    if (target && target.title && delList.indexOf(target.title) === -1) delList.push(target.title);
     localStorage.setItem('healim_deleted_column_ids', JSON.stringify(delList));
-  } catch(e) {}
+
+    // 2. 로컬스토리지 목록에서 제거 및 백업 동기화
+    window.__healimAllowDataReset = true;
+    list = list.filter(function(it) {
+      if (!it) return false;
+      var matchId = String(it.id) === String(id) || (target && String(it.id) === String(target.id));
+      var matchTitle = (target && target.title && it.title === target.title) || (it.title === id);
+      return !matchId && !matchTitle;
+    });
+    localStorage.setItem('healim_board_columns', JSON.stringify(list));
+    localStorage.setItem('healim_board_columns_permanent_backup', JSON.stringify(list));
+    if (typeof sessionStorage !== 'undefined') {
+      sessionStorage.setItem('healim_board_columns_backup', JSON.stringify(list));
+    }
+    window.__healimAllowDataReset = false;
+  } catch(e) {
+    console.error('[handleAdminDeleteColumn error]', e);
+  }
   renderColumnsList();
+  if (typeof window.renderCommonBottomRealtimeAll === 'function') {
+    window.renderCommonBottomRealtimeAll();
+  }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
