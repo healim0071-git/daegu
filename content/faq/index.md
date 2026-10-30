@@ -750,6 +750,18 @@ layout: single
 </div>
 </div>
 
+<!-- 자주 묻는 질문 15개 단위 페이징 및 다음 15개 버튼 영역 -->
+<div id="faqPaginationArea" style="max-width: 860px; margin: 0 auto 50px; text-align: center;">
+  <!-- 다음 15개 질문 더보기 버튼 (다음 페이지가 있을 때 노출) -->
+  <div style="margin-bottom: 24px;">
+    <button type="button" id="btnFaqNext15" onclick="goToNextFaqPage()" style="display: none; padding: 14px 32px; background: #008194; color: #FFFFFF; font-size: 15px; font-weight: 700; border: none; border-radius: 50px; cursor: pointer; box-shadow: 0 4px 14px rgba(0, 129, 148, 0.25); transition: all 0.2s ease;" onmouseover="this.style.background='#006B7B'; this.style.transform='translateY(-2px)';" onmouseout="this.style.background='#008194'; this.style.transform='none';">
+      <span id="btnFaqNext15Text">다음 15개 질문 더보기 ▾</span>
+    </button>
+  </div>
+  <!-- 이전 / 번호 / 다음 페이지네이션 바 -->
+  <div id="faqPagination" style="display: flex; justify-content: center; align-items: center; gap: 6px; flex-wrap: wrap;"></div>
+</div>
+
 <!-- 최고관리자 FAQ 작성/수정 모달 -->
 <div id="faqWriteModal" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 100000; align-items: center; justify-content: center; padding: 16px;">
 <div style="background: #FFFFFF; border-radius: 16px; max-width: 640px; width: 100%; max-height: 90vh; overflow-y: auto; padding: 28px 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
@@ -2077,6 +2089,8 @@ var defaultFaqData = [
 ];
 var currentFaqCategory = 'ALL';
 var currentFaqKeyword = '';
+var faqCurrentPage = 1;
+var faqPerPage = 15;
 
 function isHealimSuperAdmin() {
   try {
@@ -2161,6 +2175,137 @@ function toggleFaqAccordion(id) {
   if (icon) icon.style.transform = isOpen ? 'rotate(0deg)' : 'rotate(180deg)';
 }
 
+function goToNextFaqPage() {
+  var list = getRealtimeBoardFaqData();
+  var filtered = list.filter(function(item) {
+    if (!item) return false;
+    var matchCat = (currentFaqCategory === 'ALL' || item.disease === currentFaqCategory);
+    var matchKey = (!currentFaqKeyword || (item.q && item.q.includes(currentFaqKeyword)) || (item.a && item.a.includes(currentFaqKeyword)));
+    return matchCat && matchKey;
+  });
+  var totalPages = Math.ceil(filtered.length / faqPerPage) || 1;
+  if (faqCurrentPage < totalPages) {
+    faqCurrentPage++;
+    renderFaqList();
+    var c = document.getElementById('faqAccordionContainer');
+    if (c) {
+      window.scrollTo({ top: c.offsetTop - 120, behavior: 'smooth' });
+    }
+  }
+}
+
+function goToPrevFaqPage() {
+  if (faqCurrentPage > 1) {
+    faqCurrentPage--;
+    renderFaqList();
+    var c = document.getElementById('faqAccordionContainer');
+    if (c) {
+      window.scrollTo({ top: c.offsetTop - 120, behavior: 'smooth' });
+    }
+  }
+}
+
+function renderFaqPagination(totalPages, total) {
+  var nextBtn = document.getElementById('btnFaqNext15');
+  var nextBtnText = document.getElementById('btnFaqNext15Text');
+  var container = document.getElementById('faqPagination');
+
+  // 상단/중앙 '다음 15개 더보기' 버튼 제어
+  if (nextBtn) {
+    if (faqCurrentPage < totalPages) {
+      nextBtn.style.display = 'inline-flex';
+      nextBtn.style.alignItems = 'center';
+      nextBtn.style.gap = '8px';
+      var nextStart = faqCurrentPage * faqPerPage + 1;
+      var nextEnd = Math.min(total, (faqCurrentPage + 1) * faqPerPage);
+      if (nextBtnText) {
+        nextBtnText.textContent = '다음 15개 질문 더보기 (' + (faqCurrentPage + 1) + '/' + totalPages + '페이지) ▾';
+      }
+    } else {
+      nextBtn.style.display = 'none';
+    }
+  }
+
+  // 하단 번호 및 이전/다음 네비게이션 바 제어
+  if (!container) return;
+  container.innerHTML = '';
+  if (totalPages <= 1) return;
+
+  // 1. [◀ 이전 15개] 버튼
+  var prevBtn = document.createElement('button');
+  prevBtn.type = 'button';
+  prevBtn.innerHTML = '&lt; 이전 15개';
+  prevBtn.style.padding = '7px 14px';
+  prevBtn.style.borderRadius = '6px';
+  prevBtn.style.fontSize = '13px';
+  prevBtn.style.fontWeight = '700';
+  prevBtn.style.border = '1px solid #E2E8F0';
+  if (faqCurrentPage > 1) {
+    prevBtn.style.background = '#FFFFFF';
+    prevBtn.style.color = '#008194';
+    prevBtn.style.cursor = 'pointer';
+    prevBtn.onclick = goToPrevFaqPage;
+  } else {
+    prevBtn.style.background = '#F8FAFB';
+    prevBtn.style.color = '#CBD5E1';
+    prevBtn.style.cursor = 'not-allowed';
+  }
+  container.appendChild(prevBtn);
+
+  // 2. 페이지 번호 버튼들 (스마트 윈도우)
+  var startP = Math.max(1, faqCurrentPage - 3);
+  var endP = Math.min(totalPages, startP + 6);
+  if (endP - startP < 6) {
+    startP = Math.max(1, endP - 6);
+  }
+
+  for (var p = startP; p <= endP; p++) {
+    (function(pageNum) {
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.textContent = pageNum;
+      btn.style.padding = '7px 13px';
+      btn.style.borderRadius = '6px';
+      btn.style.fontSize = '13px';
+      btn.style.fontWeight = '700';
+      btn.style.cursor = 'pointer';
+      btn.style.border = '1px solid ' + (pageNum === faqCurrentPage ? '#008194' : '#E2E8F0');
+      btn.style.background = pageNum === faqCurrentPage ? '#008194' : '#FFFFFF';
+      btn.style.color = pageNum === faqCurrentPage ? '#FFFFFF' : '#475569';
+      btn.onclick = function() {
+        faqCurrentPage = pageNum;
+        renderFaqList();
+        var c = document.getElementById('faqAccordionContainer');
+        if (c) {
+          window.scrollTo({ top: c.offsetTop - 120, behavior: 'smooth' });
+        }
+      };
+      container.appendChild(btn);
+    })(p);
+  }
+
+  // 3. [다음 15개 ▶] 버튼
+  var nextNavBtn = document.createElement('button');
+  nextNavBtn.type = 'button';
+  nextNavBtn.innerHTML = '다음 15개 &gt;';
+  nextNavBtn.style.padding = '7px 14px';
+  nextNavBtn.style.borderRadius = '6px';
+  nextNavBtn.style.fontSize = '13px';
+  nextNavBtn.style.fontWeight = '700';
+  nextNavBtn.style.border = '1px solid #E2E8F0';
+  if (faqCurrentPage < totalPages) {
+    nextNavBtn.style.background = '#FFFFFF';
+    nextNavBtn.style.color = '#008194';
+    nextNavBtn.style.cursor = 'pointer';
+    nextNavBtn.onclick = goToNextFaqPage;
+  } else {
+    nextNavBtn.style.background = '#F8FAFB';
+    nextNavBtn.style.color = '#CBD5E1';
+    nextNavBtn.style.cursor = 'not-allowed';
+  }
+  container.appendChild(nextNavBtn);
+}
+
 function renderFaqList() {
   var isSuper = isHealimSuperAdmin();
   var btn = document.getElementById('btnAdminWriteFaq');
@@ -2183,13 +2328,21 @@ function renderFaqList() {
     return matchCat && matchKey;
   });
 
+  var total = filtered.length;
+  var totalPages = Math.ceil(total / faqPerPage) || 1;
+  if (faqCurrentPage > totalPages) faqCurrentPage = 1;
+
+  var startIdx = (faqCurrentPage - 1) * faqPerPage;
+  var pageItems = filtered.slice(startIdx, startIdx + faqPerPage);
+
   container.innerHTML = '';
-  if (filtered.length === 0) {
+  if (pageItems.length === 0) {
     container.innerHTML = '<div style="text-align: center; padding: 40px; color: #94A3B8;">검색된 질문이 없습니다.</div>';
+    renderFaqPagination(1, 0);
     return;
   }
 
-  filtered.forEach(function(item, idx) {
+  pageItems.forEach(function(item, idx) {
     var div = document.createElement('div');
     div.className = 'faq-item';
     div.id = 'faq-item-' + item.id;
@@ -2227,6 +2380,8 @@ function renderFaqList() {
       '</div>';
     container.appendChild(div);
   });
+
+  renderFaqPagination(totalPages, total);
 }
 
 function filterFaq() {
@@ -2234,6 +2389,7 @@ function filterFaq() {
   var inp = document.getElementById('faqSearchInput');
   if (sel) currentFaqCategory = sel.value;
   if (inp) currentFaqKeyword = inp.value.trim();
+  faqCurrentPage = 1;
   renderFaqList();
 }
 
@@ -2340,6 +2496,12 @@ document.addEventListener('DOMContentLoaded', function() {
   var params = new URLSearchParams(window.location.search);
   var targetId = params.get('id');
   if (targetId) {
+    var allList = getRealtimeBoardFaqData();
+    var targetIdx = allList.findIndex(function(it) { return it && String(it.id) === String(targetId); });
+    if (targetIdx !== -1) {
+      faqCurrentPage = Math.floor(targetIdx / faqPerPage) + 1;
+      renderFaqList();
+    }
     setTimeout(function() {
       toggleFaqAccordion(targetId);
       var targetEl = document.getElementById('faq-item-' + targetId);
