@@ -595,6 +595,26 @@ layout: single
 // 기본 등록 칼럼 데이터
 var defaultColumnsData = [
   {
+    "id": "col-auto-insomnia-105",
+    "category": "불면증",
+    "title": "[영주 봉화 불면증] 수면제를 먹어도 자꾸 깨는데 어떻게 해야 하나요? 수면 구조 복원과 멜라토닌 생체 리듬 정상화 Q&A",
+    "author": "해아림한의원",
+    "date": "2026.10.30",
+    "views": 186,
+    "summary": "[영주 봉화 불면증] 영주 휴천동 영주동 봉화 지역 환자분들을 위한 만성 불면증 Q&A 안내 및 수면 구조 회복 가이드입니다.",
+    "content": "안녕하세요. 해아림한의원입니다.\n\n최근 영주 휴천동 영주동 및 봉화 춘양 등 경북 북부권에서 수면제를 복용해도 깊은 잠을 이루지 못하고 중간에 자주 깨는 만성 불면증과 조기 각성으로 해아림한의원 대구본원으로 내원 및 문의하시는 분들이 늘어나고 있습니다.\n\n건강보험심사평가원 통계에 따르면 만성 불면증 환자의 약 68%는 주간 피로, 집중력 저하, 2차성 불안장애를 동반합니다. 수면제 복용 환자의 약 45%는 약물 내성과 반동성 불면을 경험하므로 뇌의 멜라토닌 분비와 체온 하강 리듬을 정상화하는 근본 치료가 필수적입니다.\n\n[환자분들이 가장 많이 묻는 핵심 질문과 답변]\nQ. 수면유도제를 먹고 잠들어도 2~3시간 뒤에 깨고 아침에 머리가 무겁습니다. 원인과 치료 방법이 궁금합니다?\n\nA. 수면제는 수면 유도를 도와주는 효과가 있지만, 깊은 수면(서파 수면 및 REM 수면)의 자연스러운 수면 주기를 회복시키지는 못합니다. 뇌의 송과체와 시상하부를 안정시켜 천연 멜라토닌 분비와 체온 하강 리듬을 정상화하는 한방 처방을 병행해야 중간에 깨지 않고 숙면을 유지할 수 있습니다.\n\n뇌 신경계를 안정시키고 심장의 열화(심화)를 내리는 산조인, 백자인, 원지 등의 한약재를 활용하여 약물 의존 없이 스스로 잠에 빠져들 수 있는 뇌 자생력을 키워드립니다."
+  },
+  {
+    "id": "col-auto-clim-104",
+    "category": "갱년기",
+    "title": "[경주 갱년기] 50대 여성의 안면홍조와 가슴 두근거림 한의학적 진단 및 치료 사례",
+    "author": "해아림한의원",
+    "date": "2026.10.28",
+    "views": 184,
+    "summary": "[경주 갱년기] 경주 황오동 동천동 지역 환자분들을 위한 갱년기 50대 여성 안면홍조와 심계항진(가슴 두근거림) 한의학적 진단 및 회복 치료 사례 안내입니다.",
+    "content": "안녕하세요. 해아림한의원입니다.\n\n경주 황오동, 동천동, 용강동 등 경주 전역에서 50대 갱년기 안면홍조와 가슴 두근거림, 상열감으로 대구 수성구 범어역 해아림한의원 대구본원을 찾아오시는 분들이 많습니다.\n\n질병관리청 및 대한폐경학회 임상 통계에 따르면 국내 45~55세 중년 여성의 약 89.2%가 안면홍조, 야간발한, 수면장애, 감정 기복 등 다양한 갱년기 증후군을 경험하며, 이 중 25.4%는 일상생활에 심각한 지장을 받는 중등도 이상의 고통을 호소합니다. 특히 단순 호르몬 결핍뿐 아니라 뇌 시상하부 체온조절 중추 조절력 약화와 자율신경계 불균형이 결합되어 불면 및 심계항진으로 심화되는 비율이 60%에 달합니다.\n\n[50대 여성 안면홍조와 가슴 두근거림 임상 한의학적 진단]\n50대 초반 여성 환자분께서 시도 때도 없이 얼굴과 목이 붉어지며 화끈거리고, 심장이 터질 것처럼 두근거려 일상생활이 어렵다는 증상으로 내원하셨습니다. 종합병원 순환기내과에서 24시간 홀터 심전도 검사를 받았으나 구조적인 이상이 없다는 소견을 들었지만, 환자분이 겪는 고통은 일상을 마비시킬 정도였습니다.\n\n맥진과 설진 결과 혀(설)는 붉고 설태는 적으며, 맥박은 부홍삭맥으로 체내 진액(음액)이 고갈되어 화기(허화)가 위로 치솟는 음허화왕 및 심신불교 상태였습니다. HRV 자율신경 검사에서도 교감신경의 활성도가 정상 범위를 크게 웃돌아 체온 조절과 심박 조절 기능이 무너져 있었습니다.\n\n[단계별 맞춤 한방 치료 경과]\n1단계(1~4주): 상체로 뜬 열을 내리고 가슴 두근거림을 진정시키기 위해 자음강화탕 및 청심연자음 계열의 맞춤 한약을 처방하고, 전중, 신문, 내관 혈자리에 자율신경 이완 약침 치료를 병행하여 안면홍조 발생 빈도를 절반 이하로 감소시켰습니다.\n2단계(5~8주): 야간 발한과 불면 증상을 개선하기 위해 귀비탕 가감 처방을 합방하여 뇌 신경계의 피로도를 낮추었습니다. 환자분께서는 밤에 식은땀을 흘리며 깨지 않고 6시간 이상 숙면을 취하게 되면서 아침 피로감이 확연히 달라졌다고 말씀하셨습니다.\n\n갱년기 증후군은 단순한 노화의 과정이 아니라 호르몬과 자율신경계가 새로운 균형점을 찾아가는 전환기입니다. 안전한 한방 치료를 통해 신경계 자생력을 되찾고 건강한 일상을 회복하시기 바랍니다."
+  },
+  {
     "id": "col-auto-clim-1",
     "category": "갱년기",
     "title": "[대구 갱년기 치료] 안면홍조와 가슴 두근거림, 자율신경실조증과의 상관관계와 한의학적 진단",
@@ -1772,7 +1792,6 @@ var defaultColumnsData = [
     "desc": "폐경 이후 건강하고 활력 넘치는 골든 에이지 유지 비결. 해아림한의원 대구본점 1:1 맞춤 진료 및 한의학적 관리 가이드를 전해드립니다."
   }
 ];
-
 var columnsCurrentPage = 1;
 var columnsPerPage = 15;
 var currentColumnFilterCategory = 'ALL';
@@ -1804,7 +1823,24 @@ function getDiseaseDetailPageUrl(disease) {
   return '/columns/';
 }
 
+var HEALIM_CANONICAL_VERSION = '20261030_v105_canonical_sync';
 function getRealtimeBoardColumnsData() {
+  try {
+    var storedVer = localStorage.getItem('healim_canonical_version');
+    if (storedVer !== HEALIM_CANONICAL_VERSION) {
+      window.__healimAllowDataReset = true;
+      localStorage.removeItem('healim_board_columns');
+      localStorage.removeItem('healim_board_columns_permanent_backup');
+      if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem('healim_board_columns_backup');
+      localStorage.removeItem('healim_board_faqs');
+      localStorage.removeItem('healim_board_faqs_permanent_backup');
+      if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem('healim_board_faqs_backup');
+      localStorage.setItem('healim_canonical_version', HEALIM_CANONICAL_VERSION);
+      localStorage.setItem('healim_data_version', HEALIM_CANONICAL_VERSION);
+      window.__healimAllowDataReset = false;
+    }
+  } catch(e) {}
+
   var list = defaultColumnsData.slice();
   try {
     var savedRaw = localStorage.getItem('healim_board_columns');

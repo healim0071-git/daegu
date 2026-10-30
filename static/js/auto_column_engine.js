@@ -25,6 +25,9 @@
     window._healimStorageShieldInstalled = true;
     var origRemoveItem = Storage.prototype.removeItem;
     Storage.prototype.removeItem = function(key) {
+      if (window.__healimAllowDataReset) {
+        return origRemoveItem.apply(this, arguments);
+      }
       if (key === 'healim_board_columns' || key === 'healim_board_faqs' ||
           key === 'healim_board_columns_permanent_backup' || key === 'healim_board_faqs_permanent_backup') {
         console.warn('[Healim Storage Shield] Blocked unauthorized removeItem:', key);
@@ -35,6 +38,9 @@
 
     var origClear = Storage.prototype.clear;
     Storage.prototype.clear = function() {
+      if (window.__healimAllowDataReset) {
+        return origClear.apply(this, arguments);
+      }
       var cB = localStorage.getItem('healim_board_columns_permanent_backup') || localStorage.getItem('healim_board_columns');
       var fB = localStorage.getItem('healim_board_faqs_permanent_backup') || localStorage.getItem('healim_board_faqs');
       origClear.apply(this, arguments);
@@ -50,6 +56,9 @@
 
     var origSetItem = Storage.prototype.setItem;
     Storage.prototype.setItem = function(key, val) {
+      if (window.__healimAllowDataReset) {
+        return origSetItem.apply(this, arguments);
+      }
       if (key === 'healim_board_columns' || key === 'healim_board_faqs' ||
           key === 'healim_board_columns_permanent_backup' || key === 'healim_board_faqs_permanent_backup') {
         try {
@@ -135,11 +144,20 @@
     } catch(e) {}
   }
 
-  var HEALIM_DATA_VERSION = '20261016_v8';
+  var HEALIM_DATA_VERSION = '20261030_v105_canonical_sync';
   try {
     var curVer = localStorage.getItem('healim_data_version');
     if (curVer !== HEALIM_DATA_VERSION) {
+      window.__healimAllowDataReset = true;
+      localStorage.removeItem('healim_board_columns');
+      localStorage.removeItem('healim_board_columns_permanent_backup');
+      if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem('healim_board_columns_backup');
+      localStorage.removeItem('healim_board_faqs');
+      localStorage.removeItem('healim_board_faqs_permanent_backup');
+      if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem('healim_board_faqs_backup');
       localStorage.setItem('healim_data_version', HEALIM_DATA_VERSION);
+      localStorage.setItem('healim_canonical_version', HEALIM_DATA_VERSION);
+      window.__healimAllowDataReset = false;
     }
   } catch(e) {}
 
@@ -1510,6 +1528,8 @@
   }
 
   function checkAndRunDualPublish() {
+    var isSuper = isHealimSuperAdmin();
+    if (!isSuper) return; // [방문자 기기간 불일치 방지] 최고관리자 상태가 아니면 클라이언트 자동발행을 차단하여 PC/모바일 정합성 유지
     var now = Date.now();
 
     // 1. 칼럼 체크
