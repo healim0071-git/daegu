@@ -750,14 +750,8 @@ layout: single
 </div>
 </div>
 
-<!-- 자주 묻는 질문 15개 단위 페이징 및 다음 15개 버튼 영역 -->
-<div id="faqPaginationArea" style="max-width: 860px; margin: 0 auto 50px; text-align: center;">
-  <!-- 다음 15개 질문 더보기 버튼 (다음 페이지가 있을 때 노출) -->
-  <div style="margin-bottom: 24px;">
-    <button type="button" id="btnFaqNext15" onclick="goToNextFaqPage()" style="display: none; padding: 14px 32px; background: #008194; color: #FFFFFF; font-size: 15px; font-weight: 700; border: none; border-radius: 50px; cursor: pointer; box-shadow: 0 4px 14px rgba(0, 129, 148, 0.25); transition: all 0.2s ease;" onmouseover="this.style.background='#006B7B'; this.style.transform='translateY(-2px)';" onmouseout="this.style.background='#008194'; this.style.transform='none';">
-      <span id="btnFaqNext15Text">다음 15개 질문 더보기 ▾</span>
-    </button>
-  </div>
+<!-- 자주 묻는 질문 15개 단위 페이징 영역 -->
+<div id="faqPaginationArea" style="max-width: 860px; margin: 0 auto 40px; text-align: center;">
   <!-- 이전 / 번호 / 다음 페이지네이션 바 -->
   <div id="faqPagination" style="display: flex; justify-content: center; align-items: center; gap: 6px; flex-wrap: wrap;"></div>
 </div>
@@ -2206,27 +2200,7 @@ function goToPrevFaqPage() {
 }
 
 function renderFaqPagination(totalPages, total) {
-  var nextBtn = document.getElementById('btnFaqNext15');
-  var nextBtnText = document.getElementById('btnFaqNext15Text');
   var container = document.getElementById('faqPagination');
-
-  // 상단/중앙 '다음 15개 더보기' 버튼 제어
-  if (nextBtn) {
-    if (faqCurrentPage < totalPages) {
-      nextBtn.style.display = 'inline-flex';
-      nextBtn.style.alignItems = 'center';
-      nextBtn.style.gap = '8px';
-      var nextStart = faqCurrentPage * faqPerPage + 1;
-      var nextEnd = Math.min(total, (faqCurrentPage + 1) * faqPerPage);
-      if (nextBtnText) {
-        nextBtnText.textContent = '다음 15개 질문 더보기 (' + (faqCurrentPage + 1) + '/' + totalPages + '페이지) ▾';
-      }
-    } else {
-      nextBtn.style.display = 'none';
-    }
-  }
-
-  // 하단 번호 및 이전/다음 네비게이션 바 제어
   if (!container) return;
   container.innerHTML = '';
   if (totalPages <= 1) return;
