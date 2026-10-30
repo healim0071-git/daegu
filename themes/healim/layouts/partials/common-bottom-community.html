@@ -23,6 +23,10 @@
     {{ end }}
   {{ end }}
 {{ end }}
+{{ $isColumnsPage := or (eq .RelPermalink "/columns/") (strings.Contains .RelPermalink "/columns/") }}
+{{ $isFaqPage := or (eq .RelPermalink "/faq/") (strings.Contains .RelPermalink "/faq/") }}
+{{ $isReviewsPage := or (eq .RelPermalink "/reviews/") (strings.Contains .RelPermalink "/reviews/") }}
+{{ $isYoutubePage := or (eq .RelPermalink "/youtube/") (strings.Contains .RelPermalink "/youtube/") }}
 <div class="healim-bottom-section-wrapper" data-disease-slug="{{ $diseaseSlug }}" style="margin-top: {{ if $isDisease }}30px{{ else }}60px{{ end }};">
 
   <!-- ── 1. Publications: 해아림 원장단 임상 노하우 도서 출간 ── -->
@@ -78,6 +82,7 @@
   </section>
 
 
+  {{ if not $isFaqPage }}
   <!-- ── 2. FAQ Insights: 해아림한의원 자주 묻는 질문들 FAQ ── -->
   <section class="healim-bottom-section"{{ if $isDisease }} style="margin-bottom: 18px;"{{ end }}>
     <div class="bottom-sec-header">
@@ -213,6 +218,9 @@
   </section>
 
 
+  {{ end }}
+
+  {{ if not $isReviewsPage }}
   <!-- ── 3. Patient Stories: 해아림한의원 치료후기 (B 스타일 적용) ── -->
   <section class="healim-bottom-section"{{ if $isDisease }} style="margin-bottom: 18px;"{{ end }}>
     <div class="bottom-sec-header">
@@ -435,6 +443,9 @@
   </section>
 
 
+  {{ end }}
+
+  {{ if not $isColumnsPage }}
   <!-- ── 4. Medical Column: 해아림한의원 치료 칼럼 ── -->
   <section class="healim-bottom-section{{ if not .IsHome }} mb-last{{ end }}"{{ if $isDisease }} style="margin-bottom: 24px;"{{ end }}>
     <div class="bottom-sec-header">
@@ -451,66 +462,78 @@
       {{ if $diseaseColumns }}
         {{/* 10개 질환 상세페이지: 해당 질환에 맞는 치료 칼럼 3개 표시 */}}
         {{ range $diseaseColumns }}
-        <li class="bottom-item-card" onclick="openCommonBottomDetail('columns', '{{ .id }}')">
-          <div class="bottom-card-media">
-            <img src="{{ .img }}" alt="{{ .imgAlt }}" onerror="this.src='/images/books/book_tic.png';">
-          </div>
-          <div class="bottom-card-content">
-            <span class="bottom-card-category">{{ .category }}</span>
+        <li class="bottom-item-card bottom-column-card" onclick="openCommonBottomDetail('columns', '{{ .id }}')">
+          <div class="bottom-column-body">
+            <div class="bottom-column-top-meta">
+              <span class="bottom-card-category">{{ .category }}</span>
+              <span class="bottom-column-date">{{ .date }}</span>
+            </div>
             <h3 class="bottom-card-title">{{ .title }}</h3>
             <p class="bottom-card-desc">{{ .desc }}</p>
             <div class="bottom-card-footer">
-              <span>{{ .author | default "해아림한의원" }} · {{ .date }}</span>
-              <a href="/columns/?id={{ .id }}" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail('columns', '{{ .id }}')">읽기 &gt;</a>
+              <span>{{ .author | default "해아림한의원" }}</span>
+              <span class="bottom-column-read-btn">칼럼 읽기 &gt;</span>
             </div>
+          </div>
+          <div class="bottom-card-media bottom-column-media">
+            <img src="{{ .img }}" alt="{{ .imgAlt }}" onerror="this.src='/images/books/book_tic.png';">
           </div>
         </li>
 {{ end }}
       {{ else }}
                 <!-- 메인 페이지 및 기타 페이지: 커뮤니티 카테고리 최신순 칼럼 3개 완벽 동기화 정적 렌더링 -->
       <!-- 칼럼 1 -->
-      <li class="bottom-item-card" onclick="openCommonBottomDetail('columns', 'col-auto-tic-4')">
-        <div class="bottom-card-media">
-          <img src="/images/columns/column_23_bruxism_tmj.svg" alt="스마트폰 게임 후 틱 증상 악화 사례" onerror="this.src='/images/books/book_tic.png';">
-        </div>
-        <div class="bottom-card-content">
-          <span class="bottom-card-category">틱장애</span>
+      <li class="bottom-item-card bottom-column-card" onclick="openCommonBottomDetail('columns', 'col-auto-tic-4')">
+        <div class="bottom-column-body">
+          <div class="bottom-column-top-meta">
+            <span class="bottom-card-category">틱장애</span>
+            <span class="bottom-column-date">2026.10.15</span>
+          </div>
           <h3 class="bottom-card-title">스마트폰 게임 후 코 찡긋거림과 어깨 들썩임이 심해진 9살 틱 증상 악화 사례</h3>
           <p class="bottom-card-desc">방학 동안 장시간 스마트폰 유튜브와 게임에 노출된 후 전두엽 피로 누적으로 코 찡긋거림과 어깨 틱이 악화된 9세 남아의 디지털 디톡스 및 뇌기능 회복 치료 사례입니다.</p>
           <div class="bottom-card-footer">
-            <span>해아림한의원 · 2026.10.15</span>
-            <a href="/columns/?id=col-auto-tic-4" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail('columns', 'col-auto-tic-4')">읽기 &gt;</a>
+            <span>해아림한의원</span>
+            <span class="bottom-column-read-btn">칼럼 읽기 &gt;</span>
           </div>
+        </div>
+        <div class="bottom-card-media bottom-column-media">
+          <img src="/images/columns/column_23_bruxism_tmj.svg" alt="스마트폰 게임 후 틱 증상 악화 사례" onerror="this.src='/images/books/book_tic.png';">
         </div>
       </li>
 <!-- 칼럼 2 -->
-      <li class="bottom-item-card" onclick="openCommonBottomDetail('columns', 'col-auto-panic-6')">
-        <div class="bottom-card-media">
-          <img src="/images/columns/column_1_palpitation.svg" alt="광장공포증 동반 공황 칼럼" onerror="this.src='/images/books/book_panic.png';">
-        </div>
-        <div class="bottom-card-content">
-          <span class="bottom-card-category">공황장애</span>
-          <h3 class="bottom-card-title">[광장공포증 동반 공황] 밀폐 공간 공포 극복과 편도체 둔감화 인지 치료</h3>
-          <p class="bottom-card-desc">지하철, 만원 버스, 비행기, 엘리베이터 등 탈출이 어려운 밀폐 공간에서 발생하는 광장공포증의 신경 메커니즘과 단계별 탈감작 및 한의학적 심담 강화법을 안내합니다.</p>
-          <div class="bottom-card-footer">
-            <span>해아림한의원 · 2026.10.15</span>
-            <a href="/columns/?id=col-auto-panic-6" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail('columns', 'col-auto-panic-6')">읽기 &gt;</a>
+      <li class="bottom-item-card bottom-column-card" onclick="openCommonBottomDetail('columns', 'col-auto-panic-6')">
+        <div class="bottom-column-body">
+          <div class="bottom-column-top-meta">
+            <span class="bottom-card-category">공황장애</span>
+            <span class="bottom-column-date">2026.10.14</span>
           </div>
+          <h3 class="bottom-card-title">[광장공포증 동반 공황] 밀폐 공간 공포 극복과 편도체 둔감화 인지 치료</h3>
+          <p class="bottom-card-desc">밀폐된 공간이나 사람이 많은 곳에서 즉각 탈출할 수 없다는 비합리적 공포가 유발되는 광장공포증의 신경학적 발생 기전과 뇌 기능 안정 진료를 설명합니다.</p>
+          <div class="bottom-card-footer">
+            <span>해아림한의원</span>
+            <span class="bottom-column-read-btn">칼럼 읽기 &gt;</span>
+          </div>
+        </div>
+        <div class="bottom-card-media bottom-column-media">
+          <img src="/images/columns/column_1_palpitation.svg" alt="광장공포증 동반 공황 칼럼" onerror="this.src='/images/books/book_panic.png';">
         </div>
       </li>
 <!-- 칼럼 3 -->
-      <li class="bottom-item-card" onclick="openCommonBottomDetail('columns', 'col-auto-diz-3')">
-        <div class="bottom-card-media">
-          <img src="/images/columns/column_4_pots_dizziness.svg" alt="지속성 체위-지각 어지럼증 PPPD 칼럼" onerror="this.src='/images/books/book_panic.png';">
-        </div>
-        <div class="bottom-card-content">
-          <span class="bottom-card-category">어지럼증</span>
+      <li class="bottom-item-card bottom-column-card" onclick="openCommonBottomDetail('columns', 'col-auto-diz-3')">
+        <div class="bottom-column-body">
+          <div class="bottom-column-top-meta">
+            <span class="bottom-card-category">어지럼증</span>
+            <span class="bottom-column-date">2026.10.14</span>
+          </div>
           <h3 class="bottom-card-title">[지속성 체위-지각 어지럼증(PPPD)] 시각-전정 감각 불일치와 신경망 재적응 훈련</h3>
           <p class="bottom-card-desc">3개월 이상 매일 지속되는 비회전성 흔들림, 백화점이나 마트 등 시각적 자극에 악화되는 만성 기능성 어지럼증 PPPD의 뇌신경 기전과 한의학적 진료를 설명합니다.</p>
           <div class="bottom-card-footer">
-            <span>해아림한의원 · 2026.10.14</span>
-            <a href="/columns/?id=col-auto-diz-3" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail('columns', 'col-auto-diz-3')">읽기 &gt;</a>
+            <span>해아림한의원</span>
+            <span class="bottom-column-read-btn">칼럼 읽기 &gt;</span>
           </div>
+        </div>
+        <div class="bottom-card-media bottom-column-media">
+          <img src="/images/columns/column_4_pots_dizziness.svg" alt="지속성 체위-지각 어지럼증 PPPD 칼럼" onerror="this.src='/images/books/book_panic.png';">
         </div>
       </li>
 {{ end }}
@@ -521,9 +544,9 @@
       </a>
     </div>
   </section>
+  {{ end }}
 
-
-  {{ if .IsHome }}
+  {{ if and .IsHome (not $isYoutubePage) }}
   <!-- ── 5. Video Clinic: 해아림한의원 유튜브 영상 ── -->
   <section class="healim-bottom-section mb-last">
     <div class="bottom-sec-header">
@@ -729,6 +752,183 @@ ul.bottom-cards-grid {
     padding: 16px 14px !important;
   }
 }
+
+/* ── 하단 커뮤니티 4대 영역 모바일/PC 일관성 최적화 ── */
+.bottom-column-card {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: stretch !important;
+  background: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
+  border-radius: 12px !important;
+  overflow: hidden !important;
+  transition: all 0.2s ease !important;
+  cursor: pointer !important;
+  text-align: left !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02) !important;
+}
+.bottom-column-card:hover {
+  transform: translateY(-3px) !important;
+  border-color: #008194 !important;
+  box-shadow: 0 8px 24px rgba(0, 129, 148, 0.12) !important;
+}
+.bottom-column-body {
+  padding: 18px 20px !important;
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+}
+.bottom-column-top-meta {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-bottom: 8px !important;
+}
+.bottom-column-top-meta .bottom-card-category {
+  display: inline-block !important;
+  padding: 3px 8px !important;
+  background: #E6F6F8 !important;
+  color: #008194 !important;
+  font-size: 11.5px !important;
+  font-weight: 700 !important;
+  border-radius: 4px !important;
+  margin: 0 !important;
+}
+.bottom-column-date {
+  font-size: 12px !important;
+  color: #94A3B8 !important;
+}
+.bottom-column-card .bottom-card-title {
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  color: #0F172A !important;
+  line-height: 1.45 !important;
+  margin: 0 0 6px 0 !important;
+  word-break: keep-all !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+.bottom-column-card .bottom-card-desc {
+  font-size: 12.5px !important;
+  color: #64748B !important;
+  line-height: 1.55 !important;
+  margin: 0 0 10px 0 !important;
+  word-break: keep-all !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+.bottom-column-card .bottom-card-footer {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  font-size: 12px !important;
+  color: #94A3B8 !important;
+  padding-top: 8px !important;
+  border-top: 1px dashed #F1F5F9 !important;
+  margin-top: auto !important;
+}
+.bottom-column-read-btn {
+  color: #008194 !important;
+  font-weight: 700 !important;
+  font-size: 12.5px !important;
+}
+.bottom-column-media {
+  width: 125px !important;
+  min-width: 125px !important;
+  height: auto !important;
+  background: #F8FAFB !important;
+  overflow: hidden !important;
+  flex-shrink: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.bottom-column-media img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* 모바일 화면 (768px 이하) 완벽 최적화 */
+@media (max-width: 768px) {
+  #commonBottomColumnsList {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+  .bottom-column-card {
+    flex-direction: row !important;
+    border-radius: 10px !important;
+  }
+  .bottom-column-body {
+    padding: 13px 12px !important;
+  }
+  .bottom-column-media {
+    width: 82px !important;
+    min-width: 82px !important;
+    height: 82px !important;
+    align-self: center !important;
+    margin-right: 10px !important;
+    border-radius: 6px !important;
+  }
+  .bottom-column-card .bottom-card-title {
+    font-size: 13.5px !important;
+    line-height: 1.4 !important;
+    margin: 2px 0 4px 0 !important;
+  }
+  .bottom-column-card .bottom-card-desc {
+    display: none !important;
+  }
+  .bottom-column-card .bottom-card-footer {
+    padding-top: 6px !important;
+    font-size: 11.5px !important;
+  }
+  
+  /* 유튜브 모바일 최적화 */
+  #commonBottomYoutubeList {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+  #commonBottomYoutubeList .bottom-card-media {
+    height: 190px !important;
+  }
+  #commonBottomYoutubeList .bottom-card-content {
+    padding: 14px !important;
+  }
+  #commonBottomYoutubeList .bottom-card-title {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 6px !important;
+  }
+  
+  /* 치료후기 모바일 최적화 */
+  #commonBottomReviewsList {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+  .bottom-review-card-inner {
+    padding: 14px 12px !important;
+  }
+  
+  /* FAQ 모바일 최적화 */
+  .faq-item summary {
+    padding: 14px 14px !important;
+  }
+  .faq-q-text {
+    font-size: 13.5px !important;
+    line-height: 1.45 !important;
+  }
+  .faq-answer {
+    padding: 14px 14px !important;
+    font-size: 13px !important;
+  }
+}
+
 </style>
 <script>
 (function() {
@@ -1040,18 +1240,21 @@ ul.bottom-cards-grid {
       var author = escapeHtml(item.author || '해아림한의원');
       var date = escapeHtml(item.date || '2026.10.12');
 
-      html += '<li class="bottom-item-card" onclick="openCommonBottomDetail(&quot;columns&quot;, &quot;' + idStr + '&quot;)">';
-      html += '  <div class="bottom-card-media">';
-      html += '    <img src="' + imgSrc + '" alt="' + title + '" onerror="this.src=&quot;/images/books/book_tic.png&quot;;">';
-      html += '  </div>';
-      html += '  <div class="bottom-card-content">';
-      html += '    <span class="bottom-card-category">' + category + '</span>';
+      html += '<li class="bottom-item-card bottom-column-card" onclick="openCommonBottomDetail(&quot;columns&quot;, &quot;' + idStr + '&quot;)">';
+      html += '  <div class="bottom-column-body">';
+      html += '    <div class="bottom-column-top-meta">';
+      html += '      <span class="bottom-card-category">' + category + '</span>';
+      html += '      <span class="bottom-column-date">' + date + '</span>';
+      html += '    </div>';
       html += '    <h3 class="bottom-card-title">' + title + '</h3>';
       html += '    <p class="bottom-card-desc">' + desc + '</p>';
       html += '    <div class="bottom-card-footer">';
-      html += '      <span>' + author + ' · ' + date + '</span>';
-      html += '      <a href="/columns/?id=' + idStr + '" onclick="event.preventDefault(); event.stopPropagation(); openCommonBottomDetail(&quot;columns&quot;, &quot;' + idStr + '&quot;)">읽기 &gt;</a>';
+      html += '      <span>' + author + '</span>';
+      html += '      <span class="bottom-column-read-btn">칼럼 읽기 &gt;</span>';
       html += '    </div>';
+      html += '  </div>';
+      html += '  <div class="bottom-card-media bottom-column-media">';
+      html += '    <img src="' + imgSrc + '" alt="' + title + '" onerror="this.src=&quot;/images/books/book_tic.png&quot;;">';
       html += '  </div>';
       html += '</li>';
     });
