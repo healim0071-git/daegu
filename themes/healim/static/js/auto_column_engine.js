@@ -86,7 +86,7 @@
                   return p && (p.id === existingItem.id || (existingItem.title && p.title === existingItem.title) || (existingItem.q && p.q === existingItem.q));
                 });
                 if (!existsInNew) {
-                  newArr.unshift(existingItem);
+                  newArr.push(existingItem);
                 }
               });
               val = JSON.stringify(newArr);
@@ -129,7 +129,7 @@
           if (isDel) return;
           var exists = mainList.some(function(p) { return p && (p.id === item.id || (item.title && p.title === item.title) || (item.q && p.q === item.q)); });
           if (!exists) {
-            mainList.unshift(item);
+            mainList.push(item);
             changed = true;
           }
         });
@@ -181,6 +181,7 @@
   "강박증": "/ocd/",
   "대인기피증": "/social-phobia/",
   "불안장애": "/anxiety-disorder/",
+  "다한증": "/hyperhidrosis/",
   "갱년기": "/climacteric/",
   "갱년기증후군": "/climacteric/"
 };
@@ -542,7 +543,96 @@
 
   // 
   var faqPool = [
-,
+  {
+    "idPrefix": "faq-auto-climacteric-1",
+    "disease": "갱년기",
+    "q": "갱년기 상열감과 야간 식은땀이 심한데 호르몬제 없이 한방 치료로 조절이 가능한가요?",
+    "a": "네, 합성 호르몬제 투여 없이도 체온 조절 중추의 안정화를 통해 단계적으로 호전될 수 있습니다. 갱년기 안면홍조와 야간 발한은 난소 기능 저하에 따른 에스트로겐 감소 신호가 뇌 시상하부의 체온 조절 중추(Thermoregulatory Center)를 과민하게 자극하여, 사소한 체온 상승에도 말초 혈관을 급격히 확장시키고 땀샘을 개방하기 때문에 나타납니다.\n\n한의학에서는 이를 신음허(腎陰虛)로 인한 허열(虛熱)이 상부로 치솟는 상열하한(上熱下寒) 상태로 변증합니다. 외부에서 인위적인 합성 호르몬을 주입하는 대신, 자음강화(滋陰降火) 및 청열보혈 처방을 통해 시상하부-자율신경계의 온도 감지 역치를 정상 범위로 넓혀줍니다.\n\n이와 함께 흉격의 열기를 내리는 침구 치료와 두개천골 이완 요법을 병행하면 상체로 쏠리던 열감과 야간 식은땀 빈도가 줄어들고 수면 유지력이 함께 회복됩니다."
+  },
+  {
+    "idPrefix": "faq-auto-climacteric-2",
+    "disease": "갱년기",
+    "q": "폐경 전후로 갑자기 가슴이 두근거리고 이유 없이 불안하며 잠이 안 오는데 갱년기 자율신경 증상인가요?",
+    "a": "네, 전형적인 갱년기 자율신경계 불균형(갱년기 심계·불면 증후군) 증상입니다. 여성호르몬은 생식 기능뿐 아니라 뇌의 세로토닌 및 가바(GABA) 신경전달물질 합성과 부교감신경 활성도를 유지하는 신경 보호 역할을 수행합니다. 따라서 폐경 이행기에 호르몬 수치가 급변하면 뇌 편도체와 교감신경계가 브레이크 없이 과각성되어 안정 시에도 심장이 쿵쾅거리고 불길한 예기불안과 입면장애가 동반됩니다.\n\n심전도나 갑상선 기능 검사에서 이상이 없는데도 두근거림과 불면이 지속된다면 심박변이도(HRV) 검사를 통해 교감·부교감 신경의 균형도를 점검해 보아야 합니다.\n\n해아림한의원에서는 심혈(心血)을 보충하고 교감신경의 과열을 식히는 가미귀비탕, 시호가용골모려탕 계열의 체질 맞춤 처방과 미주신경 안정 침 치료를 통해 가슴 두근거림과 야간 각성을 함께 다스립니다."
+  },
+  {
+    "idPrefix": "faq-auto-climacteric-3",
+    "disease": "갱년기",
+    "q": "갱년기 증상으로 온몸 관절이 쑤시고 만성 피로와 우울감이 겹칠 때 한의원 치료 기간은 얼마나 걸리나요?",
+    "a": "갱년기 시기에 나타나는 다발성 관절통, 근육통, 극심한 피로감과 무기력증은 에스트로겐 감소로 인해 관절 윤활액과 콜라겐 합성이 줄어들고 뇌신경계의 통증 억제 회로 및 세로토닌 대사가 저하되면서 발생합니다. 단순 진통제만으로는 신경-내분비계 적응 과정이 해결되지 않아 증상이 반복되기 쉽습니다.\n\n한방 치료 기간은 개인의 증상 중증도와 유병 기간에 따라 차이가 있으나, 통상 초기 2~4주 내에 상열감, 수면의 질, 흉부 답답함이 먼저 완화되기 시작하며, 뇌 시상하부와 자율신경계가 변화된 호르몬 환경에 안정적으로 적응하기까지 약 2~3개월의 단계적 치료를 권장합니다.\n\n간신(肝腎)의 진액을 보강하고 기혈 순환을 촉진하는 맞춤 한약과 경혈 약침 치료를 통해 신체 통증과 정서적 활력을 동시에 회복하도록 돕습니다."
+  },
+  {
+    "idPrefix": "faq-auto-tic-new-1",
+    "disease": "틱장애",
+    "q": "새 학기 입학이나 학원 변경 후 아이의 눈 깜빡임과 헛기침 틱이 갑자기 심해졌는데 어떻게 대처해야 하나요?",
+    "a": "새 학기 진학, 교우 관계 변화, 학습량 증가 등 낯선 환경에 적응하는 시기는 소아·청소년의 대뇌 피질과 기저핵 회로에 상당한 신경학적 긴장을 유발합니다. 평소 잠재되어 있던 기저핵-시상-전두엽(CSTC) 운동 조절 회로의 미세한 불균형이 환경 스트레스와 피로 누적에 의해 도파민 수용체 과민 반응으로 표면화되는 것입니다.\n\n이 시기에는 가정에서 아이의 눈 깜빡임이나 음음 소리를 직접 언급하거나 고치라고 다그치지 않는 것이 가장 중요합니다. 지적을 받을수록 전조 감각 충동(Premonitory Urge)이 증폭되어 증상이 고착화될 수 있습니다.\n\n초기 악화 시점에 뇌신경의 피로와 흥분을 가라앉히는 소아 체질 맞춤 한약과 두경부 신경 이완 치료를 조기에 적용하면 복합 틱으로의 진행을 예방하고 안정적인 학교 적응을 도울 수 있습니다."
+  },
+  {
+    "idPrefix": "faq-auto-tic-new-2",
+    "disease": "틱장애",
+    "q": "소아 한약을 복용하면 살이 찌거나 낮 시간에 졸음이 와서 학교 수업에 지장을 주지는 않나요?",
+    "a": "틱장애 치료에 처방되는 한약은 중추신경계를 강제로 억누르는 화학적 신경이완제나 진정제가 아니므로, 낮 시간대 무기력증이나 심한 졸음, 비정상적인 체중 증가를 유발하지 않습니다. 오히려 뇌 기저핵의 과도한 흥분 노이즈를 조절하고 자율신경계의 항상성을 회복시켜 주간 집중력과 수면의 질을 높여주는 원리로 작용합니다.\n\n해아림한의원에서는 소아·청소년의 성장 단계와 소화 흡수력, 체질적 한열(寒熱) 상태를 정밀하게 진단하여 GAP 인증 청정 약재로만 처방합니다.\n\n따라서 학업 중 졸음 걱정 없이 안전하게 복용할 수 있으며, 신체 전반의 면역력과 두뇌 컨디션이 함께 개선되어 학습 지구력 향상에도 긍정적인 도움을 줍니다."
+  },
+  {
+    "idPrefix": "faq-auto-panic-new-1",
+    "disease": "공황장애",
+    "q": "터널이나 지하철, 비행기처럼 막힌 공간에 들어가면 숨이 막히는 광장공포증이 동반되었는데 호전될 수 있나요?",
+    "a": "공황장애 환자분들 중 상당수가 '발작이 일어났을 때 즉시 빠져나갈 수 없는 장소(지하철, 고속도로 정체 구간, 터널, 비행기, 엘리베이터 등)'를 회피하는 광장공포증(Agoraphobia)과 예기불안을 함께 겪으십니다. 이는 과거의 강렬했던 공황발작 기억이 뇌 해마와 편도체에 조건화되어, 유사한 밀폐 환경만 감지되어도 교감신경계가 미리 비상 경보를 울리기 때문입니다.\n\n단순히 해당 장소를 피하기만 하면 행동 반경이 점점 좁아져 일상생활에 큰 제약이 따릅니다. 한방 치료에서는 심담(心膽)의 기운을 보강하고 뇌간 미주신경 톤을 높여주는 맞춤 한약과 침구 치료를 통해 공간 자극에 대한 편도체의 과민 반응 역치를 높여줍니다.\n\n신체적 두근거림과 호흡곤란 반응이 줄어들면 단계적 노출 훈련을 병행하여 대중교통 이용과 장거리 이동에 대한 자신감을 체계적으로 회복할 수 있습니다."
+  },
+  {
+    "idPrefix": "faq-auto-panic-new-2",
+    "disease": "공황장애",
+    "q": "커피나 에너지 음료를 마신 날 유독 가슴이 두근거리고 공황 전조 증상이 나타나는 이유는 무엇인가요?",
+    "a": "카페인(Caffeine)은 뇌의 억제성 신경조절물질인 아데노신(Adenosine) 수용체를 차단하고 교감신경계를 직접 자극하여 아드레날린과 노르에피네프린 분비를 촉진합니다. 일반인에게는 일시적인 각성 효과에 그치지만, 자율신경 역치가 낮아진 공황장애 환자에게는 심박수 급증, 손 떨림, 흉부 압박감을 유발하는 강력한 발작 방아쇠(Trigger)가 됩니다.\n\n뇌 편도체는 카페인으로 인해 빨라진 심장 박동을 '생명을 위협하는 위기 상황'으로 오인하여 실제 공황발작 회로를 가동시키게 됩니다.\n\n따라서 공황장애와 자율신경실조증 치료 기간에는 커피, 고카페인 차, 에너지 음료를 가급적 제한하시고, 뇌신경의 흥분을 안정시키는 한방 치료와 충분한 수분 섭취로 자율신경 완충력을 회복하시는 것이 바람직합니다."
+  },
+  {
+    "idPrefix": "faq-auto-insomnia-new-1",
+    "disease": "불면증",
+    "q": "밤에 잠들기까지 1시간 이상 걸리는 입면장애와 새벽에 자꾸 깨는 수면유지장애는 치료법이 다른가요?",
+    "a": "네, 입면장애와 수면유지장애는 뇌신경계 및 한의학적 변증 원인이 다르므로 세밀하게 구분하여 치료해야 합니다. 잠자리에 누워도 머릿속에 생각이 멈추지 않고 신체 열감으로 1시간 이상 잠들지 못하는 '입면장애'는 주로 주간 스트레스에 의해 교감신경과 시상하부 각성 시스템이 밤까지 꺼지지 않는 간화항성(肝火亢盛)이나 심신불교(心腎不交) 유형에 해당합니다.\n\n반면 잠은 비교적 빨리 들지만 작은 소리에도 쉽게 깨고 꿈을 많이 꾸며 다시 잠들기 힘든 '수면유지장애'는 깊은 서파 수면(Slow-wave sleep)을 유지하는 심비양허(心脾兩虛)나 심담허겁(心膽虛怯) 상태에서 빈발합니다.\n\n해아림한의원에서는 수면 패턴과 뇌파·자율신경 검사를 바탕으로 입면 지연형에는 뇌 과열을 식히는 청열안신 처방을, 잦은 각성형에는 신경 에너지를 보충해 수면 깊이를 더해 주는 보혈안신 처방을 맞춤 적용합니다."
+  },
+  {
+    "idPrefix": "faq-auto-dysauto-new-1",
+    "disease": "자율신경실조증",
+    "q": "식사 후만 되면 속이 더부룩하고 체한 것 같은데 가슴까지 답답하고 어지러운 것도 자율신경실조증인가요?",
+    "a": "네, 위내시경 검사상 특별한 궤양이나 기질적 병변이 없는데도 만성 소화불량, 명치끝 답답함(식적), 가벼운 현기증과 가슴 두근거림이 동시에 나타난다면 자율신경실조증에 의한 위장관 운동 기능 저하(담적 및 신경성 위장장애)일 가능성이 높습니다.\n\n위장의 연동운동과 소화액 분비는 제10뇌신경인 미주신경(부교감신경)의 지배를 받습니다. 만성 스트레스로 교감신경이 과항진되면 위장관으로 가는 혈류량이 급감하고 미주신경 활성도가 떨어져 위가 단단하게 굳고 가스가 차오르며, 이 압력이 횡격막과 흉강을 자극해 호흡 답답함과 어지럼증을 유발합니다.\n\n한방에서는 복부 긴장을 풀어주는 침·뜸 치료와 함께 자율신경 밸런스를 조율하고 위장관 운동성을 회복시키는 한약 처방을 통해 소화기 증상과 신경계 증상을 통합적으로 개선합니다."
+  },
+  {
+    "idPrefix": "faq-auto-dizzy-new-1",
+    "disease": "어지럼증",
+    "q": "마트나 백화점처럼 조명이 밝고 사람이 많은 곳에 가면 어지럼증이 심해지는 이유는 무엇인가요?",
+    "a": "복잡한 진열대, 화려한 형광등 조명, 수많은 인파가 움직이는 백화점이나 대형 마트에 들어섰을 때 눈이 피로해지면서 어지럼증과 구역감이 몰려오는 현상을 '시각 유발성 어지럼증(Visual Vertigo)' 또는 지속성 체위-지각 어지럼증(PPPD)의 주요 증상으로 봅니다.\n\n우리 뇌는 전정기관(귀), 시각(눈), 체성감각(발바닥·관절) 세 가지 신호를 통합해 몸의 균형을 잡는데, 자율신경 피로와 전정 신경망 약화가 누적되면 뇌가 시각 정보에만 과도하게 의존하게 됩니다. 그 결과 복잡하게 움직이는 시각 자극이 들어올 때 정보 처리에 과부하가 걸려 공간 감각이 흔들리는 것입니다.\n\n해아림한의원에서는 상부 경추와 후두하근의 긴장을 해소하여 뇌간·소뇌 혈류를 개선하고, 전정-시각 신경 통합 기능을 안정시키는 맞춤 한방 치료로 공간 어지럼증을 조절합니다."
+  },
+  {
+    "idPrefix": "faq-auto-adhd-new-1",
+    "disease": "ADHD",
+    "q": "스마트폰 게임이나 좋아하는 만화에는 몇 시간씩 집중하는데 왜 학교 수업에만 집중하지 못하나요?",
+    "a": "많은 부모님께서 '아이의 집중력 자체가 없는 것이 아니라 하기 싫은 공부만 안 하는 것'이라고 오해하시곤 합니다. 그러나 의학적으로 ADHD 아동이 게임이나 영상에 몰두하는 현상은 고도의 전두엽 주의집중력이 발휘된 결과가 아니라, 즉각적이고 강렬한 시청각 보상이 주어지는 자극에 뇌가 수동적으로 끌려가는 '과몰입(Hyperfocus)' 상태입니다.\n\n반면 학교 수업이나 독서처럼 보상이 즉각적이지 않고 지루한 과제를 끝까지 수행하려면 뇌 전두엽에서 도파민을 스스로 유지하며 딴생각을 억제하는 '지속적 주의력(Sustained Attention)'과 실행 기능이 작동해야 합니다.\n\n한방 치료에서는 전두엽 신경망의 대사 활성을 높이는 체질 한약과 뉴로피드백 등 두뇌 훈련을 병행하여, 외부의 강한 자극 없이도 스스로 주의를 유지하고 과제를 완수할 수 있는 전두엽 조절력을 길러줍니다."
+  },
+  {
+    "idPrefix": "faq-auto-ocd-new-1",
+    "disease": "강박증",
+    "q": "머릿속에 원치 않는 불쾌한 생각이나 이미지가 자꾸 떠올라 괴로운데 행동이 없어도 강박증인가요?",
+    "a": "네, 겉으로 드러나는 손 씻기나 문 잠금 확인 같은 외현적 행동이 없더라도, 본인의 의지와 무관하게 폭력적이거나 불길하거나 도덕적으로 괴로운 생각·이미지가 머릿속에 침투하듯 반복되는 상태를 '순수 강박사고(Pure O)' 형태의 강박장애로 진단합니다.\n\n이러한 환자분들은 침투적 사고를 지우기 위해 속으로 특정 단어를 되뇌거나, 숫자를 세거나, 과거 기억을 끝없이 되짚어 검증하는 '내현적(정신적) 강박행동'을 수행하느라 극심한 뇌 피로와 죄책감을 겪게 됩니다.\n\n이는 인격의 문제가 아니라 전두엽-선조체 신경 회로의 과열로 인해 불필요한 잡념이 걸러지지 않는 신경학적 현상입니다. 뇌의 긴장과 불안 민감도를 낮추는 한방 치료와 생각을 있는 그대로 흘려보내는 인지 치료를 통해 정신적 소모를 크게 줄일 수 있습니다."
+  },
+  {
+    "idPrefix": "faq-auto-social-new-1",
+    "disease": "대인기피증",
+    "q": "식당이나 카페에서 다른 사람과 마주 앉아 식사할 때 손이 떨리고 삼키기 힘든 증상도 치료가 되나요?",
+    "a": "타인과 마주 앉아 식사하거나 차를 마실 때 '상대방이 내 손 떨림이나 긴장한 표정을 이상하게 보지 않을까'라는 예기불안이 치솟으면서 손이 심하게 떨리고 목이 막혀 음식을 삼키기 어려워지는 증상은 사회불안장애(대인기피증)의 대표적인 특수 형태인 '회식·식사 공포(Deipnophobia)'에 해당합니다.\n\n타인의 시선을 위협 신호로 과잉 해석하는 편도체가 교감신경을 급격히 흥분시켜 상지 근육의 미세 진전(떨림)과 식도 주변 근육의 긴장을 유발하기 때문입니다.\n\n해아림한의원에서는 교감신경의 급격한 항진과 근육 떨림을 완화하는 처방 및 약침·침구 치료를 통해 신체적 떨림 반응을 먼저 안정시켜, 대면 식사와 모임 자리에 편안하게 참여할 수 있도록 돕습니다."
+  },
+  {
+    "idPrefix": "faq-auto-anxiety-new-1",
+    "disease": "불안장애",
+    "q": "건강검진 결과는 정상인데도 몸에 큰 병이 숨어 있을 것 같아 병원 쇼핑을 멈추지 못하는 건강염려증도 불안장애인가요?",
+    "a": "네, 신체 내부의 사소한 감각 변화(일시적인 근육 뭉침, 가벼운 두통, 맥박 변화, 소화 소리 등)를 암이나 뇌졸중 같은 심각한 질환의 징후로 파국화하여 해석하고, 여러 병원을 전전하며 검사를 반복해도 안심하지 못하는 상태는 범불안장애 및 질병불안장애(건강염려증) 범주에 속합니다.\n\n뇌의 섬엽(Insula)과 편도체가 내부 신체 감각 신호를 과도하게 증폭시켜 받아들이는 '내수용성 감각 과민(Interoceptive Hypersensitivity)'과 자율신경 실조가 결합되어 실제 신체 곳곳에 통증과 답답함이 느껴지기 때문에 환자 본인의 고통은 매우 실재적입니다.\n\n한방 치료를 통해 자율신경계를 안정시켜 실제 신체화 불편감을 줄여주고 뇌의 불안 경보 역치를 높여주면, 질병에 대한 집착과 반복적인 검색·검진 충동에서 벗어나 평온한 일상을 되찾을 수 있습니다."
+  },
+  {
+    "idPrefix": "faq-auto-sweat-new-1",
+    "disease": "다한증",
+    "q": "조금만 긴장하거나 뜨거운 음식을 먹을 때 얼굴과 두피에서 땀이 비 오듯 흐르는 안면·두한증은 왜 생기나요?",
+    "a": "대인관계에서 긴장하거나 발표할 때, 혹은 약간만 매운 음식을 섭취해도 얼굴과 머리(두피), 목 부위로 열이 확 오르며 땀이 줄줄 흐르는 안면·두부 다한증은 체내 열 대사의 불균형과 상부 교감신경절의 과민 반응이 결합되어 나타납니다.\n\n한의학에서는 스트레스와 피로, 위장 열독으로 인해 인체 상부(심·폐·위)로 열이 뭉치고 하복부와 손발은 오히려 차가워지는 '상열하한(上熱下寒)' 및 '습열(濕熱)' 체질에서 두드러진다고 봅니다. 상체에 몰린 열기를 배출하기 위해 안면부 에크린 땀샘이 과도하게 열리는 것입니다.\n\n수술적 교감신경 절제 시 다른 부위로 땀이 옮겨가는 보상성 다한증 우려가 있으므로, 상부 열감을 식히고 수승화강(水昇火降) 순환과 자율신경 안정을 돕는 맞춤 한약과 침 치료로 다스리는 것이 안전하고 효과적입니다."
+  },
   {
     "idPrefix": "faq-auto-tic-1",
     "disease": "틱장애",
@@ -1021,6 +1111,20 @@
 
 
   var DISEASE_QNA_TEMPLATES = {
+    '갱년기': [
+      {
+        q: '갑자기 얼굴이 달아오르고 밤마다 식은땀이 나는데 호르몬제 없이 조절될까요?',
+        aShort: '시상하부 체온조절 중추 안정화와 상열하한 맞춤 한방 치료',
+        qBody: 'Q. 폐경 전후로 하루에도 수차례 얼굴과 가슴으로 열이 확 오르고 밤에 식은땀이 나 잠을 설칩니다. 호르몬제 부작용이 걱정되는데 한방 치료로 호전될 수 있나요?',
+        aBody: 'A. 갱년기 안면홍조와 야간 발한은 여성호르몬 급감으로 인해 뇌 시상하부의 체온조절 중추가 과민해지고 자율신경계 균형이 무너져 발생합니다. 외부 합성 호르몬을 인위적으로 투입하지 않더라도, 상체로 쏠린 허열(虛熱)을 내리고 진액을 보충하는 맞춤 한약과 자율신경 안정 침구 치료를 통해 체온 조절 역치를 정상화하고 숙면을 회복할 수 있습니다.'
+      },
+      {
+        q: '갱년기 이후 가슴 두근거림과 만성 불면, 무기력증이 심한데 왜 그럴까요?',
+        aShort: '갱년기 자율신경 실조(HRV 저하) 진단과 뇌신경 활력 회복법',
+        qBody: 'Q. 특별히 놀란 일이 없는데도 심장이 두근거리고 사소한 일에 눈물이 나거나 밤에 자주 깸니다. 단순 노화 현상인가요?',
+        aBody: 'A. 호르몬 변화가 뇌의 세로토닌·가바(GABA) 신경전달물질 대사와 부교감신경 활성도에 영향을 미쳐 나타나는 갱년기 신경정신과적 증후군입니다. 심혈(心血)을 보하고 교감신경 과각성을 진정시키는 단계별 한방 치료를 통해 감정 기복과 가슴 두근거림을 안정적으로 다스릴 수 있습니다.'
+      }
+    ],
     '틱장애': [
       {
         q: '단순 눈 깜빡임일까요, 틱장애일까요?',
@@ -1371,23 +1475,50 @@
     var deletedIds = deletedRaw ? JSON.parse(deletedRaw) : [];
     if (!Array.isArray(deletedIds)) deletedIds = [];
 
-    // [요구사항 반영] 틱 25%, 공황 15%, 불면 15%, 자율신경 15% (70%) / 어지럼, ADHD, 강박, 대인기피, 불안, 다한증 (30%)
-    var targetCategory = pickFaqCategoryByWeight();
-
-    var candidate = null;
-    var catPool = faqPool.filter(function(p) {
-      var isDeleted = deletedIds.includes(p.idPrefix) || deletedIds.includes(p.q);
-      return p.disease === targetCategory && !publishedPoolIds.includes(p.idPrefix) && !isDeleted;
+    var existingQuestions = {};
+    currentFaqList.forEach(function(item) {
+      if (item && item.q) existingQuestions[item.q.trim()] = true;
     });
+    if (Array.isArray(window.defaultFaqData)) {
+      window.defaultFaqData.forEach(function(item) {
+        if (item && item.q) existingQuestions[item.q.trim()] = true;
+      });
+    }
+
+    var validPool = faqPool.filter(function(p) { return p && p.idPrefix && p.q; });
+    var targetCategory = pickFaqCategoryByWeight();
 
     var now = new Date();
     var dateSeed = now.getFullYear() * 10000 + (now.getMonth() + 1) * 100 + now.getDate();
     var stepSeed = dateSeed + (state.publishCountTotal || 0);
 
-    if (catPool.length > 0) {
+    // 1순위: 해당 카테고리 내 아직 페이지/스토리지에 없는 신규 질문
+    var freshCatPool = validPool.filter(function(p) {
+      var isDeleted = deletedIds.includes(p.idPrefix) || deletedIds.includes(p.q);
+      return p.disease === targetCategory && !publishedPoolIds.includes(p.idPrefix) && !isDeleted && !existingQuestions[p.q.trim()];
+    });
+
+    // 2순위: 전체 카테고리 내 아직 페이지/스토리지에 없는 신규 질문
+    var freshAnyPool = validPool.filter(function(p) {
+      var isDeleted = deletedIds.includes(p.idPrefix) || deletedIds.includes(p.q);
+      return !publishedPoolIds.includes(p.idPrefix) && !isDeleted && !existingQuestions[p.q.trim()];
+    });
+
+    // 3순위: 해당 카테고리 내 미발행 풀
+    var catPool = validPool.filter(function(p) {
+      var isDeleted = deletedIds.includes(p.idPrefix) || deletedIds.includes(p.q);
+      return p.disease === targetCategory && !publishedPoolIds.includes(p.idPrefix) && !isDeleted;
+    });
+
+    var candidate = null;
+    if (freshCatPool.length > 0) {
+      candidate = freshCatPool[stepSeed % freshCatPool.length];
+    } else if (freshAnyPool.length > 0) {
+      candidate = freshAnyPool[stepSeed % freshAnyPool.length];
+    } else if (catPool.length > 0) {
       candidate = catPool[stepSeed % catPool.length];
     } else {
-      var remaining = faqPool.filter(function(p) {
+      var remaining = validPool.filter(function(p) {
         var isDeleted = deletedIds.includes(p.idPrefix) || deletedIds.includes(p.q);
         return !publishedPoolIds.includes(p.idPrefix) && !isDeleted;
       });
@@ -1395,36 +1526,64 @@
         candidate = remaining[stepSeed % remaining.length];
       } else {
         publishedPoolIds = [];
-        var allNonDeleted = faqPool.filter(function(p) {
+        var allNonDeleted = validPool.filter(function(p) {
           return !deletedIds.includes(p.idPrefix) && !deletedIds.includes(p.q);
         });
-        candidate = (allNonDeleted.length > 0) ? allNonDeleted[stepSeed % allNonDeleted.length] : faqPool[0];
+        candidate = (allNonDeleted.length > 0) ? allNonDeleted[stepSeed % allNonDeleted.length] : validPool[0];
       }
     }
 
     if (!candidate) return null;
 
-    var sanitizedQ = sanitizeMedicalCompliance(candidate.q);
-    var sanitizedA = sanitizeMedicalCompliance(candidate.a);
-    var now = new Date();
+    var finalDisease = candidate.disease || targetCategory;
+    var rawQ = candidate.q;
+    var rawA = candidate.a;
+
+    // 만약 선택된 질문이 이미 기본 목록이나 저장 목록에 존재한다면 지역·임상 맞춤 신규 Q&A로 변환하여 100% 고유 질문 보장
+    if (existingQuestions[rawQ.trim()]) {
+      var regionObj = pickRegionWithWeights();
+      var dongsText = pickTwoDongs(regionObj.dongs);
+      var statText = getDiseaseStat(finalDisease);
+      var baseQ = rawQ.replace(/^\[[^\]]+\]\s*/, '');
+      rawQ = '[' + regionObj.name + ' ' + finalDisease + ' 상담] ' + baseQ;
+      if (existingQuestions[rawQ.trim()]) {
+        rawQ = '[' + regionObj.name + '·' + dongsText + ' ' + finalDisease + '] ' + baseQ;
+      }
+      rawA = '최근 ' + regionObj.name + '(' + dongsText + ') 지역에서도 ' + finalDisease + ' 증상으로 내원하시어 자주 문의하시는 핵심 질문입니다.\n\n' +
+        rawA + '\n\n[임상 통계 및 치료 안내]\n' + statText;
+    }
+
+    var sanitizedQ = sanitizeMedicalCompliance(rawQ);
+    var sanitizedA = sanitizeMedicalCompliance(rawA);
     var dateStr = now.getFullYear() + '.' + String(now.getMonth() + 1).padStart(2, '0') + '.' + String(now.getDate()).padStart(2, '0');
     var newFaqId = 'faq-auto-' + Date.now();
+    var linkUrl = getDiseasePageUrl(finalDisease);
+    var linkTxt = finalDisease + ' 정밀클리닉 바로가기';
 
     var newFaq = {
       id: newFaqId,
-      disease: candidate.disease,
+      disease: finalDisease,
       q: sanitizedQ,
       a: sanitizedA,
       date: dateStr,
+      link: linkUrl,
+      linkText: linkTxt,
       isAutoPublished: true
     };
 
+    // 동일 질문 또는 동일 ID가 기존 배열에 있으면 제거 후 최상단(0번 인덱스)에 배치
+    currentFaqList = currentFaqList.filter(function(item) {
+      return item && item.id !== newFaq.id && item.q !== newFaq.q;
+    });
     currentFaqList.unshift(newFaq);
+
+    window.__healimAllowDataReset = true;
     localStorage.setItem(STORAGE_BOARD_FAQ_KEY, JSON.stringify(currentFaqList));
     try {
       localStorage.setItem('healim_board_faqs_permanent_backup', JSON.stringify(currentFaqList));
       if (typeof sessionStorage !== 'undefined') sessionStorage.setItem('healim_board_faqs_backup', JSON.stringify(currentFaqList));
     } catch(e) {}
+    window.__healimAllowDataReset = false;
 
     publishedPoolIds.push(candidate.idPrefix);
     state.publishedPoolIds = publishedPoolIds;
@@ -1597,7 +1756,7 @@
     }
 
     // FAQ 배지 (3번 사진 스타일)
-    var faqBadge = document.getElementById('autoFaqStatusBadge');
+    var faqBadge = document.getElementById('autoFaqStatusBadge') || document.getElementById('autoFaqStatusBar');
     var faqText = document.getElementById('autoFaqNextScheduleText');
     if (faqBadge) {
       faqBadge.style.display = isSuper ? 'flex' : 'none';
@@ -1777,7 +1936,11 @@
   function triggerAutoFaqPublishManual() {
     var faq = publishOneAutoFaq(true);
     if (faq) {
-      if (typeof window.renderFaqList === 'function') window.renderFaqList();
+      if (typeof window.resetFaqFilterToFirstPage === 'function') {
+        window.resetFaqFilterToFirstPage();
+      } else if (typeof window.renderFaqList === 'function') {
+        window.renderFaqList();
+      }
       if (typeof window.renderCommonBottomRealtimeAll === 'function') window.renderCommonBottomRealtimeAll();
       updateAdminBadges();
       alert('⚡ FAQ 1편이 즉시 자동 발행되었습니다!\n\n[질환]: ' + faq.disease + '\n[질문]: Q. ' + faq.q);
@@ -1794,6 +1957,7 @@
   window.generateCustomColumnContentByTitle = generateCustomColumnContentByTitle;
   window.publishCustomColumnPost = publishCustomColumnPost;
   window.triggerAutoFaqPublishManual = triggerAutoFaqPublishManual;
+  window.triggerAutoFaqPublish = publishOneAutoFaq;
   window.checkAndRunReviewsSync = checkAndRunReviewsSync;
   window.checkAndRunYoutubeSync = checkAndRunYoutubeSync;
   window.getYoutubeSyncState = getYoutubeSyncState;

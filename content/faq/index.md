@@ -2081,6 +2081,7 @@ var defaultFaqData = [
     "linkText": "갱년기 증후군 정밀클리닉 알아보기"
   }
 ];
+window.defaultFaqData = defaultFaqData;
 var currentFaqCategory = 'ALL';
 var currentFaqKeyword = '';
 var faqCurrentPage = 1;
@@ -2133,20 +2134,26 @@ function getRealtimeBoardFaqData() {
   var delList = delRaw ? JSON.parse(delRaw) : [];
   if (!Array.isArray(delList)) delList = [];
 
-  var list = defaultFaqData.slice();
+  var list = [];
   try {
-    var savedRaw = localStorage.getItem('healim_board_faqs');
+    var savedRaw = localStorage.getItem('healim_board_faqs') || localStorage.getItem('healim_board_faqs_permanent_backup');
     if (savedRaw) {
       var saved = JSON.parse(savedRaw);
       if (Array.isArray(saved) && saved.length > 0) {
         saved.forEach(function(sItem) {
           if (!sItem || !sItem.id) return;
           var exists = list.some(function(it) { return String(it.id) === String(sItem.id) || (sItem.q && it.q === sItem.q); });
-          if (!exists) list.unshift(sItem);
+          if (!exists) list.push(sItem);
         });
       }
     }
   } catch(e) {}
+
+  defaultFaqData.forEach(function(dItem) {
+    if (!dItem || !dItem.id) return;
+    var exists = list.some(function(it) { return String(it.id) === String(dItem.id) || (dItem.q && it.q === dItem.q); });
+    if (!exists) list.push(dItem);
+  });
 
   // 삭제된 FAQ 필터링 (기본 데이터셋 및 로컬스토리지 모두 적용)
   if (delList.length > 0) {
@@ -2402,10 +2409,14 @@ function handleSaveFaq(e) {
     if (!Array.isArray(saved)) saved = [];
   } catch(e) {}
 
+  saved = saved.filter(function(it) { return it && it.id !== newFaq.id && it.q !== newFaq.q; });
   saved.unshift(newFaq);
+  window.__healimAllowDataReset = true;
   localStorage.setItem('healim_board_faqs', JSON.stringify(saved));
+  localStorage.setItem('healim_board_faqs_permanent_backup', JSON.stringify(saved));
+  window.__healimAllowDataReset = false;
   closeFaqModal();
-  renderFaqList();
+  resetFaqFilterToFirstPage();
   alert('FAQ가 저장되었습니다.');
 }
 
@@ -2455,14 +2466,17 @@ function handleAdminDeleteFaq(id) {
   }
 }
 
-function triggerAutoFaqPublishManual() {
-  if (typeof window.triggerAutoFaqPublish === 'function') {
-    window.triggerAutoFaqPublish();
-    setTimeout(renderFaqList, 300);
-  } else {
-    alert('FAQ 자동 발행 엔진이 준비 중입니다.');
-  }
+function resetFaqFilterToFirstPage() {
+  currentFaqCategory = 'ALL';
+  currentFaqKeyword = '';
+  faqCurrentPage = 1;
+  var sel = document.getElementById('faqCategoryFilter');
+  var inp = document.getElementById('faqSearchInput');
+  if (sel) sel.value = 'ALL';
+  if (inp) inp.value = '';
+  renderFaqList();
 }
+window.resetFaqFilterToFirstPage = resetFaqFilterToFirstPage;
 
 document.addEventListener('DOMContentLoaded', function() {
   renderFaqList();

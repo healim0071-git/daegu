@@ -2945,9 +2945,9 @@ function getRealtimeBoardColumnsData() {
   var delList = delRaw ? JSON.parse(delRaw) : [];
   if (!Array.isArray(delList)) delList = [];
 
-  var list = defaultColumnsData.slice();
+  var list = [];
   try {
-    var savedRaw = localStorage.getItem('healim_board_columns');
+    var savedRaw = localStorage.getItem('healim_board_columns') || localStorage.getItem('healim_board_columns_permanent_backup');
     if (savedRaw) {
       var saved = JSON.parse(savedRaw);
       if (Array.isArray(saved) && saved.length > 0) {
@@ -2955,11 +2955,17 @@ function getRealtimeBoardColumnsData() {
           if (!sItem || !sItem.id) return;
           if (sItem.title && sItem.title.includes('경산 불면증')) return;
           var exists = list.some(function(it) { return String(it.id) === String(sItem.id) || (sItem.title && it.title === sItem.title); });
-          if (!exists) list.unshift(sItem);
+          if (!exists) list.push(sItem);
         });
       }
     }
   } catch(e) {}
+
+  defaultColumnsData.forEach(function(dItem) {
+    if (!dItem || !dItem.id) return;
+    var exists = list.some(function(it) { return String(it.id) === String(dItem.id) || (dItem.title && it.title === dItem.title); });
+    if (!exists) list.push(dItem);
+  });
 
   // 삭제된 칼럼 필터링 (기본 데이터셋 및 로컬스토리지 모두 적용)
   if (delList.length > 0) {
