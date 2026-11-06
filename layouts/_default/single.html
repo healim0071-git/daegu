@@ -7,11 +7,11 @@
   <section class="disease-hero-card">
     <div class="hero-card-badge">
       <span class="badge-icon">🏆</span>
-      <span>16년 이상 임상 노하우 &amp; 전국 16개 네트워크</span>
+      <span>{{ with .Params.hero_badge }}{{ . }}{{ else }}16년 이상 임상 노하우 &amp; 전국 16개 네트워크{{ end }}</span>
     </div>
     
     <div class="hero-card-sub">
-      <span>{{ if .Section }}{{ .Section | humanize }} | {{ end }}해아림한의원</span>
+      <span>{{ with .Params.hero_sub }}{{ . }}{{ else }}{{ if .Section }}{{ .Section | humanize }} | {{ end }}해아림한의원{{ end }}</span>
     </div>
 
     <h1 class="hero-card-title">
