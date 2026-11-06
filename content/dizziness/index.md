@@ -1,4 +1,4 @@
-﻿---
+---
 title: "대구 어지럼증 치료 병원 ㅣ 해아림한의원 대구본점ㅣ 신경성 두통 어지럼증의 원인 치료"
 seo_title: "대구 어지럼증 치료 병원 ㅣ 해아림한의원 대구본점ㅣ 신경성 두통 어지럼증의 원인 치료"
 h1_title: "대구 어지럼증 치료 병원 ㅣ 해아림한의원 대구본점ㅣ 신경성 두통 어지럼증의 원인 치료"
@@ -514,6 +514,28 @@ A. 물론입니다. 오히려 원인이 명확하지 않아 여러 병원을 전
 </div>
 </details>
 
+</div>
+
+<!-- 관련 상세 정보 바로가기 -->
+<div style="background: #F8FAFB; border: 1px solid #D6E4EE; border-radius: 12px; padding: 18px 20px; margin-bottom: 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; align-items: center; line-height: 1.8;">
+<span style="font-weight: 800; color: #0C4349; font-size: 0.96rem;">🔗 대구 어지럼증 심층 정보:</span>
+<a href="/dizziness/test/" style="font-weight: 700; color: #146369; text-decoration: none; font-size: 0.94rem;">📊 어지럼증 정밀 검사</a>
+<span style="color: #CBD5E1;">|</span>
+<a href="/dizziness/cure/" style="font-weight: 700; color: #146369; text-decoration: none; font-size: 0.94rem;">💊 단계별 치료 프로토콜</a>
+<span style="color: #CBD5E1;">|</span>
+<a href="/dizziness/specialist/" style="font-weight: 700; color: #146369; text-decoration: none; font-size: 0.94rem;">👨‍⚕️ 김대억 대표원장(박사)</a>
+<span style="color: #CBD5E1;">|</span>
+<a href="/dizziness/specialist-clinic/" style="font-weight: 700; color: #146369; text-decoration: none; font-size: 0.94rem;">🏥 잘 보는 병원 기준</a>
+<span style="color: #CBD5E1;">|</span>
+<a href="/dizziness/kmc/" style="font-weight: 700; color: #146369; text-decoration: none; font-size: 0.94rem;">🌿 한의원 변증 치료</a>
+<span style="color: #CBD5E1;">|</span>
+<a href="/dizziness/ent/" style="font-weight: 700; color: #146369; text-decoration: none; font-size: 0.94rem;">👂 이비인후과 잔여 어지럼</a>
+<span style="color: #CBD5E1;">|</span>
+<a href="/dizziness/neurology/" style="font-weight: 700; color: #146369; text-decoration: none; font-size: 0.94rem;">🧠 신경과 질환 및 PPPD</a>
+<span style="color: #CBD5E1;">|</span>
+<a href="/dizziness/appointment/" style="font-weight: 700; color: #146369; text-decoration: none; font-size: 0.94rem;">📅 100% 사전 예약 안내</a>
+<span style="color: #CBD5E1;">|</span>
+<a href="/dizziness/location/" style="font-weight: 700; color: #146369; text-decoration: none; font-size: 0.94rem;">📍 범어역 1·4번 출구 위치</a>
 </div>
 
 <!-- 15. 최종 CRO 전환 배너: 내 증상 이해 및 전화상담 안내 -->
