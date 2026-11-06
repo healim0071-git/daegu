@@ -1,4 +1,4 @@
-﻿---
+---
 title: "대구 자율신경실조증 검사 병원 ㅣ 해아림한의원 대구본점ㅣ 자율신경계 검사 치료 병원"
 seo_title: "대구 자율신경실조증 검사 병원 ㅣ 해아림한의원 대구본점ㅣ 자율신경계 검사 치료 병원"
 h1_title: "대구 자율신경실조증 검사 병원 ㅣ 해아림한의원 대구본점ㅣ 자율신경계 검사 치료 병원"
@@ -516,6 +516,24 @@ A. 물론입니다. 오히려 여러 병원을 전전하며 원인을 몰라 혼
 </div>
 </details>
 
+</div>
+
+<!-- 관련 상세 정보 바로가기 -->
+<div style="background: #F8FAFB; border: 1px solid #D6E4EE; border-radius: 12px; padding: 18px 20px; margin-bottom: 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; align-items: center; line-height: 1.8;">
+<span style="font-weight: 800; color: #0C4349; font-size: 0.96rem;">🔗 대구 자율신경실조증 심층 정보:</span>
+<a href="/dysautonomia/autonomic-test1/" style="font-weight: 700; color: #146369; text-decoration: none; font-size: 0.94rem;">📊 자율신경계 검사</a>
+<span style="color: #CBD5E1;">|</span>
+<a href="/dysautonomia/daegu/" style="font-weight: 700; color: #146369; text-decoration: none; font-size: 0.94rem;">🌿 대구 자율신경실조증</a>
+<span style="color: #CBD5E1;">|</span>
+<a href="/dysautonomia/autonomic-clinic/" style="font-weight: 700; color: #146369; text-decoration: none; font-size: 0.94rem;">🏥 자율신경계 병원</a>
+<span style="color: #CBD5E1;">|</span>
+<a href="/dysautonomia/treatment1/" style="font-weight: 700; color: #146369; text-decoration: none; font-size: 0.94rem;">💊 실조증 치료법</a>
+<span style="color: #CBD5E1;">|</span>
+<a href="/dysautonomia/specialist/" style="font-weight: 700; color: #146369; text-decoration: none; font-size: 0.94rem;">👨‍⚕️ 실조증 잘보는곳</a>
+<span style="color: #CBD5E1;">|</span>
+<a href="/dysautonomia/kmc/" style="font-weight: 700; color: #146369; text-decoration: none; font-size: 0.94rem;">🌿 자율신경계 한의원</a>
+<span style="color: #CBD5E1;">|</span>
+<a href="/dysautonomia/clinic3/" style="font-weight: 700; color: #146369; text-decoration: none; font-size: 0.94rem;">⭐ 자율신경계 병원 추천</a>
 </div>
 
 <!-- 15. 최종 CRO 전환 배너: 전체 흐름 파악 및 상담 안내 -->
