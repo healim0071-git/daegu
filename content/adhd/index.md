@@ -417,6 +417,18 @@ A. 물론입니다. 오히려 학교나 가정에서 아이와의 갈등이 시�
 
 </div>
 
+<!-- 관련 상세 정보 바로가기 -->
+<div style="background: #F8FAFB; border: 1px solid #D6E4EE; border-radius: 12px; padding: 18px 20px; margin-bottom: 24px; display: flex; flex-wrap: wrap; justify-content: space-around; gap: 12px; align-items: center;">
+<span style="font-weight: 800; color: #0C4349; font-size: 0.96rem;">🔗 대구 ADHD 심층 정보:</span>
+<a href="/adhd/test/" style="font-weight: 700; color: #146369; text-decoration: none; font-size: 0.94rem;">📋 대구 ADHD 검사</a>
+<span style="color: #CBD5E1;">|</span>
+<a href="/adhd/eeg/" style="font-weight: 700; color: #146369; text-decoration: none; font-size: 0.94rem;">🧠 대구 ADHD 뇌파검사</a>
+<span style="color: #CBD5E1;">|</span>
+<a href="/adhd/clinic/" style="font-weight: 700; color: #146369; text-decoration: none; font-size: 0.94rem;">🏥 대구 ADHD 한방치료 병원</a>
+<span style="color: #CBD5E1;">|</span>
+<a href="/adhd/psychiatry/" style="font-weight: 700; color: #146369; text-decoration: none; font-size: 0.94rem;">🌿 대구 ADHD 정신과질환 감별</a>
+</div>
+
 <!-- 12. 최종 CRO 전환 배너: 핵심 요약 및 전화상담 안내 -->
 <div class="cond-section" style="margin-bottom: 20px;">
 <div style="background: linear-gradient(135deg, #0C4349 0%, #146369 100%); border-radius: 16px; padding: 28px 24px; color: #FFFFFF; text-align: center; box-shadow: 0 8px 24px rgba(12, 67, 73, 0.18);">
