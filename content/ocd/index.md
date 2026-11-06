@@ -442,6 +442,12 @@ NICE(영국 국립보건임상연구원) 가이드라인에서도 강박증의 �
 </div>
 </div>
 
+<!-- 관련 상세 정보 바로가기 -->
+<div style="background: #F8FAFB; border: 1px solid #D6E4EE; border-radius: 12px; padding: 18px 20px; margin-top: 20px; margin-bottom: 24px; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; align-items: center;">
+<span style="font-weight: 800; color: #0C4349; font-size: 0.96rem;">🔗 대구 강박증 심층 정보:</span>
+<a href="/ocd/cure/" style="font-weight: 700; color: #146369; text-decoration: none; font-size: 0.94rem;">👉 대구 강박 치료법 및 단계별 자생력 회복 프로토콜</a>
+</div>
+
 <div class="cond-section" style="margin: 30px 0 10px 0;">
 <div style="background: linear-gradient(135deg, #0d3b66 0%, #001e3d 100%); color: #fff; padding: 26px 28px; border-radius: 10px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.12);">
 <h3 style="color: #f1c40f; margin-top: 0; font-size: 1.35rem; letter-spacing: -0.5px;">반복되는 강박의 고리, 혼자 견디지 마시고 해아림과 함께 끊어내세요</h3>
