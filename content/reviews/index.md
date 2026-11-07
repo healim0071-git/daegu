@@ -380,7 +380,9 @@ a. 강박 증상 (생각 등)이...</p>
   </div>
 
   <!-- 치료후기 페이지네이션 -->
-  <div id="reviewsPagination" style="display: flex; justify-content: center; gap: 6px; margin-bottom: 40px;"></div>
+  <div class="board-pagination-wrapper">
+    <div id="reviewsPagination" class="board-pagination"></div>
+  </div>
 </div>
 
 <script>
@@ -3283,43 +3285,64 @@ function renderReviewsPagination(totalPages) {
   container.innerHTML = '';
   if (totalPages <= 1) return;
 
-  var maxButtons = 7;
-  var startP = Math.max(1, reviewsCurrentPage - 3);
-  var endP = Math.min(totalPages, startP + maxButtons - 1);
-  if (endP - startP < maxButtons - 1) startP = Math.max(1, endP - maxButtons + 1);
+  var blockSize = 10;
+  var currentBlock = Math.floor((reviewsCurrentPage - 1) / blockSize);
+  var startPage = currentBlock * blockSize + 1;
+  var endPage = Math.min(startPage + blockSize - 1, totalPages);
 
-  if (startP > 1) {
-    var firstBtn = document.createElement('button');
-    firstBtn.type = 'button';
-    firstBtn.textContent = '«';
-    firstBtn.style.cssText = 'padding: 6px 10px; border-radius: 6px; font-size: 13px; font-weight: 700; cursor: pointer; border: 1px solid #E2E8F0; background: #FFF; color: #475569;';
-    firstBtn.onclick = function() { reviewsCurrentPage = 1; renderReviewsList(); };
-    container.appendChild(firstBtn);
+  function createNavBtn(text, targetPage, disabled, title) {
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'pg-btn nav-btn' + (disabled ? ' disabled' : '');
+    btn.innerHTML = text;
+    btn.setAttribute('aria-label', title);
+    btn.title = title;
+    if (disabled) {
+      btn.disabled = true;
+    } else {
+      btn.onclick = function() {
+        reviewsCurrentPage = targetPage;
+        renderReviewsList();
+        var target = document.getElementById('reviewsListArea') || container;
+        window.scrollTo({ top: target.offsetTop - 120, behavior: 'smooth' });
+      };
+    }
+    return btn;
   }
 
-  for (var p = startP; p <= endP; p++) {
+  // 1. << (첫 페이지)
+  container.appendChild(createNavBtn('&lt;&lt;', 1, reviewsCurrentPage === 1, '첫 페이지'));
+
+  // 2. < (이전 페이지)
+  container.appendChild(createNavBtn('&lt;', Math.max(1, reviewsCurrentPage - 1), reviewsCurrentPage === 1, '이전 페이지'));
+
+  // 3. 1 ~ 10 번호 버튼
+  for (var p = startPage; p <= endPage; p++) {
     (function(pageNum) {
       var btn = document.createElement('button');
       btn.type = 'button';
+      btn.className = 'pg-btn' + (pageNum === reviewsCurrentPage ? ' active' : '');
       btn.textContent = pageNum;
-      btn.style.cssText = 'padding: 6px 12px; border-radius: 6px; font-size: 13px; font-weight: 700; cursor: pointer; border: 1px solid ' + (pageNum === reviewsCurrentPage ? '#008194' : '#E2E8F0') + '; background: ' + (pageNum === reviewsCurrentPage ? '#008194' : '#FFFFFF') + '; color: ' + (pageNum === reviewsCurrentPage ? '#FFFFFF' : '#475569') + ';';
-      btn.onclick = function() {
-        reviewsCurrentPage = pageNum;
-        renderReviewsList();
-        window.scrollTo({ top: document.getElementById('reviewsListArea').offsetTop - 120, behavior: 'smooth' });
-      };
+      btn.setAttribute('aria-label', pageNum + '페이지');
+      if (pageNum === reviewsCurrentPage) {
+        btn.disabled = true;
+      } else {
+        btn.onclick = function() {
+          reviewsCurrentPage = pageNum;
+          renderReviewsList();
+          var target = document.getElementById('reviewsListArea') || container;
+          window.scrollTo({ top: target.offsetTop - 120, behavior: 'smooth' });
+        };
+      }
       container.appendChild(btn);
     })(p);
   }
 
-  if (endP < totalPages) {
-    var lastBtn = document.createElement('button');
-    lastBtn.type = 'button';
-    lastBtn.textContent = '»';
-    lastBtn.style.cssText = 'padding: 6px 10px; border-radius: 6px; font-size: 13px; font-weight: 700; cursor: pointer; border: 1px solid #E2E8F0; background: #FFF; color: #475569;';
-    lastBtn.onclick = function() { reviewsCurrentPage = totalPages; renderReviewsList(); };
-    container.appendChild(lastBtn);
-  }
+  // 4. > (다음 페이지)
+  container.appendChild(createNavBtn('&gt;', Math.min(totalPages, reviewsCurrentPage + 1), reviewsCurrentPage === totalPages, '다음 페이지'));
+
+  // 5. >> (마지막 페이지)
+  container.appendChild(createNavBtn('&gt;&gt;', totalPages, reviewsCurrentPage === totalPages, '마지막 페이지'));
 }
 
 function filterReviews() {

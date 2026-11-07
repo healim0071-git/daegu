@@ -751,9 +751,8 @@ layout: single
 </div>
 
 <!-- 자주 묻는 질문 15개 단위 페이징 영역 -->
-<div id="faqPaginationArea" style="max-width: 860px; margin: 0 auto 40px; text-align: center;">
-  <!-- 이전 / 번호 / 다음 페이지네이션 바 -->
-  <div id="faqPagination" style="display: flex; justify-content: center; align-items: center; gap: 6px; flex-wrap: wrap;"></div>
+<div class="board-pagination-wrapper">
+  <div id="faqPagination" class="board-pagination"></div>
 </div>
 
 <!-- 최고관리자 FAQ 작성/수정 모달 -->
@@ -2212,79 +2211,64 @@ function renderFaqPagination(totalPages, total) {
   container.innerHTML = '';
   if (totalPages <= 1) return;
 
-  // 1. [◀ 이전 15개] 버튼
-  var prevBtn = document.createElement('button');
-  prevBtn.type = 'button';
-  prevBtn.innerHTML = '&lt; 이전 15개';
-  prevBtn.style.padding = '7px 14px';
-  prevBtn.style.borderRadius = '6px';
-  prevBtn.style.fontSize = '13px';
-  prevBtn.style.fontWeight = '700';
-  prevBtn.style.border = '1px solid #E2E8F0';
-  if (faqCurrentPage > 1) {
-    prevBtn.style.background = '#FFFFFF';
-    prevBtn.style.color = '#008194';
-    prevBtn.style.cursor = 'pointer';
-    prevBtn.onclick = goToPrevFaqPage;
-  } else {
-    prevBtn.style.background = '#F8FAFB';
-    prevBtn.style.color = '#CBD5E1';
-    prevBtn.style.cursor = 'not-allowed';
-  }
-  container.appendChild(prevBtn);
+  var blockSize = 10;
+  var currentBlock = Math.floor((faqCurrentPage - 1) / blockSize);
+  var startPage = currentBlock * blockSize + 1;
+  var endPage = Math.min(startPage + blockSize - 1, totalPages);
 
-  // 2. 페이지 번호 버튼들 (스마트 윈도우)
-  var startP = Math.max(1, faqCurrentPage - 3);
-  var endP = Math.min(totalPages, startP + 6);
-  if (endP - startP < 6) {
-    startP = Math.max(1, endP - 6);
+  function createNavBtn(text, targetPage, disabled, title) {
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'pg-btn nav-btn' + (disabled ? ' disabled' : '');
+    btn.innerHTML = text;
+    btn.setAttribute('aria-label', title);
+    btn.title = title;
+    if (disabled) {
+      btn.disabled = true;
+    } else {
+      btn.onclick = function() {
+        faqCurrentPage = targetPage;
+        renderFaqList();
+        var c = document.getElementById('faqAccordionContainer') || container;
+        window.scrollTo({ top: c.offsetTop - 120, behavior: 'smooth' });
+      };
+    }
+    return btn;
   }
 
-  for (var p = startP; p <= endP; p++) {
+  // 1. << (첫 페이지)
+  container.appendChild(createNavBtn('&lt;&lt;', 1, faqCurrentPage === 1, '첫 페이지'));
+
+  // 2. < (이전 페이지)
+  container.appendChild(createNavBtn('&lt;', Math.max(1, faqCurrentPage - 1), faqCurrentPage === 1, '이전 페이지'));
+
+  // 3. 1 ~ 10 번호 버튼
+  for (var p = startPage; p <= endPage; p++) {
     (function(pageNum) {
       var btn = document.createElement('button');
       btn.type = 'button';
+      btn.className = 'pg-btn' + (pageNum === faqCurrentPage ? ' active' : '');
       btn.textContent = pageNum;
-      btn.style.padding = '7px 13px';
-      btn.style.borderRadius = '6px';
-      btn.style.fontSize = '13px';
-      btn.style.fontWeight = '700';
-      btn.style.cursor = 'pointer';
-      btn.style.border = '1px solid ' + (pageNum === faqCurrentPage ? '#008194' : '#E2E8F0');
-      btn.style.background = pageNum === faqCurrentPage ? '#008194' : '#FFFFFF';
-      btn.style.color = pageNum === faqCurrentPage ? '#FFFFFF' : '#475569';
-      btn.onclick = function() {
-        faqCurrentPage = pageNum;
-        renderFaqList();
-        var c = document.getElementById('faqAccordionContainer');
-        if (c) {
+      btn.setAttribute('aria-label', pageNum + '페이지');
+      if (pageNum === faqCurrentPage) {
+        btn.disabled = true;
+      } else {
+        btn.onclick = function() {
+          faqCurrentPage = pageNum;
+          renderFaqList();
+          var c = document.getElementById('faqAccordionContainer') || container;
           window.scrollTo({ top: c.offsetTop - 120, behavior: 'smooth' });
-        }
-      };
+        };
+      }
       container.appendChild(btn);
     })(p);
   }
 
-  // 3. [다음 15개 ▶] 버튼
-  var nextNavBtn = document.createElement('button');
-  nextNavBtn.type = 'button';
-  nextNavBtn.innerHTML = '다음 15개 &gt;';
-  nextNavBtn.style.padding = '7px 14px';
-  nextNavBtn.style.borderRadius = '6px';
-  nextNavBtn.style.fontSize = '13px';
-  nextNavBtn.style.fontWeight = '700';
-  nextNavBtn.style.border = '1px solid #E2E8F0';
-  if (faqCurrentPage < totalPages) {
-    nextNavBtn.style.background = '#FFFFFF';
-    nextNavBtn.style.color = '#008194';
-    nextNavBtn.style.cursor = 'pointer';
-    nextNavBtn.onclick = goToNextFaqPage;
-  } else {
-    nextNavBtn.style.background = '#F8FAFB';
-    nextNavBtn.style.color = '#CBD5E1';
-    nextNavBtn.style.cursor = 'not-allowed';
-  }
-  container.appendChild(nextNavBtn);
+  // 4. > (다음 페이지)
+  container.appendChild(createNavBtn('&gt;', Math.min(totalPages, faqCurrentPage + 1), faqCurrentPage === totalPages, '다음 페이지'));
+
+  // 5. >> (마지막 페이지)
+  container.appendChild(createNavBtn('&gt;&gt;', totalPages, faqCurrentPage === totalPages, '마지막 페이지'));
 }
 
 function renderFaqList() {

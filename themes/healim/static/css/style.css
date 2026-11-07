@@ -4546,3 +4546,114 @@ ul.bottom-cards-grid > li {
     grid-template-columns: 1fr !important;
   }
 }
+
+/* ── 커뮤니티 게시판 공통 반응형 페이지네이션 (칼럼 / FAQ / 치료후기) ── */
+.board-pagination-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  margin: 28px 0 44px !important;
+  padding: 4px 0 !important;
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  box-sizing: border-box !important;
+}
+
+.board-pagination {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 5px !important;
+  margin: 0 auto !important;
+  max-width: 100% !important;
+  white-space: nowrap !important;
+}
+
+.board-pagination .pg-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 34px !important;
+  height: 34px !important;
+  padding: 0 6px !important;
+  font-size: 13.5px !important;
+  font-weight: 700 !important;
+  border-radius: 6px !important;
+  border: 1px solid #E2E8F0 !important;
+  background: #FFFFFF !important;
+  color: #475569 !important;
+  cursor: pointer !important;
+  transition: all 0.15s ease !important;
+  user-select: none !important;
+  flex-shrink: 0 !important;
+  box-sizing: border-box !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+}
+
+.board-pagination .pg-btn:hover:not(:disabled):not(.disabled) {
+  border-color: #008194 !important;
+  color: #008194 !important;
+  background: #F0FDFA !important;
+}
+
+.board-pagination .pg-btn.active {
+  background: #008194 !important;
+  border-color: #008194 !important;
+  color: #FFFFFF !important;
+  cursor: default !important;
+}
+
+.board-pagination .pg-btn:disabled,
+.board-pagination .pg-btn.disabled {
+  background: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+  color: #CBD5E1 !important;
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+}
+
+.board-pagination .pg-btn.nav-btn {
+  font-weight: 800 !important;
+  color: #334155 !important;
+  letter-spacing: -0.5px !important;
+}
+
+@media (max-width: 640px) {
+  .board-pagination-wrapper {
+    margin: 20px 0 32px !important;
+  }
+  .board-pagination {
+    gap: 3px !important;
+  }
+  .board-pagination .pg-btn {
+    min-width: 25px !important;
+    height: 30px !important;
+    padding: 0 2px !important;
+    font-size: 12px !important;
+    border-radius: 5px !important;
+  }
+  .board-pagination .pg-btn.nav-btn {
+    min-width: 24px !important;
+    font-size: 11px !important;
+    letter-spacing: -1px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .board-pagination {
+    gap: 2px !important;
+  }
+  .board-pagination .pg-btn {
+    min-width: 22px !important;
+    height: 28px !important;
+    padding: 0 1px !important;
+    font-size: 11px !important;
+  }
+  .board-pagination .pg-btn.nav-btn {
+    min-width: 20px !important;
+    font-size: 10px !important;
+  }
+}
+

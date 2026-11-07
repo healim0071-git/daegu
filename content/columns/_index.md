@@ -1,4 +1,4 @@
-﻿---
+---
 title: "치료칼럼ㅣ해아림한의원 대구본점 김대억 박사의 뇌신경계 의학칼럼"
 seo_title: "치료칼럼ㅣ해아림한의원 대구본점 김대억 박사의 뇌신경계 의학칼럼"
 h1_title: "치료칼럼ㅣ해아림한의원 대구본점 김대억 박사의 뇌신경계 의학칼럼"
@@ -448,7 +448,9 @@ layout: single
 </div>
 
 <!-- 페이지네이션 -->
-<div id="columnsPagination" style="display: flex; justify-content: center; gap: 6px; margin-bottom: 40px;"></div>
+<div class="board-pagination-wrapper">
+  <div id="columnsPagination" class="board-pagination"></div>
+</div>
 
 <!-- ============================================================== -->
 <!-- 칼럼 상세 모달 (Column Detail Modal)                           -->
@@ -3045,27 +3047,64 @@ function renderColumnsPagination(totalPages) {
   container.innerHTML = '';
   if (totalPages <= 1) return;
 
-  for (var p = 1; p <= totalPages; p++) {
+  var blockSize = 10;
+  var currentBlock = Math.floor((columnsCurrentPage - 1) / blockSize);
+  var startPage = currentBlock * blockSize + 1;
+  var endPage = Math.min(startPage + blockSize - 1, totalPages);
+
+  function createNavBtn(text, targetPage, disabled, title) {
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'pg-btn nav-btn' + (disabled ? ' disabled' : '');
+    btn.innerHTML = text;
+    btn.setAttribute('aria-label', title);
+    btn.title = title;
+    if (disabled) {
+      btn.disabled = true;
+    } else {
+      btn.onclick = function() {
+        columnsCurrentPage = targetPage;
+        renderColumnsList();
+        var target = document.querySelector('.community-board-table') || container;
+        window.scrollTo({ top: target.offsetTop - 120, behavior: 'smooth' });
+      };
+    }
+    return btn;
+  }
+
+  // 1. << (첫 페이지)
+  container.appendChild(createNavBtn('&lt;&lt;', 1, columnsCurrentPage === 1, '첫 페이지'));
+
+  // 2. < (이전 페이지)
+  container.appendChild(createNavBtn('&lt;', Math.max(1, columnsCurrentPage - 1), columnsCurrentPage === 1, '이전 페이지'));
+
+  // 3. 1 ~ 10 번호 버튼
+  for (var p = startPage; p <= endPage; p++) {
     (function(pageNum) {
       var btn = document.createElement('button');
       btn.type = 'button';
+      btn.className = 'pg-btn' + (pageNum === columnsCurrentPage ? ' active' : '');
       btn.textContent = pageNum;
-      btn.style.padding = '6px 12px';
-      btn.style.borderRadius = '6px';
-      btn.style.fontSize = '13px';
-      btn.style.fontWeight = '700';
-      btn.style.cursor = 'pointer';
-      btn.style.border = '1px solid ' + (pageNum === columnsCurrentPage ? '#008194' : '#E2E8F0');
-      btn.style.background = pageNum === columnsCurrentPage ? '#008194' : '#FFFFFF';
-      btn.style.color = pageNum === columnsCurrentPage ? '#FFFFFF' : '#475569';
-      btn.onclick = function() {
-        columnsCurrentPage = pageNum;
-        renderColumnsList();
-        window.scrollTo({ top: document.querySelector('.community-board-table').offsetTop - 120, behavior: 'smooth' });
-      };
+      btn.setAttribute('aria-label', pageNum + '페이지');
+      if (pageNum === columnsCurrentPage) {
+        btn.disabled = true;
+      } else {
+        btn.onclick = function() {
+          columnsCurrentPage = pageNum;
+          renderColumnsList();
+          var target = document.querySelector('.community-board-table') || container;
+          window.scrollTo({ top: target.offsetTop - 120, behavior: 'smooth' });
+        };
+      }
       container.appendChild(btn);
     })(p);
   }
+
+  // 4. > (다음 페이지)
+  container.appendChild(createNavBtn('&gt;', Math.min(totalPages, columnsCurrentPage + 1), columnsCurrentPage === totalPages, '다음 페이지'));
+
+  // 5. >> (마지막 페이지)
+  container.appendChild(createNavBtn('&gt;&gt;', totalPages, columnsCurrentPage === totalPages, '마지막 페이지'));
 }
 
 function filterColumns() {
