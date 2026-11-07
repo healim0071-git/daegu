@@ -751,8 +751,136 @@ layout: single
 </div>
 
 <!-- 자주 묻는 질문 15개 단위 페이징 영역 -->
-<div class="board-pagination-wrapper">
-  <div id="faqPagination" class="board-pagination"></div>
+<style>
+.board-pagination-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  margin: 32px auto 48px !important;
+  padding: 6px 0 !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+}
+.board-pagination {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-wrap: nowrap !important;
+  gap: 6px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+.board-pagination .pg-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 36px !important;
+  height: 36px !important;
+  padding: 0 8px !important;
+  font-size: 13.5px !important;
+  font-weight: 700 !important;
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  border-radius: 8px !important;
+  border: 1px solid #CBD5E1 !important;
+  background: #FFFFFF !important;
+  color: #334155 !important;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04) !important;
+  cursor: pointer !important;
+  transition: all 0.18s ease !important;
+  user-select: none !important;
+  flex: 0 0 auto !important;
+  box-sizing: border-box !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+}
+.board-pagination .pg-btn:hover:not(:disabled):not(.disabled):not(.active) {
+  border-color: #008194 !important;
+  color: #008194 !important;
+  background: #F0FDFA !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 3px 6px rgba(0, 129, 148, 0.12) !important;
+}
+.board-pagination .pg-btn.active {
+  background: #008194 !important;
+  border-color: #008194 !important;
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  box-shadow: 0 3px 8px rgba(0, 129, 148, 0.28) !important;
+  cursor: default !important;
+  opacity: 1 !important;
+}
+.board-pagination .pg-btn.nav-btn {
+  background: #F8FAFC !important;
+  border-color: #CBD5E1 !important;
+  color: #0C4349 !important;
+  font-weight: 800 !important;
+  font-size: 12.5px !important;
+  letter-spacing: -1px !important;
+}
+.board-pagination .pg-btn.nav-btn.nav-prev-end { margin-right: 2px !important; }
+.board-pagination .pg-btn.nav-btn.nav-next-start { margin-left: 2px !important; }
+.board-pagination .pg-btn:disabled:not(.active),
+.board-pagination .pg-btn.disabled:not(.active) {
+  background: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+  color: #CBD5E1 !important;
+  box-shadow: none !important;
+  cursor: not-allowed !important;
+  opacity: 0.65 !important;
+  transform: none !important;
+}
+@media (max-width: 640px) {
+  .board-pagination-wrapper {
+    margin: 24px -6px 36px !important;
+    width: calc(100% + 12px) !important;
+    padding: 4px 0 !important;
+  }
+  .board-pagination { gap: 3.5px !important; }
+  .board-pagination .pg-btn {
+    flex: 0 1 25px !important;
+    min-width: 20px !important;
+    height: 29px !important;
+    padding: 0 2px !important;
+    font-size: 12px !important;
+    border-radius: 6px !important;
+  }
+  .board-pagination .pg-btn.nav-btn {
+    flex: 0 1 24px !important;
+    min-width: 20px !important;
+    font-size: 11px !important;
+    letter-spacing: -1.2px !important;
+  }
+  .board-pagination .pg-btn.nav-btn.nav-prev-end,
+  .board-pagination .pg-btn.nav-btn.nav-next-start {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+@media (max-width: 380px) {
+  .board-pagination { gap: 2.5px !important; }
+  .board-pagination .pg-btn {
+    flex: 0 1 23px !important;
+    min-width: 19px !important;
+    height: 27px !important;
+    padding: 0 1px !important;
+    font-size: 11.5px !important;
+    border-radius: 5px !important;
+  }
+  .board-pagination .pg-btn.nav-btn {
+    flex: 0 1 22px !important;
+    min-width: 18px !important;
+    font-size: 10.5px !important;
+  }
+}
+</style>
+<div class="board-pagination-wrapper" style="display: flex; justify-content: center; align-items: center; width: 100%; margin: 32px auto 48px; text-align: center;">
+  <div id="faqPagination" class="board-pagination" style="display: flex; justify-content: center; align-items: center; gap: 6px; margin: 0 auto; width: 100%;"></div>
 </div>
 
 <!-- 최고관리자 FAQ 작성/수정 모달 -->
@@ -2216,13 +2344,17 @@ function renderFaqPagination(totalPages, total) {
   var startPage = currentBlock * blockSize + 1;
   var endPage = Math.min(startPage + blockSize - 1, totalPages);
 
-  function createNavBtn(text, targetPage, disabled, title) {
+  function createNavBtn(text, targetPage, disabled, title, extraClass) {
     var btn = document.createElement('button');
     btn.type = 'button';
-    btn.className = 'pg-btn nav-btn' + (disabled ? ' disabled' : '');
+    btn.className = 'pg-btn nav-btn' + (extraClass ? ' ' + extraClass : '') + (disabled ? ' disabled' : '');
     btn.innerHTML = text;
     btn.setAttribute('aria-label', title);
     btn.title = title;
+    btn.style.cssText = 'display:inline-flex;align-items:center;justify-content:center;font-weight:800;border-radius:8px;box-sizing:border-box;line-height:1;' +
+      (disabled
+        ? 'background:#F8FAFC;border:1px solid #E2E8F0;color:#CBD5E1;cursor:not-allowed;opacity:0.65;'
+        : 'background:#F8FAFC;border:1px solid #CBD5E1;color:#0C4349;cursor:pointer;box-shadow:0 1px 2px rgba(15,23,42,0.04);');
     if (disabled) {
       btn.disabled = true;
     } else {
@@ -2237,21 +2369,26 @@ function renderFaqPagination(totalPages, total) {
   }
 
   // 1. << (첫 페이지)
-  container.appendChild(createNavBtn('&lt;&lt;', 1, faqCurrentPage === 1, '첫 페이지'));
+  container.appendChild(createNavBtn('&lt;&lt;', 1, faqCurrentPage === 1, '첫 페이지', ''));
 
   // 2. < (이전 페이지)
-  container.appendChild(createNavBtn('&lt;', Math.max(1, faqCurrentPage - 1), faqCurrentPage === 1, '이전 페이지'));
+  container.appendChild(createNavBtn('&lt;', Math.max(1, faqCurrentPage - 1), faqCurrentPage === 1, '이전 페이지', 'nav-prev-end'));
 
   // 3. 1 ~ 10 번호 버튼
   for (var p = startPage; p <= endPage; p++) {
     (function(pageNum) {
+      var isAct = (pageNum === faqCurrentPage);
       var btn = document.createElement('button');
       btn.type = 'button';
-      btn.className = 'pg-btn' + (pageNum === faqCurrentPage ? ' active' : '');
+      btn.className = 'pg-btn' + (isAct ? ' active' : '');
       btn.textContent = pageNum;
       btn.setAttribute('aria-label', pageNum + '페이지');
-      if (pageNum === faqCurrentPage) {
-        btn.disabled = true;
+      btn.style.cssText = 'display:inline-flex;align-items:center;justify-content:center;border-radius:8px;box-sizing:border-box;line-height:1;' +
+        (isAct
+          ? 'background:#008194;border:1px solid #008194;color:#FFFFFF;font-weight:800;cursor:default;box-shadow:0 3px 8px rgba(0,129,148,0.28);'
+          : 'background:#FFFFFF;border:1px solid #CBD5E1;color:#334155;font-weight:700;cursor:pointer;box-shadow:0 1px 2px rgba(15,23,42,0.04);');
+      if (isAct) {
+        btn.setAttribute('aria-current', 'page');
       } else {
         btn.onclick = function() {
           faqCurrentPage = pageNum;
@@ -2265,10 +2402,10 @@ function renderFaqPagination(totalPages, total) {
   }
 
   // 4. > (다음 페이지)
-  container.appendChild(createNavBtn('&gt;', Math.min(totalPages, faqCurrentPage + 1), faqCurrentPage === totalPages, '다음 페이지'));
+  container.appendChild(createNavBtn('&gt;', Math.min(totalPages, faqCurrentPage + 1), faqCurrentPage === totalPages, '다음 페이지', 'nav-next-start'));
 
   // 5. >> (마지막 페이지)
-  container.appendChild(createNavBtn('&gt;&gt;', totalPages, faqCurrentPage === totalPages, '마지막 페이지'));
+  container.appendChild(createNavBtn('&gt;&gt;', totalPages, faqCurrentPage === totalPages, '마지막 페이지', ''));
 }
 
 function renderFaqList() {

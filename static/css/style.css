@@ -4659,3 +4659,163 @@ ul.bottom-cards-grid > li {
   }
 }
 
+/* ── 4단계 / 4대 요인 2x2 대칭 반응형 카드 그리드 (데스크톱 2열, 모바일 1열) ── */
+.grid-2x2-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+@media (max-width: 680px) {
+  .grid-2x2-cards {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* ── 커뮤니티 게시판 공통 반응형 페이지네이션 (치료칼럼 / FAQ / 치료후기) ── */
+.board-pagination-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  margin: 32px auto 48px !important;
+  padding: 6px 0 !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+}
+
+.board-pagination {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-wrap: nowrap !important;
+  gap: 6px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.board-pagination .pg-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 36px !important;
+  height: 36px !important;
+  padding: 0 8px !important;
+  font-size: 13.5px !important;
+  font-weight: 700 !important;
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  border-radius: 8px !important;
+  border: 1px solid #CBD5E1 !important;
+  background: #FFFFFF !important;
+  color: #334155 !important;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04) !important;
+  cursor: pointer !important;
+  transition: all 0.18s ease !important;
+  user-select: none !important;
+  flex: 0 0 auto !important;
+  box-sizing: border-box !important;
+  line-height: 1 !important;
+  text-decoration: none !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+}
+
+.board-pagination .pg-btn:hover:not(:disabled):not(.disabled):not(.active) {
+  border-color: #008194 !important;
+  color: #008194 !important;
+  background: #F0FDFA !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 3px 6px rgba(0, 129, 148, 0.12) !important;
+}
+
+.board-pagination .pg-btn.active {
+  background: #008194 !important;
+  border-color: #008194 !important;
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  box-shadow: 0 3px 8px rgba(0, 129, 148, 0.28) !important;
+  cursor: default !important;
+  opacity: 1 !important;
+}
+
+.board-pagination .pg-btn.nav-btn {
+  background: #F8FAFC !important;
+  border-color: #CBD5E1 !important;
+  color: #0C4349 !important;
+  font-weight: 800 !important;
+  font-size: 12.5px !important;
+  letter-spacing: -1px !important;
+}
+
+.board-pagination .pg-btn.nav-btn.nav-prev-end {
+  margin-right: 2px !important;
+}
+
+.board-pagination .pg-btn.nav-btn.nav-next-start {
+  margin-left: 2px !important;
+}
+
+.board-pagination .pg-btn:disabled:not(.active),
+.board-pagination .pg-btn.disabled:not(.active) {
+  background: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+  color: #CBD5E1 !important;
+  box-shadow: none !important;
+  cursor: not-allowed !important;
+  opacity: 0.65 !important;
+  transform: none !important;
+}
+
+@media (max-width: 640px) {
+  .board-pagination-wrapper {
+    margin: 24px -6px 36px !important;
+    width: calc(100% + 12px) !important;
+    padding: 4px 0 !important;
+  }
+  .board-pagination {
+    gap: 3.5px !important;
+  }
+  .board-pagination .pg-btn {
+    flex: 0 1 25px !important;
+    min-width: 20px !important;
+    height: 29px !important;
+    padding: 0 2px !important;
+    font-size: 12px !important;
+    border-radius: 6px !important;
+  }
+  .board-pagination .pg-btn.nav-btn {
+    flex: 0 1 24px !important;
+    min-width: 20px !important;
+    font-size: 11px !important;
+    letter-spacing: -1.2px !important;
+  }
+  .board-pagination .pg-btn.nav-btn.nav-prev-end,
+  .board-pagination .pg-btn.nav-btn.nav-next-start {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .board-pagination {
+    gap: 2.5px !important;
+  }
+  .board-pagination .pg-btn {
+    flex: 0 1 23px !important;
+    min-width: 19px !important;
+    height: 27px !important;
+    padding: 0 1px !important;
+    font-size: 11.5px !important;
+    border-radius: 5px !important;
+  }
+  .board-pagination .pg-btn.nav-btn {
+    flex: 0 1 22px !important;
+    min-width: 18px !important;
+    font-size: 10.5px !important;
+  }
+}
+
+
