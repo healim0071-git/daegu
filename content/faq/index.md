@@ -226,6 +226,35 @@ layout: single
   </button>
 </div>
 
+<script data-cfasync="false">
+// 페이지 하단 대용량 데이터 로드 전에도 즉시 아코디언 클릭 및 관리자 버튼이 동작하도록 상단 선발 정의
+window.toggleFaqAccordion = function(id) {
+  var pane = document.getElementById('faq-answer-' + id);
+  var icon = document.getElementById('faq-icon-' + id);
+  var item = document.getElementById('faq-item-' + id);
+  if (!pane) return;
+  var isOpen = pane.style.display === 'block';
+  document.querySelectorAll('.faq-answer-pane').forEach(function(el) { el.style.display = 'none'; });
+  document.querySelectorAll('[id^="faq-icon-"]').forEach(function(el) { el.style.transform = 'rotate(0deg)'; });
+  document.querySelectorAll('.faq-item').forEach(function(el) { el.style.borderColor = '#E2E8F0'; });
+  if (!isOpen) {
+    pane.style.display = 'block';
+    if (icon) icon.style.transform = 'rotate(180deg)';
+    if (item) item.style.borderColor = '#008194';
+  }
+};
+(function() {
+  try {
+    var u = JSON.parse(localStorage.getItem('healim_user') || 'null');
+    var isSuper = Boolean(u && (u.role === 'superadmin' || u.id === 'admin'));
+    var writeBtn = document.getElementById('btnAdminWriteFaq');
+    var statusBar = document.getElementById('autoFaqStatusBar');
+    if (writeBtn) writeBtn.style.display = isSuper ? 'inline-flex' : 'none';
+    if (statusBar) statusBar.style.display = isSuper ? 'flex' : 'none';
+  } catch(e) {}
+})();
+</script>
+
 <!-- 자주 묻는 질문 아코디언 리스트 (SSR 정적 마크업으로 검색엔진/AI가 전문을 즉시 수집) -->
 <div id="faqAccordionContainer" style="max-width: 860px; margin: 0 auto 40px;">
 <div class="faq-item" id="faq-item-faq-auto-clim-1" style="border: 1px solid #E2E8F0; border-radius: 12px; margin-bottom: 14px; background: #FFFFFF; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.02); transition: all 0.2s;">
@@ -944,7 +973,7 @@ layout: single
 </div>
 </div>
 
-<script>
+<script data-cfasync="false">
 var defaultFaqData = [
   {
     "id": "faq-auto-clim-1",
@@ -2747,12 +2776,13 @@ function resetFaqFilterToFirstPage() {
 }
 window.resetFaqFilterToFirstPage = resetFaqFilterToFirstPage;
 
-document.addEventListener('DOMContentLoaded', function() {
+function initFaqPage() {
   renderFaqList();
 
   var params = new URLSearchParams(window.location.search);
   var targetId = params.get('id');
-  if (targetId) {
+  if (targetId && !window.__faqTargetIdHandled) {
+    window.__faqTargetIdHandled = true;
     var allList = getRealtimeBoardFaqData();
     var targetIdx = allList.findIndex(function(it) { return it && String(it.id) === String(targetId); });
     if (targetIdx !== -1) {
@@ -2765,5 +2795,10 @@ document.addEventListener('DOMContentLoaded', function() {
       if (targetEl) targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }, 150);
   }
-});
+}
+
+initFaqPage();
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initFaqPage);
+}
 </script>

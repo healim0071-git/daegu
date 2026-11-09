@@ -12,7 +12,7 @@
   {{ end }}
   {{ partial "footer.html" . }}
   {{ partial "floating-bar.html" . }}
-  <script src="/js/main.js?v={{ now.Unix }}"></script>
-  <script src="/js/auto_column_engine.js?v={{ now.Unix }}"></script>
+  <script data-cfasync="false" src="/js/main.js?v={{ now.Unix }}"></script>
+  <script data-cfasync="false" src="/js/auto_column_engine.js?v={{ now.Unix }}"></script>
 </body>
 </html>

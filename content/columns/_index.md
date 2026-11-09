@@ -766,7 +766,7 @@ layout: single
 </div>
 </div>
 
-<script>
+<script data-cfasync="false">
 // 기본 등록 칼럼 데이터
 var defaultColumnsData = [
   {
@@ -3554,16 +3554,22 @@ function handleAdminDeleteColumn(id) {
   }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+function initColumnsPage() {
   renderColumnsList();
 
   // URL ?id= 파라미터가 있는 경우 자동 모달 열기
   var params = new URLSearchParams(window.location.search);
   var targetId = params.get('id');
-  if (targetId) {
+  if (targetId && !window.__colTargetIdHandled) {
+    window.__colTargetIdHandled = true;
     setTimeout(function() { openColumnModal(targetId); }, 100);
   }
-});
+}
+
+initColumnsPage();
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initColumnsPage);
+}
 
 window.addEventListener('storage', function(e) {
   if (e && e.key && e.key.includes('column')) renderColumnsList();
