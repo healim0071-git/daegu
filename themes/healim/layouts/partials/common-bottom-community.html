@@ -1219,10 +1219,16 @@ ul.bottom-cards-grid {
         var normTitleFn = function(t) { return String(t || '').replace(/\s+/g, '').trim(); };
         var canonicalBottomIds = {};
         var canonicalBottomTitles = {};
+        var editedBottomMap = {};
         defaultBottomColumns.forEach(function(item) {
           if (!item || !item.id) return;
           canonicalBottomIds[String(item.id)] = true;
           if (item.title) canonicalBottomTitles[normTitleFn(item.title)] = true;
+        });
+        list.forEach(function(it) {
+          if (it && it.id && it.editedByAdmin) {
+            editedBottomMap[String(it.id)] = it;
+          }
         });
         list = list.filter(function(it) {
           if (!it) return false;
@@ -1243,9 +1249,10 @@ ul.bottom-cards-grid {
         defaultBottomColumns.forEach(function(item) {
           var isDel = delList.indexOf(String(item.id)) !== -1 || delList.indexOf(String(item.title)) !== -1;
           if (!isDel) {
-            var normItemTitle = normTitleFn(item.title);
-            var exists = list.some(function(p) { return p.id === item.id || normTitleFn(p.title) === normItemTitle; });
-            if (!exists) list.push(item);
+            var effItem = editedBottomMap[String(item.id)] ? Object.assign({}, item, editedBottomMap[String(item.id)]) : item;
+            var normItemTitle = normTitleFn(effItem.title);
+            var exists = list.some(function(p) { return p.id === effItem.id || normTitleFn(p.title) === normItemTitle; });
+            if (!exists) list.push(effItem);
           }
         });
         // diseaseColumnsMap is handled per-page when currentSlug exists

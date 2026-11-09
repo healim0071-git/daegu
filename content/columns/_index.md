@@ -74,12 +74,12 @@ layout: single
 <thead>
 <tr style="background: #F8FAFB; border-bottom: 1.5px solid #E2E8F0; color: #475569; font-weight: 700; font-size: 13.5px;">
 <th style="width: 8%; padding: 14px 12px; text-align: center;">번호</th>
-<th style="width: 15%; padding: 14px 12px; text-align: center;">분류</th>
+<th style="width: 14%; padding: 14px 12px; text-align: center;">분류</th>
 <th style="padding: 14px 16px;">칼럼 제목</th>
-<th class="col-hide-mobile" style="width: 14%; padding: 14px 12px; text-align: center;">작성자</th>
-<th class="col-hide-mobile" style="width: 12%; padding: 14px 12px; text-align: center;">등록일</th>
-<th class="col-hide-mobile" style="width: 9%; padding: 14px 12px; text-align: center;">조회</th>
-<th class="col-admin-action" style="display: none; width: 10%; padding: 14px 8px; text-align: center;">관리</th>
+<th class="col-hide-mobile" style="width: 13%; padding: 14px 12px; text-align: center;">작성자</th>
+<th class="col-hide-mobile" style="width: 11%; padding: 14px 12px; text-align: center;">등록일</th>
+<th class="col-hide-mobile" style="width: 8%; padding: 14px 12px; text-align: center;">조회</th>
+<th class="col-admin-action" style="display: none; width: 12%; min-width: 96px; padding: 14px 8px; text-align: center; white-space: nowrap;">관리</th>
 </tr>
 </thead>
 <tbody id="columnsTableBody">
@@ -90,7 +90,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.11.09</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">177</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-clim-218');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-clim-218');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-clim-218');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-insomnia-217')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">217</td>
@@ -99,7 +99,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.11.03</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">163</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-insomnia-217');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-insomnia-217');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-insomnia-217');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-panic-216')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">216</td>
@@ -108,7 +108,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.11.03</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">189</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-panic-216');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-panic-216');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-panic-216');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-insomnia-105')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">215</td>
@@ -117,7 +117,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.30</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">186</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-insomnia-105');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-insomnia-105');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-insomnia-105');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-clim-104')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">214</td>
@@ -126,7 +126,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.28</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">184</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-clim-104');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-clim-104');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-clim-104');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-clim-1')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">213</td>
@@ -135,7 +135,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.24</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2799</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-clim-1');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-clim-1');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-clim-1');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-dys-7')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">2</td>
@@ -144,7 +144,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.21</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">184</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-dys-7');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-dys-7');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-dys-7');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-clim-2')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">3</td>
@@ -153,7 +153,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.20</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2736</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-clim-2');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-clim-2');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-clim-2');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-insomnia-8')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">4</td>
@@ -162,7 +162,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.20</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">141</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-insomnia-8');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-insomnia-8');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-insomnia-8');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-panic-7')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">5</td>
@@ -171,7 +171,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.19</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">150</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-panic-7');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-panic-7');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-panic-7');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-tic-11')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">6</td>
@@ -180,7 +180,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.19</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">152</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-11');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-tic-11');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-11');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-soc-4')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">7</td>
@@ -189,7 +189,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.19</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">185</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-soc-4');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-soc-4');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-soc-4');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-adhd-5')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">8</td>
@@ -198,7 +198,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.19</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">182</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-adhd-5');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-adhd-5');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-adhd-5');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-clim-3')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">9</td>
@@ -207,7 +207,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.15</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2713</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-clim-3');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-clim-3');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-clim-3');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-tic-4')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">10</td>
@@ -216,7 +216,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.15</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">149</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-4');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-tic-4');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-4');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-panic-6')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">11</td>
@@ -225,7 +225,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.15</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">131</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-panic-6');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-panic-6');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-panic-6');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-diz-3')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">12</td>
@@ -234,7 +234,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.14</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">167</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-diz-3');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-diz-3');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-diz-3');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-insomnia-1')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">13</td>
@@ -243,7 +243,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.13</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">146</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-insomnia-1');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-insomnia-1');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-insomnia-1');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-tic-5')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">14</td>
@@ -252,7 +252,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.13</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">198</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-5');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-tic-5');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-5');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-tic-10')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">15</td>
@@ -261,7 +261,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.12</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">138</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-10');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-tic-10');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-10');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-tic-3')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">16</td>
@@ -270,7 +270,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.11</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">175</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-3');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-tic-3');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-3');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-adhd-1')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">17</td>
@@ -279,7 +279,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.11</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">148</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-adhd-1');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-adhd-1');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-adhd-1');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-dys-1')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">18</td>
@@ -288,7 +288,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.10</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">150</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-dys-1');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-dys-1');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-dys-1');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-tic-7')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">19</td>
@@ -297,7 +297,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.09</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">180</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-7');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-tic-7');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-7');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-panic-1')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">20</td>
@@ -306,7 +306,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.09</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">138</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-panic-1');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-panic-1');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-panic-1');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-dys-3')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">21</td>
@@ -315,7 +315,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.08</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">175</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-dys-3');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-dys-3');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-dys-3');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-tic-1')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">22</td>
@@ -324,7 +324,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.07</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">121</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-1');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-tic-1');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-1');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-tic-2')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">23</td>
@@ -333,7 +333,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.07</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">124</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-2');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-tic-2');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-2');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-tic-6')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">24</td>
@@ -342,7 +342,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.06</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">173</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-6');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-tic-6');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-6');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-tic-8')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">25</td>
@@ -351,7 +351,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.05</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">153</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-8');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-tic-8');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-8');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-tic-9')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">26</td>
@@ -360,7 +360,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.05</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">198</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-9');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-tic-9');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-tic-9');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-panic-2')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">27</td>
@@ -369,7 +369,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.04</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">140</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-panic-2');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-panic-2');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-panic-2');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-panic-3')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">28</td>
@@ -378,7 +378,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.03</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">178</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-panic-3');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-panic-3');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-panic-3');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-panic-4')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">29</td>
@@ -387,7 +387,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.03</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">174</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-panic-4');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-panic-4');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-panic-4');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-panic-5')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">30</td>
@@ -396,7 +396,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.02</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">149</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-panic-5');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-panic-5');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-panic-5');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-insomnia-2')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">31</td>
@@ -405,7 +405,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.01</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">199</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-insomnia-2');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-insomnia-2');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-insomnia-2');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-insomnia-3')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">32</td>
@@ -414,7 +414,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.01</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">171</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-insomnia-3');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-insomnia-3');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-insomnia-3');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-insomnia-4')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">33</td>
@@ -423,7 +423,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.09.30</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">182</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-insomnia-4');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-insomnia-4');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-insomnia-4');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-insomnia-5')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">34</td>
@@ -432,7 +432,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.09.29</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">133</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-insomnia-5');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-insomnia-5');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-insomnia-5');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-insomnia-6')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">35</td>
@@ -441,7 +441,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.09.29</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">193</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-insomnia-6');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-insomnia-6');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-insomnia-6');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-dys-2')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">36</td>
@@ -450,7 +450,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.09.28</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">170</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-dys-2');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-dys-2');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-dys-2');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-dys-4')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">37</td>
@@ -459,7 +459,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.09.27</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">163</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-dys-4');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-dys-4');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-dys-4');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-dys-5')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">38</td>
@@ -468,7 +468,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.09.27</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">164</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-dys-5');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-dys-5');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-dys-5');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-dys-6')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">39</td>
@@ -477,7 +477,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.09.26</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">187</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-dys-6');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-dys-6');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-dys-6');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-diz-1')">
   <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">40</td>
@@ -486,7 +486,7 @@ layout: single
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.09.25</td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">194</td>
-  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-diz-1');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center; white-space: nowrap;"><div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;"><button type="button" onclick="event.stopPropagation(); handleAdminEditColumn('col-auto-diz-1');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-diz-1');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></div></td>
 </tr>
 </tbody>
 </table>
@@ -3170,6 +3170,7 @@ function getRealtimeBoardColumnsData() {
   });
 
   var list = [];
+  var editedMap = {};
   try {
     var savedRaw = localStorage.getItem('healim_board_columns') || localStorage.getItem('healim_board_columns_permanent_backup');
     if (savedRaw) {
@@ -3180,6 +3181,9 @@ function getRealtimeBoardColumnsData() {
           var sid = String(sItem.id);
           var normTitle = normalizeColTitle(sItem.title);
           if (sItem.title && sItem.title.includes('경산 불면증')) return;
+          if (sItem.editedByAdmin) {
+            editedMap[sid] = sItem;
+          }
           // 기본 데이터셋에 이미 존재하는 항목은 defaultColumnsData의 정식 순서에 맡김
           if (canonicalIdMap[sid] || (normTitle && canonicalTitleMap[normTitle])) return;
           // PC/모바일 불일치 원인이 되는 비결정적 구형 col-auto-<timestamp> 항목 차단 (결정적 스케줄 col-auto-sched-* 및 관리자 작성 글만 허용)
@@ -3196,11 +3200,12 @@ function getRealtimeBoardColumnsData() {
   defaultColumnsData.forEach(function(dItem) {
     if (!dItem || !dItem.id) return;
     var did = String(dItem.id);
-    var normTitle = normalizeColTitle(dItem.title);
+    var effectiveItem = editedMap[did] ? Object.assign({}, dItem, editedMap[did]) : dItem;
+    var normTitle = normalizeColTitle(effectiveItem.title);
     var exists = list.some(function(it) {
       return String(it.id) === did || (normTitle && normalizeColTitle(it.title) === normTitle);
     });
-    if (!exists) list.push(dItem);
+    if (!exists) list.push(effectiveItem);
   });
 
   // 삭제된 칼럼 필터링 (기본 데이터셋 및 로컬스토리지 모두 적용)
@@ -3258,16 +3263,22 @@ function renderColumnsList() {
       tr.onmouseout = function() { this.style.background = '#FFFFFF'; };
       tr.onclick = function() { openColumnModal(col.id); };
 
-      var actionHtml = isSuper ? '<button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn(\'' + col.id + '\');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>' : '';
+      var safeId = String(col.id || '').replace(/'/g, "\\'");
+      var actionHtml = isSuper
+        ? '<div style="display: inline-flex; align-items: center; justify-content: center; gap: 4px; white-space: nowrap;">' +
+          '<button type="button" onclick="event.stopPropagation(); handleAdminEditColumn(\'' + safeId + '\');" style="padding: 3px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>' +
+          '<button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn(\'' + safeId + '\');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>' +
+          '</div>'
+        : '';
 
       tr.innerHTML = 
         '<td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">' + displayNum + '</td>' +
         '<td style="padding: 14px 12px; text-align: center;"><span style="display: inline-block; padding: 3px 8px; background: #E6F6F8; color: #008194; font-size: 12px; font-weight: 700; border-radius: 4px;">' + (col.category || '칼럼') + '</span></td>' +
-        '<td style="padding: 14px 16px;"><a href="/columns/?id=' + encodeURIComponent(col.id) + '" onclick="event.preventDefault(); openColumnModal(\'' + col.id + '\');" style="color: #0F172A; font-weight: 700; text-decoration: none; font-size: 14.5px; line-height: 1.45; display: block;">' + (col.title || '') + '</a></td>' +
+        '<td style="padding: 14px 16px;"><a href="/columns/?id=' + encodeURIComponent(col.id) + '" onclick="event.preventDefault(); openColumnModal(\'' + safeId + '\');" style="color: #0F172A; font-weight: 700; text-decoration: none; font-size: 14.5px; line-height: 1.45; display: block;">' + (col.title || '') + '</a></td>' +
         '<td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">' + (col.author || '해아림한의원') + '</td>' +
         '<td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">' + (col.date || '') + '</td>' +
         '<td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">' + (col.views || 0) + '</td>' +
-        '<td class="col-admin-action" style="' + (isSuper ? 'display: table-cell;' : 'display: none;') + ' padding: 14px 8px; text-align: center;">' + actionHtml + '</td>';
+        '<td class="col-admin-action" style="' + (isSuper ? 'display: table-cell;' : 'display: none;') + ' padding: 14px 8px; text-align: center; white-space: nowrap;">' + actionHtml + '</td>';
       tbody.appendChild(tr);
     });
   }
@@ -3465,6 +3476,18 @@ function triggerAutoColumnPublishManual() {
 }
 
 function openColumnWriteModal() {
+  var idEl = document.getElementById('writeColId');
+  var modalTitle = document.getElementById('writeColModalTitle');
+  var catEl = document.getElementById('writeColCategory');
+  var titleEl = document.getElementById('writeColTitle');
+  var sumEl = document.getElementById('writeColSummary');
+  var contEl = document.getElementById('writeColContent');
+  if (idEl) idEl.value = '';
+  if (modalTitle) modalTitle.textContent = '✍️ 치료칼럼 작성 (최고관리자)';
+  if (catEl) catEl.value = '틱장애';
+  if (titleEl) titleEl.value = '';
+  if (sumEl) sumEl.value = '';
+  if (contEl) contEl.value = '';
   var modal = document.getElementById('columnWriteModal');
   if (modal) modal.style.display = 'flex';
 }
@@ -3474,14 +3497,117 @@ function closeColumnWriteModal() {
   if (modal) modal.style.display = 'none';
 }
 
+function handleAdminEditColumn(id) {
+  var allList = getRealtimeBoardColumnsData();
+  var target = allList.find(function(it) { return it && (String(it.id) === String(id) || it.title === id); });
+  if (!target) {
+    target = defaultColumnsData.find(function(it) { return it && (String(it.id) === String(id) || it.title === id); });
+  }
+  if (!target) {
+    alert('수정할 칼럼을 찾을 수 없습니다.');
+    return;
+  }
+
+  var idEl = document.getElementById('writeColId');
+  var modalTitle = document.getElementById('writeColModalTitle');
+  var catEl = document.getElementById('writeColCategory');
+  var titleEl = document.getElementById('writeColTitle');
+  var sumEl = document.getElementById('writeColSummary');
+  var contEl = document.getElementById('writeColContent');
+
+  if (idEl) idEl.value = String(target.id);
+  if (modalTitle) modalTitle.textContent = '✏️ 치료칼럼 수정 (최고관리자)';
+  if (catEl) {
+    var catVal = target.category || '틱장애';
+    var hasOpt = Array.from(catEl.options).some(function(opt) { return opt.value === catVal; });
+    if (!hasOpt && catVal) {
+      var newOpt = document.createElement('option');
+      newOpt.value = catVal;
+      newOpt.textContent = catVal;
+      catEl.appendChild(newOpt);
+    }
+    catEl.value = catVal;
+  }
+  if (titleEl) titleEl.value = target.title || '';
+  if (sumEl) sumEl.value = target.summary || target.desc || '';
+  if (contEl) contEl.value = target.content || target.summary || target.desc || '';
+
+  var modal = document.getElementById('columnWriteModal');
+  if (modal) modal.style.display = 'flex';
+}
+window.handleAdminEditColumn = handleAdminEditColumn;
+
 function handleSaveColumn(e) {
   if (e && e.preventDefault) e.preventDefault();
+  var idEl = document.getElementById('writeColId');
+  var editId = idEl ? idEl.value.trim() : '';
   var cat = document.getElementById('writeColCategory').value;
   var title = document.getElementById('writeColTitle').value.trim();
   var summary = document.getElementById('writeColSummary').value.trim();
   var content = document.getElementById('writeColContent').value.trim();
 
   if (!title || !content) { alert('제목과 본문을 입력해주세요.'); return; }
+
+  var saved = [];
+  try {
+    var raw = localStorage.getItem('healim_board_columns') || localStorage.getItem('healim_board_columns_permanent_backup');
+    if (raw) saved = JSON.parse(raw);
+    if (!Array.isArray(saved)) saved = [];
+  } catch(err) { saved = []; }
+
+  if (editId) {
+    var existingInSavedIdx = saved.findIndex(function(it) { return it && String(it.id) === String(editId); });
+    var existingInDefault = defaultColumnsData.find(function(it) { return it && String(it.id) === String(editId); });
+    var existingInRealtime = getRealtimeBoardColumnsData().find(function(it) { return it && String(it.id) === String(editId); });
+    var baseItem = (existingInSavedIdx !== -1 ? saved[existingInSavedIdx] : null) || existingInRealtime || existingInDefault || {};
+
+    var updatedCol = Object.assign({}, baseItem, {
+      id: editId,
+      category: cat,
+      title: title,
+      author: baseItem.author || '해아림한의원',
+      date: baseItem.date || new Date().toISOString().slice(0, 10).replace(/-/g, '.'),
+      views: typeof baseItem.views !== 'undefined' ? baseItem.views : 150,
+      summary: summary || title,
+      desc: summary || title,
+      content: content,
+      editedByAdmin: true
+    });
+
+    if (existingInSavedIdx !== -1) {
+      saved[existingInSavedIdx] = updatedCol;
+    } else {
+      saved.unshift(updatedCol);
+    }
+
+    if (existingInDefault) {
+      existingInDefault.category = cat;
+      existingInDefault.title = title;
+      existingInDefault.summary = summary || title;
+      existingInDefault.desc = summary || title;
+      existingInDefault.content = content;
+      existingInDefault.editedByAdmin = true;
+    }
+
+    window.__healimAllowDataReset = true;
+    window._healimBypassShield = true;
+    localStorage.setItem('healim_board_columns', JSON.stringify(saved));
+    localStorage.setItem('healim_board_columns_permanent_backup', JSON.stringify(saved));
+    if (typeof sessionStorage !== 'undefined') {
+      sessionStorage.setItem('healim_board_columns_backup', JSON.stringify(saved));
+    }
+    window.__healimAllowDataReset = false;
+    window._healimBypassShield = false;
+
+    if (idEl) idEl.value = '';
+    closeColumnWriteModal();
+    renderColumnsList();
+    if (typeof window.renderCommonBottomRealtimeAll === 'function') {
+      window.renderCommonBottomRealtimeAll();
+    }
+    alert('치료칼럼이 수정되었습니다.');
+    return;
+  }
 
   var newCol = {
     id: 'col-manual-' + Date.now(),
@@ -3491,20 +3617,17 @@ function handleSaveColumn(e) {
     date: new Date().toISOString().slice(0, 10).replace(/-/g, '.'),
     views: 1,
     summary: summary || title,
+    desc: summary || title,
     content: content
   };
-
-  var saved = [];
-  try {
-    var raw = localStorage.getItem('healim_board_columns');
-    if (raw) saved = JSON.parse(raw);
-    if (!Array.isArray(saved)) saved = [];
-  } catch(e) {}
 
   saved.unshift(newCol);
   localStorage.setItem('healim_board_columns', JSON.stringify(saved));
   closeColumnWriteModal();
   renderColumnsList();
+  if (typeof window.renderCommonBottomRealtimeAll === 'function') {
+    window.renderCommonBottomRealtimeAll();
+  }
   alert('칼럼이 저장되었습니다.');
 }
 
