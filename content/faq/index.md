@@ -238,6 +238,7 @@ layout: single
       </div>
     </div>
     <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+      <button type="button" class="faq-admin-edit-btn" onclick="event.stopPropagation(); handleAdminEditFaq('faq-auto-clim-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>
       <button type="button" class="faq-admin-del-btn" onclick="event.stopPropagation(); handleAdminDeleteFaq('faq-auto-clim-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>
       <span id="faq-icon-faq-auto-clim-1" style="font-size: 18px; color: #64748B; transition: transform 0.2s;">▾</span>
     </div>
@@ -264,6 +265,7 @@ layout: single
       </div>
     </div>
     <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+      <button type="button" class="faq-admin-edit-btn" onclick="event.stopPropagation(); handleAdminEditFaq('faq-auto-clim-2');" style="display: none; padding: 4px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>
       <button type="button" class="faq-admin-del-btn" onclick="event.stopPropagation(); handleAdminDeleteFaq('faq-auto-clim-2');" style="display: none; padding: 4px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>
       <span id="faq-icon-faq-auto-clim-2" style="font-size: 18px; color: #64748B; transition: transform 0.2s;">▾</span>
     </div>
@@ -290,6 +292,7 @@ layout: single
       </div>
     </div>
     <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+      <button type="button" class="faq-admin-edit-btn" onclick="event.stopPropagation(); handleAdminEditFaq('faq-auto-clim-3');" style="display: none; padding: 4px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>
       <button type="button" class="faq-admin-del-btn" onclick="event.stopPropagation(); handleAdminDeleteFaq('faq-auto-clim-3');" style="display: none; padding: 4px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>
       <span id="faq-icon-faq-auto-clim-3" style="font-size: 18px; color: #64748B; transition: transform 0.2s;">▾</span>
     </div>
@@ -316,6 +319,7 @@ layout: single
       </div>
     </div>
     <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+      <button type="button" class="faq-admin-edit-btn" onclick="event.stopPropagation(); handleAdminEditFaq('faq-auto-tic-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>
       <button type="button" class="faq-admin-del-btn" onclick="event.stopPropagation(); handleAdminDeleteFaq('faq-auto-tic-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>
       <span id="faq-icon-faq-auto-tic-1" style="font-size: 18px; color: #64748B; transition: transform 0.2s;">▾</span>
     </div>
@@ -342,6 +346,7 @@ layout: single
       </div>
     </div>
     <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+      <button type="button" class="faq-admin-edit-btn" onclick="event.stopPropagation(); handleAdminEditFaq('faq-auto-panic-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>
       <button type="button" class="faq-admin-del-btn" onclick="event.stopPropagation(); handleAdminDeleteFaq('faq-auto-panic-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>
       <span id="faq-icon-faq-auto-panic-1" style="font-size: 18px; color: #64748B; transition: transform 0.2s;">▾</span>
     </div>
@@ -368,6 +373,7 @@ layout: single
       </div>
     </div>
     <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+      <button type="button" class="faq-admin-edit-btn" onclick="event.stopPropagation(); handleAdminEditFaq('faq-auto-insomnia-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>
       <button type="button" class="faq-admin-del-btn" onclick="event.stopPropagation(); handleAdminDeleteFaq('faq-auto-insomnia-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>
       <span id="faq-icon-faq-auto-insomnia-1" style="font-size: 18px; color: #64748B; transition: transform 0.2s;">▾</span>
     </div>
@@ -394,6 +400,7 @@ layout: single
       </div>
     </div>
     <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+      <button type="button" class="faq-admin-edit-btn" onclick="event.stopPropagation(); handleAdminEditFaq('faq-auto-dys-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>
       <button type="button" class="faq-admin-del-btn" onclick="event.stopPropagation(); handleAdminDeleteFaq('faq-auto-dys-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>
       <span id="faq-icon-faq-auto-dys-1" style="font-size: 18px; color: #64748B; transition: transform 0.2s;">▾</span>
     </div>
@@ -420,6 +427,7 @@ layout: single
       </div>
     </div>
     <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+      <button type="button" class="faq-admin-edit-btn" onclick="event.stopPropagation(); handleAdminEditFaq('faq-auto-diz-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>
       <button type="button" class="faq-admin-del-btn" onclick="event.stopPropagation(); handleAdminDeleteFaq('faq-auto-diz-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>
       <span id="faq-icon-faq-auto-diz-1" style="font-size: 18px; color: #64748B; transition: transform 0.2s;">▾</span>
     </div>
@@ -446,6 +454,7 @@ layout: single
       </div>
     </div>
     <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+      <button type="button" class="faq-admin-edit-btn" onclick="event.stopPropagation(); handleAdminEditFaq('faq-auto-adhd-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>
       <button type="button" class="faq-admin-del-btn" onclick="event.stopPropagation(); handleAdminDeleteFaq('faq-auto-adhd-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>
       <span id="faq-icon-faq-auto-adhd-1" style="font-size: 18px; color: #64748B; transition: transform 0.2s;">▾</span>
     </div>
@@ -472,6 +481,7 @@ layout: single
       </div>
     </div>
     <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+      <button type="button" class="faq-admin-edit-btn" onclick="event.stopPropagation(); handleAdminEditFaq('faq-auto-ocd-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>
       <button type="button" class="faq-admin-del-btn" onclick="event.stopPropagation(); handleAdminDeleteFaq('faq-auto-ocd-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>
       <span id="faq-icon-faq-auto-ocd-1" style="font-size: 18px; color: #64748B; transition: transform 0.2s;">▾</span>
     </div>
@@ -498,6 +508,7 @@ layout: single
       </div>
     </div>
     <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+      <button type="button" class="faq-admin-edit-btn" onclick="event.stopPropagation(); handleAdminEditFaq('faq-auto-soc-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>
       <button type="button" class="faq-admin-del-btn" onclick="event.stopPropagation(); handleAdminDeleteFaq('faq-auto-soc-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>
       <span id="faq-icon-faq-auto-soc-1" style="font-size: 18px; color: #64748B; transition: transform 0.2s;">▾</span>
     </div>
@@ -524,6 +535,7 @@ layout: single
       </div>
     </div>
     <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+      <button type="button" class="faq-admin-edit-btn" onclick="event.stopPropagation(); handleAdminEditFaq('faq-auto-anx-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>
       <button type="button" class="faq-admin-del-btn" onclick="event.stopPropagation(); handleAdminDeleteFaq('faq-auto-anx-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>
       <span id="faq-icon-faq-auto-anx-1" style="font-size: 18px; color: #64748B; transition: transform 0.2s;">▾</span>
     </div>
@@ -550,6 +562,7 @@ layout: single
       </div>
     </div>
     <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+      <button type="button" class="faq-admin-edit-btn" onclick="event.stopPropagation(); handleAdminEditFaq('faq-auto-hyper-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>
       <button type="button" class="faq-admin-del-btn" onclick="event.stopPropagation(); handleAdminDeleteFaq('faq-auto-hyper-1');" style="display: none; padding: 4px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>
       <span id="faq-icon-faq-auto-hyper-1" style="font-size: 18px; color: #64748B; transition: transform 0.2s;">▾</span>
     </div>
@@ -576,6 +589,7 @@ layout: single
       </div>
     </div>
     <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+      <button type="button" class="faq-admin-edit-btn" onclick="event.stopPropagation(); handleAdminEditFaq('faq-auto-tic-2');" style="display: none; padding: 4px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>
       <button type="button" class="faq-admin-del-btn" onclick="event.stopPropagation(); handleAdminDeleteFaq('faq-auto-tic-2');" style="display: none; padding: 4px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>
       <span id="faq-icon-faq-auto-tic-2" style="font-size: 18px; color: #64748B; transition: transform 0.2s;">▾</span>
     </div>
@@ -602,6 +616,7 @@ layout: single
       </div>
     </div>
     <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+      <button type="button" class="faq-admin-edit-btn" onclick="event.stopPropagation(); handleAdminEditFaq('faq-auto-panic-2');" style="display: none; padding: 4px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>
       <button type="button" class="faq-admin-del-btn" onclick="event.stopPropagation(); handleAdminDeleteFaq('faq-auto-panic-2');" style="display: none; padding: 4px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>
       <span id="faq-icon-faq-auto-panic-2" style="font-size: 18px; color: #64748B; transition: transform 0.2s;">▾</span>
     </div>
@@ -628,6 +643,7 @@ layout: single
       </div>
     </div>
     <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+      <button type="button" class="faq-admin-edit-btn" onclick="event.stopPropagation(); handleAdminEditFaq('faq-auto-insomnia-2');" style="display: none; padding: 4px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>
       <button type="button" class="faq-admin-del-btn" onclick="event.stopPropagation(); handleAdminDeleteFaq('faq-auto-insomnia-2');" style="display: none; padding: 4px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>
       <span id="faq-icon-faq-auto-insomnia-2" style="font-size: 18px; color: #64748B; transition: transform 0.2s;">▾</span>
     </div>
@@ -654,6 +670,7 @@ layout: single
       </div>
     </div>
     <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+      <button type="button" class="faq-admin-edit-btn" onclick="event.stopPropagation(); handleAdminEditFaq('faq-auto-dys-2');" style="display: none; padding: 4px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>
       <button type="button" class="faq-admin-del-btn" onclick="event.stopPropagation(); handleAdminDeleteFaq('faq-auto-dys-2');" style="display: none; padding: 4px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>
       <span id="faq-icon-faq-auto-dys-2" style="font-size: 18px; color: #64748B; transition: transform 0.2s;">▾</span>
     </div>
@@ -680,6 +697,7 @@ layout: single
       </div>
     </div>
     <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+      <button type="button" class="faq-admin-edit-btn" onclick="event.stopPropagation(); handleAdminEditFaq('faq-auto-diz-2');" style="display: none; padding: 4px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>
       <button type="button" class="faq-admin-del-btn" onclick="event.stopPropagation(); handleAdminDeleteFaq('faq-auto-diz-2');" style="display: none; padding: 4px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>
       <span id="faq-icon-faq-auto-diz-2" style="font-size: 18px; color: #64748B; transition: transform 0.2s;">▾</span>
     </div>
@@ -706,6 +724,7 @@ layout: single
       </div>
     </div>
     <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+      <button type="button" class="faq-admin-edit-btn" onclick="event.stopPropagation(); handleAdminEditFaq('faq-auto-adhd-2');" style="display: none; padding: 4px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>
       <button type="button" class="faq-admin-del-btn" onclick="event.stopPropagation(); handleAdminDeleteFaq('faq-auto-adhd-2');" style="display: none; padding: 4px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>
       <span id="faq-icon-faq-auto-adhd-2" style="font-size: 18px; color: #64748B; transition: transform 0.2s;">▾</span>
     </div>
@@ -732,6 +751,7 @@ layout: single
       </div>
     </div>
     <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">
+      <button type="button" class="faq-admin-edit-btn" onclick="event.stopPropagation(); handleAdminEditFaq('faq-auto-ocd-2');" style="display: none; padding: 4px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>
       <button type="button" class="faq-admin-del-btn" onclick="event.stopPropagation(); handleAdminDeleteFaq('faq-auto-ocd-2');" style="display: none; padding: 4px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>
       <span id="faq-icon-faq-auto-ocd-2" style="font-size: 18px; color: #64748B; transition: transform 0.2s;">▾</span>
     </div>
@@ -2268,7 +2288,8 @@ function getRealtimeBoardFaqData() {
   var delList = delRaw ? JSON.parse(delRaw) : [];
   if (!Array.isArray(delList)) delList = [];
 
-  var list = [];
+  var savedList = [];
+  var savedOverrideMap = {};
   try {
     var savedRaw = localStorage.getItem('healim_board_faqs') || localStorage.getItem('healim_board_faqs_permanent_backup');
     if (savedRaw) {
@@ -2276,17 +2297,28 @@ function getRealtimeBoardFaqData() {
       if (Array.isArray(saved) && saved.length > 0) {
         saved.forEach(function(sItem) {
           if (!sItem || !sItem.id) return;
-          var exists = list.some(function(it) { return String(it.id) === String(sItem.id) || (sItem.q && it.q === sItem.q); });
-          if (!exists) list.push(sItem);
+          var isDefaultOverride = defaultFaqData.some(function(d) { return d && String(d.id) === String(sItem.id); });
+          if (isDefaultOverride) {
+            savedOverrideMap[String(sItem.id)] = sItem;
+          } else {
+            savedList.push(sItem);
+          }
         });
       }
     }
   } catch(e) {}
 
+  var list = [];
+  savedList.forEach(function(sItem) {
+    var exists = list.some(function(it) { return String(it.id) === String(sItem.id) || (sItem.q && it.q === sItem.q); });
+    if (!exists) list.push(sItem);
+  });
+
   defaultFaqData.forEach(function(dItem) {
     if (!dItem || !dItem.id) return;
-    var exists = list.some(function(it) { return String(it.id) === String(dItem.id) || (dItem.q && it.q === dItem.q); });
-    if (!exists) list.push(dItem);
+    var effectiveItem = savedOverrideMap[String(dItem.id)] || dItem;
+    var exists = list.some(function(it) { return String(it.id) === String(effectiveItem.id) || (effectiveItem.q && it.q === effectiveItem.q); });
+    if (!exists) list.push(effectiveItem);
   });
 
   // 삭제된 FAQ 필터링 (기본 데이터셋 및 로컬스토리지 모두 적용)
@@ -2423,6 +2455,9 @@ function renderFaqList() {
   var autoBar = document.getElementById('autoFaqStatusBar');
   if (autoBar) autoBar.style.display = isSuper ? 'flex' : 'none';
 
+  var editBtns = document.querySelectorAll('.faq-admin-edit-btn');
+  editBtns.forEach(function(b) { b.style.display = isSuper ? 'inline-block' : 'none'; });
+
   var delBtns = document.querySelectorAll('.faq-admin-del-btn');
   delBtns.forEach(function(b) { b.style.display = isSuper ? 'inline-block' : 'none'; });
 
@@ -2460,6 +2495,7 @@ function renderFaqList() {
     var linkUrl = item.link || getDiseaseDetailPageUrl(item.disease);
     var linkTxt = item.linkText || ((item.disease || '질환') + ' 정밀클리닉 바로가기');
 
+    var adminEditBtn = isSuper ? '<button type="button" class="faq-admin-edit-btn" onclick="event.stopPropagation(); handleAdminEditFaq(\'' + item.id + '\');" style="padding: 4px 8px; font-size: 11px; background: #E0F2FE; color: #0284C7; border: 1px solid #7DD3FC; border-radius: 4px; cursor: pointer; font-weight: 700;">수정</button>' : '';
     var adminDelBtn = isSuper ? '<button type="button" class="faq-admin-del-btn" onclick="event.stopPropagation(); handleAdminDeleteFaq(\'' + item.id + '\');" style="padding: 4px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button>' : '';
 
     div.innerHTML = 
@@ -2472,6 +2508,7 @@ function renderFaqList() {
       '    </div>' +
       '  </div>' +
       '  <div style="display: flex; align-items: center; gap: 8px; flex-shrink: 0;">' +
+      '    ' + adminEditBtn +
       '    ' + adminDelBtn +
       '    <span id="faq-icon-' + item.id + '" style="font-size: 18px; color: #64748B; transition: transform 0.2s;">▾</span>' +
       '  </div>' +
@@ -2503,6 +2540,53 @@ function filterFaq() {
 }
 
 function openFaqModal() {
+  var idEl = document.getElementById('writeFaqId');
+  var titleEl = document.getElementById('writeFaqModalTitle');
+  var disEl = document.getElementById('writeFaqDisease');
+  var qEl = document.getElementById('writeFaqQuestion');
+  var aEl = document.getElementById('writeFaqAnswer');
+  if (idEl) idEl.value = '';
+  if (titleEl) titleEl.textContent = '✏️ FAQ 작성 (최고관리자)';
+  if (disEl) disEl.value = (currentFaqCategory && currentFaqCategory !== 'ALL') ? currentFaqCategory : '틱장애';
+  if (qEl) qEl.value = '';
+  if (aEl) aEl.value = '';
+  var modal = document.getElementById('faqWriteModal');
+  if (modal) modal.style.display = 'flex';
+}
+
+function handleAdminEditFaq(id) {
+  var list = getRealtimeBoardFaqData();
+  var target = list.find(function(it) { return it && String(it.id) === String(id); });
+  if (!target) {
+    target = defaultFaqData.find(function(it) { return it && String(it.id) === String(id); });
+  }
+  if (!target) {
+    alert('수정할 FAQ 항목을 찾을 수 없습니다.');
+    return;
+  }
+
+  var idEl = document.getElementById('writeFaqId');
+  var titleEl = document.getElementById('writeFaqModalTitle');
+  var disEl = document.getElementById('writeFaqDisease');
+  var qEl = document.getElementById('writeFaqQuestion');
+  var aEl = document.getElementById('writeFaqAnswer');
+
+  if (idEl) idEl.value = String(target.id);
+  if (titleEl) titleEl.textContent = '✏️ FAQ 수정 (최고관리자)';
+  if (disEl) {
+    var diseaseVal = target.disease || '틱장애';
+    var hasOption = Array.from(disEl.options).some(function(opt) { return opt.value === diseaseVal; });
+    if (!hasOption && diseaseVal) {
+      var newOpt = document.createElement('option');
+      newOpt.value = diseaseVal;
+      newOpt.textContent = diseaseVal;
+      disEl.appendChild(newOpt);
+    }
+    disEl.value = diseaseVal;
+  }
+  if (qEl) qEl.value = target.q || '';
+  if (aEl) aEl.value = target.a || '';
+
   var modal = document.getElementById('faqWriteModal');
   if (modal) modal.style.display = 'flex';
 }
@@ -2514,11 +2598,67 @@ function closeFaqModal() {
 
 function handleSaveFaq(e) {
   if (e && e.preventDefault) e.preventDefault();
+  var idEl = document.getElementById('writeFaqId');
+  var editId = idEl ? idEl.value.trim() : '';
   var disease = document.getElementById('writeFaqDisease').value;
   var q = document.getElementById('writeFaqQuestion').value.trim();
   var a = document.getElementById('writeFaqAnswer').value.trim();
 
   if (!q || !a) { alert('질문과 답변을 입력해주세요.'); return; }
+
+  var saved = [];
+  try {
+    var raw = localStorage.getItem('healim_board_faqs') || localStorage.getItem('healim_board_faqs_permanent_backup');
+    if (raw) saved = JSON.parse(raw);
+    if (!Array.isArray(saved)) saved = [];
+  } catch(e) {}
+
+  if (editId) {
+    var allList = getRealtimeBoardFaqData();
+    var existing = allList.find(function(it) { return it && String(it.id) === String(editId); }) ||
+                   defaultFaqData.find(function(it) { return it && String(it.id) === String(editId); });
+
+    var updatedFaq = {
+      id: editId,
+      disease: disease,
+      date: (existing && existing.date) ? existing.date : new Date().toISOString().slice(0, 10).replace(/-/g, '.'),
+      q: q,
+      a: a,
+      link: getDiseaseDetailPageUrl(disease),
+      linkText: disease + ' 정밀클리닉 바로가기'
+    };
+
+    var defIdx = defaultFaqData.findIndex(function(it) { return it && String(it.id) === String(editId); });
+    if (defIdx !== -1) {
+      defaultFaqData[defIdx] = Object.assign({}, defaultFaqData[defIdx], updatedFaq);
+    }
+
+    var savedIdx = saved.findIndex(function(it) { return it && String(it.id) === String(editId); });
+    if (savedIdx !== -1) {
+      saved[savedIdx] = Object.assign({}, saved[savedIdx], updatedFaq);
+    } else {
+      saved.unshift(updatedFaq);
+    }
+
+    window.__healimAllowDataReset = true;
+    window._healimBypassShield = true;
+    localStorage.setItem('healim_board_faqs', JSON.stringify(saved));
+    localStorage.setItem('healim_board_faqs_permanent_backup', JSON.stringify(saved));
+    if (typeof sessionStorage !== 'undefined') {
+      sessionStorage.setItem('healim_board_faqs_backup', JSON.stringify(saved));
+    }
+    window.__healimAllowDataReset = false;
+    window._healimBypassShield = false;
+
+    closeFaqModal();
+    renderFaqList();
+    toggleFaqAccordion(editId);
+    if (typeof window.renderCommonBottomRealtimeAll === 'function') {
+      window.renderCommonBottomRealtimeAll();
+    }
+    alert('FAQ가 수정되었습니다.');
+    return;
+  }
 
   var newFaq = {
     id: 'faq-custom-' + Date.now(),
@@ -2530,21 +2670,22 @@ function handleSaveFaq(e) {
     linkText: disease + ' 정밀클리닉 바로가기'
   };
 
-  var saved = [];
-  try {
-    var raw = localStorage.getItem('healim_board_faqs');
-    if (raw) saved = JSON.parse(raw);
-    if (!Array.isArray(saved)) saved = [];
-  } catch(e) {}
-
   saved = saved.filter(function(it) { return it && it.id !== newFaq.id && it.q !== newFaq.q; });
   saved.unshift(newFaq);
   window.__healimAllowDataReset = true;
+  window._healimBypassShield = true;
   localStorage.setItem('healim_board_faqs', JSON.stringify(saved));
   localStorage.setItem('healim_board_faqs_permanent_backup', JSON.stringify(saved));
+  if (typeof sessionStorage !== 'undefined') {
+    sessionStorage.setItem('healim_board_faqs_backup', JSON.stringify(saved));
+  }
   window.__healimAllowDataReset = false;
+  window._healimBypassShield = false;
   closeFaqModal();
   resetFaqFilterToFirstPage();
+  if (typeof window.renderCommonBottomRealtimeAll === 'function') {
+    window.renderCommonBottomRealtimeAll();
+  }
   alert('FAQ가 저장되었습니다.');
 }
 
