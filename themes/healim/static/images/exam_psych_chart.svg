@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 780" width="100%" height="100%">
+  <defs>
+    <filter id="sheetShadow" x="-3%" y="-2%" width="106%" height="106%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.12"/>
+    </filter>
+    <linearGradient id="headerBarGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0a2e36"/>
+      <stop offset="100%" stop-color="#146369"/>
+    </linearGradient>
+    <linearGradient id="scoreHigh" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <linearGradient id="scoreMod" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="scoreNormal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Frame matching brainwave_chart & hrv_autonomic_test -->
+  <rect width="720" height="780" rx="22" fill="#efefef" stroke="#d4d4d8" stroke-width="2"/>
+
+  <!-- Inner Clinical Report Sheet -->
+  <rect x="34" y="28" width="652" height="724" rx="8" fill="#ffffff" stroke="#334155" stroke-width="2" filter="url(#sheetShadow)"/>
+
+  <!-- Report Top Banner -->
+  <path d="M35 36 Q35 29 42 29 L678 29 Q685 29 685 36 L685 96 L35 96 Z" fill="url(#headerBarGrad)"/>
+  <ellipse cx="145" cy="62" rx="92" ry="30" fill="#061c21" stroke="#2dd4bf" stroke-width="1.2"/>
+  <text x="145" y="55" text-anchor="middle" font-family="'Pretendard', sans-serif" font-size="11" font-weight="700" fill="#cbd5e1">Standardized Scale</text>
+  <text x="145" y="74" text-anchor="middle" font-family="'Pretendard', sans-serif" font-size="16" font-weight="900" fill="#4ade80">Psy-Profile 7</text>
+
+  <text x="435" y="68" text-anchor="middle" font-family="'Pretendard', 'Noto Sans KR', sans-serif" font-size="23" font-weight="900" fill="#ffffff" letter-spacing="1">표준화 정서·심리 척도 분석 결과</text>
+  <circle cx="330" cy="42" r="2.5" fill="#99f6e4"/>
+  <circle cx="365" cy="42" r="2.5" fill="#99f6e4"/>
+  <circle cx="400" cy="42" r="2.5" fill="#99f6e4"/>
+  <circle cx="435" cy="42" r="2.5" fill="#99f6e4"/>
+
+  <!-- Patient Metadata Row -->
+  <rect x="52" y="106" width="616" height="44" rx="4" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="68" y="124" font-family="'Pretendard', sans-serif" font-size="11.5" font-weight="700" fill="#334155">검 사 코 드 : NP-2026-084</text>
+  <text x="68" y="141" font-family="'Pretendard', sans-serif" font-size="11.5" font-weight="700" fill="#334155">평 가 유 형 : 다차원 정서·불안·강박·주의력 통합 척도</text>
+  <text x="370" y="124" font-family="'Pretendard', sans-serif" font-size="11.5" font-weight="700" fill="#334155">응 답 신 뢰 도 : 98.4 % (타당도 적합)</text>
+  <text x="370" y="141" font-family="'Pretendard', sans-serif" font-size="11.5" font-weight="700" fill="#0f766e">의 료 기 관 : 해아림한의원 한방신경정신과 클리닉</text>
+
+  <!-- Section 1: T-Score Multi-Scale Bar Profile -->
+  <rect x="52" y="162" width="210" height="22" rx="3" fill="#0f172a"/>
+  <text x="157" y="177" text-anchor="middle" font-family="'Pretendard', sans-serif" font-size="12" font-weight="800" fill="#ffffff">1. 핵심 정서 척도 T-점수 프로파일</text>
+
+  <rect x="52" y="188" width="616" height="232" rx="6" fill="#ffffff" stroke="#64748b" stroke-width="1.2"/>
+
+  <!-- Grid & Threshold Zones inside Section 1 -->
+  <rect x="195" y="196" width="210" height="196" fill="#f0fdf4" opacity="0.7"/>
+  <rect x="405" y="196" width="110" height="196" fill="#fefce8" opacity="0.7"/>
+  <rect x="515" y="196" width="135" height="196" fill="#fef2f2" opacity="0.75"/>
+
+  <line x1="195" y1="196" x2="195" y2="392" stroke="#94a3b8" stroke-width="1"/>
+  <line x1="300" y1="196" x2="300" y2="392" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="405" y1="196" x2="405" y2="392" stroke="#f59e0b" stroke-width="1.2" stroke-dasharray="4,3"/>
+  <line x1="515" y1="196" x2="515" y2="392" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <text x="300" y="408" text-anchor="middle" font-family="'Pretendard', sans-serif" font-size="10.5" font-weight="700" fill="#15803d">안정 범위 (T &lt; 60)</text>
+  <text x="460" y="408" text-anchor="middle" font-family="'Pretendard', sans-serif" font-size="10.5" font-weight="700" fill="#b45309">경계선 주의 (T 60~69)</text>
+  <text x="582" y="408" text-anchor="middle" font-family="'Pretendard', sans-serif" font-size="10.5" font-weight="800" fill="#dc2626">임상적 과민군 (T ≥ 70)</text>
+
+  <!-- Scale Rows -->
+  <text x="66" y="224" font-family="'Pretendard', sans-serif" font-size="12" font-weight="800" fill="#0f172a">BAI 불안척도</text>
+  <rect x="195" y="212" width="365" height="15" rx="4" fill="url(#scoreHigh)"/>
+  <text x="568" y="224" font-family="'Pretendard', sans-serif" font-size="11.5" font-weight="900" fill="#dc2626">74T (고위험)</text>
+
+  <text x="66" y="256" font-family="'Pretendard', sans-serif" font-size="12" font-weight="800" fill="#0f172a">STAI 상태·예기불안</text>
+  <rect x="195" y="244" width="340" height="15" rx="4" fill="url(#scoreHigh)"/>
+  <text x="543" y="256" font-family="'Pretendard', sans-serif" font-size="11.5" font-weight="900" fill="#dc2626">71T (과각성)</text>
+
+  <text x="66" y="288" font-family="'Pretendard', sans-serif" font-size="12" font-weight="800" fill="#0f172a">신체화 긴장 지수</text>
+  <rect x="195" y="276" width="310" height="15" rx="4" fill="url(#scoreMod)"/>
+  <text x="513" y="288" font-family="'Pretendard', sans-serif" font-size="11.5" font-weight="800" fill="#d97706">68T (주의)</text>
+
+  <text x="66" y="320" font-family="'Pretendard', sans-serif" font-size="12" font-weight="800" fill="#0f172a">강박·침습사고 척도</text>
+  <rect x="195" y="308" width="275" height="15" rx="4" fill="url(#scoreMod)"/>
+  <text x="478" y="320" font-family="'Pretendard', sans-serif" font-size="11.5" font-weight="800" fill="#d97706">64T (경계)</text>
+
+  <text x="66" y="352" font-family="'Pretendard', sans-serif" font-size="12" font-weight="800" fill="#0f172a">BDI 우울·정서소진</text>
+  <rect x="195" y="340" width="235" height="15" rx="4" fill="url(#scoreMod)"/>
+  <text x="438" y="352" font-family="'Pretendard', sans-serif" font-size="11.5" font-weight="800" fill="#b45309">61T (경도)</text>
+
+  <text x="66" y="384" font-family="'Pretendard', sans-serif" font-size="12" font-weight="800" fill="#0f172a">주의집중·억제지속력</text>
+  <rect x="195" y="372" width="165" height="15" rx="4" fill="url(#scoreNormal)"/>
+  <text x="368" y="384" font-family="'Pretendard', sans-serif" font-size="11.5" font-weight="800" fill="#0f766e">52T (보통)</text>
+
+  <!-- Red Callout Box on Section 1 -->
+  <rect x="368" y="156" width="296" height="44" rx="4" fill="#ffffff" stroke="#b91c1c" stroke-width="1.8"/>
+  <polygon points="515,200 528,200 545,214" fill="#ffffff" stroke="#b91c1c" stroke-width="1.8"/>
+  <text x="378" y="174" font-family="'Pretendard', sans-serif" font-size="11" font-weight="800" fill="#b91c1c">※ T-점수 65점 이상 영역은 편도체 과민 및</text>
+  <text x="378" y="191" font-family="'Pretendard', sans-serif" font-size="11" font-weight="800" fill="#b91c1c">자율신경 신체화 증상과 직결되는 핵심 타깃임.</text>
+
+  <!-- Section 2: Left Pentagon Radar & Right Emotional-Somatic Matrix -->
+  <rect x="52" y="432" width="296" height="22" rx="3" fill="#0f172a"/>
+  <text x="200" y="447" text-anchor="middle" font-family="'Pretendard', sans-serif" font-size="12" font-weight="800" fill="#ffffff">2. 정서 조절 &amp; 회복탄력성 밸런스</text>
+  <rect x="52" y="458" width="296" height="190" rx="6" fill="#ffffff" stroke="#64748b" stroke-width="1.2"/>
+
+  <!-- Pentagon Radar Chart centered at (200, 558) -->
+  <g transform="translate(200, 558)">
+    <polygon points="0,-68 65,-21 40,55 -40,55 -65,-21" fill="#f8fafc" stroke="#94a3b8" stroke-width="1"/>
+    <polygon points="0,-45 43,-14 27,36 -27,36 -43,-14" fill="none" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="2,2"/>
+    <line x1="0" y1="0" x2="0" y2="-68" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="0" y1="0" x2="65" y2="-21" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="0" y1="0" x2="40" y2="55" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="0" y1="0" x2="-40" y2="55" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="0" y1="0" x2="-65" y2="-21" stroke="#e2e8f0" stroke-width="1"/>
+
+    <polygon points="0,-42 40,-13 34,46 -34,46 -40,-13" fill="rgba(16,185,129,0.12)" stroke="#10b981" stroke-width="1.5" stroke-dasharray="4,2"/>
+    <polygon points="0,-64 58,-19 18,24 -20,27 -54,-17" fill="rgba(239,68,68,0.22)" stroke="#ef4444" stroke-width="2"/>
+
+    <circle cx="0" cy="-64" r="3.5" fill="#ef4444"/>
+    <circle cx="58" cy="-19" r="3.5" fill="#ef4444"/>
+    <circle cx="18" cy="24" r="3.5" fill="#ef4444"/>
+    <circle cx="-20" cy="27" r="3.5" fill="#ef4444"/>
+    <circle cx="-54" cy="-17" r="3.5" fill="#ef4444"/>
+
+    <text x="0" y="-74" text-anchor="middle" font-family="'Pretendard', sans-serif" font-size="10.5" font-weight="800" fill="#dc2626">불안·예민도</text>
+    <text x="72" y="-18" text-anchor="start" font-family="'Pretendard', sans-serif" font-size="10.5" font-weight="800" fill="#dc2626">신체화긴장</text>
+    <text x="46" y="70" text-anchor="middle" font-family="'Pretendard', sans-serif" font-size="10.5" font-weight="700" fill="#0f766e">회복탄력성</text>
+    <text x="-46" y="70" text-anchor="middle" font-family="'Pretendard', sans-serif" font-size="10.5" font-weight="700" fill="#0f766e">수면안정도</text>
+    <text x="-72" y="-18" text-anchor="end" font-family="'Pretendard', sans-serif" font-size="10.5" font-weight="800" fill="#b45309">강박·확인</text>
+  </g>
+
+  <!-- Right Subbox: 주관적 고통 지수 & 회복 목표치 -->
+  <rect x="364" y="432" width="304" height="22" rx="3" fill="#0f172a"/>
+  <text x="516" y="447" text-anchor="middle" font-family="'Pretendard', sans-serif" font-size="12" font-weight="800" fill="#ffffff">3. 주관적 고통 지수 &amp; 회복 목표치</text>
+  <rect x="364" y="458" width="304" height="190" rx="6" fill="#ffffff" stroke="#64748b" stroke-width="1.2"/>
+
+  <g transform="translate(415, 480)">
+    <text x="0" y="0" text-anchor="middle" font-family="'Pretendard', sans-serif" font-size="11" font-weight="800" fill="#334155">예기불안도</text>
+    <rect x="-16" y="12" width="32" height="105" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+    <rect x="-16" y="32" width="32" height="85" rx="4" fill="#ef4444"/>
+    <text x="0" y="134" text-anchor="middle" font-family="'Pretendard', sans-serif" font-size="14" font-weight="900" fill="#dc2626">82%</text>
+    <text x="0" y="150" text-anchor="middle" font-family="'Pretendard', sans-serif" font-size="10" font-weight="700" fill="#64748b">과잉경보</text>
+  </g>
+
+  <g transform="translate(516, 480)">
+    <text x="0" y="0" text-anchor="middle" font-family="'Pretendard', sans-serif" font-size="11" font-weight="800" fill="#334155">정서완충력</text>
+    <rect x="-16" y="12" width="32" height="105" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+    <rect x="-16" y="82" width="32" height="35" rx="4" fill="#0ea5e9"/>
+    <text x="0" y="134" text-anchor="middle" font-family="'Pretendard', sans-serif" font-size="14" font-weight="900" fill="#0284c7">34%</text>
+    <text x="0" y="150" text-anchor="middle" font-family="'Pretendard', sans-serif" font-size="10" font-weight="700" fill="#64748b">저하상태</text>
+  </g>
+
+  <g transform="translate(617, 480)">
+    <text x="0" y="0" text-anchor="middle" font-family="'Pretendard', sans-serif" font-size="11" font-weight="800" fill="#334155">목표안정도</text>
+    <rect x="-16" y="12" width="32" height="105" rx="6" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+    <rect x="-16" y="25" width="32" height="92" rx="4" fill="#10b981"/>
+    <text x="0" y="134" text-anchor="middle" font-family="'Pretendard', sans-serif" font-size="14" font-weight="900" fill="#059669">88%</text>
+    <text x="0" y="150" text-anchor="middle" font-family="'Pretendard', sans-serif" font-size="10" font-weight="700" fill="#059669">자생력회복</text>
+  </g>
+
+  <!-- Bottom Clinical Interpretation Box -->
+  <rect x="52" y="660" width="616" height="72" rx="6" fill="#f0fdfa" stroke="#146369" stroke-width="1.5"/>
+  <text x="68" y="682" font-family="'Pretendard', sans-serif" font-size="12.5" font-weight="900" fill="#0c4349">■ 임상심리 종합 판독 소견 (Clinical Interpretation)</text>
+  <text x="68" y="702" font-family="'Pretendard', sans-serif" font-size="11.5" font-weight="600" fill="#334155">• 주관적 불안(BAI) 및 예기불안 지수가 임상적 과민 구간에 위치하여 사소한 신체 감각에도 편도체 경보가 작동함.</text>
+  <text x="68" y="720" font-family="'Pretendard', sans-serif" font-size="11.5" font-weight="600" fill="#334155">• 치료 전·후 정량적 척도 추적을 통해 불안·강박 감소 및 정서적 회복탄력성(Resilience) 복원 경과를 객관적으로 검증함.</text>
+</svg>

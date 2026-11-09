@@ -249,38 +249,320 @@
       </div>
     </div>
 
-    <!-- 객관적 검사 시스템 그리드 -->
-    <h3 style="font-size: 1.25rem; font-weight: 800; color: #0C4349; margin: 30px 0 16px;">
-      🔬 객관적 검사 시스템 안내
-    </h3>
-    <div class="exam-system-grid">
-      <div class="exam-system-card">
-        <div class="exam-system-header">
-          <span class="exam-system-check">✓</span>
-          <strong class="exam-system-title">정량화 뇌파검사 (qEEG)</strong>
-        </div>
-        <p class="exam-system-desc">대뇌 부위별 신경세포 활성 패턴과 정서적 긴장도, 집중력 상태를 객관적으로 측정합니다.</p>
+    <!-- 객관적 검사 시스템 그리드 (위치 A & B) -->
+    <div id="exam-system" class="about-unified-section" style="margin-top: 32px;">
+      <h3 style="font-size: 1.35rem; font-weight: 900; color: #0C4349; margin: 0 0 8px; display: flex; align-items: center; gap: 8px;">
+        🔬 객관적 검사 시스템 안내
+      </h3>
+      <p style="font-size: 0.96rem; color: #475569; line-height: 1.7; margin: 0 0 18px; word-break: keep-all;">
+        뇌신경계와 자율신경계 질환은 눈에 보이지 않기에 더욱 객관적이고 정밀한 진단이 필요합니다. 해아림한의원 대구본점은 <strong>현대 뇌신경과학적 정량 검사(qEEG·HRV·표준화 심리척도)</strong>와 <strong>한의학적 사진합참(체질·복진·맥진)</strong>을 통합한 4대 정밀 검사 시스템을 통해 증상의 근원적 원인을 다각도로 규명합니다.
+      </p>
+
+      <!-- 상단 4대 검사 요약 그리드 (클릭 시 하단 B 상세 설명으로 스크롤) -->
+      <div class="exam-system-grid">
+        <a href="#exam-qeeg" class="exam-system-card" onclick="smoothScrollToSection(event, 'exam-qeeg')" style="text-decoration: none; display: block;">
+          <div class="exam-system-header">
+            <span class="exam-system-check">✓</span>
+            <strong class="exam-system-title">정량화 뇌파검사 (qEEG)</strong>
+            <span class="exam-card-jump">상세보기 ↓</span>
+          </div>
+          <p class="exam-system-desc">대뇌 부위별 신경세포 활성 패턴과 정서적 긴장도, 집중력 상태를 객관적으로 측정합니다.</p>
+        </a>
+        <a href="#exam-hrv" class="exam-system-card" onclick="smoothScrollToSection(event, 'exam-hrv')" style="text-decoration: none; display: block;">
+          <div class="exam-system-header">
+            <span class="exam-system-check">✓</span>
+            <strong class="exam-system-title">자율신경계 검사 (HRV)</strong>
+            <span class="exam-card-jump">상세보기 ↓</span>
+          </div>
+          <p class="exam-system-desc">교감신경과 부교감신경의 밸런스, 신체 피로도 및 만성 스트레스 지수를 정량화합니다.</p>
+        </a>
+        <a href="#exam-psych" class="exam-system-card" onclick="smoothScrollToSection(event, 'exam-psych')" style="text-decoration: none; display: block;">
+          <div class="exam-system-header">
+            <span class="exam-system-check">✓</span>
+            <strong class="exam-system-title">표준화 정서 심리검사</strong>
+            <span class="exam-card-jump">상세보기 ↓</span>
+          </div>
+          <p class="exam-system-desc">불안·우울·강박 척도를 통해 환자분이 겪는 주관적 고통을 객관화 지표로 파악합니다.</p>
+        </a>
+        <a href="#exam-oriental" class="exam-system-card" onclick="smoothScrollToSection(event, 'exam-oriental')" style="text-decoration: none; display: block;">
+          <div class="exam-system-header">
+            <span class="exam-system-check">✓</span>
+            <strong class="exam-system-title">체질 및 복진·맥진 검사</strong>
+            <span class="exam-card-jump">상세보기 ↓</span>
+          </div>
+          <p class="exam-system-desc">한의학적 사진합참을 통해 오장육부의 기능적 허실과 기혈 순환 장애를 정밀 진단합니다.</p>
+        </a>
       </div>
-      <div class="exam-system-card">
-        <div class="exam-system-header">
-          <span class="exam-system-check">✓</span>
-          <strong class="exam-system-title">자율신경계 검사 (HRV)</strong>
-        </div>
-        <p class="exam-system-desc">교감신경과 부교감신경의 밸런스, 신체 피로도 및 만성 스트레스 지수를 정량화합니다.</p>
-      </div>
-      <div class="exam-system-card">
-        <div class="exam-system-header">
-          <span class="exam-system-check">✓</span>
-          <strong class="exam-system-title">표준화 정서 심리검사</strong>
-        </div>
-        <p class="exam-system-desc">불안·우울·강박 척도를 통해 환자분이 겪는 주관적 고통을 객관화 지표로 파악합니다.</p>
-      </div>
-      <div class="exam-system-card">
-        <div class="exam-system-header">
-          <span class="exam-system-check">✓</span>
-          <strong class="exam-system-title">체질 및 복진·맥진 검사</strong>
-        </div>
-        <p class="exam-system-desc">한의학적 사진합참을 통해 오장육부의 기능적 허실과 기혈 순환 장애를 정밀 진단합니다.</p>
+
+      <!-- ============================================================== -->
+      <!-- B 영역: 4대 정밀 검사 시스템 심층 임상 해설 및 시각 자료        -->
+      <!-- ============================================================== -->
+      <div class="exam-deep-list">
+
+        <!-- 01. 정량화 뇌파검사 (qEEG) -->
+        <article id="exam-qeeg" class="exam-deep-card about-unified-section">
+          <div class="exam-deep-top">
+            <div class="exam-deep-title-group">
+              <div class="exam-deep-icon-box">
+                <img src="/images/exam-icons/icon_brain_func.png" alt="정량화 뇌파검사 아이콘" loading="lazy">
+              </div>
+              <div>
+                <span class="exam-deep-badge">PRECISION TEST 01 · 대뇌 피질 신경생리학 분석</span>
+                <h4 class="exam-deep-title">정량화 뇌파검사 (qEEG · Quantitative EEG Brain Mapping)</h4>
+              </div>
+            </div>
+            <div class="exam-deep-tags">
+              <span class="exam-tag">#대뇌피질활성도</span>
+              <span class="exam-tag">#CSTC신경망분석</span>
+              <span class="exam-tag">#편도체과각성측정</span>
+            </div>
+          </div>
+
+          <div class="exam-deep-body">
+            <!-- 좌측: 검사 결과 이미지 -->
+            <div class="exam-deep-visual">
+              <div class="exam-visual-frame">
+                <img src="/images/brainwave_chart.png" alt="정량화 뇌파검사(qEEG) 주파수 대역별 대뇌 피질 활성도 분석 맵" loading="lazy">
+              </div>
+              <div class="exam-visual-caption">
+                <strong>▲ 정량화 뇌파(qEEG) 대뇌 피질 토포그래피 분석도</strong>
+                <span>Delta · Theta · Alpha · Beta 주파수 대역별 활성 분포 및 비대칭 편차 시각화</span>
+              </div>
+            </div>
+
+            <!-- 우측: 전문 의학 설명 -->
+            <div class="exam-deep-content">
+              <p class="exam-deep-lead">
+                뇌 CT나 MRI가 뇌의 해부학적·구조적 손상 여부만을 확인한다면, <strong>정량화 뇌파검사(qEEG)</strong>는 대뇌 피질 신경세포(Neuron)들이 주고받는 미세한 생체 전기 신호를 정량화하여 <strong>눈에 보이지 않는 뇌의 기능적 활성도와 신경망 연결성(Connectivity)을 컬러 뇌지도(Brain Map)로 실시간 시각화</strong>하는 첨단 기능 신경학 검사입니다.
+              </p>
+
+              <div class="exam-metric-box">
+                <div class="exam-metric-item">
+                  <strong class="metric-head">01. 뇌파 주파수 대역별 스펙트럼 정밀 분석 (Delta ~ High-Beta)</strong>
+                  <p class="metric-text">
+                    뇌 피로·수면 문제와 연관된 <strong>델타파(Delta, 1~4Hz)·세타파(Theta, 4~8Hz)</strong>, 안정된 심신 이완과 기본 두뇌 리듬을 반영하는 <strong>알파파(Alpha, 8~12Hz)</strong>, 주의집중과 인지 활성도를 나타내는 <strong>SMR·저베타파(12~20Hz)</strong>, 그리고 극도의 불안·강박·예민·긴장 상태에서 급증하는 <strong>고베타파(High-Beta, 20~30Hz)</strong>의 부위별 분포를 정밀 판독합니다.
+                  </p>
+                </div>
+                <div class="exam-metric-item">
+                  <strong class="metric-head">02. 전두엽-기저핵(CSTC) 억제 회로 및 편도체 과흥분 규명</strong>
+                  <p class="metric-text">
+                    틱장애·ADHD 환자에서 특징적으로 관찰되는 전두엽 서파 과다(<strong>세타/베타 비율 TBR 상승</strong>)와 운동·충동 제어력 저하를 객관적으로 측정하며, 공황장애·불안장애·불면증 환자의 우측 전두엽 및 측두엽 고베타파 과활성(편도체 경보 시스템의 과열 상태)을 명확히 감별합니다.
+                  </p>
+                </div>
+                <div class="exam-metric-item">
+                  <strong class="metric-head">03. 좌·우뇌 반구 비대칭성 평가 및 1:1 뉴로피드백 타깃 설정</strong>
+                  <p class="metric-text">
+                    좌·우 대뇌 반구의 활성도 편차(Asymmetry)와 브레인포그(인지 처리 속도 저하) 원인을 분석하여, 비약물 두뇌 훈련(생기능자기조절훈련)의 정확한 자극 좌표와 뇌신경 안정 맞춤 한약 처방의 근거를 수립합니다.
+                  </p>
+                </div>
+              </div>
+
+              <div class="exam-indication-bar">
+                <span class="indication-label">주요 적용 질환</span>
+                <span class="indication-text">틱장애·뚜렛증후군, 소아·성인 ADHD, 공황장애, 만성 불면증, 강박증, 브레인포그·집중력 저하</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 02. 자율신경계 검사 (HRV) -->
+        <article id="exam-hrv" class="exam-deep-card about-unified-section">
+          <div class="exam-deep-top">
+            <div class="exam-deep-title-group">
+              <div class="exam-deep-icon-box">
+                <img src="/images/exam-icons/icon_autonomic.png" alt="자율신경계 검사 아이콘" loading="lazy">
+              </div>
+              <div>
+                <span class="exam-deep-badge">PRECISION TEST 02 · 자율신경 항상성 및 스트레스 저항도 평가</span>
+                <h4 class="exam-deep-title">자율신경계 정밀 검사 (HRV · 심박변이도 &amp; 생체 스트레스 분석)</h4>
+              </div>
+            </div>
+            <div class="exam-deep-tags">
+              <span class="exam-tag">#교감부교감밸런스</span>
+              <span class="exam-tag">#심박변이도HRV</span>
+              <span class="exam-tag">#스트레스저항력</span>
+            </div>
+          </div>
+
+          <div class="exam-deep-body">
+            <!-- 좌측: 검사 결과 이미지 -->
+            <div class="exam-deep-visual">
+              <div class="exam-visual-frame">
+                <img src="/images/hrv_autonomic_test.png" alt="자율신경계(HRV) 균형도 및 스트레스 저항력 정밀 검사 결과표" loading="lazy">
+              </div>
+              <div class="exam-visual-caption">
+                <strong>▲ 자율신경 균형도(HRV) 정밀 분석 리포트</strong>
+                <span>심박수 분포도 · 주파수 스펙트럼(TP/VLF/LF/HF) · 교감(SNS)/부교감(PNS) 비율 측정</span>
+              </div>
+            </div>
+
+            <!-- 우측: 전문 의학 설명 -->
+            <div class="exam-deep-content">
+              <p class="exam-deep-lead">
+                심장 박동과 박동 사이의 미세한 시간 간격(R-R Interval) 변화를 정밀 분석하는 <strong>심박변이도(HRV, Heart Rate Variability) 검사</strong>를 통해, 호흡·혈관·소화기·땀샘·수면을 무의식적으로 총괄 조절하는 <strong>자율신경계(교감신경·부교감신경)의 균형도와 만성 스트레스 완충 능력</strong>을 정량적 수치로 평가합니다.
+              </p>
+
+              <div class="exam-metric-box">
+                <div class="exam-metric-item">
+                  <strong class="metric-head">01. 교감신경(SNS, LF) vs 부교감신경(PNS, HF) 시소 밸런스 분석</strong>
+                  <p class="metric-text">
+                    위기 상황에서 심박수를 높이고 신체를 긴장·각성시키는 <strong>교감신경(저주파 LF, 0.04~0.15Hz)</strong>과, 뇌간-미주신경(Vagus Nerve)을 통해 심장을 진정시키고 소화·휴식·숙면을 유도하는 <strong>부교감신경(고주파 HF, 0.15~0.4Hz)</strong>의 활성 비율을 측정하여 ‘교감신경 과항진형(과열·발작형)’과 ‘부교감신경 저하형(무기력·소진형)’을 정확히 감별합니다.
+                  </p>
+                </div>
+                <div class="exam-metric-item">
+                  <strong class="metric-head">02. 자율신경 총 활성도(TP) 및 심박수 분포도(Poincaré Plot) 판독</strong>
+                  <p class="metric-text">
+                    외부 스트레스 충격에 맞서 신체 항상성(Homeostasis)을 방어하는 생체 에너지 총량(<strong>TP, Total Power</strong>)과 스트레스 저항력 지수를 산출합니다. 건강한 타원형 심박수 분포도와 달리, 만성 스트레스나 자율신경실조증 환자는 분포가 작은 원형으로 좁게 응축되거나 불규칙하게 산발하는 패턴을 보입니다.
+                  </p>
+                </div>
+                <div class="exam-metric-item">
+                  <strong class="metric-head">03. '검사상 이상 없음'으로 방치된 신체화 증상의 신경생리학적 입증</strong>
+                  <p class="metric-text">
+                    내과·심장내과·이비인후과에서 심전도, 뇌 MRI, 위내시경 검사를 받아도 정상 소견이 나오지만 환자 본인은 극심하게 고통받는 <strong>원인 불명의 가슴 두근거림(심계항진), 과호흡, 기립성·만성 어지럼증, 신경성 위장장애, 수족·안면 다한증, 상열하한(열감·냉증)</strong>의 실제 원인이 자율신경 조절 실패에 있음을 객관적으로 규명합니다.
+                  </p>
+                </div>
+              </div>
+
+              <div class="exam-indication-bar">
+                <span class="indication-label">주요 적용 질환</span>
+                <span class="indication-text">자율신경실조증, 공황장애, 전정·자율신경성 어지럼증, 긴장성 다한증, 갱년기 증후군, 만성 피로</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03. 표준화 정서 심리검사 -->
+        <article id="exam-psych" class="exam-deep-card about-unified-section">
+          <div class="exam-deep-top">
+            <div class="exam-deep-title-group">
+              <div class="exam-deep-icon-box">
+                <img src="/images/exam-icons/icon_psychological.png" alt="표준화 정서 심리검사 아이콘" loading="lazy">
+              </div>
+              <div>
+                <span class="exam-deep-badge">PRECISION TEST 03 · 다차원 임상심리 척도 및 인지·행동 프로파일</span>
+                <h4 class="exam-deep-title">표준화 정서·심리 척도 검사 (Standardized Emotional &amp; Psychological Profile)</h4>
+              </div>
+            </div>
+            <div class="exam-deep-tags">
+              <span class="exam-tag">#불안우울강박척도</span>
+              <span class="exam-tag">#신체화민감도</span>
+              <span class="exam-tag">#주의력충동성평가</span>
+            </div>
+          </div>
+
+          <div class="exam-deep-body">
+            <!-- 좌측: 검사 결과 이미지 -->
+            <div class="exam-deep-visual">
+              <div class="exam-visual-frame">
+                <img src="/images/exam_psych_chart.svg" alt="표준화 정서·심리 척도 T-점수 프로파일 및 정서-신체화 분석표" loading="lazy">
+              </div>
+              <div class="exam-visual-caption">
+                <strong>▲ 표준화 정서·심리 다차원 척도(T-Score) 분석 리포트</strong>
+                <span>BAI 불안 · STAI 상태/특성불안 · 신체화 · 강박 · 우울 · 주의력 통합 프로파일</span>
+              </div>
+            </div>
+
+            <!-- 우측: 전문 의학 설명 -->
+            <div class="exam-deep-content">
+              <p class="exam-deep-lead">
+                환자분이 홀로 겪어온 막연한 공포, 예기불안, 우울감, 침습적 강박 사고, 주의력 저하 등 주관적인 마음의 고통을 <strong>임상심리학적으로 타당도와 신뢰도가 검증된 표준화 척도(Standardized Clinical Scales)</strong>를 통해 연령·성별 규준 대비 <strong>정량적 수치(T-점수 및 백분위 지표)로 구조화</strong>하는 다면적 정서·인지 평가입니다.
+              </p>
+
+              <div class="exam-metric-box">
+                <div class="exam-metric-item">
+                  <strong class="metric-head">01. 불안·공황·예기불안 및 사회적 공포의 층위별 정밀 평가 (BAI · STAI)</strong>
+                  <p class="metric-text">
+                    현재 직면한 스트레스 상황에서 유발되는 급성 <strong>상태불안(State Anxiety)</strong>과, 사소한 자극도 위협으로 크게 인식하는 기질적 <strong>특성불안(Trait Anxiety)</strong>을 분리 측정합니다. 공황 발작 재발에 대한 두려움(예기불안)과 타인의 시선·발표 상황에 대한 회피 반응(사회공포)의 심각도를 객관화합니다.
+                  </p>
+                </div>
+                <div class="exam-metric-item">
+                  <strong class="metric-head">02. 강박·우울·정서 소진 및 신체화(Somatization) 민감도 분석 (SCL-90-R · BDI · Y-BOCS)</strong>
+                  <p class="metric-text">
+                    스스로 멈추기 힘든 반복적 확인·오염 공포·침습적 생각 등 <strong>강박 스펙트럼(Y-BOCS)</strong>, 장기화된 신경 소모로 찾아오는 <strong>이차성 우울감과 번아웃(BDI-II)</strong>, 그리고 심리적 긴장이 두통·흉통·소화불량·어지럼 등 신체 증상으로 전환되는 <strong>신체화 지수</strong>를 입체적으로 판독합니다.
+                  </p>
+                </div>
+                <div class="exam-metric-item">
+                  <strong class="metric-head">03. 소아·청소년 주의집중력·충동성 및 학습 스트레스 진단 (CAT · 행동평가)</strong>
+                  <p class="metric-text">
+                    틱장애 및 ADHD 소아·청소년의 선택주의력, 억제지속력, 간섭선택력, 반응 일관성을 정밀 평가하고, 학업 피로도와 교우·가정 내 정서적 예민도를 파악하여 치료 전·후의 정서적 회복탄력성(Resilience) 향상 경과를 체계적으로 추적합니다.
+                  </p>
+                </div>
+              </div>
+
+              <div class="exam-indication-bar">
+                <span class="indication-label">주요 적용 질환</span>
+                <span class="indication-text">범불안장애, 공황장애·광장공포증, 강박증, 대인기피증(사회공포), 우울·번아웃, 소아·성인 ADHD</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 04. 체질 및 복진·맥진 검사 -->
+        <article id="exam-oriental" class="exam-deep-card about-unified-section" style="margin-bottom: 0;">
+          <div class="exam-deep-top">
+            <div class="exam-deep-title-group">
+              <div class="exam-deep-icon-box">
+                <img src="/images/exam-icons/icon_oriental_tic.png" alt="체질 및 복진 맥진 검사 아이콘" loading="lazy">
+              </div>
+              <div>
+                <span class="exam-deep-badge">PRECISION TEST 04 · 한의학적 사진합참(四診合參) 및 장부 허실 변증</span>
+                <h4 class="exam-deep-title">체질 및 복진·맥진 검사 (흉복부 경락 촉진 &amp; 오장육부 기혈 진단)</h4>
+              </div>
+            </div>
+            <div class="exam-deep-tags">
+              <span class="exam-tag">#복진4대압통구획</span>
+              <span class="exam-tag">#촌관척맥진</span>
+              <span class="exam-tag">#장뇌축GutBrain</span>
+            </div>
+          </div>
+
+          <div class="exam-deep-body">
+            <!-- 좌측: 검사 결과 이미지 -->
+            <div class="exam-deep-visual">
+              <div class="exam-visual-frame">
+                <img src="/images/exam_oriental_chart.svg" alt="한의학적 사진합참 복진 4대 압통 구획도 및 맥진·오장육부 허실 분석표" loading="lazy">
+              </div>
+              <div class="exam-visual-caption">
+                <strong>▲ 한의학적 사진합참(四診合參) 복진·맥진·장부 허실 진단도</strong>
+                <span>전중혈·흉협고만·심하비경·제하박동 촉진 구획 및 촌관척 맥파·장부 밸런스 분석</span>
+              </div>
+            </div>
+
+            <!-- 우측: 전문 의학 설명 -->
+            <div class="exam-deep-content">
+              <p class="exam-deep-lead">
+                같은 병명이라도 환자마다 타고난 체질과 내부 장기의 허실(虛實)은 완전히 다릅니다. 한방신경정신과 박사 김대억 대표원장은 현대 과학적 뇌파·자율신경 데이터에 한의학 고유의 <strong>사진합참(四診合參: 망·문·문·절진)</strong>을 결합하여, 뇌신경계 불균형을 유발한 <strong>오장육부(五臟六腑)의 기능적 편차와 기혈 울체·담음(痰飮)·화열(火熱)의 뿌리</strong>를 정밀 진단합니다.
+              </p>
+
+              <div class="exam-metric-box">
+                <div class="exam-metric-item">
+                  <strong class="metric-head">01. '제2의 뇌(장-뇌 축, Gut-Brain Axis)'를 읽는 신경정신과 4대 복진(腹診)</strong>
+                  <p class="metric-text">
+                    복부는 뇌간에서 내려오는 미주신경과 복강신경총이 밀집한 자율신경의 핵심 반영구입니다. 원장이 직접 흉복부의 근육 긴장도와 압통 반응을 촉진하여 ① <strong>전중혈(膻中穴) 압통</strong>(심포 울체·화병·흉민·가슴 답답함), ② <strong>흉협고만(胸脇苦滿)</strong>(갈비뼈 아래 저항감·간기울결·만성 스트레스 긴장), ③ <strong>심하비경(心下痞硬)</strong>(명치 막힘·심담허겁·담음 정체·신경성 소화불량), ④ <strong>제하박동(臍下悸) 및 복직근 구급</strong>(배꼽 주변 과민 박동·신음허·만성 놀람·예민)을 정밀 감별합니다.
+                  </p>
+                </div>
+                <div class="exam-metric-item">
+                  <strong class="metric-head">02. 촌·관·척(寸關尺) 맥진(脈診)을 통한 자율신경 긴장도 및 기혈·한열(寒熱) 판별</strong>
+                  <p class="metric-text">
+                    요골동맥의 촌·관·척 부위를 정밀하게 짚어 장부의 기혈 순환과 혈관 긴장도를 파악합니다. 교감신경 항진과 간기울결 시 나타나는 <strong>현맥(弦脈, 활시위처럼 팽팽한 긴장맥)·삭맥(數脈, 빠른 열맥)</strong>, 만성 피로와 심비양허 시 나타나는 <strong>세약맥(細弱脈)·침맥(沈脈)</strong>, 노폐물(담음) 정체 시 나타나는 <strong>활맥(滑脈)</strong> 등을 명확히 변별합니다.
+                  </p>
+                </div>
+                <div class="exam-metric-item">
+                  <strong class="metric-head">03. 체질 및 변증(辨證) 통합 분석을 통한 1:1 맞춤 한약·약침 프로토콜 설계</strong>
+                  <p class="metric-text">
+                    선천적 체질 특성과 한의학적 변증 유형(심담허겁, 간기울결, 심비양허, 음허화동, 상열하한 등)을 종합하여, 인위적인 신경 억제제가 아닌 <strong>과열된 편도체와 뇌신경계를 식히고 부족한 장부 에너지를 채워 뇌 자생력을 깨우는 1:1 맞춤 탕약과 약침·침구 치료</strong>를 완성합니다.
+                  </p>
+                </div>
+              </div>
+
+              <div class="exam-indication-bar">
+                <span class="indication-label">주요 적용 질환</span>
+                <span class="indication-text">전 신경정신과 질환 1:1 맞춤 한약 처방, 화병·상열하한, 신경성 위장장애·담적, 만성 허약·체질 개선</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>
@@ -515,19 +797,21 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
 }
 .exam-system-card {
   background: #FFFFFF;
-  border: 1px solid #DCE8EA;
-  border-radius: 10px;
+  border: 1.5px solid #DCE8EA;
+  border-radius: 12px;
   padding: 18px 20px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
 }
 .exam-system-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(20, 99, 105, 0.08);
+  border-color: #146369;
+  box-shadow: 0 6px 16px rgba(20, 99, 105, 0.1);
 }
 .exam-system-header {
   display: flex;
@@ -550,6 +834,16 @@
   font-size: 1.05rem;
   font-weight: 800;
   line-height: 1.4;
+  flex: 1;
+}
+.exam-card-jump {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #008194;
+  background: #EFF6F6;
+  padding: 3px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
 }
 .exam-system-desc {
   font-size: 0.93rem;
@@ -557,10 +851,227 @@
   line-height: 1.6;
   margin: 0;
 }
+
+/* B 영역: 4대 정밀 검사 심층 임상 해설 및 이미지 카드 스타일 */
+.exam-deep-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 8px;
+}
+.exam-deep-card {
+  background: #FFFFFF;
+  border: 1.5px solid #D5E5E7;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(12, 67, 73, 0.05);
+}
+.exam-deep-top {
+  background: linear-gradient(135deg, #F4F9FA 0%, #EBF4F6 100%);
+  border-bottom: 1px solid #D5E5E7;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.exam-deep-title-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.exam-deep-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #FFFFFF;
+  border: 1px solid #BADFE3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.exam-deep-icon-box img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+.exam-deep-badge {
+  display: inline-block;
+  font-size: 11.5px;
+  font-weight: 800;
+  color: #008194;
+  letter-spacing: 0.3px;
+  margin-bottom: 3px;
+}
+.exam-deep-title {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #0C4349;
+  margin: 0;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+.exam-deep-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.exam-tag {
+  background: #FFFFFF;
+  color: #146369;
+  border: 1px solid #C5DFE2;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+.exam-deep-body {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 26px;
+  padding: 24px;
+  align-items: stretch;
+}
+.exam-deep-visual {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 14px;
+}
+.exam-visual-frame {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.exam-visual-frame img {
+  width: 100%;
+  height: auto;
+  max-height: 410px;
+  object-fit: contain;
+  border-radius: 6px;
+  display: block;
+}
+.exam-visual-caption {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px dashed #CBD5E1;
+  text-align: center;
+}
+.exam-visual-caption strong {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 800;
+  color: #0C4349;
+  margin-bottom: 2px;
+}
+.exam-visual-caption span {
+  display: block;
+  font-size: 11.5px;
+  color: #64748B;
+}
+.exam-deep-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.exam-deep-lead {
+  font-size: 0.98rem;
+  color: #1E293B;
+  line-height: 1.75;
+  margin: 0 0 16px;
+  padding: 14px 16px;
+  background: #F0F9FA;
+  border-left: 4px solid #146369;
+  border-radius: 0 8px 8px 0;
+  word-break: keep-all;
+}
+.exam-metric-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.exam-metric-item {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  padding: 12px 15px;
+}
+.metric-head {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #0C4349;
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+.metric-text {
+  font-size: 0.89rem;
+  color: #475569;
+  line-height: 1.68;
+  margin: 0;
+  word-break: keep-all;
+}
+.exam-indication-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #F8FAFC;
+  border: 1px solid #CBD5E1;
+  border-radius: 8px;
+  padding: 10px 14px;
+  flex-wrap: wrap;
+}
+.indication-label {
+  background: #146369;
+  color: #FFFFFF;
+  font-size: 11.5px;
+  font-weight: 800;
+  padding: 3px 9px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.indication-text {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #1E293B;
+  line-height: 1.5;
+}
+
+@media (max-width: 960px) {
+  .exam-deep-body {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 18px;
+  }
+  .exam-visual-frame img {
+    max-height: 360px;
+  }
+}
 @media (max-width: 768px) {
   .exam-system-grid {
     grid-template-columns: 1fr;
     gap: 12px;
+  }
+  .exam-deep-top {
+    padding: 14px 16px;
+  }
+  .exam-deep-title {
+    font-size: 1.06rem;
+  }
+  .exam-deep-body {
+    padding: 14px;
   }
 }
 
@@ -799,9 +1310,13 @@ function smoothScrollToSection(event, targetId) {
 
 // 활성 탭 스타일 갱신
 function updateActiveSubnavTab(activeId) {
+  var mappedId = activeId;
+  if (['exam-system', 'exam-qeeg', 'exam-hrv', 'exam-psych', 'exam-oriental'].indexOf(activeId) !== -1) {
+    mappedId = 'why-healim';
+  }
   var buttons = document.querySelectorAll('.about-subnav-btn');
   buttons.forEach(function(btn) {
-    if (btn.getAttribute('data-target') === activeId) {
+    if (btn.getAttribute('data-target') === mappedId) {
       btn.classList.add('active');
     } else {
       btn.classList.remove('active');
@@ -845,17 +1360,24 @@ function setupAboutScrollSpy() {
   });
 }
 
-// 페이지 로드 시 URL 해시(#philosophy, #location 등) 처리
+// 페이지 로드 시 URL 해시(#philosophy, #location, #exam-system 등) 처리
 function handleInitialAboutHash() {
   var hash = window.location.hash.replace('#', '');
-  if (['philosophy', 'why-healim', 'doctor', 'location'].indexOf(hash) !== -1) {
+  var validHashes = ['philosophy', 'why-healim', 'doctor', 'location', 'exam-system', 'exam-qeeg', 'exam-hrv', 'exam-psych', 'exam-oriental'];
+  if (validHashes.indexOf(hash) !== -1) {
     setTimeout(function() {
       smoothScrollToSection(null, hash);
-    }, 150);
+    }, 120);
+    setTimeout(function() {
+      smoothScrollToSection(null, hash);
+    }, 450);
   }
 }
 
 window.addEventListener('hashchange', function() {
+  handleInitialAboutHash();
+});
+window.addEventListener('load', function() {
   handleInitialAboutHash();
 });
 
