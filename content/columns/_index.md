@@ -83,8 +83,53 @@ layout: single
 </tr>
 </thead>
 <tbody id="columnsTableBody">
+<tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-clim-218')">
+  <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">218</td>
+  <td style="padding: 14px 12px; text-align: center;"><span style="display: inline-block; padding: 3px 8px; background: #E6F6F8; color: #008194; font-size: 12px; font-weight: 700; border-radius: 4px;">갱년기</span></td>
+  <td style="padding: 14px 16px;"><a href="/columns/?id=col-auto-clim-218" onclick="event.preventDefault(); openColumnModal('col-auto-clim-218');" style="color: #0F172A; font-weight: 700; text-decoration: none; font-size: 14.5px; line-height: 1.45; display: block;">[포항 영덕 갱년기] 갱년기 이후 가슴 두근거림과 만성 불면, 무기력증이 심한데 왜 그럴까요? 갱년기 자율신경 실조(HRV 저하) 진단과 뇌신경 활력 회복법</a></td>
+  <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
+  <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.11.09</td>
+  <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">177</td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-clim-218');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+</tr>
+<tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-insomnia-217')">
+  <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">217</td>
+  <td style="padding: 14px 12px; text-align: center;"><span style="display: inline-block; padding: 3px 8px; background: #E6F6F8; color: #008194; font-size: 12px; font-weight: 700; border-radius: 4px;">불면증</span></td>
+  <td style="padding: 14px 16px;"><a href="/columns/?id=col-auto-insomnia-217" onclick="event.preventDefault(); openColumnModal('col-auto-insomnia-217');" style="color: #0F172A; font-weight: 700; text-decoration: none; font-size: 14.5px; line-height: 1.45; display: block;">[대구 불면증] 자도 개운하지가 않고 새벽 3시마다 깨는 40대 직장인 만성 불면증 치료사례</a></td>
+  <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
+  <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.11.03</td>
+  <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">163</td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-insomnia-217');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+</tr>
+<tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-panic-216')">
+  <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">216</td>
+  <td style="padding: 14px 12px; text-align: center;"><span style="display: inline-block; padding: 3px 8px; background: #E6F6F8; color: #008194; font-size: 12px; font-weight: 700; border-radius: 4px;">공황장애</span></td>
+  <td style="padding: 14px 16px;"><a href="/columns/?id=col-auto-panic-216" onclick="event.preventDefault(); openColumnModal('col-auto-panic-216');" style="color: #0F172A; font-weight: 700; text-decoration: none; font-size: 14.5px; line-height: 1.45; display: block;">[구미 공황장애] 과호흡과 가슴 답답함으로 응급실을 수차례 찾았던 40대 가장의 공황발작 치료 사례</a></td>
+  <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
+  <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.11.03</td>
+  <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">189</td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-panic-216');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+</tr>
+<tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-insomnia-105')">
+  <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">215</td>
+  <td style="padding: 14px 12px; text-align: center;"><span style="display: inline-block; padding: 3px 8px; background: #E6F6F8; color: #008194; font-size: 12px; font-weight: 700; border-radius: 4px;">불면증</span></td>
+  <td style="padding: 14px 16px;"><a href="/columns/?id=col-auto-insomnia-105" onclick="event.preventDefault(); openColumnModal('col-auto-insomnia-105');" style="color: #0F172A; font-weight: 700; text-decoration: none; font-size: 14.5px; line-height: 1.45; display: block;">[영주 봉화 불면증] 수면제를 먹어도 자꾸 깨는데 어떻게 해야 하나요? 수면 구조 복원과 멜라토닌 생체 리듬 정상화 Q&amp;A</a></td>
+  <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
+  <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.30</td>
+  <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">186</td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-insomnia-105');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+</tr>
+<tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-clim-104')">
+  <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">214</td>
+  <td style="padding: 14px 12px; text-align: center;"><span style="display: inline-block; padding: 3px 8px; background: #E6F6F8; color: #008194; font-size: 12px; font-weight: 700; border-radius: 4px;">갱년기</span></td>
+  <td style="padding: 14px 16px;"><a href="/columns/?id=col-auto-clim-104" onclick="event.preventDefault(); openColumnModal('col-auto-clim-104');" style="color: #0F172A; font-weight: 700; text-decoration: none; font-size: 14.5px; line-height: 1.45; display: block;">[경주 갱년기] 50대 여성의 안면홍조와 가슴 두근거림 한의학적 진단 및 치료 사례</a></td>
+  <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
+  <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">2026.10.28</td>
+  <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #94A3B8; font-size: 12.5px;">184</td>
+  <td class="col-admin-action" style="display: none; padding: 14px 8px; text-align: center;"><button type="button" onclick="event.stopPropagation(); handleAdminDeleteColumn('col-auto-clim-104');" style="padding: 3px 8px; font-size: 11px; background: #FEE2E2; color: #DC2626; border: 1px solid #FCA5A5; border-radius: 4px; cursor: pointer; font-weight: 700;">삭제</button></td>
+</tr>
 <tr style="border-bottom: 1px solid #F1F5F9; cursor: pointer; transition: background 0.15s;" onmouseover="this.style.background='#F8FAFB';" onmouseout="this.style.background='#FFFFFF';" onclick="openColumnModal('col-auto-clim-1')">
-  <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">1</td>
+  <td style="padding: 14px 12px; text-align: center; color: #64748B; font-size: 13px;">213</td>
   <td style="padding: 14px 12px; text-align: center;"><span style="display: inline-block; padding: 3px 8px; background: #E6F6F8; color: #008194; font-size: 12px; font-weight: 700; border-radius: 4px;">갱년기</span></td>
   <td style="padding: 14px 16px;"><a href="/columns/?id=col-auto-clim-1" onclick="event.preventDefault(); openColumnModal('col-auto-clim-1');" style="color: #0F172A; font-weight: 700; text-decoration: none; font-size: 14.5px; line-height: 1.45; display: block;">[대구 갱년기 치료] 안면홍조와 가슴 두근거림, 자율신경실조증과의 상관관계와 한의학적 진단</a></td>
   <td class="col-hide-mobile" style="padding: 14px 12px; text-align: center; color: #475569; font-size: 13px;">해아림한의원</td>
@@ -724,6 +769,36 @@ layout: single
 <script>
 // 기본 등록 칼럼 데이터
 var defaultColumnsData = [
+  {
+    "id": "col-auto-clim-218",
+    "category": "갱년기",
+    "title": "[포항 영덕 갱년기] 갱년기 이후 가슴 두근거림과 만성 불면, 무기력증이 심한데 왜 그럴까요? 갱년기 자율신경 실조(HRV 저하) 진단과 뇌신경 활력 회복법",
+    "author": "해아림한의원",
+    "date": "2026.11.09",
+    "views": 177,
+    "summary": "[포항 영덕 갱년기] 포항 양덕동과 두호동 영덕 지역 환자분들을 위한 갱년기 Q&A 안내 및 원인 치료 가이드입니다.",
+    "content": "안녕하세요. 해아림한의원입니다.\n\n최근 포항 양덕동과 두호동 및 영덕 등 경북 동해안권에서 갱년기 이후 가슴 두근거림과 만성 불면, 무기력증 증상으로 병원과 한의원을 알아보시다가 대구 수성구 범어역 해아림한의원 대구본점을 내원하시는 분들이 부쩍 늘고 있습니다.\n\n국민건강보험공단 갱년기 진료 데이터에 따르면 갱년기 증후군 환자 중 수면유지장애와 입면장애 등 수면 문제를 동반한 비율이 71.8%에 달하며, 이유 없는 가슴 두근거림과 불안을 호소한 비율도 43.6%로 집계되었습니다. 뇌신경계와 자율신경 밸런스를 바로잡는 1:1 맞춤 한의학적 진단과 자생력 회복 치료가 장기적 건강 유지의 핵심으로 평가받고 있습니다.\n\n[환자들이 가장 많이 묻는 핵심 질문과 답변]\nQ. 특별히 놀란 일이 없는데도 심장이 두근거리고 사소한 일에 눈물이 나거나 밤에 자주 깸니다. 단순 노화 현상인가요?\n\nA. 호르몬 변화가 뇌의 세로토닌·가바(GABA) 신경전달물질 대사와 부교감신경 활성도에 영향을 미쳐 나타나는 갱년기 신경정신과적 증후군입니다. 심혈(心血)을 보하고 교감신경 과각성을 진정시키는 단계별 한방 치료를 통해 감정 기복과 가슴 두근거림을 안정적으로 다스릴 수 있습니다.\n\n갱년기가 진행되면 밤에 쉽게 잠들지 못하는 입면장애와 자다가 식은땀이나 두근거림으로 깨어 다시 잠들지 못하는 수면유지장애가 빈발합니다. 여성호르몬은 기분을 조절하는 세로토닌과 수면을 유도하는 멜라토닌 합성에 관여하기 때문에, 호르몬 저하는 뇌 변연계의 정서 안정 회로를 약화시켜 사소한 일에도 눈물이 나고 불안해지는 갱년기 우울증을 촉발합니다. 합성 호르몬제 복용에 대한 우려나 부담이 있는 분들에게는 체내 음혈(陰血)을 보하고 심장의 화(火)를 내리는 가미소요산, 귀비탕 계열의 맞춤 한약이 효과적인 대안이 됩니다. 뇌 신경망의 피로도를 낮추고 자연스러운 수면 델타파를 유도하여 일상의 활력과 정서적 안정을 단계적으로 회복할 수 있습니다."
+  },
+  {
+    "id": "col-auto-insomnia-217",
+    "category": "불면증",
+    "title": "[대구 불면증] 자도 개운하지가 않고 새벽 3시마다 깨는 40대 직장인 만성 불면증 치료사례",
+    "author": "해아림한의원",
+    "date": "2026.11.03",
+    "views": 163,
+    "summary": "[대구 불면증] 대구 수성구 범어동과 만촌동 지역 환자분들을 위한 불면증 치료사례 분석 및 원인 치료 가이드입니다.",
+    "content": "안녕하세요. 해아림한의원입니다.\n\n최근 대구 수성구 범어동과 만촌동, 달서구 상인동 등 대구 주요 지역에서 만성 불면증과 수면유지장애 증상으로 병원과 한의원을 알아보시다가 대구 수성구 범어역 해아림한의원 대구본점을 내원하시는 분들이 부쩍 늘고 있습니다.\n\n국민건강보험공단 수면장애 통계에 따르면 진료 인원이 연간 70만 명을 넘어섰으며, 3개월 이상 지속되는 만성 불면증 환자의 약 68%가 주간 피로, 집중력 저하, 2차성 불안장애를 복합적으로 호소합니다. 수면제 장기 복용 환자의 약 45%는 약물 내성과 반동성 불면을 경험하므로 멜라토닌 분비와 체온 리듬을 정상화하는 원인 치료가 필수적입니다.\n\n“잠은 분명히 잤는데 아침에 일어나면 하나도 개운하지 않아요.”\n\n진료실에서 이렇게 말씀하셨던 40대 직장인 환자분이 기억납니다.\n\n불면증이라고 하면 흔히 밤새 잠을 전혀 이루지 못하는 입면장애만 떠올리기 쉽습니다. 하지만 실제로는 잠드는 데 큰 어려움이 없는데도 새벽에 자꾸 깨거나(수면 유지장애), 충분한 시간을 잤는데도 피로가 전혀 풀리지 않아 힘들어하는 분들이 매우 많습니다.\n\n자도 개운하지 않은 것 역시 불면증의 명확한 한 형태입니다.\n\n잠의 연속성과 3단계 깊은 서파 수면(NREM) 및 렘수면(REM)의 균형이 깨지면, 8시간을 자더라도 뇌는 밤새 긴장 상태를 유지하여 신체와 뇌세포를 회복시키지 못합니다.\n\n이 환자분은 밤 11시에 잠들었으나 매일 새벽 3~4시만 되면 눈이 번쩍 떠졌고, 다시 잠들지 못한 채 뒤척이다 출근하여 낮 동안 멍한 상태와 소화불량을 겪고 계셨습니다.\n\n검사 결과 체내 코르티솔 분비 리듬이 야간에도 떨어지지 않는 ‘HPA축(시상하부-뇌하수체-부신) 과각성’ 상태였습니다. 한의학적으로는 심장의 열과 신장의 수기가 교류하지 못하는 ‘심신불교(心腎不交)’로 진단했습니다.\n\n치료는 야간 뇌파를 안정시키고 깊은 수면을 유도하는 산조인탕 및 가미소요산 가감 처방을 중심으로 진행되었습니다. 더불어 낮 시간 20분의 햇빛 쬐기와 수면 2시간 전 족욕 요법을 지도했습니다.\n\n치료 3주 차부터 새벽에 깨는 횟수가 주 1회로 줄었고, 6주 차에는 “아침에 눈을 떴을 때 몇 년 만에 머리가 맑고 개운한 느낌을 받았다”며 밝은 미소를 되찾으셨습니다."
+  },
+  {
+    "id": "col-auto-panic-216",
+    "category": "공황장애",
+    "title": "[구미 공황장애] 과호흡과 가슴 답답함으로 응급실을 수차례 찾았던 40대 가장의 공황발작 치료 사례",
+    "author": "해아림한의원",
+    "date": "2026.11.03",
+    "views": 189,
+    "summary": "[구미 공황장애] 구미 송정동과 형곡동 지역 환자분들을 위한 공황장애 치료사례 분석 및 원인 치료 가이드입니다.",
+    "content": "안녕하세요. 해아림한의원입니다.\n\n구미 송정동과 형곡동, 옥계동에서 직장 생활과 일상 중 불쑥 찾아오는 공황장애 증세로 고통받으시며 대구 수성구 해아림한의원을 직접 찾아오시는 환자분들이 꾸준히 늘고 있습니다.\n\n국민건강보험공단 발표에 따르면 공황장애 진료 인원은 최근 5년간 연평균 약 10.7%씩 증가하여 연간 20만 명을 돌파했습니다. 특히 30대~50대 사회활동 주 연령층이 전체의 65% 이상을 차지하며, 보건복지부 조사에 따르면 공황발작 환자의 78.4%가 첫 발작 시 극심한 심박수 급증으로 심근경색이나 뇌졸중을 의심해 응급실을 찾는 것으로 보고되었습니다.\n\n“자다가 새벽 2시에 가슴을 쥐어짜는 통증과 함께 숨이 안 쉬어져 119를 불렀습니다. 의사는 심장에 문제가 없다는데 저는 정말 죽는 줄 알았습니다.”\n\n45세 남성 가장 환자분의 호소였습니다.\n\n공황발작이 야간에 발생하는 ‘야간 공황발작(Nocturnal Panic)’은 수면 중 무의식 상태에서 교감신경이 급격히 활성화되며 나타납니다. 수면 중 혈중 이산화탄소 농도의 미세한 변화를 뇌간의 호흡 중추가 위험 신호로 잘못 감지하여 발생합니다.\n\n이 환자분은 자영업 스트레스와 만성 피로가 겹친 상태에서 세 번이나 응급실을 찾았고, 밤마다 또 발작이 올까 두려워 잠자리에 드는 것조차 공포스러워하셨습니다.\n\n진단 결과 만성 스트레스로 인해 간기가 뭉치고 심장에 열이 찬 ‘간울화화(肝鬱化火)’ 상태였습니다.\n\n치료는 야간 교감신경 흥분을 차단하고 부교감신경을 부드럽게 활성화시키는 시호가용골모려탕 및 복신, 산조인 중심의 맞춤 한약을 복용하도록 했습니다. 더불어 수면 전 스마트폰 사용을 금하고 침실 온도를 서늘하게 유지하는 수면 환경 개선을 병행했습니다.\n\n치료 3주 차부터 야간 호흡곤란 발작이 사라졌고, 2개월 차에는 밤에 깨지 않고 7시간 숙면을 취하며 낮 동안의 활력을 되찾으셨습니다."
+  },
   {
     "id": "col-auto-insomnia-105",
     "category": "불면증",
@@ -3053,7 +3128,10 @@ function getDiseaseDetailPageUrl(disease) {
   return '/columns/';
 }
 
-var HEALIM_CANONICAL_VERSION = '20261030_v200_sync_v5';
+var HEALIM_CANONICAL_VERSION = '20261109_v218_sync_v6';
+function normalizeColTitle(t) {
+  return String(t || '').replace(/\s+/g, '').trim();
+}
 function getRealtimeBoardColumnsData() {
   try {
     var storedVer = localStorage.getItem('healim_canonical_version');
@@ -3063,6 +3141,8 @@ function getRealtimeBoardColumnsData() {
       localStorage.removeItem('healim_deleted_column_ids');
       localStorage.removeItem('healim_board_columns');
       localStorage.removeItem('healim_board_columns_permanent_backup');
+      localStorage.removeItem('healim_auto_column_state_daegu');
+      localStorage.removeItem('healim_auto_faq_state_daegu');
       if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem('healim_board_columns_backup');
       localStorage.setItem('healim_canonical_version', HEALIM_CANONICAL_VERSION);
       localStorage.setItem('healim_data_version', HEALIM_CANONICAL_VERSION);
@@ -3071,9 +3151,23 @@ function getRealtimeBoardColumnsData() {
     }
   } catch(e) {}
 
+  try {
+    if (typeof window.syncDeterministicAutoPublish === 'function') {
+      window.syncDeterministicAutoPublish();
+    }
+  } catch(e) {}
+
   var delRaw = localStorage.getItem('healim_deleted_column_ids');
   var delList = delRaw ? JSON.parse(delRaw) : [];
   if (!Array.isArray(delList)) delList = [];
+
+  var canonicalIdMap = {};
+  var canonicalTitleMap = {};
+  defaultColumnsData.forEach(function(dItem) {
+    if (!dItem || !dItem.id) return;
+    canonicalIdMap[String(dItem.id)] = true;
+    if (dItem.title) canonicalTitleMap[normalizeColTitle(dItem.title)] = true;
+  });
 
   var list = [];
   try {
@@ -3083,8 +3177,16 @@ function getRealtimeBoardColumnsData() {
       if (Array.isArray(saved) && saved.length > 0) {
         saved.forEach(function(sItem) {
           if (!sItem || !sItem.id) return;
+          var sid = String(sItem.id);
+          var normTitle = normalizeColTitle(sItem.title);
           if (sItem.title && sItem.title.includes('경산 불면증')) return;
-          var exists = list.some(function(it) { return String(it.id) === String(sItem.id) || (sItem.title && it.title === sItem.title); });
+          // 기본 데이터셋에 이미 존재하는 항목은 defaultColumnsData의 정식 순서에 맡김
+          if (canonicalIdMap[sid] || (normTitle && canonicalTitleMap[normTitle])) return;
+          // PC/모바일 불일치 원인이 되는 비결정적 구형 col-auto-<timestamp> 항목 차단 (결정적 스케줄 col-auto-sched-* 및 관리자 작성 글만 허용)
+          if (sid.indexOf('col-auto-') === 0 && sid.indexOf('col-auto-sched-') !== 0 && sid.indexOf('col-auto-manual-') !== 0) return;
+          var exists = list.some(function(it) {
+            return String(it.id) === sid || (normTitle && normalizeColTitle(it.title) === normTitle);
+          });
           if (!exists) list.push(sItem);
         });
       }
@@ -3093,7 +3195,11 @@ function getRealtimeBoardColumnsData() {
 
   defaultColumnsData.forEach(function(dItem) {
     if (!dItem || !dItem.id) return;
-    var exists = list.some(function(it) { return String(it.id) === String(dItem.id) || (dItem.title && it.title === dItem.title); });
+    var did = String(dItem.id);
+    var normTitle = normalizeColTitle(dItem.title);
+    var exists = list.some(function(it) {
+      return String(it.id) === did || (normTitle && normalizeColTitle(it.title) === normTitle);
+    });
     if (!exists) list.push(dItem);
   });
 

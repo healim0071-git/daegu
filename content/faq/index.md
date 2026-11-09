@@ -2240,7 +2240,7 @@ function getDiseaseDetailPageUrl(disease) {
   return '/columns/';
 }
 
-var HEALIM_CANONICAL_FAQ_VERSION = '20261030_v200_sync_v5';
+var HEALIM_CANONICAL_FAQ_VERSION = '20261109_v218_sync_v6';
 function getRealtimeBoardFaqData() {
   try {
     var storedVer = localStorage.getItem('healim_canonical_faq_version');
@@ -2250,10 +2250,17 @@ function getRealtimeBoardFaqData() {
       localStorage.removeItem('healim_deleted_faq_ids');
       localStorage.removeItem('healim_board_faqs');
       localStorage.removeItem('healim_board_faqs_permanent_backup');
+      localStorage.removeItem('healim_auto_faq_state_daegu');
       if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem('healim_board_faqs_backup');
       localStorage.setItem('healim_canonical_faq_version', HEALIM_CANONICAL_FAQ_VERSION);
       window.__healimAllowDataReset = false;
       window._healimBypassShield = false;
+    }
+  } catch(e) {}
+
+  try {
+    if (typeof window.syncDeterministicAutoPublish === 'function') {
+      window.syncDeterministicAutoPublish();
     }
   } catch(e) {}
 

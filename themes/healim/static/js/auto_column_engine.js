@@ -20,6 +20,30 @@
 
 (function(window) {
   'use strict';
+  var HEALIM_DATA_VERSION = '20261109_v218_sync_v6';
+  try {
+    var curVer = localStorage.getItem('healim_data_version');
+    if (curVer !== HEALIM_DATA_VERSION) {
+      window.__healimAllowDataReset = true;
+      window._healimBypassShield = true;
+      localStorage.removeItem('healim_deleted_column_ids');
+      localStorage.removeItem('healim_deleted_faq_ids');
+      localStorage.removeItem('healim_board_columns');
+      localStorage.removeItem('healim_board_columns_permanent_backup');
+      if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem('healim_board_columns_backup');
+      localStorage.removeItem('healim_board_faqs');
+      localStorage.removeItem('healim_board_faqs_permanent_backup');
+      if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem('healim_board_faqs_backup');
+      localStorage.removeItem('healim_auto_column_state_daegu');
+      localStorage.removeItem('healim_auto_faq_state_daegu');
+      localStorage.setItem('healim_data_version', HEALIM_DATA_VERSION);
+      localStorage.setItem('healim_canonical_version', HEALIM_DATA_VERSION);
+      localStorage.setItem('healim_canonical_faq_version', HEALIM_DATA_VERSION);
+      window.__healimAllowDataReset = false;
+      window._healimBypassShield = false;
+    }
+  } catch(e) {}
+
   // LocalStorage Bulletproof Shield: 치료칼럼 및 FAQ 영구 보존 보호 장치
   if (!window._healimStorageShieldInstalled) {
     window._healimStorageShieldInstalled = true;
@@ -143,28 +167,6 @@
       });
     } catch(e) {}
   }
-
-  var HEALIM_DATA_VERSION = '20261030_v200_sync_v5';
-  try {
-    var curVer = localStorage.getItem('healim_data_version');
-    if (curVer !== HEALIM_DATA_VERSION) {
-      window.__healimAllowDataReset = true;
-      window._healimBypassShield = true;
-      localStorage.removeItem('healim_deleted_column_ids');
-      localStorage.removeItem('healim_deleted_faq_ids');
-      localStorage.removeItem('healim_board_columns');
-      localStorage.removeItem('healim_board_columns_permanent_backup');
-      if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem('healim_board_columns_backup');
-      localStorage.removeItem('healim_board_faqs');
-      localStorage.removeItem('healim_board_faqs_permanent_backup');
-      if (typeof sessionStorage !== 'undefined') sessionStorage.removeItem('healim_board_faqs_backup');
-      localStorage.setItem('healim_data_version', HEALIM_DATA_VERSION);
-      localStorage.setItem('healim_canonical_version', HEALIM_DATA_VERSION);
-      localStorage.setItem('healim_canonical_faq_version', HEALIM_DATA_VERSION);
-      window.__healimAllowDataReset = false;
-      window._healimBypassShield = false;
-    }
-  } catch(e) {}
 
   var STORAGE_COL_STATE_KEY = 'healim_auto_column_state_daegu';
   var STORAGE_BOARD_COL_KEY = 'healim_board_columns';
@@ -1375,7 +1377,7 @@
 
     var now = new Date();
     var dateStr = now.getFullYear() + '.' + String(now.getMonth() + 1).padStart(2, '0') + '.' + String(now.getDate()).padStart(2, '0');
-    var newPostId = 'col-auto-' + Date.now();
+    var newPostId = (isManualTrigger ? 'col-auto-manual-' : 'col-auto-sched-') + Date.now();
 
     var newPost = {
       id: newPostId,
@@ -1691,31 +1693,354 @@
     }
   }
 
+  // =========================================================================
+  // [핵심] PC & 모바일 100% 동일 보장을 위한 날짜 시드 기반 결정론적(Deterministic) 스케줄 엔진
+  // - 브라우저별 Math.random() 및 관리자 로그인 여부에 의한 PC/모바일 불일치를 원천 차단합니다.
+  // - 2026.11.09(#218) 이후 발행분부터 모든 기기(PC/모바일/방문자/관리자)가 동일한 시각에
+  //   100% 동일한 ID, 제목, 카테고리, 지역, 조회수, 본문을 계산하여 표시합니다.
+  // =========================================================================
+  var DETERMINISTIC_ANCHOR_UTC = Date.UTC(2026, 10, 10, 0, 0, 0); // 2026-11-10 00:00:00 UTC 기준
+
+  function seededHashInt(seed, salt) {
+    var h = (seed ^ (salt * 0x9E3779B9)) >>> 0;
+    h = Math.imul(h ^ (h >>> 16), 0x85EBCA6B) >>> 0;
+    h = Math.imul(h ^ (h >>> 13), 0xC2B2AE35) >>> 0;
+    return (h ^ (h >>> 16)) >>> 0;
+  }
+
+  function pickDeterministicCategory(seedInt, slotIndex) {
+    var r = (seededHashInt(seedInt, 101) + slotIndex * 17) % 100;
+    if (r < 24) return '틱장애';
+    if (r < 38) return '공황장애';
+    if (r < 52) return '불면증';
+    if (r < 66) return '자율신경실조증';
+    if (r < 73) return '갱년기';
+    if (r < 78) return '어지럼증';
+    if (r < 83) return 'ADHD';
+    if (r < 88) return '강박증';
+    if (r < 93) return '대인기피증';
+    if (r < 97) return '불안장애';
+    return '다한증';
+  }
+
+  function pickDeterministicRegion(seedInt) {
+    var rand = (seededHashInt(seedInt, 202) % 10000) / 100;
+    var acc = 0;
+    for (var i = 0; i < REGION_DATA.length; i++) {
+      acc += REGION_DATA[i].weight;
+      if (rand <= acc || i === REGION_DATA.length - 1) {
+        return REGION_DATA[i];
+      }
+    }
+    return REGION_DATA[0];
+  }
+
+  function pickDeterministicTwoDongs(dongs, seedInt) {
+    if (!dongs || dongs.length < 2) return dongs ? dongs.join(' ') : '';
+    var idx1 = seededHashInt(seedInt, 303) % dongs.length;
+    var idx2 = (idx1 + 1 + (seededHashInt(seedInt, 304) % (dongs.length - 1))) % dongs.length;
+    return dongs[idx1] + '과 ' + dongs[idx2];
+  }
+
+  function generateDeterministicVisitSentence(regionName, dongsText, diseaseCat, seedInt) {
+    var templates = [
+      '최근 ' + regionName + ' ' + dongsText + ' 등 ' + regionName + ' 주요 지역에서 ' + diseaseCat + ' 증상으로 병원과 한의원을 알아보시다가 대구 수성구 범어역 해아림한의원 대구본점을 내원하시는 분들이 부쩍 늘고 있습니다.',
+      regionName + ' ' + dongsText + '에서 직장 생활과 일상 중 불쑥 찾아오는 ' + diseaseCat + ' 증세로 고통받으시며 대구 수성구 해아림한의원을 직접 찾아오시는 환자분들이 꾸준히 늘고 있습니다.',
+      '신경과나 일반 병원 검진 후에도 뚜렷한 원인을 찾지 못해 ' + regionName + ' ' + dongsText + ' 등지에서 ' + diseaseCat + ' 한방 자생력 치료를 위해 본원으로 내원하시는 분들이 상당수 계십니다.',
+      '자녀의 ' + diseaseCat + ' 문제로 마음 졸이시던 부모님들께서 ' + regionName + ' ' + dongsText + ' 지역에서도 대구 해아림한의원 본점으로 심층 상담과 진료를 위해 발걸음해 주십니다.',
+      regionName + ' ' + dongsText + '에서 대중교통(기차·지하철)이나 자가용을 이용해 원거리 통원 치료를 진행하시는 ' + diseaseCat + ' 환자분들의 내원 비중이 꾸준히 높아지고 있습니다.'
+    ];
+    return templates[seededHashInt(seedInt, 404) % templates.length];
+  }
+
+  function getDeterministicDiseaseStat(diseaseCat, seedInt) {
+    var norm = normalizeDiseaseName(diseaseCat);
+    var stats = DISEASE_STATISTICS_DATA[norm] || DISEASE_STATISTICS_DATA[diseaseCat] || [
+      norm + ' 질환은 뇌신경계 조절 기능 저하와 자율신경 불균형으로 인해 발생하며, 조기에 정확한 원인을 분석하여 맞춤 치료를 진행하는 것이 만성화를 막는 지름길입니다.'
+    ];
+    return stats[seededHashInt(seedInt, 505) % stats.length];
+  }
+
+  function getDeterministicDiseaseQna(diseaseCat, seedInt) {
+    var norm = normalizeDiseaseName(diseaseCat);
+    var qnas = DISEASE_QNA_TEMPLATES[norm] || DISEASE_QNA_TEMPLATES[diseaseCat] || [
+      {
+        q: norm + ' 증상으로 일상이 힘든데 어떻게 관리해야 하나요?',
+        aShort: norm + ' 원인 진단과 뇌 자생력 회복 로드맵',
+        qBody: 'Q. 최근 ' + norm + ' 증상으로 집중이 힘들고 일상생활에 지장이 큽니다. 한방 치료가 도움이 될까요?',
+        aBody: 'A. ' + norm + '은 뇌신경계와 자율신경계의 기능적 불균형에서 비롯됩니다. 개개인의 체질과 신경계 민감도를 정밀 진단하여 맞춤 한약과 침구 치료를 진행하면 신체 항상성을 되찾고 안정적으로 회복될 수 있습니다.'
+      }
+    ];
+    return qnas[seededHashInt(seedInt, 606) % qnas.length];
+  }
+
+  function isColumnPublishDay(dow, weekIndex) {
+    // 주 3~4회: 월(1), 수(3), 금(5) + 격주 토(6)
+    if (dow === 1 || dow === 3 || dow === 5) return true;
+    if (dow === 6 && (weekIndex % 2 === 0)) return true;
+    return false;
+  }
+
+  function isFaqPublishDay(dow, weekIndex) {
+    // 주 2~3회: 화(2), 금(5) + 격주 목(4)
+    if (dow === 2 || dow === 5) return true;
+    if (dow === 4 && (weekIndex % 2 === 1)) return true;
+    return false;
+  }
+
+  function buildDeterministicColumnPost(dateInt, dateDotStr, slotIndex) {
+    var postId = 'col-auto-sched-' + dateInt;
+    var targetCategory = pickDeterministicCategory(dateInt, slotIndex);
+    var isQnaType = (seededHashInt(dateInt, 701) % 100) < 70;
+    var regionObj = pickDeterministicRegion(dateInt);
+    var dongsText = pickDeterministicTwoDongs(regionObj.dongs, dateInt);
+    var visitSentence = generateDeterministicVisitSentence(regionObj.name, dongsText, targetCategory, dateInt);
+    var statText = getDeterministicDiseaseStat(targetCategory, dateInt);
+    var qnaObj = getDeterministicDiseaseQna(targetCategory, dateInt);
+
+    var catPool = columnsPool.filter(function(p) {
+      if (p.category !== targetCategory) return false;
+      if (!isQnaType) {
+        return p.title.includes('사례') || p.title.includes('치료사례') || p.title.includes('치료');
+      }
+      return true;
+    });
+    if (catPool.length === 0) {
+      catPool = columnsPool.filter(function(p) { return p.category === targetCategory; });
+    }
+    if (catPool.length === 0) {
+      catPool = columnsPool;
+    }
+    var candidate = catPool[(seededHashInt(dateInt, 702) + slotIndex) % catPool.length];
+    if (!candidate) return null;
+
+    var generatedTitle = '';
+    if (isQnaType) {
+      generatedTitle = '[' + regionObj.name + ' ' + targetCategory + '] ' + qnaObj.q + ' ' + qnaObj.aShort;
+    } else {
+      var baseTitle = candidate.title.replace(/^\[[^\]]+\]\s*/, '');
+      if (!baseTitle.includes('치료사례') && !baseTitle.includes('사례') && !baseTitle.includes('치료')) {
+        baseTitle += ' 한방 치료사례';
+      }
+      generatedTitle = '[' + regionObj.name + ' ' + targetCategory + '] ' + baseTitle;
+    }
+
+    var cleanOrigContent = candidate.content.replace(/^\[AEO[^\]]+\]\s*/g, '');
+    cleanOrigContent = cleanOrigContent.replace(/^안녕하세요\.\s*해아림한의원입니다\.\s*/g, '').trim();
+
+    var generatedContent = '안녕하세요. 해아림한의원입니다.\n\n' +
+      visitSentence + '\n\n' +
+      statText + '\n\n';
+
+    if (isQnaType) {
+      generatedContent += '[환자들이 가장 많이 묻는 핵심 질문과 답변]\n' +
+        qnaObj.qBody + '\n\n' +
+        qnaObj.aBody + '\n\n';
+    }
+    generatedContent += cleanOrigContent;
+
+    var generatedSummary = '[' + regionObj.name + ' ' + targetCategory + '] ' + regionObj.name + ' ' + dongsText + ' 지역 환자분들을 위한 ' + targetCategory + ' ' + (isQnaType ? 'Q&A 안내 및 ' : '치료사례 분석 및 ') + '원인 치료 가이드입니다.';
+
+    return {
+      id: postId,
+      category: targetCategory,
+      title: sanitizeMedicalCompliance(generatedTitle),
+      author: candidate.author || '해아림한의원',
+      date: dateDotStr,
+      views: 145 + (seededHashInt(dateInt, 703) % 50),
+      summary: sanitizeMedicalCompliance(generatedSummary),
+      content: sanitizeMedicalCompliance(generatedContent),
+      region: regionObj.name,
+      dongs: dongsText,
+      isAutoPublished: true
+    };
+  }
+
+  function buildDeterministicFaqPost(dateInt, dateDotStr, slotIndex) {
+    var faqId = 'faq-auto-sched-' + dateInt;
+    var targetCategory = pickDeterministicCategory(dateInt + 99, slotIndex);
+    var validPool = faqPool.filter(function(p) { return p && p.idPrefix && p.q; });
+    var catPool = validPool.filter(function(p) { return p.disease === targetCategory; });
+    var candidate = (catPool.length > 0)
+      ? catPool[(seededHashInt(dateInt, 801) + slotIndex) % catPool.length]
+      : validPool[(seededHashInt(dateInt, 802) + slotIndex) % validPool.length];
+    if (!candidate) return null;
+
+    var finalDisease = candidate.disease || targetCategory;
+    var regionObj = pickDeterministicRegion(dateInt + 77);
+    var dongsText = pickDeterministicTwoDongs(regionObj.dongs, dateInt + 77);
+    var statText = getDeterministicDiseaseStat(finalDisease, dateInt + 77);
+    var baseQ = candidate.q.replace(/^\[[^\]]+\]\s*/, '');
+    var rawQ = '[' + regionObj.name + ' ' + finalDisease + ' 상담] ' + baseQ;
+    var rawA = '최근 ' + regionObj.name + '(' + dongsText + ') 지역에서도 ' + finalDisease + ' 증상으로 내원하시어 자주 문의하시는 핵심 질문입니다.\n\n' +
+      candidate.a + '\n\n[임상 통계 및 치료 안내]\n' + statText;
+
+    return {
+      id: faqId,
+      disease: finalDisease,
+      q: sanitizeMedicalCompliance(rawQ),
+      a: sanitizeMedicalCompliance(rawA),
+      date: dateDotStr,
+      link: getDiseasePageUrl(finalDisease),
+      linkText: finalDisease + ' 정밀클리닉 바로가기',
+      isAutoPublished: true
+    };
+  }
+
+  function syncDeterministicAutoPublish() {
+    var nowMs = Date.now();
+    var maxFutureDays = 14;
+    var dayMs = 24 * 60 * 60 * 1000;
+    var elapsedDays = Math.floor((nowMs - DETERMINISTIC_ANCHOR_UTC) / dayMs);
+    var totalScanDays = Math.max(0, elapsedDays) + maxFutureDays;
+
+    var nextColScheduleTs = null;
+    var nextFaqScheduleTs = null;
+    var dueColumns = [];
+    var dueFaqs = [];
+    var colSlotIdx = 0;
+    var faqSlotIdx = 0;
+
+    for (var d = 0; d <= totalScanDays; d++) {
+      var dayUtcMs = DETERMINISTIC_ANCHOR_UTC + d * dayMs;
+      var dayDate = new Date(dayUtcMs);
+      var year = dayDate.getUTCFullYear();
+      var month = dayDate.getUTCMonth() + 1;
+      var day = dayDate.getUTCDate();
+      var dow = dayDate.getUTCDay();
+      var weekIdx = Math.floor(d / 7);
+      var dateInt = year * 10000 + month * 100 + day;
+      var dateDotStr = year + '.' + String(month).padStart(2, '0') + '.' + String(day).padStart(2, '0');
+
+      if (isColumnPublishDay(dow, weekIdx)) {
+        colSlotIdx++;
+        var cHour = 10 + (seededHashInt(dateInt, 11) % 2); // 10:00~11:59 KST
+        var cMin = seededHashInt(dateInt, 12) % 60;
+        var cSec = seededHashInt(dateInt, 13) % 60;
+        // KST (UTC+9) 시각을 UTC 타임스탬프로 변환하여 기기 시간대와 무관하게 동일 시각 보장
+        var cSlotTs = Date.UTC(year, month - 1, day, cHour - 9, cMin, cSec, 0);
+        if (cSlotTs <= nowMs) {
+          var cPost = buildDeterministicColumnPost(dateInt, dateDotStr, colSlotIdx);
+          if (cPost) dueColumns.push(cPost);
+        } else if (!nextColScheduleTs) {
+          nextColScheduleTs = cSlotTs;
+        }
+      }
+
+      if (isFaqPublishDay(dow, weekIdx)) {
+        faqSlotIdx++;
+        var fHour = 9 + (seededHashInt(dateInt, 21) % 3); // 09:00~11:59 KST
+        var fMin = seededHashInt(dateInt, 22) % 60;
+        var fSec = seededHashInt(dateInt, 23) % 60;
+        var fSlotTs = Date.UTC(year, month - 1, day, fHour - 9, fMin, fSec, 0);
+        if (fSlotTs <= nowMs) {
+          var fPost = buildDeterministicFaqPost(dateInt, dateDotStr, faqSlotIdx);
+          if (fPost) dueFaqs.push(fPost);
+        } else if (!nextFaqScheduleTs) {
+          nextFaqScheduleTs = fSlotTs;
+        }
+      }
+    }
+
+    // 1. 칼럼 동기화 (PC & 모바일 100% 동일)
+    try {
+      var colDelRaw = localStorage.getItem('healim_deleted_column_ids');
+      var colDelList = colDelRaw ? JSON.parse(colDelRaw) : [];
+      if (!Array.isArray(colDelList)) colDelList = [];
+
+      var colRaw = localStorage.getItem(STORAGE_BOARD_COL_KEY) || localStorage.getItem('healim_board_columns_permanent_backup');
+      var currentCols = colRaw ? JSON.parse(colRaw) : [];
+      if (!Array.isArray(currentCols)) currentCols = [];
+
+      // 구형 비결정적 col-auto-<timestamp> 제거 (col-auto-sched-* 및 col-auto-manual-* 만 유지)
+      var cleanedCols = currentCols.filter(function(it) {
+        if (!it || !it.id) return false;
+        var sid = String(it.id);
+        if (sid.indexOf('col-auto-') === 0 && sid.indexOf('col-auto-sched-') !== 0 && sid.indexOf('col-auto-manual-') !== 0) {
+          return false;
+        }
+        return true;
+      });
+      var colChanged = (cleanedCols.length !== currentCols.length);
+      currentCols = cleanedCols;
+
+      for (var i = 0; i < dueColumns.length; i++) {
+        var post = dueColumns[i];
+        var isDeleted = colDelList.indexOf(post.id) !== -1 || colDelList.indexOf(post.title) !== -1;
+        if (isDeleted) continue;
+        var exists = currentCols.some(function(it) { return it && (it.id === post.id || it.title === post.title); });
+        if (!exists) {
+          currentCols.unshift(post);
+          colChanged = true;
+        }
+      }
+
+      if (colChanged) {
+        window.__healimAllowDataReset = true;
+        localStorage.setItem(STORAGE_BOARD_COL_KEY, JSON.stringify(currentCols));
+        try {
+          localStorage.setItem('healim_board_columns_permanent_backup', JSON.stringify(currentCols));
+          if (typeof sessionStorage !== 'undefined') sessionStorage.setItem('healim_board_columns_backup', JSON.stringify(currentCols));
+        } catch(e) {}
+        window.__healimAllowDataReset = false;
+      }
+
+      var colState = getAutoColumnState();
+      if (nextColScheduleTs && colState.nextScheduleTime !== nextColScheduleTs) {
+        colState.nextScheduleTime = nextColScheduleTs;
+        saveAutoColumnState(colState);
+      }
+    } catch(e) {}
+
+    // 2. FAQ 동기화 (PC & 모바일 100% 동일)
+    try {
+      var faqDelRaw = localStorage.getItem('healim_deleted_faq_ids');
+      var faqDelList = faqDelRaw ? JSON.parse(faqDelRaw) : [];
+      if (!Array.isArray(faqDelList)) faqDelList = [];
+
+      var faqRaw = localStorage.getItem(STORAGE_BOARD_FAQ_KEY) || localStorage.getItem('healim_board_faqs_permanent_backup');
+      var currentFaqs = faqRaw ? JSON.parse(faqRaw) : [];
+      if (!Array.isArray(currentFaqs)) currentFaqs = [];
+
+      var faqChanged = false;
+      for (var j = 0; j < dueFaqs.length; j++) {
+        var faq = dueFaqs[j];
+        var isFaqDel = faqDelList.indexOf(faq.id) !== -1 || faqDelList.indexOf(faq.q) !== -1;
+        if (isFaqDel) continue;
+        var faqExists = currentFaqs.some(function(it) { return it && (it.id === faq.id || it.q === faq.q); });
+        if (!faqExists) {
+          currentFaqs.unshift(faq);
+          faqChanged = true;
+        }
+      }
+
+      if (faqChanged) {
+        window.__healimAllowDataReset = true;
+        localStorage.setItem(STORAGE_BOARD_FAQ_KEY, JSON.stringify(currentFaqs));
+        try {
+          localStorage.setItem('healim_board_faqs_permanent_backup', JSON.stringify(currentFaqs));
+          if (typeof sessionStorage !== 'undefined') sessionStorage.setItem('healim_board_faqs_backup', JSON.stringify(currentFaqs));
+        } catch(e) {}
+        window.__healimAllowDataReset = false;
+      }
+
+      var faqState = getAutoFaqState();
+      if (nextFaqScheduleTs && faqState.nextScheduleTime !== nextFaqScheduleTs) {
+        faqState.nextScheduleTime = nextFaqScheduleTs;
+        saveAutoFaqState(faqState);
+      }
+      return Boolean(colChanged || faqChanged);
+    } catch(e) {}
+    return false;
+  }
+
   function checkAndRunDualPublish() {
-    var isSuper = isHealimSuperAdmin();
-    if (!isSuper) return; // [방문자 기기간 불일치 방지] 최고관리자 상태가 아니면 클라이언트 자동발행을 차단하여 PC/모바일 정합성 유지
-    var now = Date.now();
-
-    // 1. 칼럼 체크
-    var colState = getAutoColumnState();
-    if (!colState.nextScheduleTime) {
-      colState.nextScheduleTime = calculateNextColumnSchedule(now);
-      saveAutoColumnState(colState);
+    var changed = syncDeterministicAutoPublish();
+    if (changed) {
+      if (typeof window.renderColumnsList === 'function') window.renderColumnsList();
+      if (typeof window.renderFaqList === 'function') window.renderFaqList();
+      if (typeof window.renderCommonBottomRealtimeAll === 'function') window.renderCommonBottomRealtimeAll();
     }
-    if (now >= colState.nextScheduleTime) {
-      publishOneAutoColumn(false);
-    }
-
-    // 2. FAQ 체크
-    var faqState = getAutoFaqState();
-    if (!faqState.nextScheduleTime) {
-      faqState.nextScheduleTime = calculateNextFaqSchedule(now);
-      saveAutoFaqState(faqState);
-    }
-    if (now >= faqState.nextScheduleTime) {
-      publishOneAutoFaq(false);
-    }
-
     updateAdminBadges();
   }
 
@@ -1950,6 +2275,7 @@
   }
 
   // 전역 노출
+  window.syncDeterministicAutoPublish = syncDeterministicAutoPublish;
   window.updateAdminBadges = updateAdminBadges;
   window.checkAndRunDualPublish = checkAndRunDualPublish;
   window.checkAndRunAutoColumnPublish = checkAndRunDualPublish; // 하위 호환
