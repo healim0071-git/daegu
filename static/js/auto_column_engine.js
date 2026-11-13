@@ -1889,10 +1889,57 @@
 
   function syncDeterministicAutoPublish() {
     var nowMs = Date.now();
+    if (window._lastDeterministicSyncMs && (nowMs - window._lastDeterministicSyncMs < 55000)) {
+      return false;
+    }
+    window._lastDeterministicSyncMs = nowMs;
+
     var maxFutureDays = 14;
     var dayMs = 24 * 60 * 60 * 1000;
     var elapsedDays = Math.floor((nowMs - DETERMINISTIC_ANCHOR_UTC) / dayMs);
     var totalScanDays = Math.max(0, elapsedDays) + maxFutureDays;
+
+    var colDelList = [];
+    var currentCols = [];
+    var colChanged = false;
+    var existingColIds = {};
+    try {
+      var colDelRaw = localStorage.getItem('healim_deleted_column_ids');
+      colDelList = colDelRaw ? JSON.parse(colDelRaw) : [];
+      if (!Array.isArray(colDelList)) colDelList = [];
+
+      var colRaw = localStorage.getItem(STORAGE_BOARD_COL_KEY) || localStorage.getItem('healim_board_columns_permanent_backup');
+      currentCols = colRaw ? JSON.parse(colRaw) : [];
+      if (!Array.isArray(currentCols)) currentCols = [];
+
+      var cleanedCols = currentCols.filter(function(it) {
+        if (!it || !it.id) return false;
+        var sid = String(it.id);
+        if (sid.indexOf('col-auto-') === 0 && sid.indexOf('col-auto-sched-') !== 0 && sid.indexOf('col-auto-manual-') !== 0) {
+          return false;
+        }
+        existingColIds[sid] = true;
+        return true;
+      });
+      colChanged = (cleanedCols.length !== currentCols.length);
+      currentCols = cleanedCols;
+    } catch(e) {}
+
+    var faqDelList = [];
+    var currentFaqs = [];
+    var existingFaqIds = {};
+    try {
+      var faqDelRaw = localStorage.getItem('healim_deleted_faq_ids');
+      faqDelList = faqDelRaw ? JSON.parse(faqDelRaw) : [];
+      if (!Array.isArray(faqDelList)) faqDelList = [];
+
+      var faqRaw = localStorage.getItem(STORAGE_BOARD_FAQ_KEY) || localStorage.getItem('healim_board_faqs_permanent_backup');
+      currentFaqs = faqRaw ? JSON.parse(faqRaw) : [];
+      if (!Array.isArray(currentFaqs)) currentFaqs = [];
+      for (var k = 0; k < currentFaqs.length; k++) {
+        if (currentFaqs[k] && currentFaqs[k].id) existingFaqIds[String(currentFaqs[k].id)] = true;
+      }
+    } catch(e) {}
 
     var nextColScheduleTs = null;
     var nextFaqScheduleTs = null;
@@ -1920,8 +1967,11 @@
         // KST (UTC+9) 시각을 UTC 타임스탬프로 변환하여 기기 시간대와 무관하게 동일 시각 보장
         var cSlotTs = Date.UTC(year, month - 1, day, cHour - 9, cMin, cSec, 0);
         if (cSlotTs <= nowMs) {
-          var cPost = buildDeterministicColumnPost(dateInt, dateDotStr, colSlotIdx);
-          if (cPost) dueColumns.push(cPost);
+          var candColId = 'col-auto-sched-' + dateInt;
+          if (!existingColIds[candColId] && colDelList.indexOf(candColId) === -1) {
+            var cPost = buildDeterministicColumnPost(dateInt, dateDotStr, colSlotIdx);
+            if (cPost) dueColumns.push(cPost);
+          }
         } else if (!nextColScheduleTs) {
           nextColScheduleTs = cSlotTs;
         }
@@ -1934,8 +1984,11 @@
         var fSec = seededHashInt(dateInt, 23) % 60;
         var fSlotTs = Date.UTC(year, month - 1, day, fHour - 9, fMin, fSec, 0);
         if (fSlotTs <= nowMs) {
-          var fPost = buildDeterministicFaqPost(dateInt, dateDotStr, faqSlotIdx);
-          if (fPost) dueFaqs.push(fPost);
+          var candFaqId = 'faq-auto-sched-' + dateInt;
+          if (!existingFaqIds[candFaqId] && faqDelList.indexOf(candFaqId) === -1) {
+            var fPost = buildDeterministicFaqPost(dateInt, dateDotStr, faqSlotIdx);
+            if (fPost) dueFaqs.push(fPost);
+          }
         } else if (!nextFaqScheduleTs) {
           nextFaqScheduleTs = fSlotTs;
         }
@@ -1944,26 +1997,6 @@
 
     // 1. 칼럼 동기화 (PC & 모바일 100% 동일)
     try {
-      var colDelRaw = localStorage.getItem('healim_deleted_column_ids');
-      var colDelList = colDelRaw ? JSON.parse(colDelRaw) : [];
-      if (!Array.isArray(colDelList)) colDelList = [];
-
-      var colRaw = localStorage.getItem(STORAGE_BOARD_COL_KEY) || localStorage.getItem('healim_board_columns_permanent_backup');
-      var currentCols = colRaw ? JSON.parse(colRaw) : [];
-      if (!Array.isArray(currentCols)) currentCols = [];
-
-      // 구형 비결정적 col-auto-<timestamp> 제거 (col-auto-sched-* 및 col-auto-manual-* 만 유지)
-      var cleanedCols = currentCols.filter(function(it) {
-        if (!it || !it.id) return false;
-        var sid = String(it.id);
-        if (sid.indexOf('col-auto-') === 0 && sid.indexOf('col-auto-sched-') !== 0 && sid.indexOf('col-auto-manual-') !== 0) {
-          return false;
-        }
-        return true;
-      });
-      var colChanged = (cleanedCols.length !== currentCols.length);
-      currentCols = cleanedCols;
-
       for (var i = 0; i < dueColumns.length; i++) {
         var post = dueColumns[i];
         var isDeleted = colDelList.indexOf(post.id) !== -1 || colDelList.indexOf(post.title) !== -1;
@@ -1994,14 +2027,6 @@
 
     // 2. FAQ 동기화 (PC & 모바일 100% 동일)
     try {
-      var faqDelRaw = localStorage.getItem('healim_deleted_faq_ids');
-      var faqDelList = faqDelRaw ? JSON.parse(faqDelRaw) : [];
-      if (!Array.isArray(faqDelList)) faqDelList = [];
-
-      var faqRaw = localStorage.getItem(STORAGE_BOARD_FAQ_KEY) || localStorage.getItem('healim_board_faqs_permanent_backup');
-      var currentFaqs = faqRaw ? JSON.parse(faqRaw) : [];
-      if (!Array.isArray(currentFaqs)) currentFaqs = [];
-
       var faqChanged = false;
       for (var j = 0; j < dueFaqs.length; j++) {
         var faq = dueFaqs[j];
@@ -2295,10 +2320,18 @@
 
   setInterval(checkAndRunDualPublish, 60000);
 
+  function scheduleInitialPublishCheck() {
+    if (typeof window.requestIdleCallback === 'function') {
+      window.requestIdleCallback(checkAndRunDualPublish, { timeout: 1000 });
+    } else {
+      setTimeout(checkAndRunDualPublish, 80);
+    }
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', checkAndRunDualPublish);
+    document.addEventListener('DOMContentLoaded', scheduleInitialPublishCheck);
   } else {
-    checkAndRunDualPublish();
+    scheduleInitialPublishCheck();
   }
 
 })(window);

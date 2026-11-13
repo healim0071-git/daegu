@@ -9,10 +9,11 @@
   </main>
   {{ if ne .Type "login" }}
   {{ partial "common-bottom-community.html" . }}
+  <script defer data-cfasync="false" src="/js/bottom_community.js?v=20261113_opt1"></script>
   {{ end }}
   {{ partial "footer.html" . }}
   {{ partial "floating-bar.html" . }}
-  <script data-cfasync="false" src="/js/main.js?v={{ now.Unix }}"></script>
-  <script data-cfasync="false" src="/js/auto_column_engine.js?v={{ now.Unix }}"></script>
+  <script defer data-cfasync="false" src="/js/main.js?v=20261113_opt1"></script>
+  <script defer data-cfasync="false" src="/js/auto_column_engine.js?v=20261113_opt1"></script>
 </body>
 </html>

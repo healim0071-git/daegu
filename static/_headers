@@ -1,52 +1,29 @@
-﻿/*
-  Cache-Control: no-cache, no-store, must-revalidate, max-age=0, s-maxage=0
-  CDN-Cache-Control: no-store
-  Cloudflare-CDN-Cache-Control: no-store
+/*
+  Cache-Control: public, max-age=0, must-revalidate
 
 /*.html
-  Cache-Control: no-cache, no-store, must-revalidate, max-age=0, s-maxage=0
-  CDN-Cache-Control: no-store
-  Cloudflare-CDN-Cache-Control: no-store
-
-/community/
-  Cache-Control: no-cache, no-store, must-revalidate, max-age=0, s-maxage=0
-  CDN-Cache-Control: no-store
-  Cloudflare-CDN-Cache-Control: no-store
+  Cache-Control: public, max-age=0, must-revalidate
 
 /community/*
-  Cache-Control: no-cache, no-store, must-revalidate, max-age=0, s-maxage=0
-  CDN-Cache-Control: no-store
-  Cloudflare-CDN-Cache-Control: no-store
-
-/about/
-  Cache-Control: no-cache, no-store, must-revalidate, max-age=0, s-maxage=0
-  CDN-Cache-Control: no-store
-  Cloudflare-CDN-Cache-Control: no-store
+  Cache-Control: public, max-age=0, must-revalidate
 
 /about/*
-  Cache-Control: no-cache, no-store, must-revalidate, max-age=0, s-maxage=0
-  CDN-Cache-Control: no-store
-  Cloudflare-CDN-Cache-Control: no-store
-
-/js/*
-  Cache-Control: no-cache, no-store, must-revalidate, max-age=0
-  CDN-Cache-Control: no-store
-  Cloudflare-CDN-Cache-Control: no-store
-
-/css/*
-  Cache-Control: no-cache, no-store, must-revalidate, max-age=0
-  CDN-Cache-Control: no-store
-  Cloudflare-CDN-Cache-Control: no-store
-
-/images/*
-  Cache-Control: public, max-age=86400
-
-/columns/
-  Cache-Control: no-cache, no-store, must-revalidate, max-age=0, s-maxage=0
-  CDN-Cache-Control: no-store
-  Cloudflare-CDN-Cache-Control: no-store
+  Cache-Control: public, max-age=0, must-revalidate
 
 /columns/*
-  Cache-Control: no-cache, no-store, must-revalidate, max-age=0, s-maxage=0
-  CDN-Cache-Control: no-store
-  Cloudflare-CDN-Cache-Control: no-store
+  Cache-Control: public, max-age=0, must-revalidate
+
+/js/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+  CDN-Cache-Control: public, max-age=604800
+  Cloudflare-CDN-Cache-Control: public, max-age=604800
+
+/css/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+  CDN-Cache-Control: public, max-age=604800
+  Cloudflare-CDN-Cache-Control: public, max-age=604800
+
+/images/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=86400
+  CDN-Cache-Control: public, max-age=2592000
+  Cloudflare-CDN-Cache-Control: public, max-age=2592000
