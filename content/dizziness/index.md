@@ -5,7 +5,8 @@ h1_title: "대구 어지럼증 치료 병원 ㅣ 해아림한의원 대구본점
 disease_name: "어지럼증"
 hero_sub: "어지럼증 & 두통 (Dizziness & Headache) 집중치료 | 해아림한의원"
 hero_title: "16년 이상 어지럼증·두통·이명을<br>집중적으로 다뤄온<br>해아림한의원 어지럼증클리닉"
-description: "빙빙 도는 회전성 어지럼부터 멍하고 붕 뜨는 비회전성 어지럼증까지. 뇌 MRI·이비인후과 검사상 정상인 만성 어지럼, 이석증 치료 후 잔여 어지럼, 두통·이명 동반을 한방신경정신과 박사 김대억 대표원장의 16년 임상 노하우로 1:1 맞춤 치료합니다."
+description: "어지럼증이 나타나는 주요 원인(귀 문제·이석증·메니에르·자율신경), 동반 증상, 어지럼증 병원 어느 과 선택 가이드, 증상 완화 생활 습관까지 빙빙 도는 회전성부터 멍하고 붕 뜨는 비회전성 어지럼을 해아림한의원 대구본점 16년 임상 노하우로 1:1 맞춤 치료합니다."
+keywords: ["대구 어지럼증 치료", "어지럼증 주요 원인", "어지럼증 귀 문제", "어지럼증 동반 증상", "어지럼증 병원 어느 과", "어지럼증 완화 생활 습관", "이석증 잔여 어지럼", "한방 어지럼증 클리닉", "해아림한의원 대구본점"]
 layout: "disease"
 ---
 
@@ -171,7 +172,7 @@ layout: "disease"
 
 <!-- 5. 어지럼증의 5대 원인 분류 -->
 <div class="cond-section">
-<h2 class="cond-h2">어지럼증 원인은 무엇인가요?</h2>
+<h2 class="cond-h2">어지럼증이 나타나는 주요 원인은 무엇인가요?</h2>
 <p style="color: #475569; line-height: 1.75; margin-bottom: 18px;">
 어지럼증의 원인은 말초성(귀)부터 중추성(뇌), 자율신경계, 전신 체질 요인까지 다양합니다. 원인에 맞는 치료법을 적용해야 안정적인 회복이 가능합니다.
 </p>
@@ -333,9 +334,9 @@ layout: "disease"
 </div>
 </div>
 
-<!-- 12. 어지럼증, 어느 병원에 가야 할까요? -->
+<!-- 12. 어지럼증이 있을 때 어느 병원 어느 과로 가야 하나요? -->
 <div class="cond-section">
-<h2 class="cond-h2">어지럼증, 어느 병원에 가야 할까요?</h2>
+<h2 class="cond-h2">어지럼증이 있을 때 어느 병원 어느 과로 가야 하나요?</h2>
 <div style="line-height: 1.8; color: #334155; font-size: 1rem;">
 <p>
 어지럼증을 겪을 때 가장 큰 혼란은 <em>"이비인후과를 가야 하나, 신경과를 가야 하나, 한의원을 가야 하나?"</em>입니다. 증상의 양상에 따라 올바른 의료기관을 선택하는 가이드를 안내해 드립니다.
@@ -345,7 +346,7 @@ layout: "disease"
 <ul style="margin: 0; padding-left: 20px; color: #475569; line-height: 1.8; font-size: 0.95rem;">
 <li><strong>이비인후과 우선</strong>: 머리를 움직일 때 순간적으로 천장이 뱅글뱅글 도는 급성 회전성 어지럼, 한쪽 귀의 급격한 청력 저하가 동반될 때 (이석증, 급성 메니에르 감별)</li>
 <li><strong>신경과/응급실 우선</strong>: 갑작스러운 심한 어지럼과 함께 말이 어눌해지거나 편마비, 심한 벼락두통, 안면마비가 동반될 때 (뇌졸중 등 중추 질환 배제)</li>
-<li><strong>한방신경정신과 전문 클리닉 권장</strong>: 뇌 MRI나 이비인후과 검사상 이상이 없는데도 멍함·흔들림이 지속될 때, 이석증 시술 후 잔여 어지럼이 남았을 때, 두통·이명·자율신경실조증·불면증이 함께 복합적으로 나타날 때</li>
+<li><strong>한방 어지럼증 클리닉 권장</strong>: 뇌 MRI나 이비인후과 검사상 이상이 없는데도 멍함·흔들림이 지속될 때, 이석증 시술 후 잔여 어지럼이 남았을 때, 두통·이명·자율신경실조증·불면증이 함께 복합적으로 나타날 때</li>
 </ul>
 </div>
 <p>
@@ -366,14 +367,81 @@ layout: "disease"
 </div>
 </div>
 
-<!-- 14. 어지럼증 자주 묻는 질문 FAQ (BEST 12선 아코디언) -->
-<div class="cond-section">
+<!-- 14. 어지럼증 자주 묻는 질문 FAQ (BEST 15선 아코디언) -->
+<div class="cond-section" id="dizziness-faq-best">
 <h2 class="cond-h2">어지럼증 자주 묻는 질문 FAQ BEST</h2>
 
 <details class="faq-item" open>
 <summary>
 <div class="faq-summary-left">
 <span class="faq-q-badge">Q1.</span>
+<span>어지럼증 원인 중 귀 문제는 어떤 것들이 있나요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>어지럼증의 상당수는 평형 감각을 담당하는 속귀(내이) 전정기관 이상인 '말초성 어지럼증'에서 비롯되며, 대표적으로 이석증, 메니에르병, 전정신경염, 미로염 등이 있습니다.</strong>
+</p>
+<ul style="margin: 0 0 10px; padding-left: 20px; line-height: 1.7;">
+<li><strong>이석증(양성 돌발성 두위현훈)</strong>: 평형기관 속 미세한 칼슘 결정(이석)이 반고리관으로 떨어져 나와 발생합니다. 누웠다 일어나거나 고개를 돌릴 때 수초~1분 미만으로 천장이 빙빙 도는 회전감이 특징이며 청력 저하는 없습니다.</li>
+<li><strong>메니에르병</strong>: 속귀의 내림프액 압력이 높아져(내림프 수종) 발생하며, 20분~수 시간 지속되는 회전성 어지럼과 함께 이명(귀울림), 귀 먹먹함, 저음역대 청력 저하가 반복됩니다.</li>
+<li><strong>전정신경염</strong>: 바이러스 감염이나 면역 저하로 전정신경에 염증이 생겨 자세와 관계없이 하루~수일간 강한 회전성 어지럼과 구토가 이어집니다.</li>
+<li><strong>미로염·중이염 합병증</strong>: 내이 염증으로 어지럼증과 함께 청력 저하나 이명이 동반될 수 있습니다.</li>
+</ul>
+<p style="margin: 0;">
+이석정복술 등 급성기 처치 후에도 머리가 멍하고 붕 뜨는 잔여 어지럼이 남는다면 전정신경 피로와 뇌혈류·자율신경 회복 치료를 병행하는 것이 중요합니다.
+</p>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q2.</span>
+<span>어지럼증과 함께 나타나는 증상은 어떤 것들이 있나요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>어지럼증은 귀·뇌간·자율신경계가 긴밀히 연결되어 있어 단독으로 나타나기보다 귀 증상, 소화기·자율신경 증상, 두통·목 뭉침, 수면·인지 저하가 복합적으로 동반되는 경우가 많습니다.</strong>
+</p>
+<ul style="margin: 0 0 10px; padding-left: 20px; line-height: 1.7;">
+<li><strong>귀 관련 증상</strong>: 삐- 소리나 바람 소리 같은 이명, 귀가 꽉 찬 듯한 먹먹함(이충만감), 일시적 청력 저하</li>
+<li><strong>소화기·자율신경 증상</strong>: 속 메스꺼움·울렁거림·구토, 식은땀, 가슴 두근거림(심계항진), 가슴 답답함, 손발 저림 및 냉감</li>
+<li><strong>두통 및 경추 증상</strong>: 찌르는 편두통이나 묵직한 긴장성 두통, 뒷목·어깨 승모근 뭉침, 눈 피로 및 시야 흔들림</li>
+<li><strong>인지·수면·정서 증상</strong>: 머리가 안개 낀 듯 멍함(브레인 포그), 집중력 저하, 불면증, 외출·운전에 대한 불안감</li>
+</ul>
+<p style="margin: 0;">
+※ 단, 어지럼증과 함께 <strong>말이 어눌해짐, 한쪽 팔다리 마비·힘 빠짐, 물체가 두 개로 보이는 복시, 극심한 벼락두통, 보행 불능</strong>이 동반된다면 뇌졸중 등 응급 중추 질환 신호일 수 있으므로 즉시 응급실을 방문해야 합니다.
+</p>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q3.</span>
+<span>어지럼증 증상 완화에 도움이 되는 생활 습관은 무엇인가요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>어지럼증을 완화하고 재발을 줄이려면 전정신경계 피로와 뇌혈류 변동을 줄여주는 규칙적인 수면, 천천히 일어나기, 저염·수분 관리, 카페인·알코올 절제, 목 이완 및 가벼운 보행 습관이 핵심입니다.</strong>
+</p>
+<ul style="margin: 0 0 10px; padding-left: 20px; line-height: 1.7;">
+<li><strong>충분하고 규칙적인 수면(7~8시간)</strong>: 수면 부족은 자율신경을 과흥분시켜 전정기관과 소뇌 혈류를 떨어뜨리므로 일정한 수면 리듬을 유지하세요.</li>
+<li><strong>일어날 때 '3단계 천천히 기립' 실천</strong>: 누워 있다가 바로 일어서지 말고 ① 먼저 앉아 10~20초 호흡 가다듬기 → ② 발목·종아리에 힘주어 혈류 순환 → ③ 천천히 기립하면 기립성 어지럼과 이석 자극을 예방할 수 있습니다.</li>
+<li><strong>저염식·충분한 수분 섭취·카페인·음주 제한</strong>: 짠 음식은 내이 림프액 압력을 높이고, 카페인·알코올·니코틴은 미세혈관을 수축시켜 어지럼을 악화시킵니다. 하루 1.5L 안팎의 수분을 나누어 마시고 규칙적으로 식사하세요.</li>
+<li><strong>급격한 고개 젖힘·거북목 자세 피하기</strong>: 고개를 갑자기 젖히거나 스마트폰을 오래 숙여 보면 상부 경추와 추골동맥을 압박하므로 눈높이 자세와 가벼운 목·어깨 스트레칭을 병행하세요.</li>
+<li><strong>급성기 이후 가벼운 보행과 시선 고정 운동</strong>: 구토가 심한 급성 발작 1~2일만 안정하고, 이후에는 안전한 환경에서 천천히 걷기와 전정 재활 운동을 병행해야 뇌의 평형 회복이 빨라집니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item">
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q4.</span>
 <span>어지럼증이 있으면 무조건 이석증인가요?</span>
 </div>
 </summary>
@@ -385,7 +453,7 @@ A. 아닙니다. 이석증은 어지럼증의 매우 흔한 원인 중 하나이
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q2.</span>
+<span class="faq-q-badge">Q5.</span>
 <span>머리가 빙빙 돌지 않아도 어지럼증인가요?</span>
 </div>
 </summary>
@@ -397,7 +465,7 @@ A. 그렇습니다. 의학적으로 어지럼증은 회전감(현훈)뿐만 아�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q3.</span>
+<span class="faq-q-badge">Q6.</span>
 <span>어지러울 때 무조건 가만히 누워만 있어야 하나요?</span>
 </div>
 </summary>
@@ -409,7 +477,7 @@ A. 급성 회전성 발작으로 구토가 심한 초기 1~2일간은 침상 안
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q4.</span>
+<span class="faq-q-badge">Q7.</span>
 <span>뇌 MRI나 이비인후과 검사에서 이상이 없다는데 왜 어지러움이 계속될까요?</span>
 </div>
 </summary>
@@ -421,7 +489,7 @@ A. 검사는 정상이라는 것은 뇌종양, 뇌경색, 이석 탈락 같은 '
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q5.</span>
+<span class="faq-q-badge">Q8.</span>
 <span>이석증 치료(정복술) 후에도 머리가 멍하고 흔들리는 잔여 어지럼증이 남는 이유는?</span>
 </div>
 </summary>
@@ -433,7 +501,7 @@ A. 빠져나온 이석 알갱이를 제자리로 돌려놓는 이석정복술에
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q6.</span>
+<span class="faq-q-badge">Q9.</span>
 <span>어지럼증과 두통이 함께 나타나는 이유는 무엇인가요?</span>
 </div>
 </summary>
@@ -445,7 +513,7 @@ A. 두통과 어지럼증은 삼차신경과 전정신경핵의 신경 통로를
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q7.</span>
+<span class="faq-q-badge">Q10.</span>
 <span>어지럼증과 귀에서 소리가 나는 이명이 같이 생길 수도 있나요?</span>
 </div>
 </summary>
@@ -457,7 +525,7 @@ A. 네, 매우 흔하게 동반됩니다. 속귀(내이)의 달팽이관(청각)
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q8.</span>
+<span class="faq-q-badge">Q11.</span>
 <span>스트레스를 받거나 잠을 못 자면 어지럼증이 심해지는 이유는?</span>
 </div>
 </summary>
@@ -469,7 +537,7 @@ A. 스트레스와 수면 부족은 뇌간의 자율신경 중추를 직접 교�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q9.</span>
+<span class="faq-q-badge">Q12.</span>
 <span>앉았다 일어설 때 눈앞이 아찔해지는 것은 기립성 저혈압인가요?</span>
 </div>
 </summary>
@@ -481,7 +549,7 @@ A. 기립성 저혈압이나 뇌혈류의 일시적 저하일 가능성이 높�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q10.</span>
+<span class="faq-q-badge">Q13.</span>
 <span>한의학에서는 어지럼증을 어떻게 치료하나요?</span>
 </div>
 </summary>
@@ -493,7 +561,7 @@ A. 한의학에서는 어지럼증을 현훈(眩暈)이라 하며, 체내 노폐
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q11.</span>
+<span class="faq-q-badge">Q14.</span>
 <span>어지럼증이 수개월~수년째 오래되었는데도 치료가 가능한가요?</span>
 </div>
 </summary>
@@ -505,7 +573,7 @@ A. 네, 충분히 치료가 가능합니다. 만성화된 어지럼증은 대개
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q12.</span>
+<span class="faq-q-badge">Q15.</span>
 <span>이석증인지 자율신경 문제인지 확실치 않아도 상담받을 수 있나요?</span>
 </div>
 </summary>
