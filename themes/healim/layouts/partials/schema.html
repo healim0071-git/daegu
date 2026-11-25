@@ -189,10 +189,10 @@
         {{- if gt $idx 0 }},{{- end }}
         {
           "@type": "Question",
-          "name": {{ $faq.q | jsonify }},
+          "name": {{ $faq.q | jsonify | safeJS }},
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": {{ $faq.a | jsonify }}
+            "text": {{ $faq.a | jsonify | safeJS }}
           }
         }
         {{- end }}
