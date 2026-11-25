@@ -4,7 +4,8 @@ seo_title: "대구 ADHD 검사 병원 ㅣ 해아림한의원 대구본점ㅣ 대
 h1_title: "대구 ADHD 검사 병원 ㅣ 해아림한의원 대구본점ㅣ 대구 ADHD 치료, 성인ADHD, 초등ADHD 테스트"
 disease_name: "ADHD"
 hero_sub: "ADHD (주의력결핍 과잉행동장애) 집중치료 | 해아림한의원"
-description: "산만함과 충동성, 숙제 미루기부터 조용한 ADHD, 틱·불면 동반까지. 16년 임상 경험의 한방신경정신과 박사 김대억 대표원장의 1:1 심층 진료. 전두엽 뇌기능 활성화와 두뇌훈련으로 아이의 억제 조절 자생력을 키웁니다."
+description: "ADHD 주요 증상과 특징, 진단 검사(CAT·뇌파·발달평가), 소아·성인 ADHD 증상 및 치료 방법 차이, 인지행동치료(CBT) 효과, 생활 습관 관리까지. 해아림한의원 대구본점 16년 임상 노하우로 전두엽 두뇌 자생력을 키웁니다."
+keywords: ["대구 ADHD 검사", "대구 ADHD 치료", "성인 ADHD 특징", "소아 ADHD 성인 ADHD 차이", "ADHD 진단 검사", "ADHD 인지행동치료", "ADHD 생활 습관", "조용한 ADHD", "해아림한의원 대구본점"]
 layout: "disease"
 hero_title: "16년 이상 소아·청소년·성인 ADHD를<br>집중적으로 다뤄온<br>해아림한의원 ADHD클리닉"
 ---
@@ -29,9 +30,10 @@ ADHD는 단순히 아이의 성격이 급하거나 부모의 훈육이 부족해
 
 <!-- 자가진단 체크리스트 -->
 <div style="background: #F8FAFB; border: 1.5px solid #D6E4EE; border-radius: 14px; padding: 24px 22px; margin-bottom: 20px;">
-<h3 style="font-size: 1.15rem; font-weight: 800; color: #0C4349; margin-top: 0; margin-bottom: 14px; display: flex; align-items: center; gap: 8px;">
+<h3 style="font-size: 1.15rem; font-weight: 800; color: #0C4349; margin-top: 0; margin-bottom: 6px; display: flex; align-items: center; gap: 8px;">
 <span>📋</span> ADHD 의심 자가체크리스트
 </h3>
+<h4 style="font-size: 1rem; font-weight: 700; color: #146369; margin: 0 0 14px;">ADHD의 주요 증상은 어떤 것들이 있나요?</h4>
 <ul class="symptom-grid" style="margin: 0 !important;">
 <li class="symptom-item">숙제나 준비물을 매일 빠뜨리고 잊어버린다</li>
 <li class="symptom-item">우산, 연필, 옷 등 자기 물건을 자주 잃어버린다</li>
@@ -93,6 +95,7 @@ ADHD를 겪는 아이들은 게으르거나 나쁜 의도를 가진 것이 결�
 <!-- 3. ADHD 4대 대표 유형 (2x2 반응형 카드 그리드) -->
 <div class="cond-section">
 <h2 class="cond-h2">ADHD 대표 증상 4대 유형: 모두가 산만한 것은 아닙니다</h2>
+<h3 style="font-size: 1.12rem; font-weight: 800; color: #0C4349; margin: 4px 0 14px;">ADHD 증상은 주로 어떤 특징이 있나요?</h3>
 <p style="color: #475569; line-height: 1.7; margin-bottom: 16px;">
 ADHD라고 하면 흔히 교실을 뛰어다니는 극심한 산만함을 떠올리지만, 실제로는 얌전한 '조용한 ADHD'부터 성인기 실행장애까지 다양한 형태로 나타납니다.
 </p>
@@ -190,7 +193,7 @@ ADHD를 겪는 아이들의 절반 이상은 ADHD 단독이 아니라 <strong>�
 
 <!-- 7. 해아림 ADHD 정밀 검사 시스템 -->
 <div class="cond-section">
-<h2 class="cond-h2">해아림한의원 대구본점 ADHD 정밀 검사 시스템</h2>
+<h2 class="cond-h2">ADHD 진단을 받으려면 어떤 검사를 받나요?</h2>
 <p style="color: #475569; line-height: 1.7; margin-bottom: 16px;">
 ADHD는 설문지 한 장으로 쉽게 단정해서는 안 됩니다. 뇌 기능의 객관적 측정과 다면적 환경 평가를 결합한 8단계 정밀 검사를 진행합니다.
 </p>
@@ -233,6 +236,7 @@ ADHD는 설문지 한 장으로 쉽게 단정해서는 안 됩니다. 뇌 기능
 <!-- 8. 해아림 1:1 심층 자생력 치료 시스템 -->
 <div class="cond-section">
 <h2 class="cond-h2">해아림한의원 대구본점 1:1 심층 자생력 치료법</h2>
+<h3 style="font-size: 1.12rem; font-weight: 800; color: #0C4349; margin: 4px 0 14px;">ADHD 치료에는 어떤 방법이 사용되나요?</h3>
 <p style="color: #475569; line-height: 1.7; margin-bottom: 16px;">
 양약으로 신경을 일시적으로 자극하는 데 머무르지 않고, <strong>전두엽 신경망의 발달을 촉진하여 아이 스스로 주의력을 통제하는 '두뇌 자생력'</strong>을 완성합니다.
 </p>
@@ -291,14 +295,158 @@ ADHD는 방치할수록 학년이 올라가며 학습 결손이 누적되고, �
 </div>
 </div>
 
-<!-- 11. ADHD 자주 묻는 질문 FAQ (BEST 10선 아코디언) -->
-<div class="cond-section">
+<!-- 11. ADHD 자주 묻는 질문 FAQ (BEST 16선 아코디언) -->
+<div class="cond-section" id="adhd-faq-best">
 <h2 class="cond-h2">ADHD 자주 묻는 질문 FAQ BEST</h2>
 
 <details class="faq-item" open>
 <summary>
 <div class="faq-summary-left">
 <span class="faq-q-badge">Q1.</span>
+<span>ADHD 진단은 어떻게 받을 수 있나요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>ADHD는 설문지나 단일 검사 하나로 확정하지 않고, 전문 의료진의 심층 임상 면담(발달력·생활 기능 평가), 표준화된 행동 평가 척도, 객관적 주의력·뇌기능 검사(CAT/CPT, 뇌파 등)를 종합해 DSM-5 진단 기준에 따라 진단합니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>다환경·지속성 확인</strong>: 부주의 또는 과잉행동·충동성 증상이 6개월 이상 지속되며, 가정·학교·직장 등 최소 2곳 이상의 환경에서 일관되게 기능 저하를 일으키는지 확인합니다. (만 12세 이전 아동기 증상 흔적 점검)</li>
+<li><strong>표준 척도 및 객관적 검사</strong>: 소아는 부모·교사 평가 척도(ARS 등), 성인은 자가보고 척도(ASRS)와 함께 종합주의력검사(CAT/CPT), 정량 뇌파(EEG), 자율신경(HRV) 검사로 주의력·작업기억·충동 억제력을 객관화합니다.</li>
+<li><strong>동반 질환 감별</strong>: 틱장애, 불안장애, 우울증, 수면장애, 학습장애와 증상이 겹칠 수 있으므로 이를 함께 감별해 정확한 치료 계획을 세웁니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q2.</span>
+<span>성인 ADHD의 특징은 무엇인가요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>성인 ADHD는 겉으로 뛰어다니는 과잉행동은 줄어드는 대신, 내면의 안절부절못함과 만성 미루기, 시간 관리 실패, 잦은 업무 실수, 충동적 소비·감정 기복 같은 '실행기능(Executive Function) 저하'가 두드러지는 것이 특징입니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>업무 및 시간 관리 어려움</strong>: 우선순위를 정하지 못해 중요한 일을 마감 직전까지 미루거나, 지각·일정 누락·물건 분실이 반복됩니다.</li>
+<li><strong>집중력의 극단적 양극화</strong>: 흥미 있는 일에는 밤을 새워 과몰입하지만, 단조로운 보고서 작성이나 회의에서는 멍해지고 실수가 잦습니다.</li>
+<li><strong>충동성과 감정 조절 미숙</strong>: 대화 중 말 끊기, 계획 없는 충동구매·이직, 사소한 스트레스에도 욱하는 감정 기복이 나타납니다.</li>
+<li><strong>2차 정서 문제 동반</strong>: 오랜 자책과 대인·직장 마찰이 누적되면서 번아웃, 우울증, 불안장애, 수면장애를 함께 호소하는 경우가 많습니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q3.</span>
+<span>성인 ADHD와 소아 ADHD의 증상 차이는 무엇인가요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>소아 ADHD는 수업 중 자리 이탈·뛰어다님 등 '눈에 띄는 신체 과잉행동과 충동성'이 두드러지는 반면, 성인 ADHD는 외적 움직임이 줄어드는 대신 '내적 초조함, 업무 실행력·시간 관리 실패, 감정 기복' 형태로 양상이 변화합니다.</strong>
+</p>
+<div style="overflow-x: auto; margin-bottom: 10px;">
+<table style="width: 100%; border-collapse: collapse; font-size: 0.91rem; text-align: left; background: #fff;">
+<thead>
+<tr style="background: #f1f5f9; color: #0C4349;">
+<th style="padding: 9px 11px; border: 1px solid #cbd5e1; width: 22%;">구분</th>
+<th style="padding: 9px 11px; border: 1px solid #cbd5e1; width: 39%;">소아·청소년 ADHD</th>
+<th style="padding: 9px 11px; border: 1px solid #cbd5e1; width: 39%;">성인 ADHD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 9px 11px; border: 1px solid #e2e8f0; font-weight: 700; color: #0C4349;">과잉행동</td>
+<td style="padding: 9px 11px; border: 1px solid #e2e8f0;">뛰어다님, 자리 이탈, 손발 꼼지락거림</td>
+<td style="padding: 9px 11px; border: 1px solid #e2e8f0;">신체 움직임은 감소, 내면의 초조함·안절부절못함·수다</td>
+</tr>
+<tr style="background: #f8fafc;">
+<td style="padding: 9px 11px; border: 1px solid #e2e8f0; font-weight: 700; color: #0C4349;">주의력 결핍</td>
+<td style="padding: 9px 11px; border: 1px solid #e2e8f0;">수업 집중 곤란, 준비물·숙제 누락, 멍때림</td>
+<td style="padding: 9px 11px; border: 1px solid #e2e8f0;">업무 미루기, 마감·약속 실수, 우선순위 설정 실패</td>
+</tr>
+<tr>
+<td style="padding: 9px 11px; border: 1px solid #e2e8f0; font-weight: 700; color: #0C4349;">충동성</td>
+<td style="padding: 9px 11px; border: 1px solid #e2e8f0;">차례 못 기다림, 친구 방해, 위험 행동</td>
+<td style="padding: 9px 11px; border: 1px solid #e2e8f0;">충동소비, 잦은 이직, 감정 폭발, 성급한 결정</td>
+</tr>
+<tr style="background: #f8fafc;">
+<td style="padding: 9px 11px; border: 1px solid #e2e8f0; font-weight: 700; color: #0C4349;">흔한 동반 문제</td>
+<td style="padding: 9px 11px; border: 1px solid #e2e8f0;">틱장애, 학습 부진, 또래 갈등, 야간 입면 곤란</td>
+<td style="padding: 9px 11px; border: 1px solid #e2e8f0;">만성 우울·불안, 번아웃, 불면증, 자존감 저하</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q4.</span>
+<span>성인 ADHD와 소아 ADHD의 치료 방법은 어떻게 다른가요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>두 연령대 모두 전두엽 주의조절력 회복이라는 핵심 원리는 같지만, 소아 ADHD는 성장·두뇌 발달 촉진과 부모 양육·학습 환경 코칭에 초점을 맞추고, 성인 ADHD는 직장·생활 실행기능 훈련과 동반된 우울·불안·수면 문제 통합 관리에 비중을 둡니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>소아·청소년 ADHD 치료</strong>: 전두엽 신경망 성숙을 돕는 맞춤 한약(식욕 저하나 틱 유발 부담 최소화), 뉴로피드백·시청지각 통합훈련과 함께 가정·학교에서의 보상 체계·시각적 체크리스트를 설계하는 <strong>부모 양육 코칭</strong>이 핵심입니다.</li>
+<li><strong>성인 ADHD 치료</strong>: 만성 뇌 피로와 자율신경 불균형, 동반 불면·불안·번아웃을 함께 다스리는 맞춤 한방 치료와 뇌파 훈련에 더해, 시간 관리·업무 세분화·충동 조절을 실전에 적용하는 <strong>성인 인지행동치료(CBT) 및 실행기능 코칭</strong>의 비중이 높습니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q5.</span>
+<span>ADHD 치료에 인지행동 치료는 어떤 도움이 되나요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>ADHD 인지행동치료(CBT)는 약물이나 한약이 뇌의 집중 기반을 다져주는 동안, 실제 일상에서 무너진 시간 관리·과제 실행 습관을 구체적인 행동 전략으로 교정하고 반복된 실패로 생긴 부정적 자기 인식을 회복하는 데 큰 도움이 됩니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>실행기능 및 시간 관리 기술 습득</strong>: 막막한 과제를 10~15분 단위의 작은 단계로 쪼개고, 타이머·체크리스트·캘린더를 활용해 미루기 습관을 끊는 구체적 기술을 훈련합니다.</li>
+<li><strong>충동 및 감정 조절 전략</strong>: 화가 나거나 충동이 올라올 때 즉각 반응하지 않고 '잠시 멈춤 → 상황 점검 → 대안 선택'으로 이어지는 브레이크 루틴을 익힙니다.</li>
+<li><strong>왜곡된 자책감 교정</strong>: "나는 원래 게으르고 실패하는 사람"이라는 흑백논리와 자존감 저하를 현실적인 시각으로 바꾸어 치료 지속력과 일상 적응력을 높여줍니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q6.</span>
+<span>ADHD 치료와 증상 완화에 도움이 되는 생활 습관은 무엇인가요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>ADHD는 전두엽 피로도와 도파민 자극 환경에 매우 민감하므로, 규칙적인 수면과 아침 단백질 식사, 유산소 운동, 과제를 작게 쪼개는 시각적 체크리스트, 스마트폰·숏폼 과자극 제한이 치료 효과를 크게 높여줍니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>규칙적인 수면 확보(아동 8~9시간, 성인 7~8시간)</strong>: 수면 부족은 전두엽의 충동 억제 기능을 즉각 떨어뜨리므로 취침 1시간 전 화면을 끄고 일정한 수면 리듬을 유지하세요.</li>
+<li><strong>매일 30분 내외의 규칙적인 유산소 운동</strong>: 걷기·줄넘기·달리기·수영은 뇌의 도파민과 노르에피네프린 분비를 자연스럽게 촉진해 주의집중력과 감정 조절력을 높여줍니다.</li>
+<li><strong>시각적 체크리스트와 '15~25분 타이머' 활용</strong>: 머릿속 기억에만 의존하지 말고 할 일을 눈앞에 적어 한 번에 한 가지 과제만 짧게 집중한 뒤 짧은 휴식을 취하세요.</li>
+<li><strong>스마트폰·게임·숏폼 미디어 조절</strong>: 짧고 강한 자극에 반복 노출되면 뇌의 도파민 역치가 높아져 공부나 업무가 더 지루해지므로 사용 시간과 장소를 명확히 구분하세요.</li>
+<li><strong>단순당 줄이기와 균형 잡힌 단백질·오메가-3 식단</strong>: 과도한 설탕·탄산음료·고카페인은 혈당 급변과 산만함을 키우므로 단백질, 통곡물, 생선, 채소 위주의 규칙적인 식사를 챙기는 것이 좋습니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item">
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q7.</span>
 <span>산만하면 무조건 ADHD인가요?</span>
 </div>
 </summary>
@@ -310,7 +458,7 @@ A. 아닙니다. 활발한 아이들은 성장 과정에서 일시적으로 산�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q2.</span>
+<span class="faq-q-badge">Q8.</span>
 <span>중추신경흥분제(양약)와 한방 치료의 차이는 무엇인가요?</span>
 </div>
 </summary>
@@ -322,7 +470,7 @@ A. 양약(메틸페니데이트 등)은 약효가 지속되는 동안 도파민 
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q3.</span>
+<span class="faq-q-badge">Q9.</span>
 <span>ADHD 약을 먹으면 평생 먹어야 하나요?</span>
 </div>
 </summary>
@@ -334,7 +482,7 @@ A. 그렇지 않습니다. 전두엽의 발달은 청소년기까지 지속되�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q4.</span>
+<span class="faq-q-badge">Q10.</span>
 <span>ADHD와 틱장애가 같이 있을 때 어떻게 치료해야 하나요?</span>
 </div>
 </summary>
@@ -346,7 +494,7 @@ A. ADHD 아동의 약 20~30%에서 틱장애가 동반됩니다. 이때 일반�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q5.</span>
+<span class="faq-q-badge">Q11.</span>
 <span>집에서는 괜찮은데 학교에서만 산만하다고 합니다.</span>
 </div>
 </summary>
@@ -358,7 +506,7 @@ A. 집은 편안하고 자극이 통제된 환경이지만, 학교는 단체 규
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q6.</span>
+<span class="faq-q-badge">Q12.</span>
 <span>얌전하고 말이 별로 없는데도 ADHD일 수 있나요?</span>
 </div>
 </summary>
@@ -370,7 +518,7 @@ A. 네, 이를 '주의력 결핍 우세형(조용한 ADHD)'이라고 합니다. 
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q7.</span>
+<span class="faq-q-badge">Q13.</span>
 <span>ADHD와 수면장애(불면증)는 어떤 관련이 있나요?</span>
 </div>
 </summary>
@@ -382,7 +530,7 @@ A. ADHD 아동의 상당수는 멜라토닌 분비 리듬이 지연되어 밤에
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q8.</span>
+<span class="faq-q-badge">Q14.</span>
 <span>성인인데 뒤늦게 ADHD가 생길 수도 있나요?</span>
 </div>
 </summary>
@@ -394,7 +542,7 @@ A. 성인이 되어 갑자기 생기는 것은 아닙니다. 어릴 때의 과�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q9.</span>
+<span class="faq-q-badge">Q15.</span>
 <span>ADHD 아이를 훈육할 때 부모가 가장 주의해야 할 점은 무엇인가요?</span>
 </div>
 </summary>
@@ -406,7 +554,7 @@ A. 아이를 '게으르거나 일부러 말을 안 듣는 아이'로 비난하�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q10.</span>
+<span class="faq-q-badge">Q16.</span>
 <span>ADHD인지 확신이 없는데도 상담받을 수 있나요?</span>
 </div>
 </summary>
