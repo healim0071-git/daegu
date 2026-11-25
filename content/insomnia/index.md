@@ -4,7 +4,8 @@ seo_title: "대구 불면증 치료 병원 ㅣ 해아림한의원 대구본점�
 h1_title: "대구 불면증 치료 병원 ㅣ 해아림한의원 대구본점ㅣ 불면증 극복"
 disease_name: "불면증"
 hero_sub: "불면증 & 수면장애 (Insomnia) 집중치료 | 해아림한의원"
-description: "잠들기 힘든 입면장애, 자주 깨는 수면유지장애, 조기각성과 야간 두근거림. 16년 임상 경험의 한방신경정신과 박사 김대억 대표원장의 1:1 심층 진료. 수면제 의존 없이 뇌의 깊은 서파수면(Delta) 리듬을 복원합니다."
+description: "불면증 지속 시 건강 문제, 일시적·만성 불면증 차이, 잠 안 올 때 대처법, 인지행동치료(CBT-I), 수면 루틴, 좋은 영양제 성분, 수면제 없이 잠드는 법, 우울증 연관성, 갱년기 불면증 관리까지. 해아림한의원 대구본점 1:1 심층 치료로 깊은 서파수면(Delta) 리듬을 복원합니다."
+keywords: ["대구 불면증 치료", "불면증 극복", "만성 불면증", "불면증 인지행동치료 CBT-I", "불면증 생활 습관", "불면증 영양제", "수면제 없이 잠드는 법", "수면 루틴", "불면증 우울증", "갱년기 불면증", "해아림한의원 대구본점"]
 layout: "disease"
 hero_title: "16년 이상 불면증·수면장애·불안을<br>집중적으로 다뤄온<br>해아림한의원 불면증클리닉"
 ---
@@ -296,14 +297,214 @@ hero_title: "16년 이상 불면증·수면장애·불안을<br>집중적으로 
 </div>
 </div>
 
-<!-- 11. 불면증 자주 묻는 질문 FAQ (BEST 10선 아코디언) -->
-<div class="cond-section">
+<!-- 11. 불면증 자주 묻는 질문 FAQ (BEST 20선 아코디언) -->
+<div class="cond-section" id="insomnia-faq-best">
 <h2 class="cond-h2">불면증 자주 묻는 질문 FAQ BEST</h2>
 
 <details class="faq-item" open>
 <summary>
 <div class="faq-summary-left">
 <span class="faq-q-badge">Q1.</span>
+<span>불면증이 지속되면 어떤 건강 문제가 생길 수 있나요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>불면증이 수개월 이상 만성화되면 단순한 낮 피로를 넘어 심혈관·대사 질환, 면역력 저하, 인지 기능 감퇴, 우울·불안·공황장애 등 전신 건강 문제가 연쇄적으로 발생할 위험이 높아집니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>심혈관 및 대사 질환 위험 증가</strong>: 야간 교감신경 과항진과 코르티솔 상승이 이어지면 고혈압, 부정맥, 심혈관 부담, 인슐린 저항성(혈당 상승) 및 체중 증가로 이어지기 쉽습니다.</li>
+<li><strong>뇌 기능·기억력 저하</strong>: 깊은 서파수면 중 뇌 노폐물(베타아밀로이드 등)을 청소하는 기능이 떨어져 집중력 저하, 건망증, 브레인 포그가 심화됩니다.</li>
+<li><strong>정신건강 악화</strong>: 감정 조절 신경전달물질(세로토닌·GABA) 회복이 저해되어 우울증, 불안장애, 공황장애, 만성 신경과민 발병 위험이 크게 높아집니다.</li>
+<li><strong>면역력 및 회복력 저하</strong>: 염증 조절과 세포 재생이 원활하지 못해 잦은 감기, 만성 통증, 소화장애, 자율신경실조증이 동반될 수 있습니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q2.</span>
+<span>일시적 불면과 만성 불면증은 어떻게 다른가요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>일시적(단기) 불면은 시험·시차·일시적 스트레스 같은 명확한 유발 요인이 사라지면 며칠~수주 내에 자연 회복되지만, 만성 불면증은 '주 3회 이상, 3개월 이상' 수면 곤란과 낮 기능 저하가 지속되며 수면 불안 자체가 불면을 유지시키는 상태입니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>일시적(급성) 불면</strong>: 주로 수일~4주 미만 지속되며, 스트레스 사건이 해결되거나 생활 리듬을 정돈하면 대부분 정상 수면으로 돌아옵니다.</li>
+<li><strong>만성 불면증(불면장애)</strong>: 의학적 진단 기준(DSM-5·ICSD-3)상 주 3회 이상, 3개월 이상 입면장애·수면유지장애·조기각성이 이어지며, 초기 원인이 해결된 뒤에도 "오늘도 못 자면 어쩌지"라는 조건화된 각성(수면 예기불안)으로 불면이 고착됩니다.</li>
+<li><strong>치료 시점</strong>: 일시적 불면이라도 4주 이상 이어지거나 잠자리에 대한 두려움이 생기기 시작했다면 만성화로 굳어지기 전에 조기 관리를 시작하는 것이 회복 기간을 크게 줄여줍니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q3.</span>
+<span>불면증으로 잠이 안 올 때 도움되는 방법이 궁금해요</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>잠이 안 올 때 억지로 눈을 감고 버틸수록 뇌 각성이 심해지므로, '20분 규칙(잠자리 이탈)', 시계 보지 않기, 4-7-8 또는 4-6 복식호흡, 점진적 근육 이완법으로 교감신경을 먼저 가라앉히는 것이 효과적입니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>20분 이상 잠이 안 오면 침대에서 잠시 나오기</strong>: 침대에서 뒤척이면 뇌가 침대를 '불안한 공간'으로 학습합니다. 어두운 간접조명 아래 거실로 나와 조용한 독서나 명상을 하다 졸음이 올 때 다시 눕습니다.</li>
+<li><strong>시계·스마트폰 확인 절대 금지</strong>: "벌써 새벽 2시네, 4시간밖에 못 자겠네"라는 계산은 아드레날린을 분비시켜 잠을 완전히 깨웁니다. 시계는 보이지 않는 곳으로 치워두세요.</li>
+<li><strong>4-6 구순 복식호흡 및 점진적 근육 이완</strong>: 4초간 코로 들이마시고 6초간 입으로 천천히 내쉬며, 발끝부터 어깨까지 근육에 5초간 힘을 주었다가 툭 풀어내는 이완을 반복하면 부교감신경이 켜집니다.</li>
+<li><strong>'못 자도 누워 쉬면 회복된다'는 마음 내려놓기</strong>: 잠을 의무처럼 강요하지 않고 몸의 긴장을 푸는 데 집중할 때 오히려 자연스럽게 잠이 찾아옵니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q4.</span>
+<span>불면증 인지행동치료(CBT-I)는 어떤 내용인가요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>불면증 인지행동치료(CBT-I)는 국제 수면의학 가이드라인에서 만성 불면증의 1차 표준 치료로 권고하는 비약물 치료법으로, 수면을 방해하는 잘못된 생각(인지)과 습관(행동)을 교정해 뇌의 자연 수면 효율을 회복시킵니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>자극 조절 요법</strong>: 침대를 오직 수면과 휴식만을 위한 공간으로 재조건화하여 침대 위 스마트폰·TV 시청·고민을 차단하고, 졸릴 때만 눕는 원칙을 훈련합니다.</li>
+<li><strong>수면 제한 요법</strong>: 실제 잠자는 시간에 맞춰 침대에 누워 있는 시간을 일시적으로 조정해 수면 압력(졸음)을 높이고, 얕고 끊기는 잠을 깊고 밀도 있는 잠으로 압축합니다.</li>
+<li><strong>인지 재구조화</strong>: "8시간을 못 자면 내일 완전히 망한다" 같은 파국적 수면 강박을 현실적인 인지로 교정하여 야간 예기불안을 줄입니다.</li>
+<li><strong>이완 훈련 및 수면 위생 교육</strong>: 복식호흡·근육 이완·바이오피드백으로 야간 뇌 각성을 낮추며, 해아림한의원에서는 체질 맞춤 한약과 CBT-I를 병행해 회복 속도를 높입니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q5.</span>
+<span>불면증 극복과 치료에 도움이 되는 생활 습관은 무엇인가요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>불면증 극복을 위해서는 주말에도 기상 시간을 일정하게 고정하고, 아침 햇볕 쬐기, 오후 카페인·야간 음주 중단, 낮잠 제한, 규칙적인 낮 시간 유산소 운동으로 생체시계와 수면 압력을 정상화해야 합니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>기상 시간 고정 (가장 중요한 원칙)</strong>: 전날 밤 잠을 설쳤더라도 주말 포함 매일 같은 시간에 일어나야 밤 멜라토닌 분비 타이밍이 일정하게 자리 잡습니다.</li>
+<li><strong>기상 후 1시간 내 15~30분 아침 햇빛 쬐기</strong>: 아침 빛 자극은 뇌 생체시계를 리셋하고 약 14~16시간 뒤 자연스러운 멜라토닌 분비를 예약해 줍니다.</li>
+<li><strong>오후 2시 이후 카페인 금지 &amp; 취침 전 음주 피하기</strong>: 카페인은 반감기가 길어 밤 수면 깊이를 떨어뜨리고, 술은 초반 입면만 돕는 듯하지만 새벽 각성과 얕은 잠을 유발합니다.</li>
+<li><strong>낮잠은 피하거나 오후 3시 이전 20분 이내로 제한</strong>: 긴 낮잠은 밤에 필요한 수면 압력을 빼앗아 입면장애를 악화시킵니다.</li>
+<li><strong>규칙적인 낮·저녁 초입 유산소 운동</strong>: 주 3~5회 30분 걷기·가벼운 운동은 서파수면을 늘려주며, 단 취침 직전 2~3시간 이내의 격렬한 운동은 심부 체온을 올려 피하는 것이 좋습니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q6.</span>
+<span>불면증에 좋은 영양제 성분은 어떤 것이 있나요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>수면의 질 개선과 신경 이완에 보조적으로 도움을 줄 수 있는 대표 성분으로는 마그네슘, L-테아닌, 감태추출물, 미강주정추출물, 락티움(유단백가수분해물), 비타민 B6·트립토판, 식물성 멜라토닌 등이 있습니다.</strong>
+</p>
+<ul style="margin: 0 0 10px; padding-left: 20px; line-height: 1.7;">
+<li><strong>마그네슘(Magnesium)</strong>: 신경 흥분을 억제하고 근육 긴장을 완화하며 GABA 작용을 도와 야간 긴장·다리에 쥐가 나는 분께 유용합니다.</li>
+<li><strong>L-테아닌(L-Theanine)</strong>: 뇌의 이완 뇌파인 알파파(Alpha)를 유도해 스트레스로 생각이 많고 긴장된 상태의 입면을 돕습니다.</li>
+<li><strong>감태추출물·미강주정추출물·락티움</strong>: 식약처에서 '수면의 질 개선' 기능성을 인정받은 개별인정형 원료들로, 잠드는 시간 단축과 수면 효율 유지에 보조 역할을 합니다.</li>
+<li><strong>트립토판·비타민 B6 &amp; 멜라토닌</strong>: 세로토닌과 수면 호르몬 멜라토닌 합성의 재료로 작용하며, 시차·교대근무로 리듬이 흐트러진 경우에 활용됩니다.</li>
+</ul>
+<p style="margin: 0;">
+※ 건강기능식품은 보조 수단이므로 만성 불면증의 근본 원인을 대체하기 어렵습니다. 특히 수면제·항우울제 등 처방약을 복용 중이거나 임신·만성질환이 있다면 반드시 의료진과 성분·상호작용을 확인한 뒤 섭취하시기 바랍니다.
+</p>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q7.</span>
+<span>불면증약 없이 잠드는 방법이 궁금해요</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>수면제 없이 자연스럽게 잠들려면 ① 낮 동안 충분한 활동과 햇빛으로 수면 압력을 쌓고, ② 취침 전 심부 체온 하강과 교감신경 이완을 유도하며, ③ 과열된 뇌 각성 중추(ARAS)를 진정시키는 비약물 치료(CBT-I·맞춤 한방 치료·뇌파 이완)를 병행하는 것이 핵심입니다.</strong>
+</p>
+<ul style="margin: 0 0 10px; padding-left: 20px; line-height: 1.7;">
+<li><strong>심부 체온 하강 원리 활용</strong>: 잠들기 1~2시간 전 38~40℃ 미온수로 15분간 반신욕·족욕이나 따뜻한 샤워를 하면, 이후 체온이 서서히 내려가며 뇌에 자연스러운 입면 신호가 전달됩니다.</li>
+<li><strong>걱정 기록(Worry Dump)으로 생각 비우기</strong>: 누워서 고민하지 말고 취침 2시간 전 노트에 할 일과 걱정을 5~10분 적어 덮어두면 뇌의 작업기억 과부하가 줄어듭니다.</li>
+<li><strong>수면 자생력 회복 치료</strong>: 이미 수면제를 복용 중이라면 임의로 한 번에 끊지 말고, 뇌의 자연 수면 리듬을 복원하는 청심안신 맞춤 한약·침구·뉴로피드백·CBT-I를 병행하며 의료진과 상의해 안전하게 감량(테이퍼링)하는 것이 가장 효과적입니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q8.</span>
+<span>불면증 치료에 도움이 되는 수면 루틴은 어떤 게 있나요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>취침 90분 전부터 매일 같은 순서로 몸과 뇌에 '이제 쉴 시간'이라는 신호를 보내는 규칙적인 취침 전 루틴(Wind-down Routine)이 불면증 치료 효과를 크게 높여줍니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>취침 90분 전 — 조명 낮추기 &amp; 미온수 반신욕·샤워</strong>: 거실의 밝은 백색등을 끄고 따뜻한 주황빛 간접조명으로 바꾸며, 따뜻한 샤워나 족욕으로 상열감을 내리고 긴장을 풉니다.</li>
+<li><strong>취침 60분 전 — 디지털 디톡스(스마트폰·TV 종료)</strong>: 블루라이트와 자극적인 영상·뉴스는 멜라토닌 분비를 억제하고 교감신경을 깨우므로 화면을 침실 밖에 둡니다.</li>
+<li><strong>취침 30분 전 — 가벼운 스트레칭 &amp; 무카페인 온차</strong>: 굳은 목·어깨·허리를 천천히 이완하고 따뜻한 캐모마일·대추차를 소량 마시며 호흡을 정돈합니다. (야간뇨가 있다면 취침 2시간 전부터 수분 제한)</li>
+<li><strong>취침 직전 — 쾌적한 침실 환경(18~20℃·암막) &amp; 4-6 복식호흡</strong>: 서늘하고 어두운 침실에서 5분간 깊은 복식호흡을 하며 자연스럽게 입면합니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q9.</span>
+<span>불면증과 우울증의 연관성은 어떤가요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>불면증과 우울증은 서로 원인이자 결과가 되는 '양방향 악순환' 관계로, 만성 불면증 환자는 일반인에 비해 우울증 발병 위험이 약 3~4배 이상 높고 우울증 환자의 70~80% 이상이 수면장애를 동반합니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>공통 신경전달물질(세로토닌·노르에피네프린) 고갈</strong>: 깊은 수면은 낮 동안 소모된 감정 조절 신경전달물질을 재생하는 시간입니다. 불면이 이어지면 정서 완충력이 무너져 무기력·우울감·짜증이 심해집니다.</li>
+<li><strong>조기각성과 우울증의 신호</strong>: 특히 새벽 3~4시에 알람 없이 눈이 떠져 다시 잠들지 못하고 암울한 생각이 꼬리를 무는 '조기각성형 불면'은 우울증의 대표적인 동반 양상입니다.</li>
+<li><strong>통합 치료의 중요성</strong>: 우울감만 다루거나 수면만 따로 다루면 재발하기 쉬우므로, 뇌 각성 안정과 정서 회복(심비양허·간기울결 개선)을 함께 돌보는 통합 치료가 필요합니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q10.</span>
+<span>갱년기 불면증의 주요 원인과 관리 방법이 궁금해요</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>갱년기 불면증은 여성호르몬(에스트로겐·프로게스테론) 급감과 멜라토닌 감소로 뇌 시상하부의 체온조절 중추가 불안정해져 야간 안면홍조·식은땀·가슴 두근거림이 발생하면서 깊은 잠이 반복적으로 깨지는 것이 핵심 원인입니다.</strong>
+</p>
+<ul style="margin: 0 0 10px; padding-left: 20px; line-height: 1.7;">
+<li><strong>주요 원인</strong>: 호르몬 변화로 인한 혈관운동성 열감(야간 발한), 수면 유지 호르몬(프로게스테론·멜라토닌) 저하, 교감신경 과각성 및 한의학적 음허화왕(陰虛火旺·진액 부족으로 인한 허열)</li>
+<li><strong>생활 관리 방법</strong>: ① 침실 온도를 18~20℃로 서늘하게 유지하고 통기성 좋은 면 침구·얇은 옷을 겹쳐 입기 ② 열감을 자극하는 매운 음식·카페인·술·야식 피하기 ③ 낮 30분 햇볕 산책과 취침 전 미온수 족욕·4-6 복식호흡 실천</li>
+<li><strong>전문 치료</strong>: 수면제에만 의존하기보다 음혈을 보충하고 상열감을 식혀 자율신경과 수면 리듬을 안정시키는 보음청열·안신 맞춤 한방 치료가 갱년기 불면과 동반 홍조·불안 완화에 도움이 됩니다. (<a href="/climacteric/" style="color: #146369; font-weight: 700;">갱년기 증후군 클리닉 자세히 보기 &gt;</a>)</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item">
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q11.</span>
 <span>수면제를 먹고 있는데 한약과 같이 먹어도 되나요?</span>
 </div>
 </summary>
@@ -315,7 +516,7 @@ A. 네, 초기에는 병행 복용하는 것이 가장 안전합니다. 수면�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q2.</span>
+<span class="faq-q-badge">Q12.</span>
 <span>불면증은 몇 시간 이하로 자야 불면증인가요?</span>
 </div>
 </summary>
@@ -327,7 +528,7 @@ A. 단순히 수면 시간의 절대적인 길이만으로 불면증을 판단�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q3.</span>
+<span class="faq-q-badge">Q13.</span>
 <span>잠을 못 잘까 봐 걱정하는 것도 불면증 증상인가요?</span>
 </div>
 </summary>
@@ -339,7 +540,7 @@ A. 네, 만성 불면증 환자의 대표적인 핵심 증상인 '수면 예기�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q4.</span>
+<span class="faq-q-badge">Q14.</span>
 <span>자다가 자꾸 깨는데 불면증인가요?</span>
 </div>
 </summary>
@@ -351,7 +552,7 @@ A. 수면유지장애 형태의 전형적인 불면증입니다. 한 번 깬 후
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q5.</span>
+<span class="faq-q-badge">Q15.</span>
 <span>새벽에 너무 일찍 깨고 다시 잠들지 못합니다.</span>
 </div>
 </summary>
@@ -363,7 +564,7 @@ A. 조기각성 형태의 수면장애입니다. 새벽 3~4시경에 알람 없�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q6.</span>
+<span class="faq-q-badge">Q16.</span>
 <span>수면제를 먹으면 잠은 자는데 왜 다음 날 머리가 무겁고 멍할까요?</span>
 </div>
 </summary>
@@ -375,7 +576,7 @@ A. 수면제나 수면유도제는 뇌를 인위적으로 마취·진정시키�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q7.</span>
+<span class="faq-q-badge">Q17.</span>
 <span>불면증과 불안장애·공황장애가 같이 생길 수 있나요?</span>
 </div>
 </summary>
@@ -387,7 +588,7 @@ A. 매우 밀접하게 함께 나타납니다. 수면 중추와 불안 조절 �
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q8.</span>
+<span class="faq-q-badge">Q18.</span>
 <span>불면증이 있으면 수면제를 평생 먹어야 하나요?</span>
 </div>
 </summary>
@@ -399,7 +600,7 @@ A. 결코 그렇지 않습니다. 수면제는 어디까지나 급성기 위기�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q9.</span>
+<span class="faq-q-badge">Q19.</span>
 <span>불면증은 어디에서 진료받아야 하나요?</span>
 </div>
 </summary>
@@ -411,7 +612,7 @@ A. 수면무호흡이나 코골이가 심하다면 이비인후과나 수면클�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q10.</span>
+<span class="faq-q-badge">Q20.</span>
 <span>불면증인지 확실하지 않아도 상담을 받을 수 있나요?</span>
 </div>
 </summary>
