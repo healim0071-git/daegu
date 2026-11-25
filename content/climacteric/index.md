@@ -5,7 +5,8 @@ h1_title: "대구 갱년기 클리닉 해아림한의원 대구본점ㅣ갱년�
 disease_name: "갱년기 증후군"
 disease_slug: "climacteric"
 hero_sub: "갱년기 증후군 (Climacteric Syndrome) 집중치료 | 해아림한의원"
-description: "안면홍조·야간발한·불면증·가슴 두근거림·우울과 감정기복. 16년 임상 경험의 한방신경정신과 박사 김대억 대표원장의 1:1 심층 진료. 호르몬 급감에 흔들리지 않는 뇌신경계와 자율신경 자생력을 깨워 신체 부담을 덜고 안정적인 일상을 되찾아드립니다."
+description: "갱년기 증상 시기, 남성 갱년기, 갱년기 건강검진 항목, 불면증 개선 방법, 병원 방문 시기, 증상 완화 생활 습관과 좋은 음식·열감 줄이는 음식까지. 해아림한의원 대구본점 1:1 심층 진료로 호르몬 변화에 흔들리지 않는 자생력을 깨웁니다."
+keywords: ["대구 갱년기 클리닉", "갱년기 증후군", "남성 갱년기", "갱년기 증상 시기", "갱년기 건강검진", "갱년기 불면증 개선", "갱년기 좋은 음식", "갱년기 열감 음식", "갱년기 생활 습관", "해아림한의원 대구본점"]
 layout: "disease"
 aliases:
   - "/menopause/"
@@ -234,6 +235,7 @@ hero_title: "16년 이상 갱년기·자율신경·불면·불안을<br>집중�
 <!-- 6. 해아림 갱년기 다층 검사 시스템 -->
 <div class="cond-section">
 <h2 class="cond-h2">해아림한의원 대구본점 갱년기 다층 검사 시스템</h2>
+<h3 style="font-size: 1.12rem; font-weight: 800; color: #0C4349; margin: 4px 0 14px;">갱년기 건강검진 항목은 어떤 것이 있나요?</h3>
 <p style="color: #475569; line-height: 1.7; margin-bottom: 16px;">
 갱년기 치료의 성공은 겉으로 드러난 안면홍조뿐 아니라, 뇌신경계와 자율신경의 피로도를 객관적으로 파악하는 데 있습니다. 불필요한 과잉 검사를 배제하고 환자에게 꼭 필요한 8단계 다층 평가를 진행합니다.
 </p>
@@ -268,6 +270,7 @@ hero_title: "16년 이상 갱년기·자율신경·불면·불안을<br>집중�
 <!-- 7. 해아림 1:1 심층 자생력 치료 시스템 -->
 <div class="cond-section">
 <h2 class="cond-h2">해아림한의원 대구본점 1:1 심층 자생력 치료법</h2>
+<h3 style="font-size: 1.12rem; font-weight: 800; color: #0C4349; margin: 4px 0 14px;">갱년기 불면증을 개선하는 방법이 궁금해요</h3>
 <p style="color: #475569; line-height: 1.7; margin-bottom: 16px;">
 증상을 일시적으로 덮어두는 대증요법이 아니라, 뇌신경계와 자율신경계가 새로운 호르몬 환경에 안정적으로 적응하도록 돕는 4단계 통합 치료를 시행합니다.
 </p>
@@ -325,6 +328,7 @@ hero_title: "16년 이상 갱년기·자율신경·불면·불안을<br>집중�
 <!-- 9. 어떤 경우에 상담과 치료가 필요할까요? (치료 골든타임) -->
 <div class="cond-section">
 <h2 class="cond-h2">어떤 경우에 갱년기 진료가 필요할까요? (치료 골든타임)</h2>
+<h3 style="font-size: 1.12rem; font-weight: 800; color: #0C4349; margin: 4px 0 14px;">갱년기 증상으로 병원을 방문해야 하는 경우는 언제인가요?</h3>
 <div style="line-height: 1.8; color: #334155; font-size: 1rem;">
 <p>
 "시간이 지나면 저절로 괜찮아지겠지"라며 극심한 상열감과 불면, 우울감을 억지로 참는 것은 신경계의 만성 피로와 심혈관 질환, 골다공증 위험을 키우는 지름길입니다. 다음 중 하나라도 해당된다면 조기에 한의학 진료를 권합니다.
@@ -341,18 +345,116 @@ hero_title: "16년 이상 갱년기·자율신경·불면·불안을<br>집중�
 </div>
 </div>
 
-<!-- 10. 갱년기 자주 묻는 질문 FAQ (BEST 10선 아코디언) -->
-<div class="cond-section">
+<!-- 10. 갱년기 자주 묻는 질문 FAQ (BEST 15선 아코디언) -->
+<div class="cond-section" id="climacteric-faq-best">
 <h2 class="cond-h2">갱년기 증후군 자주 묻는 질문 FAQ BEST</h2>
 <p style="color: #475569; line-height: 1.7; margin-bottom: 16px;">
-대구 및 경북 지역 갱년기 환자분들이 진료실에서 가장 많이 묻고 궁금해하시는 핵심 10문 10답입니다.
+대구 및 경북 지역 갱년기 환자분들이 진료실에서 가장 많이 묻고 궁금해하시는 핵심 질문과 답변입니다.
 </p>
 
 <div class="faq-list">
-<details class="faq-item">
+<details class="faq-item" open>
 <summary>
 <div class="faq-summary-left">
 <span class="faq-q-badge">Q1.</span>
+<span>갱년기 남성에게도 비슷한 증상이 나타나나요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>네, 남성에게도 여성 갱년기와 매우 유사한 신체·정서 증상이 나타납니다.</strong> 남성은 40대 후반~50대 이후 남성호르몬(테스토스테론)이 매년 약 1%씩 서서히 감소하면서 자율신경과 대사 균형이 흔들리는 '남성 갱년기'를 겪게 됩니다.
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>공통 증상</strong>: 원인 모를 만성 피로와 무기력, 불면증·잦은 각성, 안면홍조·식은땀, 가슴 두근거림, 우울감·짜증·집중력 저하</li>
+<li><strong>남성 특유 변화</strong>: 여성처럼 폐경이라는 뚜렷한 시점 없이 서서히 진행되며, 근력·체력 저하, 복부 비만 증가, 성욕 및 활력 감퇴가 함께 나타나는 경우가 많습니다.</li>
+<li><strong>관리 방향</strong>: 단순 노화로 방치하기보다 신장 양기 보강과 자율신경 피로 회복을 돕는 체질 맞춤 치료와 주 2회 이상 근력 운동, 규칙적인 수면 관리로 활력을 되찾을 수 있습니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q2.</span>
+<span>갱년기 증상이 나타나는 시기는 언제부터 언제까지인가요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>갱년기 증상은 일반적으로 만 45세~55세 전후에 걸쳐 나타나며, 보통 폐경 1~2년 전(폐경 이행기)부터 시작해 폐경 후 3~5년 정도 지속되는 경우가 가장 많습니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>시작 시기(폐경 이행기)</strong>: 월경 주기가 불규칙해지거나 생리량이 달라지면서 얼굴 열감, 수면 변화, 피로감이 서서히 시작됩니다. 스트레스와 과로가 심한 경우 40대 초반에 조기 갱년기로 찾아오기도 합니다.</li>
+<li><strong>지속 기간</strong>: 평균 4~7년 안팎으로 서서히 완화되지만, 개인 체질과 자율신경 회복력에 따라 짧게는 1~2년, 길게는 10년 이상 잔여 증상이 이어질 수 있습니다.</li>
+<li><strong>관리 시점</strong>: 증상이 막 시작되는 폐경 이행기부터 자율신경과 음혈 균형을 다져두면 폐경 이후 심한 홍조·불면·골감소로 악화되는 것을 예방할 수 있습니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q3.</span>
+<span>갱년기 증상 완화에 도움이 되는 생활 습관은 무엇인가요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>갱년기 증상을 완화하고 중년 건강을 지키려면 유산소·근력 운동 병행, 시원하고 쾌적한 수면 환경, 4-6 복식호흡과 반신욕, 카페인·술·흡연 절제, 정기 건강검진을 생활화하는 것이 핵심입니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>주 3~5회 유산소 + 주 2회 근력 운동</strong>: 빠르게 걷기·수영으로 체온 조절력과 혈액순환을 돕고, 스쿼트·가벼운 아령 같은 체중 부하 근력 운동으로 골다공증과 복부 비만을 예방하세요.</li>
+<li><strong>시원한 침실(18~20℃)과 겹쳐 입기</strong>: 통기성 좋은 면 소재 옷을 얇게 겹쳐 입어 열감이 오를 때 쉽게 체온을 조절하고, 매일 일정한 7~8시간 수면 리듬을 유지하세요.</li>
+<li><strong>4-6 복식호흡 및 미온수 족욕(38~40℃)</strong>: 열감이나 두근거림이 치솟을 때 코로 4초 들이마시고 입으로 6초 내쉬는 호흡으로 교감신경을 진정시키고, 취침 전 15분 족욕으로 상열하한을 완화하세요.</li>
+<li><strong>카페인·알코올·흡연 제한</strong>: 커피·술·담배는 혈관운동성 홍조를 악화시키고 뼈 칼슘 흡수를 방해하므로 줄이는 것이 좋습니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q4.</span>
+<span>갱년기 증상 완화에 도움이 되는 음식은 어떤 것이 있나요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>갱년기 전반의 증상 완화에는 식물성 에스트로겐(이소플라본·리그난), 골밀도를 지키는 칼슘·비타민 D, 심혈관과 정서 안정을 돕는 오메가-3·마그네슘이 풍부한 자연 식품이 큰 도움이 됩니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>식물성 에스트로겐 식품</strong>: 검은콩·두부·청국장·무가당 두유(이소플라본), 석류, 아마씨·참깨(리그난), 자두(보론) 등은 급감한 여성호르몬의 완충 역할을 돕습니다.</li>
+<li><strong>뼈 건강(칼슘·비타민 D) 식품</strong>: 멸치, 우유·플레인 요거트, 브로콜리, 케일, 말린 표고버섯, 달걀노른자는 폐경 후 급격한 골밀도 저하를 예방합니다.</li>
+<li><strong>심혈관·정서 안정(오메가-3·마그네슘·트립토판) 식품</strong>: 고등어·연어·들기름, 호두·아몬드, 통곡물·바나나는 혈관 탄력 유지와 세로토닌·멜라토닌 합성을 지원해 우울감과 불면 완화에 유익합니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q5.</span>
+<span>갱년기 열감을 줄이는 데 도움되는 음식이 있나요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>얼굴로 치솟는 상열감과 안면홍조를 줄이려면 체내 진액(음혈)을 보충하고 허열을 부드럽게 식혀주는 콩·칡·석류, 수분 풍부한 채소·과일, 무카페인 청열 한방차를 섭취하고 열성 자극 음식을 피하는 것이 효과적입니다.</strong>
+</p>
+<ul style="margin: 0 0 10px; padding-left: 20px; line-height: 1.7;">
+<li><strong>열감 진정 추천 식품</strong>: 이소플라본이 풍부한 <strong>두부·검은콩·칡</strong>, 수분과 진액을 채우는 <strong>배·오이·토마토·연근·수박</strong>, 땀과 상열을 조절하는 <strong>오미자차·국화차·둥굴레차·구기자차·대추차</strong>(미지근하게 섭취)</li>
+<li><strong>열감을 악화시켜 피해야 할 음식</strong>: 지나치게 맵고 짠 음식, 펄펄 끓는 뜨거운 국물, 커피·에너지음료(카페인), 술(알코올), 당분이 높은 야식은 말초혈관을 급격히 확장시켜 안면홍조와 야간 발한을 즉각 유발합니다.</li>
+</ul>
+<p style="margin: 0;">
+※ 다만 속이 차고 설사가 잦은 체질은 지나치게 찬 음식이나 칡즙을 과다 복용하면 소화기가 불편할 수 있으므로 체질에 맞게 조절해 드시는 것이 좋습니다.
+</p>
+</div>
+</details>
+
+<details class="faq-item">
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q6.</span>
 <span>얼굴이 붉어지고 땀이 쏟아지는 안면홍조, 갱년기 증상이 맞나요?</span>
 </div>
 </summary>
@@ -364,7 +466,7 @@ A. 네, 갱년기 여성의 약 75% 이상이 경험하는 대표적인 혈관�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q2.</span>
+<span class="faq-q-badge">Q7.</span>
 <span>갱년기 불면증으로 밤마다 깨고 가슴이 두근거리는데 어떻게 해야 하나요?</span>
 </div>
 </summary>
@@ -376,7 +478,7 @@ A. 갱년기 불면증은 수면 호르몬인 멜라토닌 감소와 야간 교�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q3.</span>
+<span class="faq-q-badge">Q8.</span>
 <span>호르몬 대체요법(HRT)을 받기 부담스러운데 한의원 치료로 도움을 받을 수 있나요?</span>
 </div>
 </summary>
@@ -388,7 +490,7 @@ A. 유방암, 자궁내막 질환의 가족력이 있거나 혈전증 위험, �
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q4.</span>
+<span class="faq-q-badge">Q9.</span>
 <span>갱년기에 우울증, 불안장애, 감정 기복이 함께 오는 이유는 무엇인가요?</span>
 </div>
 </summary>
@@ -400,7 +502,7 @@ A. 에스트로겐은 뇌 신경전달물질인 세로토닌과 도파민 합성
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q5.</span>
+<span class="faq-q-badge">Q10.</span>
 <span>갱년기 다발성 관절통과 손발 저림, 류마티스 관절염과 어떻게 구분하나요?</span>
 </div>
 </summary>
@@ -412,7 +514,7 @@ A. 갱년기에는 에스트로겐 저하로 연골과 인대의 콜라겐 합�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q6.</span>
+<span class="faq-q-badge">Q11.</span>
 <span>갱년기 증상은 보통 몇 년 동안 지속되나요?</span>
 </div>
 </summary>
@@ -424,7 +526,7 @@ A. 개인 체질과 스트레스 저항력에 따라 차이가 크지만, 일반
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q7.</span>
+<span class="faq-q-badge">Q12.</span>
 <span>남성도 갱년기 증상을 겪을 수 있나요?</span>
 </div>
 </summary>
@@ -436,7 +538,7 @@ A. 네, 남성 역시 40대 후반부터 남성호르몬(테스토스테론)이 
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q8.</span>
+<span class="faq-q-badge">Q13.</span>
 <span>한약 복용 시 간이나 소화기에 무리가 가지는 않나요?</span>
 </div>
 </summary>
@@ -448,7 +550,7 @@ A. 해아림한의원 대구본점의 갱년기 한약은 식품의약품안전�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q9.</span>
+<span class="faq-q-badge">Q14.</span>
 <span>자율신경실조증이나 공황장애와 갱년기 증상은 어떻게 구별하나요?</span>
 </div>
 </summary>
@@ -460,7 +562,7 @@ A. 갱년기 증상과 자율신경실조증은 매우 밀접하게 겹칩니다
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q10.</span>
+<span class="faq-q-badge">Q15.</span>
 <span>갱년기 치료를 시작하기 가장 좋은 시기는 언제인가요? (치료 골든타임)</span>
 </div>
 </summary>
