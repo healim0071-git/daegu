@@ -4,7 +4,8 @@ seo_title: "대구 다한증 치료 병원 ㅣ 해아림한의원 대구본점�
 h1_title: "대구 다한증 치료 병원 ㅣ 해아림한의원 대구본점ㅣ손다한증 얼굴다한증 전신다한증"
 disease_name: "다한증"
 hero_sub: "다한증 & 수족다한증 집중치료 | 해아림한의원"
-description: "긴장성 다한증·수족다한증 증상과 원인, 손발 땀·얼굴 땀·겨드랑이 땀부터 자율신경계 교감신경 안정과 체질 맞춤 한방 치료까지 16년 임상 노하우로 안내합니다. 해아림한의원 대구본점."
+description: "다한증 주요 증상과 다발 부위(손·발·얼굴·겨드랑이), 일반 땀 및 액취증과의 차이, 진단 기준, 비수술 한방 치료 방법, 생활 관리 팁과 치료 후 일상 관리법까지 해아림한의원 대구본점 16년 임상 노하우로 안내합니다."
+keywords: ["대구 다한증 치료", "손다한증", "얼굴다한증", "전신다한증", "다한증 주요 증상", "다한증 액취증 차이", "다한증 진단 기준", "다한증 치료 방법", "다한증 생활 관리", "해아림한의원 대구본점"]
 layout: "disease"
 hero_title: "16년 이상 긴장성 다한증·수족다한증을<br>집중적으로 다뤄온<br>해아림한의원 다한증클리닉"
 ---
@@ -32,6 +33,7 @@ hero_title: "16년 이상 긴장성 다한증·수족다한증을<br>집중적�
 
 <div class="cond-section">
 <h2 class="cond-h2">스스로 확인해보는 긴장성 다한증 자가진단 체크리스트</h2>
+<h3 style="font-size: 1.12rem; font-weight: 800; color: #1a5276; margin: 4px 0 12px;">다한증의 주요 증상은 어떤가요?</h3>
 <p style="color: #555; margin-bottom: 16px;">다음 항목 중 일치하거나 반복되는 모습이 있다면 자율신경계 기능 평가와 맞춤 치료가 필요합니다.</p>
 <div style="background: #fdfefe; border: 1px solid #d4e6f1; border-radius: 8px; padding: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.03);">
 <ul style="list-style: none; padding-left: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px;">
@@ -84,6 +86,7 @@ hero_title: "16년 이상 긴장성 다한증·수족다한증을<br>집중적�
 
 <div class="cond-section">
 <h2 class="cond-h2">긴장성 다한증 4대 다발 부위별 임상 양상</h2>
+<h3 style="font-size: 1.12rem; font-weight: 800; color: #1a5276; margin: 4px 0 12px;">다한증 증상이 나타나는 주요 부위는 어디인가요?</h3>
 <p style="color: #555; margin-bottom: 18px;">긴장성 다한증은 감정적 자극에 반응하는 에크린 땀샘이 밀집된 부위에 집중적으로 나타납니다.</p>
 <div class="tic-grid-2col" style="margin: 18px 0;">
 
@@ -185,6 +188,7 @@ hero_title: "16년 이상 긴장성 다한증·수족다한증을<br>집중적�
 
 <div class="cond-section">
 <h2 class="cond-h2">해아림한의원 긴장성 다한증 정밀 8단계 검사 시스템</h2>
+<h3 style="font-size: 1.12rem; font-weight: 800; color: #1a5276; margin: 4px 0 12px;">다한증 진단은 어떤 기준으로 이루어지나요?</h3>
 <p style="color: #555; margin-bottom: 18px;">단순히 땀의 양만 보지 않고, 뇌 신경계의 긴장도, 자율신경계 조절력, 내부 장부의 열 균형을 종합 측정합니다.</p>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px;">
 <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 6px; padding: 14px;">
@@ -222,6 +226,7 @@ hero_title: "16년 이상 긴장성 다한증·수족다한증을<br>집중적�
 
 <div class="cond-section">
 <h2 class="cond-h2">해아림한의원 1:1 심층 자생력 한방 치료 시스템</h2>
+<h3 style="font-size: 1.12rem; font-weight: 800; color: #1a5276; margin: 4px 0 12px;">다한증 치료 방법은 어떤 것이 있나요?</h3>
 <p style="color: #555; margin-bottom: 18px;">수술 없이 안전하게, 뇌 시상하부와 척수 교감신경의 민감도를 낮추어 땀구멍 개폐력을 스스로 회복하도록 돕습니다.</p>
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
@@ -295,75 +300,170 @@ hero_title: "16년 이상 긴장성 다한증·수족다한증을<br>집중적�
 </div>
 </div>
 
-<div class="cond-section">
-<h2 class="cond-h2">긴장성 다한증 자주 묻는 질문 (FAQ BEST 10)</h2>
+<div class="cond-section" id="hyperhidrosis-faq-best">
+<h2 class="cond-h2">긴장성 다한증 자주 묻는 질문 FAQ BEST</h2>
 <p style="color: #666; margin-bottom: 16px;">환자분들께서 가장 자주 묻는 질문들을 모아 명쾌하게 답변해 드립니다.</p>
 
+<details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;" open>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q1. 다한증과 일반적인 땀 분비의 차이는 무엇인가요?</summary>
+<div style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.72;">
+<p style="margin: 0 0 10px;">
+<strong>일반적인 땀은 더위·운동으로 오른 체온을 식히기 위한 정상 생리 반응이지만, 다한증은 덥지 않거나 가만히 있을 때도 자율신경(교감신경) 과항진으로 손·발·얼굴·겨드랑이 등에서 일상생활을 방해할 만큼 과도한 땀이 6개월 이상 반복되는 질환입니다.</strong>
+</p>
+<div style="overflow-x: auto; margin-bottom: 4px;">
+<table style="width: 100%; border-collapse: collapse; font-size: 0.9rem; text-align: left; background: #fff;">
+<thead>
+<tr style="background: #f1f5f9; color: #1e3a8a;">
+<th style="padding: 8px 10px; border: 1px solid #cbd5e1; width: 22%;">구분</th>
+<th style="padding: 8px 10px; border: 1px solid #cbd5e1; width: 39%;">일반적인 땀 분비</th>
+<th style="padding: 8px 10px; border: 1px solid #cbd5e1; width: 39%;">다한증 (원발성·긴장성)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 8px 10px; border: 1px solid #e2e8f0; font-weight: 700;">유발 상황</td>
+<td style="padding: 8px 10px; border: 1px solid #e2e8f0;">고온 환경, 운동, 매운 음식 등 체온 상승 시</td>
+<td style="padding: 8px 10px; border: 1px solid #e2e8f0;">서늘한 실내, 가벼운 긴장·대화·집중 시에도 분출</td>
+</tr>
+<tr style="background: #f8fafc;">
+<td style="padding: 8px 10px; border: 1px solid #e2e8f0; font-weight: 700;">분비 패턴</td>
+<td style="padding: 8px 10px; border: 1px solid #e2e8f0;">전신에 비교적 고르게 나며 식으면 곧 멈춤</td>
+<td style="padding: 8px 10px; border: 1px solid #e2e8f0;">손바닥·발바닥·겨드랑이·안면에 양측 대칭 집중, 수면 중 중단</td>
+</tr>
+<tr>
+<td style="padding: 8px 10px; border: 1px solid #e2e8f0; font-weight: 700;">일상 영향</td>
+<td style="padding: 8px 10px; border: 1px solid #e2e8f0;">닦아내면 생활에 큰 지장이 없음</td>
+<td style="padding: 8px 10px; border: 1px solid #e2e8f0;">악수·필기·터치·외출 회피 및 극심한 대인 위축 초래</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</details>
+
+<details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;" open>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q2. 다한증과 액취증의 차이는 무엇인가요?</summary>
+<div style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.72;">
+<p style="margin: 0 0 8px;">
+<strong>다한증은 '에크린 땀샘'에서 맑고 냄새가 거의 없는 땀이 지나치게 많이 분비되는 질환이고, 액취증(암내)은 겨드랑이에 분포한 '아포크린 땀샘'의 지질·단백질 분비물이 피부 세균에 의해 분해되면서 특유의 불쾌한 냄새가 나는 질환입니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>다한증(Hyperhidrosis)</strong>: 원인은 자율신경 교감신경의 과흥분이며, 땀의 99%가 수분이라 땀 자체에는 냄새가 거의 없지만 젖은 상태가 오래 방치되면 세균이 번식해 2차 냄새가 날 수 있습니다.</li>
+<li><strong>액취증(Bromhidrosis)</strong>: 땀의 양이 많지 않아도 아포크린 땀샘 분비물 때문에 시큼하거나 특유의 암내가 나며, 흰 옷의 겨드랑이 부위가 누렇게 변색되거나 귀지가 축축한(물귀지) 특징이 동반되는 경우가 많습니다.</li>
+<li><strong>동반 가능성</strong>: 겨드랑이 다한증과 액취증이 함께 있는 경우도 적지 않으므로, 땀의 양 조절(자율신경 안정)과 위생 관리를 구분해 정확히 진단하는 것이 중요합니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;" open>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q3. 다한증 생활 관리 팁이 궁금해요</summary>
+<div style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.72;">
+<p style="margin: 0 0 8px;">
+<strong>다한증으로 인한 일상 불편과 피부 트러블을 줄이려면 통기성 의류 선택, 피부 완전 건조 습관, 수분·전해질 보충, 자극 없는 위생 관리가 실전 생활 팁으로 큰 도움이 됩니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>통기성 좋은 면·기능성 의류 및 여벌 양말 활용</strong>: 합성섬유나 몸에 딱 붙는 옷 대신 땀 흡수와 배출이 빠른 면·린넨·기능성 소재를 입고, 발 다한증이 있다면 통풍 잘되는 신발을 번갈아 신으며 면 양말을 여벌로 챙기세요.</li>
+<li><strong>샤워 후 완전 건조와 부드러운 손수건 지참</strong>: 젖은 피부를 방치하면 습진·무좀·피부염이 생기기 쉬우므로 발가락 사이와 겨드랑이를 완전히 말리고, 땀이 날 때 세게 문지르지 말고 가볍게 눌러 닦아주세요.</li>
+<li><strong>땀이 많다고 물을 안 마시지 않기</strong>: 수분 섭취를 줄여도 땀은 줄지 않고 오히려 탈수와 체열 상승을 부르므로, 미지근한 물로 수분과 전해질을 충분히 보충하세요.</li>
+<li><strong>외용 발한억제제 사용 시 주의</strong>: 알루미늄 성분의 바르는 억제제는 반드시 잠들기 전 피부가 완전히 건조한 상태에서 소량만 사용하고, 피부 자극이나 가려움이 생기면 중단해야 합니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;" open>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q4. 다한증 증상을 완화하는 생활 관리 방법이 궁금해요</summary>
+<div style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.72;">
+<p style="margin: 0 0 8px;">
+<strong>다한증 증상 자체를 완화하려면 교감신경의 과열을 부추기는 자극을 줄이고 자율신경의 체온·긴장 조절력을 높이는 식습관, 호흡 이완, 수면·반신욕 관리가 핵심입니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>교감신경 자극 음식 줄이기</strong>: 커피·에너지음료 등 고카페인, 지나치게 맵고 뜨거운 음식, 알코올, 니코틴은 교감신경과 발한 중추를 즉각 흥분시키므로 섭취를 줄이세요.</li>
+<li><strong>긴장 직전 '4-6 구순 복식호흡'</strong>: 발표·악수·대화 전 4초간 코로 들이마시고 6초간 입으로 길게 내쉬면 부교감신경이 켜지면서 급격한 심박수 상승과 긴장성 발한을 억제하는 데 도움이 됩니다.</li>
+<li><strong>규칙적인 수면(7~8시간)과 미온수 반신욕·족욕</strong>: 수면 부족은 자율신경 과민도를 높이므로 일정한 수면 리듬을 지키고, 38~40℃ 미온수 족욕·반신욕(15분)으로 상열하한(머리는 뜨겁고 손발은 참)을 풀어주세요.</li>
+<li><strong>체온 조절을 돕는 가벼운 유산소 운동</strong>: 규칙적인 걷기·수영으로 평소 스트레스를 배출하고 자율신경 탄력성을 높이면 긴장 상황에서 땀이 폭발하는 빈도가 점차 줄어듭니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;" open>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q5. 다한증 치료 후 일상생활에서 관리하는 방법이 궁금해요</summary>
+<div style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.72;">
+<p style="margin: 0 0 8px;">
+<strong>다한증 치료로 땀이 안정된 뒤에도 효과를 오래 유지하고 재발을 막으려면, ① 안정화 유지 기간 준수, ② 피부 장벽·보습 관리, ③ 스트레스·계절 변화 시기 선제 관리가 중요합니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>땀이 줄어든 직후 임의 중단 대신 안정화 다지기</strong>: 발한량이 줄어들었더라도 자율신경의 흥분 역치가 완전히 굳어지기까지는 일정 기간 유지 관리가 필요하므로 의료진과 경과를 보며 단계적으로 마무리하세요.</li>
+<li><strong>손·발 피부 보습과 위생 유지</strong>: 치료 후 손발이 뽀송해지면 간혹 건조감이나 각질이 느껴질 수 있으므로 순한 보습제를 바르고, 신발·양말을 청결하게 관리해 2차 피부 질환을 예방합니다.</li>
+<li><strong>과로·수면 부족·카페인 과다 피하기</strong>: 시험·이직·여름철 무더위처럼 자율신경 부담이 커지는 시기에 일시적으로 땀이 조금 늘 수 있습니다. 이때 "다시 재발했다"고 당황해 긴장하지 말고 복식호흡과 수면 회복을 우선 챙기며 필요 시 가벼운 보강 점검을 받으세요.</li>
+</ul>
+</div>
+</details>
+
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q1. 교감신경 절제 수술 없이 한의학으로 땀이 줄어들 수 있나요?</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q6. 교감신경 절제 수술 없이 한의학으로 땀이 줄어들 수 있나요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 네, 충분히 가능합니다. 흉부 교감신경 절제 수술은 손 땀을 즉각 멈추게 하지만 등이나 엉덩이, 다리로 땀이 옮겨가는 '보상성 다한증'이라는 비가역적 후유증 위험이 있습니다. 한방 치료는 신경을 인위적으로 손상시키지 않고, 자율신경계의 과민성을 정상화하여 전신의 균형 속에서 발한량을 줄이므로 안전합니다.
 </p>
 </details>
 
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q2. 한약 치료 후 땀이 줄어드는 효과는 언제 나타나나요?</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q7. 한약 치료 후 땀이 줄어드는 효과는 언제 나타나나요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 개인 체질과 증상의 경중에 따라 차이가 있으나, 보통 <strong>2~4주 복용 시 긴장성 발한의 빈도와 땀 분비량이 눈에 띄게 완화</strong>되기 시작합니다. 이후 2~3개월간 지속적인 치료를 통해 자율신경계 흥분 역치를 정상화하여 장기적인 유지력을 확립합니다.
 </p>
 </details>
 
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q3. 몸에 열이 많아서 땀이 많이 나는 건가요?</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q8. 몸에 열이 많아서 땀이 많이 나는 건가요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 몸에 실열(實熱)이 차서 나는 경우도 있지만, 반대로 기운이 허약하여 땀구멍을 닫아두지 못하는 기허(氣虛) 다한증이나, 몸속 음혈이 부족해 허열이 뜨는 음허(陰虛) 다한증도 매우 흔합니다. 열을 무조건 식히는 것이 아니라 개인별 체질과 원인을 정확히 감별하여 맞춤 처방해야 합니다.
 </p>
 </details>
 
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q4. 긴장하면 땀이 나는 것도 다한증인가요?</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q9. 긴장하면 땀이 나는 것도 다한증인가요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 긴장 시 약간의 땀이 나는 것은 정상적인 생리 반응입니다. 하지만 그 양이 지나치게 많아 손수건이 젖거나 시험지 작성, 악수, 사회생활에 지장을 초래할 정도라면 뇌신경계와 자율신경계가 과민하게 작동하는 '긴장성 다한증'으로 진단하고 치료해야 합니다.
 </p>
 </details>
 
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q5. 평소에는 괜찮은데 사람 앞에서만 땀이 폭발합니다. 왜 그런가요?</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q10. 평소에는 괜찮은데 사람 앞에서만 땀이 폭발합니다. 왜 그런가요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 대인관계에서의 긴장과 평가에 대한 두려움이 뇌의 시상하부를 즉각 자극하기 때문입니다. 특히 "땀나면 어쩌지"라는 예기불안이 교감신경을 재점화하여 평소와 달리 사람 앞에서만 땀샘이 폭발하게 됩니다.
 </p>
 </details>
 
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q6. 손에 땀이 너무 많아 악수가 두렵고 스마트폰 터치가 안 됩니다.</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q11. 손에 땀이 너무 많아 악수가 두렵고 스마트폰 터치가 안 됩니다.</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 수족다한증의 대표적인 증상입니다. 손바닥 에크린샘은 정서적 긴장에 가장 민감하게 반응합니다. 심장의 긴장을 완화하는 한약과 수분 대사 침구요법을 통해 손 땀 분비량을 줄여 일상생활의 불편을 신속히 해소할 수 있습니다.
 </p>
 </details>
 
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q7. 얼굴이나 머리에 땀이 비 오듯 흘러 창피한데 치료가 되나요?</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q12. 얼굴이나 머리에 땀이 비 오듯 흘러 창피한데 치료가 되나요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 두한증 및 안면다한증은 상초(上焦)로 허열이 치솟거나 위장의 습열이 쌓여 발생하는 경우가 많습니다. 열을 맑히고 기운을 아래로 내리는 청열강화 처방을 통해 머리와 얼굴의 땀을 효과적으로 다스립니다.
 </p>
 </details>
 
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q8. 긴장성 다한증과 자율신경실조증, 공황장애는 어떤 관계인가요?</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q13. 긴장성 다한증과 자율신경실조증, 공황장애는 어떤 관계인가요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 모두 '교감신경의 과항진'이라는 공통된 병리를 가집니다. 다한증 환자에게 가슴 두근거림, 상열감, 호흡 곤란, 어지럼증 등이 동반된다면 단순 피부 증상이 아닌 자율신경계 전반의 기능 실조로 보고 통합적으로 치료해야 합니다.
 </p>
 </details>
 
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q9. 다한증 치료를 위해 피부과에 가야 하나요, 한의원에 가야 하나요?</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q14. 다한증 치료를 위해 피부과에 가야 하나요, 한의원에 가야 하나요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 바르는 약이나 보톡스 등 국소적 억제 치료는 피부과에서 받을 수 있습니다. 하지만 긴장과 스트레스, 대인관계 불안이 원인이 되어 땀이 쏟아지는 경우이거나, 수술에 대한 부담을 덜고 안정적인 자율신경계 조절을 원하신다면 한방신경정신과 진료가 매우 적합합니다.
 </p>
 </details>
 
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q10. 병원에 전화하는 것조차 긴장되고 땀이 나는데 어떡하죠?</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q15. 병원에 전화하는 것조차 긴장되고 땀이 나는데 어떡하죠?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 긴장성 다한증 환자분들은 전화하는 순간에도 손에 땀이 흥건해질 정도로 큰 긴장을 겪으십니다. 바로 예약을 잡지 않으셔도 되니, "이런 증상도 치료가 되는지" 편안하게 물어보시는 것부터 시작하셔도 괜찮습니다.
 </p>
