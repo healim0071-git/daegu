@@ -5,7 +5,7 @@ h1_title: "대구 대인기피증 치료 병원 ㅣ 해아림한의원 대구본
 disease_name: "대인기피증"
 hero_sub: "대인기피증 & 사회공포증 집중치료 | 해아림한의원"
 description: "대인기피증과 사회공포증의 차이, 주요 증상과 원인, 극복 방법, 증상 완화 생활 습관, 한방 대인기피증 클리닉 등 도움을 받을 수 있는 전문가 안내까지 16년 임상 노하우로 안내합니다. 해아림한의원 대구본점."
-keywords: ["대구 대인기피증 치료", "대인기피증 사회공포증", "대인기피증 증상", "대인기피증 원인", "대인기피증 치료 방법", "대인기피증 극복 방법", "대인기피증 생활 습관", "한방 대인기피증 클리닉", "해아림한의원 대구본점"]
+keywords: ["대구 대인기피증 치료", "대인기피증 사회공포증", "사회공포증 수줍음 차이", "사회공포증 증상", "사회공포증 원인", "사회공포증 진단 기준", "사회공포증 극복 방법", "사회공포증 치료 방법", "대인기피증 생활 습관", "한방 대인기피증 클리닉", "해아림한의원 대구본점"]
 layout: "disease"
 hero_title: "16년 이상 대인기피증·사회공포증을<br>집중적으로 다뤄온<br>해아림한의원 대인기피증클리닉"
 ---
@@ -404,71 +404,179 @@ hero_title: "16년 이상 대인기피증·사회공포증을<br>집중적으로
 </div>
 </details>
 
+<details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;" open>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q6. 사회공포증과 수줍음의 차이는 무엇인가요?</summary>
+<div style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.72;">
+<p style="margin: 0 0 10px;">
+<strong>수줍음은 낯선 상황에서 잠시 긴장했다가 금세 적응하며 일상에 지장을 주지 않는 자연스러운 성격 특성이지만, 사회공포증(사회불안장애)은 타인의 평가에 대한 극심한 공포와 자율신경 신체 증상이 6개월 이상 지속되어 학업·직장·인간관계가 실제로 제한되는 의학적 질환입니다.</strong>
+</p>
+<div style="overflow-x: auto; margin-bottom: 4px;">
+<table style="width: 100%; border-collapse: collapse; font-size: 0.9rem; text-align: left; background: #fff;">
+<thead>
+<tr style="background: #f1f5f9; color: #1e3a8a;">
+<th style="padding: 8px 10px; border: 1px solid #cbd5e1; width: 22%;">구분</th>
+<th style="padding: 8px 10px; border: 1px solid #cbd5e1; width: 39%;">일반적인 수줍음</th>
+<th style="padding: 8px 10px; border: 1px solid #cbd5e1; width: 39%;">사회공포증 (사회불안장애)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 8px 10px; border: 1px solid #e2e8f0; font-weight: 700;">긴장 지속 시간</td>
+<td style="padding: 8px 10px; border: 1px solid #e2e8f0;">처음에만 잠시 어색하다가 시간이 지나면 편안해짐</td>
+<td style="padding: 8px 10px; border: 1px solid #e2e8f0;">만남 며칠 전부터 예기불안, 만남 후에도 며칠간 사후 반추</td>
+</tr>
+<tr style="background: #f8fafc;">
+<td style="padding: 8px 10px; border: 1px solid #e2e8f0; font-weight: 700;">신체 증상</td>
+<td style="padding: 8px 10px; border: 1px solid #e2e8f0;">가벼운 두근거림 수준으로 통제 가능</td>
+<td style="padding: 8px 10px; border: 1px solid #e2e8f0;">심한 얼굴 홍조, 손·목소리 떨림, 식은땀, 숨 막힘, 백지화</td>
+</tr>
+<tr>
+<td style="padding: 8px 10px; border: 1px solid #e2e8f0; font-weight: 700;">일상 기능 영향</td>
+<td style="padding: 8px 10px; border: 1px solid #e2e8f0;">발표·면접·모임 등 필요한 사회생활을 정상 수행</td>
+<td style="padding: 8px 10px; border: 1px solid #e2e8f0;">취업·승진·학업·인간관계를 회피하거나 포기하게 됨</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</details>
+
+<details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;" open>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q7. 사회공포증의 주요 증상은 어떤 것이 있나요?</summary>
+<div style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.72;">
+<p style="margin: 0 0 8px;">
+<strong>사회공포증의 주요 증상은 크게 '정서·인지 증상(평가 공포)', '자율신경 신체 증상', '사회적 회피 행동' 세 가지 영역으로 나타납니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>정서·인지 증상</strong>: 남들이 나를 비웃거나 무능하다고 여길 것 같은 극심한 두려움, 질문받았을 때 머릿속이 하얘지는 현상(블랙아웃), 만남 뒤 사소한 말실수를 끝없이 자책하는 사후 반추</li>
+<li><strong>자율신경 신체 증상</strong>: 얼굴·목 붉어짐(적면), 목소리·손떨림, 심장 두근거림(심계항진), 식은땀, 호흡 답답함, 속 울렁거림, 눈 마주치기 곤란</li>
+<li><strong>행동 증상</strong>: 발표·회의·면접·전화 통화·회식·타인 앞 식사를 피하거나 약속을 취소하며, 점차 외출과 대인관계 전반이 위축됩니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;" open>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q8. 사회공포증의 원인은 무엇인가요?</summary>
+<div style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.72;">
+<p style="margin: 0 0 8px;">
+<strong>사회공포증은 단순한 성격 결함이 아니라, 뇌 편도체의 과민성과 신경전달물질 불균형 같은 '생물학적 요인', 유전적 기질, 그리고 부정적 사회적 경험·양육 환경이 복합적으로 작용해 발생합니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>뇌신경학적 요인</strong>: 공포와 위협을 감지하는 뇌 편도체(Amygdala)가 타인의 시선에 과잉 반응하고, 세로토닌·GABA·도파민 등 정서 조절 신경전달물질의 균형이 흔들려 교감신경이 폭주합니다.</li>
+<li><strong>유전·체질적 소인</strong>: 타고난 기질이 예민하고 억제력이 강한 경우나 한의학적으로 심장과 담의 기운이 약한 심담허겁(心膽虛怯) 체질에서 발병 취약성이 높습니다.</li>
+<li><strong>환경·심리적 요인</strong>: 학창 시절 또래 따돌림, 발표 중 심하게 당황했던 창피 경험(트라우마), 지나치게 비판적이거나 과보호적인 양육 환경이 뇌에 강한 평가 공포를 각인시킵니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;" open>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q9. 사회공포증 진단 기준이 궁금해요</summary>
+<div style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.72;">
+<p style="margin: 0 0 8px;">
+<strong>의학적 진단 기준(DSM-5 사회불안장애)에 따르면 타인에게 관찰되거나 평가받는 사회적 상황에서 현저한 공포·불안과 회피가 '6개월 이상' 지속되어 일상·학업·직업 기능에 뚜렷한 장애를 일으킬 때 사회공포증으로 진단합니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li>대화, 낯선 사람 만나기, 식사, 발표 등 하나 이상의 사회적 상황에서 부정적 평가·창피함에 대한 뚜렷한 공포가 반복됩니다.</li>
+<li>해당 사회적 상황이 거의 항상 즉각적인 불안·공포를 유발하여 이를 피하거나 극심한 고통 속에 견뎌냅니다.</li>
+<li>느끼는 공포가 실제 사회적 위협에 비해 지나치게 과도하며, 이러한 상태가 <strong>6개월 이상</strong> 지속됩니다.</li>
+<li>임상에서는 심층 문진과 함께 <strong>리보위츠 사회불안 척도(LSAS)</strong>, 뇌파(EEG), 심박변이도(HRV) 검사로 객관적 중증도와 공황·우울·틱 동반 여부를 함께 평가합니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;" open>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q10. 사회공포증을 극복하는 방법은 무엇인가요?</summary>
+<div style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.72;">
+<p style="margin: 0 0 8px;">
+<strong>사회공포증을 극복하려면 두려운 상황을 회피해 불안을 키우는 고리를 끊고, 신체 긴장을 낮추면서 작은 성공 경험을 반복해 뇌에 '사람 앞에서도 안전하다'는 새로운 기억을 덮어씌우는 과정이 핵심입니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>안전 행동(회피·숨기기) 하나씩 줄이기</strong>: 시선을 완전히 피하거나 두꺼운 마스크·모자로 얼굴을 가리는 안전 행동은 오히려 불안을 유지시키므로 점진적으로 줄여나갑니다.</li>
+<li><strong>단계별 노출 사다리 실천</strong>: 내가 느끼는 불안 점수를 0~100점으로 나누어 가장 부담이 적은 20~30점 상황(짧은 인사·주문 등)부터 반복 성공한 뒤 발표·모임으로 넓혀갑니다.</li>
+<li><strong>신체 안정 치료 병행</strong>: 혼자 노출을 시도하다 심장 두근거림과 홍조가 폭발해 좌절하기 쉬우므로, 맞춤 한방 치료나 전문 상담으로 자율신경 과민도를 먼저 낮춘 뒤 병행하면 극복 속도가 훨씬 빨라집니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;" open>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q11. 사회공포증 치료는 어떤 방법이 있나요?</summary>
+<div style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.72;">
+<p style="margin: 0 0 8px;">
+<strong>사회공포증 치료는 뇌 편도체와 자율신경의 과민 반응을 안정시키는 '한방 자생력 치료', 왜곡된 시선 공포와 회피 행동을 교정하는 '인지행동치료(CBT)', 그리고 필요 시 시행하는 '양방 약물 치료'로 나뉩니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>한방 사회공포증·대인기피증 통합 치료</strong>: 진경안신·보심온담 체질 맞춤 한약으로 얼굴 붉어짐·손떨림·심장 두근거림을 진정시키고, 뇌파 뉴로피드백·HRV 바이오피드백, 침구·경추 이완 추나요법, 인지행동 코칭을 결합해 졸림이나 의존 부담 없이 두뇌 자생력을 복원합니다.</li>
+<li><strong>인지행동치료(CBT) 및 노출 치료</strong>: 부정적 평가에 대한 왜곡된 신념을 객관적으로 점검하고, 단계적 사회적 노출을 통해 실제 대인 상황 적응력을 높입니다.</li>
+<li><strong>양방 약물 치료(필요 시 병행)</strong>: SSRI 등 세로토닌 조절제나 발표 직전 심박수를 낮추는 베타차단제 등이 활용되며, 기존 양약을 복용 중인 경우에도 한방 치료를 안전하게 병행하며 경과에 따라 감량을 상의할 수 있습니다.</li>
+</ul>
+</div>
+</details>
+
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q6. 대인기피증은 단순한 수줍음이나 내성적 성격과 어떻게 다른가요?</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q12. 대인기피증은 단순한 수줍음이나 내성적 성격과 어떻게 다른가요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 수줍음이나 내향성은 혼자 있는 것을 편안해하는 성향일 뿐 생활에 장애를 초래하지 않습니다. 반면 대인기피증은 사람을 만나고 싶고 일상생활을 영위하고 싶지만 타인의 시선과 평가에 대한 비합리적인 공포 때문에 학업, 직장, 대인관계를 포기하게 되며, 극심한 신체적 고통(홍조, 떨림, 심장 박동)이 동반된다는 결정적 차이가 있습니다.
 </p>
 </details>
 
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q7. 대인기피증이면 무조건 사회불안장애인가요?</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q13. 대인기피증이면 무조건 사회불안장애인가요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 그렇지는 않습니다. 대인기피는 일상적 표현이며, 실제로는 사회불안장애 외에도 공황장애로 인한 광장공포증, 우울증으로 인한 의욕 상실, 성인 틱장애나 ADHD로 인한 사회적 위축 등 다양한 원인이 있을 수 있으므로 전문 한방신경정신과 진료를 통해 정확한 원인을 감별해야 합니다.
 </p>
 </details>
 
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q8. 남들 앞에만 서면 얼굴이 빨개지고 목소리가 떨려요. 제 성격 탓인가요?</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q14. 남들 앞에만 서면 얼굴이 빨개지고 목소리가 떨려요. 제 성격 탓인가요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 절대 성격 탓이 아닙니다. 타인의 시선이나 사회적 평가 상황을 뇌의 편도체가 비상사태로 오인하여 아드레날린을 급격히 분비시키고 말초 혈관을 확장시키는 '뇌신경계 기능 부전'입니다. 한의학적으로는 심담허겁(心膽虛怯)으로 심장과 담의 기운이 약해져 사소한 자극에도 자율신경계가 과민하게 폭발하는 현상입니다.
 </p>
 </details>
 
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q9. 평소엔 괜찮은데 발표나 면접 때만 너무 떨립니다. 이것도 치료 대상인가요?</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q15. 평소엔 괜찮은데 발표나 면접 때만 너무 떨립니다. 이것도 치료 대상인가요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 네, 전형적인 '수행 불안(발표 공포증)'에 해당합니다. 중요한 발표나 면접, 미팅을 앞두고 지나치게 긴장하여 제 실력을 발휘하지 못하거나 기회를 포기할 정도라면 조기에 뇌신경 흥분을 안정시키는 치료를 통해 충분히 극복할 수 있습니다.
 </p>
 </details>
 
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q10. 약을 먹으면 바로 발표 때 안 떨리나요? 한방 치료로 완화되나요?</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q16. 약을 먹으면 바로 발표 때 안 떨리나요? 한방 치료로 완화되나요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 네. 급성 긴장을 완충하는 청심·안신(淸心安神) 맞춤 처방을 복용하시면 심장의 과도한 쿵쾅거림과 손떨림, 목소리 떨림이 크게 완화되어 차분하게 발표를 마칠 수 있습니다. 또한 꾸준한 치료를 통해 뇌의 긴장 역치를 높여 장기적인 안정 상태를 만듭니다.
 </p>
 </details>
 
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q11. 사람을 피하다 보니 점점 방 안에만 고립되고 있어요. 혼자 극복할 수 있나요?</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q17. 사람을 피하다 보니 점점 방 안에만 고립되고 있어요. 혼자 극복할 수 있나요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 회피는 단기적으로 안도감을 주지만 뇌는 이를 '사람은 정말 위험하다'고 더욱 강화 학습하게 됩니다. 혼자 의지로 참으려 하면 고립이 깊어집니다. 신체적 떨림과 홍조를 탕약으로 먼저 진정시켜 준 뒤, 안전하다는 감각을 뇌에 단계적으로 재각인시켜야 고립에서 건강하게 벗어날 수 있습니다.
 </p>
 </details>
 
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q12. 대인기피증 때문에 밤에 잠도 잘 못 자는데 왜 그런가요?</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q18. 대인기피증 때문에 밤에 잠도 잘 못 자는데 왜 그런가요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 사람을 만난 후 "내가 말실수를 했나?", "이상하게 생각했겠지?"라며 과거 대화를 끊임없이 되짚는 '사후 반추(Post-event Rumination)' 때문입니다. 뇌가 24시간 비상 경계 모드를 유지하느라 멜라토닌 분비가 억제되어 입면장애와 악몽을 겪게 됩니다.
 </p>
 </details>
 
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q13. 대인기피증 약(신경안정제)을 꼭 먹어야 하나요? 한방 치료와 병행 가능한가요?</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q19. 대인기피증 약(신경안정제)을 꼭 먹어야 하나요? 한방 치료와 병행 가능한가요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 반드시 양약을 복용해야 하는 것은 아닙니다. 한방 치료 단독으로도 우수한 치료 효과를 보이며, 이미 인데놀(베타차단제)이나 항불안제를 복용 중이신 경우에도 안전하게 한방 치료를 병행할 수 있습니다. 뇌 신경 자생력이 회복되면 점진적으로 약물을 감량할 수 있습니다.
 </p>
 </details>
 
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q14. 대인기피증은 치료하면 정말 완치 가능한가요?</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q20. 대인기피증은 치료하면 정말 완치 가능한가요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 네, 충분히 회복될 수 있습니다. 뇌 편도체의 과민 반응을 정상화하고 신체적 자율신경 조절력을 회복하면, 사람들 앞에서도 심장이 터질 듯 뛰거나 머리가 하얘지지 않고 차분하고 당당하게 자신의 생각과 감정을 표현할 수 있게 됩니다.
 </p>
 </details>
 
 <details class="faq-item" style="border: 1px solid #e2e8f0; border-radius: 6px; margin-bottom: 10px; padding: 14px; background: #fff;">
-<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q15. 병원에 전화하는 것조차 너무 두렵고 부담스러운데 어떻게 해야 하나요?</summary>
+<summary style="font-weight: bold; color: #1e3a8a; cursor: pointer; font-size: 1.02rem;">Q21. 병원에 전화하는 것조차 너무 두렵고 부담스러운데 어떻게 해야 하나요?</summary>
 <p style="margin: 10px 0 0 0; color: #475569; font-size: 0.95rem; line-height: 1.65;">
 대인기피증이 있으신 분들은 낯선 곳에 전화하는 것 자체를 매우 힘들어하십니다. 해아림한의원은 이러한 고통을 깊이 이해하고 있으므로, 바로 진료를 결정하지 않으셔도 괜찮습니다. "이런 증상이 대인기피증인지 궁금하다"는 가벼운 질문부터 편안하게 시작해주세요.
 </p>
