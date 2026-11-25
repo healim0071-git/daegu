@@ -1,11 +1,12 @@
-﻿---
+---
 title: "대구 틱장애 치료 병원 ㅣ 해아림한의원 대구본점ㅣ 어린이틱장애, 성인틱장애, 음성틱장애, 뚜렛장애"
 seo_title: "대구 틱장애 치료 병원 ㅣ 해아림한의원 대구본점ㅣ 어린이틱장애, 성인틱장애, 음성틱장애, 뚜렛장애"
 h1_title: "대구 틱장애 치료 병원 ㅣ 해아림한의원 대구본점ㅣ 어린이틱장애, 성인틱장애, 음성틱장애, 뚜렛장애"
 disease_name: "틱장애"
 hero_sub: "틱장애(소아, 성인, 뚜렛) 집중치료 | 해아림한의원"
 hero_title: "16년 이상 틱장애·뚜렛증후군을<br>집중적으로 다뤄온<br>해아림한의원 틱장애클리닉"
-description: "대구 틱장애 치료 병원·한의원. 16여 년 임상 노하우와 단행본 『토닥토닥 틱장애』 저자 김대억 대표원장의 1:1 심층 진료. 어린이틱장애, 성인틱장애, 음성틱장애, 뚜렛장애까지 뇌 신경계의 자생력을 깨워 회복후 안정적인 상태가 유지되게 돕습니다."
+description: "대구 틱장애 치료 병원·한의원. 16여 년 임상 노하우와 단행본 『토닥토닥 틱장애』 저자 김대억 대표원장의 1:1 심층 진료. 틱장애 발병 시기, 주요 증상(운동틱·음성틱), 동반 질환, 인지행동치료(CBIT) 및 생활 관리법까지 뇌 신경계의 자생력을 깨워 안정적인 회복을 돕습니다."
+keywords: ["대구 틱장애 치료", "어린이틱장애", "성인틱장애", "음성틱장애", "뚜렛장애", "틱장애 발병 시기", "틱장애 증상", "틱장애 동반 질환", "틱장애 생활 관리", "인지행동치료 CBIT", "해아림한의원 대구본점"]
 layout: "disease"
 ---
 
@@ -231,6 +232,7 @@ layout: "disease"
 <!-- 6. 발생 원인과 기전: 단일 원인이 아닌 신경계 조절력의 취약성 -->
 <div class="cond-section">
 <h2 class="cond-h2">틱장애는 왜 생기나요? (발생 원인과 기전)</h2>
+<h3 style="font-size: 1.12rem; font-weight: 800; color: #0C4349; margin: 4px 0 14px;">틱 증상이 나타나는 주요 원인은 무엇인가요?</h3>
 <div style="line-height: 1.8; color: #334155; font-size: 1rem;">
 <p>
 틱장애는 단 하나의 단순한 이유로 생기지 않습니다. 흔히 <strong>"아이에게 스트레스를 줘서 틱이 생겼다"</strong>고 자책하는 부모님이 많지만, 이는 오해입니다.
@@ -376,6 +378,7 @@ layout: "disease"
 <!-- 9. 해아림 심층 치료법 (1:1 자생력 회복 시스템) -->
 <div class="cond-section">
 <h2 class="cond-h2">해아림한의원 대구본점 1:1 심층 자생력 치료 시스템</h2>
+<h3 style="font-size: 1.12rem; font-weight: 800; color: #0C4349; margin: 4px 0 14px;">틱장애 치료 방법은 어떻게 되나요?</h3>
 <p style="line-height: 1.7; color: #475569; margin-bottom: 20px;">
 아이마다 체질과 신경계의 반응이 다르기 때문에 치료법 또한 달라야 합니다.
 해아림 틱장애클리닉에서는 억제제에 의존하지 않고, <strong>뇌 스스로 운동 조절 피드백 능력을 회복하도록 돕는 4단계 통합 치료</strong>를 적용합니다.
@@ -413,7 +416,7 @@ layout: "disease"
 
 <div class="cond-card cond-card--blue" style="margin-bottom: 14px;">
 <div style="display: flex; align-items: center; justify-content: space-between;">
-<p class="cond-card-title" style="font-size: 1.05rem;">④ 인지행동 치료 & 전조충동 조절 코칭</p>
+<p class="cond-card-title" style="font-size: 1.05rem;">④ 인지행동치료(CBIT) & 전조충동 조절 코칭</p>
 <span style="background: #2F6F8F; color: #FFF; font-size: 11.5px; font-weight: 700; padding: 2px 8px; border-radius: 4px;">인지 행동</span>
 </div>
 <p class="cond-card-desc" style="margin-top: 6px;">
@@ -494,7 +497,7 @@ layout: "disease"
 
 <!-- 12. 가정 내 부모님 생활관리 가이드 (5가지 수칙) -->
 <div class="cond-section">
-<h2 class="cond-h2">어떻게 관리해야 할까요?</h2>
+<h2 class="cond-h2">틱장애 아동의 일상생활 관리법이 궁금해요</h2>
 <div style="line-height: 1.8; color: #334155;">
 <p style="font-size: 1.02rem; font-weight: 700; color: #0C4349; margin-bottom: 16px;">
 "틱을 억지로 줄이려 하지 마시고, 아이 마음의 긴장과 불안을 먼저 덜어주세요."
@@ -569,11 +572,77 @@ layout: "disease"
 </div>
 </div>
 
-<!-- 14. AEO 자주 묻는 질문 FAQ 10선 (통합 확장) -->
-<div class="cond-section">
+<!-- 14. AEO 자주 묻는 질문 FAQ (통합 확장) -->
+<div class="cond-section" id="tic-faq-best">
 <h2 class="cond-h2">환자·부모님이 가장 많이 묻는 질문 BEST</h2>
 
 <details class="faq-item" style="margin-bottom: 12px;" open>
+<summary>Q. 틱장애는 주로 언제부터 나타나나요?</summary>
+<div style="padding-top: 12px; font-size: 0.95rem; color: #475569; line-height: 1.75;">
+<p style="margin: 0 0 10px;">
+<strong>틱장애는 주로 만 4세~7세 사이(유치원~초등학교 저학년)에 처음 시작되는 경우가 가장 많으며</strong>, 전체 아동의 약 10~20%가 성장 과정에서 일시적인 틱 증상을 경험합니다.
+</p>
+<p style="margin: 0;">
+초기에는 눈 깜빡임이나 얼굴 찡그림 같은 단순 운동틱으로 시작해 <strong>만 7세~11세(초등 학령기) 전후에 증상이 가장 두드러지는 경향</strong>을 보이며, 운동틱이 시작된 뒤 1~2년 후에 킁킁거림·헛기침 등의 음성틱이 동반되기도 합니다. 가벼운 일과성 틱은 자연 완화될 수 있으나, 증상이 4주 이상 지속되거나 부위가 이동하고 음성틱이 함께 나타난다면 만성화·뚜렛증후군으로 진행하기 전에 조기 신경계 점검을 받아보시는 것이 안전합니다.
+</p>
+</div>
+</details>
+
+<details class="faq-item" style="margin-bottom: 12px;" open>
+<summary>Q. 틱장애의 주요 증상은 어떤 것들이 있나요?</summary>
+<div style="padding-top: 12px; font-size: 0.95rem; color: #475569; line-height: 1.75;">
+<p style="margin: 0 0 10px;">
+<strong>틱장애의 주요 증상은 신체 근육을 불수의적으로 움직이는 '운동틱(근육틱)'과 성대·호흡기로 소리를 내는 '음성틱'</strong>으로 나뉘며, 증상의 복잡도에 따라 단순형과 복합형으로 구분됩니다.
+</p>
+<ul style="margin: 0 0 10px; padding-left: 20px; line-height: 1.7;">
+<li><strong>단순 운동틱</strong>: 눈 깜빡임, 눈동자 굴리기, 얼굴·코 찡그림, 입 벌리기, 고개 끄덕임·목 꺾기, 어깨 들썩임</li>
+<li><strong>복합 운동틱</strong>: 자신이나 사물을 반복해서 만지기·두드리기, 제자리 뛰기, 특정 자세나 걸음걸이 반복</li>
+<li><strong>단순 음성틱</strong>: 코 킁킁거림, 음음·큼큼 소리, 헛기침, 가래 뱉는 소리, 혀 차는 소리 (초기 비염·감기 오인 주의)</li>
+<li><strong>복합 음성틱</strong>: 특정 단어·문장 반복, 남의 말을 따라 하는 반향언어, 상황에 맞지 않는 단어·욕설(외설증)</li>
+</ul>
+<p style="margin: 0;">
+대개 얼굴에서 시작해 목·어깨·몸통 아래로 내려오는 경향이 있으며, 피로나 긴장도에 따라 증상의 부위와 강도가 수시로 달라지는 것이 특징입니다.
+</p>
+</div>
+</details>
+
+<details class="faq-item" style="margin-bottom: 12px;" open>
+<summary>Q. 틱장애와 함께 나타날 수 있는 동반 질환은 어떤 것이 있나요?</summary>
+<div style="padding-top: 12px; font-size: 0.95rem; color: #475569; line-height: 1.75;">
+<p style="margin: 0 0 10px;">
+<strong>틱장애 환아의 약 50~60% 이상은 틱 증상만 단독으로 나타나지 않고 다른 신경발달·정서 질환을 함께 동반</strong>합니다.
+</p>
+<ul style="margin: 0 0 10px; padding-left: 20px; line-height: 1.7;">
+<li><strong>ADHD(주의력결핍 과잉행동장애)</strong>: 가장 흔한 동반 질환(약 40~50%)으로 산만함, 충동성, 집중력 저하가 함께 나타납니다.</li>
+<li><strong>강박증(OCD)</strong>: 손 씻기, 확인 반복, 물건 정렬·대칭 집착, 침투적 불안 사고가 공존하는 경우가 많습니다.</li>
+<li><strong>불안장애 및 정서 문제</strong>: 분리불안, 사회불안, 예민성, 감정 기복, 또래 위축 및 자존감 저하가 동반될 수 있습니다.</li>
+<li><strong>수면장애 및 학습 어려움</strong>: 입면 곤란, 야경증, 잦은 각성과 주의력 저하로 인한 학습 부진이 겹치기도 합니다.</li>
+</ul>
+<p style="margin: 0;">
+이들 질환은 뇌 전두엽-기저핵-시상(CSTC) 회로의 조절 취약성을 공유하므로, 틱 동작만 떼어내지 않고 동반 증상을 함께 감별·통합 치료해야 재발 위험을 낮추고 아이의 건강한 성장을 지킬 수 있습니다.
+</p>
+</div>
+</details>
+
+<details class="faq-item" style="margin-bottom: 12px;" open>
+<summary>Q. 틱 증상을 완화하는 생활 관리 방법이 궁금해요.</summary>
+<div style="padding-top: 12px; font-size: 0.95rem; color: #475569; line-height: 1.75;">
+<p style="margin: 0 0 10px;">
+<strong>일상에서 틱 증상을 완화하려면 동작을 억지로 막기보다 뇌 신경계의 과각성과 정서적 긴장을 낮추는 생활 관리</strong>가 핵심입니다.
+</p>
+<ul style="margin: 0 0 10px; padding-left: 20px; line-height: 1.7;">
+<li><strong>증상을 지적하거나 혼내지 않기</strong>: "하지 마", "참아봐" 같은 지적은 전조충동과 불안을 키워 오히려 증상을 폭발시키므로 자연스럽게 넘어가 주세요.</li>
+<li><strong>규칙적이고 충분한 수면(아동 8~9시간 이상)</strong>: 수면 부족과 누적된 피로는 기저핵의 억제 조절력을 무너뜨리는 대표적인 악화 요인입니다.</li>
+<li><strong>스마트폰·게임·유튜브 등 시각 과자극 제한</strong>: 자극적인 화면과 게임은 뇌 도파민 흥분을 높이므로 사용 시간을 조절하고, 특히 취침 2시간 전에는 화면을 차단하세요.</li>
+<li><strong>규칙적인 유산소 운동과 정서적 지지</strong>: 매일 30분 내외의 걷기·줄넘기·수영으로 긴장을 풀고, 틱 횟수 대신 아이의 하루 기분과 스트레스를 세심히 살펴주는 것이 증상 완화에 큰 도움이 됩니다.</li>
+</ul>
+<p style="margin: 0;">
+생활 관리와 함께 증상이 4주 이상 이어지거나 학업·교우 관계에 영향을 준다면 뇌 자생력을 회복하는 전문 진료를 병행하시는 것이 좋습니다.
+</p>
+</div>
+</details>
+
+<details class="faq-item" style="margin-bottom: 12px;">
 <summary>Q. 눈을 자꾸 깜빡이면 무조건 틱장애인가요?</summary>
 <div style="padding-top: 12px; font-size: 0.95rem; color: #475569; line-height: 1.7;">
 <p style="margin: 0;">
