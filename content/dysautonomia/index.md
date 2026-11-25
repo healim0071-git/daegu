@@ -5,7 +5,8 @@ h1_title: "대구 자율신경실조증 검사 병원 ㅣ 해아림한의원 대
 disease_name: "자율신경실조증"
 hero_sub: "자율신경실조증 (Dysautonomia) 집중치료 | 해아림한의원"
 hero_title: "16년 이상 자율신경실조증·어지럼증·불안을<br>집중적으로 다뤄온<br>해아림한의원 자율신경실조증클리닉"
-description: "두근거림·어지럼증·불면·소화불량이 한꺼번에 나타나는데 종합검진은 정상인가요? 16년 임상 경험의 한방신경정신과 박사 김대억 대표원장의 1:1 심층 진료. 교감·부교감 신경의 균형을 복원하고 자생력을 깨워, 회복후 안정적인 상태가 유지되게 돕습니다."
+description: "자율신경실조증 원인, 주요 증상, 진단 검사(HRV·체열·뇌파), 진료과 선택 가이드, 좋은 음식과 피해야 할 음식, 생활 습관 관리법까지. 한방 자율신경실조증 클리닉 해아림한의원 대구본점 김대억 대표원장이 1:1 심층 치료로 자율신경 균형과 자생력을 회복합니다."
+keywords: ["대구 자율신경실조증", "자율신경실조증 원인", "자율신경실조증 주요 증상", "자율신경실조증 검사", "자율신경실조증 진료과", "자율신경실조증 좋은 음식", "자율신경실조증 생활 습관", "한방 자율신경실조증 클리닉", "해아림한의원 대구본점"]
 layout: "disease"
 ---
 
@@ -163,7 +164,7 @@ layout: "disease"
 
 <!-- 5. 발생 원인 및 악순환 기전 -->
 <div class="cond-section">
-<h2 class="cond-h2">자율신경실조증은 왜 생기며 왜 악화될까요?</h2>
+<h2 class="cond-h2">자율신경실조증 원인, 왜 생기며 왜 악화될까요?</h2>
 <p style="color: #475569; line-height: 1.75; margin-bottom: 18px;">
 자율신경실조증은 단순히 "마음이 약해서" 생기는 병이 아닙니다. <strong>한의표준임상진료지침</strong>에서도 자율신경실조증은 심리적 스트레스와 신경생물학적 요인, 생활리듬 붕괴가 복합 작용하여 뇌의 시상하부-자율신경 조절 회로가 파탄 난 질환으로 명시하고 있습니다.
 </p>
@@ -222,7 +223,7 @@ layout: "disease"
 
 <!-- 7. 해아림 자율신경 정밀 검사 시스템 -->
 <div class="cond-section">
-<h2 class="cond-h2">해아림한의원 대구본점 자율신경 정밀 검사 시스템</h2>
+<h2 class="cond-h2">자율신경실조증 진단은 어떤 검사로 하나요?</h2>
 <p style="color: #475569; line-height: 1.7; margin-bottom: 16px;">
 자율신경실조증은 단편적인 증상 하나로 판단하지 않습니다. 한의표준임상진료지침에 근거하여 객관적인 신경 검사와 심층 문진을 결합한 8단계 정밀 평가 체계를 운영합니다.
 </p>
@@ -265,6 +266,7 @@ layout: "disease"
 <!-- 8. 해아림 1:1 심층 자생력 치료 시스템 -->
 <div class="cond-section">
 <h2 class="cond-h2">해아림한의원 대구본점 1:1 심층 자생력 치료법</h2>
+<h3 style="font-size: 1.12rem; font-weight: 800; color: #0C4349; margin: 4px 0 14px;">자율신경실조증 치료에는 어떤 방법이 사용되나요?</h3>
 <p style="color: #475569; line-height: 1.7; margin-bottom: 16px;">
 해아림의 자율신경 치료는 증상 억제용 진정제에 의존하지 않습니다. <strong>과열된 교감신경의 불을 끄고 지친 부교감신경의 기운을 채워 인체 스스로 밸런스를 잡는 '자생력(自生力)'</strong>을 복원합니다.
 </p>
@@ -322,9 +324,9 @@ layout: "disease"
 </div>
 </div>
 
-<!-- 11. 자율신경실조증, 어느 병원에 가야 하나요? -->
+<!-- 11. 자율신경실조증과 관련된 진료과는 어디인가요? 어느 병원에 가야 하나요? -->
 <div class="cond-section">
-<h2 class="cond-h2">자율신경실조증, 어느 병원에 가야 하나요?</h2>
+<h2 class="cond-h2">자율신경실조증과 관련된 진료과는 어디인가요? 어느 병원에 가야 하나요?</h2>
 <div style="line-height: 1.8; color: #334155; font-size: 1rem;">
 <p>
 자율신경 관련 증상은 매우 다양하기 때문에 증상의 양상에 따라 올바른 진료과를 선택하는 것이 중요합니다.
@@ -334,7 +336,7 @@ layout: "disease"
 <ul style="margin: 0; padding-left: 20px; color: #475569; line-height: 1.8; font-size: 0.95rem;">
 <li><strong>순환기내과 우선</strong>: 가슴을 쥐어짜는 심한 흉통이나 호흡곤란, 실제 의식을 잃는 실신이 있는 경우 (협심증, 부정맥 등 기질 질환 감별)</li>
 <li><strong>이비인후과/신경과 우선</strong>: 천장이 빙빙 도는 급성 회전성 어지럼, 말이 어눌해지거나 편마비가 동반되는 경우 (이석증, 뇌졸중 배제)</li>
-<li><strong>한방신경정신과 전문 클리닉 권장</strong>: 여러 병원 검사상 기질적 이상이 없는데도 두근거림, 어지럼, 불면, 소화불량, 상열하한 등이 복합적으로 지속될 때</li>
+<li><strong>한방 자율신경실조증 클리닉 권장</strong>: 여러 병원 검사상 기질적 이상이 없는데도 두근거림, 어지럼, 불면, 소화불량, 상열하한 등이 복합적으로 지속될 때</li>
 </ul>
 </div>
 </div>
@@ -368,14 +370,96 @@ layout: "disease"
 </div>
 </div>
 
-<!-- 14. 자율신경실조증 자주 묻는 질문 FAQ (BEST 12선 아코디언) -->
-<div class="cond-section">
+<!-- 14. 자율신경실조증 자주 묻는 질문 FAQ (BEST 16선 아코디언) -->
+<div class="cond-section" id="dysautonomia-faq-best">
 <h2 class="cond-h2">자율신경실조증 자주 묻는 질문 FAQ BEST</h2>
 
 <details class="faq-item" open>
 <summary>
 <div class="faq-summary-left">
 <span class="faq-q-badge">Q1.</span>
+<span>자율신경실조증의 주요 증상은 어떤 것들이 있나요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>자율신경은 심장·혈관·위장·체온·땀샘·수면 중추 등 전신 장기를 지배하므로, 자율신경실조증이 생기면 특정 한 부위가 아닌 전신에서 다양한 증상이 동시에 복합적으로 나타나는 것이 특징입니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>심혈관·순환기 증상</strong>: 이유 없는 심장 두근거림(심계항진), 가슴 답답함, 일어설 때 눈앞이 핑 도는 기립성 어지럼증·실신감</li>
+<li><strong>체온·발한 이상</strong>: 얼굴과 머리는 화끈거리는데 손발은 차가운 상열하한(上熱下寒), 식은땀·국소 다한증, 수족냉증, 오한과 열감 교차</li>
+<li><strong>소화기·비뇨기 증상</strong>: 만성 소화불량, 잦은 체함·복부 팽만, 설사와 변비가 반복되는 과민성 대장 증상, 신경성 빈뇨</li>
+<li><strong>뇌신경·수면·전신 피로</strong>: 입면 장애·잦은 각성(불면증), 머리가 멍한 브레인 포그, 자도 풀리지 않는 만성 피로, 긴장성 두통·이명·이유 없는 초조감</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q2.</span>
+<span>자율신경실조증 진단은 어떤 검사로 받을 수 있나요?</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>자율신경실조증은 일반 혈액·심전도·내시경·영상 검사에서 기질적 질환을 먼저 배제한 뒤, 교감·부교감신경의 기능적 밸런스를 객관적으로 측정하는 자율신경 기능 검사를 종합해 진단합니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>심박변이도(HRV) 검사</strong>: 심장 박동 간격의 미세한 변동을 분석해 교감신경 과항진, 부교감신경 활성도, 스트레스 저항도를 정량화하는 가장 대표적인 검사입니다.</li>
+<li><strong>기립성 혈압·맥박 변동 검사(기립경사검사 등)</strong>: 누웠을 때와 일어섰을 때의 혈압·심박 변화를 확인해 기립성 저혈압이나 기립성 빈맥(POTS)을 감별합니다.</li>
+<li><strong>뇌파(EEG) 및 적외선 체열 검사</strong>: 만성 긴장 뇌파와 뇌 피로도, 얼굴 상열감·수족 냉증의 체열 분포를 시각적으로 평가합니다.</li>
+<li><strong>경추 정렬·수면·체질 변증 평가</strong>: 상부 경추의 자율신경절 압박 여부, 수면 패턴, 한의학적 맥진·복진·설진을 결합해 개인별 맞춤 치료 방향을 수립합니다.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q3.</span>
+<span>자율신경실조증에 좋은 음식과 피해야 할 음식이 궁금해요</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>자율신경 회복을 위해서는 신경 안정과 수면 호르몬 합성에 도움이 되는 마그네슘·비타민 B군·트립토판·오메가-3가 풍부한 따뜻한 자연식을 섭취하고, 교감신경을 과자극하는 카페인·알코올·정제당·찬 음식은 피하는 것이 좋습니다.</strong>
+</p>
+<ul style="margin: 0 0 10px; padding-left: 20px; line-height: 1.7;">
+<li><strong>도움이 되는 음식</strong>: 녹황색 채소(시금치·브로콜리), 견과류(아몬드·호두), 해조류·두부 등 <strong>마그네슘·칼슘 식품</strong> / 바나나·통곡물·달걀·등푸른생선 등 <strong>트립토판·비타민 B군 식품</strong> / 소화가 편한 따뜻한 국물·찜 요리와 캐모마일·대추차·생강차 같은 <strong>무카페인 온차</strong></li>
+<li><strong>피해야 할 음식</strong>: 심계항진과 불면을 유발하는 <strong>커피·에너지음료·진한 차(카페인)</strong> / 수면과 혈관 조절을 교란하는 <strong>술(알코올)·니코틴</strong> / 혈당 급변과 위장 부담을 키우는 <strong>단순당·인스턴트·지나치게 맵고 짠 음식·아이스 음료</strong></li>
+</ul>
+<p style="margin: 0;">
+※ 공복 시간이 너무 길어져 혈당이 떨어져도 교감신경이 급격히 흥분하므로, 하루 세 끼를 규칙적으로 천천히 씹어 드시는 식습관이 중요합니다.
+</p>
+</div>
+</details>
+
+<details class="faq-item" open>
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q4.</span>
+<span>자율신경실조증 증상 완화에 도움이 되는 생활 습관과 관리법이 궁금해요</span>
+</div>
+</summary>
+<div style="padding-top: 12px; color: #475569; line-height: 1.75; font-size: 0.95rem;">
+<p style="margin: 0 0 10px;">
+A. <strong>자율신경실조증 관리의 핵심은 과열된 교감신경을 식히고 브레이크 역할을 하는 부교감신경(미주신경)을 일상에서 꾸준히 활성화하는 것입니다.</strong>
+</p>
+<ul style="margin: 0; padding-left: 20px; line-height: 1.7;">
+<li><strong>규칙적인 수면과 아침 15~30분 햇볕 쬐기</strong>: 매일 일정한 시간에 기상해 아침 햇빛을 쬐면 생체시계가 정렬되어 낮에는 세로토닌, 밤에는 멜라토닌 분비가 원활해집니다.</li>
+<li><strong>하루 2~3회 '4-6 복식호흡' 실천</strong>: 코로 4초간 배가 부풀도록 들이마시고 입으로 6초간 길게 내쉬면 미주신경이 자극되어 빨라진 심박수와 가슴 답답함이 가라앉습니다.</li>
+<li><strong>취침 1~2시간 전 미온수 반신욕·족욕(38~40℃, 15~20분)</strong>: 하체를 따뜻하게 데워 상열하한을 완화하면 교감신경 긴장이 풀리고 숙면에 도움이 됩니다.</li>
+<li><strong>무리하지 않는 유산소 운동과 천천히 일어나기</strong>: 주 3~5회 30분 걷기·가벼운 스트레칭을 실천하되 야간 과격한 운동은 피하고, 일어설 때는 앉아서 잠시 호흡한 뒤 천천히 기립하세요.</li>
+<li><strong>목·어깨 이완 및 취침 전 디지털 디톡스</strong>: 거북목은 경추 자율신경절을 압박하므로 틈틈이 목·어깨를 풀어주고, 잠들기 1시간 전에는 스마트폰을 내려놓으세요.</li>
+</ul>
+</div>
+</details>
+
+<details class="faq-item">
+<summary>
+<div class="faq-summary-left">
+<span class="faq-q-badge">Q5.</span>
 <span>자율신경실조증의 대표적인 증상은 무엇인가요?</span>
 </div>
 </summary>
@@ -387,7 +471,7 @@ A. 두근거림, 가슴 답답함, 기립성 어지럼증, 머리가 멍한 브�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q2.</span>
+<span class="faq-q-badge">Q6.</span>
 <span>온몸이 아프고 어지러운데 종합검진(MRI, 내시경 등)에서는 왜 아무 이상이 없다고 할까요?</span>
 </div>
 </summary>
@@ -399,7 +483,7 @@ A. 종합검진은 장기의 구조적 파괴, 염증, 궤양, 종양 등 '하�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q3.</span>
+<span class="faq-q-badge">Q7.</span>
 <span>자율신경실조증은 얼마나 치료해야 회복되나요?</span>
 </div>
 </summary>
@@ -411,7 +495,7 @@ A. 자율신경계는 오랜 기간 누적된 과로와 스트레스로 서서�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q4.</span>
+<span class="faq-q-badge">Q8.</span>
 <span>반신욕이나 족욕이 자율신경실조증 회복에 도움이 되나요?</span>
 </div>
 </summary>
@@ -423,7 +507,7 @@ A. 네, 매우 큰 도움이 됩니다. 머리는 뜨겁고 손발은 차가운 
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q5.</span>
+<span class="faq-q-badge">Q9.</span>
 <span>기립성 저혈압이나 미주신경성 실신도 자율신경실조증 때문인가요?</span>
 </div>
 </summary>
@@ -435,7 +519,7 @@ A. 네, 깊은 연관이 있습니다. 자리에 앉아 있다가 일어설 때 
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q6.</span>
+<span class="faq-q-badge">Q10.</span>
 <span>자율신경실조증이면 심장이 왜 두근거리나요?</span>
 </div>
 </summary>
@@ -447,7 +531,7 @@ A. 위기 상황이 아닌데도 교감신경이 과도하게 흥분하여 심�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q7.</span>
+<span class="faq-q-badge">Q11.</span>
 <span>자율신경실조증으로 소화불량과 과민대장이 생길 수 있나요?</span>
 </div>
 </summary>
@@ -459,7 +543,7 @@ A. 네, 소화기관은 자율신경(특히 부교감신경인 미주신경)의 
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q8.</span>
+<span class="faq-q-badge">Q12.</span>
 <span>자율신경실조증과 불면증이 같이 생기는 이유는?</span>
 </div>
 </summary>
@@ -471,7 +555,7 @@ A. 밤이 되면 부교감신경이 우세해져 몸을 이완시키고 멜라�
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q9.</span>
+<span class="faq-q-badge">Q13.</span>
 <span>자율신경실조증은 스트레스 때문에만 생기나요?</span>
 </div>
 </summary>
@@ -483,7 +567,7 @@ A. 스트레스가 가장 흔하고 강력한 유발 인자이지만, 전부는 
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q10.</span>
+<span class="faq-q-badge">Q14.</span>
 <span>심박변이도(HRV) 검사를 하면 자율신경실조증을 바로 알 수 있나요?</span>
 </div>
 </summary>
@@ -495,7 +579,7 @@ A. HRV는 심장의 미세한 박동 변화를 분석하여 교감/부교감 신
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q11.</span>
+<span class="faq-q-badge">Q15.</span>
 <span>자율신경실조증은 완치 가능한가요?</span>
 </div>
 </summary>
@@ -507,7 +591,7 @@ A. 네, 충분히 회복될 수 있습니다. 자율신경계는 영구적으로
 <details class="faq-item">
 <summary>
 <div class="faq-summary-left">
-<span class="faq-q-badge">Q12.</span>
+<span class="faq-q-badge">Q16.</span>
 <span>자율신경실조증인지 확실하지 않아도 상담받을 수 있나요?</span>
 </div>
 </summary>
